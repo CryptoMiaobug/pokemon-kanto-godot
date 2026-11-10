@@ -1,4 +1,5 @@
 extends Control
+const Language = preload("res://scripts/language.gd")
 ## Original FireRed art and shrink/expand state, adapted to the 960x640 Godot canvas.
 signal resolved(cancelled: bool)
 signal completed(cancelled: bool)
@@ -49,7 +50,7 @@ func _ready() -> void:
 		add_child(sparkle)
 		sparkles.append(sparkle)
 	UI.panel(self,Rect2(0,448,960,192))
-	message = UI.label(self,"咦？%s的样子……\n进化中按 B 取消。" % species[before]["name"],Rect2(32,470,890,120),26)
+	message = UI.label(self,Language.text("ui.63ddca016436","咦？%s的样子……\n进化中按 B 取消。") % Language.name(species[before]["name"]),Rect2(32,470,890,120),26)
 func _sprite(id: String) -> TextureRect:
 	var sprite := TextureRect.new()
 	sprite.texture = load(species[id]["sprite"])
@@ -110,6 +111,6 @@ func _complete(stopped: bool) -> void:
 	old_sprite.visible = stopped
 	new_sprite.visible = not stopped
 	for sparkle in sparkles:sparkle.hide()
-	message.text = "%s停止了进化。\nEnter 继续" % species[before]["name"] if stopped else "恭喜！%s进化成了%s！\nEnter 继续" % [species[before]["name"],species[after]["name"]]
+	message.text = Language.text("ui.104d1cbaf92a","%s停止了进化。\nEnter 继续") % Language.name(species[before]["name"]) if stopped else Language.text("ui.a4455f9c8284","恭喜！%s进化成了%s！\nEnter 继续") % [Language.name(species[before]["name"]),Language.name(species[after]["name"])]
 
 	completed.emit(stopped)

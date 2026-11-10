@@ -1,4 +1,5 @@
 extends RefCounted
+const Language = preload("res://scripts/language.gd")
 ## Optional v3 event + held item are one mutually exclusive atomic payload.
 const TRAINER := "mtmoonb2f_miguel"
 const REVIVED := {"dome_fossil":"kabuto","helix_fossil":"omanyte"}
@@ -94,6 +95,6 @@ func summary(state: Dictionary) -> String:
 		if item["id"]==state.get("moon_fossil",{}).get("choice",""):
 			if state.has("fossil_lab"):
 				var stage:String=state["fossil_lab"].get("stage","")
-				return "复活完成：%s · 可在研究室领取" % item["name"] if stage=="ready" else "已领取：%s · 不可重复领取" % item["name"] if stage=="claimed" else "研究所已收取：%s · 离开研究所后完成复活" % item["name"]
-			return "持有：%s ×1 · 另一块归学者" % item["name"]
-	return "持有化石：无"
+				return Language.story("复活完成：%s · 可在研究室领取") % Language.name(item["name"]) if stage=="ready" else Language.story("已领取：%s · 不可重复领取") % Language.name(item["name"]) if stage=="claimed" else Language.story("研究所已收取：%s · 离开研究所后完成复活") % Language.name(item["name"])
+			return Language.story("持有：%s ×1 · 另一块归学者") % Language.name(item["name"])
+	return Language.story("持有化石：无")

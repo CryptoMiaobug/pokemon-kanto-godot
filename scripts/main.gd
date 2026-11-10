@@ -1,4 +1,6 @@
 extends Node2D
+const Language = preload("res://scripts/language.gd")
+var language_team_open:bool=false
 const UI = preload("res://scripts/ui.gd")
 const Player = preload("res://scripts/player.gd")
 const BATTLE_SCENE = preload("res://scenes/battle.tscn")
@@ -216,29 +218,31 @@ func _ready() -> void:
 	flash_layer.layer = 1
 	add_child(flash_layer)
 	UI.panel(overlay, Rect2(4, 2, 952, 36))
-	map_title = UI.label(overlay, "真新镇 · Red 地图复现", Rect2(18, 2, 420, 32), 22)
+	map_title = UI.label(overlay, Language.story("真新镇 · Red 地图复现"), Rect2(18, 2, 420, 32), 22)
 	badge_icon = TextureRect.new()
 	badge_icon.texture = preload("res://assets/pewter-gym/boulder-badge.png")
 	badge_icon.position = Vector2(780,42)
 	badge_icon.size = Vector2(32,32)
 	badge_icon.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	overlay.add_child(badge_icon)
-	badge_label = UI.label(overlay,"灰色徽章 · 已获得",Rect2(816,44,140,30),16)
+	badge_label = UI.label(overlay,Language.text("ui.4fe9e30fd21a","灰色徽章 · 已获得"),Rect2(816,44,140,30),16)
 	cascade_icon = TextureRect.new()
 	cascade_icon.texture = preload("res://assets/cerulean-gym/cascade-badge.png")
 	cascade_icon.position = Vector2(600,42)
 	cascade_icon.size = Vector2(32,32)
 	cascade_icon.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	overlay.add_child(cascade_icon)
-	cascade_label = UI.label(overlay,"蓝色徽章 · 已获得",Rect2(636,44,140,30),16)
+	cascade_label = UI.label(overlay,Language.text("ui.c477c1668848","蓝色徽章 · 已获得"),Rect2(636,44,140,30),16)
 	fossil_label = UI.label(overlay,"",Rect2(18,76,600,25),16)
 	for hud in [badge_label,cascade_label,fossil_label]:
 		hud.add_theme_color_override("font_color",Color.WHITE)
 		hud.add_theme_color_override("font_outline_color",Color("303840"))
 		hud.add_theme_constant_override("outline_size",3)
-	status = UI.label(overlay, "向北通往1号道路 · 房门关闭", Rect2(470, 7, 480, 24), 16)
+	status = UI.label(overlay, Language.story("向北通往1号道路 · 房门关闭"), Rect2(470, 7, 480, 24), 16)
+	# Fixed-height HUD must never spill into the world beneath it.
+	for line_label in [map_title,status]:line_label.autowrap_mode=TextServer.AUTOWRAP_OFF
 	UI.panel(overlay, Rect2(4, 604, 952, 34))
-	prompt = UI.label(overlay, "WASD移动 · E交谈 · F6碎岩/F7攀瀑 · M/N/L教学 · F飞翔/V骑车 · B背包 · P队伍 · F5存档/F10退出", Rect2(18, 608, 930, 26), 16)
+	prompt = UI.label(overlay, Language.text("ui.72005128a345","WASD移动 · E交谈 · F6碎岩/F7攀瀑 · M/N/L教学 · F飞翔/V骑车 · B背包 · P队伍 · F5存档/F10退出"), Rect2(18, 608, 930, 26), 16)
 	if map_id in ["rock-tunnel-1f","rock-tunnel-b1f"]:
 		_build_map(map_id,player.position)
 	_trace({"event":"map_ready", "position":[player.position.x, player.position.y]})
@@ -246,7 +250,7 @@ func _ready() -> void:
 	load_status = store.load_game()
 	if load_status == "loaded":
 		_restore_location()
-		if store.error!="":status.text = store.error
+		if store.error!="":status.text = Language.message(store.error)
 		_state_trace("loaded")
 	elif load_status == "missing":
 		_starter_menu()
@@ -273,6 +277,11 @@ func _add_solid(parent: Node, rect: Rect2) -> void:
 	parent.add_child(body)
 
 func _process(_delta: float) -> void:
+	for line_label in [map_title,status]:
+		if not is_instance_valid(line_label):continue
+		var font:Font=line_label.get_theme_font("font")
+		var width:float=font.get_string_size(line_label.text,HORIZONTAL_ALIGNMENT_LEFT,-1,16).x
+		line_label.add_theme_font_size_override("font_size",clampi(floori(16.0*(line_label.size.x-8)/maxf(1,width)),9,16))
 	if not sevii_motion.is_empty():_sevii_motion_tick(_delta);_camera();return
 	if visual_transition:
 		if Time.get_ticks_msec()>=visual_deadline:_visual_recover()
@@ -290,7 +299,7 @@ func _process(_delta: float) -> void:
 		if store.travel.cycling(map_id,player.position) and store.travel.bicycle(store.state):riding=true;player.cycling=true
 		var gate_cell:=Vector2i(floori(player.position.x/16),floori((player.position.y-1)/16))
 		if store.travel.gate_blocks(store.state,map_id,gate_cell):
-			player.position=Vector2(88,73 if map_id=="route18-gate-1f" else 121);player.velocity=Vector2.ZERO;status.text="等一下！自行车道禁止行人，请先取得自行车。";_state_trace("bicycle_gate_refused")
+			player.position=Vector2(88,73 if map_id=="route18-gate-1f" else 121);player.velocity=Vector2.ZERO;status.text=Language.story("等一下！自行车道禁止行人，请先取得自行车。");_state_trace("bicycle_gate_refused")
 	if is_instance_valid(player) and not in_battle and not is_instance_valid(modal) and not is_instance_valid(pc):
 		if rocket_spin.active:
 			if rocket_spin.tick(player,_delta):_trace({"event":"spin_stopped","map":map_id,"position":[player.position.x,player.position.y]})
@@ -300,16 +309,16 @@ func _process(_delta: float) -> void:
 			player.position = Vector2(spin_cell.x*16+8,spin_cell.y*16+9);player.active = false;player.velocity = Vector2.ZERO
 			_trace({"event":"spin_started","map":map_id,"cell":[spin_cell.x,spin_cell.y],"steps":rocket_spin.route.size()});return
 	if is_instance_valid(fossil_label):
-		fossil_label.text = store.fossil_rules.summary(store.state)
-		if store.state.has("nugget_bridge"):fossil_label.text += " · 金珠 ×%d"%int(store.state["nugget_bridge"]["items"]["nugget"])
-		if store.bill_rules.stage(store.state) in ["ticket","visited"]:fossil_label.text += " · 船票 ×1"
+		fossil_label.text = Language.story(store.fossil_rules.summary(store.state))
+		if store.state.has("nugget_bridge"):fossil_label.text += Language.story(" · 金珠 ×%d")%int(store.state["nugget_bridge"]["items"]["nugget"])
+		if store.bill_rules.stage(store.state) in ["ticket","visited"]:fossil_label.text += Language.story(" · 船票 ×1")
 		if store.state.has("stolen_tm"):fossil_label.text += " · TM28 ×%d"%tm_rules.quantity(store.state,"tm_dig")
-		if store.state.get("badges",{}).get("soul",false):fossil_label.text += " · 粉红徽章已获得"
-		if store.state.get("badges",{}).get("marsh",false):fossil_label.text += " · 金色徽章已获得"
-		if store.state.get("badges",{}).get("rainbow",false):fossil_label.text += " · 彩虹徽章已获得"
-		if store.state.get("badges",{}).get("thunder",false):fossil_label.text += " · 雷电徽章已获得"
-		if store.state.get("badges",{}).get("volcano",false):fossil_label.text += " · 深红徽章已获得"
-		if store.state.get("badges",{}).get("earth",false):fossil_label.text = store.fossil_rules.summary(store.state)+" · 八枚徽章已集齐（含绿色徽章）"
+		if store.state.get("badges",{}).get("soul",false):fossil_label.text += Language.story(" · 粉红徽章已获得")
+		if store.state.get("badges",{}).get("marsh",false):fossil_label.text += Language.story(" · 金色徽章已获得")
+		if store.state.get("badges",{}).get("rainbow",false):fossil_label.text += Language.story(" · 彩虹徽章已获得")
+		if store.state.get("badges",{}).get("thunder",false):fossil_label.text += Language.story(" · 雷电徽章已获得")
+		if store.state.get("badges",{}).get("volcano",false):fossil_label.text += Language.story(" · 深红徽章已获得")
+		if store.state.get("badges",{}).get("earth",false):fossil_label.text = Language.story(store.fossil_rules.summary(store.state))+Language.story(" · 八枚徽章已集齐（含绿色徽章）")
 		fossil_label.visible = store.state.get("badges",{}).get("volcano",false) or store.state.get("badges",{}).get("rainbow",false) or store.state.get("badges",{}).get("thunder",false) or store.state.has("moon_fossil") or store.state.has("nugget_bridge") or store.state.has("bill") or store.state.has("stolen_tm") or map_id=="mtmoon-b2f"
 	if is_instance_valid(badge_label):
 		var earned: bool = store.state.get("badges",{}).get("boulder",false)
@@ -342,7 +351,7 @@ func _process(_delta: float) -> void:
 						var safe:Array=layout["safe"]
 						store.state["location"]={"map_id":map_id,"x":safe[0],"y":safe[1]}
 						if not store.save_game():
-							store.state=before_push;boulders.cells=old_stones;status.text=store.error;_state_trace("seafoam_fall_failed");return
+							store.state=before_push;boulders.cells=old_stones;status.text=Language.message(store.error);_state_trace("seafoam_fall_failed");return
 						boulders.refresh(strength_actors+league_actors+o06_actors+o07_actors);_state_trace("seafoam_fall_committed")
 						player.position=Vector2((cell.x+step.x)*16+8,(cell.y+step.y)*16+9);_build_map(map_id,player.position);return
 					if map_id=="victory-road-1f" and not store.state.get("victory_road_1f_open",false) and boulders.index(Vector2i(17,13))>=0:
@@ -351,7 +360,7 @@ func _process(_delta: float) -> void:
 					if victory_road.pushed(map_id,boulders.cells[bi],store.state):
 						store.state["location"]={"map_id":map_id,"x":8 if map_id=="victory-road-2f" else 376,"y":137 if map_id=="victory-road-2f" else 121}
 						if not store.save_game():
-							store.state=before_push;boulders.cells=old_stones;status.text=store.error;_state_trace("victory_upper_failed");return
+							store.state=before_push;boulders.cells=old_stones;status.text=Language.message(store.error);_state_trace("victory_upper_failed");return
 						if map_id=="victory-road-3f" and boulders.cells[bi]==[23,15]:boulders.cells[bi]=[-1,-1]
 						_state_trace("victory_upper_committed")
 					player.position=Vector2((cell.x+step.x)*16+8,(cell.y+step.y)*16+9);_build_map(map_id,player.position)
@@ -360,10 +369,10 @@ func _process(_delta: float) -> void:
 			var before: Dictionary = store.state.duplicate(true)
 			store.state["surfing"] = false
 			store.state["location"] = {"map_id":map_id,"x":player.position.x,"y":player.position.y}
-			var result: String = store.safari.step(store,store.state["location"]) if store.safari.is_zone(map_id) and store.safari.active(store.state) else ("" if store.save_game() else store.error)
-			if result=="expired":_restore_location();status.text = "时间到！已返回入口。";_state_trace("safari_expired")
+			var result: String = store.safari.step(store,store.state["location"]) if store.safari.is_zone(map_id) and store.safari.active(store.state) else ("" if store.save_game() else Language.message(store.error))
+			if result=="expired":_restore_location();status.text = Language.story("时间到！已返回入口。");_state_trace("safari_expired")
 			elif result=="":_build_map(map_id,player.position);_state_trace("surf_landed")
-			else:store.state = before;_restore_location();status.text = result;_state_trace("surf_failed")
+			else:store.state = before;_restore_location();status.text = Language.message(result);_state_trace("surf_failed")
 			return
 		if map_id=="pallet-town" and store.state.get("surfing",false) and player.position.y>=281 and player.velocity.y>0 and cell.x in [4,5,6,7]:
 			_build_map("route21",Vector2(player.position.x,9));_trace({"event":"map_changed","map":map_id});return
@@ -375,12 +384,12 @@ func _process(_delta: float) -> void:
 			_change_map("route21",Vector2(player.position.x,1433));return
 		if map_id=="pallet-town" and player.position.y<8 and player.velocity.y<0 and Time.get_ticks_msec()>=interaction_ready_at and cell.x in [10,11]:
 			_build_map("route1",Vector2(player.position.x,570))
-			map_title.text = "1号道路 · Red地图 / FireRed遇敌"
+			map_title.text = Language.story("1号道路 · Red地图 / FireRed遇敌")
 			_trace({"event":"map_changed","map":map_id})
 			return
 		if map_id=="route1" and player.position.y>569 and player.velocity.y>0 and Time.get_ticks_msec()>=interaction_ready_at and cell.x in [10,11]:
 			_build_map("pallet-town",Vector2(player.position.x,9))
-			map_title.text = "真新镇 · Red 地图复现"
+			map_title.text = Language.story("真新镇 · Red 地图复现")
 			_trace({"event":"map_changed","map":map_id})
 			return
 		if Time.get_ticks_msec()>=interaction_ready_at:
@@ -424,15 +433,15 @@ func _process(_delta: float) -> void:
 				var result: String = store.safari.step(store,{"map_id":map_id,"x":player.position.x,"y":player.position.y})
 				_state_trace("safari_step")
 				if result!="":
-					_restore_location();status.text = "时间到！已返回入口。" if result=="expired" else result;_state_trace("safari_"+result);return
-				status.text = "剩余%d步 · 临时球%d · R退出 · 捕获延期" % [store.state["safari"]["steps"],store.state["safari"]["balls"]]
+					_restore_location();status.text = Language.story("时间到！已返回入口。") if result=="expired" else Language.message(result);_state_trace("safari_"+result);return
+				status.text = Language.story("剩余%d步 · 临时球%d · R退出 · 捕获延期") % [store.state["safari"]["steps"],store.state["safari"]["balls"]]
 			var water_encounter: bool = map_id in ["seafoam-islands-b4f","seafoam-islands-b3f","route19","route20","route21","route23"] and store.state.get("surfing",false) and store.surf.water(map_id,layout,cell)
 			var safari_grass: bool = store.safari.is_zone(map_id) and cell.y>=0 and cell.y<int(layout["height"]) and cell.x>=0 and cell.x<int(layout["width"]) and int(layout["grass"][cell.y][cell.x])==1
 			var grass: bool = water_encounter or safari_grass or (map_id in ["seafoam-islands-b4f","seafoam-islands-b2f","seafoam-islands-b3f","seafoam-islands-1f","seafoam-islands-b1f","victory-road-3f","victory-road-1f","victory-road-2f","pokemon-mansion-b1f","pokemon-mansion-3f","pokemon-mansion-2f","pokemon-mansion-1f","pokemon-tower-6f","pokemon-tower-5f","pokemon-tower-4f","pokemon-tower-3f","rock-tunnel-1f","rock-tunnel-b1f","mtmoon-1f","mtmoon-b1f","mtmoon-b2f","digletts-cave"] and cell.y>=0 and cell.y<int(layout["height"]) and cell.x>=0 and cell.x<int(layout["width"]) and int(layout["solid"][cell.y][cell.x])==0) or map_id in ["route16","route17","route18","route23","route21","route15","route14","route13","route12","route7","route8","route10-south","route9","route10-north","route1","route2","route11","viridian-forest","route3","route4-entrance","route4-east","route24","route25","route5","route6"] and cell.y>=0 and cell.y<int(layout["height"]) and cell.x>=0 and cell.x<int(layout["width"]) and int(layout["grass"][cell.y][cell.x])==1
 			if map_id=="mtmoon-b2f" and store.state.get("trainers",{}).get("mtmoonb2f_miguel",false) and cell.x in [11,12,13,14] and cell.y in [5,6,7,8]:grass = false
 			if map_id=="pokemon-tower-5f" and cell in [Vector2i(10,8),Vector2i(11,8),Vector2i(10,9),Vector2i(11,9)]:grass = false
 			var repel_expired:bool=store.medicine.step_repel(store.state)
-			if repel_expired:status.text="喷雾效果消失了。";_trace({"event":"repel_expired"})
+			if repel_expired:status.text=Language.story("喷雾效果消失了。");_trace({"event":"repel_expired"})
 			var wild: Dictionary = encounter.step(grass,map_id,water_encounter) if not repel_expired and Time.get_ticks_msec()>=interaction_ready_at else {}
 			if not wild.is_empty() and not store.medicine.allow_wild(store.state,int(wild["level"])):wild={}
 			_trace({"event":"step","map":map_id,"cell":[cell.x,cell.y],"grass":grass,"water":water_encounter,"encounter":not wild.is_empty()})
@@ -444,11 +453,11 @@ func _process(_delta: float) -> void:
 func _start_battle(wild: Dictionary) -> void:
 	var safari_battle: bool = store.safari.active(store.state) and store.safari.is_zone(map_id)
 	if map_id.begins_with("pokemon-tower-") and not store.post_b3.has_item(store.state,"silph_scope"):
-		status.text = "幽灵无法辨认！没有检视镜，宝可梦无法对战。";_trace({"event":"tower_ghost_refused"});return
+		status.text = Language.story("幽灵无法辨认！没有检视镜，宝可梦无法对战。");_trace({"event":"tower_ghost_refused"});return
 	if not store.validate(store.state):
 		return
 	if int(store.state["team"][int(store.state["lead"])]["hp"]) <= 0:
-		status.text = "首发倒下，请 P 换首发或 H 免费恢复。"
+		status.text = Language.story("首发倒下，请 P 换首发或 H 免费恢复。")
 		return
 	in_battle = true
 	player.active = false
@@ -485,23 +494,23 @@ func _return_to_map(won: bool) -> void:
 		if won:_change_map(map_id,player.position)
 		else:_restore_location()
 	_save()
-	status.text = "本场结束 · HP / 球数已保留 · H 免费恢复补球" if store.error == "" else store.error
-	if trainer_message!="":status.text = "训练家战已结算 · 余额%d · 可前往商店" % int(store.state["money"]) if store.error=="" else store.error
+	status.text = Language.story("本场结束 · HP / 球数已保留 · H 免费恢复补球") if store.error == "" else Language.message(store.error)
+	if trainer_message!="":status.text = Language.story("训练家战已结算 · 余额%d · 可前往商店") % int(store.state["money"]) if store.error=="" else Language.message(store.error)
 	if battle.trainer_id.begins_with("sevii_"):_change_map(map_id,player.position)
 	if battle.static_id!="":_change_map(map_id,player.position)
 	if battle.static_id=="sevii_hypno" and store.state.get("sevii",{}).get("hypno_done",false):
-		_sevii_prompt("rescue","迷失女孩 · 获救","谢谢你！请带我回二岛游戏厅。")
+		_sevii_prompt("rescue",Language.story("迷失女孩 · 获救"),Language.story("谢谢你！请带我回二岛游戏厅。"))
 	if completed_cinnabar or battle.trainer_id.begins_with("silph") or battle.trainer_id.begins_with("tower7_") or completed_rocket or completed_north or completed_ship or battle.trainer_id.begins_with("rocket_b4_") or battle.trainer_id in ["rocket_giovanni","tower_rival"]:_change_map(map_id,player.position)
 	if battle.trainer_id=="route22_late" or battle.trainer_id=="viridian_giovanni":
 		_change_map(map_id,player.position)
-		if won:status.text=trainer_rules.definition(battle.trainer_id)["after"]
-	if completed_ship:status.text = trainer_rules.ship_rival["after"]
+		if won:status.text=Language.story(trainer_rules.definition(battle.trainer_id)["after"])
+	if completed_ship:status.text = Language.story(trainer_rules.ship_rival["after"])
 	_state_trace("map_state")
 	_trace({"event":"returned_to_map", "won":won})
 	if completed_thief:_tm_dialog()
 	if completed_dojo_boss:
-		dojo_choice_pending=true;trainer_ready_at=Time.get_ticks_msec()+250;_new_modal("格斗道场 · 馆主奖励")
-		UI.label(modal,"道场馆主已败北。选择一只宝可梦作为奖赏：\n1 飞腿郎 Hitmonlee　　2 快拳郎 Hitmonchan\nEsc 暂不领取",Rect2(95,190,770,170),22);_state_trace("dojo_gift_prompt")
+		dojo_choice_pending=true;trainer_ready_at=Time.get_ticks_msec()+250;_new_modal(Language.story("格斗道场 · 馆主奖励"))
+		UI.label(modal,Language.story("道场馆主已败北。选择一只宝可梦作为奖赏：\n1 飞腿郎 Hitmonlee　　2 快拳郎 Hitmonchan\nEsc 暂不领取"),Rect2(95,190,770,170),22);_state_trace("dojo_gift_prompt")
 
 func _trace(value: Dictionary) -> void:
 	if telemetry_path == "":
@@ -525,6 +534,8 @@ func _input_state_trace() -> void:
 func _unhandled_key_input(event: InputEvent) -> void:
 	if not event is InputEventKey or not event.pressed or event.echo or in_battle:
 		return
+	if event.physical_keycode==KEY_F8 and (not is_instance_valid(modal) or language_team_open):
+		_toggle_language();return
 	if not sevii_motion.is_empty():return
 	if sevii_action!="":_sevii_input(event.physical_keycode);return
 	if is_instance_valid(pc) or rocket_spin.active or not seafoam_current.is_empty() or player.ledge_jumping or visual_transition:return
@@ -552,7 +563,7 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		elif event.physical_keycode in [KEY_E,KEY_ENTER,KEY_SPACE]:
 			var failure:String=store.pokemon_mansion.take_key(store,map_id,player.position)
 			mansion_key_pending=false;_close_modal();_change_map(map_id,player.position)
-			status.text=failure if failure!="" else "获得秘密钥匙！可在关键物品查看。"
+			status.text=Language.message(failure) if failure!="" else Language.story("获得秘密钥匙！可在关键物品查看。")
 			_state_trace("mansion_key_taken" if failure=="" else "mansion_key_failed")
 		return
 	if mansion_pending:
@@ -562,7 +573,7 @@ func _unhandled_key_input(event: InputEvent) -> void:
 			var failure:String=store.pokemon_mansion.toggle(store,map_id,player.position)
 			mansion_pending=false;_close_modal()
 			if failure=="":_change_map(map_id,player.position)
-			status.text=failure if failure!="" else "开关已按下，全楼的门随之变化。"
+			status.text=Language.message(failure) if failure!="" else Language.story("开关已按下，全楼的门随之变化。")
 			_state_trace("mansion_toggle" if failure=="" else "mansion_toggle_failed")
 		return
 	if snorlax_pending:
@@ -577,8 +588,8 @@ func _unhandled_key_input(event: InputEvent) -> void:
 			var action: String = silph_action
 			var failure: String = store.silph_story.president(store) if action=="president" else store.silph_story.gift(store) if action=="gift" else store.silph_story.transition(store,action,silph_value)
 			silph_action = "";_close_modal()
-			if failure!="":status.text = failure;_state_trace("silph_action_failed");return
-			_change_map(map_id,player.position);status.text = "获得大师球 ×1！可在野生战斗背包中使用。已保存。" if action=="president" else "拉普拉斯已加入队伍或送往盒子！已保存。" if action=="gift" else "获得卡片钥匙！已保存。" if action=="take" else "卡片门已打开！钥匙可以反复使用。";_state_trace("silph_master_ball_received" if action=="president" else "silph_lapras_received" if action=="gift" else "silph_key_taken" if action=="take" else "silph_door_opened")
+			if failure!="":status.text = Language.message(failure);_state_trace("silph_action_failed");return
+			_change_map(map_id,player.position);status.text = Language.story("获得大师球 ×1！可在野生战斗背包中使用。已保存。") if action=="president" else Language.story("拉普拉斯已加入队伍或送往盒子！已保存。") if action=="gift" else Language.story("获得卡片钥匙！已保存。") if action=="take" else Language.story("卡片门已打开！钥匙可以反复使用。");_state_trace("silph_master_ball_received" if action=="president" else "silph_lapras_received" if action=="gift" else "silph_key_taken" if action=="take" else "silph_door_opened")
 		return
 	if celadon_lift_pending:
 		if Time.get_ticks_msec()<trainer_ready_at:return
@@ -586,7 +597,7 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		elif event.physical_keycode in [KEY_1,KEY_2,KEY_3,KEY_4,KEY_5]:
 			var floor:String="celadon-mart-%df"%(event.physical_keycode-KEY_1+1)
 			var failure:String=store.celadon_lift.select_floor(store,floor,{"map_id":map_id,"x":player.position.x,"y":player.position.y})
-			celadon_lift_pending=false;_close_modal();status.text=failure if failure!="" else "电梯已抵达 "+floor;_state_trace("celadon_lift_selected")
+			celadon_lift_pending=false;_close_modal();status.text=Language.message(failure) if failure!="" else Language.story("电梯已抵达 ")+floor;_state_trace("celadon_lift_selected")
 		return
 	if silph_lift_pending:
 		if Time.get_ticks_msec()<trainer_ready_at:return
@@ -594,7 +605,7 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		elif event.physical_keycode in [KEY_1,KEY_2,KEY_3,KEY_4,KEY_5,KEY_6,KEY_7,KEY_8,KEY_9,KEY_0,KEY_MINUS]:
 			var floor: String = "silph-co-%df" % (10 if event.physical_keycode==KEY_0 else 11 if event.physical_keycode==KEY_MINUS else event.physical_keycode-KEY_1+1)
 			var failure: String = store.silph_story.select_floor(store,floor)
-			silph_lift_pending = false;_close_modal();status.text = failure if failure!="" else "电梯已抵达 "+floor;_state_trace("silph_lift_selected")
+			silph_lift_pending = false;_close_modal();status.text = Language.message(failure) if failure!="" else Language.story("电梯已抵达 ")+floor;_state_trace("silph_lift_selected")
 		return
 	if lift_pending:
 		if Time.get_ticks_msec()<trainer_ready_at:return
@@ -602,7 +613,7 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		elif event.physical_keycode in [KEY_1,KEY_2,KEY_3]:
 			var floor: String = ["rocket-hideout-b1f","rocket-hideout-b2f","rocket-hideout-b4f"][event.physical_keycode-KEY_1]
 			var failure: String = store.post_b3.transition(store,"select_floor",floor)
-			lift_pending = false;_close_modal();status.text = failure if failure!="" else "电梯已抵达 "+floor;_state_trace("lift_selected")
+			lift_pending = false;_close_modal();status.text = Language.message(failure) if failure!="" else Language.story("电梯已抵达 ")+floor;_state_trace("lift_selected")
 		return
 	if gym_phase:
 		if Time.get_ticks_msec()>=trainer_ready_at and event.physical_keycode in [KEY_E,KEY_ENTER,KEY_SPACE,KEY_ESCAPE]:gym_phase = false;_close_modal()
@@ -615,9 +626,9 @@ func _unhandled_key_input(event: InputEvent) -> void:
 			var answer:Dictionary=store.cinnabar_gym.answer(store.state,index,yes)
 			if answer["correct"]:
 				var before: Dictionary=store.state.duplicate(true);store.cinnabar_gym.mark_correct(store.state,index)
-				if not store.save_game():store.state=before;status.text=store.error
-				else:_change_map(map_id,player.position);status.text="回答正确，门打开了！"
-			else:status.text="回答错误，训练家向你发起挑战！";_forest_trainer_interact(store.cinnabar_gym.definition(answer["trainer"]))
+				if not store.save_game():store.state=before;status.text=Language.message(store.error)
+				else:_change_map(map_id,player.position);status.text=Language.story("回答正确，门打开了！")
+			else:status.text=Language.story("回答错误，训练家向你发起挑战！");_forest_trainer_interact(store.cinnabar_gym.definition(answer["trainer"]))
 		return
 	if cut_phase!="":
 		_cut_input(event.physical_keycode)
@@ -638,7 +649,7 @@ func _unhandled_key_input(event: InputEvent) -> void:
 			bill_pending = "";_close_modal();_trace({"event":"bill_cancelled"})
 		elif event.physical_keycode in [KEY_E,KEY_ENTER,KEY_SPACE,KEY_1]:_bill_confirm()
 		elif event.physical_keycode==KEY_2 and bill_pending=="help":
-			_bill_dialog("help","不？拜托，帮帮遇到麻烦的人吧！\n当我进入传送器后，请在电脑上运行细胞分离系统。")
+			_bill_dialog("help",Language.story("不？拜托，帮帮遇到麻烦的人吧！\n当我进入传送器后，请在电脑上运行细胞分离系统。"))
 		return
 	if bridge_pending:
 		if Time.get_ticks_msec()<trainer_ready_at:return
@@ -673,7 +684,7 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		elif event.physical_keycode in [KEY_E,KEY_ENTER,KEY_SPACE]:
 			tea_pending = false;_close_modal()
 			var failure: String = store.tea_rules.claim(store,map_id)
-			status.text = "获得茶 ×1！已保存。K 查看关键物品。" if failure=="" else failure
+			status.text = Language.story("获得茶 ×1！已保存。K 查看关键物品。") if failure=="" else Language.message(failure)
 			_state_trace("tea_received" if failure=="" else "tea_failed")
 		return
 	if fuji_action!="":
@@ -681,10 +692,10 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		elif event.physical_keycode in [KEY_E,KEY_ENTER,KEY_SPACE]:
 			var action: String = fuji_action;fuji_action = "";_close_modal()
 			var failure: String = store.tower_story.transition(store,action)
-			if failure!="":status.text = failure;_state_trace("fuji_failed")
+			if failure!="":status.text = Language.message(failure);_state_trace("fuji_failed")
 			else:
 				if action=="rescue":_change_map("mr-fujis-house",Vector2(56,41));player.facing = Vector2.UP
-				status.text = "已回到富士之家，请另与老人交谈。" if action=="rescue" else "获得宝可梦笛！K 查看关键物品。"
+				status.text = Language.story("已回到富士之家，请另与老人交谈。") if action=="rescue" else Language.story("获得宝可梦笛！K 查看关键物品。")
 				_state_trace("fuji_"+action)
 		return
 	if pending_mother:
@@ -696,13 +707,13 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		if event.physical_keycode==KEY_ESCAPE:boulder_pending=false;_close_modal();_state_trace("strength_cancelled")
 		elif event.physical_keycode in [KEY_E,KEY_ENTER,KEY_SPACE]:
 			boulder_pending=false;_close_modal();var failure:String=store.strength.field_error(store.state)
-			if failure=="":boulders.active=true;status.text="怪力已启用！方向键单格推石；离图复位。";_state_trace("strength_activated")
-			else:status.text=failure;_state_trace("strength_rejected")
+			if failure=="":boulders.active=true;status.text=Language.story("怪力已启用！方向键单格推石；离图复位。");_state_trace("strength_activated")
+			else:status.text=Language.message(failure);_state_trace("strength_rejected")
 		return
 	if warden_pending:
 		if event.physical_keycode==KEY_ESCAPE:warden_pending=false;_close_modal();_state_trace("warden_cancelled")
 		elif event.physical_keycode in [KEY_E,KEY_ENTER,KEY_SPACE]:
-			var a:String=store.strength.action(store.state);warden_pending=false;_close_modal();var error:String=store.strength.transact(store,map_id);status.text=error if error!="" else "已交还金牙！请再次交谈领取HM04。" if a=="deliver" else "获得HM04怪力！J教学。已保存。";_state_trace("warden_"+a if error=="" else "warden_failed")
+			var a:String=store.strength.action(store.state);warden_pending=false;_close_modal();var error:String=store.strength.transact(store,map_id);status.text=Language.message(error) if error!="" else Language.story("已交还金牙！请再次交谈领取HM04。") if a=="deliver" else Language.story("获得HM04怪力！J教学。已保存。");_state_trace("warden_"+a if error=="" else "warden_failed")
 		return
 	if surf_pending:
 		if event.physical_keycode==KEY_ESCAPE:surf_pending = false;_close_modal();_state_trace("surf_cancelled")
@@ -710,17 +721,17 @@ func _unhandled_key_input(event: InputEvent) -> void:
 			surf_pending = false;_close_modal();var before: Dictionary = store.state.duplicate(true)
 			store.state["surfing"] = true
 			store.state["location"] = {"map_id":map_id,"x":surf_target.x*16+8,"y":surf_target.y*16+9}
-			var result: String = store.safari.step(store,store.state["location"]) if store.safari.active(store.state) else ("" if store.save_game() else store.error)
+			var result: String = store.safari.step(store,store.state["location"]) if store.safari.active(store.state) else ("" if store.save_game() else Language.message(store.error))
 			if result=="expired":_restore_location();_state_trace("safari_expired")
 			elif result=="":_build_map(map_id,Vector2(surf_target.x*16+8,surf_target.y*16+9));_state_trace("surf_started")
-			else:store.state = before;status.text = store.error;_state_trace("surf_failed")
+			else:store.state = before;status.text = Language.message(store.error);_state_trace("surf_failed")
 		return
 	if safari_reward!="":
 		if event.physical_keycode==KEY_ESCAPE:safari_reward = "";_close_modal();_state_trace("safari_reward_cancelled")
 		elif event.physical_keycode in [KEY_E,KEY_ENTER,KEY_SPACE]:
 			var key: String = safari_reward;safari_reward = "";_close_modal()
 			var failure: String = store.safari_rewards.claim(store,key,map_id)
-			status.text = "已获得金牙，园长事件留后片。" if key=="gold_teeth" and failure=="" else "已获得HM03冲浪，按N教学。" if failure=="" else failure
+			status.text = Language.story("已获得金牙，园长事件留后片。") if key=="gold_teeth" and failure=="" else Language.story("已获得HM03冲浪，按N教学。") if failure=="" else Language.message(failure)
 			if failure=="":_build_map(map_id,player.position)
 			_state_trace("safari_reward_"+key if failure=="" else "safari_reward_failed")
 		return
@@ -729,8 +740,8 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		elif event.physical_keycode in [KEY_E,KEY_ENTER,KEY_SPACE]:
 			var action: String = safari_action;safari_action = "";_close_modal()
 			var failure: String = store.safari.enter(store,map_id) if action=="enter" else store.safari.leave(store)
-			if failure!="":status.text = failure;_state_trace("safari_failed")
-			else:_restore_location();status.text = "入园成功：30临时球 / 600步，普通球不变。" if action=="enter" else "已退出，临时球已归还。";_state_trace("safari_"+action)
+			if failure!="":status.text = Language.message(failure);_state_trace("safari_failed")
+			else:_restore_location();status.text = Language.story("入园成功：30临时球 / 600步，普通球不变。") if action=="enter" else Language.story("已退出，临时球已归还。");_state_trace("safari_"+action)
 		return
 	if event.physical_keycode==KEY_J and not in_battle and not is_instance_valid(modal):flash_teaching=false;fly_teaching=false;strength_teaching=true;surf_teaching=false;_hm_menu();return
 	if event.physical_keycode==KEY_R and store.safari.active(store.state) and not in_battle:_safari_prompt("leave");return
@@ -740,19 +751,19 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		elif hall_phase=="record" and event.physical_keycode in [KEY_E,KEY_ENTER,KEY_SPACE]:_hall_register()
 		elif hall_phase=="done" and event.physical_keycode in [KEY_E,KEY_ENTER,KEY_SPACE]:
 			hall_phase="";_close_modal();_change_map("pallet-town",Vector2(store.hall_of_fame.CONTINUE["x"],store.hall_of_fame.CONTINUE["y"]))
-			status.text="名人堂已登记 · 已在真新镇继续 · 可读档继续冒险";_state_trace("hall_of_fame_continue")
+			status.text=Language.story("名人堂已登记 · 已在真新镇继续 · 可读档继续冒险");_state_trace("hall_of_fame_continue")
 		elif hall_phase in ["oak","record","failed"] and event.physical_keycode in [KEY_ESCAPE,KEY_B]:
-			hall_phase="";_close_modal();status.text="面向大木博士按 E 登记名人堂。";_state_trace("hall_of_fame_cancelled")
+			hall_phase="";_close_modal();status.text=Language.story("面向大木博士按 E 登记名人堂。");_state_trace("hall_of_fame_cancelled")
 		elif hall_phase=="failed" and event.physical_keycode in [KEY_E,KEY_ENTER,KEY_SPACE]:_hall_dialog("record")
 		return
 	if flash_pending:
 		if event.physical_keycode in [KEY_ESCAPE,KEY_B,KEY_2]:
-			flash_pending=false;_close_modal();status.text="下次收集好资料再来吧。";_state_trace("flash_declined")
+			flash_pending=false;_close_modal();status.text=Language.story("下次收集好资料再来吧。");_state_trace("flash_declined")
 		elif event.physical_keycode in [KEY_E,KEY_ENTER,KEY_SPACE,KEY_1]:
 			flash_pending=false;_close_modal()
 			var count: int = store.pokedex.kanto_caught(store.state,store.species)
 			var failure: String = store.flash_reward.claim(store,map_id)
-			status.text="关都捕获或拥有%d种：获得HM05闪光！K查看；I教学；U在岩山隧道使用。" % count if failure=="" else "关都捕获或拥有%d种。%s" % [count,failure]
+			status.text=Language.story("关都捕获或拥有%d种：获得HM05闪光！K查看；I教学；U在岩山隧道使用。") % count if failure=="" else Language.story("关都捕获或拥有%d种。%s") % [count,Language.message(failure)]
 			_state_trace("flash_claimed" if failure=="" else "flash_failed")
 		return
 	if dojo_choice_pending:
@@ -760,10 +771,10 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		if event.physical_keycode in [KEY_ESCAPE,KEY_B]:dojo_choice_pending=false;_close_modal();_state_trace("dojo_choice_cancelled")
 		elif event.physical_keycode in [KEY_1,KEY_2,KEY_E,KEY_ENTER,KEY_SPACE]:
 			var species_id:String="hitmonlee" if event.physical_keycode==KEY_1 else "hitmonchan" if event.physical_keycode==KEY_2 else ""
-			if species_id=="":status.text="请选择 1 飞腿郎或 2 快拳郎。";return
+			if species_id=="":status.text=Language.story("请选择 1 飞腿郎或 2 快拳郎。");return
 			var failure:String=store.dojo_rules.claim(store,species_id)
-			if failure!="":status.text=failure;_state_trace("dojo_gift_failed");return
-			dojo_choice_pending=false;_close_modal();_change_map(map_id,player.position);status.text="已选择%s并保存。" % ("飞腿郎" if species_id=="hitmonlee" else "快拳郎");_state_trace("dojo_gift_claimed")
+			if failure!="":status.text=Language.message(failure);_state_trace("dojo_gift_failed");return
+			dojo_choice_pending=false;_close_modal();_change_map(map_id,player.position);status.text=Language.story("已选择%s并保存。") % (Language.story("飞腿郎") if species_id=="hitmonlee" else Language.story("快拳郎"));_state_trace("dojo_gift_claimed")
 		return
 	if pending_trainer!="":
 		if Time.get_ticks_msec()<trainer_ready_at:return
@@ -800,15 +811,15 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		KEY_G:
 			_ground_item_bag()
 		KEY_K:
-			_new_modal("背包 · 关键物品")
-			UI.label(modal,"宝可梦笛 ×1 · 点击吹奏可唤醒队伍。" if store.tower_story.flute(store.state) else "尚未获得宝可梦笛。",Rect2(100,200,755,150),22)
-			if store.tower_story.flute(store.state):UI.button(modal,"吹奏宝可梦笛",Rect2(100,245,755,45),_field_flute)
-			UI.label(modal,"卡片钥匙 ×1 · 可反复打开公司卡片门。" if store.silph_story.has_key(store.state) else "尚未获得卡片钥匙。",Rect2(100,450,755,36),20)
-			UI.label(modal,"茶 ×1 · 可交给7号道路关卡守卫。" if store.tea_rules.has_tea(store.state) else "茶已交给守卫，四关卡共享通行。" if store.saffron_rules.opened(store.state) else "尚未获得茶。",Rect2(100,365,755,90),22)
-			UI.label(modal,"金牙 ×%d · HM03冲浪 ×%d；N 教学冲浪。" % [store.safari_rewards.quantity(store.state,"gold_teeth"),store.safari_rewards.quantity(store.state,"hm03")],Rect2(100,300,755,50),20)
-			UI.label(modal,"秘密钥匙 ×1 · 红莲道馆入馆凭证（馆内后续开放）。" if store.pokemon_mansion.has_key(store.state) else "尚未获得秘密钥匙。",Rect2(100,485,755,32),20)
-			UI.label(modal,"HM02 ×%d · 兑换券 ×%d · 自行车 ×%d · L教学 / F飞翔 / V骑乘" % [int(store.travel.has_hm(store.state)),int(store.state.get("travel",{}).get("voucher",0)),int(store.travel.bicycle(store.state))],Rect2(100,155,755,36),18)
-			UI.label(modal,"HM05闪光 ×%d · I教学；U在岩山隧道使用。" % store.flash_reward.quantity(store.state),Rect2(100,520,755,30),18)
+			_new_modal(Language.text("ui.2e47e85680fb","背包 · 关键物品"))
+			UI.label(modal,Language.text("ui.966d3254ed44","宝可梦笛 ×1 · 点击吹奏可唤醒队伍。") if store.tower_story.flute(store.state) else Language.text("ui.bc7e410c548b","尚未获得宝可梦笛。"),Rect2(100,200,755,150),22)
+			if store.tower_story.flute(store.state):UI.button(modal,Language.text("ui.ce533104fe26","吹奏宝可梦笛"),Rect2(100,245,755,45),_field_flute)
+			UI.label(modal,Language.text("ui.6402ab95315f","卡片钥匙 ×1 · 可反复打开公司卡片门。") if store.silph_story.has_key(store.state) else Language.text("ui.1635cbb69e1d","尚未获得卡片钥匙。"),Rect2(100,450,755,36),20)
+			UI.label(modal,Language.text("ui.35dd68b73782","茶 ×1 · 可交给7号道路关卡守卫。") if store.tea_rules.has_tea(store.state) else Language.text("ui.2cd144a59661","茶已交给守卫，四关卡共享通行。") if store.saffron_rules.opened(store.state) else Language.text("ui.73f8d17eb015","尚未获得茶。"),Rect2(100,365,755,90),22)
+			UI.label(modal,Language.text("ui.16623518730f","金牙 ×%d · HM03冲浪 ×%d；N 教学冲浪。") % [store.safari_rewards.quantity(store.state,"gold_teeth"),store.safari_rewards.quantity(store.state,"hm03")],Rect2(100,300,755,50),20)
+			UI.label(modal,Language.text("ui.053be9f7fb13","秘密钥匙 ×1 · 红莲道馆入馆凭证（馆内后续开放）。") if store.pokemon_mansion.has_key(store.state) else Language.text("ui.62f887511b9a","尚未获得秘密钥匙。"),Rect2(100,485,755,32),20)
+			UI.label(modal,Language.text("ui.4dada61f167e","HM02 ×%d · 兑换券 ×%d · 自行车 ×%d · L教学 / F飞翔 / V骑乘") % [int(store.travel.has_hm(store.state)),int(store.state.get("travel",{}).get("voucher",0)),int(store.travel.bicycle(store.state))],Rect2(100,155,755,36),18)
+			UI.label(modal,Language.text("ui.3e132221e457","HM05闪光 ×%d · I教学；U在岩山隧道使用。") % store.flash_reward.quantity(store.state),Rect2(100,520,755,30),18)
 			_state_trace("key_items_open")
 		KEY_M:
 			flash_teaching=false;fly_teaching=false;strength_teaching = false;surf_teaching = false;_hm_menu()
@@ -821,19 +832,19 @@ func _unhandled_key_input(event: InputEvent) -> void:
 			if Time.get_ticks_msec()>=interaction_ready_at and _ground_item_interact(cell):return
 			if Time.get_ticks_msec()>=interaction_ready_at and boulders.index(cell+Vector2i(player.facing))>=0:
 				var failure:String=store.strength.field_error(store.state)
-				if failure!="":status.text=failure;_state_trace("strength_rejected");return
-				boulder_pending=true;_new_modal("使用怪力？");UI.label(modal,"E确认 · Esc取消。离开地图后石头复位。",Rect2(100,220,755,180),24);_state_trace("strength_prompt");return
+				if failure!="":status.text=Language.message(failure);_state_trace("strength_rejected");return
+				boulder_pending=true;_new_modal(Language.story("使用怪力？"));UI.label(modal,Language.story("E确认 · Esc取消。离开地图后石头复位。"),Rect2(100,220,755,180),24);_state_trace("strength_prompt");return
 			if Time.get_ticks_msec()>=interaction_ready_at and map_id=="wardens-house" and cell==Vector2i(2,4) and player.facing.y<0:
-				if store.strength.action(store.state)=="done":status.text="怪力能推动石头。HM04已经领取。";_state_trace("warden_repeat");return
-				warden_pending=true;_new_modal("园长 · 金牙与怪力");UI.label(modal,"交还金牙，或领取待领HM04。
-E确认 · Esc取消。",Rect2(100,220,755,180),24);_state_trace("warden_prompt");return
+				if store.strength.action(store.state)=="done":status.text=Language.story("怪力能推动石头。HM04已经领取。");_state_trace("warden_repeat");return
+				warden_pending=true;_new_modal(Language.story("园长 · 金牙与怪力"));UI.label(modal,Language.story("交还金牙，或领取待领HM04。
+E确认 · Esc取消。"),Rect2(100,220,755,180),24);_state_trace("warden_prompt");return
 			if Time.get_ticks_msec()>=interaction_ready_at:
 				for entry in trainer_rules.victory:
 					if entry["map"]==map_id and cell+Vector2i(player.facing)==Vector2i(entry["cell"][0],entry["cell"][1]):
 						_forest_trainer_interact(entry);return
 				for actor in league_actors:
 					if actor["map"]==map_id and not actor.get("boulder",false) and cell+Vector2i(player.facing)==Vector2i(actor["cell"][0],actor["cell"][1]):
-						status.text="火焰鸟目前仅展示，捕获未开放。" if actor.get("legendary",false) else "可见物品拾取延期。";_state_trace("victory_deferred");return
+						status.text=Language.story("火焰鸟目前仅展示，捕获未开放。") if actor.get("legendary",false) else Language.story("可见物品拾取延期。");_state_trace("victory_deferred");return
 			if map_id=="route21" and Time.get_ticks_msec()>=interaction_ready_at:
 				for tr in trainer_rules.route21:
 					var tc:=Vector2i(tr["cell"][0],tr["cell"][1]);var dd:=tc-cell
@@ -852,7 +863,7 @@ E确认 · Esc取消。",Rect2(100,220,755,180),24);_state_trace("warden_prompt"
 						if map_id=="route11":
 							for entry in trainer_rules.o13:
 								if entry["redObject"]==actor["redObject"]:_forest_trainer_interact(entry);return
-						status.text="2F与服务尚未开放。" if map_id=="route11-gate-1f" else "地鼠挖出了这条洞穴。" if map_id=="digletts-cave-route11" else "南方关卡的助手会检查关都捕获或拥有种类，达10种可领取HM05。"
+						status.text=Language.story("2F与服务尚未开放。") if map_id=="route11-gate-1f" else Language.story("地鼠挖出了这条洞穴。") if map_id=="digletts-cave-route11" else Language.story("南方关卡的助手会检查关都捕获或拥有种类，达10种可领取HM05。")
 						return
 			if map_id=="vermilion-gym" and Time.get_ticks_msec()>=interaction_ready_at and _gym_interact(cell):return
 			if map_id=="ssanne-2f" and cell.x in [36,37] and cell.y==8 and Time.get_ticks_msec()>=interaction_ready_at:
@@ -867,7 +878,7 @@ E确认 · Esc取消。",Rect2(100,220,755,180),24);_state_trace("warden_prompt"
 						if map_id=="ssanne-1f-rooms" and int(actor["redObject"]) in [2,3,4]:
 							for entry in trainer_rules.ship_rooms:
 								if entry["redObject"]==actor["redObject"]:_forest_trainer_interact(entry);return
-						status.text = actor.get("text","1F客房开放；其他船层未开放。")
+						status.text = Language.story(actor.get("text",Language.story("1F客房开放；其他船层未开放。")))
 						_trace({"event":"ship_actor_dialog","object":actor["redObject"],"text":status.text});return
 			if map_id in ["underground-route5","underground-route6","vermilion-city"] and Time.get_ticks_msec()>=interaction_ready_at:
 				for actor in south_actors:
@@ -875,7 +886,7 @@ E确认 · Esc取消。",Rect2(100,220,755,180),24);_state_trace("warden_prompt"
 					if actor["map"]==map_id and absi(cell.x-target.x)+absi(cell.y-target.y)==1 and player.facing.dot(Vector2(target-cell))>0.5:
 						if map_id=="vermilion-city" and actor["redObject"]==3:
 							_ship_ticket_dialog(cell==Vector2i(18,30) and player.facing.y>0);return
-						status.text = "这里是通往华蓝市与枯叶市的地下通道；交换功能未开放。" if map_id=="underground-route5" else "地下通道通往5号道路，地面南方是枯叶市。" if map_id=="underground-route6" else "中心、商店与船1F开放；其他建筑未开放。"
+						status.text = Language.story("这里是通往华蓝市与枯叶市的地下通道；交换功能未开放。") if map_id=="underground-route5" else Language.story("地下通道通往5号道路，地面南方是枯叶市。") if map_id=="underground-route6" else Language.story("中心、商店与船1F开放；其他建筑未开放。")
 						return
 			if map_id in ["cerulean-city","cerulean-trashed-house"] and Time.get_ticks_msec()>=interaction_ready_at and _thief_interact(cell):return
 			if map_id=="bills-house" and Time.get_ticks_msec()>=interaction_ready_at and _bill_interact(cell):return
@@ -899,7 +910,7 @@ E确认 · Esc取消。",Rect2(100,220,755,180),24);_state_trace("warden_prompt"
 				for actor in cinnabar_actors:
 					var target := Vector2i(actor["cell"][0],actor["cell"][1])
 					if actor["map"]==map_id and actor["role"] in ["visitor","link"] and absi(cell.x-target.x)+absi(cell.y-target.y)==1 and player.facing.dot(Vector2(target-cell))>0.5:
-						status.text = "通信功能未开放。" if actor["role"]=="link" else "红莲岛中心与商店开放；大宅、研究所和七岛延期。";return
+						status.text = Language.story("通信功能未开放。") if actor["role"]=="link" else Language.story("红莲岛中心与商店开放；大宅、研究所和七岛延期。");return
 			if map_id=="cinnabar-gym" and Time.get_ticks_msec()>=interaction_ready_at and _cinnabar_gym_interact(cell):return
 			if map_id=="fighting-dojo" and Time.get_ticks_msec()>=interaction_ready_at and _dojo_interact(cell):return
 			if map_id in ["safari-zone-west","safari-zone-secret-house","safari-zone-north","safari-zone-east","safari-zone-gate","safari-zone-entry","fuchsia-gym","route14","route15","route15-gate-1f","fuchsia-city","fuchsia-center","fuchsia-mart"] and Time.get_ticks_msec()>=interaction_ready_at and _fuchsia_interact(cell):return
@@ -913,12 +924,12 @@ E确认 · Esc取消。",Rect2(100,220,755,180),24);_state_trace("warden_prompt"
 				if map_id=="celadon-mart-2f" and cell==Vector2i(6,5) and player.facing.y<0:_shop_dialog("list");return
 				for actor in celadon_actors:
 					var target := Vector2i(actor["cell"][0],actor["cell"][1])
-					if actor["map"]==map_id and not (map_id=="celadon-center" and actor["redObject"]==1) and absi(cell.x-target.x)+absi(cell.y-target.y)==1 and player.facing.dot(Vector2(target-cell))>0.5:status.text = "玉虹百货1至5F与屋顶可达；新楼层服务尚未开放。";return
+					if actor["map"]==map_id and not (map_id=="celadon-center" and actor["redObject"]==1) and absi(cell.x-target.x)+absi(cell.y-target.y)==1 and player.facing.dot(Vector2(target-cell))>0.5:status.text = Language.story("玉虹百货1至5F与屋顶可达；新楼层服务尚未开放。");return
 			if map_id in ["lavender-town","lavender-center","lavender-mart"] and Time.get_ticks_msec()>=interaction_ready_at:
 				for actor in lavender_actors:
 					var target := Vector2i(actor["cell"][0],actor["cell"][1])
 					if actor["map"]==map_id and actor["role"] in ["visitor","link"] and absi(cell.x-target.x)+absi(cell.y-target.y)==1 and player.facing.dot(Vector2(target-cell))>0.5:
-						status.text = "通信功能未开放。" if actor["role"]=="link" else "紫苑镇中心与商店开放；宝可梦塔、富士与笛子剧情未开放。";return
+						status.text = Language.story("通信功能未开放。") if actor["role"]=="link" else Language.story("紫苑镇中心与商店开放；宝可梦塔、富士与笛子剧情未开放。");return
 			if map_id=="mtmoon-b2f" and Time.get_ticks_msec()>=interaction_ready_at and _fossil_interact(cell):return
 			if map_id in ["route9","route10-north","route6","viridian-forest","pewter-gym","cerulean-gym","route25","route24","route3","mtmoon-1f","mtmoon-b2f"] and Time.get_ticks_msec()>=interaction_ready_at:
 				for entry in (trainer_rules.roads.filter(func(v):return v["map"]==map_id) if map_id in ["route9","route10-north"] else trainer_rules.route6 if map_id=="route6" else trainer_rules.route25 if map_id=="route25" else trainer_rules.route24 if map_id=="route24" else trainer_rules.cerulean if map_id=="cerulean-gym" else trainer_rules.rockets if map_id=="mtmoon-b2f" else trainer_rules.mtmoon if map_id=="mtmoon-1f" else trainer_rules.forest if map_id=="viridian-forest" else trainer_rules.route3 if map_id=="route3" else trainer_rules.pewter):
@@ -930,20 +941,20 @@ E确认 · Esc取消。",Rect2(100,220,755,180),24);_state_trace("warden_prompt"
 				for actor in service_actors:
 					var target := Vector2i(actor["cell"][0],actor["cell"][1])
 					if actor["map"]==map_id and actor["role"] in ["visitor","link"] and absi(cell.x-target.x)+absi(cell.y-target.y)==1 and player.facing.dot(Vector2(target-cell))>0.5:
-						status.text = "通信与交换功能未开放。" if actor["role"]=="link" else "中心提供治疗与PC；商店仅出售已实现的货单子集。";return
+						status.text = Language.story("通信与交换功能未开放。") if actor["role"]=="link" else Language.story("中心提供治疗与PC；商店仅出售已实现的货单子集。");return
 			if map_id=="hall-of-fame" and Time.get_ticks_msec()>=interaction_ready_at:
 				for a in hall_actors:
 					var delta:=Vector2i(a["cell"][0],a["cell"][1])-cell
 					if absi(delta.x)+absi(delta.y)==1 and player.facing.dot(Vector2(delta))>0.5:
 						if store.hall_of_fame.pending(store.state):_hall_dialog("oak")
-						else:status.text="名人堂已经登记。";_state_trace("hall_of_fame_repeat_rejected")
+						else:status.text=Language.story("名人堂已经登记。");_state_trace("hall_of_fame_repeat_rejected")
 						return
 			if map_id in store.league.ROOMS and Time.get_ticks_msec()>=interaction_ready_at:
 				for a in elite_actors:
 					var target:=Vector2i(a["cell"][0],a["cell"][1]);var delta:=target-cell
 					if a["map"]==map_id and absi(delta.x)+absi(delta.y)==1 and player.facing.dot(Vector2(delta))>0.5:
 						if map_id in ["league-lorelei","league-bruno","league-agatha","league-lance","league-champion"]:_forest_trainer_interact(trainer_rules.definition({"league-lorelei":"league_lorelei","league-bruno":"league_bruno","league-agatha":"league_agatha","league-lance":"league_lance","league-champion":"league_champion"}[map_id]))
-						else:status.text="联盟挑战尚未开放。";_state_trace("league_deferred")
+						else:status.text=Language.story("联盟挑战尚未开放。");_state_trace("league_deferred")
 						return
 			if map_id=="indigo-lobby" and Time.get_ticks_msec()>=interaction_ready_at:
 				if cell==Vector2i(7,7) and player.facing.y<0:_nurse_dialog("welcome");return
@@ -951,7 +962,7 @@ E确认 · Esc取消。",Rect2(100,220,755,180),24);_state_trace("warden_prompt"
 				if cell==Vector2i(2,5) and player.facing.x<0:_shop_dialog("list");return
 				for a in indigo_actors:
 					var t:=Vector2i(a["cell"][0],a["cell"][1])
-					if absi(t.x-cell.x)+absi(t.y-cell.y)==1 and player.facing.dot(Vector2(t-cell))>0.5:status.text="通信功能未开放。" if a["role"]=="link" else "先治疗并补足道具，再挑战四天王。北门可以挑战科拿。";return
+					if absi(t.x-cell.x)+absi(t.y-cell.y)==1 and player.facing.dot(Vector2(t-cell))>0.5:status.text=Language.story("通信功能未开放。") if a["role"]=="link" else Language.story("先治疗并补足道具，再挑战四天王。北门可以挑战科拿。");return
 			if map_id=="route22" and absi(cell.x-25)+absi(cell.y-5)==1 and Time.get_ticks_msec()>=interaction_ready_at:
 				var direction := Vector2(25-cell.x,5-cell.y)
 				if player.facing.dot(direction)>0.5:_rival_interact()
@@ -967,10 +978,10 @@ E确认 · Esc取消。",Rect2(100,220,755,180),24);_state_trace("warden_prompt"
 		KEY_P:
 			_team_menu()
 		KEY_H:
-			if store.league.active(store.state):status.text="联盟连战中不能使用免费营地，请使用背包道具。";return
+			if store.league.active(store.state):status.text=Language.story("联盟连战中不能使用免费营地，请使用背包道具。");return
 			store.heal_and_supply()
 			if _save():
-				status.text = "免费营地补给：全队恢复，捕捉球补至 10。"
+				status.text = Language.story("免费营地补给：全队恢复，捕捉球补至 10。")
 			_state_trace("supply")
 		KEY_F5:
 			_save()
@@ -996,7 +1007,7 @@ func _save() -> bool:
 	store.state["location"] = {"map_id":map_id,"x":saved_position.x,"y":saved_position.y}
 	var ok: bool = battle.save_canonical() if in_battle and is_instance_valid(battle) else store.save_game()
 	if not ok:store.state=before_save
-	status.text = "已保存 · 余额 %d · 球 %d · 药 %d" % [store.state.get("money",0),store.state.get("balls",0),store.state.get("potions",0)] if ok else store.error
+	status.text = Language.text("ui.7aed6ad64fd1","已保存 · 余额 %d · 球 %d · 药 %d") % [store.state.get("money",0),store.state.get("balls",0),store.state.get("potions",0)] if ok else Language.message(store.error)
 	_trace({"event":"saved" if ok else "save_failed","path":ProjectSettings.globalize_path(store.PATH)})
 	return ok
 
@@ -1011,9 +1022,10 @@ func _new_modal(title: String) -> void:
 	overlay.get_parent().add_child(modal)
 	player.active = false
 	UI.panel(modal,Rect2(74,100,812,460),Color("18343c"))
-	UI.label(modal,title,Rect2(99,116,760,42),27)
+	UI.label(modal,Language.story(title),Rect2(99,116,760,42),27)
 
 func _close_modal() -> void:
+	language_team_open=false
 	shop_phase = ""
 	nurse_phase = ""
 	mail_phase = ""
@@ -1025,8 +1037,8 @@ func _close_modal() -> void:
 
 func _starter_menu() -> void:
 	load_status = "missing"
-	_new_modal("首次出发 · 选择一只初始伙伴")
-	UI.label(modal,"仅无存档时选择。伙伴、HP、球和首发会保存在本机。",Rect2(100,170,755,40),19)
+	_new_modal(Language.story("首次出发 · 选择一只初始伙伴"))
+	UI.label(modal,Language.story("仅无存档时选择。伙伴、HP、球和首发会保存在本机。"),Rect2(100,170,755,40),19)
 	for i in range(3):
 		var id: String = ["bulbasaur","charmander","squirtle"][i]
 		var texture := TextureRect.new()
@@ -1035,14 +1047,14 @@ func _starter_menu() -> void:
 		texture.size = Vector2(192,192)
 		texture.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 		modal.add_child(texture)
-		UI.button(modal,"%d 选择%s" % [i+1,store.species[id]["name"]],Rect2(105+i*250,430,245,65),_pick_starter.bind(id))
+		UI.button(modal,Language.story("%d 选择%s") % [i+1,Language.name(store.species[id]["name"]) ],Rect2(105+i*250,430,245,65),_pick_starter.bind(id))
 
 func _pick_starter(id: String) -> void:
 	if load_status != "missing":
 		return
 	if not store.new_game(id):
-		status.text = store.error
-		UI.label(modal,store.error,Rect2(100,470,750,60),18)
+		status.text = Language.message(store.error)
+		UI.label(modal,Language.message(store.error),Rect2(100,470,750,60),18)
 		return
 	load_status = "loaded"
 	_close_modal()
@@ -1050,19 +1062,20 @@ func _pick_starter(id: String) -> void:
 	_save()
 
 func _corrupt_menu() -> void:
-	_new_modal("存档需要处理 · 原文件已保留")
-	UI.label(modal,store.error,Rect2(100,180,760,70),20)
-	UI.button(modal,"保留文件并退出",Rect2(110,300,735,65),func():get_tree().quit())
-	UI.button(modal,"我要放弃旧进度并新建…",Rect2(110,390,735,65),_confirm_reset)
+	_new_modal(Language.text("ui.6ca28feb12ee","存档需要处理 · 原文件已保留"))
+	UI.label(modal,Language.message(store.error),Rect2(100,180,760,70),20)
+	UI.button(modal,Language.text("ui.849a498d3116","保留文件并退出"),Rect2(110,300,735,65),func():get_tree().quit())
+	UI.button(modal,Language.text("ui.03aee79b0363","我要放弃旧进度并新建…"),Rect2(110,390,735,65),_confirm_reset)
 
 func _confirm_reset() -> void:
-	_new_modal("再次确认：放弃原本地存档？")
-	UI.label(modal,"选择伙伴并保存后会替换旧文件。没有自动备份。",Rect2(105,180,750,60),21)
-	UI.button(modal,"取消，保留原文件退出",Rect2(110,290,735,65),func():get_tree().quit())
-	UI.button(modal,"确认新建，前往选择伙伴",Rect2(110,390,735,65),_starter_menu)
+	_new_modal(Language.text("ui.9bc3cb86c826","再次确认：放弃原本地存档？"))
+	UI.label(modal,Language.text("ui.c7cf63b30530","选择伙伴并保存后会替换旧文件。没有自动备份。"),Rect2(105,180,750,60),21)
+	UI.button(modal,Language.text("ui.740e1597d758","取消，保留原文件退出"),Rect2(110,290,735,65),func():get_tree().quit())
+	UI.button(modal,Language.text("ui.c88372bd1161","确认新建，前往选择伙伴"),Rect2(110,390,735,65),_starter_menu)
 
 func _team_menu() -> void:
-	_new_modal("队伍 · 精灵球 %d · 伤药 %d" % [int(store.state["balls"]),int(store.state["potions"])])
+	language_team_open=true
+	_new_modal(Language.text("team.title","队伍 · 精灵球 %d · 伤药 %d",[int(store.state["balls"]),int(store.state["potions"])]))
 	var move_data: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://data/moves.json"))
 	for i in range(store.state["team"].size()):
 		var pet: Dictionary = store.state["team"][i]
@@ -1081,7 +1094,7 @@ func _team_menu() -> void:
 		if ResourceLoader.exists(icon_path):icon.texture=load(icon_path)
 		icon.position=Vector2(103,y+1);icon.size=Vector2(48,48)
 		icon.texture_filter=CanvasItem.TEXTURE_FILTER_NEAREST;icon.mouse_filter=Control.MOUSE_FILTER_IGNORE;modal.add_child(icon)
-		UI.label(modal,"%d %s Lv%d %s" % [i+1,data["name"],int(pet["level"]),"首发" if lead else ""],Rect2(155,y+1,260,22),16)
+		UI.label(modal,Language.text("team.member","%d %s Lv%d %s",[i+1,Language.display_name(pet,data["name"]),int(pet["level"]),Language.text("team.lead","首发") if lead else ""]),Rect2(155,y+1,260,22),16)
 		var maximum: int = int(store.growth.stats(pet)["hp"])
 		var ratio: float = clampf(float(pet["hp"])/maximum,0,1)
 		var bar:=ColorRect.new();bar.position=Vector2(424,y+8);bar.size=Vector2(110,8);bar.color=Color("65776c");bar.mouse_filter=Control.MOUSE_FILTER_IGNORE
@@ -1090,11 +1103,12 @@ func _team_menu() -> void:
 		fill.mouse_filter=Control.MOUSE_FILTER_IGNORE;bar.add_child(fill);modal.add_child(bar)
 		UI.label(modal,"HP %d/%d" % [int(pet["hp"]),maximum],Rect2(541,y+1,126,22),14)
 		var skills: Array[String] = []
-		for id in pet["moves"]:skills.append("%s %d/%d" % [move_data[id]["name"],int(pet["pp"][id]),int(move_data[id]["pp"])])
+		for id in pet["moves"]:skills.append("%s %d/%d" % [Language.name(move_data[id]["name"]),int(pet["pp"][id]),int(move_data[id]["pp"])])
 		UI.label(modal,"EXP %s · %s" % [str(pet["exp"])," / ".join(skills)],Rect2(155,y+25,600,23),12)
-		var button := UI.button(modal,"%d 首发" % [i+1],Rect2(762,y+5,94,38),_set_lead.bind(i))
+		var button := UI.button(modal,Language.text("team.choose","%d 首发",[i+1]),Rect2(762,y+5,94,38),_set_lead.bind(i))
 		button.disabled=int(pet["hp"])<=0 or lead
-	UI.button(modal,"P / Esc 返回地图",Rect2(105,484,745,54),_close_modal)
+	UI.button(modal,Language.text("team.back","P / Esc 返回地图"),Rect2(105,484,480,54),_close_modal)
+	UI.button(modal,Language.text("team.language","中文 / English · F8"),Rect2(595,484,255,54),_toggle_language)
 	_state_trace("team_view")
 
 func _set_lead(index: int) -> void:
@@ -1467,23 +1481,22 @@ func _change_map(id: String, arrival: Vector2) -> void:
 		var before:Dictionary=store.state.duplicate(true)
 		if store.seafoam.transition(map_id,id,store.state) or victory_road.transition(id,store.state):
 			store.state["location"]={"map_id":id,"x":arrival.x,"y":arrival.y}
-			if not store.save_game():store.state=before;status.text=store.error;_state_trace("victory_transition_failed");return
+			if not store.save_game():store.state=before;status.text=Language.message(store.error);_state_trace("victory_transition_failed");return
 	if id=="hall-of-fame" and not store.hall_of_fame.pending(store.state):
 		id="pallet-town";arrival=Vector2(store.hall_of_fame.CONTINUE["x"],store.hall_of_fame.CONTINUE["y"])
 	if id=="cinnabar-lab" and map_id!="cinnabar-lab":
 		if not store.fossil_rules.advance_on_entry(store,"cinnabar-lab",{"map_id":id,"x":arrival.x,"y":arrival.y}):
-			status.text=store.error;_state_trace("fossil_progress_failed");return
+			status.text=Language.message(store.error);_state_trace("fossil_progress_failed");return
 	_build_map(id,arrival)
 	ship_pass = false
 	if id=="hall-of-fame":_hall_dialog("oak")
 	moon_warp_latch = "%s:%d:%d" % [id,floori(arrival.x/16),floori((arrival.y-1)/16)] if id in moon_warps or id in ship_warps else ""
 	if store.sevii.world.has(id):
 		sevii_warp_latch="%s:%d:%d" % [id,floori(arrival.x/16),floori((arrival.y-1)/16)]
-		map_title.text=store.sevii.world[id]["source"]+" · FireRed"
-		status.text="E交谈/场外秘传 · F6碎岩教学 · F7攀瀑教学"
+		_refresh_map_language(id)
 		_trace({"event":"map_changed","map":id,"position":[arrival.x,arrival.y]});return
-	map_title.text = {"celadon-mart-3f":"玉虹百货 · 3F","celadon-mart-4f":"玉虹百货 · 4F","celadon-mart-5f":"玉虹百货 · 5F · 营养药","celadon-mart-roof":"玉虹百货 · 屋顶","celadon-mart-elevator":"玉虹百货 · 电梯","cinnabar-lab":"红莲岛 · 研究所入口","cinnabar-lab-fossil-room":"红莲研究所 · 化石研究室","route2-gate":"2号道路 · 东侧关卡","route2-trade-house":"2号道路 · 民居","route11":"11号道路 · Red地图","route11-gate-1f":"11号道路关卡 · 1F","digletts-cave-route11":"地鼠洞 · 南入口","digletts-cave":"地鼠洞 · 洞内","digletts-cave-route2":"地鼠洞 · 北入口","fighting-dojo":"金黄市 · 格斗道场","route5-gate":"5号道路关卡 · 茶通行","route6-gate":"6号道路关卡 · 茶通行","route8-gate":"8号道路关卡 · 茶通行", "seafoam-islands-b2f":"双子岛 · B2F","seafoam-islands-b3f":"双子岛 · B3F","seafoam-islands-b4f":"双子岛 · B4F","seafoam-islands-1f":"双子岛 · 1F","seafoam-islands-b1f":"双子岛 · B1F","route19":"19号水路 · 浅红南海岸","route20":"20号水路 · 双子岛东侧海域","route17":"17号道路 · 自行车道","route18":"18号道路 · 浅红市入口","route18-gate-1f":"18号道路关卡 · 1F","route18-gate-2f":"18号道路关卡 · 2F","route16":"16号道路 · 飞翔与自行车道","route16-gate-1f":"16号道路关卡 · 1F","route16-gate-2f":"16号道路关卡 · 2F","route16-fly-house":"16号道路 · 飞翔小屋","bike-shop":"华蓝市 · 自行车店","pokemon-fan-club":"枯叶市 · 宝可梦迷俱乐部","hall-of-fame":"宝可梦联盟 · 名人堂","league-lorelei":"宝可梦联盟 · 科拿","league-bruno":"宝可梦联盟 · 希巴","league-agatha":"宝可梦联盟 · 菊子","league-lance":"宝可梦联盟 · 渡","league-champion":"宝可梦联盟 · 冠军","indigo-lobby":"石英高原 · 联盟大厅","victory-road-2f":"冠军之路 · 2F压板与落石","victory-road-3f":"冠军之路 · 3F怪力与洞口","indigo-plateau":"石英高原 · 原出口","route22-gate":"联盟入口 · 灰色徽章检查","route23":"23号道路 · 八枚徽章与水路","victory-road-1f":"冠军之路 · 1F怪力机关","viridian-gym":"常青道馆 · Red原图与箭头地板","cinnabar-gym":"红莲道馆 · Red原迷宫 / FireRed队伍","pokemon-mansion-b1f":"宝可梦大宅 · B1F","pokemon-mansion-3f":"宝可梦大宅 · 3F","pokemon-mansion-2f":"宝可梦大宅 · 2F","pokemon-mansion-1f":"宝可梦大宅 · 1F","cinnabar-island":"红莲岛 · Red原图 / FireRed服务","cinnabar-center":"红莲岛 · 宝可梦中心","cinnabar-mart":"红莲岛 · 友好商店","route21":"21号水路 · Red原图 / FireRed队伍","wardens-house":"浅红市 · 园长家","safari-zone-west":"狩猎区 · West","safari-zone-secret-house":"狩猎区 · 秘密小屋","safari-zone-north":"狩猎区 · North","safari-zone-east":"狩猎区 · East","safari-zone-gate":"狩猎区 · 原入口","safari-zone-entry":"狩猎区 · Center","fuchsia-gym":"浅红道馆 · 原隐形墙迷宫","fuchsia-city":"浅红市 · Red原地图","fuchsia-center":"浅红市 · 宝可梦中心","fuchsia-mart":"浅红市 · 友好商店","route15":"15号道路 · 原东西道路","route15-gate-1f":"15号道路关卡 · 1F","route14":"14号道路 · 原纵向道路","route13":"13号道路 · 原围栏迷宫","route12":"12号道路 · 原南北道路","route12-gate-2f":"12号道路关卡 · 2F","route12-gate-1f":"12号道路关卡 · 1F","saffron-gym":"金黄道馆 · 原传送迷宫","silph-co-11f":"西尔佛公司 · 11层","silph-co-10f":"西尔佛公司 · 10层","silph-co-9f":"西尔佛公司 · 9层","silph-co-8f":"西尔佛公司 · 8层","silph-co-7f":"西尔佛公司 · 7层","silph-co-6f":"西尔佛公司 · 6层","silph-co-1f":"西尔佛公司 · 1层","silph-co-2f":"西尔佛公司 · 2层","silph-co-3f":"西尔佛公司 · 3层","silph-co-4f":"西尔佛公司 · 4层","silph-co-5f":"西尔佛公司 · 5层","silph-co-elevator":"西尔佛公司 · 电梯","route7-gate":"7号道路关卡 · 茶与共享通行","saffron-city":"金黄市 · Red原地图 / FireRed剧情","saffron-center":"金黄市 · 宝可梦中心","saffron-mart":"金黄市 · 友好商店","celadon-mansion-1f":"玉虹公寓 · 1F / Red原建筑","pokemon-tower-7f":"宝可梦塔 · 顶层救援","mr-fujis-house":"紫苑镇 · 富士的宝可梦之家","pokemon-tower-6f":"宝可梦塔 · 6层","pokemon-tower-5f":"宝可梦塔 · 5层净化区","pokemon-tower-4f":"宝可梦塔 · 4层","pokemon-tower-3f":"宝可梦塔 · 3层","pokemon-tower-2f":"宝可梦塔 · 2层劲敌","pokemon-tower-1f":"紫苑镇 · 宝可梦塔1层","rocket-hideout-elevator":"火箭队基地 · 电梯","rocket-hideout-b4f":"火箭队秘密基地 · 地下4层","rocket-hideout-b3f":"火箭队秘密基地 · 地下3层","rocket-hideout-b2f":"火箭队秘密基地 · 地下2层","game-corner":"玉虹游戏厅 · 海报后的秘密","rocket-hideout-b1f":"火箭队秘密基地 · 地下1层","celadon-gym":"玉虹道馆 · 莉佳 / FireRed完整队伍","celadon-city":"玉虹市 · Red地图 / FireRed规则","celadon-center":"玉虹市 · 宝可梦中心","celadon-mart-1f":"玉虹百货 · 1F服务大厅","celadon-mart-2f":"玉虹百货 · 2F训练家市场","route7":"7号道路 · Red地图 / FireRed规则","underground-route8":"地下通道 · 8号道路入口","underground-route7":"地下通道 · 7号道路入口","underground-west-east":"地下通道 · 东西通路","route8":"8号道路 · Red地图 / FireRed规则","route10-south":"10号道路南段 · 紫苑镇前","lavender-town":"紫苑镇 · Red地图 / FireRed规则","lavender-center":"紫苑镇 · 宝可梦中心","lavender-mart":"紫苑镇 · 友好商店","rock-tunnel-1f":"岩山隧道 · 一层 / U闪光照明","rock-tunnel-b1f":"岩山隧道 · 地下一层 / U闪光照明","route9":"9号道路 · Red地图 / FireRed规则","route10-north":"10号道路北段 · 岩山隧道前","vermilion-gym":"枯叶道馆 · 雷电机关","vermilion-dock":"枯叶港 · 圣安奴号码头","ssanne-captain":"圣安奴号 · 船长室","ssanne-2f":"圣安奴号 · 二层走廊","ssanne-1f-rooms":"圣安奴号 · 1F客房","ssanne-1f":"圣安奴号 · 1F大厅","underground-route5":"地下通道 · 5号道路入口","underground-route6":"地下通道 · 6号道路入口","underground-north-south":"地下通道 · 南北通路","route6":"6号道路 · Red地图 / FireRed规则","vermilion-center":"枯叶市 · 宝可梦中心","vermilion-mart":"枯叶市 · 友好商店","vermilion-city":"枯叶市 · 外部地图","pallet-town":"真新镇 · Red地图","route1":"1号道路 · Red地图 / FireRed遇敌","viridian-city":"常青市 · Red地图","viridian-center":"常青市 · 宝可梦中心","viridian-mart":"常青市 · 友好商店","route2":"2号道路 · Red地图 / FireRed遇敌","viridian-forest":"常青森林 · Red地图 / FireRed遇敌","forest-south-gate":"常青森林 · 南门","forest-north-gate":"常青森林 · 北门","route3":"3号道路 · Red地图 / FireRed规则","route5":"5号道路 · Red地图 / FireRed遇敌","cerulean-trashed-house":"华蓝市 · 被盗民宅","route25":"25号道路 · Red地图 / FireRed规则","bills-house":"海角小屋 · 正辉","route24":"24号道路 · 金珠桥 / FireRed规则","cerulean-gym":"华蓝道馆 · FireRed队伍","cerulean-city":"华蓝市 · Red地图","cerulean-center":"华蓝市 · 宝可梦中心","route4-east":"4号道路 · 月见山东侧","mtmoon-b1f":"月见山 · 地下一层","mtmoon-b2f":"月见山 · 地下二层","mtmoon-1f":"月见山 · 一层","route4-entrance":"月见山前 · 4号道路西段","mtmoon-center":"月见山前 · 宝可梦中心","pewter-city":"尼比市 · Red地图","pewter-gym":"尼比道馆 · FireRed队伍","pewter-center":"尼比市 · 宝可梦中心","route22":"22号道路 · Red地图 / FireRed劲敌"}[id]
-	status.text = {"celadon-mart-3f":"E交谈 · 双倍奉还一次教学 · 四招可替换","celadon-mart-4f":"原楼梯与电梯开放 · 进化石已开放","celadon-mart-5f":"E柜员购买营养药或战斗道具 · O打开背包使用","celadon-mart-roof":"E售货机购买饮料 · 女孩一次性兑换TM · G教学","celadon-mart-elevator":"面向右上按钮 E · 1至5选择 · Esc取消", "cinnabar-lab":"东侧房间通化石研究室 · 其他房间未开放","cinnabar-lab-fossil-room":"E与研究员交谈 · 交付化石或领取复活宝可梦","route2-gate":"E与助手交谈 · 关都捕获或拥有10种领取HM05","route2-trade-house":"E交谈 · 南口返回2号道路 · 交换未开放","route11":"西返枯叶 · 东往12号道路 · 训练家与陆地遇敌已开放","route11-gate-1f":"两侧通行 · 2F及服务未开放","digletts-cave-route11":"地鼠洞南入口 · 洞内陆地遇敌已开放","digletts-cave":"南往11号道路 · 北往2号道路 · 陆地遇敌已开放","digletts-cave-route2":"北出口接2号道路东侧 · 助手在南方关卡 · HM05领取已开放","fighting-dojo":"E训练家 · 馆主胜后可选奖赏 · 南口返回金黄市","route5-gate":"静态守卫 · 返回5号道路或通金黄","route6-gate":"静态守卫 · 返回6号道路或通金黄","route8-gate":"静态守卫 · 返回8号道路或通金黄","seafoam-islands-b2f":"E怪力 · 落石通B3F · 双石后自由冲浪","seafoam-islands-b3f":"E怪力 · 未堵流强制水流 · 双石后自由冲浪","seafoam-islands-b4f":"强制水流 · B4F落石终端 · 急冻鸟暂不开放","seafoam-islands-1f":"E怪力 · 原楼梯与洞口 · 跨层落石保持","seafoam-islands-b1f":"原楼梯与洞口通B2F · 落石保持","route19":"北返浅红 · E冲浪/训练家 · 西接20号水路","route20":"东返19号水路 · E训练家 · 东侧洞口通双子岛1F","route17":"自动下滑 · B刹车 · E训练家 · 南接18号道路","route18":"E训练家 · 东接浅红市 · 西返17号道路","route18-gate-1f":"E交谈 · 两侧往返 · 楼梯通2F","route18-gate-2f":"E交谈 · 原楼梯返回1F","route16":"E居合/卡比兽/训练家 · F飞翔 · V骑车 · 南口通17号道路上段","route16-gate-1f":"自行车道需要自行车 · 北通飞翔小屋","route16-gate-2f":"E交谈 · 原楼梯返回1F","route16-fly-house":"E领取HM02 · L教学飞翔 · F使用飞翔","bike-shop":"E兑换自行车 · 需要会长兑换券","pokemon-fan-club":"E听会长故事 · 领取自行车兑换券","hall-of-fame":"E 与大木博士交谈 · 登记名人堂","league-lorelei":"E挑战科拿 · B战间用药 · 入口关闭 · 胜后北门开放","league-bruno":"第一门已通过 · 希巴挑战留第57片","league-agatha":"菊子挑战留第58片","league-lance":"渡挑战留第59片","league-champion":"E挑战冠军 · 胜后北门前往名人堂","indigo-lobby":"护士/PC/补给 · 北门挑战联盟 · 战间不会自动恢复","victory-road-2f":"E训练家/怪力 · 洞内遇敌 · 火焰鸟未开放","victory-road-3f":"E训练家/怪力 · 洞内遇敌 · 出洞前往联盟","indigo-plateau":"北入联盟大厅 · 治疗/PC/补给开放","route22-gate":"原步进徽章检查 · 北往23号道路","route23":"原逐关检查 · E冲浪 · 双洞口通冠军之路 · 北往高原","victory-road-1f":"E训练家/怪力 · 原压板开路 · 洞内遇敌","viridian-gym":"E 训练家/坂木 · 绿色徽章 · 胜后领取TM","cinnabar-gym":"E 问答/训练家 · 夏伯 · 胜后领取TM","pokemon-mansion-b1f":"E 雕像/秘密钥匙 · 原楼梯返回1F","pokemon-mansion-3f":"原跌落路径 · E 雕像/训练家","pokemon-mansion-2f":"E 雕像开关/训练家 · 原楼梯通3F","pokemon-mansion-1f":"E 雕像开关/训练家 · 楼层共享门状态","cinnabar-island":"北返21号水路 · 中心/商店开放 · 道馆需要秘密钥匙","cinnabar-center":"护士E治疗 · 右上PC · 不补球药","cinnabar-mart":"柜台E · 火红货单 · 购买与出售","route21":"北返真新镇 · 南往红莲岛 · E训练家 · 水上遇敌","wardens-house":"E交金牙/领取HM04 · J怪力教学 · E启用怪力后方向键推石","safari-zone-west":"狩猎区 · West","safari-zone-secret-house":"狩猎区 · 秘密小屋","safari-zone-north":"狩猎区 · North","safari-zone-east":"R退出 · 原图探索 · Safari捕获延期","safari-zone-gate":"E交谈 · 500入园 · 600步 · 退出归还临时球","safari-zone-entry":"R主动退出 · East开放 · 捕获延期","fuchsia-gym":"隐形墙 · E挑战阿桔 · 粉红徽章 · 胜后领取TM","fuchsia-city":"中心/商店/道馆开放 · 其他区域延期","fuchsia-center":"护士E治疗 · 右上PC","fuchsia-mart":"柜台E · 火红货单 · 购买与出售","route15":"E 训练家 · 东返14号道路 · 西往浅红市","route15-gate-1f":"原门楼往返 · 2F延期","route14":"E 训练家 · 东返13号道路 · 西往15号道路","route13":"E 训练家 · 北返12号道路 · 西往14号道路","route12":"E 训练家 · 南到13边界止 · 钓鱼延期","route12-gate-2f":"E与女孩交谈领取TM27报恩 · 楼梯返回1F","route12-gate-1f":"北返紫苑 · 南往卡比兽 · 楼梯通2F","saffron-gym":"原传送板 · E 对战 · 金色徽章","silph-co-11f":"E 对战/卡片门 · 原楼梯/传送板","silph-co-10f":"E 对战/卡片门 · 原楼梯/传送板","silph-co-9f":"E 对战/卡片门 · 原楼梯/传送板","silph-co-8f":"E 对战/卡片门 · 原楼梯/传送板","silph-co-7f":"E 对战/卡片门 · 原楼梯/传送板","silph-co-6f":"E 对战/卡片门 · 原楼梯/传送板","silph-co-1f":"原楼梯/电梯/传送板 · K 关键物品","silph-co-2f":"E 研究员/火箭队/卡片门","silph-co-3f":"E 对战/卡片门 · 原传送板","silph-co-4f":"E 对战/卡片门 · 原楼梯/传送板","silph-co-5f":"原卡片钥匙在南侧 · E 拾取/开门","silph-co-elevator":"面向右上按钮 E · 选择已开放楼层","route7-gate":"向东通金黄 · 守卫踏步检查茶 · 无需确认","saffron-city":"西返7号道路 · 中心/商店开放 · 公司1–11层开放 · 道馆后续切片","saffron-center":"护士E治疗 · 右上PC · 不补球药","saffron-mart":"柜台E · 火红金黄货单 · 购买与出售","celadon-mansion-1f":"E 与老奶奶交谈 · K 关键物品 · 楼上未开放","pokemon-tower-7f":"E 火箭队与富士老人 · K 关键物品","mr-fujis-house":"另与富士老人交谈领取宝可梦笛 · K 关键物品","pokemon-tower-6f":"母亲幽灵安息后可登顶 · E 灵媒对战","pokemon-tower-5f":"原净化格恢复HP/PP · E 灵媒对战","pokemon-tower-4f":"原楼梯 · E 灵媒对战 · 检视镜辨识","pokemon-tower-3f":"检视镜辨认幽灵 · E 灵媒对战","pokemon-tower-2f":"原楼梯通往3层","pokemon-tower-1f":"E 与悼念者交谈 · 原楼梯通往二层","rocket-hideout-elevator":"面向左上按钮 E · 原楼层 B1 / B2 / B4","rocket-hideout-b4f":"E 坂木与检视镜 · 原双守卫门锁 · 电梯 B1/B2/B4","rocket-hideout-b3f":"箭头地板强制移动 · E 训练家 · B4/钥匙/电梯延期","rocket-hideout-b2f":"箭头地板强制移动 · E 训练家 · B3已开放/电梯延期","game-corner":"E 海报与守卫 · 代币和小游戏延期","rocket-hideout-b1f":"E 训练家 · 原隔门击败守卫后开启 · B2已开放 / 电梯待接入","celadon-gym":"原树E居合斩 · 面向训练家E · 胜后领取TM","celadon-city":"东返7号道路 · 公寓1F/中心/百货全层/道馆开放","celadon-center":"护士E治疗 · 右上PC · 不补球药","celadon-mart-1f":"原楼梯与电梯通1至5F · 屋顶从5F楼梯前往","celadon-mart-2f":"道具与TM柜台开放 · 购买与出售","route7":"东经茶关卡到金黄 · 西返玉虹 · 地下通道返8号道路","underground-route8":"原楼梯通玉虹方向 · 南口返8号道路","underground-route7":"原楼梯通紫苑方向 · 南口入7号道路","underground-west-east":"西往7号道路 · 东返8号道路","route8":"东返紫苑镇 · 草区需居合斩 · 金黄关卡前置未满足", "route10-south":"北洞口返岩山隧道 · 南往紫苑镇 · E 对战","lavender-town":"西往8号道路 · 中心商店开放 · 宝可梦塔1/2F开放 · 富士/改名延期","lavender-center":"护士 E 治疗 · 右上 PC · 不补球药","lavender-mart":"柜台右侧朝左 E · 火红货单与出售","rock-tunnel-1f":"原楼梯往返 · 地面遇敌 · E 训练家对战 · U使用闪光照明","rock-tunnel-b1f":"原楼梯往返 · 地面遇敌 · E 训练家对战 · U使用闪光照明","route9":"原树 E 居合斩 · 面向训练家 E · 东往10号道路","route10-north":"北口入岩山隧道 · 中心内部延期 · 西返9号道路","vermilion-gym":"E 调查垃圾桶或对战 · 南口返枯叶市","vermilion-dock":"南下登船 · 北返枯叶市","ssanne-captain":"E 船长交谈 · M 秘传教学 · 南口返二层","ssanne-2f":"西侧楼梯返1F · 东北船长室 · M 秘传教学","ssanne-1f-rooms":"E 交谈或对战 · 北门返大厅","ssanne-1f":"北出口离船 · 六间1F客房开放","underground-route5":"原楼梯南下6号道路 · 交换未开放","underground-route6":"原楼梯北返5号道路 · 南往枯叶市","underground-north-south":"北往5号道路 · 南往6号道路","route6":"E 面向训练家 · 南往枯叶市 · 北入口返地下通道","vermilion-center":"护士 E 治疗 · 右上PC · 不补球药","vermilion-mart":"柜台右侧朝左 E · 火红货单与出售","vermilion-city":"M 秘传教学 · 面向小树 E · 道馆垃圾桶机关开放","pallet-town":"向北通往1号道路 · 房门关闭","route1":"北往常青市 · 南往真新镇","viridian-city":"中心与商店开放 · 道馆需要其余七枚徽章","viridian-center":"柜台前朝上按 E 与护士交谈","viridian-mart":"柜台右侧朝左按 E · 球200 / 药300","route2":"北往尼比 · 南返常青 · 地鼠洞开放 · E居合斩","viridian-forest":"草丛遇敌 · 面向捕虫少年按 E 对战","forest-south-gate":"北入森林 · 南返2号道路","forest-north-gate":"南入森林 · 北往2号道路北段","route3":"草丛遇敌 · 面向训练家按 E · 北往月见山","route5":"北返华蓝市 · 地下通道通6号道路 · 培育屋与关卡未开放","cerulean-trashed-house":"原后墙破洞通屋后 · E 与住户交谈","route25":"E 面向训练家 · 西返金珠桥 · 东往正辉小屋","bills-house":"E 交谈或操作电脑 · 细胞分离与船票","route24":"E 挑战桥上五人 · 东往25号道路与正辉小屋","cerulean-gym":"面向训练家 E · 小霞胜利获得蓝色徽章","cerulean-city":"中心、道馆与北口金珠桥开放","cerulean-center":"柜台前朝上 E 治疗 · 右上 PC","route4-east":"东往华蓝市 · 西侧原单向跳台","mtmoon-b1f":"原楼梯往返 · 东口通往4号道路","mtmoon-b2f":"E 对战 / 化石二选一 · B1F东口通4号道路","mtmoon-1f":"普通地面遇敌 · 地下通道开放","route4-entrance":"中心与月见山一层开放","mtmoon-center":"护士 E 治疗 · 右上 PC 可寄存","pewter-city":"东往3号道路 · 道馆与中心开放","pewter-gym":"面向训练家按 E · 小刚胜利获得灰色徽章","pewter-center":"柜台前朝上按 E 与护士交谈","route22":"向劲敌按 E 对战 · 东返常青市 · 北门通23号道路"}[id]
+	_refresh_map_language(id)
+
 	_trace({"event":"map_changed","map":id,"position":[arrival.x,arrival.y]})
 
 func _restore_location() -> void:
@@ -1557,12 +1570,12 @@ func _hall_dialog(phase: String) -> void:
 	player.active = false
 	if phase=="oak":
 		UI.panel(modal,Rect2(0,448,960,192))
-		UI.label(modal,"大木博士 · FireRed原文中文译意",Rect2(30,452,850,24),16)
-		UI.label(modal,"咳咳！恭喜你！这里是宝可梦名人堂。\n宝可梦联盟冠军的事迹和宝可梦都会记录在这里。\n你和你的宝可梦都是名人堂成员了！  E 继续 · Esc 稍后",Rect2(30,481,900,150),21)
+		UI.label(modal,Language.story("大木博士 · FireRed原文中文译意"),Rect2(30,452,850,24),16)
+		UI.label(modal,Language.story("咳咳！恭喜你！这里是宝可梦名人堂。\n宝可梦联盟冠军的事迹和宝可梦都会记录在这里。\n你和你的宝可梦都是名人堂成员了！  E 继续 · Esc 稍后"),Rect2(30,481,900,150),21)
 	else:
 		UI.panel(modal,Rect2(70,90,820,500))
 		var count:int=store.hall_of_fame.teams(store.state).size()
-		UI.label(modal,"名人堂 · 第%d次登记" % (count if phase=="done" else count+1),Rect2(100,100,760,40),26)
+		UI.label(modal,Language.story("名人堂 · 第%d次登记") % (count if phase=="done" else count+1),Rect2(100,100,760,40),26)
 		var team:Array=store.hall_of_fame.teams(store.state)[-1] if phase=="done" else store.hall_of_fame.snapshot(store.state)
 		for i in team.size():
 			var mon:Dictionary=team[i]
@@ -1572,15 +1585,15 @@ func _hall_dialog(phase: String) -> void:
 			icon.size = Vector2(64,64)
 			icon.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 			modal.add_child(icon)
-			UI.label(modal,"#%03d %s  Lv%d\nID %s" % [int(store.species[mon["species_id"]]["num"]),store.species[mon["species_id"]]["name"],int(mon["level"]),str(mon["individual_id"]).substr(0,12)],Rect2(185+(i%2)*390,152+(i/2)*110,300,64),19)
-		var tail:String={"record":"E 登记并保存（全队恢复，之后在真新镇继续）· Esc 稍后","done":"已登记并保存 · 首次通关 · E 返回真新镇","failed":"保存失败，名人堂未登记：%s\nE 重试 · Esc 稍后" % status.text}[phase]
+			UI.label(modal,"#%03d %s  Lv%d\nID %s" % [int(store.species[mon["species_id"]]["num"]),Language.display_name(mon,store.species[mon["species_id"]]["name"]),int(mon["level"]),str(mon["individual_id"]).substr(0,12)],Rect2(185+(i%2)*390,152+(i/2)*110,300,64),19)
+		var tail:String={"record":Language.story("E 登记并保存（全队恢复，之后在真新镇继续）· Esc 稍后"),"done":Language.story("已登记并保存 · 首次通关 · E 返回真新镇"),"failed":Language.story("保存失败，名人堂未登记：%s\nE 重试 · Esc 稍后") % status.text}[phase]
 		UI.label(modal,tail,Rect2(100,490,760,90),19)
 	_trace({"event":"hall_of_fame_dialog","phase":phase})
 
 func _hall_register() -> void:
 	var failure:String=store.hall_of_fame.register(store)
 	if failure!="":
-		status.text=failure;_state_trace("hall_of_fame_failed");_hall_dialog("failed");return
+		status.text=Language.message(failure);_state_trace("hall_of_fame_failed");_hall_dialog("failed");return
 	_state_trace("hall_of_fame_registered")
 	_hall_dialog("done")
 
@@ -1593,12 +1606,12 @@ func _nurse_dialog(phase: String) -> void:
 	overlay.get_parent().add_child(modal)
 	player.active = false
 	UI.panel(modal,Rect2(0,448,960,192))
-	UI.label(modal,"护士 · 原文中文译意",Rect2(30,452,850,24),16)
-	var text: String = {"welcome":"欢迎来到宝可梦中心！\n我们能让你的宝可梦恢复健康。\nE / Enter 继续", "choice":"需要为你的宝可梦治疗吗？", "healed":"谢谢！你的宝可梦已经恢复了健康！\n希望还能再见到你！\nE / Enter 返回", "farewell":"希望还能再见到你！\nE / Enter 返回"}[phase]
-	UI.label(modal,text,Rect2(30,483,890,140),22)
+	UI.label(modal,Language.story("护士 · 原文中文译意"),Rect2(30,452,850,24),16)
+	var text: String = {"welcome":Language.story("欢迎来到宝可梦中心！\n我们能让你的宝可梦恢复健康。\nE / Enter 继续"), "choice":Language.story("需要为你的宝可梦治疗吗？"), "healed":Language.story("谢谢！你的宝可梦已经恢复了健康！\n希望还能再见到你！\nE / Enter 返回"), "farewell":Language.story("希望还能再见到你！\nE / Enter 返回")}[phase]
+	UI.label(modal,Language.story(text),Rect2(30,483,890,140),22)
 	if phase=="choice":
-		UI.button(modal,"1 治疗",Rect2(520,505,195,65),_nurse_heal)
-		UI.button(modal,"2 取消",Rect2(735,505,195,65),func():_nurse_dialog("farewell"))
+		UI.button(modal,Language.story("1 治疗"),Rect2(520,505,195,65),_nurse_heal)
+		UI.button(modal,Language.story("2 取消"),Rect2(735,505,195,65),func():_nurse_dialog("farewell"))
 	_trace({"event":"nurse_dialog","phase":phase})
 
 func _nurse_heal() -> void:
@@ -1617,14 +1630,14 @@ func _shop_dialog(phase: String) -> void:
 	overlay.get_parent().add_child(modal)
 	player.active = false
 	UI.panel(modal,Rect2(80,380,800,260))
-	UI.label(modal,("玉虹百货4F · 余额 %d · O进化石袋" % int(store.state["money"])) if map_id=="celadon-mart-4f" else ("玉虹百货5F · 余额 %d" % int(store.state["money"])) if map_id=="celadon-mart-5f" else (("玉虹百货2F · 余额 %d · 球 %d / 药 %d" if map_id=="celadon-mart-2f" else "友好商店 · 余额 %d · 球 %d / 药 %d") % [int(store.state["money"]),int(store.state["balls"]),int(store.state["potions"])]),Rect2(105,393,750,36),23)
+	UI.label(modal,(Language.text("ui.abb0a97bb389","玉虹百货4F · 余额 %d · O进化石袋") % int(store.state["money"])) if map_id=="celadon-mart-4f" else (Language.text("ui.c38b32093bba","玉虹百货5F · 余额 %d") % int(store.state["money"])) if map_id=="celadon-mart-5f" else ((Language.text("ui.7307eb816d83","玉虹百货2F · 余额 %d · 球 %d / 药 %d") if map_id=="celadon-mart-2f" else Language.text("ui.dd481b8693d0","友好商店 · 余额 %d · 球 %d / 药 %d")) % [int(store.state["money"]),int(store.state["balls"]),int(store.state["potions"])]),Rect2(105,393,750,36),23)
 	var item: Dictionary = store.SHOP[shop_item]
 	if phase=="list":
-		UI.button(modal,"出售道具",Rect2(110,320,735,48),_shop_sell_menu)
+		UI.button(modal,Language.text("ui.60e7fb5f5da5","出售道具"),Rect2(110,320,735,48),_shop_sell_menu)
 		var scroll:=ScrollContainer.new();scroll.position=Vector2(100,435);scroll.size=Vector2(755,190);scroll.follow_focus=true;modal.add_child(scroll)
 		var rows:=VBoxContainer.new();scroll.add_child(rows)
 		for id in _shop_products():
-			var button:=UI.button(rows,"%s  %d"%[store.SHOP[id]["name"],store.SHOP[id]["price"]],Rect2(0,0,710,44),_shop_select.bind(id));button.custom_minimum_size=Vector2(710,44)
+			var button:=UI.button(rows,"%s  %d"%[Language.name(store.SHOP[id]["name"]),store.SHOP[id]["price"]],Rect2(0,0,710,44),_shop_select.bind(id));button.custom_minimum_size=Vector2(710,44)
 			button.focus_mode=Control.FOCUS_ALL
 			button.add_theme_color_override("font_focus_color",Color("303840"))
 			if id==_shop_products()[0]:button.call_deferred("grab_focus")
@@ -1632,23 +1645,23 @@ func _shop_dialog(phase: String) -> void:
 		var scroll:=ScrollContainer.new();scroll.position=Vector2(100,435);scroll.size=Vector2(755,190);scroll.follow_focus=true;modal.add_child(scroll)
 		var rows:=VBoxContainer.new();scroll.add_child(rows)
 		if int(store.state.get("nugget_bridge",{}).get("items",{}).get("nugget",0))>0:
-			var bridge:=UI.button(rows,"金珠桥金珠 · 出售1个 5000",Rect2(0,0,710,44),_shop_sell.bind("bridge_nugget"));bridge.custom_minimum_size=Vector2(710,44)
+			var bridge:=UI.button(rows,Language.text("ui.857a6098c1a9","金珠桥金珠 · 出售1个 5000"),Rect2(0,0,710,44),_shop_sell.bind("bridge_nugget"));bridge.custom_minimum_size=Vector2(710,44)
 		for id in store.SHOP:
 			if store.inventory.quantity(store.state,id)<=0 or int(store.SHOP[id]["price"])<=0:continue
-			var button:=UI.button(rows,"%s ×%d · 出售1个 %d"%[store.SHOP[id]["name"],store.inventory.quantity(store.state,id),int(store.SHOP[id]["price"])/2],Rect2(0,0,710,44),_shop_sell.bind(id));button.custom_minimum_size=Vector2(710,44)
+			var button:=UI.button(rows,Language.text("ui.867722a2c0ab","%s ×%d · 出售1个 %d")%[Language.name(store.SHOP[id]["name"]),store.inventory.quantity(store.state,id),int(store.SHOP[id]["price"])/2],Rect2(0,0,710,44),_shop_sell.bind(id));button.custom_minimum_size=Vector2(710,44)
 	elif phase=="quantity":
-		UI.label(modal,"%s × %d ＝ %d\n← / → 数量 · ↑ / ↓ 每次10 · 单次最多99" % [item["name"],shop_quantity,int(item["price"])*shop_quantity],Rect2(105,437,735,75),22)
+		UI.label(modal,Language.text("ui.3a6123286fc3","%s × %d ＝ %d\n← / → 数量 · ↑ / ↓ 每次10 · 单次最多99") % [Language.name(item["name"]),shop_quantity,int(item["price"])*shop_quantity],Rect2(105,437,735,75),22)
 		UI.button(modal,"−",Rect2(105,535,100,55),_shop_adjust.bind(-1))
 		UI.button(modal,"+",Rect2(215,535,100,55),_shop_adjust.bind(1))
-		UI.button(modal,"Enter 确认",Rect2(335,535,250,55),_shop_confirm)
-		UI.button(modal,"Esc 返回",Rect2(605,535,245,55),_shop_back)
+		UI.button(modal,Language.text("ui.67db53e35104","Enter 确认"),Rect2(335,535,250,55),_shop_confirm)
+		UI.button(modal,Language.text("ui.353cd588dd71","Esc 返回"),Rect2(605,535,245,55),_shop_back)
 	elif phase=="confirm":
-		UI.label(modal,"购买 %s × %d，总价 %d。确定吗？" % [item["name"],shop_quantity,int(item["price"])*shop_quantity],Rect2(105,437,735,60),22)
-		UI.button(modal,"1 / Enter 购买",Rect2(105,520,350,60),_shop_buy)
-		UI.button(modal,"2 / Esc 取消",Rect2(485,520,365,60),_shop_back)
+		UI.label(modal,Language.text("ui.d8822b16c3cf","购买 %s × %d，总价 %d。确定吗？") % [Language.name(item["name"]),shop_quantity,int(item["price"])*shop_quantity],Rect2(105,437,735,60),22)
+		UI.button(modal,Language.text("ui.4a6cc251d47e","1 / Enter 购买"),Rect2(105,520,350,60),_shop_buy)
+		UI.button(modal,Language.text("ui.4d329dceb296","2 / Esc 取消"),Rect2(485,520,365,60),_shop_back)
 	else:
 		UI.label(modal,shop_message,Rect2(105,437,735,100),21)
-		UI.button(modal,"Enter 返回商品 · Esc 离开",Rect2(105,550,745,55),_shop_back)
+		UI.button(modal,Language.text("ui.badd24023d18","Enter 返回商品 · Esc 离开"),Rect2(105,550,745,55),_shop_back)
 	_trace({"event":"shop_dialog","phase":phase,"quantity":shop_quantity,"item":shop_item,"message":shop_message})
 
 func _shop_input(key: int) -> void:
@@ -1695,7 +1708,7 @@ func _shop_buy() -> void:
 	store.state["location"] = {"map_id":map_id,"x":player.position.x,"y":player.position.y}
 	var failure: String = store.purchase(shop_item,shop_quantity)
 	if failure!="":store.state=before
-	shop_message = failure if failure!="" else "谢谢惠顾！已收到 %s × %d，扣款 %d。\n购买进度已保存。" % [store.SHOP[shop_item]["name"],shop_quantity,int(store.SHOP[shop_item]["price"])*shop_quantity]
+	shop_message = Language.message(failure) if failure!="" else Language.text("ui.ce4dbd6cb017","谢谢惠顾！已收到 %s × %d，扣款 %d。\n购买进度已保存。") % [Language.name(store.SHOP[shop_item]["name"]),shop_quantity,int(store.SHOP[shop_item]["price"])*shop_quantity]
 	_shop_dialog("result")
 	_state_trace("shop_rejected" if failure!="" else "shop_purchased")
 
@@ -1707,7 +1720,7 @@ func _thief_interact(cell: Vector2i) -> bool:
 	if map_id=="cerulean-city":
 		var guard := Vector2i(28 if store.thief_rules.released(store.state) else 27,12)
 		if absi(cell.x-guard.x)+absi(cell.y-guard.y)==1 and player.facing.dot(Vector2(guard-cell))>0.5:
-			status.text = "警员：这里遭到了火箭队的盗窃。";_trace({"event":"thief_guard","released":store.thief_rules.released(store.state)});return true
+			status.text = Language.text("npc.guard","警员：这里遭到了火箭队的盗窃。");_trace({"event":"thief_guard","released":store.thief_rules.released(store.state)});return true
 		var rocket := Vector2i(30,8)
 		if not store.state.has("stolen_tm") and absi(cell.x-30)+absi(cell.y-8)==1 and player.facing.dot(Vector2(rocket-cell))>0.5:
 			if store.state.get("trainers",{}).get("cerulean_rocket_thief",false):_tm_dialog()
@@ -1716,14 +1729,14 @@ func _thief_interact(cell: Vector2i) -> bool:
 	else:
 		for target in [Vector2i(2,1),Vector2i(5,6)]:
 			if absi(cell.x-target.x)+absi(cell.y-target.y)==1 and player.facing.dot(Vector2(target-cell))>0.5:
-				status.text = "住户：失去的就失去了，我决定让地鼠自己学会挖洞。" if store.state.has("stolen_tm") else "住户：火箭队偷走了教宝可梦挖洞的招式学习器！"
+				status.text = Language.story("住户：失去的就失去了，我决定让地鼠自己学会挖洞。") if store.state.has("stolen_tm") else Language.story("住户：火箭队偷走了教宝可梦挖洞的招式学习器！")
 				_trace({"event":"trashed_house_resident","tm28":store.state.has("stolen_tm")});return true
 	return false
 
 func _tm_dialog() -> void:
-	tm_pending = true;trainer_ready_at = Time.get_ticks_msec()+250;_new_modal("收回被盗物品")
-	UI.label(modal,"火箭队：好吧，我把偷来的招式学习器还给你！\n领取 TM28 挖洞 ×1（本轮仅持有，不可使用）。",Rect2(100,200,755,120),22)
-	UI.label(modal,"E / Enter 领取 · Esc 暂缓，之后仍可领取",Rect2(100,365,755,45),20)
+	tm_pending = true;trainer_ready_at = Time.get_ticks_msec()+250;_new_modal(Language.story("收回被盗物品"))
+	UI.label(modal,Language.story("火箭队：好吧，我把偷来的招式学习器还给你！\n领取 TM28 挖洞 ×1（本轮仅持有，不可使用）。"),Rect2(100,200,755,120),22)
+	UI.label(modal,Language.story("E / Enter 领取 · Esc 暂缓，之后仍可领取"),Rect2(100,365,755,45),20)
 	_trace({"event":"tm28_dialog"})
 
 func _tm_take() -> void:
@@ -1731,38 +1744,38 @@ func _tm_take() -> void:
 	var before: Dictionary = store.state.duplicate(true)
 	store.state["location"] = {"map_id":map_id,"x":player.position.x,"y":player.position.y}
 	var failure: String = store.thief_rules.award(store)
-	if failure!="":store.state = before;status.text = failure;_state_trace("tm28_failed");return
-	_change_map(map_id,player.position);status.text = "收回 TM28 挖洞 ×1！火箭队离开了；G背包可以教学。";_state_trace("tm28_received")
+	if failure!="":store.state = before;status.text = Language.message(failure);_state_trace("tm28_failed");return
+	_change_map(map_id,player.position);status.text = Language.story("收回 TM28 挖洞 ×1！火箭队离开了；G背包可以教学。");_state_trace("tm28_received")
 
 func _bill_dialog(action: String,text: String) -> void:
 	bill_pending = action;trainer_ready_at = Time.get_ticks_msec()+250
-	_new_modal("正辉 · 原文译意")
-	UI.label(modal,text,Rect2(100,185,755,150),22)
-	UI.label(modal,"E / Enter 继续 · Esc 暂时取消"+(" · 2 拒绝" if action=="help" else ""),Rect2(100,375,755,55),19)
+	_new_modal(Language.story("正辉 · 原文译意"))
+	UI.label(modal,Language.story(text),Rect2(100,185,755,150),22)
+	UI.label(modal,Language.story("E / Enter 继续 · Esc 暂时取消")+(Language.story(" · 2 拒绝") if action=="help" else ""),Rect2(100,375,755,55),19)
 	_trace({"event":"bill_dialog","action":action,"stage":store.bill_rules.stage(store.state)})
 
 func _bill_interact(cell: Vector2i) -> bool:
 	var stage: String = store.bill_rules.stage(store.state)
 	if cell==Vector2i(1,5) and player.facing.y<0:
-		if stage=="machine":_bill_dialog("computer","启动传送器的细胞分离系统！")
-		else:_bill_dialog("info","屏幕显示着传送器。" if stage!="visited" else "正辉：我的珍稀宝可梦资料就在这台电脑里。\n本轮未接资料查看。")
+		if stage=="machine":_bill_dialog("computer",Language.story("启动传送器的细胞分离系统！"))
+		else:_bill_dialog("info",Language.story("屏幕显示着传送器。") if stage!="visited" else Language.story("正辉：我的珍稀宝可梦资料就在这台电脑里。\n本轮未接资料查看。"))
 		return true
 	var actor: Dictionary = store.bill_rules.actor(store.state)
 	if actor.is_empty():return false
 	var target := Vector2i(int(actor["cell"][0]),int(actor["cell"][1]))
 	if absi(cell.x-target.x)+absi(cell.y-target.y)!=1 or player.facing.dot(Vector2(target-cell))<=0.5:return false
-	if stage=="waiting":_bill_dialog("help","嗨！我不是宝可梦，我是正辉！\n实验失误让我和宝可梦合体了，能帮帮我吗？")
-	elif stage=="restored":_bill_dialog("ticket","谢谢你，伙伴！我得好好感谢你。\n这张圣安奴号船票送给你吧！")
-	else:_bill_dialog("info","圣安奴号停泊在枯叶市，乘客都是训练家。\n我不喜欢正式聚会，你代替我去吧！" if stage=="ticket" else "看看我电脑里收藏的珍稀宝可梦吧！")
+	if stage=="waiting":_bill_dialog("help",Language.story("嗨！我不是宝可梦，我是正辉！\n实验失误让我和宝可梦合体了，能帮帮我吗？"))
+	elif stage=="restored":_bill_dialog("ticket",Language.story("谢谢你，伙伴！我得好好感谢你。\n这张圣安奴号船票送给你吧！"))
+	else:_bill_dialog("info",Language.story("圣安奴号停泊在枯叶市，乘客都是训练家。\n我不喜欢正式聚会，你代替我去吧！") if stage=="ticket" else Language.story("看看我电脑里收藏的珍稀宝可梦吧！"))
 	return true
 
 func _bill_confirm() -> void:
 	var action: String = bill_pending;bill_pending = "";_close_modal()
 	if action=="info":return
 	var failure: String = store.bill_rules.advance(store,action)
-	if failure!="":status.text = failure;_state_trace("bill_failed");return
+	if failure!="":status.text = Language.message(failure);_state_trace("bill_failed");return
 	_change_map(map_id,player.position)
-	status.text = {"wardens-house":"E交金牙/领取HM04 · J怪力教学 · E启用怪力后方向键推石","pokemon-tower-7f":"E 火箭队与富士老人 · K 关键物品","mr-fujis-house":"另与富士老人交谈领取宝可梦笛 · K 关键物品","pokemon-tower-6f":"母亲幽灵安息后可登顶 · E 灵媒对战","pokemon-tower-5f":"原净化格恢复HP/PP · E 灵媒对战","pokemon-tower-4f":"原楼梯 · E 灵媒对战 · 检视镜辨识","pokemon-tower-3f":"检视镜辨认幽灵 · E 灵媒对战","pokemon-tower-2f":"原楼梯通往3层","pokemon-tower-1f":"E 与悼念者交谈 · 原楼梯通往二层","rocket-hideout-elevator":"面向左上按钮 E · 原楼层 B1 / B2 / B4","rocket-hideout-b4f":"E 坂木与检视镜 · 原双守卫门锁 · 电梯 B1/B2/B4","help":"正辉进入了传送器。请到左边电脑前朝上按 E。","computer":"细胞分离完成！正辉恢复人形，请与他交谈。","ticket":"获得圣安奴号船票 ×1！已保存，不能重复领取。"}[action]
+	status.text = {"wardens-house":Language.story("E交金牙/领取HM04 · J怪力教学 · E启用怪力后方向键推石"),"pokemon-tower-7f":Language.story("E 火箭队与富士老人 · K 关键物品"),"mr-fujis-house":Language.story("另与富士老人交谈领取宝可梦笛 · K 关键物品"),"pokemon-tower-6f":Language.story("母亲幽灵安息后可登顶 · E 灵媒对战"),"pokemon-tower-5f":Language.story("原净化格恢复HP/PP · E 灵媒对战"),"pokemon-tower-4f":Language.story("原楼梯 · E 灵媒对战 · 检视镜辨识"),"pokemon-tower-3f":Language.story("检视镜辨认幽灵 · E 灵媒对战"),"pokemon-tower-2f":Language.story("原楼梯通往3层"),"pokemon-tower-1f":Language.story("E 与悼念者交谈 · 原楼梯通往二层"),"rocket-hideout-elevator":Language.story("面向左上按钮 E · 原楼层 B1 / B2 / B4"),"rocket-hideout-b4f":Language.story("E 坂木与检视镜 · 原双守卫门锁 · 电梯 B1/B2/B4"),"help":Language.story("正辉进入了传送器。请到左边电脑前朝上按 E。"),"computer":Language.story("细胞分离完成！正辉恢复人形，请与他交谈。"),"ticket":Language.story("获得圣安奴号船票 ×1！已保存，不能重复领取。")}[action]
 	_state_trace("bill_"+action)
 
 func _bridge_take() -> void:
@@ -1770,7 +1783,7 @@ func _bridge_take() -> void:
 	bridge_pending = false
 	_close_modal()
 	if failure!="":
-		status.text = failure;_state_trace("bridge_reward_failed");return
+		status.text = Language.message(failure);_state_trace("bridge_reward_failed");return
 	_state_trace("bridge_nugget_received")
 	_forest_trainer_interact(trainer_rules.definition("route24_rocket"))
 
@@ -1787,34 +1800,34 @@ func _late_rival_trigger(cell: Vector2i) -> bool:
 func _rival_interact() -> void:
 	if store.state.get("badges",{}).get("earth",false):
 		if _late_rival_ready():_forest_trainer_interact(trainer_rules.definition("route22_late"))
-		else:status.text="劲敌已先行前往宝可梦联盟。23号道路尚未开放。"
+		else:status.text=Language.story("劲敌已先行前往宝可梦联盟。23号道路尚未开放。")
 	else:_start_trainer("route22_early")
 
 func _forest_trainer_interact(entry: Dictionary) -> void:
-	if entry["id"].begins_with("league_") and not store.league.can_challenge(store.state,entry["id"]):status.text="当前阶段不能挑战或重复领取奖金。";_state_trace("league_challenge_rejected");return
+	if entry["id"].begins_with("league_") and not store.league.can_challenge(store.state,entry["id"]):status.text=Language.story("当前阶段不能挑战或重复领取奖金。");_state_trace("league_challenge_rejected");return
 	if entry["id"]=="route24_rocket":
 		if not store.bridge_rules.ready(store.state):
-			status.text = "先打败桥上的五名训练家。";return
+			status.text = Language.story("先打败桥上的五名训练家。");return
 		if not store.state.has("nugget_bridge"):
 			bridge_pending = true;trainer_ready_at = Time.get_ticks_msec()+250
-			_new_modal("金珠桥 · 通关奖品")
-			UI.label(modal,"恭喜！你打败了五名训练家！\n领取金珠 ×1（物品，不直接兑换金钱）。",Rect2(100,200,755,110),23)
-			UI.label(modal,"E / Enter 领取 · Esc 暂不领取",Rect2(100,360,755,40),20)
+			_new_modal(Language.story("金珠桥 · 通关奖品"))
+			UI.label(modal,Language.story("恭喜！你打败了五名训练家！\n领取金珠 ×1（物品，不直接兑换金钱）。"),Rect2(100,200,755,110),23)
+			UI.label(modal,Language.story("E / Enter 领取 · Esc 暂不领取"),Rect2(100,360,755,40),20)
 			_trace({"event":"bridge_reward_dialog"});return
 	if store.state.get("trainers",{}).get(entry["id"],false):
 		if store.gym_rewards.data.has(entry["id"]) and not store.gym_rewards.claimed(store.state,entry["id"]):
 			var failure:String=store.gym_rewards.claim(store,entry["id"])
-			status.text=failure if failure!="" else "补领%s ×1，已保存。%s" % [store.gym_rewards.data[entry["id"]]["name"],store.gym_rewards.description(store.gym_rewards.data[entry["id"]]["item"],tm_rules)]
+			status.text=Language.message(failure) if failure!="" else Language.story("补领%s ×1，已保存。%s") % [Language.name(store.gym_rewards.data[entry["id"]]["name"]),store.gym_rewards.description(store.gym_rewards.data[entry["id"]]["item"],tm_rules)]
 			_state_trace("gym_tm_claim_failed" if failure!="" else "gym_tm_claimed");return
-		status.text = entry["name"]+"："+entry["after"]+"（已击败）"
+		status.text = Language.trainer_name(entry["id"],entry["name"])+": "+Language.story(entry["after"])+Language.story("（已击败）")
 		_trace({"event":"trainer_already_defeated","id":entry["id"],"money":store.state["money"]})
 		return
 	pending_trainer = entry["id"]
 	trainer_ready_at = Time.get_ticks_msec()+250
-	_new_modal(entry["name"]+" · 原文译意")
-	var intro_label: Label = UI.label(modal,entry["intro"],Rect2(100,200,755,100),23)
+	_new_modal(Language.trainer_name(entry["id"],entry["name"])+Language.story(" · 原文译意"))
+	var intro_label: Label = UI.label(modal,Language.story(entry["intro"]),Rect2(100,200,755,100),23)
 	if entry["id"] in ["route22_late","viridian_giovanni"]:intro_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	UI.label(modal,"E / Enter 开始对战 · Esc 取消",Rect2(100,360,755,40),20)
+	UI.label(modal,Language.story("E / Enter 开始对战 · Esc 取消"),Rect2(100,360,755,40),20)
 	_trace({"event":"trainer_dialog","id":entry["id"]})
 
 func _cinnabar_gym_interact(cell: Vector2i) -> bool:
@@ -1826,27 +1839,27 @@ func _cinnabar_gym_interact(cell: Vector2i) -> bool:
 		var target:=Vector2i(hidden["x"],hidden["y"]);var delta:=target-cell
 		if absi(delta.x)+absi(delta.y)!=1 or Vector2(delta).normalized().dot(player.facing)<0.9:continue
 		var index:int=int(hidden["argValue"])&15
-		if store.cinnabar_gym.gates(store.state)[index-1]:status.text="这道题已经答过，门已打开。";return true
-		cinnabar_quiz_pending=index;trainer_ready_at=Time.get_ticks_msec()+250;_new_modal("宝可梦知识问答")
-		UI.label(modal,store.cinnabar_gym.question(index)["question"]+"\n1 / E 是 · 2 否 · Esc 取消",Rect2(100,190,755,150),23);_state_trace("cinnabar_quiz_prompt");return true
+		if store.cinnabar_gym.gates(store.state)[index-1]:status.text=Language.story("这道题已经答过，门已打开。");return true
+		cinnabar_quiz_pending=index;trainer_ready_at=Time.get_ticks_msec()+250;_new_modal(Language.story("宝可梦知识问答"))
+		UI.label(modal,Language.story(store.cinnabar_gym.question(index)["question"])+Language.story("\n1 / E 是 · 2 否 · Esc 取消"),Rect2(100,190,755,150),23);_state_trace("cinnabar_quiz_prompt");return true
 	if cell==Vector2i(16,14) and player.facing.y<0:
-		status.text="你击败了火焰专家！" if store.cinnabar_gym.badge_state(store.state) else "夏伯擅长火属性宝可梦，水属性很有效。";return true
+		status.text=Language.story("你击败了火焰专家！") if store.cinnabar_gym.badge_state(store.state) else Language.story("夏伯擅长火属性宝可梦，水属性很有效。");return true
 	return false
 
 func _start_trainer(id: String) -> void:
-	if id.begins_with("league_") and (map_id!={"league_lorelei":"league-lorelei","league_bruno":"league-bruno","league_agatha":"league-agatha","league_lance":"league-lance","league_champion":"league-champion"}.get(id,"") or not store.league.can_challenge(store.state,id)):status.text="当前联盟阶段不能挑战。";return
+	if id.begins_with("league_") and (map_id!={"league_lorelei":"league-lorelei","league_bruno":"league-bruno","league_agatha":"league-agatha","league_lance":"league-lance","league_champion":"league-champion"}.get(id,"") or not store.league.can_challenge(store.state,id)):status.text=Language.story("当前联盟阶段不能挑战。");return
 	if id=="route22_late" and not _late_rival_ready():return
 	if in_battle or is_instance_valid(modal) or is_instance_valid(pc):return
 	if store.state.get("trainers",{}).get(id,false):
-		status.text = "训练家已击败 · 本场奖金已领取，不能重复挑战。"
+		status.text = Language.story("训练家已击败 · 本场奖金已领取，不能重复挑战。")
 		_trace({"event":"rival_already_defeated" if id=="route22_early" else "trainer_already_defeated","id":id,"money":store.state["money"]})
 		return
 	if int(store.state["team"][int(store.state["lead"])]["hp"])<=0:
-		status.text = "首发倒下，请先换首发或到中心治疗。"
+		status.text = Language.story("首发倒下，请先换首发或到中心治疗。")
 		return
 	var doubles:bool=trainer_rules.definition(id).get("doubleBattle",false)
 	if doubles and store.state["team"].filter(func(p):return int(p["hp"])>0).size()<2:
-		status.text="双打需要至少两只未倒下的伙伴。";return
+		status.text=Language.story("双打需要至少两只未倒下的伙伴。");return
 	if not _save():return
 	in_battle = true
 	player.active = false
@@ -1884,12 +1897,12 @@ func _has_ship_ticket() -> bool:
 func _ship_ticket_dialog(check: bool) -> void:
 	var allowed: bool = _has_ship_ticket()
 	if check:ship_pass = allowed
-	_new_modal("圣安奴号 · 登船员")
+	_new_modal(Language.story("圣安奴号 · 登船员"))
 	ship_dialog = true
 	interaction_ready_at = Time.get_ticks_msec()+250
-	var message: String = "欢迎来到圣安奴号！请从左侧验票后登船。"
-	if check:message = "船票已核验，欢迎登船！船票不消耗。" if allowed else "登船需要圣安奴号船票。请先取得船票。"
-	UI.label(modal,message+"\nE / Enter 返回",Rect2(100,180,750,120),22)
+	var message: String = Language.story("欢迎来到圣安奴号！请从左侧验票后登船。")
+	if check:message = Language.story("船票已核验，欢迎登船！船票不消耗。") if allowed else Language.story("登船需要圣安奴号船票。请先取得船票。")
+	UI.label(modal,message+Language.story("\nE / Enter 返回"),Rect2(100,180,750,120),22)
 	_trace({"event":"ship_ticket","checked":check,"allowed":allowed,"text":message})
 
 func _ship_rival_trigger(cell: Vector2i) -> bool:
@@ -1898,7 +1911,7 @@ func _ship_rival_trigger(cell: Vector2i) -> bool:
 		ship_rival_latch = false
 		if cell.x in [36,37] and cell.y<8:
 			player.position.y = 137
-			status.text = "先完成走廊劲敌战，再前往船长室。"
+			status.text = Language.story("先完成走廊劲敌战，再前往船长室。")
 			return true
 		return false
 	if ship_rival_latch:return false
@@ -1922,14 +1935,14 @@ func _ship_transition(cell: Vector2i) -> bool:
 	for warp in ship_warps[map_id]:
 		if cell!=Vector2i(int(warp["cell"][0]),int(warp["cell"][1])):continue
 		if warp.get("closed",false):
-			status.text = warp["reason"];return false
+			status.text = Language.story(warp["reason"]);return false
 		if player.velocity==Vector2.ZERO:return false
 		var required: Vector2 = Vector2.DOWN if warp["direction"]=="down" else Vector2.UP
 		if player.velocity.dot(required)<=0:return false
 		if map_id=="vermilion-city" and (not ship_pass or not _has_ship_ticket()):
 			player.position = Vector2(296,473);_ship_ticket_dialog(true);return true
 		if warp["target"]=="ssanne-captain" and not store.state.get("trainers",{}).get("ssanne_rival",false):
-			status.text = "先完成二层走廊劲敌战。";return false
+			status.text = Language.story("先完成二层走廊劲敌战。");return false
 		var from: String = map_id
 		var dest: Array = warp["arrival"]
 		_change_map(warp["target"],Vector2(int(dest[0])*16+8,int(dest[1])*16+9))
@@ -1947,7 +1960,7 @@ func _forest_transition(cell: Vector2i) -> bool:
 	if map_id=="safari-zone-gate" and cell.y==1 and cell.x in [3,4] and player.velocity.y<0:
 		player.velocity = Vector2.ZERO;_safari_prompt("enter");return true
 	if map_id=="pokemon-tower-6f" and cell==Vector2i(9,16) and not store.state["trainers"].get("tower_mother_released",false):
-		status.text = "母亲幽灵尚未安息。";return true
+		status.text = Language.story("母亲幽灵尚未安息。");return true
 	if _ship_transition(cell):return true
 	var target: String = ""
 	var arrival := Vector2.ZERO
@@ -1969,11 +1982,11 @@ func _forest_transition(cell: Vector2i) -> bool:
 			moon_warp_latch = ""
 			for warp in moon_warps[map_id]:
 				if cell==Vector2i(int(warp["cell"][0]),int(warp["cell"][1])):
-					if warp.get("requires","")=="secret_key" and not store.pokemon_mansion.has_key(store.state):status.text="红莲道馆的门锁着！需要秘密钥匙。";return false
+					if warp.get("requires","")=="secret_key" and not store.pokemon_mansion.has_key(store.state):status.text=Language.story("红莲道馆的门锁着！需要秘密钥匙。");return false
 					if map_id=="game-corner" and warp["index"]==2 and not store.rocket_rules.opened(store.state):
-						status.text = "海报后的开关尚未按下。";return false
+						status.text = Language.story("海报后的开关尚未按下。");return false
 					if warp.get("closed",false):
-						status.text = warp["reason"];return false
+						status.text = Language.story(warp["reason"]);return false
 					if player.velocity==Vector2.ZERO:return false
 					var required: Vector2 = {"left":Vector2.LEFT,"right":Vector2.RIGHT,"up":Vector2.UP,"down":Vector2.DOWN}.get(warp.get("direction",""),Vector2.ZERO)
 					if required!=Vector2.ZERO and player.velocity.dot(required)<=0:return false
@@ -1982,27 +1995,27 @@ func _forest_transition(cell: Vector2i) -> bool:
 					var dest: Array = warp["arrival"]
 					var destination: String = warp["target"]
 					if destination in ["route5-gate","route6-gate","route8-gate"] and not store.saffron_rules.opened(store.state):
-						status.text="金黄市通行需要已交付的茶。";_state_trace("o11_gate_denied");return true
+						status.text=Language.story("金黄市通行需要已交付的茶。");_state_trace("o11_gate_denied");return true
 					if destination=="saffron-gym" and not store.silph_story.liberated(store.state):
-						status.text = "请先解放西尔佛公司。";return false
+						status.text = Language.story("请先解放西尔佛公司。");return false
 					if destination=="silph-co-1f" and from=="saffron-city" and not store.tower_story.rescued(store.state):
-						status.text = "公司仍被门卫封锁。";return false
+						status.text = Language.story("公司仍被门卫封锁。");return false
 					if destination=="celadon-mart-elevator":
 						var failure:String=store.celadon_lift.select_floor(store,map_id,{"map_id":destination,"x":int(dest[0])*16+8,"y":int(dest[1])*16+9})
-						if failure!="":status.text=failure;return false
+						if failure!="":status.text=Language.message(failure);return false
 					if map_id=="celadon-mart-elevator":
 						destination=store.celadon_lift.floor_id(store.state)
 						for door in moon_warps[destination]:
 							if door.get("target","")=="celadon-mart-elevator":dest=door["cell"];break
 					if destination=="silph-co-elevator":
 						var failure: String = store.silph_story.select_floor(store,map_id)
-						if failure!="":status.text = failure;return false
+						if failure!="":status.text = Language.message(failure);return false
 					if map_id=="silph-co-elevator":
 						destination = store.silph_story.floor_id(store.state)
 						dest = moon_warps[destination][3 if destination=="silph-co-1f" else 1 if destination=="silph-co-11f" else 2]["cell"]
 					if destination=="rocket-hideout-elevator":
 						var failure: String = store.post_b3.transition(store,"enter_lift",map_id)
-						if failure!="":status.text = failure;return false
+						if failure!="":status.text = Language.message(failure);return false
 					if map_id=="rocket-hideout-elevator":
 						destination = store.post_b3.lift_floor(store.state)
 						var source_index: int = {"rocket-hideout-b1f":4,"rocket-hideout-b2f":4,"rocket-hideout-b4f":2}[destination]
@@ -2011,10 +2024,10 @@ func _forest_transition(cell: Vector2i) -> bool:
 					if store.safari.is_zone(from):
 						var result: String = store.safari.step(store,{"map_id":destination,"x":int(dest[0])*16+8,"y":int(dest[1])*16+9})
 						_state_trace("safari_step")
-						if result!="":_restore_location();status.text = result;_state_trace("safari_"+result);return true
+						if result!="":_restore_location();status.text = Language.message(result);_state_trace("safari_"+result);return true
 					if warp.get("league",false):
 						var refusal:String=store.league.transition(store,from,destination,{"map_id":destination,"x":int(dest[0])*16+8,"y":int(dest[1])*16+9})
-						if refusal!="":status.text=refusal;_state_trace("league_gate_rejected");return false
+						if refusal!="":status.text=Language.message(refusal);_state_trace("league_gate_rejected");return false
 						_state_trace("league_transition")
 					_change_map(destination,Vector2(int(dest[0])*16+8,int(dest[1])*16+9))
 					player.facing = {"left":Vector2.LEFT,"right":Vector2.RIGHT,"up":Vector2.UP,"down":Vector2.DOWN}.get(warp.get("arrival_direction",""),facing)
@@ -2043,7 +2056,7 @@ func _forest_transition(cell: Vector2i) -> bool:
 			_change_map("vermilion-city",Vector2(player.position.x+160,9));return true
 		if cell.y<=0 and player.velocity.y<0:
 			if store.saffron_rules.opened(store.state):_change_map("route6-gate",Vector2(player.position.x-160,73));return true
-			status.text="金黄市通行需要已交付的茶。"
+			status.text=Language.story("金黄市通行需要已交付的茶。")
 	if map_id in ["vermilion-center","vermilion-mart"] and cell.y==7 and cell.x in [3,4] and player.velocity.y>0:
 		_change_map("vermilion-city",Vector2(184,73) if map_id=="vermilion-center" else Vector2(376,233));return true
 	if map_id=="vermilion-gym" and cell.y==17 and cell.x in [4,5] and player.velocity.y>0:
@@ -2060,8 +2073,8 @@ func _forest_transition(cell: Vector2i) -> bool:
 		if player.position.y<8 and player.velocity.y<0 and cell.x>=10 and cell.x<30:
 			_change_map("route6",Vector2(player.position.x-160,569));return true
 		for entrance in layout.get("unopenedEntrances",[]):
-			if entrance["destMapName"] not in ["VermilionPokecenter","VermilionMart","VermilionDock","VermilionGym"] and cell.x==int(entrance["x"]) and absi(cell.y-int(entrance["y"]))<=1:status.text = "这处建筑本轮未开放。"
-		if cell.x>=39 and player.velocity.x>0:status.text = "11号道路与地鼠洞本轮未开放。"
+			if entrance["destMapName"] not in ["VermilionPokecenter","VermilionMart","VermilionDock","VermilionGym"] and cell.x==int(entrance["x"]) and absi(cell.y-int(entrance["y"]))<=1:status.text = Language.story("这处建筑本轮未开放。")
+		if cell.x>=39 and player.velocity.x>0:status.text = Language.story("11号道路与地鼠洞本轮未开放。")
 	if map_id=="route10-south" and player.position.y>int(layout["height"])*16-9 and player.velocity.y>0:
 		_change_map("lavender-town",Vector2(player.position.x,9));return true
 	if map_id=="route16" and player.position.x>631 and player.velocity.x>0:
@@ -2084,8 +2097,8 @@ func _forest_transition(cell: Vector2i) -> bool:
 		if player.position.x>791 and player.velocity.x>0 and player.position.y>=128 and player.position.y<416:
 			_change_map("route7",Vector2(9,player.position.y-128));return true
 		for entrance in layout.get("unopenedEntrances",[]):
-			if entrance["destMapName"] not in ["CeladonMansion1F","GameCorner","CeladonGym","CeladonPokecenter","CeladonMart1F"] and cell.x==int(entrance["x"]) and absi(cell.y-int(entrance["y"]))<=1:status.text = "其他民宅与飞翔剧情延期。"
-		if cell.x<=0:status.text = "向西通往16号道路。"
+			if entrance["destMapName"] not in ["CeladonMansion1F","GameCorner","CeladonGym","CeladonPokecenter","CeladonMart1F"] and cell.x==int(entrance["x"]) and absi(cell.y-int(entrance["y"]))<=1:status.text = Language.story("其他民宅与飞翔剧情延期。")
+		if cell.x<=0:status.text = Language.story("向西通往16号道路。")
 	if map_id=="route7":
 		if player.position.x>311 and player.velocity.x>0 and cell.y in [9,10]:
 			_change_map("saffron-city",Vector2(9,player.position.y+128));return true
@@ -2096,11 +2109,11 @@ func _forest_transition(cell: Vector2i) -> bool:
 			_change_map("route7",Vector2(311,player.position.y-128));return true
 		if cell.y>=35 and player.velocity.y>0 and cell.x in [18,19]:
 			if store.saffron_rules.opened(store.state):_change_map("route5-gate",Vector2(56,9));return true
-			status.text="华蓝市通行需要已交付的茶。"
+			status.text=Language.story("华蓝市通行需要已交付的茶。")
 		if cell.y<=0 and player.velocity.y<0 and cell.x in range(30,40):
 			if store.saffron_rules.opened(store.state):_change_map("route8-gate",Vector2(8,57));return true
-			status.text="紫苑镇通行需要已交付的茶。"
-		if cell.y<=1 or cell.y>=34 or cell.x>=38:status.text = "其他金黄市建筑与道路本片未开放。"
+			status.text=Language.story("紫苑镇通行需要已交付的茶。")
+		if cell.y<=1 or cell.y>=34 or cell.x>=38:status.text = Language.story("其他金黄市建筑与道路本片未开放。")
 	if map_id in ["route5-gate","route6-gate","route8-gate"]:
 		pass
 		pass
@@ -2109,7 +2122,7 @@ func _forest_transition(cell: Vector2i) -> bool:
 			_change_map("lavender-town",Vector2(9,player.position.y));return true
 		if cell.x<=0 and player.velocity.x<0 and cell.y in [9,10]:
 			if store.saffron_rules.opened(store.state):_change_map("route8-gate",Vector2(72,73));return true
-			status.text="金黄市通行需要已交付的茶。"
+			status.text=Language.story("金黄市通行需要已交付的茶。")
 	if map_id=="lavender-town":
 		if player.position.x<8 and player.velocity.x<0:
 			_change_map("route8",Vector2(951,player.position.y));return true
@@ -2120,7 +2133,7 @@ func _forest_transition(cell: Vector2i) -> bool:
 		if player.velocity.y<0 and cell==Vector2i(15,13):
 			_change_map("lavender-mart",Vector2(56,105));return true
 		for entrance in layout.get("unopenedEntrances",[]):
-			if cell.x==int(entrance["x"]) and absi(cell.y-int(entrance["y"]))<=1:status.text = "宝可梦塔、富士、民宅与改名剧情本轮未开放。"
+			if cell.x==int(entrance["x"]) and absi(cell.y-int(entrance["y"]))<=1:status.text = Language.story("宝可梦塔、富士、民宅与改名剧情本轮未开放。")
 		if player.position.y>int(layout["height"])*16-9 and player.velocity.y>0:
 			_change_map("route12",Vector2(player.position.x,9));return true
 	if map_id in ["lavender-center","lavender-mart"] and cell.y==7 and cell.x in [3,4] and player.velocity.y>0:
@@ -2134,7 +2147,7 @@ func _forest_transition(cell: Vector2i) -> bool:
 		if player.position.x<8 and player.velocity.x<0 and cell.y<18:
 			_change_map("route9",Vector2(951,player.position.y));return true
 
-		if cell.x==11 and cell.y in [19,20] and player.velocity.y<0:status.text = "这座宝可梦中心内部本轮延期。"
+		if cell.x==11 and cell.y in [19,20] and player.velocity.y<0:status.text = Language.story("这座宝可梦中心内部本轮延期。")
 	if map_id=="route4-east" and player.position.x>int(layout["width"])*16-9 and player.velocity.x>0:
 		_change_map("cerulean-city",Vector2(9,player.position.y+128));return true
 	if map_id=="route24" and player.position.y>569 and player.velocity.y>0:
@@ -2148,13 +2161,13 @@ func _forest_transition(cell: Vector2i) -> bool:
 	if map_id=="bills-house" and cell.y==7 and cell.x in [2,3] and player.velocity.y>0:
 		if store.bill_rules.stage(store.state)=="ticket":
 			var failure: String = store.bill_rules.advance(store,"leave")
-			if failure!="":status.text = failure;return true
+			if failure!="":status.text = Language.message(failure);return true
 		_change_map("route25",Vector2(728,73));return true
 	if map_id=="cerulean-city":
 		if player.position.x>631 and player.velocity.x>0 and cell.y>=8 and cell.y<26:
 			_change_map("route9",Vector2(9,player.position.y-128));return true
 		if not store.state.get("trainers",{}).get("cerulean_north_rival",false) and cell.x in [20,21] and cell.y<=6 and player.velocity.y<0:
-			player.position.y = 109;status.text = "先面向北口劲敌按 E 确认对战。";return true
+			player.position.y = 109;status.text = Language.story("先面向北口劲敌按 E 确认对战。");return true
 		if player.position.y>569 and player.velocity.y>0 and cell.x>=10 and cell.x<30:
 			_change_map("route5",Vector2(player.position.x-160,9));return true
 		if cell==Vector2i(27,11) and player.velocity.y<0:
@@ -2170,16 +2183,16 @@ func _forest_transition(cell: Vector2i) -> bool:
 		if cell==Vector2i(19,17) and player.velocity.y<0:
 			_change_map("cerulean-center",Vector2(56,105));return true
 		if (cell.y<=0 and player.velocity.y<0) or (cell.y>=35 and player.velocity.y>0) or (cell.x>=39 and player.velocity.x>0):
-			status.text = "从东侧原通路前往9号道路。"
+			status.text = Language.story("从东侧原通路前往9号道路。")
 		for door in layout.get("closedDoors",[]):
-			if cell.x==int(door[0]) and cell.y==int(door[1])+1 and player.velocity.y<0:status.text = "这处建筑或洞口本轮未开放。"
+			if cell.x==int(door[0]) and cell.y==int(door[1])+1 and player.velocity.y<0:status.text = Language.story("这处建筑或洞口本轮未开放。")
 	if map_id=="route5":
 		if player.position.y<8 and player.velocity.y<0:
 			_change_map("cerulean-city",Vector2(player.position.x+160,569));return true
 		for entrance in layout.get("unopenedEntrances",[]):
 			if entrance["destMap"]!="UNDERGROUND_PATH_ROUTE_5" and cell.x==int(entrance["x"]) and absi(cell.y-int(entrance["y"]))<=1:
-				status.text = "培育屋功能本轮未开放。" if entrance["destMap"]=="DAYCARE" else "地下通道本轮未开放。" if entrance["destMap"]=="UNDERGROUND_PATH_ROUTE_5" else "关卡与金黄市通行本轮未开放。"
-		if cell.y>=35 and player.velocity.y>0:status.text = "金黄市通行本轮未开放。"
+				status.text = Language.story("培育屋功能本轮未开放。") if entrance["destMap"]=="DAYCARE" else Language.story("地下通道本轮未开放。") if entrance["destMap"]=="UNDERGROUND_PATH_ROUTE_5" else Language.story("关卡与金黄市通行本轮未开放。")
+		if cell.y>=35 and player.velocity.y>0:status.text = Language.story("金黄市通行本轮未开放。")
 	if map_id=="route5-gate" and cell.y==7 and player.velocity.y>0:_change_map("route5",Vector2(168,521));return true
 	if map_id=="cerulean-trashed-house":
 		if cell.y==7 and cell.x in [2,3] and player.velocity.y>0:
@@ -2198,7 +2211,7 @@ func _forest_transition(cell: Vector2i) -> bool:
 	if map_id=="pewter-city" and player.position.x>631 and player.velocity.x>0 and cell.y in [14,15,16,17]:
 		if not store.state.get("trainers",{}).get("pewter_brock",false):
 			player.position.x = 630
-			status.text = "先挑战尼比道馆的小刚。"
+			status.text = Language.story("先挑战尼比道馆的小刚。")
 			_trace({"event":"route3_badge_gate"})
 			return true
 		target = "route3";arrival = Vector2(9,player.position.y-128)
@@ -2263,21 +2276,21 @@ func _fossil_interact(cell: Vector2i) -> bool:
 	var target := Vector2i(scientist[0],scientist[1])
 	if absi(cell.x-target.x)+absi(cell.y-target.y)==1 and player.facing.dot(Vector2(target-cell))>0.5:
 		if store.state.has("moon_fossil"):
-			status.text = "米格尔：红莲岛的宝可梦研究所正在研究复活化石。（未实现复活）"
+			status.text = Language.story("米格尔：红莲岛的宝可梦研究所正在研究复活化石。（未实现复活）")
 		else:_forest_trainer_interact(data["trainer"])
 		return true
 	for item in data["items"]:
 		target = Vector2i(item["cell"][0],item["cell"][1])
 		if absi(cell.x-target.x)+absi(cell.y-target.y)==1 and player.facing.dot(Vector2(target-cell))>0.5:
 			if store.state.has("moon_fossil"):
-				status.text = "化石已经分好，不能重复领取。";_trace({"event":"fossil_already_taken"});return true
+				status.text = Language.story("化石已经分好，不能重复领取。");_trace({"event":"fossil_already_taken"});return true
 			if not store.state.get("trainers",{}).get("mtmoonb2f_miguel",false):
-				status.text = "米格尔：这些化石都是我的！请先与我对战。";_trace({"event":"fossil_locked"});return true
+				status.text = Language.story("米格尔：这些化石都是我的！请先与我对战。");_trace({"event":"fossil_locked"});return true
 			fossil_pending = item["id"];trainer_ready_at = Time.get_ticks_msec()+250
-			_new_modal(item["name"]+" · 原文译意")
-			UI.label(modal,"要拿走%s吗？\n我们一人一块，不许贪心！" % item["name"],Rect2(100,190,755,100),23)
-			UI.button(modal,"1 是，拿走",Rect2(105,350,350,65),_fossil_take)
-			UI.button(modal,"2 / Esc 暂时不拿",Rect2(475,350,350,65),func():fossil_pending = "";_close_modal();_trace({"event":"fossil_cancelled"}))
+			_new_modal(item["name"]+Language.story(" · 原文译意"))
+			UI.label(modal,Language.story("要拿走%s吗？\n我们一人一块，不许贪心！") % Language.name(item["name"]),Rect2(100,190,755,100),23)
+			UI.button(modal,Language.story("1 是，拿走"),Rect2(105,350,350,65),_fossil_take)
+			UI.button(modal,Language.story("2 / Esc 暂时不拿"),Rect2(475,350,350,65),func():fossil_pending = "";_close_modal();_trace({"event":"fossil_cancelled"}))
 			_trace({"event":"fossil_choice","item":item["id"]});return true
 	return false
 
@@ -2286,9 +2299,9 @@ func _fossil_take() -> void:
 	var selected: String = fossil_pending;fossil_pending = ""
 	var failure: String = store.fossil_rules.select(store,selected)
 	_close_modal()
-	if failure!="":status.text = failure;_state_trace("fossil_rejected");return
+	if failure!="":status.text = Language.message(failure);_state_trace("fossil_rejected");return
 	_build_fossil_actors()
-	status.text = "获得%s！米格尔：那么，另一块就是我的了！已保存。" % ("甲壳化石" if selected=="dome_fossil" else "贝壳化石")
+	status.text = Language.story("获得%s！米格尔：那么，另一块就是我的了！已保存。") % (Language.story("甲壳化石") if selected=="dome_fossil" else Language.story("贝壳化石"))
 	_state_trace("fossil_received")
 
 func _cut_close() -> void:
@@ -2297,8 +2310,8 @@ func _cut_close() -> void:
 func _cut_dialog(title: String,text: String,phase: String) -> void:
 	cut_phase = phase
 	_new_modal(title)
-	UI.label(modal,text,Rect2(110,178,730,236),21)
-	UI.button(modal,"Esc / B 取消",Rect2(110,470,245,52),_cut_close)
+	UI.label(modal,Language.story(text),Rect2(110,178,730,236),21)
+	UI.button(modal,Language.story("Esc / B 取消"),Rect2(110,470,245,52),_cut_close)
 	trainer_ready_at = Time.get_ticks_msec()+250
 
 func _cut_interact(cell: Vector2i) -> bool:
@@ -2306,10 +2319,10 @@ func _cut_interact(cell: Vector2i) -> bool:
 		var target := Vector2i(4,2)
 		if absi(cell.x-target.x)+absi(cell.y-target.y)==1 and player.facing.dot(Vector2(target-cell))>0.5:
 			if store.cut_rules.has_hm(store.state):
-				_cut_dialog("船长 · 已领取HM01","谢谢你，我已经好多了！\nHM01居合斩可以反复教学，不会消耗。\n地图上按 M 选择宝可梦；蓝色徽章允许场外砍树。\n本轮尚未接入离港，船仍可进出。\nE / Esc 返回。","info")
+				_cut_dialog(Language.story("船长 · 已领取HM01"),Language.story("谢谢你，我已经好多了！\nHM01居合斩可以反复教学，不会消耗。\n地图上按 M 选择宝可梦；蓝色徽章允许场外砍树。\n本轮尚未接入离港，船仍可进出。\nE / Esc 返回。"),"info")
 				_state_trace("captain_repeat")
 			else:
-				_cut_dialog("船长 · 晕船","呜……我晕船了。\n帮船长揉揉背，让他恢复精神吗？\nE / Enter 帮忙并领取HM01居合斩。\nEsc 取消，不改变进度。","captain")
+				_cut_dialog(Language.story("船长 · 晕船"),Language.story("呜……我晕船了。\n帮船长揉揉背，让他恢复精神吗？\nE / Enter 帮忙并领取HM01居合斩。\nEsc 取消，不改变进度。"),"captain")
 				_trace({"event":"captain_dialog"})
 			return true
 	if store.cut_rules.has_trees(map_id):
@@ -2318,44 +2331,44 @@ func _cut_interact(cell: Vector2i) -> bool:
 			if absi(cell.x-target.x)+absi(cell.y-target.y)!=1 or player.facing.dot(Vector2(target-cell))<=0.5:continue
 			if tree["cell"] in cut_removed:return false
 			var error: String = store.cut_rules.field_error(store.state,true)
-			if error!="":status.text = error;_trace({"event":"cut_rejected","reason":error});return true
+			if error!="":status.text = Language.message(error);_trace({"event":"cut_rejected","reason":error});return true
 			cut_tree = tree.duplicate(true)
-			_cut_dialog("居合斩 · 可砍的树","%s可以使用居合斩！\n要砍掉面前的小树吗？\nE / Enter 确认，Esc 取消。\n不会消耗PP；离开地图后小树恢复。" % store.growth.species[store.state["team"][store.cut_rules.cutter(store.state)]["species_id"]]["name"],"tree")
+			_cut_dialog(Language.story("居合斩 · 可砍的树"),Language.story("%s可以使用居合斩！\n要砍掉面前的小树吗？\nE / Enter 确认，Esc 取消。\n不会消耗PP；离开地图后小树恢复。") % Language.display_name(store.state["team"][store.cut_rules.cutter(store.state)],store.growth.species[store.state["team"][store.cut_rules.cutter(store.state)]["species_id"]]["name"]),"tree")
 			_trace({"event":"cut_tree_dialog"});return true
 	return false
 
 func _hm_menu() -> void:
-	var error:String="" if _hm_rules().has_hm(store.state) else "还没有对应秘传机。"
-	if error!="":status.text = error;return
-	cut_phase = "party";_new_modal("HM%02d · %s教学 · 不消耗" % [store.sevii_hm.catalog[sevii_teaching]["hm"],store.sevii_hm.catalog[sevii_teaching]["name"]] if sevii_teaching!="" else "HM05 · 闪光教学 · 不消耗" if flash_teaching else "HM02 · 飞翔教学 · 不消耗" if fly_teaching else "HM04 · 怪力教学 · 不消耗" if strength_teaching else "HM03 · 冲浪教学 · 不消耗" if surf_teaching else "HM01 · 居合斩教学 · 不消耗")
+	var error:String="" if _hm_rules().has_hm(store.state) else Language.text("ui.e5699cf54a68","还没有对应秘传机。")
+	if error!="":status.text = Language.message(error);return
+	cut_phase = "party";_new_modal(Language.text("ui.75ca9986c267","HM%02d · %s教学 · 不消耗") % [store.sevii_hm.catalog[sevii_teaching]["hm"],Language.name(store.sevii_hm.catalog[sevii_teaching]["name"])] if sevii_teaching!="" else Language.text("ui.10558176494b","HM05 · 闪光教学 · 不消耗") if flash_teaching else Language.text("ui.833c9ecfbd43","HM02 · 飞翔教学 · 不消耗") if fly_teaching else Language.text("ui.b45fd09d3ef4","HM04 · 怪力教学 · 不消耗") if strength_teaching else Language.text("ui.83248b750f27","HM03 · 冲浪教学 · 不消耗") if surf_teaching else Language.text("ui.61763eaf3572","HM01 · 居合斩教学 · 不消耗"))
 	for i in range(store.state["team"].size()):
 		var pet: Dictionary = store.state["team"][i]
 		var reason: String = _hm_rules().learn_error(store.state,i)
-		UI.button(modal,"%d %s · %s" % [i+1,store.growth.species[pet["species_id"]]["name"],"可以学习" if reason=="" else reason],Rect2(110,168+i*46,738,42),_hm_select.bind(i))
-	UI.button(modal,"Esc / B 返回",Rect2(110,478,738,48),_cut_close)
+		UI.button(modal,"%d %s · %s" % [i+1,Language.display_name(pet,store.growth.species[pet["species_id"]]["name"]),Language.text("ui.8a1eef6c1131","可以学习") if reason=="" else Language.message(reason)],Rect2(110,168+i*46,738,42),_hm_select.bind(i))
+	UI.button(modal,Language.text("ui.96668801a8cf","Esc / B 返回"),Rect2(110,478,738,48),_cut_close)
 	trainer_ready_at = Time.get_ticks_msec()+250;_state_trace("hm_party_menu")
 
 func _hm_select(index: int) -> void:
 	var error: String = _hm_rules().learn_error(store.state,index)
-	if error!="":status.text = error;_trace({"event":"hm_rejected","reason":error});return
+	if error!="":status.text = Language.message(error);_trace({"event":"hm_rejected","reason":error});return
 	cut_learner = index
 	var pet: Dictionary = store.state["team"][index]
 	if pet["moves"].size()<4:_hm_slot(pet["moves"].size());return
-	cut_phase = "slot";_new_modal(store.sevii_hm.catalog[sevii_teaching]["name"]+" · 选择遗忘的招式" if sevii_teaching!="" else "闪光 · 选择遗忘的招式" if flash_teaching else "飞翔 · 选择遗忘的招式" if fly_teaching else "怪力 · 选择遗忘的招式" if strength_teaching else "冲浪 · 选择遗忘的招式" if surf_teaching else "居合斩 · 选择遗忘的招式")
+	cut_phase = "slot";_new_modal(Language.name(store.sevii_hm.catalog[sevii_teaching]["name"])+Language.text("ui.8c7d8712879a"," · 选择遗忘的招式") if sevii_teaching!="" else Language.text("ui.abe3abbbf7af","闪光 · 选择遗忘的招式") if flash_teaching else Language.text("ui.17d38c001df3","飞翔 · 选择遗忘的招式") if fly_teaching else Language.text("ui.c8754bfbab63","怪力 · 选择遗忘的招式") if strength_teaching else Language.text("ui.df21b8b97214","冲浪 · 选择遗忘的招式") if surf_teaching else Language.text("ui.ea96f85d8443","居合斩 · 选择遗忘的招式"))
 	for i in range(pet["moves"].size()):
-		UI.button(modal,"%d %s · PP %d/%d" % [i+1,store.growth.moves[pet["moves"][i]]["name"],pet["pp"][pet["moves"][i]],store.growth.moves[pet["moves"][i]]["pp"]],Rect2(110,178+i*57,738,50),_hm_slot.bind(i))
-	UI.button(modal,"Esc / B 放弃学习",Rect2(110,478,738,48),_cut_close)
+		UI.button(modal,"%d %s · PP %d/%d" % [i+1,Language.name(store.growth.moves[pet["moves"][i]]["name"]),pet["pp"][pet["moves"][i]],store.growth.moves[pet["moves"][i]]["pp"]],Rect2(110,178+i*57,738,50),_hm_slot.bind(i))
+	UI.button(modal,Language.text("ui.3ea1848a240f","Esc / B 放弃学习"),Rect2(110,478,738,48),_cut_close)
 	trainer_ready_at = Time.get_ticks_msec()+250;_trace({"event":"hm_replace_menu","index":index})
 
 func _hm_slot(slot: int) -> void:
 	var pet: Dictionary = store.state["team"][cut_learner]
-	if slot<pet["moves"].size() and pet["moves"][slot] in store.growth.HM_MOVES:status.text = "秘传招式不能在这里遗忘。";return
+	if slot<pet["moves"].size() and pet["moves"][slot] in store.growth.HM_MOVES:status.text = Language.story("秘传招式不能在这里遗忘。");return
 	cut_slot = slot
-	var old: String = store.growth.moves[pet["moves"][slot]]["name"] if slot<pet["moves"].size() else "空位"
-	_cut_dialog(store.sevii_hm.catalog[sevii_teaching]["name"]+" · 最后确认" if sevii_teaching!="" else "闪光 · 最后确认" if flash_teaching else "飞翔 · 最后确认" if fly_teaching else "怪力 · 最后确认" if strength_teaching else "冲浪 · 最后确认" if surf_teaching else "居合斩 · 最后确认","%s将学习%s。
+	var old: String = Language.name(store.growth.moves[pet["moves"][slot]]["name"]) if slot<pet["moves"].size() else Language.story("空位")
+	_cut_dialog(Language.name(store.sevii_hm.catalog[sevii_teaching]["name"])+Language.text("ui.ee261aba31e3"," · 最后确认") if sevii_teaching!="" else Language.text("ui.c7931576d617","闪光 · 最后确认") if flash_teaching else Language.text("ui.af3d79855dc4","飞翔 · 最后确认") if fly_teaching else Language.text("ui.2c08cb3bb42d","怪力 · 最后确认") if strength_teaching else Language.text("ui.22ec7362572f","冲浪 · 最后确认") if surf_teaching else Language.text("ui.5e50cf980792","居合斩 · 最后确认"),Language.text("ui.f52c81ddac45","%s将学习%s。
 替换：%s。其他HP、PP和个体身份保留。
 秘传机不会消耗。
-E / Enter 确认，Esc 放弃。" % [store.growth.species[pet["species_id"]]["name"],store.sevii_hm.catalog[sevii_teaching]["name"]+"（PP%d）" % store.growth.moves[sevii_teaching]["pp"] if sevii_teaching!="" else "闪光（命中70 / PP20 / 命中率降一级）" if flash_teaching else "飞翔（70 / 95 / PP15）" if fly_teaching else "怪力（80 / 100 / PP15）" if strength_teaching else "冲浪（95 / 100 / PP15）" if surf_teaching else "居合斩（50 / 95 / PP30）",old],"learn")
+E / Enter 确认，Esc 放弃。") % [Language.display_name(pet,store.growth.species[pet["species_id"]]["name"]),Language.name(store.sevii_hm.catalog[sevii_teaching]["name"])+"（PP%d）" % store.growth.moves[sevii_teaching]["pp"] if sevii_teaching!="" else Language.text("ui.75c399d480fc","闪光（命中70 / PP20 / 命中率降一级）") if flash_teaching else Language.text("ui.53c0c67aa3cc","飞翔（70 / 95 / PP15）") if fly_teaching else Language.text("ui.dea2eaa8b2fd","怪力（80 / 100 / PP15）") if strength_teaching else Language.text("ui.bef351a3ffa7","冲浪（95 / 100 / PP15）") if surf_teaching else Language.text("ui.c35b02c11202","居合斩（50 / 95 / PP30）"),old],"learn")
 	_trace({"event":"hm_confirm_dialog","index":cut_learner,"slot":slot})
 
 func _cut_input(key: int) -> void:
@@ -2367,17 +2380,17 @@ func _cut_input(key: int) -> void:
 	match cut_phase:
 		"captain":
 			var error: String = store.cut_rules.claim(store)
-			if error!="":status.text = error;_cut_close();return
-			_cut_dialog("船长 · 获得HM01居合斩","谢谢！我已经恢复精神了！\n获得HM01居合斩，已经保存。\n地图按 M，选择兼容的宝可梦学习。\n有蓝色徽章且队伍学会居合斩，就能砍小树。\nE / Esc 返回。","info")
+			if error!="":status.text = Language.message(error);_cut_close();return
+			_cut_dialog(Language.story("船长 · 获得HM01居合斩"),Language.story("谢谢！我已经恢复精神了！\n获得HM01居合斩，已经保存。\n地图按 M，选择兼容的宝可梦学习。\n有蓝色徽章且队伍学会居合斩，就能砍小树。\nE / Esc 返回。"),"info")
 			_state_trace("captain_received")
 		"learn":
 			var error: String = _hm_rules().teach(store,cut_learner,cut_slot)
-			_cut_close();status.text = ("学会了%s！秘传机保留；面向岩石/瀑布按E使用。" % store.sevii_hm.catalog[sevii_teaching]["name"] if sevii_teaching!="" else "学会了闪光！HM05保留；U在岩山隧道使用。" if flash_teaching else "学会了飞翔！HM02保留；户外按F。" if fly_teaching else "学会了怪力！HM04保留。" if strength_teaching else "学会了冲浪！HM03保留；面向水面按E。" if surf_teaching else "学会了居合斩！HM01保留；面向小树按 E。") if error=="" else error
+			_cut_close();status.text = (Language.text("ui.ff21cdece315","学会了%s！秘传机保留；面向岩石/瀑布按E使用。") % Language.name(store.sevii_hm.catalog[sevii_teaching]["name"]) if sevii_teaching!="" else Language.text("ui.94b866e8b196","学会了闪光！HM05保留；U在岩山隧道使用。") if flash_teaching else Language.text("ui.8f39c0c6c9bb","学会了飞翔！HM02保留；户外按F。") if fly_teaching else Language.text("ui.e03fdf5f33bd","学会了怪力！HM04保留。") if strength_teaching else Language.text("ui.1fefcd63424e","学会了冲浪！HM03保留；面向水面按E。") if surf_teaching else Language.text("ui.48e9831b89b4","学会了居合斩！HM01保留；面向小树按 E。")) if error=="" else Language.message(error)
 			_state_trace("hm_learned" if error=="" else "hm_failed")
 		"tree":
 			var tree: Dictionary = cut_tree.duplicate(true)
 			_cut_close();cut_removed.append(tree["cell"]);_build_map(map_id,player.position)
-			status.text = "使用居合斩！小树已砍开，离开地图后恢复。"
+			status.text = Language.story("使用居合斩！小树已砍开，离开地图后恢复。")
 			_trace({"event":"cut_tree_removed","cell":tree["cell"],"state":store.state.duplicate(true)})
 		"info":_cut_close()
 
@@ -2385,39 +2398,39 @@ func _gym_interact(cell: Vector2i) -> bool:
 	for entry in trainer_rules.vermilion:
 		var target := Vector2i(entry["cell"][0],entry["cell"][1])
 		if absi(cell.x-target.x)+absi(cell.y-target.y)==1 and player.facing.dot(Vector2(target-cell))>0.5:
-			if entry["id"]=="vermilion_surge" and not store.gym_rules.opened(store.state):status.text = "先解除两道电锁。";return true
+			if entry["id"]=="vermilion_surge" and not store.gym_rules.opened(store.state):status.text = Language.story("先解除两道电锁。");return true
 			_forest_trainer_interact(entry);return true
 	for can in store.gym_rules.data["cans"]:
 		var target := Vector2i(can["cell"][0],can["cell"][1])
 		if absi(cell.x-target.x)+absi(cell.y-target.y)!=1 or player.facing.dot(Vector2(target-cell))<=0.5:continue
 		var result: Dictionary = store.gym_rules.investigate(store,int(can["id"]))
 		_build_map(map_id,player.position)
-		gym_phase = true;_new_modal("枯叶道馆 · 垃圾桶调查")
-		UI.label(modal,result["text"]+"\nE / Esc 返回。",Rect2(110,185,730,230),22)
+		gym_phase = true;_new_modal(Language.story("枯叶道馆 · 垃圾桶调查"))
+		UI.label(modal,Language.story(result["text"])+Language.story("\nE / Esc 返回。"),Rect2(110,185,730,230),22)
 		trainer_ready_at = Time.get_ticks_msec()+250
 		_trace({"event":"gym_puzzle_"+result["event"],"can":can["id"],"first":store.gym_rules.first,"second":store.gym_rules.second,"state":store.state.duplicate(true)})
 		return true
 	var guide := Vector2i(4,14)
 	if absi(cell.x-guide.x)+absi(cell.y-guide.y)==1 and player.facing.dot(Vector2(guide-cell))>0.5:
-		status.text = "第二开关紧邻第一开关。失败会重置！战胜馆主可得雷电徽章。TM34教学、徽章加速与飞翔许可延期。";return true
+		status.text = Language.story("第二开关紧邻第一开关。失败会重置！战胜馆主可得雷电徽章。TM34教学、徽章加速与飞翔许可延期。");return true
 	return false
 
 func _rocket_interact(cell: Vector2i) -> bool:
 	if map_id=="rocket-hideout-elevator":
 		var panel := Vector2i(1,1)
 		if absi(cell.x-panel.x)+absi(cell.y-panel.y)==1 and player.facing.dot(Vector2(panel-cell))>0.5:
-			if not store.post_b3.has_item(store.state,"lift_key"):status.text = "看来需要一把钥匙。";_state_trace("lift_no_key");return true
-			lift_pending = true;trainer_ready_at = Time.get_ticks_msec()+250;_new_modal("火箭队基地 · 电梯")
-			UI.label(modal,"去哪个楼层？\n1 地下1层\n2 地下2层\n3 地下4层\nEsc 取消",Rect2(150,180,680,280),23);_state_trace("lift_menu");return true
+			if not store.post_b3.has_item(store.state,"lift_key"):status.text = Language.story("看来需要一把钥匙。");_state_trace("lift_no_key");return true
+			lift_pending = true;trainer_ready_at = Time.get_ticks_msec()+250;_new_modal(Language.story("火箭队基地 · 电梯"))
+			UI.label(modal,Language.story("去哪个楼层？\n1 地下1层\n2 地下2层\n3 地下4层\nEsc 取消"),Rect2(150,180,680,280),23);_state_trace("lift_menu");return true
 		return false
 	if map_id not in ["rocket-hideout-b4f","game-corner","rocket-hideout-b1f","rocket-hideout-b2f","rocket-hideout-b3f"]:return false
 	if map_id=="game-corner" and cell==Vector2i(9,5) and player.facing.y<0:
 		if store.rocket_rules.opened(store.state):
-			status.text = "海报后的开关已经按下，秘密楼梯已出现。";_state_trace("rocket_switch_repeat");return true
+			status.text = Language.story("海报后的开关已经按下，秘密楼梯已出现。");_state_trace("rocket_switch_repeat");return true
 		var failure: String = store.rocket_rules.push(store)
-		if failure!="":status.text = failure;_state_trace("rocket_switch_failed");return true
+		if failure!="":status.text = Language.message(failure);_state_trace("rocket_switch_failed");return true
 		_change_map(map_id,player.position)
-		status.text = "海报后面有个开关！按下了！秘密楼梯出现了。"
+		status.text = Language.story("海报后面有个开关！按下了！秘密楼梯出现了。")
 		_state_trace("rocket_switch_opened");return true
 	for actor in post_b3_actors+rocket_depth_actors+rocket_actors:
 		if actor["map"]!=map_id:continue
@@ -2431,20 +2444,20 @@ func _rocket_interact(cell: Vector2i) -> bool:
 				_forest_trainer_interact(trainer_rules.definition("rocket_giovanni"));return true
 			if actor["item"]=="SILPH_SCOPE":
 				var failure: String = store.post_b3.transition(store,"take","silph_scope")
-				_change_map(map_id,player.position);status.text = failure if failure!="" else "获得西尔佛检视镜！可以辨认宝可梦塔幽灵。";_state_trace("silph_scope_taken");return true
+				_change_map(map_id,player.position);status.text = Language.message(failure) if failure!="" else Language.story("获得西尔佛检视镜！可以辨认宝可梦塔幽灵。");_state_trace("silph_scope_taken");return true
 			if id in ["rocket_b4_2","rocket_b4_3"]:
 				_forest_trainer_interact(trainer_rules.definition(id));return true
 			if id=="rocket_b4_4":
 				if store.state.get("trainers",{}).get(id,false):
 					var failure: String = store.post_b3.transition(store,"drop")
-					_change_map(map_id,player.position);status.text = failure if failure!="" else "糟了！电梯钥匙掉在旁边了！";_state_trace("lift_key_dropped");return true
+					_change_map(map_id,player.position);status.text = Language.message(failure) if failure!="" else Language.story("糟了！电梯钥匙掉在旁边了！");_state_trace("lift_key_dropped");return true
 				_forest_trainer_interact(trainer_rules.definition(id));return true
 			if actor["item"]=="LIFT_KEY":
 				var failure: String = store.post_b3.transition(store,"take","lift_key")
-				_change_map(map_id,player.position);status.text = failure if failure!="" else "获得电梯钥匙！";_state_trace("lift_key_taken");return true
-			status.text = "基地后续战斗或道具随后接入。";return true
+				_change_map(map_id,player.position);status.text = Language.message(failure) if failure!="" else Language.story("获得电梯钥匙！");_state_trace("lift_key_taken");return true
+			status.text = Language.story("基地后续战斗或道具随后接入。");return true
 		if actor.has("party"):_forest_trainer_interact(actor)
-		else:status.text = "道具拾取本轮延期。" if actor.get("item_deferred",false) else "游戏厅代币、奖品与小游戏本轮延期。"
+		else:status.text = Language.story("道具拾取本轮延期。") if actor.get("item_deferred",false) else Language.story("游戏厅代币、奖品与小游戏本轮延期。")
 		return true
 	return false
 
@@ -2461,12 +2474,12 @@ func _tower_interact(cell: Vector2i) -> bool:
 			if map_id=="pokemon-tower-6f" and actor.get("item","")=="RARE_CANDY":
 				var failure: String = store.tower_story.take_candy(store)
 				if failure=="":_change_map(map_id,player.position)
-				status.text = "获得神奇糖果×1，已放入背包并保存。" if failure=="" else failure
+				status.text = Language.story("获得神奇糖果×1，已放入背包并保存。") if failure=="" else Language.message(failure)
 				_state_trace("tower_candy_taken" if failure=="" else "tower_candy_failed");return true
-			if actor.get("item","")!="":status.text = "普通楼层物品本批延期。";return true
+			if actor.get("item","")!="":status.text = Language.story("普通楼层物品本批延期。");return true
 			if map_id=="pokemon-tower-2f" and actor["redObject"]==1:
 				_forest_trainer_interact(trainer_rules.definition("tower_rival"));return true
-			status.text = actor["text"];_trace({"event":"tower_dialog","object":actor["redObject"],"text":actor["text"]});return true
+			status.text = Language.story(actor["text"]);_trace({"event":"tower_dialog","object":actor["redObject"],"text":actor["text"]});return true
 	return false
 
 func _tower_trigger(cell: Vector2i) -> bool:
@@ -2475,9 +2488,9 @@ func _tower_trigger(cell: Vector2i) -> bool:
 		if store.state["trainers"].get("tower_mother_released",false) or tower_trigger_latch=="mother":return false
 		tower_trigger_latch = "mother"
 		if not store.post_b3.has_item(store.state,"silph_scope"):
-			status.text = "幽灵无法辨认！需要检视镜。";_trace({"event":"mother_scope_refused"});return true
-		_new_modal("母亲幽灵 · 退下！入侵者！")
-		UI.label(modal,"检视镜辨认出Lv30嘎啦嘎啦。E / Enter 对战 · Esc 取消",Rect2(100,220,755,100),22)
+			status.text = Language.story("幽灵无法辨认！需要检视镜。");_trace({"event":"mother_scope_refused"});return true
+		_new_modal(Language.story("母亲幽灵 · 退下！入侵者！"))
+		UI.label(modal,Language.story("检视镜辨认出Lv30嘎啦嘎啦。E / Enter 对战 · Esc 取消"),Rect2(100,220,755,100),22)
 		pending_mother = true;_trace({"event":"mother_dialog"});return true
 	if map_id!="pokemon-tower-2f":tower_trigger_latch = "";return false
 	var key: String = "%d:%d" % [cell.x,cell.y]
@@ -2495,8 +2508,8 @@ func _tower_purified(cell: Vector2i) -> bool:
 	var before: Dictionary = store.state.duplicate(true)
 	store.heal_party()
 	if not _save():
-		store.state = before;status.text = store.error;purified_latch = true;return true
-	purified_latch = true;status.text = "净化区域！宝可梦HP、状态与PP已恢复。";_state_trace("tower_purified");return true
+		store.state = before;status.text = Language.message(store.error);purified_latch = true;return true
+	purified_latch = true;status.text = Language.story("净化区域！宝可梦HP、状态与PP已恢复。");_state_trace("tower_purified");return true
 
 func _start_mother() -> void:
 	if in_battle or store.state["trainers"].get("tower_mother_released",false) or not store.post_b3.has_item(store.state,"silph_scope"):return
@@ -2512,11 +2525,11 @@ func _start_mother() -> void:
 	_trace({"event":"mother_started","enemy":battle.enemy.duplicate(true)})
 
 func _fuji_dialog() -> void:
-	if map_id=="pokemon-tower-7f" and not store.tower_story.ready(store.state):status.text = "先击败塔顶三名火箭队员。";_trace({"event":"fuji_early"});return
-	if map_id=="mr-fujis-house" and store.tower_story.flute(store.state):status.text = "富士老人：宝可梦笛帮上忙了吗？（已领取）";_trace({"event":"fuji_repeat"});return
+	if map_id=="pokemon-tower-7f" and not store.tower_story.ready(store.state):status.text = Language.story("先击败塔顶三名火箭队员。");_trace({"event":"fuji_early"});return
+	if map_id=="mr-fujis-house" and store.tower_story.flute(store.state):status.text = Language.story("富士老人：宝可梦笛帮上忙了吗？（已领取）");_trace({"event":"fuji_repeat"});return
 	fuji_action = "rescue" if map_id=="pokemon-tower-7f" else "flute"
-	_new_modal("富士老人")
-	UI.label(modal,"谢谢你，请随我回宝可梦之家。E / Enter 确认 · Esc 取消" if fuji_action=="rescue" else "请收下宝可梦笛！E / Enter 领取 · Esc 取消",Rect2(100,200,755,150),22)
+	_new_modal(Language.story("富士老人"))
+	UI.label(modal,Language.story("谢谢你，请随我回宝可梦之家。E / Enter 确认 · Esc 取消") if fuji_action=="rescue" else Language.story("请收下宝可梦笛！E / Enter 领取 · Esc 取消"),Rect2(100,200,755,150),22)
 	_trace({"event":"fuji_dialog","action":fuji_action})
 
 func _tea_interact(cell: Vector2i) -> bool:
@@ -2525,10 +2538,10 @@ func _tea_interact(cell: Vector2i) -> bool:
 		var target := Vector2i(actor["cell"][0],actor["cell"][1])
 		if absi(cell.x-target.x)+absi(cell.y-target.y)!=1 or player.facing.dot(Vector2(target-cell))<=0.5:continue
 		if actor["redObject"]!=2:
-			status.text = {"wardens-house":"E交金牙/领取HM04 · J怪力教学 · E启用怪力后方向键推石",1:"喵喵：喵～（蹭着老奶奶）",3:"皮皮：皮～（轻轻摇摆）",4:"尼多兰：尼多～（竖起耳朵）"}[int(actor["redObject"])];return true
-		if store.state.get("mansion_tea",{}).get("received",false):status.text = "老奶奶：可爱的宝可梦们一直陪着我。（茶已领取）";_state_trace("tea_repeat");return true
-		tea_pending = true;_new_modal("老奶奶 · 香茶")
-		UI.label(modal,"不要喝那么多凉饮料。尝尝我泡的热茶吧！\nE / Enter 领取 · Esc 取消",Rect2(100,200,755,150),22)
+			status.text = {"wardens-house":Language.story("E交金牙/领取HM04 · J怪力教学 · E启用怪力后方向键推石"),1:Language.story("喵喵：喵～（蹭着老奶奶）"),3:Language.story("皮皮：皮～（轻轻摇摆）"),4:Language.story("尼多兰：尼多～（竖起耳朵）")}[int(actor["redObject"])];return true
+		if store.state.get("mansion_tea",{}).get("received",false):status.text = Language.story("老奶奶：可爱的宝可梦们一直陪着我。（茶已领取）");_state_trace("tea_repeat");return true
+		tea_pending = true;_new_modal(Language.story("老奶奶 · 香茶"))
+		UI.label(modal,Language.story("不要喝那么多凉饮料。尝尝我泡的热茶吧！\nE / Enter 领取 · Esc 取消"),Rect2(100,200,755,150),22)
 		_state_trace("tea_dialog");return true
 	return false
 
@@ -2539,8 +2552,8 @@ func _saffron_gate_trigger(cell: Vector2i) -> bool:
 	var failure: String = store.saffron_rules.deliver(store,map_id)
 	if failure!="":
 		player.position.x = 40;player.velocity = Vector2.ZERO
-		status.text = failure;_state_trace("gate_denied");return true
-	status.text = "守卫：这茶真好喝！我会分给其他守卫。茶已交付，通行已保存。"
+		status.text = Language.message(failure);_state_trace("gate_denied");return true
+	status.text = Language.story("守卫：这茶真好喝！我会分给其他守卫。茶已交付，通行已保存。")
 	_state_trace("gate_tea_delivered");return true
 
 func _saffron_interact(cell: Vector2i) -> bool:
@@ -2549,57 +2562,57 @@ func _saffron_interact(cell: Vector2i) -> bool:
 		if map_id=="saffron-center" and a["redObject"]==1 or map_id=="saffron-mart" and a["redObject"]==1:continue
 		var target := Vector2i(a["cell"][0],a["cell"][1])
 		if absi(cell.x-target.x)+absi(cell.y-target.y)!=1 or player.facing.dot(Vector2(target-cell))<0.5:continue
-		var message: String = "金黄市终于恢复和平了！娜姿道馆将在后续切片开放。" if store.silph_story.liberated(store.state) else "火箭队占领了金黄市。其他建筑和道路尚未开放。"
-		if map_id=="route7-gate":message = "守卫：你好！茶会分给其他关卡的守卫。" if store.saffron_rules.opened(store.state) else "守卫：站岗真渴啊！"
-		elif map_id=="saffron-city" and (a["redObject"]==14 or a["redObject"]==15):message = "守卫正在打瞌睡。公司可进入；更高楼层分片开放。" if store.tower_story.rescued(store.state) else "火箭队：我是这里的警卫！不许进入。"
-		elif map_id=="saffron-city" and a["redObject"]==3:message = "娜姿道馆仍被火箭队封锁；须先解放西尔佛公司。"
-		elif map_id=="saffron-center":message = "护士可恢复伙伴；联机服务未开放。"
-		elif map_id=="saffron-mart":message = "暂复用好伤药700货单；金黄原货品尚未实现。"
-		status.text = message;_trace({"event":"saffron_npc","map":map_id,"object":a["redObject"],"text":message});return true
+		var message: String = Language.story("金黄市终于恢复和平了！娜姿道馆将在后续切片开放。") if store.silph_story.liberated(store.state) else Language.story("火箭队占领了金黄市。其他建筑和道路尚未开放。")
+		if map_id=="route7-gate":message = Language.story("守卫：你好！茶会分给其他关卡的守卫。") if store.saffron_rules.opened(store.state) else Language.story("守卫：站岗真渴啊！")
+		elif map_id=="saffron-city" and (a["redObject"]==14 or a["redObject"]==15):message = Language.story("守卫正在打瞌睡。公司可进入；更高楼层分片开放。") if store.tower_story.rescued(store.state) else Language.story("火箭队：我是这里的警卫！不许进入。")
+		elif map_id=="saffron-city" and a["redObject"]==3:message = Language.story("娜姿道馆仍被火箭队封锁；须先解放西尔佛公司。")
+		elif map_id=="saffron-center":message = Language.story("护士可恢复伙伴；联机服务未开放。")
+		elif map_id=="saffron-mart":message = Language.story("暂复用好伤药700货单；金黄原货品尚未实现。")
+		status.text = Language.story(message);_trace({"event":"saffron_npc","map":map_id,"object":a["redObject"],"text":message});return true
 	return false
 
 func _silph_interact(cell: Vector2i) -> bool:
 	if map_id=="silph-co-elevator":
 		var panel := Vector2i(3,0)
 		if absi(cell.x-panel.x)+absi(cell.y-panel.y)==1 and player.facing.dot(Vector2(panel-cell))>0.5:
-			silph_lift_pending = true;trainer_ready_at = Time.get_ticks_msec()+250;_new_modal("西尔佛公司 · 电梯")
-			var text: String = "去哪个楼层？\n"
-			for i in range(1,store.silph_story.MAX_FLOOR+1):text += "%d  %d层\n" % [i,i]
-			UI.label(modal,text+"Esc 取消",Rect2(150,130,680,440),23);_state_trace("silph_lift_menu");return true
+			silph_lift_pending = true;trainer_ready_at = Time.get_ticks_msec()+250;_new_modal(Language.story("西尔佛公司 · 电梯"))
+			var text: String = Language.story("去哪个楼层？\n")
+			for i in range(1,store.silph_story.MAX_FLOOR+1):text += Language.story("%d  %d层\n") % [i,i]
+			UI.label(modal,text+Language.story("Esc 取消"),Rect2(150,130,680,440),23);_state_trace("silph_lift_menu");return true
 	for a in silph_actors:
 		if a["map"]!=map_id or not store.silph_story.visible(a,store.state):continue
 		var target := Vector2i(a["cell"][0],a["cell"][1])
 		if absi(cell.x-target.x)+absi(cell.y-target.y)!=1 or player.facing.dot(Vector2(target-cell))<=0.5:continue
 		if map_id=="silph-co-11f" and a["redObject"]==1:
-			if not store.silph_story.liberated(store.state):status.text = "请先击败坂木，救出公司。";_state_trace("silph_president_blocked");return true
-			if store.state.get("silph_story",{}).get("master_ball_received",false):status.text = "大师球是我们的秘密试作品，一定能捉到野生宝可梦。";_state_trace("silph_president_repeat");return true
-			_silph_confirm("president",map_id,"谢谢你救了我们！领取大师球 ×1？");return true
+			if not store.silph_story.liberated(store.state):status.text = Language.story("请先击败坂木，救出公司。");_state_trace("silph_president_blocked");return true
+			if store.state.get("silph_story",{}).get("master_ball_received",false):status.text = Language.story("大师球是我们的秘密试作品，一定能捉到野生宝可梦。");_state_trace("silph_president_repeat");return true
+			_silph_confirm("president",map_id,Language.story("谢谢你救了我们！领取大师球 ×1？"));return true
 		if map_id=="silph-co-7f" and a["redObject"]==1:
-			if store.state.get("silph_story",{}).get("lapras_received",false):status.text = "拉普拉斯就拜托你了！火箭队老大在董事会议室。";_state_trace("silph_gift_repeat");return true
-			_silph_confirm("gift",map_id,"把这只拉普拉斯交给你照顾，好吗？");return true
+			if store.state.get("silph_story",{}).get("lapras_received",false):status.text = Language.story("拉普拉斯就拜托你了！火箭队老大在董事会议室。");_state_trace("silph_gift_repeat");return true
+			_silph_confirm("gift",map_id,Language.story("把这只拉普拉斯交给你照顾，好吗？"));return true
 		if map_id=="silph-co-9f" and a["redObject"]==1:
 			var freed: bool = store.silph_story.liberated(store.state)
 			var failure: String = store.silph_story.nurse(store)
-			status.text = failure if failure!="" else "谢谢你救了我们！" if freed else "先睡一小觉吧。伙伴已经恢复了！不要放弃！"
+			status.text = Language.message(failure) if failure!="" else Language.story("谢谢你救了我们！") if freed else Language.story("先睡一小觉吧。伙伴已经恢复了！不要放弃！")
 			_state_trace("silph_nurse_thanks" if freed else "silph_nurse_healed");return true
-		if a.get("item","")=="CARD_KEY":_silph_confirm("take",map_id,"拾取卡片钥匙？");return true
+		if a.get("item","")=="CARD_KEY":_silph_confirm("take",map_id,Language.story("拾取卡片钥匙？"));return true
 		for entry in trainer_rules.silph:
 			if entry["map"]==map_id and entry["redObject"]==a["redObject"]:_forest_trainer_interact(entry);return true
-		status.text = "普通物品与研究报告将在后续扩展。" if a.get("item","")!="" else "职员：谢谢你救了公司！火箭队已经离开。" if store.silph_story.liberated(store.state) else "职员：火箭队占领了公司，请小心！"
+		status.text = Language.story("普通物品与研究报告将在后续扩展。") if a.get("item","")!="" else Language.story("职员：谢谢你救了公司！火箭队已经离开。") if store.silph_story.liberated(store.state) else Language.story("职员：火箭队占领了公司，请小心！")
 		_trace({"event":"silph_npc","map":map_id,"object":a["redObject"]});return true
 	for door in store.silph_story.doors:
 		if door["map"]!=map_id:continue
 		for patch in door["cells"]:
 			var target := Vector2i(patch["cell"][0],patch["cell"][1])
 			if cell+Vector2i(player.facing)==target:
-				if store.silph_story.door_open(store.state,door["id"]):status.text = "卡片门已经打开。";_state_trace("silph_door_repeat");return true
-				if not store.silph_story.has_key(store.state):status.text = "卡片门锁住了。需要卡片钥匙。";_state_trace("silph_door_locked");return true
-				_silph_confirm("open",door["id"],"使用卡片钥匙开门？");return true
+				if store.silph_story.door_open(store.state,door["id"]):status.text = Language.story("卡片门已经打开。");_state_trace("silph_door_repeat");return true
+				if not store.silph_story.has_key(store.state):status.text = Language.story("卡片门锁住了。需要卡片钥匙。");_state_trace("silph_door_locked");return true
+				_silph_confirm("open",door["id"],Language.story("使用卡片钥匙开门？"));return true
 	return false
 
 func _silph_confirm(action: String,value: String,text: String) -> void:
-	silph_action = action;silph_value = value;trainer_ready_at = Time.get_ticks_msec()+250;_new_modal("西尔佛公司 · 剧情与奖励")
-	UI.label(modal,text+"\nE / Enter 确认 · Esc 取消",Rect2(140,200,680,160),23);_state_trace("silph_action_dialog")
+	silph_action = action;silph_value = value;trainer_ready_at = Time.get_ticks_msec()+250;_new_modal(Language.story("西尔佛公司 · 剧情与奖励"))
+	UI.label(modal,text+Language.story("\nE / Enter 确认 · Esc 取消"),Rect2(140,200,680,160),23);_state_trace("silph_action_dialog")
 
 func _dojo_interact(cell: Vector2i) -> bool:
 	for actor in o12_actors:
@@ -2611,9 +2624,9 @@ func _dojo_interact(cell: Vector2i) -> bool:
 			if entry["redObject"]!=actor["redObject"]:continue
 			if entry["id"]=="o12_koichi" and store.state.get("trainers",{}).get("o12_koichi",false):
 				if store.state.get("dojo_story",{}).get("gift_received",false):
-					status.text="已经领取过道场奖赏。";return true
-				dojo_choice_pending=true;trainer_ready_at=Time.get_ticks_msec()+250;_new_modal("格斗道场 · 馆主奖励")
-				UI.label(modal,"选择一只宝可梦作为奖赏：\n1 飞腿郎 Hitmonlee　　2 快拳郎 Hitmonchan\nEsc 暂不领取",Rect2(95,190,770,170),22)
+					status.text=Language.story("已经领取过道场奖赏。");return true
+				dojo_choice_pending=true;trainer_ready_at=Time.get_ticks_msec()+250;_new_modal(Language.story("格斗道场 · 馆主奖励"))
+				UI.label(modal,Language.story("选择一只宝可梦作为奖赏：\n1 飞腿郎 Hitmonlee　　2 快拳郎 Hitmonchan\nEsc 暂不领取"),Rect2(95,190,770,170),22)
 				_state_trace("dojo_gift_prompt");return true
 			_forest_trainer_interact(entry);return true
 	return false
@@ -2625,11 +2638,11 @@ func _saffron_roads_interact(cell: Vector2i) -> bool:
 		var delta := Vector2i(a["cell"][0],a["cell"][1])-cell
 		if absi(delta.x)+absi(delta.y)!=1 or Vector2(delta).dot(player.facing)<0.9:continue
 		if map_id=="route12" and a["redObject"]==1:
-			if not store.tower_story.flute(store.state):status.text = "宝可梦在熟睡，需要宝可梦笛。";_state_trace("snorlax_no_flute");return true
-			snorlax_pending = true;trainer_ready_at = Time.get_ticks_msec()+250;_new_modal("卡比兽 · 宝可梦笛");UI.label(modal,"要使用宝可梦笛吗？\nE / Enter 确认 · Esc 取消",Rect2(140,200,680,160),23);_state_trace("snorlax_flute_dialog");return true
+			if not store.tower_story.flute(store.state):status.text = Language.story("宝可梦在熟睡，需要宝可梦笛。");_state_trace("snorlax_no_flute");return true
+			snorlax_pending = true;trainer_ready_at = Time.get_ticks_msec()+250;_new_modal(Language.story("卡比兽 · 宝可梦笛"));UI.label(modal,Language.story("要使用宝可梦笛吗？\nE / Enter 确认 · Esc 取消"),Rect2(140,200,680,160),23);_state_trace("snorlax_flute_dialog");return true
 		for tr in trainer_rules.saffron_roads:
 			if tr["map"]==map_id and tr["redObject"]==a["redObject"]:_forest_trainer_interact(tr);return true
-		status.text = "娜姿：超能力也是锻炼的结果。" if a["redObject"]==1 else "金黄道馆的传送板连接各个房间。";return true
+		status.text = Language.story("娜姿：超能力也是锻炼的结果。") if a["redObject"]==1 else Language.story("金黄道馆的传送板连接各个房间。");return true
 	return false
 
 func _fuchsia_interact(cell: Vector2i) -> bool:
@@ -2639,12 +2652,12 @@ func _fuchsia_interact(cell: Vector2i) -> bool:
 		var distance: int = absi(delta.x)+absi(delta.y)
 		if distance!=(2 if map_id=="safari-zone-gate" and a["redObject"]==1 else 1) or Vector2(delta).normalized().dot(player.facing)<0.9:continue
 		if map_id=="safari-zone-gate" and a["redObject"]==1:_safari_prompt("enter");return true
-		if map_id=="safari-zone-gate":status.text = "请向右侧柜台办理入园。";return true
+		if map_id=="safari-zone-gate":status.text = Language.story("请向右侧柜台办理入园。");return true
 		if map_id=="fuchsia-mart" and a["redObject"]==1:return false
 		if map_id=="fuchsia-center" and a["redObject"]==1:return false
 		for tr in trainer_rules.fuchsia:
 			if tr["map"]==map_id and tr["redObject"]==a["redObject"]:_forest_trainer_interact(tr);return true
-		status.text = "阿桔挑战尚未开放。" if map_id=="fuchsia-gym" and a["redObject"]==1 else "沿隐形墙绕行，面向训练家按E挑战。" if map_id=="fuchsia-gym" else "这里暂时不能使用。";return true
+		status.text = Language.story("阿桔挑战尚未开放。") if map_id=="fuchsia-gym" and a["redObject"]==1 else Language.story("沿隐形墙绕行，面向训练家按E挑战。") if map_id=="fuchsia-gym" else Language.story("这里暂时不能使用。");return true
 	return false
 
 func _apply_snorlax(mid: String,data: Dictionary) -> void:
@@ -2664,8 +2677,8 @@ func _start_snorlax() -> void:
 func _safari_prompt(action: String) -> void:
 	safari_action = action
 	trainer_ready_at = Time.get_ticks_msec() - 1
-	_new_modal("狩猎区 · 入园/退出")
-	UI.label(modal,"要支付500入园吗？600步 / 30临时球。"+char(10)+"原图探索，Safari捕获延期。"+char(10)+"E确认 / Esc取消" if action=="enter" else "要提前离开吗？剩余临时球将归还。"+char(10)+"E确认 / Esc继续探索",Rect2(100,200,760,220),22)
+	_new_modal(Language.story("狩猎区 · 入园/退出"))
+	UI.label(modal,Language.story("要支付500入园吗？600步 / 30临时球。")+char(10)+Language.story("原图探索，Safari捕获延期。")+char(10)+Language.story("E确认 / Esc取消") if action=="enter" else Language.story("要提前离开吗？剩余临时球将归还。")+char(10)+Language.story("E确认 / Esc继续探索"),Rect2(100,200,760,220),22)
 	_state_trace("safari_prompt")
 
 func _safari_interact(cell: Vector2i) -> bool:
@@ -2674,11 +2687,11 @@ func _safari_interact(cell: Vector2i) -> bool:
 		var delta:=Vector2i(a["cell"][0],a["cell"][1])-cell
 		if absi(delta.x)+absi(delta.y)!=1 or player.facing.dot(Vector2(delta))<0.9:continue
 		var key:String="gold_teeth" if a.get("item","")=="GOLD_TEETH" else "hm03" if map_id=="safari-zone-secret-house" else ""
-		if key=="":status.text="该普通物品留待后续；Safari捕获未开放。";return true
-		if store.safari_rewards.claimed(store.state,key):status.text="已经领取过这份奖励。";_state_trace("safari_reward_repeat");return true
-		safari_reward=key;_new_modal("金牙" if key=="gold_teeth" else "秘密小屋 · HM03冲浪")
-		UI.label(modal,"E / Enter 领取；Esc取消。
-奖励与领取标志会一同保存。",Rect2(100,200,760,180),22)
+		if key=="":status.text=Language.story("该普通物品留待后续；Safari捕获未开放。");return true
+		if store.safari_rewards.claimed(store.state,key):status.text=Language.story("已经领取过这份奖励。");_state_trace("safari_reward_repeat");return true
+		safari_reward=key;_new_modal(Language.story("金牙") if key=="gold_teeth" else Language.story("秘密小屋 · HM03冲浪"))
+		UI.label(modal,Language.story("E / Enter 领取；Esc取消。
+奖励与领取标志会一同保存。"),Rect2(100,200,760,180),22)
 		_state_trace("safari_reward_prompt");return true
 	return false
 
@@ -2689,18 +2702,18 @@ func _surf_interact(cell: Vector2i) -> bool:
 	var front := cell+direction
 	if not store.surf.water(map_id,layout,front):return false
 	var failure: String = store.surf.field_error(store.state)
-	if failure=="" and store.surf.pair_blocked(map_id,layout,cell,front):failure = "这段岸边不能上水。"
-	if failure!="":status.text = failure;_state_trace("surf_rejected");return true
-	surf_target = front;surf_pending = true;_new_modal("飞翔 · 选择遗忘的招式" if fly_teaching else "怪力 · 选择遗忘的招式" if strength_teaching else "冲浪 · 上水")
-	UI.label(modal,"要使用冲浪吗？
-E / Enter确认，Esc取消。",Rect2(100,200,760,180),22);_state_trace("surf_prompt");return true
+	if failure=="" and store.surf.pair_blocked(map_id,layout,cell,front):failure = Language.story("这段岸边不能上水。")
+	if failure!="":status.text = Language.message(failure);_state_trace("surf_rejected");return true
+	surf_target = front;surf_pending = true;_new_modal(Language.text("ui.17d38c001df3","飞翔 · 选择遗忘的招式") if fly_teaching else Language.text("ui.c8754bfbab63","怪力 · 选择遗忘的招式") if strength_teaching else "冲浪 · 上水")
+	UI.label(modal,Language.story("要使用冲浪吗？
+E / Enter确认，Esc取消。"),Rect2(100,200,760,180),22);_state_trace("surf_prompt");return true
 
 func _pokemon_mansion_interact(cell:Vector2i)->bool:
 	for entry in store.pokemon_mansion.data["switches"]:
 		if entry["map"]==map_id and cell+Vector2i.UP==Vector2i(int(entry["cell"][0]),int(entry["cell"][1])) and player.facing.y<0:
 			mansion_pending=true;trainer_ready_at=Time.get_ticks_msec()+250
-			_new_modal("秘密开关");UI.label(modal,"雕像里藏着秘密开关！要按下吗？
-E / Enter 确认 · Esc 取消",Rect2(100,200,755,140),23);_state_trace("mansion_prompt");return true
+			_new_modal(Language.story("秘密开关"));UI.label(modal,Language.story("雕像里藏着秘密开关！要按下吗？
+E / Enter 确认 · Esc 取消"),Rect2(100,200,755,140),23);_state_trace("mansion_prompt");return true
 	for a in pokemon_mansion_actors:
 		if a["map"]!=map_id:continue
 		var dd:=Vector2i(int(a["cell"][0]),int(a["cell"][1]))-cell
@@ -2708,17 +2721,17 @@ E / Enter 确认 · Esc 取消",Rect2(100,200,755,140),23);_state_trace("mansion
 		for tr in trainer_rules.pokemon_mansion:
 			if tr["map"]==map_id and tr["redObject"]==a["redObject"]:_forest_trainer_interact(tr);return true
 		if a.get("item","")=="SECRET_KEY":
-			if store.pokemon_mansion.has_key(store.state):status.text="秘密钥匙已经领取。";_state_trace("mansion_key_repeat");return true
+			if store.pokemon_mansion.has_key(store.state):status.text=Language.story("秘密钥匙已经领取。");_state_trace("mansion_key_repeat");return true
 			mansion_key_pending=true;trainer_ready_at=Time.get_ticks_msec()+250
-			_new_modal("秘密钥匙");UI.label(modal,"发现秘密钥匙！要拾取吗？\nE / Enter 确认 · Esc 取消",Rect2(100,200,755,140),23);_state_trace("mansion_key_prompt");return true
-		status.text="此物品或日记的交互尚未开放。";return true
+			_new_modal(Language.story("秘密钥匙"));UI.label(modal,Language.story("发现秘密钥匙！要拾取吗？\nE / Enter 确认 · Esc 取消"),Rect2(100,200,755,140),23);_state_trace("mansion_key_prompt");return true
+		status.text=Language.story("此物品或日记的交互尚未开放。");return true
 	return false
 
 func _viridian_gym_trigger(cell: Vector2i) -> bool:
 	if map_id=="viridian-city" and cell.x==32 and cell.y in [7,8] and player.velocity.y<0:
 		if not viridian_gym.opened(store.state):
 			player.position=Vector2(520,169);player.velocity=Vector2.ZERO;interaction_ready_at=Time.get_ticks_msec()+400
-			status.text="常青道馆的门紧锁着。需要除绿色徽章外的七枚徽章。"
+			status.text=Language.story("常青道馆的门紧锁着。需要除绿色徽章外的七枚徽章。")
 			_state_trace("viridian_gym_locked");return true
 		_change_map("viridian-gym",Vector2(280,265));return true
 	if map_id=="viridian-gym" and cell.x in [16,17] and cell.y==17 and player.velocity.y>0:
@@ -2736,8 +2749,8 @@ func _viridian_gym_interact(cell: Vector2i) -> bool:
 			for entry in trainer_rules.viridian:
 				if int(entry["redObject"])==int(actor["redObject"]):_forest_trainer_interact(entry);return true
 		if actor["role"]=="guide" and store.state.get("badges",{}).get("earth",false):
-			status.text="真不敢相信！坂木竟然就是常青道馆的馆主！";return true
-		status.text=viridian_gym.news(store.state) if actor["role"]=="city_gym_news" else "常青道馆：箭头地板会将你送到停止格。" if actor["role"]=="guide" else "该物品的拾取将在后续接入。" if actor["role"]=="item_deferred" else "常青道馆的对战将在后续切片接入。"
+			status.text=Language.story("真不敢相信！坂木竟然就是常青道馆的馆主！");return true
+		status.text=Language.story(viridian_gym.news(store.state)) if actor["role"]=="city_gym_news" else Language.story("常青道馆：箭头地板会将你送到停止格。") if actor["role"]=="guide" else Language.story("该物品的拾取将在后续接入。") if actor["role"]=="item_deferred" else Language.story("常青道馆的对战将在后续切片接入。")
 		_trace({"event":"viridian_actor_dialog","object":actor["redObject"],"text":status.text});return true
 	return false
 
@@ -2750,7 +2763,7 @@ func _league_gate_trigger(cell:Vector2i)->bool:
 	var allowed:bool=store.state.get("badges",{}).get(badge,false)
 	if not allowed:
 		player.position=Vector2(cell.x*16+8,(cell.y+1)*16+9);player.velocity=Vector2.ZERO;player.facing=Vector2.DOWN
-	status.text=("确认%s徽章，请通过。" if allowed else "没有%s徽章，不能通过！")%league_gate.NAMES[badge]
+	status.text=(Language.story("确认%s徽章，请通过。") if allowed else Language.story("没有%s徽章，不能通过！"))%Language.story(league_gate.NAMES[badge])
 	_trace({"event":"league_badge_checked","badge":badge,"allowed":allowed,"cell":[cell.x,cell.y]})
 	return not allowed
 
@@ -2759,11 +2772,11 @@ func _commit_victory_switch()->bool:
 	store.state["victory_road_1f_open"]=true
 	store.state["location"]={"map_id":"victory-road-1f","x":136,"y":265}
 	if not store.save_game():
-		store.state=before;status.text=store.error;_trace({"event":"victory_switch_failed"});return false
+		store.state=before;status.text=Language.message(store.error);_trace({"event":"victory_switch_failed"});return false
 	_state_trace("victory_switch_opened");return true
 
 func _field_bag()->void:
-	field_bag_open=true;_new_modal("背包 · 战间恢复道具")
+	field_bag_open=true;_new_modal(Language.text("ui.02fe25990f46","背包 · 战间恢复道具"))
 	if field_item=="":
 		var list:Array=store.medicine.MEDICINES+["repels","super_repels","max_repels"]+store.vitamins.ITEMS+store.ordinary_items.ITEMS
 		var scroll := ScrollContainer.new()
@@ -2778,7 +2791,7 @@ func _field_bag()->void:
 		scroll.add_child(grid)
 		for i in list.size():
 			var id:String=list[i]
-			var button := UI.button(grid,"%d %s ×%d"%[i+1,store.SHOP[id]["name"] if store.SHOP.has(id) else "神奇糖果" if id=="rare_candies" else "离洞绳" if id=="escape_ropes" else store.ground_items.NAMES.get(id,id),store.state.get("ground_inventory",{}).get(id,0) if id=="escape_ropes" else store.state.get(id,0)],Rect2(0,0,365,66),_field_bag_select.bind(i))
+			var button := UI.button(grid,"%d %s ×%d"%[i+1,Language.name(store.SHOP[id]["name"]) if store.SHOP.has(id) else Language.text("ui.8b877c83a2b7","神奇糖果") if id=="rare_candies" else Language.text("ui.6aab9d1b5b26","离洞绳") if id=="escape_ropes" else Language.name(store.ground_items.NAMES.get(id,id)),store.state.get("ground_inventory",{}).get(id,0) if id=="escape_ropes" else store.state.get(id,0)],Rect2(0,0,365,66),_field_bag_select.bind(i))
 			button.custom_minimum_size = Vector2(365,66)
 			button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 			button.add_theme_color_override("font_focus_color",Color("303840"))
@@ -2787,8 +2800,8 @@ func _field_bag()->void:
 	else:
 		for i in store.state["team"].size():
 			var pet:Dictionary=store.state["team"][i]
-			UI.button(modal,"%d %s HP%d/%d"%[i+1,store.species[pet["species_id"]]["name"],pet["hp"],store.growth.stats(pet)["hp"]],Rect2(110,170+i*53,730,48),_field_bag_select.bind(i))
-	UI.label(modal,"Esc 取消 · 无效目标不消耗 · 糖果、离洞绳可在列表使用",Rect2(110,510,730,35),20)
+			UI.button(modal,"%d %s HP%d/%d"%[i+1,Language.display_name(pet,store.species[pet["species_id"]]["name"]),pet["hp"],store.growth.stats(pet)["hp"]],Rect2(110,170+i*53,730,48),_field_bag_select.bind(i))
+	UI.label(modal,Language.text("ui.92c8d3d6900c","Esc 取消 · 无效目标不消耗 · 糖果、离洞绳可在列表使用"),Rect2(110,505,730,48),16)
 	_state_trace("field_bag_open")
 func _field_bag_select(index:int)->void:
 	if field_item=="":
@@ -2800,28 +2813,28 @@ func _field_bag_select(index:int)->void:
 		if index<0 or index>=store.state["team"].size():return
 	if field_item=="rare_candies":
 		candy_index=index;candy_pending=store.ordinary_items.candy_preview(store,index)
-		if candy_pending.is_empty():status.text="不能使用神奇糖果。";field_bag_open=false;field_item="";_close_modal();return
+		if candy_pending.is_empty():status.text=Language.text("ui.8246e0147f06","不能使用神奇糖果。");field_bag_open=false;field_item="";_close_modal();return
 		field_bag_open=false;field_item="";_candy_next();return
 	if field_item=="escape_ropes":
 		var rope_failure:String=store.ordinary_items.rope(store,map_id)
 		field_bag_open=false;field_item="";_close_modal()
 		if rope_failure=="":
 			var loc:Dictionary=store.state["location"];_change_map(loc["map_id"],Vector2(loc["x"],loc["y"]))
-		status.text="离洞绳使用成功，已保存。" if rope_failure=="" else rope_failure;_state_trace("field_item_used" if rope_failure=="" else "field_item_rejected");return
+		status.text=Language.text("ui.8f950b84ea3c","离洞绳使用成功，已保存。") if rope_failure=="" else Language.message(rope_failure);_state_trace("field_item_used" if rope_failure=="" else "field_item_rejected");return
 	var item:String=field_item;var failure:String=store.roof_drinks.drink(store,item,index,{"map_id":map_id,"x":player.position.x,"y":player.position.y}) if item in store.roof_drinks.ITEMS else store.vitamins.use(store,item,index,{"map_id":map_id,"x":player.position.x,"y":player.position.y}) if item in store.vitamins.ITEMS else store.medicine.use_field(store,item,index)
-	field_bag_open=false;field_item="";_close_modal();status.text=store.SHOP[item]["name"]+"使用成功，已保存。" if failure=="" else failure
+	field_bag_open=false;field_item="";_close_modal();status.text=Language.name(store.SHOP[item]["name"])+Language.text("ui.51df5782d651","使用成功，已保存。") if failure=="" else Language.message(failure)
 	_state_trace("field_item_used" if failure=="" else "field_item_rejected")
 
 func _stone_bag()->void:
-	stone_bag_open=true;_new_modal("进化石袋")
+	stone_bag_open=true;_new_modal(Language.text("ui.15f945b43b17","进化石袋"))
 	if stone_item=="":
 		for i in store.stone_evolution.ITEMS.size():
-			var id:String=store.stone_evolution.ITEMS[i];UI.button(modal,"%d %s ×%d"%[i+1,store.SHOP[id]["name"] if store.SHOP.has(id) else "日之石",store.state.get("ground_inventory",{}).get(id,0) if id=="escape_ropes" else store.state.get(id,0)],Rect2(110,155+i*55,735,49),_stone_bag_select.bind(i))
+			var id:String=store.stone_evolution.ITEMS[i];UI.button(modal,"%d %s ×%d"%[i+1,Language.name(store.SHOP[id]["name"]) if store.SHOP.has(id) else Language.text("ui.d1a473e5a2e7","日之石"),store.state.get("ground_inventory",{}).get(id,0) if id=="escape_ropes" else store.state.get(id,0)],Rect2(110,155+i*55,735,49),_stone_bag_select.bind(i))
 	else:
 		for i in store.state["team"].size():
 			var pet:Dictionary=store.state["team"][i];var target:String=store.stone_evolution.target(stone_item,pet)
-			UI.button(modal,"%d %s · %s"%[i+1,store.species[pet["species_id"]]["name"],"可进化为"+store.species[target]["name"] if target!="" and store.species.has(target) else "不兼容"],Rect2(110,160+i*55,735,49),_stone_bag_select.bind(i))
-	UI.label(modal,"Esc取消 · 不兼容不消耗 · 进化成功立即保存",Rect2(110,510,735,36),19)
+			UI.button(modal,"%d %s · %s"%[i+1,Language.display_name(pet,store.species[pet["species_id"]]["name"]),Language.text("ui.43b26c318acd","可进化为")+Language.name(store.species[target]["name"]) if target!="" and store.species.has(target) else Language.text("ui.4ae9eb28741f","不兼容")],Rect2(110,160+i*55,735,49),_stone_bag_select.bind(i))
+	UI.label(modal,Language.text("ui.9e6d7da9687c","Esc取消 · 不兼容不消耗 · 进化成功立即保存"),Rect2(110,510,735,36),19)
 
 func _stone_bag_select(index:int)->void:
 	if stone_item=="":
@@ -2830,7 +2843,7 @@ func _stone_bag_select(index:int)->void:
 	if index<0 or index>=store.state["team"].size():return
 	var plan:Dictionary=store.stone_evolution.preview(store,stone_item,index)
 	stone_bag_open=false;stone_item=""
-	if plan.is_empty():_close_modal();status.text="不能进化：检查石头、不变之石及全国图鉴条件。";return
+	if plan.is_empty():_close_modal();status.text=Language.text("ui.4e9ebfd70471","不能进化：检查石头、不变之石及全国图鉴条件。");return
 	_evolution_begin(plan,index,"stone")
 
 func _hm_rules()->RefCounted:
@@ -2838,7 +2851,7 @@ func _hm_rules()->RefCounted:
 
 func _travel_prompt(action:String,title:String,text:String)->void:
 	travel_action=action;trainer_ready_at=Time.get_ticks_msec()+250;_new_modal(title)
-	UI.label(modal,text+"\nE / Enter确认 · Esc取消",Rect2(105,190,745,240),22)
+	UI.label(modal,text+Language.story("\nE / Enter确认 · Esc取消"),Rect2(105,190,745,240),22)
 	_state_trace("travel_prompt_"+action)
 
 func _travel_input(key:int)->void:
@@ -2854,29 +2867,33 @@ func _travel_input(key:int)->void:
 	store.state["location"]={"map_id":map_id,"x":player.position.x,"y":player.position.y}
 	var failure:String=store.travel.fly_to(store,map_id,travel_target) if action=="fly" else store.travel.transaction(store,action,map_id)
 	if failure=="" and action=="fly":riding=false;_restore_location()
-	status.text=failure if failure!="" else {"hm02":"获得HM02飞翔！L教学，户外F选择已到城镇。","voucher":"听完会长的故事，获得自行车兑换券！请到华蓝市车店兑换。","bicycle":"兑换券已交还，获得自行车！户外按V骑乘。","fly":"飞翔到达！HP、PP与物品保持原状。"}.get(action,"")
+	status.text=Language.message(failure) if failure!="" else {"hm02":Language.story("获得HM02飞翔！L教学，户外F选择已到城镇。"),"voucher":Language.story("听完会长的故事，获得自行车兑换券！请到华蓝市车店兑换。"),"bicycle":Language.story("兑换券已交还，获得自行车！户外按V骑乘。"),"fly":Language.story("飞翔到达！HP、PP与物品保持原状。")}.get(action,"")
 	travel_target="";_state_trace("travel_"+action+("_failed" if failure!="" else "_success"))
+
+func _travel_destination_label(id:String)->String:
+	var labels:Dictionary={"pallet-town":"真新镇","viridian-city":"常青市","pewter-city":"尼比市","cerulean-city":"华蓝市","lavender-town":"紫苑镇","vermilion-city":"枯叶市","celadon-city":"玉虹市","fuchsia-city":"浅红市","cinnabar-island":"红莲岛","indigo-plateau":"石英高原","saffron-city":"金黄市"}
+	return Language.story(labels.get(id,id))
 
 func _fly_menu()->void:
 	var failure:String=store.travel.field_error(store.state,map_id)
-	if failure!="":status.text=failure;_state_trace("fly_refused");return
-	travel_action="destinations";_new_modal("飞翔 · 仅限实际到达的城镇")
+	if failure!="":status.text=Language.message(failure);_state_trace("fly_refused");return
+	travel_action="destinations";_new_modal(Language.story("飞翔 · 仅限实际到达的城镇"))
 	var choices:Array=store.state.get("travel",{}).get("visited",[])
 	for i in choices.size():
-		UI.button(modal,"%d %s"%[i+1,choices[i]],Rect2(105+(i/6)*375,165+(i%6)*46,365,42),_fly_confirm.bind(choices[i]))
-	UI.button(modal,"Esc 取消",Rect2(105,480,740,45),func():travel_action="";_close_modal())
+		UI.button(modal,"%d %s"%[i+1,_travel_destination_label(choices[i])],Rect2(105+(i/6)*375,165+(i%6)*46,365,42),_fly_confirm.bind(choices[i]))
+	UI.button(modal,Language.story("Esc 取消"),Rect2(105,480,740,45),func():travel_action="";_close_modal())
 	trainer_ready_at=Time.get_ticks_msec()+250;_state_trace("fly_destinations")
 
 func _fly_confirm(target:String)->void:
-	travel_target=target;_travel_prompt("fly","飞翔 · 确认目的地","要飞往%s吗？不会消耗PP。"%target)
+	travel_target=target;_travel_prompt("fly",Language.story("飞翔 · 确认目的地"),Language.story("要飞往%s吗？不会消耗PP。")%_travel_destination_label(target))
 
 func _bicycle_toggle()->void:
-	if riding and store.travel.cycling(map_id,player.position):status.text="自行车道上不能下车。";_state_trace("bicycle_dismount_refused");return
+	if riding and store.travel.cycling(map_id,player.position):status.text=Language.story("自行车道上不能下车。");_state_trace("bicycle_dismount_refused");return
 	var failure:String=store.travel.ride_error(store.state,map_id)
-	if failure!="":status.text=failure;_state_trace("bicycle_refused");return
+	if failure!="":status.text=Language.message(failure);_state_trace("bicycle_refused");return
 	riding=not riding;player.cycling=riding
 	player.sprite.texture=load("res://assets/bicycle/ride-0.png" if riding else "res://assets/pokemon/red-0.png")
-	status.text="骑上自行车！V下车。" if riding else "已下车。";_state_trace("bicycle_mounted" if riding else "bicycle_dismounted")
+	status.text=Language.story("骑上自行车！V下车。") if riding else Language.story("已下车。");_state_trace("bicycle_mounted" if riding else "bicycle_dismounted")
 
 func _travel_interact(cell:Vector2i)->bool:
 	if map_id in ["route17","route18","route19","route20"]:
@@ -2890,24 +2907,24 @@ func _travel_interact(cell:Vector2i)->bool:
 		var distance:int=absi(delta.x)+absi(delta.y)
 		if distance!=(2 if map_id=="bike-shop" and a["redObject"]==1 else 1) or Vector2(delta).normalized().dot(player.facing)<0.9:continue
 		if map_id=="route18-gate-1f":
-			status.text="自行车道上坡很辛苦！" if store.travel.bicycle(store.state) else "自行车道禁止行人，请先取得自行车。";return true
+			status.text=Language.story("自行车道上坡很辛苦！") if store.travel.bicycle(store.state) else Language.story("自行车道禁止行人，请先取得自行车。");return true
 		elif map_id=="route18-gate-2f":
-			status.text="这里可以眺望自行车道。宝可梦交换尚未开放。";return true
+			status.text=Language.story("这里可以眺望自行车道。宝可梦交换尚未开放。");return true
 		elif map_id=="route16":
 			if a["redObject"]==7:
 				if store.state.get("static_encounters",{}).get("route16_snorlax",false):continue
-				if not store.tower_story.flute(store.state):status.text="宝可梦在熟睡，需要宝可梦笛。";_state_trace("snorlax_no_flute");return true
-				snorlax_pending=true;trainer_ready_at=Time.get_ticks_msec()+250;_new_modal("卡比兽 · 宝可梦笛");UI.label(modal,"要使用宝可梦笛吗？\nE确认 · Esc取消",Rect2(120,210,720,160),23);return true
+				if not store.tower_story.flute(store.state):status.text=Language.story("宝可梦在熟睡，需要宝可梦笛。");_state_trace("snorlax_no_flute");return true
+				snorlax_pending=true;trainer_ready_at=Time.get_ticks_msec()+250;_new_modal(Language.story("卡比兽 · 宝可梦笛"));UI.label(modal,Language.story("要使用宝可梦笛吗？\nE确认 · Esc取消"),Rect2(120,210,720,160),23);return true
 			for tr in trainer_rules.route16:
 				if tr["redObject"]==a["redObject"]:_forest_trainer_interact(tr);return true
 		elif map_id=="route16-fly-house" and a["redObject"]==1:
-			_travel_prompt("info" if store.travel.has_hm(store.state) else "hm02","飞翔小屋","HM02可以反复教学。雷电徽章允许场外飞翔到实际到达的城镇。" if store.travel.has_hm(store.state) else "你发现了我的秘密小屋！请替我保密，我把HM02飞翔送给你。");return true
+			_travel_prompt("info" if store.travel.has_hm(store.state) else "hm02",Language.story("飞翔小屋"),Language.story("HM02可以反复教学。雷电徽章允许场外飞翔到实际到达的城镇。") if store.travel.has_hm(store.state) else Language.story("你发现了我的秘密小屋！请替我保密，我把HM02飞翔送给你。"));return true
 		elif map_id=="pokemon-fan-club" and a["redObject"]==5:
-			_travel_prompt("info" if store.state.get("travel",{}).get("voucher_claimed",false) else "voucher","宝可梦迷俱乐部 · 会长","兑换券已经给你了。华蓝市车店可以兑换自行车。" if store.state.get("travel",{}).get("voucher_claimed",false) else "愿意听听我的宝可梦吗？我的烈焰马既可爱又聪明，温暖又美丽！\n听完故事，可获得自行车兑换券。");return true
+			_travel_prompt("info" if store.state.get("travel",{}).get("voucher_claimed",false) else "voucher",Language.story("宝可梦迷俱乐部 · 会长"),Language.story("兑换券已经给你了。华蓝市车店可以兑换自行车。") if store.state.get("travel",{}).get("voucher_claimed",false) else Language.story("愿意听听我的宝可梦吗？我的烈焰马既可爱又聪明，温暖又美丽！\n听完故事，可获得自行车兑换券。"));return true
 		elif map_id=="bike-shop" and a["redObject"]==1:
-			_travel_prompt("info" if store.travel.bicycle(store.state) else "bicycle","自行车店","新自行车骑得怎么样？" if store.travel.bicycle(store.state) else "欢迎！持自行车兑换券可换一辆自行车。\n无券售价100万元，不能购买。");return true
+			_travel_prompt("info" if store.travel.bicycle(store.state) else "bicycle",Language.story("自行车店"),Language.story("新自行车骑得怎么样？") if store.travel.bicycle(store.state) else Language.story("欢迎！持自行车兑换券可换一辆自行车。\n无券售价100万元，不能购买。"));return true
 		else:
-			status.text="大嘴雀：咕嘎！" if map_id=="route16-fly-house" else "自行车道禁止行人，请带好自行车。" if map_id=="route16-gate-1f" else "我们一起骑车来玩。" if map_id=="route16-gate-2f" else "自行车很方便！" if map_id=="bike-shop" else "我最喜欢自己的宝可梦！"
+			status.text=Language.story("大嘴雀：咕嘎！") if map_id=="route16-fly-house" else Language.story("自行车道禁止行人，请带好自行车。") if map_id=="route16-gate-1f" else Language.story("我们一起骑车来玩。") if map_id=="route16-gate-2f" else Language.story("自行车很方便！") if map_id=="bike-shop" else Language.story("我最喜欢自己的宝可梦！")
 			_state_trace("travel_visitor");return true
 	return false
 
@@ -2931,13 +2948,13 @@ func _seafoam_fall(cell:Vector2i)->bool:
 	var row:Dictionary=store.seafoam.edge(map_id,cell)
 	if row.is_empty():return false
 	if not store.seafoam.player_open(map_id,store.state):
-		status.text="强制水流与B4F留待O08；此洞暂不开放。";return true
+		status.text=Language.story("强制水流与B4F留待O08；此洞暂不开放。");return true
 	var before:Dictionary=store.state.duplicate(true)
 	var destination:String=row["target"];var at:Array=row["arrival"]
 	store.state["surfing"]=destination in ["seafoam-islands-b3f","seafoam-islands-b4f"]
 	store.state["location"]={"map_id":destination,"x":int(at[0])*16+8,"y":int(at[1])*16+9}
 	if not store.save_game():
-		store.state=before;status.text=store.error;_state_trace("seafoam_player_fall_failed");return true
+		store.state=before;status.text=Language.message(store.error);_state_trace("seafoam_player_fall_failed");return true
 	_change_map(destination,Vector2(int(at[0])*16+8,int(at[1])*16+9))
 	_state_trace("seafoam_player_fell");return true
 
@@ -3000,13 +3017,13 @@ func _o14_interact(cell:Vector2i)->bool:
 	for actor in o14_actors:
 		if actor["map"]!=map_id or cell+Vector2i(player.facing)!=Vector2i(int(actor["cell"][0]),int(actor["cell"][1])):continue
 		if actor["role"]=="aide":
-			if store.flash_reward.claimed(store.state):status.text="HM05闪光已经领取过。I教学；U在岩山隧道使用。"
+			if store.flash_reward.claimed(store.state):status.text=Language.story("HM05闪光已经领取过。I教学；U在岩山隧道使用。")
 			else:
-				flash_pending=true;_new_modal("大木博士的助手 · HM05闪光")
-				UI.label(modal,"图鉴有至少10种关都宝可梦的捕获或拥有资料吗？\n1 / E 确认检查 · 2 拒绝 · Esc / B 取消。",Rect2(100,200,755,180),22)
-		elif map_id=="route2-gate":status.text="岩山隧道很黑。闪光可以照亮洞穴；I教学；U在岩山隧道使用。"
-		elif int(actor["redObject"])==1:status.text="这里是2号道路东侧的民居。南方关卡里有大木博士的助手。"
-		else:status.text="这里的宝可梦交换服务尚未开放。"
+				flash_pending=true;_new_modal(Language.story("大木博士的助手 · HM05闪光"))
+				UI.label(modal,Language.story("图鉴有至少10种关都宝可梦的捕获或拥有资料吗？\n1 / E 确认检查 · 2 拒绝 · Esc / B 取消。"),Rect2(100,200,755,180),22)
+		elif map_id=="route2-gate":status.text=Language.story("岩山隧道很黑。闪光可以照亮洞穴；I教学；U在岩山隧道使用。")
+		elif int(actor["redObject"])==1:status.text=Language.story("这里是2号道路东侧的民居。南方关卡里有大木博士的助手。")
+		else:status.text=Language.story("这里的宝可梦交换服务尚未开放。")
 		_state_trace("o14_location_dialogue");return true
 	return false
 
@@ -3021,7 +3038,7 @@ func _flash_field() -> Dictionary:
 		else:
 			if is_instance_valid(flash_mask):flash_mask.material.set_shader_parameter("enabled",true)
 			_state_trace("flash_activated")
-	status.text=permission["reason"]
+	status.text=Language.story(permission["reason"])
 	_trace({"event":"flash_permission","permission":permission,"map":map_id})
 	return permission
 
@@ -3045,8 +3062,8 @@ func _o15_interact(cell:Vector2i)->bool:
 	for actor in o15_actors:
 		if actor["map"]!=map_id or cell+Vector2i(player.facing)!=Vector2i(int(actor["cell"][0]),int(actor["cell"][1])):continue
 		if actor["role"]=="fossil_scientist":_lab_fossil_menu();return true
-		elif actor["role"]=="trade_deferred":status.text="这里的宝可梦交换服务尚未开放。"
-		else:status.text="这里是红莲研究所。东侧房间研究化石；其他房间尚未开放。"
+		elif actor["role"]=="trade_deferred":status.text=Language.story("这里的宝可梦交换服务尚未开放。")
+		else:status.text=Language.story("这里是红莲研究所。东侧房间研究化石；其他房间尚未开放。")
 		_state_trace("o15_location_dialogue");return true
 	return false
 
@@ -3054,45 +3071,45 @@ func _lab_fossil_menu()->void:
 	if store.state.has("fossil_lab"):
 		if store.state["fossil_lab"]["stage"]=="ready":
 			var failure:String=store.fossil_rules.claim(store,{"map_id":map_id,"x":player.position.x,"y":player.position.y})
-			status.text=failure if failure!="" else "复活宝可梦已领取并保存。队满时已送入盒子。"
-			fossil_label.text=store.fossil_rules.summary(store.state)
+			status.text=Language.message(failure) if failure!="" else Language.story("复活宝可梦已领取并保存。队满时已送入盒子。")
+			fossil_label.text=Language.story(store.fossil_rules.summary(store.state))
 			_state_trace("lab_fossil_claim_failed" if failure!="" else "lab_fossil_claimed")
-		else:status.text="已经领取，不能重复领取。" if store.state["fossil_lab"]["stage"]=="claimed" else "正在复活。请先离开研究室，再回来领取。不能重复提交。"
+		else:status.text=Language.story("已经领取，不能重复领取。") if store.state["fossil_lab"]["stage"]=="claimed" else Language.story("正在复活。请先离开研究室，再回来领取。不能重复提交。")
 		return
 	var choices:Array[String]=store.fossil_rules.available(store.state)
-	if choices.is_empty():status.text="没有可交付的化石，未收取物品。";return
+	if choices.is_empty():status.text=Language.story("没有可交付的化石，未收取物品。");return
 	lab_fossil_phase="select";lab_fossil_item="";trainer_ready_at=Time.get_ticks_msec()+250
-	_new_modal("化石研究员 · 选择化石")
-	UI.label(modal,"选择要交付的化石。Esc取消。\n交付后先离开研究室，再回来领取。",Rect2(100,175,750,95),22)
+	_new_modal(Language.story("化石研究员 · 选择化石"))
+	UI.label(modal,Language.story("选择要交付的化石。Esc取消。\n交付后先离开研究室，再回来领取。"),Rect2(100,175,750,95),22)
 	for i in range(choices.size()):
 		var item:String=choices[i]
 		UI.button(modal,"%d %s"%[i+1,_lab_fossil_name(item)],Rect2(120,290+i*70,710,60),func():_lab_fossil_choose(item))
-	UI.button(modal,"Esc 取消",Rect2(120,450,710,60),_lab_fossil_cancel)
+	UI.button(modal,Language.story("Esc 取消"),Rect2(120,450,710,60),_lab_fossil_cancel)
 	_state_trace("lab_fossil_selection")
 
 func _lab_fossil_name(item:String)->String:
-	return "甲壳化石" if item=="dome_fossil" else "贝壳化石"
+	return Language.story("甲壳化石") if item=="dome_fossil" else Language.story("贝壳化石")
 
 func _lab_fossil_choose(item:String)->void:
 	if lab_fossil_phase!="select" or Time.get_ticks_msec()<trainer_ready_at:return
 	if item not in store.fossil_rules.available(store.state):_lab_fossil_cancel();return
 	lab_fossil_phase="confirm";lab_fossil_item=item;trainer_ready_at=Time.get_ticks_msec()+250
-	_new_modal("化石研究员 · 确认交付")
-	UI.label(modal,"交付%s？\n确认后收取化石并保存。\n离开研究室后返回领取。"%_lab_fossil_name(item),Rect2(100,190,750,140),23)
-	UI.button(modal,"1 / E 确认交付",Rect2(105,370,350,65),_lab_fossil_confirm)
-	UI.button(modal,"2 / Esc 取消",Rect2(475,370,350,65),_lab_fossil_cancel)
+	_new_modal(Language.story("化石研究员 · 确认交付"))
+	UI.label(modal,Language.story("交付%s？\n确认后收取化石并保存。\n离开研究室后返回领取。")%_lab_fossil_name(item),Rect2(100,190,750,140),23)
+	UI.button(modal,Language.story("1 / E 确认交付"),Rect2(105,370,350,65),_lab_fossil_confirm)
+	UI.button(modal,Language.text("ui.4d329dceb296","2 / Esc 取消"),Rect2(475,370,350,65),_lab_fossil_cancel)
 	_state_trace("lab_fossil_confirmation")
 
 func _lab_fossil_cancel()->void:
-	lab_fossil_phase="";lab_fossil_item="";_close_modal();status.text="已取消，未收取化石。";_state_trace("lab_fossil_cancelled")
+	lab_fossil_phase="";lab_fossil_item="";_close_modal();status.text=Language.story("已取消，未收取化石。");_state_trace("lab_fossil_cancelled")
 
 func _lab_fossil_confirm()->void:
 	if lab_fossil_phase!="confirm" or Time.get_ticks_msec()<trainer_ready_at:return
 	var item:String=lab_fossil_item
 	lab_fossil_phase="";lab_fossil_item="";_close_modal()
 	var failure:String=store.fossil_rules.deliver(store,item,{"map_id":map_id,"x":player.position.x,"y":player.position.y})
-	status.text=failure if failure!="" else "已交付%s并保存。离开研究室后返回领取。"%_lab_fossil_name(item)
-	fossil_label.text=store.fossil_rules.summary(store.state)
+	status.text=Language.message(failure) if failure!="" else Language.story("已交付%s并保存。离开研究室后返回领取。")%_lab_fossil_name(item)
+	fossil_label.text=Language.story(store.fossil_rules.summary(store.state))
 	_state_trace("lab_fossil_failed" if failure!="" else "lab_fossil_delivered")
 
 func _lab_fossil_input(k:int)->void:
@@ -3109,30 +3126,30 @@ func _celadon_mart_interact(cell:Vector2i)->bool:
 	if map_id=="celadon-mart-elevator":
 		var panel:=Vector2i(3,0)
 		if absi(cell.x-panel.x)+absi(cell.y-panel.y)==1 and player.facing.dot(Vector2(panel-cell))>0.5:
-			celadon_lift_pending=true;trainer_ready_at=Time.get_ticks_msec()+250;_new_modal("玉虹百货 · 电梯")
-			UI.label(modal,"1  1F\n2  2F\n3  3F\n4  4F\n5  5F\nEsc 取消 · 屋顶请走5F楼梯",Rect2(150,170,680,350),23);_state_trace("celadon_lift_menu");return true
+			celadon_lift_pending=true;trainer_ready_at=Time.get_ticks_msec()+250;_new_modal(Language.story("玉虹百货 · 电梯"))
+			UI.label(modal,Language.story("1  1F\n2  2F\n3  3F\n4  4F\n5  5F\nEsc 取消 · 屋顶请走5F楼梯"),Rect2(150,170,680,350),23);_state_trace("celadon_lift_menu");return true
 	for actor in o16_actors:
 		if actor["map"]!=map_id:continue
 		var ac:=Vector2i(int(actor["cell"][0]),int(actor["cell"][1]))
 		if absi(cell.x-ac.x)+absi(cell.y-ac.y)==1 and player.facing.dot(Vector2(ac-cell))>0.5:
 			if map_id=="celadon-mart-3f":
 				if int(actor["redObject"])==1:_counter_menu("offer")
-				else:status.text=store.counter_tutor.data["dialogue"][str(int(actor["redObject"]))]+"（交换与通信进化未开放。）"
+				else:status.text=Language.story(store.counter_tutor.data["dialogue"][str(int(actor["redObject"]))])+Language.story("（交换与通信进化未开放。）")
 				return true
 			if map_id=="celadon-mart-4f":
 				if int(actor["redObject"])==1:_shop_dialog("list")
-				else:status.text="进化石能让特定宝可梦进化；皮皮玩偶用于野战逃脱，复古邮件可从G袋写信。"
+				else:status.text=Language.story("进化石能让特定宝可梦进化；皮皮玩偶用于野战逃脱，复古邮件可从G袋写信。")
 				return true
 			if map_id=="celadon-mart-5f":
 				if int(actor["redObject"]) in [1,2]:
 					shop_stock_kind="battle" if int(actor["redObject"])==2 else "vitamins"
 					_shop_dialog("list")
-				else:status.text="5F出售营养药与战斗道具。"
+				else:status.text=Language.story("5F出售营养药与战斗道具。")
 				return true
 			if map_id=="celadon-mart-roof":
 				if int(actor["redObject"])==1:_roof_vending();return true
 				if int(actor["redObject"])==2:_roof_girl();return true
-			status.text="本层交互尚未开放；教学、商品、饮料与交易后续开放。";return true
+			status.text=Language.story("本层交互尚未开放；教学、商品、饮料与交易后续开放。");return true
 	if map_id=="celadon-mart-roof":
 		for actor in o16_actors:
 			if actor["map"]!=map_id:continue
@@ -3149,61 +3166,61 @@ func _celadon_mart_interact(cell:Vector2i)->bool:
 				if int(actor["redObject"]) in [1,2]:
 					shop_stock_kind="battle" if int(actor["redObject"])==2 else "vitamins"
 					_shop_dialog("list")
-				else:status.text="5F出售营养药与战斗道具。"
+				else:status.text=Language.story("5F出售营养药与战斗道具。")
 				return true
 	if map_id=="celadon-mart-3f":
-		status.text="本层交互尚未开放；教学、商品与交易后续开放。";return true
+		status.text=Language.story("本层交互尚未开放；教学、商品与交易后续开放。");return true
 	return false
 
 func _roof_vending()->void:
-	shop_stock_kind="roof";_new_modal("玉虹百货屋顶 · 自动售货机");roof_phase="vending"
-	UI.label(modal,"余额 %d\n1 清凉水 200（HP +50）\n2 苏打汽水 300（HP +60）\n3 柠檬汽水 350（HP +80）\nEsc 离开"%int(store.state["money"]),Rect2(110,170,735,250),22);trainer_ready_at=Time.get_ticks_msec()+250
+	shop_stock_kind="roof";_new_modal(Language.story("玉虹百货屋顶 · 自动售货机"));roof_phase="vending"
+	UI.label(modal,Language.story("余额 %d\n1 清凉水 200（HP +50）\n2 苏打汽水 300（HP +60）\n3 柠檬汽水 350（HP +80）\nEsc 离开")%int(store.state["money"]),Rect2(110,170,735,250),22);trainer_ready_at=Time.get_ticks_msec()+250
 func _roof_girl()->void:
 	var available:Array[String]=[]
 	for item in store.roof_drinks.ITEMS:
 		if int(store.state.get(item,0))>0 and not store.state.get("roof_exchanges",{}).get(item,false):available.append(item)
-	if available.is_empty():status.text="女孩：我还想喝饮料呢！你可以从自动售货机购买。";return
-	roof_phase="drink";_new_modal("屋顶女孩 · 饮料兑换");trainer_ready_at=Time.get_ticks_msec()+250
-	UI.label(modal,"选择要送给女孩的饮料。兑换后会消耗饮料，并获得对应TM。",Rect2(110,160,735,70),20)
-	for i in available.size():UI.button(modal,"%d %s → %s"%[i+1,store.roof_drinks.NAMES[available[i]],store.roof_drinks.TM_NAMES[store.roof_drinks.TM[available[i]]]],Rect2(115,250+i*60,720,52),_roof_choose.bind(available[i]))
-	UI.button(modal,"Esc 取消",Rect2(115,460,720,50),_roof_close)
+	if available.is_empty():status.text=Language.story("女孩：我还想喝饮料呢！你可以从自动售货机购买。");return
+	roof_phase="drink";_new_modal(Language.story("屋顶女孩 · 饮料兑换"));trainer_ready_at=Time.get_ticks_msec()+250
+	UI.label(modal,Language.story("选择要送给女孩的饮料。兑换后会消耗饮料，并获得对应TM。"),Rect2(110,160,735,70),20)
+	for i in available.size():UI.button(modal,"%d %s → %s"%[i+1,Language.name(store.roof_drinks.NAMES[available[i]]),Language.name(store.roof_drinks.TM_NAMES[store.roof_drinks.TM[available[i]]])],Rect2(115,250+i*60,720,52),_roof_choose.bind(available[i]))
+	UI.button(modal,Language.story("Esc 取消"),Rect2(115,460,720,50),_roof_close)
 func _roof_choose(item:String)->void:
-	roof_item=item;roof_phase="confirm";_new_modal("确认饮料兑换")
-	UI.label(modal,"交出%s，获得%s并放入TM口袋？"%[store.roof_drinks.NAMES[item],store.roof_drinks.TM_NAMES[store.roof_drinks.TM[item]]],Rect2(110,190,735,130),22)
-	UI.button(modal,"1 / E 确认",Rect2(110,385,355,60),_roof_confirm)
-	UI.button(modal,"Esc 取消",Rect2(485,385,355,60),_roof_close);trainer_ready_at=Time.get_ticks_msec()+250
+	roof_item=item;roof_phase="confirm";_new_modal(Language.text("ui.b4d0cc5f6380","确认饮料兑换"))
+	UI.label(modal,Language.story("交出%s，获得%s并放入TM口袋？")%[store.roof_drinks.NAMES[item],store.roof_drinks.TM_NAMES[store.roof_drinks.TM[item]]],Rect2(110,190,735,130),22)
+	UI.button(modal,Language.text("ui.ced6cea95375","1 / E 确认"),Rect2(110,385,355,60),_roof_confirm)
+	UI.button(modal,Language.story("Esc 取消"),Rect2(485,385,355,60),_roof_close);trainer_ready_at=Time.get_ticks_msec()+250
 func _roof_select(index:int)->void:
 	var failure:String=store.roof_drinks.exchange_error(store.state,roof_item,index)
-	if failure!="":status.text=failure;return
+	if failure!="":status.text=Language.message(failure);return
 	roof_index=index;var pet:Dictionary=store.state["team"][index]
 	if pet["moves"].size()<4:_roof_slot(pet["moves"].size())
 	else:
-		roof_phase="slot";_new_modal("选择要替换的招式")
-		for i in pet["moves"].size():UI.button(modal,"%d %s%s"%[i+1,store.growth.moves[pet["moves"][i]]["name"]," · 秘传不可替换" if pet["moves"][i] in store.growth.HM_MOVES else ""],Rect2(110,165+i*58,735,50),_roof_slot.bind(i))
-		var cancel := UI.button(modal,"Esc 取消",Rect2(110,505,735,42),_roof_close)
+		roof_phase="slot";_new_modal(Language.text("ui.149f5161299d","选择要替换的招式"))
+		for i in pet["moves"].size():UI.button(modal,"%d %s%s"%[i+1,Language.name(store.growth.moves[pet["moves"][i]]["name"]),Language.text("ui.7efc5349f4fd"," · 秘传不可替换") if pet["moves"][i] in store.growth.HM_MOVES else ""],Rect2(110,165+i*58,735,50),_roof_slot.bind(i))
+		var cancel := UI.button(modal,Language.story("Esc 取消"),Rect2(110,505,735,42),_roof_close)
 		cancel.focus_mode = Control.FOCUS_ALL
 		cancel.call_deferred("grab_focus")
 		cancel.add_theme_color_override("font_focus_color",Color("303840"))
 		trainer_ready_at=Time.get_ticks_msec()+250
 func _roof_slot(slot:int)->void:
 	var pet:Dictionary=store.state["team"][roof_index]
-	if slot<pet["moves"].size() and pet["moves"][slot] in store.growth.HM_MOVES:status.text="秘传招式不能在这里遗忘。";return
-	roof_slot=slot;roof_phase="confirm";_new_modal("确认饮料兑换")
-	var old:String=store.growth.moves[pet["moves"][slot]]["name"] if slot<pet["moves"].size() else "空位"
-	UI.label(modal,"交出%s，获得%s并学习%s？\n会替换：%s。确认后不可重复兑换。"%[store.roof_drinks.NAMES[roof_item],store.roof_drinks.TM_NAMES[store.roof_drinks.TM[roof_item]],store.growth.moves[store.roof_drinks.MOVES[roof_item]]["name"],old],Rect2(110,185,735,150),21)
-	UI.button(modal,"1 / E 确认",Rect2(110,385,355,60),_roof_confirm);UI.button(modal,"2 / Esc 取消",Rect2(485,385,355,60),_roof_close);trainer_ready_at=Time.get_ticks_msec()+250
+	if slot<pet["moves"].size() and pet["moves"][slot] in store.growth.HM_MOVES:status.text=Language.story("秘传招式不能在这里遗忘。");return
+	roof_slot=slot;roof_phase="confirm";_new_modal(Language.text("ui.b4d0cc5f6380","确认饮料兑换"))
+	var old:String=Language.name(store.growth.moves[pet["moves"][slot]]["name"]) if slot<pet["moves"].size() else Language.story("空位")
+	UI.label(modal,Language.text("ui.3a85fb8ea58b","交出%s，获得%s并学习%s？\n会替换：%s。确认后不可重复兑换。")%[Language.name(store.roof_drinks.NAMES[roof_item]),Language.name(store.roof_drinks.TM_NAMES[store.roof_drinks.TM[roof_item]]),Language.name(store.growth.moves[store.roof_drinks.MOVES[roof_item]]["name"]),old],Rect2(110,185,735,150),21)
+	UI.button(modal,Language.text("ui.ced6cea95375","1 / E 确认"),Rect2(110,385,355,60),_roof_confirm);UI.button(modal,Language.text("ui.4d329dceb296","2 / Esc 取消"),Rect2(485,385,355,60),_roof_close);trainer_ready_at=Time.get_ticks_msec()+250
 func _roof_confirm()->void:
 	if roof_phase!="confirm":return
 	roof_phase="";_close_modal();var failure:String=store.roof_drinks.exchange(store,roof_item,roof_index,roof_slot,{"map_id":map_id,"x":player.position.x,"y":player.position.y})
-	status.text=failure if failure!="" else "获得%s，已放入TM口袋。G选择教学。"%store.roof_drinks.TM_NAMES[store.roof_drinks.TM[roof_item]];_state_trace("roof_exchange_failed" if failure!="" else "roof_exchange_success")
+	status.text=Language.message(failure) if failure!="" else Language.story("获得%s，已放入TM口袋。G选择教学。")%Language.name(store.roof_drinks.TM_NAMES[store.roof_drinks.TM[roof_item]]);_state_trace("roof_exchange_failed" if failure!="" else "roof_exchange_success")
 func _roof_close()->void:
-	roof_phase="";roof_item="";roof_index=-1;_close_modal();status.text="已取消，饮料与兑换机会保留。"
+	roof_phase="";roof_item="";roof_index=-1;_close_modal();status.text=Language.story("已取消，饮料与兑换机会保留。")
 func _roof_input(key:int)->void:
 	if Time.get_ticks_msec()<trainer_ready_at:return
 	if key in [KEY_ESCAPE,KEY_B] or roof_phase=="confirm" and key==KEY_2:_roof_close();return
 	if roof_phase=="vending" and key in [KEY_1,KEY_2,KEY_3]:
 		var item:String=store.roof_drinks.ITEMS[key-KEY_1];var failure:String=store.purchase(item,1)
-		status.text=failure if failure!="" else "购买%s ×1，已保存。"%store.roof_drinks.NAMES[item];_state_trace("roof_vend_failed" if failure!="" else "roof_vend_success");roof_phase="";_close_modal()
+		status.text=Language.message(failure) if failure!="" else Language.story("购买%s ×1，已保存。")%Language.name(store.roof_drinks.NAMES[item]);_state_trace("roof_vend_failed" if failure!="" else "roof_vend_success");roof_phase="";_close_modal()
 	elif roof_phase=="drink" and key in [KEY_1,KEY_2,KEY_3]:
 		var available:Array=[]
 		for item in store.roof_drinks.ITEMS:
@@ -3217,41 +3234,41 @@ func _counter_close()->void:
 	counter_phase="";counter_index=-1;counter_slot=-1;_close_modal()
 func _counter_menu(phase:String)->void:
 	if map_id!="celadon-mart-3f":return
-	if store.state.get("counter_taught",false):status.text="我教的双倍奉还，用得怎么样？只能教一次。";return
+	if store.state.get("counter_taught",false):status.text=Language.story("我教的双倍奉还，用得怎么样？只能教一次。");return
 	counter_phase=phase;trainer_ready_at=Time.get_ticks_msec()+250
-	_new_modal("玉虹百货3F · 双倍奉还教学")
+	_new_modal(Language.text("ui.1ce92f7a68e9","玉虹百货3F · 双倍奉还教学"))
 	if phase=="offer":
-		UI.label(modal,"我终于通关宝可梦了！要教你的宝可梦双倍奉还吗？\n只能成功教学一次。不是指我靠着的柜台哦！\n1 / E 接受，Esc 取消。",Rect2(105,180,745,190),22)
-		UI.button(modal,"接受教学",Rect2(110,390,735,60),_counter_menu.bind("party"))
+		UI.label(modal,Language.story("我终于通关宝可梦了！要教你的宝可梦双倍奉还吗？\n只能成功教学一次。不是指我靠着的柜台哦！\n1 / E 接受，Esc 取消。"),Rect2(105,180,745,190),22)
+		UI.button(modal,Language.text("ui.b4fed74c87af","接受教学"),Rect2(110,390,735,60),_counter_menu.bind("party"))
 	elif phase=="party":
 		for i in range(store.state["team"].size()):
 			var pet:Dictionary=store.state["team"][i]
 			var error:String=store.counter_tutor.learn_error(store.state,i)
-			UI.button(modal,"%d %s · %s"%[i+1,store.species[pet["species_id"]]["name"],"可以学习" if error=="" else error],Rect2(105,168+i*46,745,42),_counter_select.bind(i))
+			UI.button(modal,"%d %s · %s"%[i+1,Language.display_name(pet,store.species[pet["species_id"]]["name"]),Language.text("ui.8a1eef6c1131","可以学习") if error=="" else Language.message(error)],Rect2(105,168+i*46,745,42),_counter_select.bind(i))
 	elif phase=="slot":
 		var pet:Dictionary=store.state["team"][counter_index]
-		for i in range(4):UI.button(modal,"%d 遗忘%s"%[i+1,store.growth.moves[pet["moves"][i]]["name"]],Rect2(105,175+i*60,745,52),_counter_pick_slot.bind(i))
+		for i in range(4):UI.button(modal,Language.story("%d 遗忘%s")%[i+1,Language.name(store.growth.moves[pet["moves"][i]]["name"])],Rect2(105,175+i*60,745,52),_counter_pick_slot.bind(i))
 	elif phase=="confirm":
 		var pet:Dictionary=store.state["team"][counter_index]
-		var old:String=store.growth.moves[pet["moves"][counter_slot]]["name"] if counter_slot<pet["moves"].size() else "空位"
-		UI.label(modal,"学习双倍奉还（PP20），替换：%s。\n成功后本次教学机会用尽。\n1 / E 确认，Esc 取消。"%old,Rect2(105,190,745,170),22)
-		UI.button(modal,"确认学习",Rect2(110,390,735,60),_counter_confirm)
-	UI.button(modal,"Esc 取消",Rect2(110,485,735,50),_counter_close)
+		var old:String=Language.name(store.growth.moves[pet["moves"][counter_slot]]["name"]) if counter_slot<pet["moves"].size() else Language.story("空位")
+		UI.label(modal,Language.text("ui.de7ac40f942e","学习双倍奉还（PP20），替换：%s。\n成功后本次教学机会用尽。\n1 / E 确认，Esc 取消。")%old,Rect2(105,190,745,170),22)
+		UI.button(modal,Language.text("ui.643e2ab3d0d5","确认学习"),Rect2(110,390,735,60),_counter_confirm)
+	UI.button(modal,Language.story("Esc 取消"),Rect2(110,485,735,50),_counter_close)
 func _counter_select(index:int)->void:
 	var error:String=store.counter_tutor.learn_error(store.state,index)
-	if error!="":status.text=error;return
+	if error!="":status.text=Language.message(error);return
 	counter_index=index
 	if store.state["team"][index]["moves"].size()<4:_counter_pick_slot(store.state["team"][index]["moves"].size())
 	else:_counter_menu("slot")
 func _counter_pick_slot(slot:int)->void:
 	var pet:Dictionary=store.state["team"][counter_index]
 	if slot<0 or slot>pet["moves"].size() or slot>=4:return
-	if slot<pet["moves"].size() and pet["moves"][slot] in store.growth.HM_MOVES:status.text="秘传招式不能在这里遗忘。";return
+	if slot<pet["moves"].size() and pet["moves"][slot] in store.growth.HM_MOVES:status.text=Language.story("秘传招式不能在这里遗忘。");return
 	counter_slot=slot;_counter_menu("confirm")
 func _counter_confirm()->void:
 	if counter_phase!="confirm":return
 	var error:String=store.counter_tutor.teach(store,counter_index,counter_slot,{"map_id":map_id,"x":player.position.x,"y":player.position.y})
-	_counter_close();status.text=error if error!="" else "学会了双倍奉还！教学机会已使用，已保存。"
+	_counter_close();status.text=Language.message(error) if error!="" else Language.text("ui.e2fbd5fecd5e","学会了双倍奉还！教学机会已使用，已保存。")
 	_state_trace("counter_tutor_failed" if error!="" else "counter_tutor_taught")
 func _counter_input(k:int)->void:
 	if Time.get_ticks_msec()<trainer_ready_at:return
@@ -3273,14 +3290,14 @@ func _ground_item_interact(cell: Vector2i) -> bool:
 		var failure:String=store.ground_items.take(store,entry)
 		if failure=="":_change_map(map_id,before_position)
 		else:store.state=before_state
-		status.text=("获得%s×1，已放入背包并保存。G查看地面道具。" % store.ground_items.display_name(store,entry)) if failure=="" else failure
+		status.text=(Language.story("获得%s×1，已放入背包并保存。G查看地面道具。") % Language.name(store.ground_items.display_name(store,entry))) if failure=="" else Language.message(failure)
 		_state_trace("ground_item_taken" if failure=="" else "ground_item_failed")
 		_trace({"event":"ground_item_result","key":entry["key"],"success":failure=="","failure":failure})
 		return true
 	return false
 
 func _ground_item_bag() -> void:
-	_new_modal("背包 · 地面道具 · Esc返回")
+	_new_modal(Language.text("ui.92509024ed3a","背包 · 地面道具 · Esc返回"))
 	var scroll:=ScrollContainer.new();scroll.position=Vector2(100,145);scroll.size=Vector2(755,400);modal.add_child(scroll)
 	var rows:=VBoxContainer.new();rows.size_flags_horizontal=Control.SIZE_EXPAND_FILL;scroll.add_child(rows)
 	var seen:Array=[]
@@ -3290,20 +3307,20 @@ func _ground_item_bag() -> void:
 		var amount:int=store.ground_items.quantity(store.state,entry)
 		if amount<=0:continue
 		var item:String=entry["inventory"]
-		var text:String="%s ×%d" % [tm_rules.display_name(item) if tm_rules.data.has(item) else store.ground_items.display_name(store,entry),amount]
+		var text:String="%s ×%d" % [tm_rules.display_name(item) if tm_rules.data.has(item) else Language.name(store.ground_items.display_name(store,entry)),amount]
 		if tm_rules.data.has(item) or item in store.medicine.MEDICINES+store.vitamins.ITEMS+store.ordinary_items.ITEMS+store.stone_evolution.ITEMS:
-			var button:=UI.button(rows,text+" · 使用",Rect2(0,0,700,48),_ground_use.bind(item))
+			var button:=UI.button(rows,text+Language.text("ui.8a73851b1859"," · 使用"),Rect2(0,0,700,48),_ground_use.bind(item))
 			button.custom_minimum_size=Vector2(700,48)
 		else:
 			var label:=Label.new();label.add_theme_color_override("font_color",Color("303840"));label.text=text;rows.add_child(label)
 	if tm_rules.quantity(store.state,"tm_dig")>0:
-		var button:=UI.button(rows,"TM28 挖洞 · 教学",Rect2(0,0,700,48),_ground_use.bind("tm_dig"));button.custom_minimum_size=Vector2(700,48)
+		var button:=UI.button(rows,Language.text("ui.5c4d1f8f86e5","TM28 挖洞 · 教学"),Rect2(0,0,700,48),_ground_use.bind("tm_dig"));button.custom_minimum_size=Vector2(700,48)
 	for item in store.state.get("tm_inventory",{}):
 		if tm_rules.quantity(store.state,item)<=0:continue
 		var reward:Dictionary=store.gym_rewards.item_row(item)
-		var caption:String=tm_rules.display_name(item) if tm_rules.data.has(item) else store.gym_rewards.description(item,tm_rules) if not reward.is_empty() else str(store.SHOP[item]["name"])+" · 教学"
+		var caption:String=tm_rules.display_name(item) if tm_rules.data.has(item) else store.gym_rewards.description(item,tm_rules) if not reward.is_empty() else str(Language.name(store.SHOP[item]["name"]))+Language.text("ui.490d95ae97a8"," · 教学")
 		if not tm_rules.data.has(item):
-			var label:=Label.new();label.add_theme_color_override("font_color",Color("303840"));label.text="%s ×%d"%[caption,tm_rules.quantity(store.state,item)];rows.add_child(label)
+			var label:=Label.new();label.add_theme_color_override("font_color",Color("303840"));label.text="%s ×%d"%[Language.message(caption),tm_rules.quantity(store.state,item)];rows.add_child(label)
 		else:
 			var button:=UI.button(rows,"%s ×%d"%[caption,tm_rules.quantity(store.state,item)],Rect2(0,0,700,48),_ground_use.bind(item));button.custom_minimum_size=Vector2(700,48)
 	for reward in tm_acquisition.TABLE:
@@ -3311,17 +3328,17 @@ func _ground_item_bag() -> void:
 		if reward_item=="fr_tm10" or reward_item in seen:continue
 		var reward_quantity:int=store.inventory.quantity(store.state,reward_item)
 		if reward_quantity>0:
-			var reward_label:=Label.new();reward_label.text="%s ×%d"%[store.inventory.catalog["items"].get(reward_item,{}).get("name",reward_item),reward_quantity];rows.add_child(reward_label)
+			var reward_label:=Label.new();reward_label.text="%s ×%d"%[Language.name(store.inventory.catalog["items"].get(reward_item,{}).get("name",reward_item)),reward_quantity];rows.add_child(reward_label)
 	if int(store.state.get("retro_mail",0))>0 or store.state["team"].any(func(p):return p.get("held_item","")=="retro_mail"):
-		var mail_button:=UI.button(rows,"复古邮件 · 写信／阅读／取下",Rect2(0,0,700,48),_mail_menu);mail_button.custom_minimum_size=Vector2(700,48)
+		var mail_button:=UI.button(rows,Language.text("ui.1d36de4396c1","复古邮件 · 写信／阅读／取下"),Rect2(0,0,700,48),_mail_menu);mail_button.custom_minimum_size=Vector2(700,48)
 	for i in range(store.state["team"].size()):
 		var held:String=store.state["team"][i].get("held_item","")
 		if tm_acquisition.TABLE.any(func(row):return row[1]==held):
-			var take_button:=UI.button(rows,"%s · 取下 %s"%[store.species[store.state["team"][i]["species_id"]]["name"],tm_rules.display_name(held) if tm_rules.data.has(held) else store.inventory.catalog["items"].get(held,{}).get("name",held)],Rect2(0,0,700,48),_pickup_take.bind(i));take_button.custom_minimum_size=Vector2(700,48)
+			var take_button:=UI.button(rows,Language.text("ui.5bc28a2f51c7","%s · 取下 %s")%[Language.name(store.species[store.state["team"][i]["species_id"]]["name"]),tm_rules.display_name(held) if tm_rules.data.has(held) else store.inventory.catalog["items"].get(held,{}).get("name",held)],Rect2(0,0,700,48),_pickup_take.bind(i));take_button.custom_minimum_size=Vector2(700,48)
 	for key in ["meteorite","tri_pass","ruby","rainbow_pass","iapapa_berry"]:
 		var amount:int=int(store.state.get("sevii",{}).get(key,0))
 		if amount>0:
-			var label:=Label.new();label.text={"meteorite":"陨石","tri_pass":"三岛通行证","ruby":"红宝石","rainbow_pass":"彩虹通行证","iapapa_berry":"芭亚果"}[key]+" ×%d"%amount;label.add_theme_color_override("font_color",Color("303840"));rows.add_child(label)
+			var label:=Label.new();label.text={"meteorite":Language.text("ui.bfaf6befcf82","陨石"),"tri_pass":Language.text("ui.4b5389b7d6cd","三岛通行证"),"ruby":Language.text("ui.8192d2ef8151","红宝石"),"rainbow_pass":Language.text("ui.afbcfed88cfb","彩虹通行证"),"iapapa_berry":Language.text("ui.4f366c66b9d2","芭亚果")}[key]+" ×%d"%amount;label.add_theme_color_override("font_color",Color("303840"));rows.add_child(label)
 	_state_trace("ground_item_bag_open")
 
 func _candy_next()->void:
@@ -3330,16 +3347,16 @@ func _candy_next()->void:
 		var move:String=candy_pending["learns"][0]
 		if pet["moves"].size()<4:
 			store.growth.resolve_learning(pet,move,pet["moves"].size());candy_pending["learns"].pop_front();continue
-		_new_modal("神奇糖果 · 选择替换招式")
-		UI.label(modal,"学习%s：1–4替换；5放弃学习；Esc取消本次使用。"%store.growth.moves[move]["name"],Rect2(100,175,750,100),20)
-		for i in 4:UI.label(modal,"%d %s"%[i+1,store.growth.moves[pet["moves"][i]]["name"]],Rect2(110,280+i*45,730,40),20)
+		_new_modal(Language.text("ui.f57b6de70939","神奇糖果 · 选择替换招式"))
+		UI.label(modal,Language.text("ui.5cc282ccf315","学习%s：1–4替换；5放弃学习；Esc取消本次使用。")%Language.name(Language.name(store.growth.moves[move]["name"])),Rect2(100,175,750,100),20)
+		for i in 4:UI.label(modal,"%d %s"%[i+1,Language.name(store.growth.moves[pet["moves"][i]]["name"])],Rect2(110,280+i*45,730,40),20)
 		candy_pending["phase"]="learn";return
 	if not candy_pending["evolution"].is_empty():
-		_new_modal("神奇糖果 · 进化")
-		UI.label(modal,"进化为%s？1确认；2不进化；Esc取消本次使用。"%store.species[candy_pending["evolution"]["target"]]["name"],Rect2(100,210,750,100),20)
+		_new_modal(Language.text("ui.c3c18798c840","神奇糖果 · 进化"))
+		UI.label(modal,Language.text("ui.064ebc74188e","进化为%s？1确认；2不进化；Esc取消本次使用。")%Language.name(store.species[candy_pending["evolution"]["target"]]["name"]),Rect2(100,210,750,100),20)
 		candy_pending["phase"]="evolve";return
-	_new_modal("使用神奇糖果？")
-	UI.label(modal,"升到%d级并消耗1个糖果。1确认；Esc取消。"%pet["level"],Rect2(100,210,750,100),20)
+	_new_modal(Language.text("ui.deb3f3ec6ece","使用神奇糖果？"))
+	UI.label(modal,Language.text("ui.d21610f1acf6","升到%d级并消耗1个糖果。1确认；Esc取消。")%pet["level"],Rect2(100,210,750,100),20)
 	candy_pending["phase"]="confirm"
 
 func _candy_key(key:int)->void:
@@ -3356,7 +3373,7 @@ func _candy_key(key:int)->void:
 		candy_pending["evolution"]={};_candy_next()
 	elif phase=="confirm" and key==KEY_1:
 		var failure:String=store.ordinary_items.commit_candy(store,candy_index,candy_pending)
-		candy_pending={};candy_index=-1;_close_modal();status.text="神奇糖果使用成功，已保存。" if failure=="" else failure;_state_trace("field_item_used" if failure=="" else "field_item_rejected")
+		candy_pending={};candy_index=-1;_close_modal();status.text=Language.text("ui.c6f0a51fae51","神奇糖果使用成功，已保存。") if failure=="" else Language.message(failure);_state_trace("field_item_used" if failure=="" else "field_item_rejected")
 
 func _ground_use(item:String)->void:
 	_close_modal()
@@ -3372,7 +3389,7 @@ func _ground_use(item:String)->void:
 
 func _teaching_menu(phase:String)->void:
 	teaching_phase=phase;trainer_ready_at=Time.get_ticks_msec()+250
-	_new_modal("招式学习器 · 成功才消耗 · Esc取消")
+	_new_modal(Language.text("ui.5b37a3b225bd","招式学习器 · 成功才消耗 · Esc取消"))
 	UI.label(modal,tm_rules.display_name(teaching_item),Rect2(105,147,745,32),20)
 	var details:Label=UI.label(modal,tm_rules.summary(store,teaching_item),Rect2(105,179,745,92),17)
 	details.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
@@ -3380,25 +3397,25 @@ func _teaching_menu(phase:String)->void:
 		for i in range(store.state["team"].size()):
 			var pet:Dictionary=store.state["team"][i]
 			var error:String=tm_rules.learn_error(store,teaching_item,i)
-			UI.button(modal,"%d %s · %s"%[i+1,store.species[pet["species_id"]]["name"],"可以学习" if error=="" else error],Rect2(105,276+i*33,745,31),_teaching_select.bind(i))
+			UI.button(modal,"%d %s · %s"%[i+1,Language.display_name(pet,store.species[pet["species_id"]]["name"]),Language.text("ui.8a1eef6c1131","可以学习") if error=="" else Language.message(error)],Rect2(105,276+i*33,745,31),_teaching_select.bind(i))
 	elif phase=="slot":
 		var pet:Dictionary=store.state["team"][teaching_index]
 		for i in range(pet["moves"].size()):
 			var old:String=pet["moves"][i]
-			UI.button(modal,"%d %s · PP%d/%d%s"%[i+1,store.growth.moves[old]["name"],int(pet["pp"][old]),int(store.growth.moves[old]["pp"])," · 秘传不可遗忘" if old in store.growth.HM_MOVES else ""],Rect2(105,278+i*45,745,40),_teaching_pick.bind(i))
+			UI.button(modal,"%d %s · PP%d/%d%s"%[i+1,Language.name(store.growth.moves[old]["name"]),int(pet["pp"][old]),int(store.growth.moves[old]["pp"]),Language.text("ui.01f7216617d1"," · 秘传不可遗忘") if old in store.growth.HM_MOVES else ""],Rect2(105,278+i*45,745,40),_teaching_pick.bind(i))
 	elif phase=="confirm":
 		var pet:Dictionary=store.state["team"][teaching_index]
-		var old:String=store.growth.moves[pet["moves"][teaching_slot]]["name"] if teaching_slot<pet["moves"].size() else "空位"
-		UI.label(modal,"%s将学习%s。\n替换：%s；新招式为满PP。\n确认后消耗一个，其他招式和PP保留。"%[store.species[pet["species_id"]]["name"],tm_rules.data[teaching_item]["name"],old],Rect2(105,285,745,110),20)
-		UI.button(modal,"1 / E 确认学习",Rect2(110,410,735,48),_teaching_commit.bind(teaching_slot))
-	UI.button(modal,"Esc 取消",Rect2(110,485,735,50),_teaching_close)
+		var old:String=Language.name(store.growth.moves[pet["moves"][teaching_slot]]["name"]) if teaching_slot<pet["moves"].size() else Language.text("ui.dc4641eaff7d","空位")
+		UI.label(modal,Language.text("ui.06f7f1af4281","%s将学习%s。\n替换：%s；新招式为满PP。\n确认后消耗一个，其他招式和PP保留。")%[Language.display_name(pet,store.species[pet["species_id"]]["name"]),tm_rules.display_name(teaching_item),old],Rect2(105,285,745,110),20)
+		UI.button(modal,Language.text("ui.885e90088691","1 / E 确认学习"),Rect2(110,410,735,48),_teaching_commit.bind(teaching_slot))
+	UI.button(modal,Language.text("ui.517daccd5094","Esc 取消"),Rect2(110,485,735,50),_teaching_close)
 	_state_trace("tm_teaching_"+phase)
 func _teaching_close()->void:
 	teaching_phase="";teaching_item="";teaching_index=-1;teaching_slot=-1;_close_modal()
 	_state_trace("tm_teaching_cancelled")
 func _teaching_select(index:int)->void:
 	var error:String=tm_rules.learn_error(store,teaching_item,index)
-	if error!="":status.text=error;_trace({"event":"tm_teaching_rejected","reason":error});return
+	if error!="":status.text=Language.message(error);_trace({"event":"tm_teaching_rejected","reason":error});return
 	teaching_index=index
 	if store.state["team"][index]["moves"].size()<4:_teaching_pick(store.state["team"][index]["moves"].size())
 	else:_teaching_menu("slot")
@@ -3406,12 +3423,12 @@ func _teaching_pick(slot:int)->void:
 	var pet:Dictionary=store.state["team"][teaching_index]
 	if slot<0 or slot>pet["moves"].size() or slot>=4:return
 	if slot<pet["moves"].size() and pet["moves"][slot] in store.growth.HM_MOVES:
-		status.text="秘传招式不能在这里遗忘。";_trace({"event":"tm_teaching_rejected","reason":status.text});return
+		status.text=Language.text("ui.394ff153d9fe","秘传招式不能在这里遗忘。");_trace({"event":"tm_teaching_rejected","reason":status.text});return
 	teaching_slot=slot;_teaching_menu("confirm")
 func _teaching_commit(slot:int)->void:
 	if teaching_phase!="confirm" or slot!=teaching_slot:return
 	var error:String=tm_rules.teach(store,teaching_item,teaching_index,slot,{"map_id":map_id,"x":player.position.x,"y":player.position.y})
-	_teaching_close();status.text=error if error!="" else "学会了招式，消耗一个学习器，已保存。"
+	_teaching_close();status.text=Language.message(error) if error!="" else Language.text("ui.d6e8f1c279e1","学会了招式，消耗一个学习器，已保存。")
 	_state_trace("ground_tm_failed" if error!="" else "ground_tm_taught")
 func _teaching_input(key:int)->void:
 	if Time.get_ticks_msec()<trainer_ready_at:return
@@ -3423,7 +3440,7 @@ func _teaching_input(key:int)->void:
 func _sell_nugget()->void:
 	var bridge:bool=int(store.state.get("ground_inventory",{}).get("nuggets",0))<=0
 	var error:String=tm_rules.sell_nugget(store,map_id,bridge)
-	shop_phase="";_close_modal();status.text=error if error!="" else "出售金珠 ×1，获得5000，已保存。"
+	shop_phase="";_close_modal();status.text=Language.message(error) if error!="" else Language.story("出售金珠 ×1，获得5000，已保存。")
 	_state_trace("nugget_sell_failed" if error!="" else "nugget_sold")
 
 func _visual_kind(from: String, to: String) -> String:
@@ -3499,36 +3516,36 @@ func _visual_recover(timed_out: bool = true) -> void:
 	if timed_out:_trace({"event":"visual_transition_recovered","map":map_id})
 
 func _evolution_service_menu()->void:
-	evolution_menu_open=true;evolution_phase="menu";_new_modal("进化服务 · 本地单机适配")
-	UI.label(modal,"1 本地通信进化（交换后返还原个体）
+	evolution_menu_open=true;evolution_phase="menu";_new_modal(Language.text("ui.572dbad7b225","进化服务 · 本地单机适配"))
+	UI.label(modal,Language.text("ui.1ce4d9535901","1 本地通信进化（交换后返还原个体）
 2 携带 / 取下进化道具
 3 购买进化物资（全国图鉴后）
 4 大木博士：全国图鉴（真新镇）
 5 起始物种领取 / 垂钓（单机适配）
 伊布昼夜分支：火红没有时钟，原版禁用。
-Esc 取消 · 队伍、携物与进化原子保存",Rect2(105,155,745,355),20)
+Esc 取消 · 队伍、携物与进化原子保存"),Rect2(105,155,745,355),20)
 	_state_trace("evolution_service_open")
 func _evolution_party(phase:String)->void:
-	evolution_phase=phase;_new_modal("选择宝可梦 · Esc取消")
+	evolution_phase=phase;_new_modal(Language.text("ui.3789bd0cb967","选择宝可梦 · Esc取消"))
 	for i in store.state["team"].size():
 		var pet:Dictionary=store.state["team"][i]
 		var target:String=store.evolution_service.trade_target(pet,store.state)
-		UI.button(modal,"%d %s · %s · 亲密%d"%[i+1,store.species[pet["species_id"]]["name"],("→"+store.species[target]["name"] if target!="" else "通信条件不满足") if phase=="trade_party" else store.evolution_service.ITEMS.get(pet.get("held_item",""),{}).get("name","未携带"),store.friendship.value(pet)],Rect2(105,160+i*52,745,47),_evolution_choose.bind(i))
+		UI.button(modal,Language.text("ui.a5cedd58c340","%d %s · %s · 亲密%d")%[i+1,Language.display_name(pet,store.species[pet["species_id"]]["name"]),("→"+Language.name(store.species[target]["name"]) if target!="" else Language.text("ui.f10581b738ba","通信条件不满足")) if phase=="trade_party" else store.evolution_service.ITEMS.get(pet.get("held_item",""),{}).get("name",Language.text("ui.2d45772a126f","未携带")),store.friendship.value(pet)],Rect2(105,160+i*52,745,47),_evolution_choose.bind(i))
 func _evolution_choose(index:int)->void:
 	if index<0 or index>=store.state["team"].size():return
 	if evolution_phase=="trade_party":
 		var plan:Dictionary=store.evolution_service.trade_preview(store,index)
-		if plan.is_empty():status.text="通信条件不满足：核对携物、不变之石和全国图鉴。";return
+		if plan.is_empty():status.text=Language.text("ui.c82056fd49e0","通信条件不满足：核对携物、不变之石和全国图鉴。");return
 		_evolution_begin(plan,index,"trade")
 	elif evolution_phase=="hold_party":
 		var failure:String=store.evolution_service.hold(store,index,evolution_hold_item)
-		evolution_menu_open=false;_close_modal();status.text="携带物已保存。" if failure=="" else failure;_state_trace("evolution_hold_result")
+		evolution_menu_open=false;_close_modal();status.text=Language.text("ui.2ab88d488350","携带物已保存。") if failure=="" else Language.message(failure);_state_trace("evolution_hold_result")
 func _evolution_begin(plan:Dictionary,index:int,kind:String)->void:
 	evolution_menu_open=true;evolution_plan=plan;evolution_index=index;evolution_kind=kind;evolution_phase="confirm"
-	_new_modal("本地通信进化确认" if kind=="trade" else "使用进化石确认")
-	UI.label(modal,"%s → %s
+	_new_modal(Language.text("ui.d3d8b72f0651","本地通信进化确认") if kind=="trade" else Language.text("ui.d319ab2791e5","使用进化石确认"))
+	UI.label(modal,Language.text("ui.91fae6f5967b","%s → %s
 1 确认 · Esc取消（不消耗）
-%s"%[store.species[plan["original"]["species_id"]]["name"],store.species[plan["pet"]["species_id"]]["name"],"符合条件的通信携物会消耗；本地交换返还原个体。" if kind=="trade" else "确认后消耗一块进化石，学招结束立即保存。"],Rect2(105,185,745,230),22)
+%s")%[Language.name(store.species[plan["original"]["species_id"]]["name"]),Language.name(store.species[plan["pet"]["species_id"]]["name"]),Language.text("ui.f505e79dcb80","符合条件的通信携物会消耗；本地交换返还原个体。") if kind=="trade" else Language.text("ui.be9328fa5de7","确认后消耗一块进化石，学招结束立即保存。")],Rect2(105,185,745,230),22)
 	_state_trace("evolution_service_confirm")
 func _evolution_learn_next()->void:
 	var pet:Dictionary=evolution_plan["pet"]
@@ -3536,13 +3553,13 @@ func _evolution_learn_next()->void:
 		var move:String=evolution_plan["learns"][0]
 		if move in pet["moves"]:evolution_plan["learns"].pop_front();continue
 		if pet["moves"].size()<4:store.growth.resolve_learning(pet,move,pet["moves"].size());evolution_plan["learns"].pop_front();continue
-		evolution_phase="learn";_new_modal("进化后学习招式")
-		UI.label(modal,"学习%s：1–4替换；5放弃。
-Esc取消整个事务；秘传招式不可遗忘。"%store.growth.moves[move]["name"],Rect2(105,170,745,100),20)
-		for i in pet["moves"].size():UI.label(modal,"%d %s"%[i+1,store.growth.moves[pet["moves"][i]]["name"]],Rect2(110,290+i*45,730,40),20)
+		evolution_phase="learn";_new_modal(Language.text("ui.305758b51528","进化后学习招式"))
+		UI.label(modal,Language.text("ui.4d491829bb03","学习%s：1–4替换；5放弃。
+Esc取消整个事务；秘传招式不可遗忘。")%Language.name(store.growth.moves[move]["name"]),Rect2(105,170,745,100),20)
+		for i in pet["moves"].size():UI.label(modal,"%d %s"%[i+1,Language.name(store.growth.moves[pet["moves"][i]]["name"])],Rect2(110,290+i*45,730,40),20)
 		return
 	var failure:String=store.stone_evolution.commit(store,evolution_index,evolution_plan,{"map_id":map_id,"x":player.position.x,"y":player.position.y}) if evolution_kind=="stone" else store.evolution_service.commit(store,evolution_index,evolution_plan)
-	evolution_plan={};evolution_menu_open=false;evolution_phase="";_close_modal();status.text="进化完成，已保存。" if failure=="" else failure
+	evolution_plan={};evolution_menu_open=false;evolution_phase="";_close_modal();status.text=Language.text("ui.38042f54ba78","进化完成，已保存。") if failure=="" else Language.message(failure)
 	_state_trace("evolution_service_committed" if failure=="" else "evolution_service_failed")
 func _evolution_key(key:int)->void:
 	if key in [KEY_ESCAPE,KEY_B]:evolution_plan={};evolution_menu_open=false;evolution_phase="";_close_modal();_state_trace("evolution_service_cancelled");return
@@ -3555,37 +3572,37 @@ func _evolution_key(key:int)->void:
 	if evolution_phase=="menu":
 		if key==KEY_1:_evolution_party("trade_party")
 		elif key in [KEY_2,KEY_3]:
-			evolution_phase="hold_items" if key==KEY_2 else "purchase";_new_modal("选择携带物" if key==KEY_2 else "进化物资 · 单机适配商店")
+			evolution_phase="hold_items" if key==KEY_2 else "purchase";_new_modal(Language.text("ui.7be1e3501614","选择携带物") if key==KEY_2 else Language.text("ui.62099640ad45","进化物资 · 单机适配商店"))
 			var choices:Array=store.evolution_service.ITEMS.keys()
 			for i in choices.size():
 				var item:String=choices[i];var row:Dictionary=store.evolution_service.ITEMS[item]
-				UI.label(modal,"%d %s · %d元 · 库存%d"%[i+1,row["name"],row["price"],int(store.state.get(item,0)) if item=="sun_stones" else int(store.state.get("evolution_inventory",{}).get(item,0))],Rect2(110,150+i*45,735,40),20)
-			if key==KEY_2:UI.label(modal,"8 取下携带物（日之石在O石袋使用）",Rect2(110,470,735,40),19)
+				UI.label(modal,Language.text("ui.1166a9b373e0","%d %s · %d元 · 库存%d")%[i+1,Language.name(row["name"]),row["price"],int(store.state.get(item,0)) if item=="sun_stones" else int(store.state.get("evolution_inventory",{}).get(item,0))],Rect2(110,150+i*45,735,40),20)
+			if key==KEY_2:UI.label(modal,Language.text("ui.c8b82b0207ff","8 取下携带物（日之石在O石袋使用）"),Rect2(110,470,735,40),19)
 		elif key==KEY_5:
-			evolution_phase="acquire";_new_modal("起始物种 · 明示单机适配")
-			UI.label(modal,"玉虹市领取：
+			evolution_phase="acquire";_new_modal(Language.text("ui.6db625a4f8c8","起始物种 · 明示单机适配"))
+			UI.label(modal,Language.text("ui.26acb2486e2c","玉虹市领取：
 1 伊布 Lv25 · 一次赠送（原版屋顶赠礼）
 2 迷你龙 Lv18 · 56000元（2800代币直兑）
 3 多边兽 Lv26 · 199980元（9999代币直兑）
 4 大钳蟹垂钓 · 12号道路 · Lv5–15
-垂钓直接进入野生战斗，需要正常捕获；无需钓竿适配。",Rect2(105,155,745,350),20)
+垂钓直接进入野生战斗，需要正常捕获；无需钓竿适配。"),Rect2(105,155,745,350),20)
 		elif key==KEY_4:
-			status.text=store.evolution_service.unlock(store) if map_id=="pallet-town" else "请回到真新镇，再联系大木博士。"
-			if status.text=="":status.text="大木：全国图鉴升级完成，已保存！"
+			status.text=Language.message(store.evolution_service.unlock(store)) if map_id=="pallet-town" else Language.text("ui.83a44e38d06c","请回到真新镇，再联系大木博士。")
+			if status.text=="":status.text=Language.text("ui.630b5dfc1a02","大木：全国图鉴升级完成，已保存！")
 			_state_trace("national_dex_result")
 	elif evolution_phase=="purchase" and index>=0 and index<store.evolution_service.ITEMS.size():
-		var failure:String=store.evolution_service.purchase(store,store.evolution_service.ITEMS.keys()[index]);status.text="购买成功，已保存。" if failure=="" else failure;_state_trace("evolution_purchase_result")
+		var failure:String=store.evolution_service.purchase(store,store.evolution_service.ITEMS.keys()[index]);status.text=Language.text("ui.b3991c2b1c50","购买成功，已保存。") if failure=="" else Language.message(failure);_state_trace("evolution_purchase_result")
 	elif evolution_phase=="hold_items" and index>=0 and index<=7:
 		evolution_hold_item="" if index==7 else store.evolution_service.ITEMS.keys()[index]
-		if evolution_hold_item=="sun_stones":status.text="日之石请在O进化石袋使用。";return
+		if evolution_hold_item=="sun_stones":status.text=Language.text("ui.ab2a7cb5d170","日之石请在O进化石袋使用。");return
 		_evolution_party("hold_party")
 
 	elif evolution_phase=="acquire" and index>=0 and index<=3:
 		if index==3:
-			if map_id!="route12":status.text="请到12号道路使用垂钓服务。";return
+			if map_id!="route12":status.text=Language.text("ui.128c138c9663","请到12号道路使用垂钓服务。");return
 			evolution_menu_open=false;evolution_phase="";_close_modal();_start_battle({"species_id":"krabby","level":randi_range(5,15)});return
 		var failure:String=store.evolution_service.acquire(store,["eevee","dratini","porygon"][index],map_id)
-		status.text="宝可梦已领取并保存。" if failure=="" else failure;_state_trace("evolution_acquire_result")
+		status.text=Language.text("ui.556dec8e98eb","宝可梦已领取并保存。") if failure=="" else Language.message(failure);_state_trace("evolution_acquire_result")
 
 func _shop_products()->Array:
 	var products:Array=store.inventory.catalog["shops"].get(map_id,[]).duplicate()
@@ -3596,10 +3613,10 @@ func _shop_sell_menu()->void:
 func _shop_sell(item:String)->void:
 	if shop_phase!="sell" or Time.get_ticks_msec()<shop_ready_at:return
 	var failure:String=tm_rules.sell_nugget(store,map_id,true) if item=="bridge_nugget" else store.sell(item,1)
-	shop_message=failure if failure!="" else "出售成功，已保存。";_shop_dialog("result")
+	shop_message=failure if failure!="" else Language.text("ui.70cdd36aeda3","出售成功，已保存。");_shop_dialog("result")
 func _field_flute()->void:
 	var failure:String=store.tower_story.play_flute(store)
-	_close_modal();status.text=failure if failure!="" else "吹响了宝可梦笛，队伍醒来了。"
+	_close_modal();status.text=Language.message(failure) if failure!="" else Language.story("吹响了宝可梦笛，队伍醒来了。")
 
 func _item_battle_terrain()->String:
 	var cell:=Vector2i(floori(player.position.x/16),floori((player.position.y-1)/16))
@@ -3610,27 +3627,27 @@ func _item_battle_terrain()->String:
 
 func _mail_menu()->void:
 	mail_phase="party"
-	_new_modal("复古邮件 · 选择伙伴")
+	_new_modal(Language.text("ui.973e4eef2955","复古邮件 · 选择伙伴"))
 	for i in store.state["team"].size():
 		var pet:Dictionary=store.state["team"][i]
-		UI.button(modal,"%s · %s"%[store.species[pet["species_id"]]["name"],"阅读／取下" if pet.get("held_item","")=="retro_mail" else "写信并携带"],Rect2(105,165+i*54,745,48),_mail_select.bind(i))
+		UI.button(modal,"%s · %s"%[Language.display_name(pet,store.species[pet["species_id"]]["name"]),Language.text("ui.31ae9ed7056a","阅读／取下") if pet.get("held_item","")=="retro_mail" else Language.text("ui.0e276c374038","写信并携带")],Rect2(105,165+i*54,745,48),_mail_select.bind(i))
 func _mail_select(index:int)->void:
 	mail_phase="editor"
-	_new_modal("复古邮件")
+	_new_modal(Language.text("ui.a288225fe239","复古邮件"))
 	var pet:Dictionary=store.state["team"][index]
 	if pet.get("held_item","")=="retro_mail":
 		var letter:=UI.label(modal,pet.get("mail_text",""),Rect2(110,180,735,190),22)
 		letter.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
-		UI.button(modal,"取下邮件（清除信文）",Rect2(110,405,735,55),_mail_take.bind(index))
+		UI.button(modal,Language.text("ui.0f79ff541178","取下邮件（清除信文）"),Rect2(110,405,735,55),_mail_take.bind(index))
 	else:
 		mail_editor=LineEdit.new();mail_editor.position=Vector2(110,200);mail_editor.size=Vector2(735,65);mail_editor.max_length=120;modal.add_child(mail_editor);mail_editor.grab_focus()
-		UI.button(modal,"写好并交给伙伴",Rect2(110,405,735,55),_mail_give.bind(index))
+		UI.button(modal,Language.text("ui.cfe111ac1e31","写好并交给伙伴"),Rect2(110,405,735,55),_mail_give.bind(index))
 func _mail_give(index:int)->void:
 	var failure:String=store.item_mail.give(store,index,mail_editor.text)
-	_close_modal();status.text=failure if failure!="" else "邮件已交给伙伴并保存。"
+	_close_modal();status.text=Language.message(failure) if failure!="" else Language.text("ui.aa954a6c7a21","邮件已交给伙伴并保存。")
 func _mail_take(index:int)->void:
 	var failure:String=store.item_mail.take(store,index)
-	_close_modal();status.text=failure if failure!="" else "邮件已取下，信文已清除并保存。"
+	_close_modal();status.text=Language.message(failure) if failure!="" else Language.text("ui.f94cd1d2ea40","邮件已取下，信文已清除并保存。")
 
 func _sevii_draw(objects:Node2D,id:String)->void:
 	if id=="sevii-mt-ember-exterior" and store.sevii.rockets_done(store.state):
@@ -3649,63 +3666,63 @@ func _sevii_draw(objects:Node2D,id:String)->void:
 	if id=="cinnabar-center" and store.state.get("badges",{}).get("volcano",false) and not store.state.get("sevii",{}).get("departed",false):
 		var npc:=Sprite2D.new();npc.texture=load("res://assets/sevii-one-island-pokemon-center-1-f/actor-2.png");npc.position=Vector2(120,72);objects.add_child(npc);_add_solid(world,Rect2(112,64,16,16))
 func _sevii_prompt(action:String,title:String,text:String)->void:
-	sevii_action=action;_new_modal(title);UI.label(modal,text+"\nE / Enter 确认 · Esc取消",Rect2(100,190,760,230),21);trainer_ready_at=Time.get_ticks_msec()+250;_state_trace("sevii_prompt_"+action)
+	sevii_action=action;_new_modal(title);UI.label(modal,Language.story(text)+Language.story("\nE / Enter 确认 · Esc取消"),Rect2(100,190,760,230),21);trainer_ready_at=Time.get_ticks_msec()+250;_state_trace("sevii_prompt_"+action)
 func _sevii_interact(cell:Vector2i)->bool:
 	var step:=Vector2i(roundi(player.facing.x),roundi(player.facing.y))
 	if absi(step.x)+absi(step.y)!=1:return false
 	if map_id=="cinnabar-center" and cell+step==Vector2i(7,4) and store.state.get("badges",{}).get("volcano",false) and not store.state.get("sevii",{}).get("departed",false):
-		_sevii_prompt("depart","比尔 · 前往一岛","愿意和我去一岛拜访锦辉吗？先到中心会面，再领取岛屿任务。");return true
+		_sevii_prompt("depart",Language.story("比尔 · 前往一岛"),Language.story("愿意和我去一岛拜访锦辉吗？先到中心会面，再领取岛屿任务。"));return true
 	if map_id=="vermilion-city" and cell+step==Vector2i(18,27) and store.sevii.stage(store.state)>=3:_sevii_ferry_menu();return true
 	if not store.sevii.world.has(map_id):return false
 	if layout.has("behaviors") and store.state.get("surfing",false) and step==Vector2i.UP:
 		var plan:Dictionary=store.sevii.waterfall(layout,store.state,cell,step)
 		if not plan.is_empty():
-			if plan.has("error"):status.text=plan["error"];_state_trace("waterfall_rejected");return true
-			sevii_actor=plan;_sevii_prompt("waterfall","攀瀑","使用攀瀑登上眼前的真实水瀑吗？不消耗PP。");return true
+			if plan.has("error"):status.text=Language.story(plan["error"]);_state_trace("waterfall_rejected");return true
+			sevii_actor=plan;_sevii_prompt("waterfall",Language.story("攀瀑"),Language.story("使用攀瀑登上眼前的真实水瀑吗？不消耗PP。"));return true
 	for a in store.sevii.actors(map_id):
 		if not store.sevii.visible(a,store.state) or cell+step!=Vector2i(a["cell"][0],a["cell"][1]):continue
 		sevii_actor=a.duplicate(true)
 		var script:String=a["script"]
 		if script.ends_with("RockSmashMan"):
-			if store.state.get("sevii_hms",{}).get("rocksmash",false):status.text="HM06已领取；碎岩需金色徽章和队伍已学会。";_state_trace("hm06_repeat")
-			else:_sevii_prompt("hm06","温泉老人 · HM06碎岩","我用这个开凿了温泉。要领取HM06碎岩吗？")
+			if store.state.get("sevii_hms",{}).get("rocksmash",false):status.text=Language.story("HM06已领取；碎岩需金色徽章和队伍已学会。");_state_trace("hm06_repeat")
+			else:_sevii_prompt("hm06",Language.story("温泉老人 · HM06碎岩"),Language.story("我用这个开凿了温泉。要领取HM06碎岩吗？"))
 			return true
 		if script=="EventScript_RockSmash":
 			var failure:String=store.sevii.field_error(store.state,"rocksmash")
-			if failure!="":status.text=failure;_state_trace("rocksmash_rejected");return true
-			_sevii_prompt("smash","碎岩 · 岩石","打碎面前的岩石吗？离开地图后恢复，不消耗PP。");return true
+			if failure!="":status.text=Language.message(failure);_state_trace("rocksmash_rejected");return true
+			_sevii_prompt("smash",Language.story("碎岩 · 岩石"),Language.story("打碎面前的岩石吗？离开地图后恢复，不消耗PP。"));return true
 		if script.ends_with("Sailor"):_sevii_ferry_menu();return true
-		if script.ends_with("_Nurse"):_sevii_prompt("heal","一岛 · 治疗","恢复队伍的HP、PP与异常状态吗？");return true
+		if script.ends_with("_Nurse"):_sevii_prompt("heal",Language.story("一岛 · 治疗"),Language.story("恢复队伍的HP、PP与异常状态吗？"));return true
 		if script.ends_with("_Bill") or script.ends_with("_Celio"):
 			var stage:int=store.sevii.stage(store.state)
-			if stage==0:_sevii_prompt("meet","比尔与锦辉","请把陨石交给二岛游戏厅的父亲。这张三岛通行证能往返一、二、三岛。")
-			elif stage==2:_sevii_prompt("return","比尔 · 返回关都","这边的维修完成了。一起回红莲岛吧！")
-			elif stage==3:_sevii_prompt("ruby_request","锦辉 · 红宝石委托","有全国图鉴后，能帮我寻找灯火山的红宝石吗？")
-			elif stage==4 and store.state.get("sevii",{}).get("ruby",false):_sevii_prompt("rainbow","锦辉 · 彩虹通行证","交付红宝石并把三岛通行证换成彩虹通行证？将开放前往四岛的航线。")
-			else:status.text="请去寻找红宝石。" if stage==4 else "彩虹通行证已可使用；本轮开放至四岛。" if stage==5 else "请把陨石送到二岛，并帮助寻找迷失女孩。"
+			if stage==0:_sevii_prompt("meet",Language.story("比尔与锦辉"),Language.story("请把陨石交给二岛游戏厅的父亲。这张三岛通行证能往返一、二、三岛。"))
+			elif stage==2:_sevii_prompt("return",Language.story("比尔 · 返回关都"),Language.story("这边的维修完成了。一起回红莲岛吧！"))
+			elif stage==3:_sevii_prompt("ruby_request",Language.story("锦辉 · 红宝石委托"),Language.story("有全国图鉴后，能帮我寻找灯火山的红宝石吗？"))
+			elif stage==4 and store.state.get("sevii",{}).get("ruby",false):_sevii_prompt("rainbow",Language.story("锦辉 · 彩虹通行证"),Language.story("交付红宝石并把三岛通行证换成彩虹通行证？将开放前往四岛的航线。"))
+			else:status.text=Language.story("请去寻找红宝石。") if stage==4 else Language.story("彩虹通行证已可使用；本轮开放至四岛。") if stage==5 else Language.story("请把陨石送到二岛，并帮助寻找迷失女孩。")
 			return true
 		if script.ends_with("LostellesDaddy"):
-			_sevii_prompt("deliver" if store.state.get("sevii",{}).get("rescued",false) and store.state.get("sevii",{}).get("meteorite",false) else "moon" if store.sevii.stage(store.state)>=2 else "ask_rescue","迷失女孩的父亲","交付比尔的陨石。" if store.state.get("sevii",{}).get("rescued",false) else "我的女儿还没回来！请去三岛寻找迷失女孩。");return true
+			_sevii_prompt("deliver" if store.state.get("sevii",{}).get("rescued",false) and store.state.get("sevii",{}).get("meteorite",false) else "moon" if store.sevii.stage(store.state)>=2 else "ask_rescue",Language.story("迷失女孩的父亲"),Language.story("交付比尔的陨石。") if store.state.get("sevii",{}).get("rescued",false) else Language.story("我的女儿还没回来！请去三岛寻找迷失女孩。"));return true
 		if script=="ThreeIsland_EventScript_Biker" or script=="ThreeIsland_EventScript_Biker6" or script.contains("AntiBiker"):
-			if not store.state.get("sevii",{}).get("rescue_asked",false):status.text="先去二岛游戏厅了解迷失女孩的委托。";return true
+			if not store.state.get("sevii",{}).get("rescue_asked",false):status.text=Language.story("先去二岛游戏厅了解迷失女孩的委托。");return true
 			for key in store.sevii.BIKERS:
 				if not store.state.get("trainers",{}).get(key,false):_forest_trainer_interact(trainer_rules.definition(key));return true
-			status.text="暴走族已经离开，西边的桥通向果实森林。";return true
+			status.text=Language.story("暴走族已经离开，西边的桥通向果实森林。");return true
 		if script=="ThreeIsland_BerryForest_EventScript_Lostelle":
-			_sevii_prompt("rescue" if store.state.get("sevii",{}).get("hypno_done",false) else "hypno","迷失女孩 · 果实森林","谢谢你！请带我回二岛游戏厅。" if store.state.get("sevii",{}).get("hypno_done",false) else "好可怕的宝可梦又来了！催眠貘 Lv30。");return true
+			_sevii_prompt("rescue" if store.state.get("sevii",{}).get("hypno_done",false) else "hypno",Language.story("迷失女孩 · 果实森林"),Language.story("谢谢你！请带我回二岛游戏厅。") if store.state.get("sevii",{}).get("hypno_done",false) else Language.story("好可怕的宝可梦又来了！催眠貘 Lv30。"));return true
 		if script.contains("MtEmber_Exterior_EventScript_Grunt"):
-			if store.sevii.stage(store.state)!=4:status.text="火箭队正在挖掘；先接受锦辉的红宝石委托。";return true
+			if store.sevii.stage(store.state)!=4:status.text=Language.story("火箭队正在挖掘；先接受锦辉的红宝石委托。");return true
 			_forest_trainer_interact(trainer_rules.definition("sevii_grunt43" if script.ends_with("Grunt1") else "sevii_grunt44"));return true
-		if script=="MtEmber_RubyPath_B5F_EventScript_Ruby":_sevii_prompt("ruby","红宝石","拾取这里的红宝石吗？");return true
-		if script.ends_with("ItemHM07"):_sevii_prompt("hm07","HM07攀瀑","拾取HM07攀瀑吗？");return true
+		if script=="MtEmber_RubyPath_B5F_EventScript_Ruby":_sevii_prompt("ruby",Language.story("红宝石"),Language.story("拾取这里的红宝石吗？"));return true
+		if script.ends_with("ItemHM07"):_sevii_prompt("hm07",Language.story("HM07攀瀑"),Language.story("拾取HM07攀瀑吗？"));return true
 		if script=="EventScript_StrengthBoulder":return false
-		status.text="该源角色或支线不属于当前HM路线。";return true
+		status.text=Language.story("该源角色或支线不属于当前HM路线。");return true
 	return false
 func _sevii_ferry_menu()->void:
-	sevii_action="ferry";_new_modal("海烈焰马号 · 目的地")
-	var names:Array=["一岛","二岛","三岛","四岛（彩虹通行证）","枯叶（完成正常返航后）"]
+	sevii_action="ferry";_new_modal(Language.story("海烈焰马号 · 目的地"))
+	var names:Array=[Language.story("一岛"),Language.story("二岛"),Language.story("三岛"),Language.story("四岛（彩虹通行证）"),Language.story("枯叶（完成正常返航后）")]
 	for i in names.size():UI.button(modal,str(i+1)+" "+names[i],Rect2(110,170+i*50,738,44),_sevii_sail.bind(i))
-	UI.button(modal,"Esc取消",Rect2(110,475,738,44),func():sevii_action="";_close_modal())
+	UI.button(modal,Language.story("Esc取消"),Rect2(110,475,738,44),func():sevii_action="";_close_modal())
 	trainer_ready_at=Time.get_ticks_msec()+250;_state_trace("sevii_ferry_menu")
 func _sevii_sail(index:int)->void:
 	var dest:String=["sevii-one-island-harbor","sevii-two-island-harbor","sevii-three-island-harbor","sevii-four-island-harbor","vermilion-city"][index]
@@ -3713,7 +3730,7 @@ func _sevii_sail(index:int)->void:
 	var failure:String=store.sevii.ferry(store,dest,loc)
 	sevii_action="";_close_modal()
 	if failure=="":_change_map(dest,Vector2(loc["x"],loc["y"]));_state_trace("sevii_sailed")
-	else:status.text=failure;_state_trace("sevii_ferry_failed")
+	else:status.text=Language.message(failure);_state_trace("sevii_ferry_failed")
 func _sevii_input(key:int)->void:
 	if Time.get_ticks_msec()<trainer_ready_at:return
 	if key in [KEY_ESCAPE,KEY_B]:sevii_action="";_close_modal();_state_trace("sevii_cancelled");return
@@ -3724,7 +3741,7 @@ func _sevii_input(key:int)->void:
 	var action:String=sevii_action;sevii_action="";_close_modal()
 	if action=="waterfall":_sevii_begin_motion(sevii_actor["cells"]);return
 	if action=="hypno":
-		if not store.sevii.bikers_done(store.state):status.text="请先解决三岛暴走族。";return
+		if not store.sevii.bikers_done(store.state):status.text=Language.story("请先解决三岛暴走族。");return
 		if not _save():return
 		_start_battle({"species_id":"hypno","level":30})
 		if in_battle:battle.static_id="sevii_hypno";battle.north_rules=true
@@ -3734,11 +3751,11 @@ func _sevii_input(key:int)->void:
 	if action=="return":loc={"map_id":"cinnabar-island","x":168,"y":73}
 	if action=="rescue":loc={"map_id":"sevii-two-island-joyful-game-corner","x":104,"y":105}
 	var failure:String=store.sevii.claim_hm06(store,map_id,sevii_actor) if action=="hm06" else store.sevii.smash(store.state,map_id,int(sevii_actor["source_index"])) if action=="smash" else store.sevii.transact(store,action,loc)
-	if failure!="":status.text=failure;_state_trace("sevii_failed_"+action);return
+	if failure!="":status.text=Language.message(failure);_state_trace("sevii_failed_"+action);return
 	var facing_before:Vector2=player.facing
 	_change_map(loc.get("map_id",map_id),Vector2(loc["x"],loc["y"]) if not loc.is_empty() else player.position)
 	if loc.is_empty():player.facing=facing_before
-	status.text="使用碎岩！岩石已消失，离图恢复。" if action=="smash" else "已完成并保存："+action
+	status.text=Language.story("使用碎岩！岩石已消失，离图恢复。") if action=="smash" else Language.story("已完成并保存：")+action
 	_state_trace("sevii_done_"+action)
 func _sevii_transition(cell:Vector2i)->bool:
 	if not store.sevii.world.has(map_id):return false
@@ -3763,15 +3780,15 @@ func _sevii_transition(cell:Vector2i)->bool:
 		for warp in row["warps"]:
 			if cell!=Vector2i(warp["cell"][0],warp["cell"][1]):continue
 			if warp.get("door",false) and player.velocity.y>=0:return false
-			if warp.get("closed",false):status.text=warp["reason"];sevii_warp_latch=key;return false
-			if map_id=="sevii-mt-ember-exterior" and int(warp["index"])==5 and (store.sevii.stage(store.state)<4 or not store.sevii.rockets_done(store.state)):status.text="先接受锦辉委托并击败两个火箭队员。";return false
+			if warp.get("closed",false):status.text=Language.story(warp["reason"]);sevii_warp_latch=key;return false
+			if map_id=="sevii-mt-ember-exterior" and int(warp["index"])==5 and (store.sevii.stage(store.state)<4 or not store.sevii.rockets_done(store.state)):status.text=Language.story("先接受锦辉委托并击败两个火箭队员。");return false
 			var at:Array=warp["arrival"];_change_map(warp["target"],Vector2(at[0]*16+8,at[1]*16+9));return true
 	var step:Vector2i=Vector2i.RIGHT if player.velocity.x>0 else Vector2i.LEFT if player.velocity.x<0 else Vector2i.DOWN if player.velocity.y>0 else Vector2i.UP
 	for c in store.sevii.world[map_id]["connections"]:
 		var direction:String=c["direction"]
 		var edge:bool=direction=="right" and player.position.x>=int(layout["width"])*16-8 and step==Vector2i.RIGHT or direction=="left" and player.position.x<=8 and step==Vector2i.LEFT or direction=="up" and player.position.y<=9 and step==Vector2i.UP or direction=="down" and player.position.y>=int(layout["height"])*16-7 and step==Vector2i.DOWN
 		if not edge:continue
-		if map_id=="sevii-three-island" and direction=="left" and not store.sevii.bikers_done(store.state):status.text="先解决三岛暴走族。";return false
+		if map_id=="sevii-three-island" and direction=="left" and not store.sevii.bikers_done(store.state):status.text=Language.story("先解决三岛暴走族。");return false
 		var target:Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://data/%s.json" % c["target"]))
 		var at:=Vector2i(cell.x-int(c["offset"]),0 if direction=="down" else int(target["height"])-1) if direction in ["up","down"] else Vector2i(0 if direction=="right" else int(target["width"])-1,cell.y-int(c["offset"]))
 		if at.x<0 or at.y<0 or at.x>=int(target["width"]) or at.y>=int(target["height"]):return false
@@ -3795,10 +3812,27 @@ func _tm_gift_interact(cell:Vector2i)->bool:
 	if map_id!="route12-gate-2f" or cell+Vector2i(player.facing)!=Vector2i(3,4):return false
 	store.state["location"]={"map_id":map_id,"x":player.position.x,"y":player.position.y}
 	var failure:String=tm_acquisition.gift(store)
-	status.text="获得TM27报恩，已放入招式学习器盒并保存。G查看。" if failure=="" else failure
+	status.text=Language.story("获得TM27报恩，已放入招式学习器盒并保存。G查看。") if failure=="" else Language.message(failure)
 	_trace({"event":"tm27_gift","success":failure=="","failure":failure});return true
 
 func _pickup_take(index:int)->void:
 	var failure:String=tm_acquisition.take_held(store,index)
-	_close_modal();status.text="携带物已放入背包并保存。" if failure=="" else failure
+	_close_modal();status.text=Language.text("ui.398fdc9f6adc","携带物已放入背包并保存。") if failure=="" else Language.message(failure)
 	_trace({"event":"pickup_take","success":failure=="","failure":failure})
+
+func _refresh_map_language(id:String)->void:
+	if store.sevii.world.has(id):
+		map_title.text=store.sevii.world[id]["source"]+" · FireRed"
+		status.text=Language.story("E交谈/场外秘传 · F6碎岩教学 · F7攀瀑教学")
+		return
+	map_title.text = {"celadon-mart-3f":Language.story("玉虹百货 · 3F"),"celadon-mart-4f":Language.story("玉虹百货 · 4F"),"celadon-mart-5f":Language.story("玉虹百货 · 5F · 营养药"),"celadon-mart-roof":Language.story("玉虹百货 · 屋顶"),"celadon-mart-elevator":Language.story("玉虹百货 · 电梯"),"cinnabar-lab":Language.story("红莲岛 · 研究所入口"),"cinnabar-lab-fossil-room":Language.story("红莲研究所 · 化石研究室"),"route2-gate":Language.story("2号道路 · 东侧关卡"),"route2-trade-house":Language.story("2号道路 · 民居"),"route11":Language.story("11号道路 · Red地图"),"route11-gate-1f":Language.story("11号道路关卡 · 1F"),"digletts-cave-route11":Language.story("地鼠洞 · 南入口"),"digletts-cave":Language.story("地鼠洞 · 洞内"),"digletts-cave-route2":Language.story("地鼠洞 · 北入口"),"fighting-dojo":Language.story("金黄市 · 格斗道场"),"route5-gate":Language.story("5号道路关卡 · 茶通行"),"route6-gate":Language.story("6号道路关卡 · 茶通行"),"route8-gate":Language.story("8号道路关卡 · 茶通行"), "seafoam-islands-b2f":Language.story("双子岛 · B2F"),"seafoam-islands-b3f":Language.story("双子岛 · B3F"),"seafoam-islands-b4f":Language.story("双子岛 · B4F"),"seafoam-islands-1f":Language.story("双子岛 · 1F"),"seafoam-islands-b1f":Language.story("双子岛 · B1F"),"route19":Language.story("19号水路 · 浅红南海岸"),"route20":Language.story("20号水路 · 双子岛东侧海域"),"route17":Language.story("17号道路 · 自行车道"),"route18":Language.story("18号道路 · 浅红市入口"),"route18-gate-1f":Language.story("18号道路关卡 · 1F"),"route18-gate-2f":Language.story("18号道路关卡 · 2F"),"route16":Language.story("16号道路 · 飞翔与自行车道"),"route16-gate-1f":Language.story("16号道路关卡 · 1F"),"route16-gate-2f":Language.story("16号道路关卡 · 2F"),"route16-fly-house":Language.story("16号道路 · 飞翔小屋"),"bike-shop":Language.story("华蓝市 · 自行车店"),"pokemon-fan-club":Language.story("枯叶市 · 宝可梦迷俱乐部"),"hall-of-fame":Language.story("宝可梦联盟 · 名人堂"),"league-lorelei":Language.story("宝可梦联盟 · 科拿"),"league-bruno":Language.story("宝可梦联盟 · 希巴"),"league-agatha":Language.story("宝可梦联盟 · 菊子"),"league-lance":Language.story("宝可梦联盟 · 渡"),"league-champion":Language.story("宝可梦联盟 · 冠军"),"indigo-lobby":Language.story("石英高原 · 联盟大厅"),"victory-road-2f":Language.story("冠军之路 · 2F压板与落石"),"victory-road-3f":Language.story("冠军之路 · 3F怪力与洞口"),"indigo-plateau":Language.story("石英高原 · 原出口"),"route22-gate":Language.story("联盟入口 · 灰色徽章检查"),"route23":Language.story("23号道路 · 八枚徽章与水路"),"victory-road-1f":Language.story("冠军之路 · 1F怪力机关"),"viridian-gym":Language.story("常青道馆 · Red原图与箭头地板"),"cinnabar-gym":Language.story("红莲道馆 · Red原迷宫 / FireRed队伍"),"pokemon-mansion-b1f":Language.story("宝可梦大宅 · B1F"),"pokemon-mansion-3f":Language.story("宝可梦大宅 · 3F"),"pokemon-mansion-2f":Language.story("宝可梦大宅 · 2F"),"pokemon-mansion-1f":Language.story("宝可梦大宅 · 1F"),"cinnabar-island":Language.story("红莲岛 · Red原图 / FireRed服务"),"cinnabar-center":Language.story("红莲岛 · 宝可梦中心"),"cinnabar-mart":Language.story("红莲岛 · 友好商店"),"route21":Language.story("21号水路 · Red原图 / FireRed队伍"),"wardens-house":Language.story("浅红市 · 园长家"),"safari-zone-west":Language.story("狩猎区 · West"),"safari-zone-secret-house":Language.story("狩猎区 · 秘密小屋"),"safari-zone-north":Language.story("狩猎区 · North"),"safari-zone-east":Language.story("狩猎区 · East"),"safari-zone-gate":Language.story("狩猎区 · 原入口"),"safari-zone-entry":Language.story("狩猎区 · Center"),"fuchsia-gym":Language.story("浅红道馆 · 原隐形墙迷宫"),"fuchsia-city":Language.story("浅红市 · Red原地图"),"fuchsia-center":Language.story("浅红市 · 宝可梦中心"),"fuchsia-mart":Language.story("浅红市 · 友好商店"),"route15":Language.story("15号道路 · 原东西道路"),"route15-gate-1f":Language.story("15号道路关卡 · 1F"),"route14":Language.story("14号道路 · 原纵向道路"),"route13":Language.story("13号道路 · 原围栏迷宫"),"route12":Language.story("12号道路 · 原南北道路"),"route12-gate-2f":Language.story("12号道路关卡 · 2F"),"route12-gate-1f":Language.story("12号道路关卡 · 1F"),"saffron-gym":Language.story("金黄道馆 · 原传送迷宫"),"silph-co-11f":Language.story("西尔佛公司 · 11层"),"silph-co-10f":Language.story("西尔佛公司 · 10层"),"silph-co-9f":Language.story("西尔佛公司 · 9层"),"silph-co-8f":Language.story("西尔佛公司 · 8层"),"silph-co-7f":Language.story("西尔佛公司 · 7层"),"silph-co-6f":Language.story("西尔佛公司 · 6层"),"silph-co-1f":Language.story("西尔佛公司 · 1层"),"silph-co-2f":Language.story("西尔佛公司 · 2层"),"silph-co-3f":Language.story("西尔佛公司 · 3层"),"silph-co-4f":Language.story("西尔佛公司 · 4层"),"silph-co-5f":Language.story("西尔佛公司 · 5层"),"silph-co-elevator":Language.story("西尔佛公司 · 电梯"),"route7-gate":Language.story("7号道路关卡 · 茶与共享通行"),"saffron-city":Language.story("金黄市 · Red原地图 / FireRed剧情"),"saffron-center":Language.story("金黄市 · 宝可梦中心"),"saffron-mart":Language.story("金黄市 · 友好商店"),"celadon-mansion-1f":Language.story("玉虹公寓 · 1F / Red原建筑"),"pokemon-tower-7f":Language.story("宝可梦塔 · 顶层救援"),"mr-fujis-house":Language.story("紫苑镇 · 富士的宝可梦之家"),"pokemon-tower-6f":Language.story("宝可梦塔 · 6层"),"pokemon-tower-5f":Language.story("宝可梦塔 · 5层净化区"),"pokemon-tower-4f":Language.story("宝可梦塔 · 4层"),"pokemon-tower-3f":Language.story("宝可梦塔 · 3层"),"pokemon-tower-2f":Language.story("宝可梦塔 · 2层劲敌"),"pokemon-tower-1f":Language.story("紫苑镇 · 宝可梦塔1层"),"rocket-hideout-elevator":Language.story("火箭队基地 · 电梯"),"rocket-hideout-b4f":Language.story("火箭队秘密基地 · 地下4层"),"rocket-hideout-b3f":Language.story("火箭队秘密基地 · 地下3层"),"rocket-hideout-b2f":Language.story("火箭队秘密基地 · 地下2层"),"game-corner":Language.story("玉虹游戏厅 · 海报后的秘密"),"rocket-hideout-b1f":Language.story("火箭队秘密基地 · 地下1层"),"celadon-gym":Language.story("玉虹道馆 · 莉佳 / FireRed完整队伍"),"celadon-city":Language.story("玉虹市 · Red地图 / FireRed规则"),"celadon-center":Language.story("玉虹市 · 宝可梦中心"),"celadon-mart-1f":Language.story("玉虹百货 · 1F服务大厅"),"celadon-mart-2f":Language.story("玉虹百货 · 2F训练家市场"),"route7":Language.story("7号道路 · Red地图 / FireRed规则"),"underground-route8":Language.story("地下通道 · 8号道路入口"),"underground-route7":Language.story("地下通道 · 7号道路入口"),"underground-west-east":Language.story("地下通道 · 东西通路"),"route8":Language.story("8号道路 · Red地图 / FireRed规则"),"route10-south":Language.story("10号道路南段 · 紫苑镇前"),"lavender-town":Language.story("紫苑镇 · Red地图 / FireRed规则"),"lavender-center":Language.story("紫苑镇 · 宝可梦中心"),"lavender-mart":Language.story("紫苑镇 · 友好商店"),"rock-tunnel-1f":Language.story("岩山隧道 · 一层 / U闪光照明"),"rock-tunnel-b1f":Language.story("岩山隧道 · 地下一层 / U闪光照明"),"route9":Language.story("9号道路 · Red地图 / FireRed规则"),"route10-north":Language.story("10号道路北段 · 岩山隧道前"),"vermilion-gym":Language.story("枯叶道馆 · 雷电机关"),"vermilion-dock":Language.story("枯叶港 · 圣安奴号码头"),"ssanne-captain":Language.story("圣安奴号 · 船长室"),"ssanne-2f":Language.story("圣安奴号 · 二层走廊"),"ssanne-1f-rooms":Language.story("圣安奴号 · 1F客房"),"ssanne-1f":Language.story("圣安奴号 · 1F大厅"),"underground-route5":Language.story("地下通道 · 5号道路入口"),"underground-route6":Language.story("地下通道 · 6号道路入口"),"underground-north-south":Language.story("地下通道 · 南北通路"),"route6":Language.story("6号道路 · Red地图 / FireRed规则"),"vermilion-center":Language.story("枯叶市 · 宝可梦中心"),"vermilion-mart":Language.story("枯叶市 · 友好商店"),"vermilion-city":Language.story("枯叶市 · 外部地图"),"pallet-town":Language.story("真新镇 · Red地图"),"route1":Language.story("1号道路 · Red地图 / FireRed遇敌"),"viridian-city":Language.story("常青市 · Red地图"),"viridian-center":Language.story("常青市 · 宝可梦中心"),"viridian-mart":Language.story("常青市 · 友好商店"),"route2":Language.story("2号道路 · Red地图 / FireRed遇敌"),"viridian-forest":Language.story("常青森林 · Red地图 / FireRed遇敌"),"forest-south-gate":Language.story("常青森林 · 南门"),"forest-north-gate":Language.story("常青森林 · 北门"),"route3":Language.story("3号道路 · Red地图 / FireRed规则"),"route5":Language.story("5号道路 · Red地图 / FireRed遇敌"),"cerulean-trashed-house":Language.story("华蓝市 · 被盗民宅"),"route25":Language.story("25号道路 · Red地图 / FireRed规则"),"bills-house":Language.story("海角小屋 · 正辉"),"route24":Language.story("24号道路 · 金珠桥 / FireRed规则"),"cerulean-gym":Language.story("华蓝道馆 · FireRed队伍"),"cerulean-city":Language.story("华蓝市 · Red地图"),"cerulean-center":Language.story("华蓝市 · 宝可梦中心"),"route4-east":Language.story("4号道路 · 月见山东侧"),"mtmoon-b1f":Language.story("月见山 · 地下一层"),"mtmoon-b2f":Language.story("月见山 · 地下二层"),"mtmoon-1f":Language.story("月见山 · 一层"),"route4-entrance":Language.story("月见山前 · 4号道路西段"),"mtmoon-center":Language.story("月见山前 · 宝可梦中心"),"pewter-city":Language.story("尼比市 · Red地图"),"pewter-gym":Language.story("尼比道馆 · FireRed队伍"),"pewter-center":Language.story("尼比市 · 宝可梦中心"),"route22":Language.story("22号道路 · Red地图 / FireRed劲敌")}[id]
+	status.text = {"celadon-mart-3f":Language.story("E交谈 · 双倍奉还一次教学 · 四招可替换"),"celadon-mart-4f":Language.story("原楼梯与电梯开放 · 进化石已开放"),"celadon-mart-5f":Language.story("E柜员购买营养药或战斗道具 · O打开背包使用"),"celadon-mart-roof":Language.story("E售货机购买饮料 · 女孩一次性兑换TM · G教学"),"celadon-mart-elevator":Language.story("面向右上按钮 E · 1至5选择 · Esc取消"), "cinnabar-lab":Language.story("东侧房间通化石研究室 · 其他房间未开放"),"cinnabar-lab-fossil-room":Language.story("E与研究员交谈 · 交付化石或领取复活宝可梦"),"route2-gate":Language.story("E与助手交谈 · 关都捕获或拥有10种领取HM05"),"route2-trade-house":Language.story("E交谈 · 南口返回2号道路 · 交换未开放"),"route11":Language.story("西返枯叶 · 东往12号道路 · 训练家与陆地遇敌已开放"),"route11-gate-1f":Language.story("两侧通行 · 2F及服务未开放"),"digletts-cave-route11":Language.story("地鼠洞南入口 · 洞内陆地遇敌已开放"),"digletts-cave":Language.story("南往11号道路 · 北往2号道路 · 陆地遇敌已开放"),"digletts-cave-route2":Language.story("北出口接2号道路东侧 · 助手在南方关卡 · HM05领取已开放"),"fighting-dojo":Language.story("E训练家 · 馆主胜后可选奖赏 · 南口返回金黄市"),"route5-gate":Language.story("静态守卫 · 返回5号道路或通金黄"),"route6-gate":Language.story("静态守卫 · 返回6号道路或通金黄"),"route8-gate":Language.story("静态守卫 · 返回8号道路或通金黄"),"seafoam-islands-b2f":Language.story("E怪力 · 落石通B3F · 双石后自由冲浪"),"seafoam-islands-b3f":Language.story("E怪力 · 未堵流强制水流 · 双石后自由冲浪"),"seafoam-islands-b4f":Language.story("强制水流 · B4F落石终端 · 急冻鸟暂不开放"),"seafoam-islands-1f":Language.story("E怪力 · 原楼梯与洞口 · 跨层落石保持"),"seafoam-islands-b1f":Language.story("原楼梯与洞口通B2F · 落石保持"),"route19":Language.story("北返浅红 · E冲浪/训练家 · 西接20号水路"),"route20":Language.story("东返19号水路 · E训练家 · 东侧洞口通双子岛1F"),"route17":Language.story("自动下滑 · B刹车 · E训练家 · 南接18号道路"),"route18":Language.story("E训练家 · 东接浅红市 · 西返17号道路"),"route18-gate-1f":Language.story("E交谈 · 两侧往返 · 楼梯通2F"),"route18-gate-2f":Language.story("E交谈 · 原楼梯返回1F"),"route16":Language.story("E居合/卡比兽/训练家 · F飞翔 · V骑车 · 南口通17号道路上段"),"route16-gate-1f":Language.story("自行车道需要自行车 · 北通飞翔小屋"),"route16-gate-2f":Language.story("E交谈 · 原楼梯返回1F"),"route16-fly-house":Language.story("E领取HM02 · L教学飞翔 · F使用飞翔"),"bike-shop":Language.story("E兑换自行车 · 需要会长兑换券"),"pokemon-fan-club":Language.story("E听会长故事 · 领取自行车兑换券"),"hall-of-fame":Language.story("E 与大木博士交谈 · 登记名人堂"),"league-lorelei":Language.story("E挑战科拿 · B战间用药 · 入口关闭 · 胜后北门开放"),"league-bruno":Language.story("第一门已通过 · 希巴挑战留第57片"),"league-agatha":Language.story("菊子挑战留第58片"),"league-lance":Language.story("渡挑战留第59片"),"league-champion":Language.story("E挑战冠军 · 胜后北门前往名人堂"),"indigo-lobby":Language.story("护士/PC/补给 · 北门挑战联盟 · 战间不会自动恢复"),"victory-road-2f":Language.story("E训练家/怪力 · 洞内遇敌 · 火焰鸟未开放"),"victory-road-3f":Language.story("E训练家/怪力 · 洞内遇敌 · 出洞前往联盟"),"indigo-plateau":Language.story("北入联盟大厅 · 治疗/PC/补给开放"),"route22-gate":Language.story("原步进徽章检查 · 北往23号道路"),"route23":Language.story("原逐关检查 · E冲浪 · 双洞口通冠军之路 · 北往高原"),"victory-road-1f":Language.story("E训练家/怪力 · 原压板开路 · 洞内遇敌"),"viridian-gym":Language.story("E 训练家/坂木 · 绿色徽章 · 胜后领取TM"),"cinnabar-gym":Language.story("E 问答/训练家 · 夏伯 · 胜后领取TM"),"pokemon-mansion-b1f":Language.story("E 雕像/秘密钥匙 · 原楼梯返回1F"),"pokemon-mansion-3f":Language.story("原跌落路径 · E 雕像/训练家"),"pokemon-mansion-2f":Language.story("E 雕像开关/训练家 · 原楼梯通3F"),"pokemon-mansion-1f":Language.story("E 雕像开关/训练家 · 楼层共享门状态"),"cinnabar-island":Language.story("北返21号水路 · 中心/商店开放 · 道馆需要秘密钥匙"),"cinnabar-center":Language.story("护士E治疗 · 右上PC · 不补球药"),"cinnabar-mart":Language.story("柜台E · 火红货单 · 购买与出售"),"route21":Language.story("北返真新镇 · 南往红莲岛 · E训练家 · 水上遇敌"),"wardens-house":Language.story("E交金牙/领取HM04 · J怪力教学 · E启用怪力后方向键推石"),"safari-zone-west":Language.story("狩猎区 · West"),"safari-zone-secret-house":Language.story("狩猎区 · 秘密小屋"),"safari-zone-north":Language.story("狩猎区 · North"),"safari-zone-east":Language.story("R退出 · 原图探索 · Safari捕获延期"),"safari-zone-gate":Language.story("E交谈 · 500入园 · 600步 · 退出归还临时球"),"safari-zone-entry":Language.story("R主动退出 · East开放 · 捕获延期"),"fuchsia-gym":Language.story("隐形墙 · E挑战阿桔 · 粉红徽章 · 胜后领取TM"),"fuchsia-city":Language.story("中心/商店/道馆开放 · 其他区域延期"),"fuchsia-center":Language.story("护士E治疗 · 右上PC"),"fuchsia-mart":Language.story("柜台E · 火红货单 · 购买与出售"),"route15":Language.story("E 训练家 · 东返14号道路 · 西往浅红市"),"route15-gate-1f":Language.story("原门楼往返 · 2F延期"),"route14":Language.story("E 训练家 · 东返13号道路 · 西往15号道路"),"route13":Language.story("E 训练家 · 北返12号道路 · 西往14号道路"),"route12":Language.story("E 训练家 · 南到13边界止 · 钓鱼延期"),"route12-gate-2f":Language.story("E与女孩交谈领取TM27报恩 · 楼梯返回1F"),"route12-gate-1f":Language.story("北返紫苑 · 南往卡比兽 · 楼梯通2F"),"saffron-gym":Language.story("原传送板 · E 对战 · 金色徽章"),"silph-co-11f":Language.story("E 对战/卡片门 · 原楼梯/传送板"),"silph-co-10f":Language.story("E 对战/卡片门 · 原楼梯/传送板"),"silph-co-9f":Language.story("E 对战/卡片门 · 原楼梯/传送板"),"silph-co-8f":Language.story("E 对战/卡片门 · 原楼梯/传送板"),"silph-co-7f":Language.story("E 对战/卡片门 · 原楼梯/传送板"),"silph-co-6f":Language.story("E 对战/卡片门 · 原楼梯/传送板"),"silph-co-1f":Language.story("原楼梯/电梯/传送板 · K 关键物品"),"silph-co-2f":Language.story("E 研究员/火箭队/卡片门"),"silph-co-3f":Language.story("E 对战/卡片门 · 原传送板"),"silph-co-4f":Language.story("E 对战/卡片门 · 原楼梯/传送板"),"silph-co-5f":Language.story("原卡片钥匙在南侧 · E 拾取/开门"),"silph-co-elevator":Language.story("面向右上按钮 E · 选择已开放楼层"),"route7-gate":Language.story("向东通金黄 · 守卫踏步检查茶 · 无需确认"),"saffron-city":Language.story("西返7号道路 · 中心/商店开放 · 公司1–11层开放 · 道馆后续切片"),"saffron-center":Language.story("护士E治疗 · 右上PC · 不补球药"),"saffron-mart":Language.story("柜台E · 火红金黄货单 · 购买与出售"),"celadon-mansion-1f":Language.story("E 与老奶奶交谈 · K 关键物品 · 楼上未开放"),"pokemon-tower-7f":Language.story("E 火箭队与富士老人 · K 关键物品"),"mr-fujis-house":Language.story("另与富士老人交谈领取宝可梦笛 · K 关键物品"),"pokemon-tower-6f":Language.story("母亲幽灵安息后可登顶 · E 灵媒对战"),"pokemon-tower-5f":Language.story("原净化格恢复HP/PP · E 灵媒对战"),"pokemon-tower-4f":Language.story("原楼梯 · E 灵媒对战 · 检视镜辨识"),"pokemon-tower-3f":Language.story("检视镜辨认幽灵 · E 灵媒对战"),"pokemon-tower-2f":Language.story("原楼梯通往3层"),"pokemon-tower-1f":Language.story("E 与悼念者交谈 · 原楼梯通往二层"),"rocket-hideout-elevator":Language.story("面向左上按钮 E · 原楼层 B1 / B2 / B4"),"rocket-hideout-b4f":Language.story("E 坂木与检视镜 · 原双守卫门锁 · 电梯 B1/B2/B4"),"rocket-hideout-b3f":Language.story("箭头地板强制移动 · E 训练家 · B4/钥匙/电梯延期"),"rocket-hideout-b2f":Language.story("箭头地板强制移动 · E 训练家 · B3已开放/电梯延期"),"game-corner":Language.story("E 海报与守卫 · 代币和小游戏延期"),"rocket-hideout-b1f":Language.story("E 训练家 · 原隔门击败守卫后开启 · B2已开放 / 电梯待接入"),"celadon-gym":Language.story("原树E居合斩 · 面向训练家E · 胜后领取TM"),"celadon-city":Language.story("东返7号道路 · 公寓1F/中心/百货全层/道馆开放"),"celadon-center":Language.story("护士E治疗 · 右上PC · 不补球药"),"celadon-mart-1f":Language.story("原楼梯与电梯通1至5F · 屋顶从5F楼梯前往"),"celadon-mart-2f":Language.story("道具与TM柜台开放 · 购买与出售"),"route7":Language.story("东经茶关卡到金黄 · 西返玉虹 · 地下通道返8号道路"),"underground-route8":Language.story("原楼梯通玉虹方向 · 南口返8号道路"),"underground-route7":Language.story("原楼梯通紫苑方向 · 南口入7号道路"),"underground-west-east":Language.story("西往7号道路 · 东返8号道路"),"route8":Language.story("东返紫苑镇 · 草区需居合斩 · 金黄关卡前置未满足"), "route10-south":Language.story("北洞口返岩山隧道 · 南往紫苑镇 · E 对战"),"lavender-town":Language.story("西往8号道路 · 中心商店开放 · 宝可梦塔1/2F开放 · 富士/改名延期"),"lavender-center":Language.story("护士 E 治疗 · 右上 PC · 不补球药"),"lavender-mart":Language.story("柜台右侧朝左 E · 火红货单与出售"),"rock-tunnel-1f":Language.story("原楼梯往返 · 地面遇敌 · E 训练家对战 · U使用闪光照明"),"rock-tunnel-b1f":Language.story("原楼梯往返 · 地面遇敌 · E 训练家对战 · U使用闪光照明"),"route9":Language.story("原树 E 居合斩 · 面向训练家 E · 东往10号道路"),"route10-north":Language.story("北口入岩山隧道 · 中心内部延期 · 西返9号道路"),"vermilion-gym":Language.story("E 调查垃圾桶或对战 · 南口返枯叶市"),"vermilion-dock":Language.story("南下登船 · 北返枯叶市"),"ssanne-captain":Language.story("E 船长交谈 · M 秘传教学 · 南口返二层"),"ssanne-2f":Language.story("西侧楼梯返1F · 东北船长室 · M 秘传教学"),"ssanne-1f-rooms":Language.story("E 交谈或对战 · 北门返大厅"),"ssanne-1f":Language.story("北出口离船 · 六间1F客房开放"),"underground-route5":Language.story("原楼梯南下6号道路 · 交换未开放"),"underground-route6":Language.story("原楼梯北返5号道路 · 南往枯叶市"),"underground-north-south":Language.story("北往5号道路 · 南往6号道路"),"route6":Language.story("E 面向训练家 · 南往枯叶市 · 北入口返地下通道"),"vermilion-center":Language.story("护士 E 治疗 · 右上PC · 不补球药"),"vermilion-mart":Language.story("柜台右侧朝左 E · 火红货单与出售"),"vermilion-city":Language.story("M 秘传教学 · 面向小树 E · 道馆垃圾桶机关开放"),"pallet-town":Language.story("向北通往1号道路 · 房门关闭"),"route1":Language.story("北往常青市 · 南往真新镇"),"viridian-city":Language.story("中心与商店开放 · 道馆需要其余七枚徽章"),"viridian-center":Language.story("柜台前朝上按 E 与护士交谈"),"viridian-mart":Language.text("ui.53f858aa05fe","柜台右侧朝左按 E · 球200 / 药300"),"route2":Language.story("北往尼比 · 南返常青 · 地鼠洞开放 · E居合斩"),"viridian-forest":Language.story("草丛遇敌 · 面向捕虫少年按 E 对战"),"forest-south-gate":Language.story("北入森林 · 南返2号道路"),"forest-north-gate":Language.story("南入森林 · 北往2号道路北段"),"route3":Language.story("草丛遇敌 · 面向训练家按 E · 北往月见山"),"route5":Language.story("北返华蓝市 · 地下通道通6号道路 · 培育屋与关卡未开放"),"cerulean-trashed-house":Language.story("原后墙破洞通屋后 · E 与住户交谈"),"route25":Language.story("E 面向训练家 · 西返金珠桥 · 东往正辉小屋"),"bills-house":Language.story("E 交谈或操作电脑 · 细胞分离与船票"),"route24":Language.story("E 挑战桥上五人 · 东往25号道路与正辉小屋"),"cerulean-gym":Language.story("面向训练家 E · 小霞胜利获得蓝色徽章"),"cerulean-city":Language.story("中心、道馆与北口金珠桥开放"),"cerulean-center":Language.story("柜台前朝上 E 治疗 · 右上 PC"),"route4-east":Language.story("东往华蓝市 · 西侧原单向跳台"),"mtmoon-b1f":Language.story("原楼梯往返 · 东口通往4号道路"),"mtmoon-b2f":Language.story("E 对战 / 化石二选一 · B1F东口通4号道路"),"mtmoon-1f":Language.story("普通地面遇敌 · 地下通道开放"),"route4-entrance":Language.story("中心与月见山一层开放"),"mtmoon-center":Language.story("护士 E 治疗 · 右上 PC 可寄存"),"pewter-city":Language.story("东往3号道路 · 道馆与中心开放"),"pewter-gym":Language.story("面向训练家按 E · 小刚胜利获得灰色徽章"),"pewter-center":Language.story("柜台前朝上按 E 与护士交谈"),"route22":Language.story("向劲敌按 E 对战 · 东返常青市 · 北门通23号道路")}[id]
+
+func _toggle_language()->void:
+	var failure:Error=Language.toggle()
+	if failure!=OK:
+		status.text=Language.text("ui.448278d4ca1a","语言设置保存失败：%d") % failure
+		return
+	_refresh_map_language(map_id)
+	prompt.text=Language.text("ui.72005128a345","WASD移动 · E交谈 · F6碎岩/F7攀瀑 · M/N/L教学 · F飞翔/V骑车 · B背包 · P队伍 · F5存档/F10退出")
+	if language_team_open:_team_menu()

@@ -1,8 +1,12 @@
 extends RefCounted
+const Language = preload("res://scripts/language.gd")
 var data:Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://data/ground-tms.json"))["items"]
 func display_name(item:String)->String:
  if not data.has(item):return item
  var row:Dictionary=data[item]
+ if Language.locale=="en":
+  var move_name:String=Language.name(str(row["name"]).split(" ",true,1)[-1])
+  return "TM%02d %s"%[int(row.get("fire_red_tm",row.get("tm",0))) if row.get("fire_red_tm")!=null else int(row.get("tm",0)),move_name]
  var old:String=row.get("legacy_name","")
  if row.get("fire_red_tm")!=null:
   return str(row["name"])+("（旧%s）"%old if not item.begins_with("fr_tm") and old!="" and old!=row["name"] else "")
@@ -11,6 +15,9 @@ func summary(store:RefCounted,item:String)->String:
  var row:Dictionary=data[item]
  if not row["implemented"]:return str(row["disabled_reason"])+"；道具保留。"
  var move:Dictionary=store.growth.moves[row["move"]]
+ if Language.locale=="en":
+  var descriptions:Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://data/localization/tms.en.json"))
+  return "%s · Power %s · Accuracy %s · PP%d\n%s"%[move["type"],"—" if int(move["power"])==0 else str(move["power"]),str(move["accuracy"]),int(move["pp"]),descriptions.get(item,"")]
  return "%s · 威力%s · 命中%s · PP%d\n%s%s" % [move["type"],"—" if int(move["power"])==0 else str(move["power"]),str(move["accuracy"]),int(move["pp"]),row["description"],("\n"+str(row["limitation"])) if row.get("limitation","")!="" else ""]
 func quantity(s:Dictionary,item:String)->int:
  if item.begins_with("fr_tm"):return int(s.get("tm_inventory",{}).get(item,0))

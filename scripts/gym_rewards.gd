@@ -1,4 +1,5 @@
 extends RefCounted
+const Language = preload("res://scripts/language.gd")
 ## One registry for gym receipts, legacy claims and item display. Teaching stays separate.
 var data:Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://data/gym-tm-rewards.json"))["rewards"]
 func item_row(item:String)->Dictionary:
@@ -34,4 +35,4 @@ func claim(store:RefCounted,id:String)->String:
 	return ""
 func description(item:String,teaching:RefCounted)->String:
 	var row:Dictionary=item_row(item)
-	return str(row["name"])+(" · 教学" if teaching.data.has(item) and teaching.data[item]["implemented"] else " · 教学未接入")
+	return Language.name(str(row["name"]))+(Language.story(" · 教学") if teaching.data.has(item) and teaching.data[item]["implemented"] else Language.story(" · 教学未接入"))

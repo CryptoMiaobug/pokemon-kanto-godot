@@ -4,7 +4,7 @@ English | [简体中文](README.zh-CN.md)
 
 A standalone, unofficial Pokémon fan project built with Godot and GDScript. Map layouts primarily follow Pokémon Red, with selected assets and implemented battle mechanics from FireRed. This project is not affiliated with the original rights holders.
 
-**The in-game interface is currently in Simplified Chinese.** This English README documents the project; it does not add an English localization.
+**The game supports English and Simplified Chinese. Press F8 on the map to switch languages.** The preference is saved separately from game progress; player nicknames and mail remain unchanged.
 
 ## Getting started
 
@@ -42,3 +42,7 @@ This is an evolving prototype, not a complete recreation of the original games. 
 ## Credits and licensing
 
 See [third-party sources](THIRD_PARTY.md) and the source records and license notices shipped with the assets. Source attribution does not establish permission to redistribute original game artwork. Redistribution rights for the original game assets have not been established individually. No blanket open-source license is granted for the entire project.
+
+## Localization checks
+
+English and Chinese display checks cover representative movement, interactions, battle inputs, purchase success/cancel, story choices, and save/restart with nickname and individual-ID preservation. These are isolated checks with fixture setup, not a natural full playthrough or exhaustive NPC coverage. Some unimplemented interactions exist only as source data.
