@@ -1,0 +1,368 @@
+[
+  {
+    "id": "route17_corey",
+    "map": "route17",
+    "name": "光头男科里",
+    "title": "光头男科里 · 17号道路下段",
+    "cell": [
+      14,
+      98
+    ],
+    "facing": "right",
+    "sprite": "res://assets/route17/actor-8.png",
+    "portrait": "res://assets/route17/corey-trainer.png",
+    "party": [
+      {
+        "species_id": "primeape",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spa"
+        },
+        "moves": [
+          "furyswipes",
+          "focusenergy",
+          "seismictoss",
+          "rage"
+        ]
+      },
+      {
+        "species_id": "machoke",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "karatechop",
+          "seismictoss",
+          "foresight",
+          "revenge"
+        ]
+      }
+    ],
+    "reward": 696,
+    "intro": "来一场宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "自行车道连接玉虹市和浅红市。",
+    "redObject": 8,
+    "fireRedTrainer": "CueBallCorey"
+  },
+  {
+    "id": "route17_jaxon",
+    "map": "route17",
+    "name": "暴走族杰克森",
+    "title": "暴走族杰克森 · 17号道路下段",
+    "cell": [
+      5,
+      98
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route17/actor-9.png",
+    "portrait": "res://assets/route17/jaxon-trainer.png",
+    "party": [
+      {
+        "species_id": "weezing",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "sludge",
+          "smokescreen",
+          "smog",
+          "tackle"
+        ]
+      },
+      {
+        "species_id": "muk",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spa"
+        },
+        "moves": [
+          "screech",
+          "minimize",
+          "sludge",
+          "disable"
+        ]
+      }
+    ],
+    "reward": 580,
+    "intro": "来一场宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "自行车道连接玉虹市和浅红市。",
+    "redObject": 9,
+    "fireRedTrainer": "BikerJaxon"
+  },
+  {
+    "id": "route17_william",
+    "map": "route17",
+    "name": "暴走族威廉",
+    "title": "暴走族威廉 · 17号道路下段",
+    "cell": [
+      10,
+      118
+    ],
+    "facing": "down",
+    "sprite": "res://assets/route17/actor-10.png",
+    "portrait": "res://assets/route17/william-trainer.png",
+    "party": [
+      {
+        "species_id": "koffing",
+        "level": 25,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "smokescreen",
+          "sludge",
+          "smog",
+          "tackle"
+        ]
+      },
+      {
+        "species_id": "weezing",
+        "level": 25,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "smokescreen",
+          "sludge",
+          "smog",
+          "tackle"
+        ]
+      },
+      {
+        "species_id": "koffing",
+        "level": 25,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "atk"
+        },
+        "moves": [
+          "smokescreen",
+          "sludge",
+          "smog",
+          "tackle"
+        ]
+      },
+      {
+        "species_id": "koffing",
+        "level": 25,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "smokescreen",
+          "sludge",
+          "smog",
+          "tackle"
+        ]
+      },
+      {
+        "species_id": "weezing",
+        "level": 25,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "smokescreen",
+          "sludge",
+          "selfdestruct",
+          "tackle"
+        ]
+      }
+    ],
+    "reward": 500,
+    "intro": "来一场宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "自行车道连接玉虹市和浅红市。",
+    "redObject": 10,
+    "fireRedTrainer": "BikerWilliam"
+  },
+  {
+    "id": "route18_wilton",
+    "map": "route18",
+    "name": "鸟使威尔顿",
+    "title": "鸟使威尔顿 · 18号道路",
+    "cell": [
+      36,
+      11
+    ],
+    "facing": "right",
+    "sprite": "res://assets/route18/actor-1.png",
+    "portrait": "res://assets/route18/wilton-trainer.png",
+    "party": [
+      {
+        "species_id": "spearow",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spd"
+        },
+        "moves": [
+          "leer",
+          "furyattack",
+          "pursuit",
+          "aerialace"
+        ]
+      },
+      {
+        "species_id": "fearow",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "growl",
+          "leer",
+          "furyattack",
+          "pursuit"
+        ]
+      }
+    ],
+    "reward": 696,
+    "intro": "来一场宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "自行车道连接玉虹市和浅红市。",
+    "redObject": 1,
+    "fireRedTrainer": "BirdKeeperWilton"
+  },
+  {
+    "id": "route18_ramiro",
+    "map": "route18",
+    "name": "鸟使拉米罗",
+    "title": "鸟使拉米罗 · 18号道路",
+    "cell": [
+      40,
+      15
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route18/actor-2.png",
+    "portrait": "res://assets/route18/ramiro-trainer.png",
+    "party": [
+      {
+        "species_id": "dodrio",
+        "level": 34,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "pursuit",
+          "furyattack",
+          "triattack",
+          "rage"
+        ]
+      }
+    ],
+    "reward": 816,
+    "intro": "来一场宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "自行车道连接玉虹市和浅红市。",
+    "redObject": 2,
+    "fireRedTrainer": "BirdKeeperRamiro"
+  },
+  {
+    "id": "route18_jacob",
+    "map": "route18",
+    "name": "鸟使雅各布",
+    "title": "鸟使雅各布 · 18号道路",
+    "cell": [
+      42,
+      13
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route18/actor-3.png",
+    "portrait": "res://assets/route18/jacob-trainer.png",
+    "party": [
+      {
+        "species_id": "spearow",
+        "level": 26,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "leer",
+          "furyattack",
+          "pursuit",
+          "aerialace"
+        ]
+      },
+      {
+        "species_id": "spearow",
+        "level": 26,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "leer",
+          "furyattack",
+          "pursuit",
+          "aerialace"
+        ]
+      },
+      {
+        "species_id": "fearow",
+        "level": 26,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "growl",
+          "leer",
+          "furyattack",
+          "pursuit"
+        ]
+      },
+      {
+        "species_id": "spearow",
+        "level": 26,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "leer",
+          "furyattack",
+          "pursuit",
+          "aerialace"
+        ]
+      }
+    ],
+    "reward": 624,
+    "intro": "来一场宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "自行车道连接玉虹市和浅红市。",
+    "redObject": 3,
+    "fireRedTrainer": "BirdKeeperJacob"
+  }
+]

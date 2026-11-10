@@ -1,0 +1,63 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/Route22Gate.json",
+  "mapSHA256": "bc8ecc978c0235f91e9641c0061c0501474a0ab88b52da0af03b158e0cf735c8",
+  "warps": [
+    {
+      "x": 4,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 2,
+      "destWarpIndex": 1
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "ROUTE22GATE_GUARD",
+      "x": 6,
+      "y": 2,
+      "sprite": "SPRITE_GUARD",
+      "spriteId": 49,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROUTE22GATE_GUARD",
+      "textIndex": 1
+    }
+  ],
+  "adaptation": "Red complete geometry/static source actors; 1F trainers/items/wild and 2F+ deferred; source latch survives return to Route23, boulders reset on map entry.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

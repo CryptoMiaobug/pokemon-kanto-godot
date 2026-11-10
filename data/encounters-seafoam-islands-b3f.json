@@ -1,0 +1,113 @@
+{
+  "source": "sSeafoamIslandsB3F_FireRed",
+  "encounter_rate": 7,
+  "slots": [
+    {
+      "species_id": "seel",
+      "min_level": 30,
+      "max_level": 30,
+      "weight": 20
+    },
+    {
+      "species_id": "seel",
+      "min_level": 32,
+      "max_level": 32,
+      "weight": 20
+    },
+    {
+      "species_id": "psyduck",
+      "min_level": 32,
+      "max_level": 32,
+      "weight": 10
+    },
+    {
+      "species_id": "psyduck",
+      "min_level": 30,
+      "max_level": 30,
+      "weight": 10
+    },
+    {
+      "species_id": "golduck",
+      "min_level": 32,
+      "max_level": 32,
+      "weight": 10
+    },
+    {
+      "species_id": "zubat",
+      "min_level": 24,
+      "max_level": 24,
+      "weight": 10
+    },
+    {
+      "species_id": "golbat",
+      "min_level": 26,
+      "max_level": 26,
+      "weight": 5
+    },
+    {
+      "species_id": "golduck",
+      "min_level": 34,
+      "max_level": 34,
+      "weight": 5
+    },
+    {
+      "species_id": "dewgong",
+      "min_level": 32,
+      "max_level": 32,
+      "weight": 4
+    },
+    {
+      "species_id": "golbat",
+      "min_level": 28,
+      "max_level": 28,
+      "weight": 4
+    },
+    {
+      "species_id": "dewgong",
+      "min_level": 34,
+      "max_level": 34,
+      "weight": 1
+    },
+    {
+      "species_id": "golbat",
+      "min_level": 30,
+      "max_level": 30,
+      "weight": 1
+    }
+  ],
+  "water": {
+    "encounter_rate": 2,
+    "slots": [
+      {
+        "species_id": "seel",
+        "min_level": 25,
+        "max_level": 35,
+        "weight": 60
+      },
+      {
+        "species_id": "horsea",
+        "min_level": 25,
+        "max_level": 30,
+        "weight": 30
+      },
+      {
+        "species_id": "dewgong",
+        "min_level": 35,
+        "max_level": 40,
+        "weight": 5
+      },
+      {
+        "species_id": "psyduck",
+        "min_level": 30,
+        "max_level": 40,
+        "weight": 4
+      },
+      {
+        "species_id": "golduck",
+        "min_level": 35,
+        "max_level": 40,
+        "weight": 1
+      }
+    ]
+  }
+}

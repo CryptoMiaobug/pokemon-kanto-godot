@@ -1,0 +1,423 @@
+[
+  {
+    "id": "mtmoonb2f_rocket1",
+    "map": "mtmoon-b2f",
+    "name": "火箭队队员1",
+    "title": "火箭队队员1 · 月见山地下二层",
+    "cell": [
+      11,
+      16
+    ],
+    "facing": "down",
+    "sprite": "res://assets/moon-rockets/rocket1.png",
+    "portrait": "res://assets/moon-rockets/rocket-trainer.png",
+    "reward": 416,
+    "party": [
+      {
+        "species_id": "rattata",
+        "level": 13,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spd"
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack",
+          "hyperfang"
+        ]
+      },
+      {
+        "species_id": "zubat",
+        "level": 13,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spd"
+        },
+        "moves": [
+          "leechlife",
+          "astonish",
+          "supersonic"
+        ]
+      }
+    ],
+    "intro": "我们火箭队要找到化石！复活里面的宝可梦，就能赚大钱！",
+    "defeat": "可恶！这下我生气了！",
+    "after": "你惹怒了我！火箭队会把你列入黑名单！",
+    "sourceText": {
+      "textBefore": "TEAM ROCKET will find the fossils, revive and sell them for cash!",
+      "textEnd": "Urgh! Now I'm mad!",
+      "textAfter": "You made me mad! TEAM ROCKET will blacklist you!"
+    },
+    "fireRedText": {
+      "intro": "We, TEAM ROCKET, shall find the\\n fossils!\\p Reviving POKéMON from them will\\n earn us huge riches!$",
+      "defeat": "Urgh!\\n Now I'm mad!$",
+      "after": "You made me mad!\\n TEAM ROCKET will blacklist you!$"
+    },
+    "redObject": 2,
+    "redParty": [
+      {
+        "level": 13,
+        "species": 19,
+        "const": "RATTATA",
+        "moves": [
+          "TACKLE",
+          "TAIL_WHIP",
+          "QUICK_ATTACK"
+        ],
+        "stats": {
+          "hp": 32,
+          "atk": 21,
+          "def": 16,
+          "spd": 25,
+          "spc": 13
+        }
+      },
+      {
+        "level": 13,
+        "species": 41,
+        "const": "ZUBAT",
+        "moves": [
+          "LEECH_LIFE",
+          "SUPERSONIC"
+        ],
+        "stats": {
+          "hp": 35,
+          "atk": 19,
+          "def": 16,
+          "spd": 21,
+          "spc": 17
+        }
+      }
+    ],
+    "fireRedTrainer": "TRAINER_TEAM_ROCKET_GRUNT",
+    "fireRedParty": "TeamRocketGrunt",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "mtmoonb2f_rocket2",
+    "map": "mtmoon-b2f",
+    "name": "火箭队队员2",
+    "title": "火箭队队员2 · 月见山地下二层",
+    "cell": [
+      15,
+      22
+    ],
+    "facing": "down",
+    "sprite": "res://assets/moon-rockets/rocket2.png",
+    "portrait": "res://assets/moon-rockets/rocket-trainer.png",
+    "reward": 352,
+    "party": [
+      {
+        "species_id": "sandshrew",
+        "level": 11,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "scratch",
+          "defensecurl",
+          "sandattack"
+        ]
+      },
+      {
+        "species_id": "rattata",
+        "level": 11,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack"
+        ]
+      },
+      {
+        "species_id": "zubat",
+        "level": 11,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "leechlife",
+          "astonish",
+          "supersonic"
+        ]
+      }
+    ],
+    "intro": "我们火箭队是宝可梦黑帮！我们的实力让人害怕！",
+    "defeat": "我搞砸了！",
+    "after": "可恶！我的同伙不会善罢甘休的！",
+    "sourceText": {
+      "textBefore": "We, TEAM ROCKET, are POKéMON gangsters!",
+      "textEnd": "I blew it!",
+      "textAfter": "Darn it all! My associates won't stand for this!"
+    },
+    "fireRedText": {
+      "intro": "We, TEAM ROCKET, are POKéMON\\n gangsters!\\l We strike fear with our strength!$",
+      "defeat": "I blew it!$",
+      "after": "Darn it all!\\n My associates won't stand for this!$"
+    },
+    "redObject": 3,
+    "redParty": [
+      {
+        "level": 11,
+        "species": 27,
+        "const": "SANDSHREW",
+        "moves": [
+          "SCRATCH",
+          "SAND_ATTACK"
+        ],
+        "stats": {
+          "hp": 33,
+          "atk": 23,
+          "def": 25,
+          "spd": 15,
+          "spc": 13
+        }
+      },
+      {
+        "level": 11,
+        "species": 19,
+        "const": "RATTATA",
+        "moves": [
+          "TACKLE",
+          "TAIL_WHIP",
+          "QUICK_ATTACK"
+        ],
+        "stats": {
+          "hp": 29,
+          "atk": 19,
+          "def": 14,
+          "spd": 22,
+          "spc": 12
+        }
+      },
+      {
+        "level": 11,
+        "species": 41,
+        "const": "ZUBAT",
+        "moves": [
+          "LEECH_LIFE",
+          "SUPERSONIC"
+        ],
+        "stats": {
+          "hp": 31,
+          "atk": 16,
+          "def": 14,
+          "spd": 18,
+          "spc": 15
+        }
+      }
+    ],
+    "fireRedTrainer": "TRAINER_TEAM_ROCKET_GRUNT_2",
+    "fireRedParty": "TeamRocketGrunt2",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "mtmoonb2f_rocket3",
+    "map": "mtmoon-b2f",
+    "name": "火箭队队员3",
+    "title": "火箭队队员3 · 月见山地下二层",
+    "cell": [
+      29,
+      11
+    ],
+    "facing": "up",
+    "sprite": "res://assets/moon-rockets/rocket3.png",
+    "portrait": "res://assets/moon-rockets/rocket-trainer.png",
+    "reward": 352,
+    "party": [
+      {
+        "species_id": "zubat",
+        "level": 11,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "leechlife",
+          "astonish",
+          "supersonic"
+        ]
+      },
+      {
+        "species_id": "ekans",
+        "level": 11,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "wrap",
+          "leer",
+          "poisonsting"
+        ]
+      }
+    ],
+    "intro": "我们正在这里干一票大的！小鬼，走开！",
+    "defeat": "看来你还真有两下子……",
+    "after": "找到化石就交给我，然后滚开！",
+    "sourceText": {
+      "textBefore": "We're pulling a big job here! Get lost, kid!",
+      "textEnd": "So, you are good.",
+      "textAfter": "If you find a fossil, give it to me and scram!"
+    },
+    "fireRedText": {
+      "intro": "We're pulling a big job here!\\n Get lost, kid!$",
+      "defeat": "So, you are good…$",
+      "after": "If you find a fossil, give it to me\\n and scram!$"
+    },
+    "redObject": 4,
+    "redParty": [
+      {
+        "level": 12,
+        "species": 41,
+        "const": "ZUBAT",
+        "moves": [
+          "LEECH_LIFE",
+          "SUPERSONIC"
+        ],
+        "stats": {
+          "hp": 33,
+          "atk": 17,
+          "def": 15,
+          "spd": 20,
+          "spc": 16
+        }
+      },
+      {
+        "level": 12,
+        "species": 23,
+        "const": "EKANS",
+        "moves": [
+          "WRAP",
+          "LEER",
+          "POISON_STING"
+        ],
+        "stats": {
+          "hp": 32,
+          "atk": 21,
+          "def": 17,
+          "spd": 20,
+          "spc": 16
+        }
+      }
+    ],
+    "fireRedTrainer": "TRAINER_TEAM_ROCKET_GRUNT_3",
+    "fireRedParty": "TeamRocketGrunt3",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "mtmoonb2f_rocket4",
+    "map": "mtmoon-b2f",
+    "name": "火箭队队员4",
+    "title": "火箭队队员4 · 月见山地下二层",
+    "cell": [
+      29,
+      17
+    ],
+    "facing": "left",
+    "sprite": "res://assets/moon-rockets/rocket4.png",
+    "portrait": "res://assets/moon-rockets/rocket-trainer.png",
+    "reward": 416,
+    "party": [
+      {
+        "species_id": "rattata",
+        "level": 13,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spd"
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack",
+          "hyperfang"
+        ]
+      },
+      {
+        "species_id": "sandshrew",
+        "level": 13,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "scratch",
+          "defensecurl",
+          "sandattack"
+        ]
+      }
+    ],
+    "intro": "小孩子不要招惹大人！不然可没好果子吃！",
+    "defeat": "气死我了！",
+    "after": "人类到来之前，宝可梦早就在这里生活了。",
+    "sourceText": {
+      "textBefore": "Little kids should leave grown-ups alone!",
+      "textEnd": "I'm steamed!",
+      "textAfter": "POKéMON lived here long before people came."
+    },
+    "fireRedText": {
+      "intro": "Little kids shouldn't be messing\\n around with grown-ups!\\p It could be bad news!$",
+      "defeat": "I'm steamed!$",
+      "after": "POKéMON lived here long before\\n people came.$"
+    },
+    "redObject": 5,
+    "redParty": [
+      {
+        "level": 16,
+        "species": 20,
+        "const": "RATICATE",
+        "moves": [
+          "TACKLE",
+          "TAIL_WHIP",
+          "QUICK_ATTACK",
+          "HYPER_FANG"
+        ],
+        "stats": {
+          "hp": 46,
+          "atk": 33,
+          "def": 26,
+          "spd": 38,
+          "spc": 23
+        }
+      }
+    ],
+    "fireRedTrainer": "TRAINER_TEAM_ROCKET_GRUNT_4",
+    "fireRedParty": "TeamRocketGrunt4",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  }
+]

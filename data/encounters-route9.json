@@ -1,0 +1,78 @@
+{
+  "source": "sRoute9_FireRed",
+  "encounter_rate": 21,
+  "slots": [
+    {
+      "species_id": "spearow",
+      "min_level": 16,
+      "max_level": 16,
+      "weight": 20
+    },
+    {
+      "species_id": "rattata",
+      "min_level": 16,
+      "max_level": 16,
+      "weight": 20
+    },
+    {
+      "species_id": "ekans",
+      "min_level": 11,
+      "max_level": 11,
+      "weight": 10
+    },
+    {
+      "species_id": "ekans",
+      "min_level": 15,
+      "max_level": 15,
+      "weight": 10
+    },
+    {
+      "species_id": "spearow",
+      "min_level": 13,
+      "max_level": 13,
+      "weight": 10
+    },
+    {
+      "species_id": "rattata",
+      "min_level": 14,
+      "max_level": 14,
+      "weight": 10
+    },
+    {
+      "species_id": "spearow",
+      "min_level": 17,
+      "max_level": 17,
+      "weight": 5
+    },
+    {
+      "species_id": "rattata",
+      "min_level": 17,
+      "max_level": 17,
+      "weight": 5
+    },
+    {
+      "species_id": "rattata",
+      "min_level": 14,
+      "max_level": 14,
+      "weight": 4
+    },
+    {
+      "species_id": "ekans",
+      "min_level": 13,
+      "max_level": 13,
+      "weight": 4
+    },
+    {
+      "species_id": "rattata",
+      "min_level": 14,
+      "max_level": 14,
+      "weight": 1
+    },
+    {
+      "species_id": "ekans",
+      "min_level": 17,
+      "max_level": 17,
+      "weight": 1
+    }
+  ]
+}

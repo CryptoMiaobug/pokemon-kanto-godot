@@ -1,0 +1,133 @@
+[
+  {
+    "map": "mtmoon-1f",
+    "redObject": 1009,
+    "cell": [
+      5,
+      31
+    ],
+    "sprite": "res://assets/route12-gate-2f/tm-ball.png",
+    "facing": "down",
+    "item": "fr_tm09"
+  },
+  {
+    "map": "mtmoon-b2f",
+    "redObject": 1046,
+    "cell": [
+      28,
+      5
+    ],
+    "sprite": "res://assets/route12-gate-2f/tm-ball.png",
+    "facing": "down",
+    "item": "fr_tm46"
+  },
+  {
+    "map": "rocket-hideout-b2f",
+    "redObject": 1012,
+    "cell": [
+      6,
+      11
+    ],
+    "sprite": "res://assets/route12-gate-2f/tm-ball.png",
+    "facing": "down",
+    "item": "fr_tm12"
+  },
+  {
+    "map": "rocket-hideout-b3f",
+    "redObject": 1021,
+    "cell": [
+      25,
+      17
+    ],
+    "sprite": "res://assets/route12-gate-2f/tm-ball.png",
+    "facing": "down",
+    "item": "fr_tm21"
+  },
+  {
+    "map": "rocket-hideout-b4f",
+    "redObject": 1049,
+    "cell": [
+      9,
+      5
+    ],
+    "sprite": "res://assets/route12-gate-2f/tm-ball.png",
+    "facing": "down",
+    "item": "fr_tm49"
+  },
+  {
+    "map": "route12",
+    "redObject": 1048,
+    "cell": [
+      14,
+      34
+    ],
+    "sprite": "res://assets/route12-gate-2f/tm-ball.png",
+    "facing": "down",
+    "item": "fr_tm48"
+  },
+  {
+    "map": "safari-zone-north",
+    "redObject": 1047,
+    "cell": [
+      18,
+      7
+    ],
+    "sprite": "res://assets/route12-gate-2f/tm-ball.png",
+    "facing": "down",
+    "item": "fr_tm47"
+  },
+  {
+    "map": "silph-co-5f",
+    "redObject": 1001,
+    "cell": [
+      2,
+      14
+    ],
+    "sprite": "res://assets/route12-gate-2f/tm-ball.png",
+    "facing": "down",
+    "item": "fr_tm01"
+  },
+  {
+    "map": "victory-road-1f",
+    "redObject": 1002,
+    "cell": [
+      11,
+      1
+    ],
+    "sprite": "res://assets/route12-gate-2f/tm-ball.png",
+    "facing": "down",
+    "item": "fr_tm02"
+  },
+  {
+    "map": "victory-road-3f",
+    "redObject": 1050,
+    "cell": [
+      7,
+      6
+    ],
+    "sprite": "res://assets/route12-gate-2f/tm-ball.png",
+    "facing": "down",
+    "item": "fr_tm50"
+  },
+  {
+    "map": "silph-co-4f",
+    "redObject": 1041,
+    "cell": [
+      5,
+      9
+    ],
+    "sprite": "res://assets/route12-gate-2f/tm-ball.png",
+    "facing": "down",
+    "item": "fr_tm41"
+  },
+  {
+    "map": "route12-gate-2f",
+    "redObject": 1,
+    "cell": [
+      3,
+      4
+    ],
+    "sprite": "res://assets/route12-gate-2f/girl.png",
+    "facing": "down"
+  }
+]

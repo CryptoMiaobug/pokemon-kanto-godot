@@ -1,0 +1,310 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/CeladonCity.json",
+  "connections": {
+    "west": {
+      "map": "ROUTE_16",
+      "mapId": 27,
+      "mapName": "Route16",
+      "offset": 4,
+      "dx": -20,
+      "dy": 4,
+      "copyRect": {
+        "x": 17,
+        "y": 0,
+        "w": 3,
+        "h": 9
+      },
+      "onEnter": {
+        "newX": 39,
+        "yAdd": -8
+      },
+      "macro": {
+        "stripSrc": 17,
+        "stripDest": 217,
+        "stripLength": 9,
+        "connectedWidth": 20,
+        "yAlign": -8,
+        "xAlign": 39,
+        "viewPointer": 46
+      }
+    },
+    "east": {
+      "map": "ROUTE_7",
+      "mapId": 18,
+      "mapName": "Route7",
+      "offset": 4,
+      "dx": 25,
+      "dy": 4,
+      "copyRect": {
+        "x": 0,
+        "y": 0,
+        "w": 3,
+        "h": 9
+      },
+      "onEnter": {
+        "newX": 0,
+        "yAdd": -8
+      },
+      "macro": {
+        "stripSrc": 0,
+        "stripDest": 245,
+        "stripLength": 9,
+        "connectedWidth": 10,
+        "yAlign": -8,
+        "xAlign": 0,
+        "viewPointer": 17
+      }
+    }
+  },
+  "warps": [
+    {
+      "x": 8,
+      "y": 13,
+      "destMap": "CELADON_MART_1F",
+      "destMapId": 122,
+      "destMapName": "CeladonMart1F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 10,
+      "y": 13,
+      "destMap": "CELADON_MART_1F",
+      "destMapId": 122,
+      "destMapName": "CeladonMart1F",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 24,
+      "y": 9,
+      "destMap": "CELADON_MANSION_1F",
+      "destMapId": 128,
+      "destMapName": "CeladonMansion1F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 24,
+      "y": 3,
+      "destMap": "CELADON_MANSION_1F",
+      "destMapId": 128,
+      "destMapName": "CeladonMansion1F",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 25,
+      "y": 3,
+      "destMap": "CELADON_MANSION_1F",
+      "destMapId": 128,
+      "destMapName": "CeladonMansion1F",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 41,
+      "y": 9,
+      "destMap": "CELADON_POKECENTER",
+      "destMapId": 133,
+      "destMapName": "CeladonPokecenter",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 12,
+      "y": 27,
+      "destMap": "CELADON_GYM",
+      "destMapId": 134,
+      "destMapName": "CeladonGym",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 28,
+      "y": 19,
+      "destMap": "GAME_CORNER",
+      "destMapId": 135,
+      "destMapName": "GameCorner",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 39,
+      "y": 19,
+      "destMap": "CELADON_MART_5F",
+      "destMapId": 136,
+      "destMapName": "CeladonMart5F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 33,
+      "y": 19,
+      "destMap": "GAME_CORNER_PRIZE_ROOM",
+      "destMapId": 137,
+      "destMapName": "GameCornerPrizeRoom",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 31,
+      "y": 27,
+      "destMap": "CELADON_DINER",
+      "destMapId": 138,
+      "destMapName": "CeladonDiner",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 35,
+      "y": 27,
+      "destMap": "CELADON_CHIEF_HOUSE",
+      "destMapId": 139,
+      "destMapName": "CeladonChiefHouse",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 43,
+      "y": 27,
+      "destMap": "CELADON_HOTEL",
+      "destMapId": 140,
+      "destMapName": "CeladonHotel",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "CELADONCITY_LITTLE_GIRL",
+      "x": 8,
+      "y": 17,
+      "sprite": "SPRITE_LITTLE_GIRL",
+      "spriteId": 8,
+      "movement": "WALK",
+      "rangeOrDirection": "ANY_DIR",
+      "rangeOrDirectionValue": 0,
+      "behavior": "walk_any",
+      "textId": "TEXT_CELADONCITY_LITTLE_GIRL",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "CELADONCITY_GRAMPS1",
+      "x": 11,
+      "y": 28,
+      "sprite": "SPRITE_GRAMPS",
+      "spriteId": 37,
+      "movement": "STAY",
+      "rangeOrDirection": "UP",
+      "rangeOrDirectionValue": 209,
+      "behavior": "face_up",
+      "textId": "TEXT_CELADONCITY_GRAMPS1",
+      "textIndex": 2
+    },
+    {
+      "index": 3,
+      "const": "CELADONCITY_GIRL",
+      "x": 14,
+      "y": 19,
+      "sprite": "SPRITE_GIRL",
+      "spriteId": 13,
+      "movement": "WALK",
+      "rangeOrDirection": "UP_DOWN",
+      "rangeOrDirectionValue": 1,
+      "behavior": "walk_up_down",
+      "textId": "TEXT_CELADONCITY_GIRL",
+      "textIndex": 3
+    },
+    {
+      "index": 4,
+      "const": "CELADONCITY_GRAMPS2",
+      "x": 25,
+      "y": 22,
+      "sprite": "SPRITE_GRAMPS",
+      "spriteId": 37,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_CELADONCITY_GRAMPS2",
+      "textIndex": 4
+    },
+    {
+      "index": 5,
+      "const": "CELADONCITY_GRAMPS3",
+      "x": 22,
+      "y": 16,
+      "sprite": "SPRITE_GRAMPS",
+      "spriteId": 37,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_CELADONCITY_GRAMPS3",
+      "textIndex": 5
+    },
+    {
+      "index": 6,
+      "const": "CELADONCITY_FISHER",
+      "x": 32,
+      "y": 12,
+      "sprite": "SPRITE_FISHER",
+      "spriteId": 47,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_CELADONCITY_FISHER",
+      "textIndex": 6
+    },
+    {
+      "index": 7,
+      "const": "CELADONCITY_POLIWRATH",
+      "x": 30,
+      "y": 12,
+      "sprite": "SPRITE_MONSTER",
+      "spriteId": 5,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_CELADONCITY_POLIWRATH",
+      "textIndex": 7
+    },
+    {
+      "index": 8,
+      "const": "CELADONCITY_ROCKET1",
+      "x": 32,
+      "y": 29,
+      "sprite": "SPRITE_ROCKET",
+      "spriteId": 24,
+      "movement": "WALK",
+      "rangeOrDirection": "LEFT_RIGHT",
+      "rangeOrDirectionValue": 2,
+      "behavior": "walk_left_right",
+      "textId": "TEXT_CELADONCITY_ROCKET1",
+      "textIndex": 8
+    },
+    {
+      "index": 9,
+      "const": "CELADONCITY_ROCKET2",
+      "x": 42,
+      "y": 14,
+      "sprite": "SPRITE_ROCKET",
+      "spriteId": 24,
+      "movement": "WALK",
+      "rangeOrDirection": "LEFT_RIGHT",
+      "rangeOrDirectionValue": 2,
+      "behavior": "walk_left_right",
+      "textId": "TEXT_CELADONCITY_ROCKET2",
+      "textIndex": 9
+    }
+  ],
+  "rights": "Original rights holders; no redistribution clearance.",
+  "adaptation": "Native Red feet/NPCs/pair/ledges; original stairs latch; parent LAST_MAP explicit. Static source actors; walking/random facing deferred. Source mart1F/2F only; other floors/elevator/story deferred."
+}

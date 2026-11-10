@@ -1,0 +1,73 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/Route18Gate1F.json",
+  "mapSHA256": "e1a0ea3b50968c5db69a2f7cf3bb234cc087897a9ae8e05cf95cdbcd264e232c",
+  "tiles": "assets/tilesets/gate.png",
+  "connections": {},
+  "warps": [
+    {
+      "x": 0,
+      "y": 4,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "destMap": "ROUTE_18_GATE_2F",
+      "destMapId": 191,
+      "destMapName": "Route18Gate2F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "ROUTE18GATE1F_GUARD",
+      "x": 4,
+      "y": 1,
+      "sprite": "SPRITE_GUARD",
+      "spriteId": 49,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROUTE18GATE1F_GUARD",
+      "textIndex": 1
+    }
+  ],
+  "adaptation": "Full deterministic Red geometry; O03 upper rows retained in source form. FireRed trainer parties and encounters. Trades, hidden items, signs and sight activation deferred.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

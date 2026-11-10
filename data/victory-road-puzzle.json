@@ -1,0 +1,46 @@
+{
+  "switch": [
+    17,
+    13
+  ],
+  "block": [
+    4,
+    6
+  ],
+  "openBlock": 29,
+  "openCells": [
+    {
+      "cell": [
+        8,
+        12
+      ],
+      "foot": 5,
+      "solid": 0
+    },
+    {
+      "cell": [
+        9,
+        12
+      ],
+      "foot": 5,
+      "solid": 0
+    },
+    {
+      "cell": [
+        8,
+        13
+      ],
+      "foot": 16,
+      "solid": 1
+    },
+    {
+      "cell": [
+        9,
+        13
+      ],
+      "foot": 16,
+      "solid": 1
+    }
+  ],
+  "patch": "res://assets/victory-road-1f/barrier-open.png"
+}

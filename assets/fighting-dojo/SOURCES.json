@@ -1,0 +1,226 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/FightingDojo.json",
+  "mapSHA256": "bca318d9f3025f93e0bbcd572d374d5b3eab13a6581315eac1be59f79576dd54",
+  "tileset": "data/tilesets/Dojo.json",
+  "warps": [
+    {
+      "x": 4,
+      "y": 11,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 5,
+      "y": 11,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 2,
+      "destWarpIndex": 1
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "FIGHTINGDOJO_KARATE_MASTER",
+      "x": 5,
+      "y": 3,
+      "sprite": "SPRITE_HIKER",
+      "spriteId": 14,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_FIGHTINGDOJO_KARATE_MASTER",
+      "textIndex": 1,
+      "trainer": {
+        "trainerClass": "OPP_BLACKBELT",
+        "trainerClassId": 24,
+        "trainerPartyIndex": 1,
+        "header": null
+      }
+    },
+    {
+      "index": 2,
+      "const": "FIGHTINGDOJO_BLACKBELT1",
+      "x": 3,
+      "y": 4,
+      "sprite": "SPRITE_HIKER",
+      "spriteId": 14,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_FIGHTINGDOJO_BLACKBELT1",
+      "textIndex": 2,
+      "trainer": {
+        "trainerClass": "OPP_BLACKBELT",
+        "trainerClassId": 24,
+        "trainerPartyIndex": 2,
+        "header": "FightingDojoTrainerHeader0",
+        "eventFlag": "EVENT_BEAT_FIGHTING_DOJO_TRAINER_0",
+        "eventFlagIndex": 850,
+        "sightRange": 4,
+        "textBefore": "FightingDojoBlackbelt1BattleText",
+        "textEnd": "FightingDojoBlackbelt1EndBattleText",
+        "textAfter": "FightingDojoBlackbelt1AfterBattleText"
+      }
+    },
+    {
+      "index": 3,
+      "const": "FIGHTINGDOJO_BLACKBELT2",
+      "x": 3,
+      "y": 6,
+      "sprite": "SPRITE_HIKER",
+      "spriteId": 14,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_FIGHTINGDOJO_BLACKBELT2",
+      "textIndex": 3,
+      "trainer": {
+        "trainerClass": "OPP_BLACKBELT",
+        "trainerClassId": 24,
+        "trainerPartyIndex": 3,
+        "header": "FightingDojoTrainerHeader1",
+        "eventFlag": "EVENT_BEAT_FIGHTING_DOJO_TRAINER_1",
+        "eventFlagIndex": 851,
+        "sightRange": 4,
+        "textBefore": "FightingDojoBlackbelt2BattleText",
+        "textEnd": "FightingDojoBlackbelt2EndBattleText",
+        "textAfter": "FightingDojoBlackbelt2AfterBattleText"
+      }
+    },
+    {
+      "index": 4,
+      "const": "FIGHTINGDOJO_BLACKBELT3",
+      "x": 5,
+      "y": 5,
+      "sprite": "SPRITE_HIKER",
+      "spriteId": 14,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_FIGHTINGDOJO_BLACKBELT3",
+      "textIndex": 4,
+      "trainer": {
+        "trainerClass": "OPP_BLACKBELT",
+        "trainerClassId": 24,
+        "trainerPartyIndex": 4,
+        "header": "FightingDojoTrainerHeader2",
+        "eventFlag": "EVENT_BEAT_FIGHTING_DOJO_TRAINER_2",
+        "eventFlagIndex": 852,
+        "sightRange": 3,
+        "textBefore": "FightingDojoBlackbelt3BattleText",
+        "textEnd": "FightingDojoBlackbelt3EndBattleText",
+        "textAfter": "FightingDojoBlackbelt3AfterBattleText"
+      }
+    },
+    {
+      "index": 5,
+      "const": "FIGHTINGDOJO_BLACKBELT4",
+      "x": 5,
+      "y": 7,
+      "sprite": "SPRITE_HIKER",
+      "spriteId": 14,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_FIGHTINGDOJO_BLACKBELT4",
+      "textIndex": 5,
+      "trainer": {
+        "trainerClass": "OPP_BLACKBELT",
+        "trainerClassId": 24,
+        "trainerPartyIndex": 5,
+        "header": "FightingDojoTrainerHeader3",
+        "eventFlag": "EVENT_BEAT_FIGHTING_DOJO_TRAINER_3",
+        "eventFlagIndex": 853,
+        "sightRange": 3,
+        "textBefore": "FightingDojoBlackbelt4BattleText",
+        "textEnd": "FightingDojoBlackbelt4EndBattleText",
+        "textAfter": "FightingDojoBlackbelt4AfterBattleText"
+      }
+    },
+    {
+      "index": 6,
+      "const": "FIGHTINGDOJO_HITMONLEE_POKE_BALL",
+      "x": 4,
+      "y": 1,
+      "sprite": "SPRITE_POKE_BALL",
+      "spriteId": 61,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_FIGHTINGDOJO_HITMONLEE_POKE_BALL",
+      "textIndex": 6,
+      "toggleIndex": 74,
+      "toggleConst": "TOGGLE_FIGHTING_DOJO_GIFT_1",
+      "startsHidden": false
+    },
+    {
+      "index": 7,
+      "const": "FIGHTINGDOJO_HITMONCHAN_POKE_BALL",
+      "x": 5,
+      "y": 1,
+      "sprite": "SPRITE_POKE_BALL",
+      "spriteId": 61,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_FIGHTINGDOJO_HITMONCHAN_POKE_BALL",
+      "textIndex": 7,
+      "toggleIndex": 75,
+      "toggleConst": "TOGGLE_FIGHTING_DOJO_GIFT_2",
+      "startsHidden": false
+    }
+  ],
+  "trainerParties": "src/data/trainer_parties.h::sParty_BlackBelt*",
+  "trainerDefinitions": "src/data/trainers.h::TRAINER_BLACK_BELT_*",
+  "adaptation": "Red FightingDojo geometry and static actor identity; FireRed ordered default-move parties, IV100, Black Belt held items and 6x reward. Red and FireRed actor order differs; trainer party assignment is recorded separately. FireRed grants one chosen Hitmonlee or Hitmonchan at Lv25 after Koichi; no dojo badge is granted.",
+  "rights": "Original Pokemon assets remain rights-holder property; redistribution clearance not established.",
+  "cityMap": "data/maps/SaffronCity.json",
+  "cityMapSHA256": "43d62e8f2d9db3f92181504873065a9c948dca36de62614303fef9e2c8a9805b",
+  "rewardSource": "src/battle_main.c::gTrainerMoneyTable TRAINER_CLASS_BLACK_BELT=6; src/battle_script_commands.c::Cmd_getmoneyreward (4 * last level * multiplier * class factor)",
+  "giftSource": "data/maps/SaffronCity_Dojo/scripts.inc::GiveHitmon; givemon VAR_TEMP_1, 25; FLAG_GOT_HITMON_FROM_DOJO; Hitmonlee/Hitmonchan both route to one shared one-time grant",
+  "trainerMapping": {
+    "redMapActors": {
+      "1": "karate master static object",
+      "2": "Blackbelt1",
+      "3": "Blackbelt2",
+      "4": "Blackbelt3",
+      "5": "Blackbelt4",
+      "6": "Hitmonlee gift ball",
+      "7": "Hitmonchan gift ball"
+    },
+    "fireRedPartyObjects": {
+      "Hitoshi": 1,
+      "Hideki": 2,
+      "Aaron": 3,
+      "Mike": 4,
+      "Koichi": 5
+    },
+    "projectAssignment": {
+      "Hitoshi": 2,
+      "Hideki": 3,
+      "Aaron": 4,
+      "Mike": 5,
+      "Koichi": 1
+    },
+    "note": "Red object identity/geometry and FireRed party identity are separate source layers; project assigns FireRed party identities to Red battle-object positions by adapted roster order. This is not a source-identical trainer mapping."
+  },
+  "verifiedSourceDifferences": [
+    "Red Fighting Dojo party data is not FireRed: Red object 1 is a single Hitmonlee/Hitmonchan party at level 37; Red objects 2-5 use different species and Gen I move/bonus tables. This implementation explicitly adopts FireRed rules/parties instead.",
+    "FireRed actor order is Hitoshi, Hideki, Aaron, Mike, Koichi; Red object order is Karate Master, Blackbelt1, Blackbelt2, Blackbelt3, Blackbelt4. See trainerMapping.",
+    "FireRed prize is exactly one selected Hitmonlee or Hitmonchan at level 25 after defeating Koichi; shared FLAG_GOT_HITMON_FROM_DOJO prevents taking both. The game does not award an emblem/badge."
+  ]
+}

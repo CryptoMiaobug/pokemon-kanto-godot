@@ -1,0 +1,264 @@
+{
+  "baseline": "8980952691103bcf8c11678f011e0572f82d8580",
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "sources": [
+    "Red data/maps/GameCorner.json RocketHideoutB1F.json CeladonCity.json",
+    "Red src/game/scripts/regions/kanto4.js HIDEOUT_STAIRS8,2 0x2a/0x43 and HIDEOUT_B1F_DOOR12,8 0x54/0x0e",
+    "FR data/maps/CeladonCity_GameCorner/scripts.inc RocketHideout_B1F/scripts.inc",
+    "FR src/data/trainer_parties.h TeamRocketGrunt7..12; trainers.h; battle_main.c TEAM_ROCKET coefficient8"
+  ],
+  "dependencies": {
+    "existing": [
+      "all six parties species moves status/evasion/secondary effects",
+      "atomic trainer growth/rewards",
+      "source geometry importer static16px actors and shared indexed warps"
+    ],
+    "required": [
+      "Red GameCorner20x18 and RocketHideoutB1F30x28",
+      "eleven GameCorner actors incl guard and five B1F trainers; source item sprites remain noncollectable",
+      "guard removal after victory; poster automatic switch commit; source stairs block swap",
+      "B1F fifth trainer source barrier opens after victory",
+      "optional v3 rocket_hideout_open bool; new map safe restoration"
+    ],
+    "deferred": [
+      "B2-B4 and spinner mechanisms",
+      "Lift Key elevator Giovanni Silph Scope",
+      "slots coins prizes",
+      "nonessential visible/hidden item pickup",
+      "source NPC wandering and guard exit walking animation; source position retained until victory then removed",
+      "full AI abilities held items"
+    ]
+  },
+  "story": [
+    {
+      "before": "guard present at9,5 in front of poster9,4",
+      "action": "confirm full FR two-mon battle",
+      "after": "640 and guard victory flag/growth atomic; guard disappears",
+      "repeat": "guard absent no repeated prize"
+    },
+    {
+      "before": "poster reachable after guard leaves",
+      "action": "E facing original poster; source auto-push, no invented yes/no",
+      "after": "rocket_hideout_open true atomic then source block8,2 wall42 -> stairs67",
+      "reward": 0,
+      "repeat": "already open no state/reward changes"
+    },
+    {
+      "before": "open stairs17,4",
+      "action": "walk source warp index2",
+      "after": "B1F warp index1 at21,2; reverse returns17,4",
+      "reward": 0
+    },
+    {
+      "before": "B1F trainer unbeaten",
+      "action": "win full source team",
+      "after": "individual flag and source prize atomic; fifth trainer also causes source barrier block12,8 closed84 -> open14",
+      "repeat": "no repeated prize"
+    },
+    {
+      "before": "cancel defeat interrupted battle actual write failure",
+      "action": "cancel/loss/failure",
+      "after": "no new reward or stage; failure restores exact prior memory and disk"
+    }
+  ],
+  "source_order_note": "FR and Red poster script has no explicit trainer-defeat check; original guard occupies the reachable investigation cell. Preserve physical ordering rather than inventing an extra flag lock. Fifth B1F trainer barrier is inside authorized B1F and is not an invented plot gate.",
+  "map": "data/maps/GameCorner.json",
+  "mapSHA256": "399e886cac355f5032f87b4b0bc13569636d36c54731269c3f113b549bffe0a6",
+  "actors": [
+    {
+      "index": 1,
+      "const": "GAMECORNER_BEAUTY1",
+      "x": 2,
+      "y": 6,
+      "sprite": "SPRITE_BEAUTY",
+      "spriteId": 15,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_GAMECORNER_BEAUTY1",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "GAMECORNER_CLERK1",
+      "x": 5,
+      "y": 6,
+      "sprite": "SPRITE_CLERK",
+      "spriteId": 38,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_GAMECORNER_CLERK1",
+      "textIndex": 2
+    },
+    {
+      "index": 3,
+      "const": "GAMECORNER_MIDDLE_AGED_MAN1",
+      "x": 2,
+      "y": 10,
+      "sprite": "SPRITE_MIDDLE_AGED_MAN",
+      "spriteId": 10,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_GAMECORNER_MIDDLE_AGED_MAN1",
+      "textIndex": 3
+    },
+    {
+      "index": 4,
+      "const": "GAMECORNER_BEAUTY2",
+      "x": 2,
+      "y": 13,
+      "sprite": "SPRITE_BEAUTY",
+      "spriteId": 15,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_GAMECORNER_BEAUTY2",
+      "textIndex": 4
+    },
+    {
+      "index": 5,
+      "const": "GAMECORNER_FISHING_GURU",
+      "x": 5,
+      "y": 11,
+      "sprite": "SPRITE_FISHING_GURU",
+      "spriteId": 39,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_GAMECORNER_FISHING_GURU",
+      "textIndex": 5
+    },
+    {
+      "index": 6,
+      "const": "GAMECORNER_MIDDLE_AGED_WOMAN",
+      "x": 8,
+      "y": 11,
+      "sprite": "SPRITE_MIDDLE_AGED_WOMAN",
+      "spriteId": 28,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_GAMECORNER_MIDDLE_AGED_WOMAN",
+      "textIndex": 6
+    },
+    {
+      "index": 7,
+      "const": "GAMECORNER_GYM_GUIDE",
+      "x": 8,
+      "y": 14,
+      "sprite": "SPRITE_GYM_GUIDE",
+      "spriteId": 36,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_GAMECORNER_GYM_GUIDE",
+      "textIndex": 7
+    },
+    {
+      "index": 8,
+      "const": "GAMECORNER_GAMBLER",
+      "x": 11,
+      "y": 15,
+      "sprite": "SPRITE_GAMBLER",
+      "spriteId": 11,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_GAMECORNER_GAMBLER",
+      "textIndex": 8
+    },
+    {
+      "index": 9,
+      "const": "GAMECORNER_CLERK2",
+      "x": 14,
+      "y": 11,
+      "sprite": "SPRITE_CLERK",
+      "spriteId": 38,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_GAMECORNER_CLERK2",
+      "textIndex": 9
+    },
+    {
+      "index": 10,
+      "const": "GAMECORNER_GENTLEMAN",
+      "x": 17,
+      "y": 13,
+      "sprite": "SPRITE_GENTLEMAN",
+      "spriteId": 16,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_GAMECORNER_GENTLEMAN",
+      "textIndex": 10
+    },
+    {
+      "index": 11,
+      "const": "GAMECORNER_ROCKET",
+      "x": 9,
+      "y": 5,
+      "sprite": "SPRITE_ROCKET",
+      "spriteId": 24,
+      "movement": "STAY",
+      "rangeOrDirection": "UP",
+      "rangeOrDirectionValue": 209,
+      "behavior": "face_up",
+      "textId": "TEXT_GAMECORNER_ROCKET",
+      "textIndex": 11,
+      "trainer": {
+        "trainerClass": "OPP_ROCKET",
+        "trainerClassId": 30,
+        "trainerPartyIndex": 7,
+        "header": null
+      },
+      "toggleIndex": 70,
+      "toggleConst": "TOGGLE_GAME_CORNER_ROCKET",
+      "startsHidden": false
+    }
+  ],
+  "warps": [
+    {
+      "x": 15,
+      "y": 17,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 8,
+      "destWarpIndex": 7
+    },
+    {
+      "x": 16,
+      "y": 17,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 8,
+      "destWarpIndex": 7
+    },
+    {
+      "x": 17,
+      "y": 4,
+      "destMap": "ROCKET_HIDEOUT_B1F",
+      "destMapId": 199,
+      "destMapName": "RocketHideoutB1F",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    }
+  ],
+  "rights": "Original rights holders; no redistribution clearance.",
+  "adaptation": "Original Red foot geometry and source dynamic block swaps; static original16px NPCs local1x world2x nearest. E-confirm trainers no autosight. Deferred items still visible/noncollectable. Guard disappears after atomic win without walking exit animation."
+}

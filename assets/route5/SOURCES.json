@@ -1,0 +1,113 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/Route5.json",
+  "mapSHA256": "6902896e8491fb515d5f3818bd2a7635b938a189a1971c3b901d48d4e8632bbb",
+  "tiles": "assets/tilesets/overworld.png",
+  "connections": {
+    "north": {
+      "map": "CERULEAN_CITY",
+      "mapId": 3,
+      "mapName": "CeruleanCity",
+      "offset": -5,
+      "dx": -5,
+      "dy": -18,
+      "copyRect": {
+        "x": 2,
+        "y": 15,
+        "w": 16,
+        "h": 3
+      },
+      "onEnter": {
+        "newY": 35,
+        "xAdd": 10
+      },
+      "macro": {
+        "stripSrc": 302,
+        "stripDest": 0,
+        "stripLength": 16,
+        "connectedWidth": 20,
+        "yAlign": 35,
+        "xAlign": 10,
+        "viewPointer": 469
+      }
+    },
+    "south": {
+      "map": "SAFFRON_CITY",
+      "mapId": 10,
+      "mapName": "SaffronCity",
+      "offset": -5,
+      "dx": -5,
+      "dy": 18,
+      "copyRect": {
+        "x": 2,
+        "y": 0,
+        "w": 16,
+        "h": 3
+      },
+      "onEnter": {
+        "newY": 0,
+        "xAdd": 10
+      },
+      "macro": {
+        "stripSrc": 2,
+        "stripDest": 336,
+        "stripLength": 16,
+        "connectedWidth": 20,
+        "yAlign": 0,
+        "xAlign": 10,
+        "viewPointer": 27
+      }
+    }
+  },
+  "warps": [
+    {
+      "x": 10,
+      "y": 29,
+      "destMap": "ROUTE_5_GATE",
+      "destMapId": 70,
+      "destMapName": "Route5Gate",
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 9,
+      "y": 29,
+      "destMap": "ROUTE_5_GATE",
+      "destMapId": 70,
+      "destMapName": "Route5Gate",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 10,
+      "y": 33,
+      "destMap": "ROUTE_5_GATE",
+      "destMapId": 70,
+      "destMapName": "Route5Gate",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 17,
+      "y": 27,
+      "destMap": "UNDERGROUND_PATH_ROUTE_5",
+      "destMapId": 71,
+      "destMapName": "UndergroundPathRoute5",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 10,
+      "y": 21,
+      "destMap": "DAYCARE",
+      "destMapId": 72,
+      "destMapName": "Daycare",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "actors": [],
+  "adaptation": "Original feet/grass/ledges. House two original NPC blockers static16px. City front27,11/back27,9; interior front2or3,7/back3,0. Guard27,12 before SS ticket,28,12 after per Red billSSTicket; thief30,8 until TM28 received. E confirms thief battle; no auto approach/departure animation. Route5 north city x+10; unopened daycare, underground, gates retain original map art and prompt only, no fabricated wall or passage functionality.",
+  "rights": "Original rights holders; no redistribution clearance."
+}

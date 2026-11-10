@@ -1,0 +1,78 @@
+{
+  "source": "sRoute11_FireRed",
+  "encounter_rate": 21,
+  "slots": [
+    {
+      "species_id": "ekans",
+      "min_level": 14,
+      "max_level": 14,
+      "weight": 20
+    },
+    {
+      "species_id": "spearow",
+      "min_level": 15,
+      "max_level": 15,
+      "weight": 20
+    },
+    {
+      "species_id": "ekans",
+      "min_level": 12,
+      "max_level": 12,
+      "weight": 10
+    },
+    {
+      "species_id": "spearow",
+      "min_level": 13,
+      "max_level": 13,
+      "weight": 10
+    },
+    {
+      "species_id": "drowzee",
+      "min_level": 11,
+      "max_level": 11,
+      "weight": 10
+    },
+    {
+      "species_id": "drowzee",
+      "min_level": 13,
+      "max_level": 13,
+      "weight": 10
+    },
+    {
+      "species_id": "ekans",
+      "min_level": 15,
+      "max_level": 15,
+      "weight": 5
+    },
+    {
+      "species_id": "spearow",
+      "min_level": 17,
+      "max_level": 17,
+      "weight": 5
+    },
+    {
+      "species_id": "ekans",
+      "min_level": 12,
+      "max_level": 12,
+      "weight": 4
+    },
+    {
+      "species_id": "drowzee",
+      "min_level": 15,
+      "max_level": 15,
+      "weight": 4
+    },
+    {
+      "species_id": "ekans",
+      "min_level": 12,
+      "max_level": 12,
+      "weight": 1
+    },
+    {
+      "species_id": "drowzee",
+      "min_level": 15,
+      "max_level": 15,
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+[
+  {
+    "map": "saffron-city",
+    "redObject": 1,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SAFFRON_CITY_1"
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 2,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SAFFRON_CITY_2"
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 3,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SAFFRON_CITY_3"
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 4,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SAFFRON_CITY_4"
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 5,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SAFFRON_CITY_5"
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 6,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SAFFRON_CITY_6"
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 7,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SAFFRON_CITY_7"
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 8,
+    "visible_after": true,
+    "source_toggle": "TOGGLE_SAFFRON_CITY_8"
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 9,
+    "visible_after": true,
+    "source_toggle": "TOGGLE_SAFFRON_CITY_9"
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 10,
+    "visible_after": true,
+    "source_toggle": "TOGGLE_SAFFRON_CITY_A"
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 11,
+    "visible_after": true,
+    "source_toggle": "TOGGLE_SAFFRON_CITY_B"
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 12,
+    "visible_after": true,
+    "source_toggle": "TOGGLE_SAFFRON_CITY_C"
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 13,
+    "visible_after": true,
+    "source_toggle": "TOGGLE_SAFFRON_CITY_D"
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 14,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SAFFRON_CITY_E"
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 15,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SAFFRON_CITY_F"
+  },
+  {
+    "map": "silph-co-2f",
+    "redObject": 2,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_2F_2"
+  },
+  {
+    "map": "silph-co-2f",
+    "redObject": 3,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_2F_3"
+  },
+  {
+    "map": "silph-co-2f",
+    "redObject": 4,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_2F_4"
+  },
+  {
+    "map": "silph-co-2f",
+    "redObject": 5,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_2F_5"
+  },
+  {
+    "map": "silph-co-3f",
+    "redObject": 2,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_3F_1"
+  },
+  {
+    "map": "silph-co-3f",
+    "redObject": 3,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_3F_2"
+  },
+  {
+    "map": "silph-co-4f",
+    "redObject": 2,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_4F_1"
+  },
+  {
+    "map": "silph-co-4f",
+    "redObject": 3,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_4F_2"
+  },
+  {
+    "map": "silph-co-4f",
+    "redObject": 4,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_4F_3"
+  },
+  {
+    "map": "silph-co-5f",
+    "redObject": 2,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_5F_1"
+  },
+  {
+    "map": "silph-co-5f",
+    "redObject": 3,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_5F_2"
+  },
+  {
+    "map": "silph-co-5f",
+    "redObject": 4,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_5F_3"
+  },
+  {
+    "map": "silph-co-5f",
+    "redObject": 5,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_5F_4"
+  },
+  {
+    "map": "silph-co-6f",
+    "redObject": 6,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_6F_1"
+  },
+  {
+    "map": "silph-co-6f",
+    "redObject": 7,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_6F_2"
+  },
+  {
+    "map": "silph-co-6f",
+    "redObject": 8,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_6F_3"
+  },
+  {
+    "map": "silph-co-7f",
+    "redObject": 5,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_7F_1"
+  },
+  {
+    "map": "silph-co-7f",
+    "redObject": 6,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_7F_2"
+  },
+  {
+    "map": "silph-co-7f",
+    "redObject": 7,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_7F_3"
+  },
+  {
+    "map": "silph-co-7f",
+    "redObject": 8,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_7F_4"
+  },
+  {
+    "map": "silph-co-8f",
+    "redObject": 2,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_8F_1"
+  },
+  {
+    "map": "silph-co-8f",
+    "redObject": 3,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_8F_2"
+  },
+  {
+    "map": "silph-co-8f",
+    "redObject": 4,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_8F_3"
+  },
+  {
+    "map": "silph-co-9f",
+    "redObject": 2,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_9F_1"
+  },
+  {
+    "map": "silph-co-9f",
+    "redObject": 3,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_9F_2"
+  },
+  {
+    "map": "silph-co-9f",
+    "redObject": 4,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_9F_3"
+  },
+  {
+    "map": "silph-co-10f",
+    "redObject": 1,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_10F_1"
+  },
+  {
+    "map": "silph-co-10f",
+    "redObject": 2,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_10F_2"
+  },
+  {
+    "map": "silph-co-11f",
+    "redObject": 3,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_11F_1"
+  },
+  {
+    "map": "silph-co-11f",
+    "redObject": 4,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_11F_2"
+  },
+  {
+    "map": "silph-co-11f",
+    "redObject": 5,
+    "visible_after": false,
+    "source_toggle": "TOGGLE_SILPH_CO_11F_3"
+  },
+  {
+    "map": "silph-co-1f",
+    "redObject": 1,
+    "visible_after": true,
+    "source_toggle": "TOGGLE_SILPH_CO_1F_RECEPTIONIST"
+  }
+]

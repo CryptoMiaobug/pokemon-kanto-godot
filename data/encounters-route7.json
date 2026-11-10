@@ -1,0 +1,78 @@
+{
+  "source": "sRoute7_FireRed",
+  "encounter_rate": 21,
+  "slots": [
+    {
+      "species_id": "pidgey",
+      "min_level": 19,
+      "max_level": 19,
+      "weight": 20
+    },
+    {
+      "species_id": "meowth",
+      "min_level": 17,
+      "max_level": 17,
+      "weight": 20
+    },
+    {
+      "species_id": "oddish",
+      "min_level": 19,
+      "max_level": 19,
+      "weight": 10
+    },
+    {
+      "species_id": "meowth",
+      "min_level": 18,
+      "max_level": 18,
+      "weight": 10
+    },
+    {
+      "species_id": "pidgey",
+      "min_level": 22,
+      "max_level": 22,
+      "weight": 10
+    },
+    {
+      "species_id": "oddish",
+      "min_level": 22,
+      "max_level": 22,
+      "weight": 10
+    },
+    {
+      "species_id": "growlithe",
+      "min_level": 18,
+      "max_level": 18,
+      "weight": 5
+    },
+    {
+      "species_id": "growlithe",
+      "min_level": 20,
+      "max_level": 20,
+      "weight": 5
+    },
+    {
+      "species_id": "meowth",
+      "min_level": 17,
+      "max_level": 17,
+      "weight": 4
+    },
+    {
+      "species_id": "meowth",
+      "min_level": 19,
+      "max_level": 19,
+      "weight": 4
+    },
+    {
+      "species_id": "meowth",
+      "min_level": 17,
+      "max_level": 17,
+      "weight": 1
+    },
+    {
+      "species_id": "meowth",
+      "min_level": 20,
+      "max_level": 20,
+      "weight": 1
+    }
+  ]
+}

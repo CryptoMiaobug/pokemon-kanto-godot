@@ -1,0 +1,6 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "actors": "Red original16px rocket/guard down and owner down/girl left static;1x local2x world nearest same anchor. Girl walking omitted.",
+  "rules": "Red regions/kanto2.js billSSTicket sets guard toggles when ticket granted; ceruleanRocket victory -> give TM_DIG -> hide Rocket. FireRed TeamRocketGrunt5 Machop17 Drowzee17, 544; ITEM_TM28 retained only, no teaching."
+}

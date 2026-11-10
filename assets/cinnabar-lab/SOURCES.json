@@ -1,0 +1,80 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/CinnabarLab.json",
+  "mapSHA256": "7447df5411d609caf7b2ac2dd765ba0f9498905169104aec96ef148f13b8fd4b",
+  "tileset": "data/tilesets/Lab.json",
+  "gfx": "assets/tilesets/lab.png",
+  "warps": [
+    {
+      "x": 2,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 8,
+      "y": 4,
+      "destMap": "CINNABAR_LAB_TRADE_ROOM",
+      "destMapId": 168,
+      "destMapName": "CinnabarLabTradeRoom",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 12,
+      "y": 4,
+      "destMap": "CINNABAR_LAB_METRONOME_ROOM",
+      "destMapId": 169,
+      "destMapName": "CinnabarLabMetronomeRoom",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 16,
+      "y": 4,
+      "destMap": "CINNABAR_LAB_FOSSIL_ROOM",
+      "destMapId": 170,
+      "destMapName": "CinnabarLabFossilRoom",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "CINNABARLAB_FISHING_GURU",
+      "x": 1,
+      "y": 3,
+      "sprite": "SPRITE_FISHING_GURU",
+      "spriteId": 39,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_CINNABARLAB_FISHING_GURU",
+      "textIndex": 1
+    }
+  ],
+  "localScale": 1,
+  "worldScale": 2,
+  "feetAnchor": [
+    8,
+    16
+  ],
+  "adaptation": "Red geometry/static actors; FireRed identity mapping by source dialogue: Red scientist1=FR FossilScientist, Red scientist2=FR Garett (different appearance/order); entrance FishingGuru=FR Scientist (different appearance). All services including fossil submission/progress/rewards/trade/PC deferred. Other two rooms closed at source door cells. No walking NPC/audio.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "map": "ssanne-2f",
+    "cell": [
+      3,
+      7
+    ],
+    "sprite": "res://assets/ssanne-2f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "hidden": false,
+    "text": "船上的乘客也会进行宝可梦对战。船长房目前尚未开放。"
+  },
+  {
+    "map": "ssanne-2f",
+    "cell": [
+      36,
+      4
+    ],
+    "sprite": "res://assets/ssanne-2f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "hidden": true
+  }
+]

@@ -1,0 +1,202 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/Route23.json",
+  "mapSHA256": "e0ad8194083365a83911c5dbcffd1e774ef2b757d79c696191f1bc3d013f2f3a",
+  "warps": [
+    {
+      "x": 7,
+      "y": 139,
+      "destMap": "ROUTE_22_GATE",
+      "destMapId": 193,
+      "destMapName": "Route22Gate",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 8,
+      "y": 139,
+      "destMap": "ROUTE_22_GATE",
+      "destMapId": 193,
+      "destMapName": "Route22Gate",
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 4,
+      "y": 31,
+      "destMap": "VICTORY_ROAD_1F",
+      "destMapId": 108,
+      "destMapName": "VictoryRoad1F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 14,
+      "y": 31,
+      "destMap": "VICTORY_ROAD_2F",
+      "destMapId": 194,
+      "destMapName": "VictoryRoad2F",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    }
+  ],
+  "connections": {
+    "north": {
+      "map": "INDIGO_PLATEAU",
+      "mapId": 9,
+      "mapName": "IndigoPlateau",
+      "offset": 0,
+      "dx": 0,
+      "dy": -9,
+      "copyRect": {
+        "x": 0,
+        "y": 6,
+        "w": 10,
+        "h": 3
+      },
+      "onEnter": {
+        "newY": 17,
+        "xAdd": 0
+      },
+      "macro": {
+        "stripSrc": 60,
+        "stripDest": 3,
+        "stripLength": 10,
+        "connectedWidth": 10,
+        "yAlign": 17,
+        "xAlign": 0,
+        "viewPointer": 145
+      }
+    },
+    "south": {
+      "map": "ROUTE_22",
+      "mapId": 33,
+      "mapName": "Route22",
+      "offset": 0,
+      "dx": 0,
+      "dy": 72,
+      "copyRect": {
+        "x": 0,
+        "y": 0,
+        "w": 13,
+        "h": 3
+      },
+      "onEnter": {
+        "newY": 0,
+        "xAdd": 0
+      },
+      "macro": {
+        "stripSrc": 0,
+        "stripDest": 1203,
+        "stripLength": 13,
+        "connectedWidth": 20,
+        "yAlign": 0,
+        "xAlign": 0,
+        "viewPointer": 27
+      }
+    }
+  },
+  "actors": [
+    {
+      "index": 1,
+      "const": "ROUTE23_GUARD1",
+      "x": 4,
+      "y": 35,
+      "sprite": "SPRITE_GUARD",
+      "spriteId": 49,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROUTE23_GUARD1",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "ROUTE23_GUARD2",
+      "x": 10,
+      "y": 56,
+      "sprite": "SPRITE_GUARD",
+      "spriteId": 49,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROUTE23_GUARD2",
+      "textIndex": 2
+    },
+    {
+      "index": 3,
+      "const": "ROUTE23_SWIMMER1",
+      "x": 8,
+      "y": 85,
+      "sprite": "SPRITE_SWIMMER",
+      "spriteId": 34,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROUTE23_SWIMMER1",
+      "textIndex": 3
+    },
+    {
+      "index": 4,
+      "const": "ROUTE23_SWIMMER2",
+      "x": 11,
+      "y": 96,
+      "sprite": "SPRITE_SWIMMER",
+      "spriteId": 34,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROUTE23_SWIMMER2",
+      "textIndex": 4
+    },
+    {
+      "index": 5,
+      "const": "ROUTE23_GUARD3",
+      "x": 12,
+      "y": 105,
+      "sprite": "SPRITE_GUARD",
+      "spriteId": 49,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROUTE23_GUARD3",
+      "textIndex": 5
+    },
+    {
+      "index": 6,
+      "const": "ROUTE23_GUARD4",
+      "x": 8,
+      "y": 119,
+      "sprite": "SPRITE_GUARD",
+      "spriteId": 49,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROUTE23_GUARD4",
+      "textIndex": 6
+    },
+    {
+      "index": 7,
+      "const": "ROUTE23_GUARD5",
+      "x": 8,
+      "y": 136,
+      "sprite": "SPRITE_GUARD",
+      "spriteId": 49,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROUTE23_GUARD5",
+      "textIndex": 7
+    }
+  ],
+  "adaptation": "Red complete geometry/static source actors; 1F trainers/items/wild and 2F+ deferred; source latch survives return to Route23, boulders reset on map entry.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

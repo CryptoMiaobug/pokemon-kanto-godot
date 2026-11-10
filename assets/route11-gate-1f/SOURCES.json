@@ -1,0 +1,80 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/Route11Gate1F.json",
+  "mapSHA256": "d7877b63a5768002574284ed29357abbdf7559f34a12659a61a5a13b3e9b39c2",
+  "tileset": "data/tilesets/Gate.json",
+  "gfx": "assets/tilesets/gate.png",
+  "warps": [
+    {
+      "x": 0,
+      "y": 4,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "destMap": "ROUTE_11_GATE_2F",
+      "destMapId": 86,
+      "destMapName": "Route11Gate2F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "ROUTE11GATE1F_GUARD",
+      "x": 4,
+      "y": 1,
+      "sprite": "SPRITE_GUARD",
+      "spriteId": 49,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_ROUTE11GATE1F_GUARD",
+      "textIndex": 1
+    }
+  ],
+  "localScale": 1,
+  "worldScale": 2,
+  "feetAnchor": [
+    8,
+    16
+  ],
+  "adaptation": "Red geometry/static standing actors; FireRed rules retained. Route11 trainers and all new encounters deferred O13-4; Gate2F/services deferred. No walking NPC/audio.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

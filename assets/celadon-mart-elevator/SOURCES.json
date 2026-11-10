@@ -1,0 +1,38 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/CeladonMartElevator.json",
+  "mapSHA256": "a90f9df094178ef42f2f0d86f5d17dd2df2ecbc83ef50625d96d57fc23acd04e",
+  "tileset": "data/tilesets/Lobby.json",
+  "gfx": "assets/tilesets/lobby.png",
+  "warps": [
+    {
+      "x": 1,
+      "y": 3,
+      "destMap": "CELADON_MART_1F",
+      "destMapId": 122,
+      "destMapName": "CeladonMart1F",
+      "destWarp": 6,
+      "destWarpIndex": 5
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "destMap": "CELADON_MART_1F",
+      "destMapId": 122,
+      "destMapName": "CeladonMart1F",
+      "destWarp": 6,
+      "destWarpIndex": 5
+    }
+  ],
+  "connections": {},
+  "actors": [],
+  "localScale": 1,
+  "worldScale": 2,
+  "feetAnchor": [
+    8,
+    16
+  ],
+  "adaptation": "Red geometry/static actors; FireRed elevator floors 1-5; roof by stairs only. Counter teaching, all new shops, roof drinks/trades and GameBoy interactions deferred. No walking NPC/audio.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

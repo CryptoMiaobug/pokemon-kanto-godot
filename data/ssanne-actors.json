@@ -1,0 +1,32 @@
+[
+  {
+    "map": "ssanne-1f",
+    "cell": [
+      12,
+      6
+    ],
+    "sprite": "res://assets/ssanne-1f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "map": "ssanne-1f",
+    "cell": [
+      27,
+      5
+    ],
+    "sprite": "res://assets/ssanne-1f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ]
+  }
+]

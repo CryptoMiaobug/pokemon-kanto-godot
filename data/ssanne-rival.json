@@ -1,0 +1,223 @@
+{
+  "id": "ssanne_rival",
+  "map": "ssanne-2f",
+  "name": "劲敌",
+  "title": "劲敌 · 圣安奴号二层",
+  "cell": [
+    36,
+    7
+  ],
+  "sourceHiddenCell": [
+    36,
+    4
+  ],
+  "triggerCells": [
+    [
+      36,
+      8
+    ],
+    [
+      37,
+      8
+    ]
+  ],
+  "sprite": "res://assets/ssanne-2f/actor-2.png",
+  "portrait": "res://assets/ssanne-2f/rival-trainer.png",
+  "reward": 720,
+  "intro": "你好！没想到会在这里碰见你！你真的被邀请了吗？我的图鉴已经收集了40种！",
+  "defeat": "哼！至少你有认真培育宝可梦！",
+  "after": "听说船上有位居合斩高手，却是个晕船的老人。你也去看看吧！（船长房与HM01另批开放）",
+  "rival_for": {
+    "bulbasaur": "charmander",
+    "charmander": "squirtle",
+    "squirtle": "bulbasaur"
+  },
+  "teams": {
+    "squirtle": [
+      {
+        "species_id": "pidgeotto",
+        "level": 19,
+        "ivs": 6,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "tackle",
+          "sandattack",
+          "gust",
+          "quickattack"
+        ]
+      },
+      {
+        "species_id": "raticate",
+        "level": 16,
+        "ivs": 6,
+        "nature": {
+          "up": "atk",
+          "down": "spa"
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack",
+          "hyperfang"
+        ]
+      },
+      {
+        "species_id": "kadabra",
+        "level": 18,
+        "ivs": 6,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "teleport",
+          "kinesis",
+          "confusion",
+          "disable"
+        ]
+      },
+      {
+        "species_id": "wartortle",
+        "level": 20,
+        "ivs": 12,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "bubble",
+          "withdraw",
+          "watergun",
+          "bite"
+        ]
+      }
+    ],
+    "bulbasaur": [
+      {
+        "species_id": "pidgeotto",
+        "level": 19,
+        "ivs": 6,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "tackle",
+          "sandattack",
+          "gust",
+          "quickattack"
+        ]
+      },
+      {
+        "species_id": "raticate",
+        "level": 16,
+        "ivs": 6,
+        "nature": {
+          "up": "atk",
+          "down": "spa"
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack",
+          "hyperfang"
+        ]
+      },
+      {
+        "species_id": "kadabra",
+        "level": 18,
+        "ivs": 6,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "teleport",
+          "kinesis",
+          "confusion",
+          "disable"
+        ]
+      },
+      {
+        "species_id": "ivysaur",
+        "level": 20,
+        "ivs": 12,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "leechseed",
+          "vinewhip",
+          "poisonpowder",
+          "sleeppowder"
+        ]
+      }
+    ],
+    "charmander": [
+      {
+        "species_id": "pidgeotto",
+        "level": 19,
+        "ivs": 6,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "tackle",
+          "sandattack",
+          "gust",
+          "quickattack"
+        ]
+      },
+      {
+        "species_id": "raticate",
+        "level": 16,
+        "ivs": 6,
+        "nature": {
+          "up": "atk",
+          "down": "spa"
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack",
+          "hyperfang"
+        ]
+      },
+      {
+        "species_id": "kadabra",
+        "level": 18,
+        "ivs": 6,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "teleport",
+          "kinesis",
+          "confusion",
+          "disable"
+        ]
+      },
+      {
+        "species_id": "charmeleon",
+        "level": 20,
+        "ivs": 12,
+        "nature": {
+          "up": "def",
+          "down": "spd"
+        },
+        "moves": [
+          "growl",
+          "ember",
+          "metalclaw",
+          "smokescreen"
+        ]
+      }
+    ]
+  }
+}

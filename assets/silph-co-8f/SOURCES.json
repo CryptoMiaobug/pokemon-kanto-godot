@@ -1,0 +1,177 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/SilphCo8F.json",
+  "mapSHA256": "dd42ffc9df17cff07ae8331e863ac33dbdbf3e5b67ef4ce29c120479a86e0e69",
+  "warps": [
+    {
+      "x": 16,
+      "y": 0,
+      "destMap": "SILPH_CO_9F",
+      "destMapId": 233,
+      "destMapName": "SilphCo9F",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 14,
+      "y": 0,
+      "destMap": "SILPH_CO_7F",
+      "destMapId": 212,
+      "destMapName": "SilphCo7F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 18,
+      "y": 0,
+      "destMap": "SILPH_CO_ELEVATOR",
+      "destMapId": 236,
+      "destMapName": "SilphCoElevator",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 3,
+      "y": 11,
+      "destMap": "SILPH_CO_8F",
+      "destMapId": 213,
+      "destMapName": "SilphCo8F",
+      "destWarp": 7,
+      "destWarpIndex": 6
+    },
+    {
+      "x": 3,
+      "y": 15,
+      "destMap": "SILPH_CO_2F",
+      "destMapId": 207,
+      "destMapName": "SilphCo2F",
+      "destWarp": 5,
+      "destWarpIndex": 4
+    },
+    {
+      "x": 11,
+      "y": 5,
+      "destMap": "SILPH_CO_2F",
+      "destMapId": 207,
+      "destMapName": "SilphCo2F",
+      "destWarp": 6,
+      "destWarpIndex": 5
+    },
+    {
+      "x": 11,
+      "y": 9,
+      "destMap": "SILPH_CO_8F",
+      "destMapId": 213,
+      "destMapName": "SilphCo8F",
+      "destWarp": 4,
+      "destWarpIndex": 3
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "SILPHCO8F_SILPH_WORKER_M",
+      "x": 4,
+      "y": 2,
+      "sprite": "SPRITE_SILPH_WORKER_M",
+      "spriteId": 44,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_SILPHCO8F_SILPH_WORKER_M",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "SILPHCO8F_ROCKET1",
+      "x": 19,
+      "y": 2,
+      "sprite": "SPRITE_ROCKET",
+      "spriteId": 24,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_SILPHCO8F_ROCKET1",
+      "textIndex": 2,
+      "trainer": {
+        "trainerClass": "OPP_ROCKET",
+        "trainerClassId": 30,
+        "trainerPartyIndex": 35,
+        "header": "SilphCo8TrainerHeader0",
+        "eventFlag": "EVENT_BEAT_SILPH_CO_8F_TRAINER_0",
+        "eventFlagIndex": 1874,
+        "sightRange": 4,
+        "textBefore": "SilphCo8FRocket1BattleText",
+        "textEnd": "SilphCo8FRocket1EndBattleText",
+        "textAfter": "SilphCo8FRocket1AfterBattleText"
+      },
+      "toggleIndex": 171,
+      "toggleConst": "TOGGLE_SILPH_CO_8F_1",
+      "startsHidden": false
+    },
+    {
+      "index": 3,
+      "const": "SILPHCO8F_SCIENTIST",
+      "x": 10,
+      "y": 2,
+      "sprite": "SPRITE_SCIENTIST",
+      "spriteId": 32,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_SILPHCO8F_SCIENTIST",
+      "textIndex": 3,
+      "trainer": {
+        "trainerClass": "OPP_SCIENTIST",
+        "trainerClassId": 28,
+        "trainerPartyIndex": 9,
+        "header": "SilphCo8TrainerHeader1",
+        "eventFlag": "EVENT_BEAT_SILPH_CO_8F_TRAINER_1",
+        "eventFlagIndex": 1875,
+        "sightRange": 4,
+        "textBefore": "SilphCo8FScientistBattleText",
+        "textEnd": "SilphCo8FScientistEndBattleText",
+        "textAfter": "SilphCo8FScientistAfterBattleText"
+      },
+      "toggleIndex": 172,
+      "toggleConst": "TOGGLE_SILPH_CO_8F_2",
+      "startsHidden": false
+    },
+    {
+      "index": 4,
+      "const": "SILPHCO8F_ROCKET2",
+      "x": 12,
+      "y": 15,
+      "sprite": "SPRITE_ROCKET",
+      "spriteId": 24,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_SILPHCO8F_ROCKET2",
+      "textIndex": 4,
+      "trainer": {
+        "trainerClass": "OPP_ROCKET",
+        "trainerClassId": 30,
+        "trainerPartyIndex": 36,
+        "header": "SilphCo8TrainerHeader2",
+        "eventFlag": "EVENT_BEAT_SILPH_CO_8F_TRAINER_2",
+        "eventFlagIndex": 1876,
+        "sightRange": 4,
+        "textBefore": "SilphCo8FRocket2BattleText",
+        "textEnd": "SilphCo8FRocket2EndBattleText",
+        "textAfter": "SilphCo8FRocket2AfterBattleText"
+      },
+      "toggleIndex": 173,
+      "toggleConst": "TOGGLE_SILPH_CO_8F_3",
+      "startsHidden": false
+    }
+  ],
+  "doorSource": "src/game/scripts/regions/kanto5_lib.js SILPH_DOORS actual GateCoordinates; not unused maps_meta",
+  "adaptation": "Red geometry/actors native16px local1x world2x nearest, FR full parties/reward. E manual interaction; no auto sight or animation. Floors beyond slice explicitly closed. Non-key items deferred.",
+  "rights": "Original rights holders; redistribution clearance not established"
+}

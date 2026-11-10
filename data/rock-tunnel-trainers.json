@@ -1,0 +1,1022 @@
+[
+  {
+    "id": "rock_lenny",
+    "map": "rock-tunnel-1f",
+    "name": "登山男伦尼",
+    "title": "登山男伦尼 · 岩山隧道",
+    "cell": [
+      7,
+      5
+    ],
+    "facing": "down",
+    "sprite": "res://assets/rock-tunnel-1f/npc-1.png",
+    "portrait": "res://assets/rock-tunnel-1f/lenny-trainer.png",
+    "reward": 684,
+    "party": [
+      {
+        "species_id": "geodude",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "defensecurl",
+          "mudsport",
+          "rockthrow",
+          "magnitude"
+        ]
+      },
+      {
+        "species_id": "machop",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "leer",
+          "focusenergy",
+          "karatechop",
+          "seismictoss"
+        ]
+      },
+      {
+        "species_id": "geodude",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "defensecurl",
+          "mudsport",
+          "rockthrow",
+          "magnitude"
+        ]
+      },
+      {
+        "species_id": "geodude",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spe"
+        },
+        "moves": [
+          "defensecurl",
+          "mudsport",
+          "rockthrow",
+          "magnitude"
+        ]
+      }
+    ],
+    "intro": "这条隧道很长，小家伙！",
+    "defeat": "哎呀！你赢了！",
+    "after": "小心大岩蛇，高等级的大岩蛇会把你绑紧！",
+    "sourceIntro": "This tunnel goes a long way, kid!",
+    "sourceDefeat": "Doh!  You win!",
+    "sourceAfter": "Watch for ONIX.  They appear only occasionally.  High-level ones can put the  squeeze on you!",
+    "redObject": 1,
+    "fireRedTrainer": "HIKER_LENNY",
+    "sourceParty": "HikerLenny",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ]
+  },
+  {
+    "id": "rock_oliver",
+    "map": "rock-tunnel-1f",
+    "name": "登山男奥利弗",
+    "title": "登山男奥利弗 · 岩山隧道",
+    "cell": [
+      5,
+      16
+    ],
+    "facing": "down",
+    "sprite": "res://assets/rock-tunnel-1f/npc-2.png",
+    "portrait": "res://assets/rock-tunnel-1f/oliver-trainer.png",
+    "reward": 720,
+    "party": [
+      {
+        "species_id": "onix",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spd"
+        },
+        "moves": [
+          "screech",
+          "bind",
+          "rockthrow",
+          "harden"
+        ]
+      },
+      {
+        "species_id": "onix",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "screech",
+          "bind",
+          "rockthrow",
+          "harden"
+        ]
+      },
+      {
+        "species_id": "geodude",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spe"
+        },
+        "moves": [
+          "defensecurl",
+          "mudsport",
+          "rockthrow",
+          "magnitude"
+        ]
+      }
+    ],
+    "intro": "嗯……也许我迷路了。",
+    "defeat": "慢一点！出口在哪边？",
+    "after": "12号道路上睡觉的宝可梦让我绕到了这里。",
+    "sourceIntro": "Hmm.  Maybe I'm lost in here…",
+    "sourceDefeat": "Ease up!  What am I doing?  Which way is out?",
+    "sourceAfter": "That sleeping POKéMON on ROUTE 12  forced me to take this detour.",
+    "redObject": 2,
+    "fireRedTrainer": "HIKER_OLIVER",
+    "sourceParty": "HikerOliver",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ]
+  },
+  {
+    "id": "rock_lucas",
+    "map": "rock-tunnel-1f",
+    "name": "登山男卢卡斯",
+    "title": "登山男卢卡斯 · 岩山隧道",
+    "cell": [
+      17,
+      15
+    ],
+    "facing": "left",
+    "sprite": "res://assets/rock-tunnel-1f/npc-3.png",
+    "portrait": "res://assets/rock-tunnel-1f/lucas-trainer.png",
+    "reward": 756,
+    "party": [
+      {
+        "species_id": "geodude",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "atk"
+        },
+        "moves": [
+          "magnitude",
+          "rockthrow",
+          "mudsport",
+          "defensecurl"
+        ]
+      },
+      {
+        "species_id": "graveler",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spe"
+        },
+        "moves": [
+          "magnitude",
+          "rockthrow",
+          "mudsport",
+          "defensecurl"
+        ]
+      }
+    ],
+    "intro": "外来者得对我尊重些！",
+    "defeat": "我认输！",
+    "after": "你很有登山的天分！",
+    "sourceIntro": "Outsiders like you need to show me  some respect!",
+    "sourceDefeat": "I give!",
+    "sourceAfter": "You're talented enough to hike!",
+    "redObject": 3,
+    "fireRedTrainer": "HIKER_LUCAS",
+    "sourceParty": "HikerLucas",
+    "alphaBBox": [
+      3,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "rock_ashton",
+    "map": "rock-tunnel-1f",
+    "name": "宝可梦收藏家阿什顿",
+    "title": "宝可梦收藏家阿什顿 · 岩山隧道",
+    "cell": [
+      23,
+      8
+    ],
+    "facing": "left",
+    "sprite": "res://assets/rock-tunnel-1f/npc-4.png",
+    "portrait": "res://assets/rock-tunnel-1f/ashton-trainer.png",
+    "reward": 1104,
+    "party": [
+      {
+        "species_id": "cubone",
+        "level": 23,
+        "ivs": 3,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "boneclub",
+          "headbutt",
+          "leer",
+          "focusenergy"
+        ]
+      },
+      {
+        "species_id": "slowpoke",
+        "level": 23,
+        "ivs": 3,
+        "nature": {
+          "up": "def",
+          "down": "spe"
+        },
+        "moves": [
+          "tackle",
+          "growl",
+          "watergun",
+          "confusion"
+        ]
+      }
+    ],
+    "intro": "宝可梦对战！准备，开始！",
+    "defeat": "对战结束！",
+    "after": "我边走边抓只超音蝠吧！",
+    "sourceIntro": "POKéMON fight!  Ready, go!",
+    "sourceDefeat": "Game over!",
+    "sourceAfter": "Oh well, I'll get a ZUBAT as I go!",
+    "redObject": 4,
+    "fireRedTrainer": "POKEMANIAC_ASHTON",
+    "sourceParty": "PokemaniacAshton",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "rock_leah",
+    "map": "rock-tunnel-1f",
+    "name": "野餐女孩莉娅",
+    "title": "野餐女孩莉娅 · 岩山隧道",
+    "cell": [
+      37,
+      21
+    ],
+    "facing": "left",
+    "sprite": "res://assets/rock-tunnel-1f/npc-5.png",
+    "portrait": "res://assets/rock-tunnel-1f/leah-trainer.png",
+    "reward": 440,
+    "party": [
+      {
+        "species_id": "bellsprout",
+        "level": 22,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "atk"
+        },
+        "moves": [
+          "wrap",
+          "sleeppowder",
+          "poisonpowder",
+          "stunspore"
+        ]
+      },
+      {
+        "species_id": "clefairy",
+        "level": 22,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "sing",
+          "doubleslap",
+          "followme",
+          "minimize"
+        ]
+      }
+    ],
+    "intro": "呀！别趁黑胡闹！",
+    "defeat": "太暗了……",
+    "after": "我在隧道里见到过腕力。",
+    "sourceIntro": "Eek!  Don't try anything funny in the  dark!",
+    "sourceDefeat": "It was too dark…",
+    "sourceAfter": "I saw a MACHOP in this tunnel.",
+    "redObject": 5,
+    "fireRedTrainer": "PICNICKER_LEAH",
+    "sourceParty": "PicnickerLeah",
+    "alphaBBox": [
+      1,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "rock_dana",
+    "map": "rock-tunnel-1f",
+    "name": "野餐女孩达娜",
+    "title": "野餐女孩达娜 · 岩山隧道",
+    "cell": [
+      22,
+      24
+    ],
+    "facing": "down",
+    "sprite": "res://assets/rock-tunnel-1f/npc-6.png",
+    "portrait": "res://assets/rock-tunnel-1f/dana-trainer.png",
+    "reward": 400,
+    "party": [
+      {
+        "species_id": "meowth",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spd"
+        },
+        "moves": [
+          "scratch",
+          "growl",
+          "bite",
+          "payday"
+        ]
+      },
+      {
+        "species_id": "oddish",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spa"
+        },
+        "moves": [
+          "sweetscent",
+          "poisonpowder",
+          "stunspore",
+          "sleeppowder"
+        ]
+      },
+      {
+        "species_id": "pidgey",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "sandattack",
+          "gust",
+          "quickattack",
+          "whirlwind"
+        ]
+      }
+    ],
+    "intro": "我为了寻找野生宝可梦来到这里。",
+    "defeat": "我没有宝可梦了！",
+    "after": "看你可爱又无害，我真是看错了！",
+    "sourceIntro": "I came this far looking for wild  POKéMON.",
+    "sourceDefeat": "I'm out of POKéMON!",
+    "sourceAfter": "You looked cute and harmless.  Was I ever wrong!",
+    "redObject": 6,
+    "fireRedTrainer": "PICNICKER_DANA",
+    "sourceParty": "PicnickerDana",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "rock_ariana",
+    "map": "rock-tunnel-1f",
+    "name": "野餐女孩阿丽亚娜",
+    "title": "野餐女孩阿丽亚娜 · 岩山隧道",
+    "cell": [
+      32,
+      24
+    ],
+    "facing": "right",
+    "sprite": "res://assets/rock-tunnel-1f/npc-7.png",
+    "portrait": "res://assets/rock-tunnel-1f/ariana-trainer.png",
+    "reward": 380,
+    "party": [
+      {
+        "species_id": "pidgey",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "sandattack",
+          "gust",
+          "quickattack",
+          "whirlwind"
+        ]
+      },
+      {
+        "species_id": "rattata",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "atk"
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack",
+          "hyperfang"
+        ]
+      },
+      {
+        "species_id": "rattata",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spa"
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack",
+          "hyperfang"
+        ]
+      },
+      {
+        "species_id": "bellsprout",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spa"
+        },
+        "moves": [
+          "wrap",
+          "sleeppowder",
+          "poisonpowder",
+          "stunspore"
+        ]
+      }
+    ],
+    "intro": "你带着宝可梦！开始吧！",
+    "defeat": "你可真厉害！",
+    "after": "呼！我都出汗了。",
+    "sourceIntro": "You have POKéMON!  Let's start!",
+    "sourceDefeat": "You play hard!",
+    "sourceAfter": "Whew!  I'm all sweaty now.",
+    "redObject": 7,
+    "fireRedTrainer": "PICNICKER_ARIANA",
+    "sourceParty": "PicnickerAriana",
+    "alphaBBox": [
+      2,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "rock_sofia",
+    "map": "rock-tunnel-b1f",
+    "name": "野餐女孩索菲娅",
+    "title": "野餐女孩索菲娅 · 岩山隧道",
+    "cell": [
+      11,
+      13
+    ],
+    "facing": "down",
+    "sprite": "res://assets/rock-tunnel-b1f/npc-1.png",
+    "portrait": "res://assets/rock-tunnel-b1f/sofia-trainer.png",
+    "reward": 420,
+    "party": [
+      {
+        "species_id": "jigglypuff",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "defensecurl",
+          "pound",
+          "disable",
+          "rollout"
+        ]
+      },
+      {
+        "species_id": "pidgey",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "sandattack",
+          "gust",
+          "quickattack",
+          "whirlwind"
+        ]
+      },
+      {
+        "species_id": "meowth",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "scratch",
+          "growl",
+          "bite",
+          "payday"
+        ]
+      }
+    ],
+    "intro": "登山时可以折弯树枝作为路标，避免迷路。",
+    "defeat": "我尽力了！",
+    "after": "我想回家！",
+    "sourceIntro": "Do you know how you can avoid  getting lost in the mountains?  You can bend twigs as trail  markers.",
+    "sourceDefeat": "Ohhh!  I did my best!",
+    "sourceAfter": "I want to go home!",
+    "redObject": 1,
+    "fireRedTrainer": "PICNICKER_SOFIA",
+    "sourceParty": "PicnickerSofia",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "rock_dudley",
+    "map": "rock-tunnel-b1f",
+    "name": "登山男达德利",
+    "title": "登山男达德利 · 岩山隧道",
+    "cell": [
+      6,
+      10
+    ],
+    "facing": "down",
+    "sprite": "res://assets/rock-tunnel-b1f/npc-2.png",
+    "portrait": "res://assets/rock-tunnel-b1f/dudley-trainer.png",
+    "reward": 756,
+    "party": [
+      {
+        "species_id": "geodude",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "magnitude",
+          "rockthrow",
+          "mudsport",
+          "defensecurl"
+        ]
+      },
+      {
+        "species_id": "geodude",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "magnitude",
+          "rockthrow",
+          "mudsport",
+          "defensecurl"
+        ]
+      },
+      {
+        "species_id": "graveler",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "magnitude",
+          "rockthrow",
+          "mudsport",
+          "defensecurl"
+        ]
+      }
+    ],
+    "intro": "哈哈哈！能打败我的力量吗？",
+    "defeat": "力量比不过你！",
+    "after": "我讨厌动脑筋，所以追求力量。",
+    "sourceIntro": "Hahaha!  Can you beat my power?",
+    "sourceDefeat": "Oops!  Outmuscled!",
+    "sourceAfter": "I go for power because I hate  thinking.",
+    "redObject": 2,
+    "fireRedTrainer": "HIKER_DUDLEY",
+    "sourceParty": "HikerDudley",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ]
+  },
+  {
+    "id": "rock_cooper",
+    "map": "rock-tunnel-b1f",
+    "name": "宝可梦收藏家库珀",
+    "title": "宝可梦收藏家库珀 · 岩山隧道",
+    "cell": [
+      3,
+      5
+    ],
+    "facing": "down",
+    "sprite": "res://assets/rock-tunnel-b1f/npc-3.png",
+    "portrait": "res://assets/rock-tunnel-b1f/cooper-trainer.png",
+    "reward": 960,
+    "party": [
+      {
+        "species_id": "slowpoke",
+        "level": 20,
+        "ivs": 3,
+        "nature": {
+          "up": "spe",
+          "down": "spa"
+        },
+        "moves": [
+          "tackle",
+          "growl",
+          "watergun",
+          "confusion"
+        ]
+      },
+      {
+        "species_id": "slowpoke",
+        "level": 20,
+        "ivs": 3,
+        "nature": {
+          "up": "spa",
+          "down": "atk"
+        },
+        "moves": [
+          "tackle",
+          "growl",
+          "watergun",
+          "confusion"
+        ]
+      },
+      {
+        "species_id": "slowpoke",
+        "level": 20,
+        "ivs": 3,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "tackle",
+          "growl",
+          "watergun",
+          "confusion"
+        ]
+      }
+    ],
+    "intro": "你有宝可梦图鉴？我也想要！",
+    "defeat": "真羡慕你！",
+    "after": "完成图鉴后能给我吗？",
+    "sourceIntro": "You have a POKéDEX?  I want one, too.",
+    "sourceDefeat": "Shoot!  I am so jealous!",
+    "sourceAfter": "When you finish your POKéDEX,  can I have it?",
+    "redObject": 3,
+    "fireRedTrainer": "POKEMANIAC_COOPER",
+    "sourceParty": "PokemaniacCooper",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "rock_steve",
+    "map": "rock-tunnel-b1f",
+    "name": "宝可梦收藏家史蒂夫",
+    "title": "宝可梦收藏家史蒂夫 · 岩山隧道",
+    "cell": [
+      20,
+      21
+    ],
+    "facing": "right",
+    "sprite": "res://assets/rock-tunnel-b1f/npc-4.png",
+    "portrait": "res://assets/rock-tunnel-b1f/steve-trainer.png",
+    "reward": 1056,
+    "party": [
+      {
+        "species_id": "charmander",
+        "level": 22,
+        "ivs": 3,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "growl",
+          "ember",
+          "metalclaw",
+          "smokescreen"
+        ]
+      },
+      {
+        "species_id": "cubone",
+        "level": 22,
+        "ivs": 3,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "boneclub",
+          "headbutt",
+          "leer",
+          "focusenergy"
+        ]
+      }
+    ],
+    "intro": "你知道扮成宝可梦的角色扮演吗？",
+    "defeat": "就这样吧。",
+    "after": "扮成皮皮很受欢迎！",
+    "sourceIntro": "Um… Do you know about POKéMON  cosplay?",
+    "sourceDefeat": "Well, that's that.",
+    "sourceAfter": "POKéMON cosplay is dressing up as  POKéMON for fun.  CLEFAIRY is a favorite.",
+    "redObject": 4,
+    "fireRedTrainer": "POKEMANIAC_STEVE",
+    "sourceParty": "PokemaniacSteve",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "rock_allen",
+    "map": "rock-tunnel-b1f",
+    "name": "登山男艾伦",
+    "title": "登山男艾伦 · 岩山隧道",
+    "cell": [
+      30,
+      10
+    ],
+    "facing": "down",
+    "sprite": "res://assets/rock-tunnel-b1f/npc-5.png",
+    "portrait": "res://assets/rock-tunnel-b1f/allen-trainer.png",
+    "reward": 900,
+    "party": [
+      {
+        "species_id": "geodude",
+        "level": 25,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spa"
+        },
+        "moves": [
+          "magnitude",
+          "rockthrow",
+          "mudsport",
+          "defensecurl"
+        ]
+      }
+    ],
+    "intro": "我的宝可梦技巧会让你哭出来！",
+    "defeat": "我认输！你的技巧更好！",
+    "after": "山里经常能遇到岩石属性宝可梦。",
+    "sourceIntro": "My POKéMON techniques will leave  you crying!",
+    "sourceDefeat": "I give!  You're a better technician!",
+    "sourceAfter": "In mountains, you'll often find  ROCK-type POKéMON.",
+    "redObject": 5,
+    "fireRedTrainer": "HIKER_ALLEN",
+    "sourceParty": "HikerAllen",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ]
+  },
+  {
+    "id": "rock_martha",
+    "map": "rock-tunnel-b1f",
+    "name": "野餐女孩玛莎",
+    "title": "野餐女孩玛莎 · 岩山隧道",
+    "cell": [
+      14,
+      28
+    ],
+    "facing": "right",
+    "sprite": "res://assets/rock-tunnel-b1f/npc-6.png",
+    "portrait": "res://assets/rock-tunnel-b1f/martha-trainer.png",
+    "reward": 440,
+    "party": [
+      {
+        "species_id": "oddish",
+        "level": 22,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spe"
+        },
+        "moves": [
+          "sweetscent",
+          "poisonpowder",
+          "stunspore",
+          "sleeppowder"
+        ]
+      },
+      {
+        "species_id": "bulbasaur",
+        "level": 22,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "atk"
+        },
+        "moves": [
+          "vinewhip",
+          "poisonpowder",
+          "sleeppowder",
+          "razorleaf"
+        ]
+      }
+    ],
+    "intro": "我不常来这里，不过可以和你对战。",
+    "defeat": "啊！我输了！",
+    "after": "我喜欢小小的宝可梦，大的太吓人。",
+    "sourceIntro": "I don't often come here, but I will  battle you.",
+    "sourceDefeat": "Oh!  I lost!",
+    "sourceAfter": "I like tiny POKéMON.  Big ones are too scary!",
+    "redObject": 6,
+    "fireRedTrainer": "PICNICKER_MARTHA",
+    "sourceParty": "PicnickerMartha",
+    "alphaBBox": [
+      2,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "rock_eric",
+    "map": "rock-tunnel-b1f",
+    "name": "登山男埃里克",
+    "title": "登山男埃里克 · 岩山隧道",
+    "cell": [
+      33,
+      5
+    ],
+    "facing": "right",
+    "sprite": "res://assets/rock-tunnel-b1f/npc-7.png",
+    "portrait": "res://assets/rock-tunnel-b1f/eric-trainer.png",
+    "reward": 720,
+    "party": [
+      {
+        "species_id": "machop",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "leer",
+          "focusenergy",
+          "karatechop",
+          "seismictoss"
+        ]
+      },
+      {
+        "species_id": "onix",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spe"
+        },
+        "moves": [
+          "screech",
+          "bind",
+          "rockthrow",
+          "harden"
+        ]
+      }
+    ],
+    "intro": "使出你的最强一招吧！",
+    "defeat": "被打败了！",
+    "after": "我要把宝可梦培养得比你的更强！",
+    "sourceIntro": "Hit me with your best shot!",
+    "sourceDefeat": "Fired away!",
+    "sourceAfter": "I'll raise my POKéMON to beat  yours, kid.",
+    "redObject": 7,
+    "fireRedTrainer": "HIKER_ERIC",
+    "sourceParty": "HikerEric",
+    "alphaBBox": [
+      2,
+      0,
+      13,
+      16
+    ]
+  },
+  {
+    "id": "rock_winston",
+    "map": "rock-tunnel-b1f",
+    "name": "宝可梦收藏家温斯顿",
+    "title": "宝可梦收藏家温斯顿 · 岩山隧道",
+    "cell": [
+      26,
+      30
+    ],
+    "facing": "down",
+    "sprite": "res://assets/rock-tunnel-b1f/npc-8.png",
+    "portrait": "res://assets/rock-tunnel-b1f/winston-trainer.png",
+    "reward": 1200,
+    "party": [
+      {
+        "species_id": "slowpoke",
+        "level": 25,
+        "ivs": 3,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "growl",
+          "watergun",
+          "confusion",
+          "disable"
+        ]
+      }
+    ],
+    "intro": "在家时，我会画宝可梦插画。",
+    "defeat": "呼……累坏了……",
+    "after": "我是画家，不是战士，我要回家画画。",
+    "sourceIntro": "I draw illustrations of POKéMON  when I'm home.",
+    "sourceDefeat": "Whew…  I'm exhausted…",
+    "sourceAfter": "I'm an artist, not a fighter.  I'll go home to draw.",
+    "redObject": 8,
+    "fireRedTrainer": "POKEMANIAC_WINSTON",
+    "sourceParty": "PokemaniacWinston",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  }
+]

@@ -1,0 +1,208 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "baseline": "d38fd74",
+  "maps": "Red data/maps/PokemonTower3F..7F.json and MrFujisHouse.json; original foot geometry, actors, warp indices",
+  "rules": "FR trainer_parties.h/trainers.h, wild_encounters.json, level_up_learnsets.h, battle_script_commands.c, PokemonTower_5F/6F/7F and VolunteerPokemonHouse scripts",
+  "existing": [
+    "paired indexed warps",
+    "atomic trainer settlement",
+    "optional v3 flags",
+    "confusion/sleep/paralysis",
+    "source sprites/importer"
+  ],
+  "required": [
+    "Gastly/Haunter; source current moves Curse/NightShade/Spite/Lick",
+    "Scope identification/no-scope refusal",
+    "four purified cells healing latch",
+    "Marowak30 Bonemerang special uncapturable battle and atomic release",
+    "three Rocket teams and rescue/return then separate flute claim",
+    "key-item menu"
+  ],
+  "deferred": [
+    "07 onward",
+    "ordinary floor items",
+    "sight AI/cutscenes/music",
+    "complete abilities/held items/battle engine"
+  ],
+  "stages": [
+    [
+      "01",
+      "2F->3F",
+      "three trainers and wild",
+      "stop 4F"
+    ],
+    [
+      "02",
+      "3F->4F",
+      "three trainers/wild",
+      "stop 5F"
+    ],
+    [
+      "03",
+      "4F->5F",
+      "four trainers/wild/purified enter heal then latch until leave",
+      "stop 6F"
+    ],
+    [
+      "04",
+      "5F->6F",
+      "three trainers/wild",
+      "stop special event"
+    ],
+    [
+      "05",
+      "scope + trigger10,16",
+      "cancel/loss retry; win growth + released atomically",
+      "7F pending"
+    ],
+    [
+      "06",
+      "released ->7F",
+      "three independent Rocket wins; rescue atomically flags+house location; separate E flute once",
+      "batch end"
+    ]
+  ],
+  "map": "data/maps/PokemonTower6F.json",
+  "mapSHA256": "d6f2cf74072761d7af9de209ce169b28e075f740a8e676ab1403a081254cdef3",
+  "warps": [
+    {
+      "x": 18,
+      "y": 9,
+      "destMap": "POKEMON_TOWER_5F",
+      "destMapId": 146,
+      "destMapName": "PokemonTower5F",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 9,
+      "y": 16,
+      "destMap": "POKEMON_TOWER_7F",
+      "destMapId": 148,
+      "destMapName": "PokemonTower7F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "POKEMONTOWER6F_CHANNELER1",
+      "x": 12,
+      "y": 10,
+      "sprite": "SPRITE_CHANNELER",
+      "spriteId": 25,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_POKEMONTOWER6F_CHANNELER1",
+      "textIndex": 1,
+      "trainer": {
+        "trainerClass": "OPP_CHANNELER",
+        "trainerClassId": 45,
+        "trainerPartyIndex": 19,
+        "header": "PokemonTower6TrainerHeader0",
+        "eventFlag": "EVENT_BEAT_POKEMONTOWER_6_TRAINER_0",
+        "eventFlagIndex": 265,
+        "sightRange": 3,
+        "textBefore": "PokemonTower6FChanneler1BattleText",
+        "textEnd": "PokemonTower6FChanneler1EndBattleText",
+        "textAfter": "PokemonTower6FChanneler1AfterBattleText"
+      }
+    },
+    {
+      "index": 2,
+      "const": "POKEMONTOWER6F_CHANNELER2",
+      "x": 9,
+      "y": 5,
+      "sprite": "SPRITE_CHANNELER",
+      "spriteId": 25,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_POKEMONTOWER6F_CHANNELER2",
+      "textIndex": 2,
+      "trainer": {
+        "trainerClass": "OPP_CHANNELER",
+        "trainerClassId": 45,
+        "trainerPartyIndex": 20,
+        "header": "PokemonTower6TrainerHeader1",
+        "eventFlag": "EVENT_BEAT_POKEMONTOWER_6_TRAINER_1",
+        "eventFlagIndex": 266,
+        "sightRange": 3,
+        "textBefore": "PokemonTower6FChanneler2BattleText",
+        "textEnd": "PokemonTower6FChanneler2EndBattleText",
+        "textAfter": "PokemonTower6FChanneler2AfterBattleText"
+      }
+    },
+    {
+      "index": 3,
+      "const": "POKEMONTOWER6F_CHANNELER3",
+      "x": 16,
+      "y": 5,
+      "sprite": "SPRITE_CHANNELER",
+      "spriteId": 25,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_POKEMONTOWER6F_CHANNELER3",
+      "textIndex": 3,
+      "trainer": {
+        "trainerClass": "OPP_CHANNELER",
+        "trainerClassId": 45,
+        "trainerPartyIndex": 21,
+        "header": "PokemonTower6TrainerHeader2",
+        "eventFlag": "EVENT_BEAT_POKEMONTOWER_6_TRAINER_2",
+        "eventFlagIndex": 267,
+        "sightRange": 2,
+        "textBefore": "PokemonTower6FChanneler3BattleText",
+        "textEnd": "PokemonTower6FChanneler3EndBattleText",
+        "textAfter": "PokemonTower6FChanneler3AfterBattleText"
+      }
+    },
+    {
+      "index": 4,
+      "const": "POKEMONTOWER6F_RARE_CANDY",
+      "x": 6,
+      "y": 8,
+      "sprite": "SPRITE_POKE_BALL",
+      "spriteId": 61,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_POKEMONTOWER6F_RARE_CANDY",
+      "textIndex": 4,
+      "item": "RARE_CANDY",
+      "itemId": 40,
+      "toggleIndex": 62,
+      "toggleConst": "TOGGLE_POKEMON_TOWER_6F_ITEM_1",
+      "startsHidden": false
+    },
+    {
+      "index": 5,
+      "const": "POKEMONTOWER6F_X_ACCURACY",
+      "x": 14,
+      "y": 14,
+      "sprite": "SPRITE_POKE_BALL",
+      "spriteId": 61,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_POKEMONTOWER6F_X_ACCURACY",
+      "textIndex": 5,
+      "item": "X_ACCURACY",
+      "itemId": 46,
+      "toggleIndex": 63,
+      "toggleConst": "TOGGLE_POKEMON_TOWER_6F_ITEM_2",
+      "startsHidden": false
+    }
+  ],
+  "rights": "Original rights holders; redistribution clearance not established",
+  "sprite": "native16px static nearest local1x/world2x source feet anchor"
+}

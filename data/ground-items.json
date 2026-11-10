@@ -1,0 +1,1123 @@
+[
+  {
+    "key": "pokemon-mansion-1f:object:2:cell:14,3",
+    "map": "pokemon-mansion-1f",
+    "object": 2,
+    "cell": [
+      14,
+      3
+    ],
+    "item": "ESCAPE_ROPE",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "escape_ropes"
+  },
+  {
+    "key": "pokemon-mansion-1f:object:3:cell:18,21",
+    "map": "pokemon-mansion-1f",
+    "object": 3,
+    "cell": [
+      18,
+      21
+    ],
+    "item": "CARBOS",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "carbos"
+  },
+  {
+    "key": "pokemon-mansion-2f:object:2:cell:28,7",
+    "map": "pokemon-mansion-2f",
+    "object": 2,
+    "cell": [
+      28,
+      7
+    ],
+    "item": "CALCIUM",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "calciums"
+  },
+  {
+    "key": "pokemon-mansion-3f:object:3:cell:1,16",
+    "map": "pokemon-mansion-3f",
+    "object": 3,
+    "cell": [
+      1,
+      16
+    ],
+    "item": "MAX_POTION",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "max_potions"
+  },
+  {
+    "key": "pokemon-mansion-3f:object:4:cell:25,5",
+    "map": "pokemon-mansion-3f",
+    "object": 4,
+    "cell": [
+      25,
+      5
+    ],
+    "item": "IRON",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "irons"
+  },
+  {
+    "key": "pokemon-mansion-b1f:object:3:cell:10,2",
+    "map": "pokemon-mansion-b1f",
+    "object": 3,
+    "cell": [
+      10,
+      2
+    ],
+    "item": "RARE_CANDY",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "rare_candies"
+  },
+  {
+    "key": "pokemon-mansion-b1f:object:4:cell:1,22",
+    "map": "pokemon-mansion-b1f",
+    "object": 4,
+    "cell": [
+      1,
+      22
+    ],
+    "item": "FULL_RESTORE",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "full_restores"
+  },
+  {
+    "key": "pokemon-mansion-b1f:object:5:cell:19,25",
+    "map": "pokemon-mansion-b1f",
+    "object": 5,
+    "cell": [
+      19,
+      25
+    ],
+    "item": "TM_BLIZZARD",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "tm_blizzard"
+  },
+  {
+    "key": "pokemon-mansion-b1f:object:6:cell:5,4",
+    "map": "pokemon-mansion-b1f",
+    "object": 6,
+    "cell": [
+      5,
+      4
+    ],
+    "item": "TM_SOLARBEAM",
+    "underlying_floor": {
+      "foot": 53,
+      "solid": 1
+    },
+    "inventory": "tm_solarbeam"
+  },
+  {
+    "key": "pokemon-tower-3f:object:4:cell:12,1",
+    "map": "pokemon-tower-3f",
+    "object": 4,
+    "cell": [
+      12,
+      1
+    ],
+    "item": "ESCAPE_ROPE",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "escape_ropes"
+  },
+  {
+    "key": "pokemon-tower-4f:object:4:cell:12,10",
+    "map": "pokemon-tower-4f",
+    "object": 4,
+    "cell": [
+      12,
+      10
+    ],
+    "item": "ELIXER",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "elixirs"
+  },
+  {
+    "key": "pokemon-tower-4f:object:5:cell:9,10",
+    "map": "pokemon-tower-4f",
+    "object": 5,
+    "cell": [
+      9,
+      10
+    ],
+    "item": "AWAKENING",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "awakenings"
+  },
+  {
+    "key": "pokemon-tower-4f:object:6:cell:12,16",
+    "map": "pokemon-tower-4f",
+    "object": 6,
+    "cell": [
+      12,
+      16
+    ],
+    "item": "HP_UP",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "hp_ups"
+  },
+  {
+    "key": "pokemon-tower-5f:object:6:cell:6,14",
+    "map": "pokemon-tower-5f",
+    "object": 6,
+    "cell": [
+      6,
+      14
+    ],
+    "item": "NUGGET",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "nuggets"
+  },
+  {
+    "key": "pokemon-tower-6f:object:5:cell:14,14",
+    "map": "pokemon-tower-6f",
+    "object": 5,
+    "cell": [
+      14,
+      14
+    ],
+    "item": "X_ACCURACY",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "x_accuracies"
+  },
+  {
+    "key": "rocket-hideout-b1f:object:6:cell:11,14",
+    "map": "rocket-hideout-b1f",
+    "object": 6,
+    "cell": [
+      11,
+      14
+    ],
+    "item": "ESCAPE_ROPE",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "escape_ropes"
+  },
+  {
+    "key": "rocket-hideout-b1f:object:7:cell:9,17",
+    "map": "rocket-hideout-b1f",
+    "object": 7,
+    "cell": [
+      9,
+      17
+    ],
+    "item": "HYPER_POTION",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "hyper_potions"
+  },
+  {
+    "key": "rocket-hideout-b2f:object:2:cell:1,11",
+    "map": "rocket-hideout-b2f",
+    "object": 2,
+    "cell": [
+      1,
+      11
+    ],
+    "item": "MOON_STONE",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "moon_stones"
+  },
+  {
+    "key": "rocket-hideout-b2f:object:3:cell:16,8",
+    "map": "rocket-hideout-b2f",
+    "object": 3,
+    "cell": [
+      16,
+      8
+    ],
+    "item": "NUGGET",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "nuggets"
+  },
+  {
+    "key": "rocket-hideout-b2f:object:4:cell:6,12",
+    "map": "rocket-hideout-b2f",
+    "object": 4,
+    "cell": [
+      6,
+      12
+    ],
+    "item": "TM_HORN_DRILL",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "tm_horn_drill"
+  },
+  {
+    "key": "rocket-hideout-b2f:object:5:cell:3,21",
+    "map": "rocket-hideout-b2f",
+    "object": 5,
+    "cell": [
+      3,
+      21
+    ],
+    "item": "SUPER_POTION",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "super_potions"
+  },
+  {
+    "key": "rocket-hideout-b3f:object:3:cell:26,17",
+    "map": "rocket-hideout-b3f",
+    "object": 3,
+    "cell": [
+      26,
+      17
+    ],
+    "item": "TM_DOUBLE_EDGE",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "tm_double_edge"
+  },
+  {
+    "key": "rocket-hideout-b3f:object:4:cell:20,14",
+    "map": "rocket-hideout-b3f",
+    "object": 4,
+    "cell": [
+      20,
+      14
+    ],
+    "item": "RARE_CANDY",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "rare_candies"
+  },
+  {
+    "key": "rocket-hideout-b4f:object:5:cell:10,12",
+    "map": "rocket-hideout-b4f",
+    "object": 5,
+    "cell": [
+      10,
+      12
+    ],
+    "item": "HP_UP",
+    "underlying_floor": {
+      "foot": 29,
+      "solid": 1
+    },
+    "inventory": "hp_ups"
+  },
+  {
+    "key": "rocket-hideout-b4f:object:6:cell:9,4",
+    "map": "rocket-hideout-b4f",
+    "object": 6,
+    "cell": [
+      9,
+      4
+    ],
+    "item": "TM_RAZOR_WIND",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "tm_razor_wind"
+  },
+  {
+    "key": "rocket-hideout-b4f:object:7:cell:12,20",
+    "map": "rocket-hideout-b4f",
+    "object": 7,
+    "cell": [
+      12,
+      20
+    ],
+    "item": "IRON",
+    "underlying_floor": {
+      "foot": 29,
+      "solid": 1
+    },
+    "inventory": "irons"
+  },
+  {
+    "key": "route12:object:9:cell:14,35",
+    "map": "route12",
+    "object": 9,
+    "cell": [
+      14,
+      35
+    ],
+    "item": "TM_PAY_DAY",
+    "underlying_floor": {
+      "foot": 60,
+      "solid": 0
+    },
+    "inventory": "tm_pay_day"
+  },
+  {
+    "key": "route12:object:10:cell:5,89",
+    "map": "route12",
+    "object": 10,
+    "cell": [
+      5,
+      89
+    ],
+    "item": "IRON",
+    "underlying_floor": {
+      "foot": 44,
+      "solid": 0
+    },
+    "inventory": "irons"
+  },
+  {
+    "key": "route15:object:11:cell:18,5",
+    "map": "route15",
+    "object": 11,
+    "cell": [
+      18,
+      5
+    ],
+    "item": "TM_RAGE",
+    "underlying_floor": {
+      "foot": 91,
+      "solid": 0
+    },
+    "inventory": "tm_rage"
+  },
+  {
+    "key": "safari-zone-east:object:1:cell:21,10",
+    "map": "safari-zone-east",
+    "object": 1,
+    "cell": [
+      21,
+      10
+    ],
+    "item": "FULL_RESTORE",
+    "underlying_floor": {
+      "foot": 48,
+      "solid": 0
+    },
+    "inventory": "full_restores"
+  },
+  {
+    "key": "safari-zone-east:object:2:cell:3,7",
+    "map": "safari-zone-east",
+    "object": 2,
+    "cell": [
+      3,
+      7
+    ],
+    "item": "MAX_POTION",
+    "underlying_floor": {
+      "foot": 48,
+      "solid": 0
+    },
+    "inventory": "max_potions"
+  },
+  {
+    "key": "safari-zone-east:object:3:cell:20,13",
+    "map": "safari-zone-east",
+    "object": 3,
+    "cell": [
+      20,
+      13
+    ],
+    "item": "CARBOS",
+    "underlying_floor": {
+      "foot": 46,
+      "solid": 0
+    },
+    "inventory": "carbos"
+  },
+  {
+    "key": "safari-zone-east:object:4:cell:15,12",
+    "map": "safari-zone-east",
+    "object": 4,
+    "cell": [
+      15,
+      12
+    ],
+    "item": "TM_EGG_BOMB",
+    "underlying_floor": {
+      "foot": 32,
+      "solid": 0
+    },
+    "inventory": "tm_egg_bomb"
+  },
+  {
+    "key": "safari-zone-entry:object:1:cell:14,10",
+    "map": "safari-zone-entry",
+    "object": 1,
+    "cell": [
+      14,
+      10
+    ],
+    "item": "NUGGET",
+    "underlying_floor": {
+      "foot": 48,
+      "solid": 0
+    },
+    "inventory": "nuggets"
+  },
+  {
+    "key": "safari-zone-north:object:1:cell:25,1",
+    "map": "safari-zone-north",
+    "object": 1,
+    "cell": [
+      25,
+      1
+    ],
+    "item": "PROTEIN",
+    "underlying_floor": {
+      "foot": 48,
+      "solid": 0
+    },
+    "inventory": "proteins"
+  },
+  {
+    "key": "safari-zone-north:object:2:cell:19,7",
+    "map": "safari-zone-north",
+    "object": 2,
+    "cell": [
+      19,
+      7
+    ],
+    "item": "TM_SKULL_BASH",
+    "underlying_floor": {
+      "foot": 48,
+      "solid": 0
+    },
+    "inventory": "tm_skull_bash"
+  },
+  {
+    "key": "safari-zone-west:object:1:cell:8,20",
+    "map": "safari-zone-west",
+    "object": 1,
+    "cell": [
+      8,
+      20
+    ],
+    "item": "MAX_POTION",
+    "underlying_floor": {
+      "foot": 32,
+      "solid": 0
+    },
+    "inventory": "max_potions"
+  },
+  {
+    "key": "safari-zone-west:object:2:cell:9,7",
+    "map": "safari-zone-west",
+    "object": 2,
+    "cell": [
+      9,
+      7
+    ],
+    "item": "TM_DOUBLE_TEAM",
+    "underlying_floor": {
+      "foot": 48,
+      "solid": 0
+    },
+    "inventory": "tm_double_team"
+  },
+  {
+    "key": "safari-zone-west:object:3:cell:18,18",
+    "map": "safari-zone-west",
+    "object": 3,
+    "cell": [
+      18,
+      18
+    ],
+    "item": "MAX_REVIVE",
+    "underlying_floor": {
+      "foot": 48,
+      "solid": 0
+    },
+    "inventory": "max_revives"
+  },
+  {
+    "key": "silph-co-10f:object:4:cell:2,12",
+    "map": "silph-co-10f",
+    "object": 4,
+    "cell": [
+      2,
+      12
+    ],
+    "item": "TM_EARTHQUAKE",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "tm_earthquake"
+  },
+  {
+    "key": "silph-co-10f:object:5:cell:4,14",
+    "map": "silph-co-10f",
+    "object": 5,
+    "cell": [
+      4,
+      14
+    ],
+    "item": "RARE_CANDY",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "rare_candies"
+  },
+  {
+    "key": "silph-co-10f:object:6:cell:5,11",
+    "map": "silph-co-10f",
+    "object": 6,
+    "cell": [
+      5,
+      11
+    ],
+    "item": "CARBOS",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "carbos"
+  },
+  {
+    "key": "silph-co-3f:object:4:cell:8,5",
+    "map": "silph-co-3f",
+    "object": 4,
+    "cell": [
+      8,
+      5
+    ],
+    "item": "HYPER_POTION",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "hyper_potions"
+  },
+  {
+    "key": "silph-co-4f:object:5:cell:3,9",
+    "map": "silph-co-4f",
+    "object": 5,
+    "cell": [
+      3,
+      9
+    ],
+    "item": "FULL_HEAL",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "full_heals"
+  },
+  {
+    "key": "silph-co-4f:object:6:cell:4,7",
+    "map": "silph-co-4f",
+    "object": 6,
+    "cell": [
+      4,
+      7
+    ],
+    "item": "MAX_REVIVE",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "max_revives"
+  },
+  {
+    "key": "silph-co-4f:object:7:cell:5,8",
+    "map": "silph-co-4f",
+    "object": 7,
+    "cell": [
+      5,
+      8
+    ],
+    "item": "ESCAPE_ROPE",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "escape_ropes"
+  },
+  {
+    "key": "silph-co-5f:object:6:cell:2,13",
+    "map": "silph-co-5f",
+    "object": 6,
+    "cell": [
+      2,
+      13
+    ],
+    "item": "TM_TAKE_DOWN",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "tm_take_down"
+  },
+  {
+    "key": "silph-co-5f:object:7:cell:4,6",
+    "map": "silph-co-5f",
+    "object": 7,
+    "cell": [
+      4,
+      6
+    ],
+    "item": "PROTEIN",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "proteins"
+  },
+  {
+    "key": "silph-co-6f:object:9:cell:3,12",
+    "map": "silph-co-6f",
+    "object": 9,
+    "cell": [
+      3,
+      12
+    ],
+    "item": "HP_UP",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "hp_ups"
+  },
+  {
+    "key": "silph-co-6f:object:10:cell:2,15",
+    "map": "silph-co-6f",
+    "object": 10,
+    "cell": [
+      2,
+      15
+    ],
+    "item": "X_ACCURACY",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "x_accuracies"
+  },
+  {
+    "key": "silph-co-7f:object:10:cell:1,9",
+    "map": "silph-co-7f",
+    "object": 10,
+    "cell": [
+      1,
+      9
+    ],
+    "item": "CALCIUM",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "calciums"
+  },
+  {
+    "key": "silph-co-7f:object:11:cell:24,11",
+    "map": "silph-co-7f",
+    "object": 11,
+    "cell": [
+      24,
+      11
+    ],
+    "item": "TM_SWORDS_DANCE",
+    "underlying_floor": {
+      "foot": 1,
+      "solid": 0
+    },
+    "inventory": "tm_swords_dance"
+  },
+  {
+    "key": "ssanne-1f-rooms:object:10:cell:12,15",
+    "map": "ssanne-1f-rooms",
+    "object": 10,
+    "cell": [
+      12,
+      15
+    ],
+    "item": "TM_BODY_SLAM",
+    "underlying_floor": {
+      "foot": 29,
+      "solid": 0
+    },
+    "inventory": "tm_body_slam"
+  },
+  {
+    "key": "victory-road-1f:object:3:cell:11,0",
+    "map": "victory-road-1f",
+    "object": 3,
+    "cell": [
+      11,
+      0
+    ],
+    "item": "TM_SKY_ATTACK",
+    "underlying_floor": {
+      "foot": 32,
+      "solid": 0
+    },
+    "inventory": "tm_sky_attack"
+  },
+  {
+    "key": "victory-road-1f:object:4:cell:9,2",
+    "map": "victory-road-1f",
+    "object": 4,
+    "cell": [
+      9,
+      2
+    ],
+    "item": "RARE_CANDY",
+    "underlying_floor": {
+      "foot": 32,
+      "solid": 0
+    },
+    "inventory": "rare_candies"
+  },
+  {
+    "key": "victory-road-2f:object:7:cell:27,5",
+    "map": "victory-road-2f",
+    "object": 7,
+    "cell": [
+      27,
+      5
+    ],
+    "item": "TM_SUBMISSION",
+    "underlying_floor": {
+      "foot": 42,
+      "solid": 0
+    },
+    "inventory": "tm_submission"
+  },
+  {
+    "key": "victory-road-2f:object:8:cell:18,9",
+    "map": "victory-road-2f",
+    "object": 8,
+    "cell": [
+      18,
+      9
+    ],
+    "item": "FULL_HEAL",
+    "underlying_floor": {
+      "foot": 42,
+      "solid": 0
+    },
+    "inventory": "full_heals"
+  },
+  {
+    "key": "victory-road-2f:object:9:cell:9,11",
+    "map": "victory-road-2f",
+    "object": 9,
+    "cell": [
+      9,
+      11
+    ],
+    "item": "TM_MEGA_KICK",
+    "underlying_floor": {
+      "foot": 32,
+      "solid": 0
+    },
+    "inventory": "tm_mega_kick"
+  },
+  {
+    "key": "victory-road-2f:object:10:cell:11,0",
+    "map": "victory-road-2f",
+    "object": 10,
+    "cell": [
+      11,
+      0
+    ],
+    "item": "GUARD_SPEC",
+    "underlying_floor": {
+      "foot": 42,
+      "solid": 0
+    },
+    "inventory": "guard_specs"
+  },
+  {
+    "key": "victory-road-3f:object:5:cell:26,5",
+    "map": "victory-road-3f",
+    "object": 5,
+    "cell": [
+      26,
+      5
+    ],
+    "item": "MAX_REVIVE",
+    "underlying_floor": {
+      "foot": 32,
+      "solid": 0
+    },
+    "inventory": "max_revives"
+  },
+  {
+    "key": "victory-road-3f:object:6:cell:7,7",
+    "map": "victory-road-3f",
+    "object": 6,
+    "cell": [
+      7,
+      7
+    ],
+    "item": "TM_EXPLOSION",
+    "underlying_floor": {
+      "foot": 32,
+      "solid": 0
+    },
+    "inventory": "tm_explosion"
+  },
+  {
+    "key": "viridian-gym:object:11:cell:16,9",
+    "map": "viridian-gym",
+    "object": 11,
+    "cell": [
+      16,
+      9
+    ],
+    "item": "REVIVE",
+    "underlying_floor": {
+      "foot": 17,
+      "solid": 0
+    },
+    "inventory": "revives"
+  },
+  {
+    "key": "wardens-house:object:2:cell:8,3",
+    "map": "wardens-house",
+    "object": 2,
+    "cell": [
+      8,
+      3
+    ],
+    "item": "RARE_CANDY",
+    "underlying_floor": {
+      "foot": 38,
+      "solid": 0
+    },
+    "inventory": "rare_candies"
+  },
+  {
+    "key": "fr-acquisition:fr_tm09",
+    "map": "mtmoon-1f",
+    "object": 1009,
+    "cell": [
+      5,
+      31
+    ],
+    "item": "fr_tm09",
+    "inventory": "fr_tm09",
+    "underlying_floor": {
+      "solid": 0,
+      "foot": 32
+    },
+    "tm_acquisition": true
+  },
+  {
+    "key": "fr-acquisition:fr_tm46",
+    "map": "mtmoon-b2f",
+    "object": 1046,
+    "cell": [
+      28,
+      5
+    ],
+    "item": "fr_tm46",
+    "inventory": "fr_tm46",
+    "underlying_floor": {
+      "solid": 0,
+      "foot": 5
+    },
+    "tm_acquisition": true
+  },
+  {
+    "key": "fr-acquisition:fr_tm12",
+    "map": "rocket-hideout-b2f",
+    "object": 1012,
+    "cell": [
+      6,
+      11
+    ],
+    "item": "fr_tm12",
+    "inventory": "fr_tm12",
+    "underlying_floor": {
+      "solid": 0,
+      "foot": 1
+    },
+    "tm_acquisition": true
+  },
+  {
+    "key": "fr-acquisition:fr_tm21",
+    "map": "rocket-hideout-b3f",
+    "object": 1021,
+    "cell": [
+      25,
+      17
+    ],
+    "item": "fr_tm21",
+    "inventory": "fr_tm21",
+    "underlying_floor": {
+      "solid": 0,
+      "foot": 1
+    },
+    "tm_acquisition": true
+  },
+  {
+    "key": "fr-acquisition:fr_tm49",
+    "map": "rocket-hideout-b4f",
+    "object": 1049,
+    "cell": [
+      9,
+      5
+    ],
+    "item": "fr_tm49",
+    "inventory": "fr_tm49",
+    "underlying_floor": {
+      "solid": 0,
+      "foot": 1
+    },
+    "tm_acquisition": true
+  },
+  {
+    "key": "fr-acquisition:fr_tm48",
+    "map": "route12",
+    "object": 1048,
+    "cell": [
+      14,
+      34
+    ],
+    "item": "fr_tm48",
+    "inventory": "fr_tm48",
+    "underlying_floor": {
+      "solid": 0,
+      "foot": 60
+    },
+    "tm_acquisition": true
+  },
+  {
+    "key": "fr-acquisition:fr_tm47",
+    "map": "safari-zone-north",
+    "object": 1047,
+    "cell": [
+      18,
+      7
+    ],
+    "item": "fr_tm47",
+    "inventory": "fr_tm47",
+    "underlying_floor": {
+      "solid": 0,
+      "foot": 48
+    },
+    "tm_acquisition": true
+  },
+  {
+    "key": "fr-acquisition:fr_tm01",
+    "map": "silph-co-5f",
+    "object": 1001,
+    "cell": [
+      2,
+      14
+    ],
+    "item": "fr_tm01",
+    "inventory": "fr_tm01",
+    "underlying_floor": {
+      "solid": 0,
+      "foot": 1
+    },
+    "tm_acquisition": true
+  },
+  {
+    "key": "fr-acquisition:fr_tm02",
+    "map": "victory-road-1f",
+    "object": 1002,
+    "cell": [
+      11,
+      1
+    ],
+    "item": "fr_tm02",
+    "inventory": "fr_tm02",
+    "underlying_floor": {
+      "solid": 0,
+      "foot": 32
+    },
+    "tm_acquisition": true
+  },
+  {
+    "key": "fr-acquisition:fr_tm50",
+    "map": "victory-road-3f",
+    "object": 1050,
+    "cell": [
+      7,
+      6
+    ],
+    "item": "fr_tm50",
+    "inventory": "fr_tm50",
+    "underlying_floor": {
+      "solid": 0,
+      "foot": 32
+    },
+    "tm_acquisition": true
+  },
+  {
+    "key": "fr-acquisition:fr_tm41",
+    "map": "silph-co-4f",
+    "object": 1041,
+    "cell": [
+      5,
+      9
+    ],
+    "item": "fr_tm41",
+    "inventory": "fr_tm41",
+    "underlying_floor": {
+      "solid": 0,
+      "foot": 1
+    },
+    "tm_acquisition": true
+  }
+]

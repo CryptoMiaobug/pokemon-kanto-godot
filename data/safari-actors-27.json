@@ -1,0 +1,87 @@
+[
+  {
+    "map": "safari-zone-entry",
+    "cell": [
+      14,
+      10
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/safari-zone-entry/actor-1.png",
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "item": "NUGGET"
+  },
+  {
+    "map": "safari-zone-east",
+    "cell": [
+      21,
+      10
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/safari-zone-east/actor-1.png",
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "item": "FULL_RESTORE"
+  },
+  {
+    "map": "safari-zone-east",
+    "cell": [
+      3,
+      7
+    ],
+    "redObject": 2,
+    "sprite": "res://assets/safari-zone-east/actor-2.png",
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "item": "MAX_POTION"
+  },
+  {
+    "map": "safari-zone-east",
+    "cell": [
+      20,
+      13
+    ],
+    "redObject": 3,
+    "sprite": "res://assets/safari-zone-east/actor-3.png",
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "item": "CARBOS"
+  },
+  {
+    "map": "safari-zone-east",
+    "cell": [
+      15,
+      12
+    ],
+    "redObject": 4,
+    "sprite": "res://assets/safari-zone-east/actor-4.png",
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "item": "TM_EGG_BOMB"
+  }
+]

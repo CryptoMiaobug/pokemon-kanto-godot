@@ -1,0 +1,902 @@
+[
+  {
+    "id": "2f_1",
+    "map": "silph-co-2f",
+    "block_cell": [
+      2,
+      2
+    ],
+    "closed": 84,
+    "opened": 14,
+    "cells": [
+      {
+        "cell": [
+          4,
+          4
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          5,
+          4
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          4,
+          5
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          5,
+          5
+        ],
+        "foot": 1,
+        "solid": 0
+      }
+    ],
+    "patch": "res://assets/silph-co-2f/door-1-open.png"
+  },
+  {
+    "id": "2f_2",
+    "map": "silph-co-2f",
+    "block_cell": [
+      2,
+      5
+    ],
+    "closed": 84,
+    "opened": 14,
+    "cells": [
+      {
+        "cell": [
+          4,
+          10
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          5,
+          10
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          4,
+          11
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          5,
+          11
+        ],
+        "foot": 1,
+        "solid": 0
+      }
+    ],
+    "patch": "res://assets/silph-co-2f/door-2-open.png"
+  },
+  {
+    "id": "3f_1",
+    "map": "silph-co-3f",
+    "block_cell": [
+      4,
+      4
+    ],
+    "closed": 95,
+    "opened": 14,
+    "cells": [
+      {
+        "cell": [
+          8,
+          8
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          9,
+          8
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          8,
+          9
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          9,
+          9
+        ],
+        "foot": 1,
+        "solid": 0
+      }
+    ],
+    "patch": "res://assets/silph-co-3f/door-1-open.png"
+  },
+  {
+    "id": "3f_2",
+    "map": "silph-co-3f",
+    "block_cell": [
+      8,
+      4
+    ],
+    "closed": 95,
+    "opened": 14,
+    "cells": [
+      {
+        "cell": [
+          16,
+          8
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          17,
+          8
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          16,
+          9
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          17,
+          9
+        ],
+        "foot": 1,
+        "solid": 0
+      }
+    ],
+    "patch": "res://assets/silph-co-3f/door-2-open.png"
+  },
+  {
+    "id": "4f_1",
+    "map": "silph-co-4f",
+    "block_cell": [
+      2,
+      6
+    ],
+    "closed": 84,
+    "opened": 14,
+    "cells": [
+      {
+        "cell": [
+          4,
+          12
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          5,
+          12
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          4,
+          13
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          5,
+          13
+        ],
+        "foot": 1,
+        "solid": 0
+      }
+    ],
+    "patch": "res://assets/silph-co-4f/door-1-open.png"
+  },
+  {
+    "id": "4f_2",
+    "map": "silph-co-4f",
+    "block_cell": [
+      6,
+      4
+    ],
+    "closed": 84,
+    "opened": 14,
+    "cells": [
+      {
+        "cell": [
+          12,
+          8
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          13,
+          8
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          12,
+          9
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          13,
+          9
+        ],
+        "foot": 1,
+        "solid": 0
+      }
+    ],
+    "patch": "res://assets/silph-co-4f/door-2-open.png"
+  },
+  {
+    "id": "5f_1",
+    "map": "silph-co-5f",
+    "block_cell": [
+      3,
+      2
+    ],
+    "closed": 95,
+    "opened": 14,
+    "cells": [
+      {
+        "cell": [
+          6,
+          4
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          7,
+          4
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          6,
+          5
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          7,
+          5
+        ],
+        "foot": 1,
+        "solid": 0
+      }
+    ],
+    "patch": "res://assets/silph-co-5f/door-1-open.png"
+  },
+  {
+    "id": "5f_2",
+    "map": "silph-co-5f",
+    "block_cell": [
+      3,
+      6
+    ],
+    "closed": 95,
+    "opened": 14,
+    "cells": [
+      {
+        "cell": [
+          6,
+          12
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          7,
+          12
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          6,
+          13
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          7,
+          13
+        ],
+        "foot": 1,
+        "solid": 0
+      }
+    ],
+    "patch": "res://assets/silph-co-5f/door-2-open.png"
+  },
+  {
+    "id": "5f_3",
+    "map": "silph-co-5f",
+    "block_cell": [
+      7,
+      5
+    ],
+    "closed": 95,
+    "opened": 14,
+    "cells": [
+      {
+        "cell": [
+          14,
+          10
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          15,
+          10
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          14,
+          11
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          15,
+          11
+        ],
+        "foot": 1,
+        "solid": 0
+      }
+    ],
+    "patch": "res://assets/silph-co-5f/door-3-open.png"
+  },
+  {
+    "id": "6f_1",
+    "map": "silph-co-6f",
+    "block_cell": [
+      2,
+      6
+    ],
+    "closed": 95,
+    "opened": 14,
+    "cells": [
+      {
+        "cell": [
+          4,
+          12
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          5,
+          12
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          4,
+          13
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          5,
+          13
+        ],
+        "foot": 1,
+        "solid": 0
+      }
+    ],
+    "patch": "res://assets/silph-co-6f/door-1-open.png"
+  },
+  {
+    "id": "7f_1",
+    "map": "silph-co-7f",
+    "block_cell": [
+      5,
+      3
+    ],
+    "closed": 84,
+    "opened": 14,
+    "cells": [
+      {
+        "cell": [
+          10,
+          6
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          11,
+          6
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          10,
+          7
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          11,
+          7
+        ],
+        "foot": 1,
+        "solid": 0
+      }
+    ],
+    "patch": "res://assets/silph-co-7f/door-1-open.png"
+  },
+  {
+    "id": "7f_2",
+    "map": "silph-co-7f",
+    "block_cell": [
+      10,
+      2
+    ],
+    "closed": 84,
+    "opened": 14,
+    "cells": [
+      {
+        "cell": [
+          20,
+          4
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          21,
+          4
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          20,
+          5
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          21,
+          5
+        ],
+        "foot": 1,
+        "solid": 0
+      }
+    ],
+    "patch": "res://assets/silph-co-7f/door-2-open.png"
+  },
+  {
+    "id": "7f_3",
+    "map": "silph-co-7f",
+    "block_cell": [
+      10,
+      6
+    ],
+    "closed": 84,
+    "opened": 14,
+    "cells": [
+      {
+        "cell": [
+          20,
+          12
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          21,
+          12
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          20,
+          13
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          21,
+          13
+        ],
+        "foot": 1,
+        "solid": 0
+      }
+    ],
+    "patch": "res://assets/silph-co-7f/door-3-open.png"
+  },
+  {
+    "id": "8f_1",
+    "map": "silph-co-8f",
+    "block_cell": [
+      3,
+      4
+    ],
+    "closed": 95,
+    "opened": 14,
+    "cells": [
+      {
+        "cell": [
+          6,
+          8
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          7,
+          8
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          6,
+          9
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          7,
+          9
+        ],
+        "foot": 1,
+        "solid": 0
+      }
+    ],
+    "patch": "res://assets/silph-co-8f/door-1-open.png"
+  },
+  {
+    "id": "9f_1",
+    "map": "silph-co-9f",
+    "block_cell": [
+      1,
+      4
+    ],
+    "closed": 95,
+    "opened": 14,
+    "cells": [
+      {
+        "cell": [
+          2,
+          8
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          3,
+          8
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          2,
+          9
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          3,
+          9
+        ],
+        "foot": 1,
+        "solid": 0
+      }
+    ],
+    "patch": "res://assets/silph-co-9f/door-1-open.png"
+  },
+  {
+    "id": "9f_2",
+    "map": "silph-co-9f",
+    "block_cell": [
+      9,
+      2
+    ],
+    "closed": 84,
+    "opened": 14,
+    "cells": [
+      {
+        "cell": [
+          18,
+          4
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          19,
+          4
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          18,
+          5
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          19,
+          5
+        ],
+        "foot": 1,
+        "solid": 0
+      }
+    ],
+    "patch": "res://assets/silph-co-9f/door-2-open.png"
+  },
+  {
+    "id": "9f_3",
+    "map": "silph-co-9f",
+    "block_cell": [
+      9,
+      5
+    ],
+    "closed": 84,
+    "opened": 14,
+    "cells": [
+      {
+        "cell": [
+          18,
+          10
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          19,
+          10
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          18,
+          11
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          19,
+          11
+        ],
+        "foot": 1,
+        "solid": 0
+      }
+    ],
+    "patch": "res://assets/silph-co-9f/door-3-open.png"
+  },
+  {
+    "id": "9f_4",
+    "map": "silph-co-9f",
+    "block_cell": [
+      5,
+      6
+    ],
+    "closed": 95,
+    "opened": 14,
+    "cells": [
+      {
+        "cell": [
+          10,
+          12
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          11,
+          12
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          10,
+          13
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          11,
+          13
+        ],
+        "foot": 1,
+        "solid": 0
+      }
+    ],
+    "patch": "res://assets/silph-co-9f/door-4-open.png"
+  },
+  {
+    "id": "10f_1",
+    "map": "silph-co-10f",
+    "block_cell": [
+      5,
+      4
+    ],
+    "closed": 84,
+    "opened": 14,
+    "cells": [
+      {
+        "cell": [
+          10,
+          8
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          11,
+          8
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          10,
+          9
+        ],
+        "foot": 1,
+        "solid": 0
+      },
+      {
+        "cell": [
+          11,
+          9
+        ],
+        "foot": 1,
+        "solid": 0
+      }
+    ],
+    "patch": "res://assets/silph-co-10f/door-1-open.png"
+  },
+  {
+    "id": "11f_1",
+    "map": "silph-co-11f",
+    "block_cell": [
+      3,
+      6
+    ],
+    "closed": 32,
+    "opened": 3,
+    "cells": [
+      {
+        "cell": [
+          6,
+          12
+        ],
+        "foot": 31,
+        "solid": 0
+      },
+      {
+        "cell": [
+          7,
+          12
+        ],
+        "foot": 31,
+        "solid": 0
+      },
+      {
+        "cell": [
+          6,
+          13
+        ],
+        "foot": 31,
+        "solid": 0
+      },
+      {
+        "cell": [
+          7,
+          13
+        ],
+        "foot": 31,
+        "solid": 0
+      }
+    ],
+    "patch": "res://assets/silph-co-11f/door-1-open.png"
+  }
+]

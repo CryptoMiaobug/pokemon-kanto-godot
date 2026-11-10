@@ -1,0 +1,78 @@
+{
+  "source": "sRoute2_FireRed",
+  "encounter_rate": 21,
+  "slots": [
+    {
+      "species_id": "rattata",
+      "min_level": 3,
+      "max_level": 3,
+      "weight": 20
+    },
+    {
+      "species_id": "pidgey",
+      "min_level": 3,
+      "max_level": 3,
+      "weight": 20
+    },
+    {
+      "species_id": "rattata",
+      "min_level": 4,
+      "max_level": 4,
+      "weight": 10
+    },
+    {
+      "species_id": "pidgey",
+      "min_level": 4,
+      "max_level": 4,
+      "weight": 10
+    },
+    {
+      "species_id": "rattata",
+      "min_level": 2,
+      "max_level": 2,
+      "weight": 10
+    },
+    {
+      "species_id": "pidgey",
+      "min_level": 2,
+      "max_level": 2,
+      "weight": 10
+    },
+    {
+      "species_id": "rattata",
+      "min_level": 5,
+      "max_level": 5,
+      "weight": 5
+    },
+    {
+      "species_id": "pidgey",
+      "min_level": 5,
+      "max_level": 5,
+      "weight": 5
+    },
+    {
+      "species_id": "caterpie",
+      "min_level": 4,
+      "max_level": 4,
+      "weight": 4
+    },
+    {
+      "species_id": "weedle",
+      "min_level": 4,
+      "max_level": 4,
+      "weight": 4
+    },
+    {
+      "species_id": "caterpie",
+      "min_level": 5,
+      "max_level": 5,
+      "weight": 1
+    },
+    {
+      "species_id": "weedle",
+      "min_level": 5,
+      "max_level": 5,
+      "weight": 1
+    }
+  ]
+}

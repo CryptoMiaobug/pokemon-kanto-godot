@@ -1,0 +1,19 @@
+{
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "species": [
+    "growlithe",
+    "venonat"
+  ],
+  "sources": [
+    "src/data/pokemon/species_info.h",
+    "src/data/pokemon/level_up_learnsets.h",
+    "src/pokemon_icon.c",
+    "graphics/pokemon/<species>/front.png",
+    "graphics/pokemon/<species>/back.png",
+    "graphics/pokemon/<species>/icon.png",
+    "graphics/pokemon/<species>/normal.pal",
+    "graphics/pokemon/icon_palettes/"
+  ],
+  "adaptation": "native64 front/back and32 icon, indexed source palette0 transparent, existing nearest battle renderer; no evolution expansion",
+  "rights": "Original rights holders; no redistribution clearance"
+}

@@ -1,0 +1,924 @@
+{
+  "artRepository": "pret/pokefirered",
+  "commit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "sourceLocal": "local-source/decomp",
+  "rulesData": "@pkmn/sim 0.10.12 Dex.forGen(3), MIT; exported by tools/import_pokemon.mjs",
+  "artRights": "Pokémon original game assets, retained source attribution; internal development. Map independently remains Red recolored layout.",
+  "records": [
+    {
+      "output": "bulbasaur-front.png",
+      "source": "pokemon/bulbasaur/front.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        14,
+        15,
+        48,
+        48
+      ],
+      "sha256": "2c43c65bb035236ff9205da2f2e2fe2752e2b241b8c89bb274a0a78b3bfe8624"
+    },
+    {
+      "output": "bulbasaur-back.png",
+      "source": "pokemon/bulbasaur/back.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        10,
+        16,
+        55,
+        48
+      ],
+      "sha256": "108c87c7a10a0a98e68045019ddeee342f257fcf8142b23429e7e62f6e018832"
+    },
+    {
+      "output": "charmander-front.png",
+      "source": "pokemon/charmander/front.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        14,
+        12,
+        49,
+        51
+      ],
+      "sha256": "8e16183ae9d1c881caf64bbff742db8aa960cb9e2582d5d6912f19039b84431e"
+    },
+    {
+      "output": "charmander-back.png",
+      "source": "pokemon/charmander/back.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        9,
+        11,
+        56,
+        54
+      ],
+      "sha256": "3bfab2ab4dc07ad176d6e5e03d66d8f3da2390fa3a79a5aa98aead66213393d8"
+    },
+    {
+      "output": "squirtle-front.png",
+      "source": "pokemon/squirtle/front.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        16,
+        16,
+        54,
+        52
+      ],
+      "sha256": "05849ecf2fb57ee0cd9b2c80cae65459a7909beaaded0c9f4f16217fad04ab30"
+    },
+    {
+      "output": "squirtle-back.png",
+      "source": "pokemon/squirtle/back.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        7,
+        16,
+        52,
+        49
+      ],
+      "sha256": "849548888b27b2ba9c8e0622eebd6bce1778b0494cf73b336f4fbd802664f78e"
+    },
+    {
+      "output": "rattata-front.png",
+      "source": "pokemon/rattata/front.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        11,
+        15,
+        47,
+        50
+      ],
+      "sha256": "a547110af540e8222bf719e7b57f6ec273f2b901d10f8539927b5e8d7d18916d"
+    },
+    {
+      "output": "rattata-back.png",
+      "source": "pokemon/rattata/back.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        9,
+        13,
+        58,
+        51
+      ],
+      "sha256": "bb0377033ccdb8f5bc30a384c1fde3c00d1ea0ea10b0a0a416fc14e198e5d88a"
+    },
+    {
+      "output": "pidgey-front.png",
+      "source": "pokemon/pidgey/front.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        16,
+        14,
+        50,
+        51
+      ],
+      "sha256": "3165d2a296b006f0e46124c3317383fe487d25bf5708224595da7be781cdf486"
+    },
+    {
+      "output": "pidgey-back.png",
+      "source": "pokemon/pidgey/back.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        8,
+        8,
+        56,
+        56
+      ],
+      "sha256": "bc948da6b7e51ae80c0babd5f6d5834dca13e817397812767407e2b830790583"
+    },
+    {
+      "output": "ivysaur-front.png",
+      "source": "pokemon/ivysaur/front.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        10,
+        12,
+        53,
+        54
+      ],
+      "sha256": "692967fe13ae18d8d2ee1f10f5090fc07e23880178abbb2a0e161ca4c50e12f8"
+    },
+    {
+      "output": "ivysaur-back.png",
+      "source": "pokemon/ivysaur/back.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        4,
+        11,
+        56,
+        54
+      ],
+      "sha256": "cf69d35be99ce6d2108a4d02ba1e11451aa8faa2f1e9336b235fc1edfdab8522"
+    },
+    {
+      "output": "charmeleon-front.png",
+      "source": "pokemon/charmeleon/front.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        8,
+        8,
+        57,
+        55
+      ],
+      "sha256": "b403820f0c29650e87a9194db38bdd65571d697177971168360cc12c86ced45b"
+    },
+    {
+      "output": "charmeleon-back.png",
+      "source": "pokemon/charmeleon/back.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        7,
+        8,
+        58,
+        57
+      ],
+      "sha256": "54789855ddc2ab6692d79f17573097d27c9c3360f9969b66ccdad5c12aa33ffe"
+    },
+    {
+      "output": "wartortle-front.png",
+      "source": "pokemon/wartortle/front.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        7,
+        9,
+        56,
+        55
+      ],
+      "sha256": "08cfd349a10a9a7e68dff77e2ec1bc63ad2ff8d12053f11bc58bfc75a56265cf"
+    },
+    {
+      "output": "wartortle-back.png",
+      "source": "pokemon/wartortle/back.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        2,
+        10,
+        57,
+        54
+      ],
+      "sha256": "8b11aa2846b6b97a35c582088456239571760e4cb77e5f927dca9d8ea8ce5921"
+    },
+    {
+      "output": "raticate-front.png",
+      "source": "pokemon/raticate/front.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        5,
+        18,
+        58,
+        53
+      ],
+      "sha256": "7378c6e188f742401f644f6946fd4b8c757692c0daed9931a8416233663bca62"
+    },
+    {
+      "output": "raticate-back.png",
+      "source": "pokemon/raticate/back.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        5,
+        13,
+        57,
+        51
+      ],
+      "sha256": "1bc0b6c9548b1563db334d103ce216bf72b8a60f9d1336bcb2daff1b482b3d39"
+    },
+    {
+      "output": "pidgeotto-front.png",
+      "source": "pokemon/pidgeotto/front.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        10,
+        5,
+        55,
+        57
+      ],
+      "sha256": "ea30684730661bda0f0cd7ce00fc51b3341f4c1dfb3998795ffafeaf2b2c2b02"
+    },
+    {
+      "output": "pidgeotto-back.png",
+      "source": "pokemon/pidgeotto/back.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        5,
+        12,
+        61,
+        52
+      ],
+      "sha256": "ecb050b90665a1e3c0de67d577406efb9a7b605e5ca54f2380ec378f1ae1a8f2"
+    },
+    {
+      "output": "venusaur-front.png",
+      "source": "pokemon/venusaur/front.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        3,
+        6,
+        62,
+        60
+      ],
+      "sha256": "c53bbcbb031413bd43dab16b108b3a81f376fa65a4612f4be30ed186ca32f562"
+    },
+    {
+      "output": "venusaur-back.png",
+      "source": "pokemon/venusaur/back.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        0,
+        10,
+        64,
+        54
+      ],
+      "sha256": "f38b46aed3d92831c54656174ffbfd2ad7775c2186de5fbf12957a86ead1f3f9"
+    },
+    {
+      "output": "charizard-front.png",
+      "source": "pokemon/charizard/front.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        0,
+        1,
+        64,
+        63
+      ],
+      "sha256": "929072967b97bc79fb71c1681491bd4aeb1d0437db876d703c91b26886910211"
+    },
+    {
+      "output": "charizard-back.png",
+      "source": "pokemon/charizard/back.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        0,
+        4,
+        64,
+        60
+      ],
+      "sha256": "7897b7cfc0ce7c4eb246186dec9f62b59c3c85417b04898af735daf5657bd271"
+    },
+    {
+      "output": "blastoise-front.png",
+      "source": "pokemon/blastoise/front.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        3,
+        6,
+        62,
+        59
+      ],
+      "sha256": "e4c49c224f521c2a5f7abcfffdad793b1f796e250f88330812d92b7e37ac7fb9"
+    },
+    {
+      "output": "blastoise-back.png",
+      "source": "pokemon/blastoise/back.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        0,
+        10,
+        64,
+        54
+      ],
+      "sha256": "fdf64c13785a0194dd08dbe46de09c4863a805927fc1e316ca4cf80fae4220b3"
+    },
+    {
+      "output": "pidgeot-front.png",
+      "source": "pokemon/pidgeot/front.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        1,
+        2,
+        63,
+        63
+      ],
+      "sha256": "cdf17af0b5b4b66cba2f8c52081a05105c935be8a147c6ae8b74f541305f6313"
+    },
+    {
+      "output": "pidgeot-back.png",
+      "source": "pokemon/pidgeot/back.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        0,
+        7,
+        61,
+        58
+      ],
+      "sha256": "8ca2107a836323e42aefa17889f189602e9a60d833738941f344d0ce32cf1341"
+    },
+    {
+      "output": "bulbasaur-icon.png",
+      "source": "pokemon/bulbasaur/icon.png + icon_palette_1.pal; pokemon_icon.c palette index",
+      "size": [
+        32,
+        32
+      ],
+      "alpha_bbox": [
+        6,
+        12,
+        26,
+        29
+      ],
+      "sha256": "680784a01a6f01320fd5d2f66063c4bc731242d0e99e76079b21b7c2a185c5b8"
+    },
+    {
+      "output": "charmander-icon.png",
+      "source": "pokemon/charmander/icon.png + icon_palette_0.pal; pokemon_icon.c palette index",
+      "size": [
+        32,
+        32
+      ],
+      "alpha_bbox": [
+        6,
+        11,
+        27,
+        29
+      ],
+      "sha256": "e08f5c06063eb4c072e4785a3821cb12f7209437b5d2155eaca55e5cc75b764f"
+    },
+    {
+      "output": "squirtle-icon.png",
+      "source": "pokemon/squirtle/icon.png + icon_palette_0.pal; pokemon_icon.c palette index",
+      "size": [
+        32,
+        32
+      ],
+      "alpha_bbox": [
+        6,
+        12,
+        27,
+        29
+      ],
+      "sha256": "614633039d26a49c770c7f290779300774e535d1f75168e406f8633da8da26de"
+    },
+    {
+      "output": "rattata-icon.png",
+      "source": "pokemon/rattata/icon.png + icon_palette_2.pal; pokemon_icon.c palette index",
+      "size": [
+        32,
+        32
+      ],
+      "alpha_bbox": [
+        7,
+        10,
+        25,
+        31
+      ],
+      "sha256": "2a1f83bf215ccd70fed04fb9f0b1fe6de463cbace55e9d543a3a155e22d7d0bb"
+    },
+    {
+      "output": "pidgey-icon.png",
+      "source": "pokemon/pidgey/icon.png + icon_palette_0.pal; pokemon_icon.c palette index",
+      "size": [
+        32,
+        32
+      ],
+      "alpha_bbox": [
+        7,
+        12,
+        25,
+        29
+      ],
+      "sha256": "0655cdf3c1e487c694efc1516bcc48f1c8883267b7fab40cd884b79e4da0b937"
+    },
+    {
+      "output": "ivysaur-icon.png",
+      "source": "pokemon/ivysaur/icon.png + icon_palette_1.pal; pokemon_icon.c palette index",
+      "size": [
+        32,
+        32
+      ],
+      "alpha_bbox": [
+        6,
+        11,
+        27,
+        29
+      ],
+      "sha256": "582f9c15f95ec8995b7c9c8271a6dc329483415c70168c6001493f2ad562be53"
+    },
+    {
+      "output": "charmeleon-icon.png",
+      "source": "pokemon/charmeleon/icon.png + icon_palette_0.pal; pokemon_icon.c palette index",
+      "size": [
+        32,
+        32
+      ],
+      "alpha_bbox": [
+        5,
+        9,
+        27,
+        31
+      ],
+      "sha256": "07b3f69f95aba3fcf4e58d9ef5465a7dba5340fb700be2ff438941609ae0e15b"
+    },
+    {
+      "output": "wartortle-icon.png",
+      "source": "pokemon/wartortle/icon.png + icon_palette_2.pal; pokemon_icon.c palette index",
+      "size": [
+        32,
+        32
+      ],
+      "alpha_bbox": [
+        5,
+        10,
+        28,
+        30
+      ],
+      "sha256": "8a4c7bf81e57e5a0c3b0f4ca9711073f68a4a7d7aab339b3a8ea392617839094"
+    },
+    {
+      "output": "raticate-icon.png",
+      "source": "pokemon/raticate/icon.png + icon_palette_1.pal; pokemon_icon.c palette index",
+      "size": [
+        32,
+        32
+      ],
+      "alpha_bbox": [
+        5,
+        10,
+        28,
+        31
+      ],
+      "sha256": "60fa1a7a9177c2a023192954efc707288c9fb1826756194bfc0f383864015771"
+    },
+    {
+      "output": "pidgeotto-icon.png",
+      "source": "pokemon/pidgeotto/icon.png + icon_palette_0.pal; pokemon_icon.c palette index",
+      "size": [
+        32,
+        32
+      ],
+      "alpha_bbox": [
+        5,
+        11,
+        26,
+        30
+      ],
+      "sha256": "2214920dc5ccffa4f445a17ac0166ec7930128250e566c08793cb19e427c6122"
+    },
+    {
+      "output": "venusaur-icon.png",
+      "source": "pokemon/venusaur/icon.png + icon_palette_1.pal; pokemon_icon.c palette index",
+      "size": [
+        32,
+        32
+      ],
+      "alpha_bbox": [
+        3,
+        9,
+        30,
+        31
+      ],
+      "sha256": "eefd68d9c355d32bee3b9983224ed5305d1e29e9e661d987c769f2b2e558c0f5"
+    },
+    {
+      "output": "charizard-icon.png",
+      "source": "pokemon/charizard/icon.png + icon_palette_0.pal; pokemon_icon.c palette index",
+      "size": [
+        32,
+        32
+      ],
+      "alpha_bbox": [
+        1,
+        9,
+        31,
+        31
+      ],
+      "sha256": "a6ebe8c049709b4e491674a26a8330ddce7045dbd2916dfe741f159f1330b776"
+    },
+    {
+      "output": "blastoise-icon.png",
+      "source": "pokemon/blastoise/icon.png + icon_palette_2.pal; pokemon_icon.c palette index",
+      "size": [
+        32,
+        32
+      ],
+      "alpha_bbox": [
+        5,
+        10,
+        28,
+        31
+      ],
+      "sha256": "551821b193c8e8be2fb10699afcfa6158ba276c30dee7aa1f511b36100dab472"
+    },
+    {
+      "output": "pidgeot-icon.png",
+      "source": "pokemon/pidgeot/icon.png + icon_palette_0.pal; pokemon_icon.c palette index",
+      "size": [
+        32,
+        32
+      ],
+      "alpha_bbox": [
+        4,
+        10,
+        29,
+        30
+      ],
+      "sha256": "98f7c5e5046a49634d2ba91aaddff505669a8b37023da9ba83d5c760c7693708"
+    },
+    {
+      "output": "poke_ball.png",
+      "source": "graphics/items/poke_ball",
+      "size": [
+        24,
+        24
+      ],
+      "alpha_bbox": [
+        3,
+        3,
+        21,
+        21
+      ],
+      "sha256": "bacbfdad4f6e1a0078371dd4e865a785a7044dfd8040a8e59e546016c2c2324e"
+    },
+    {
+      "output": "potion.png",
+      "source": "graphics/items/potion",
+      "size": [
+        24,
+        24
+      ],
+      "alpha_bbox": [
+        5,
+        2,
+        20,
+        23
+      ],
+      "sha256": "f0c817595bbdfe2c8e92f2f40cf28bc9f83be0f38c2973fb2ece5b68eb0254d0"
+    },
+    {
+      "output": "grass-arena.png",
+      "source": "battle_terrain/grass/terrain.png + terrain.bin + terrain.pal",
+      "size": [
+        240,
+        112
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        240,
+        112
+      ],
+      "sha256": "6517ddcf0dd540a9c1793ef5d4d33de53e3e04824848dbd3a7996a546293364a"
+    },
+    {
+      "output": "healthbox-player.png",
+      "source": "battle_interface original health frame border/blank-center tiles only; glyph tiles excluded",
+      "size": [
+        104,
+        32
+      ],
+      "alpha_bbox": [
+        1,
+        2,
+        103,
+        31
+      ],
+      "sha256": "0265674961a5269db713d0d36dccbfebb9bbf498fcb65fa568dc6318a33caa6c"
+    },
+    {
+      "output": "healthbox-enemy.png",
+      "source": "battle_interface original health frame border/blank-center tiles only; glyph tiles excluded",
+      "size": [
+        104,
+        32
+      ],
+      "alpha_bbox": [
+        1,
+        2,
+        103,
+        31
+      ],
+      "sha256": "0265674961a5269db713d0d36dccbfebb9bbf498fcb65fa568dc6318a33caa6c"
+    },
+    {
+      "output": "health-slot.png",
+      "source": "battle_interface/healthbox_elements.png HP label + slot tiles; healthbar.pal",
+      "size": [
+        54,
+        8
+      ],
+      "alpha_bbox": [
+        0,
+        1,
+        54,
+        8
+      ],
+      "sha256": "fc353c36e005a1da5e3f2dc49f5e16ab0f23b669306410fa5de59688ab22c516"
+    },
+    {
+      "output": "window.png",
+      "source": "text_window/type1.png embedded palette",
+      "size": [
+        24,
+        24
+      ],
+      "alpha_bbox": [
+        1,
+        1,
+        23,
+        23
+      ],
+      "sha256": "53bf018ccd841fb776dd2f6c1e4845a9a906d6c3cc1d34cc47283b3b7c6de135"
+    },
+    {
+      "output": "red-0.png",
+      "source": "object_events/pics/people/red_normal.png frame 0",
+      "size": [
+        16,
+        32
+      ],
+      "alpha_bbox": [
+        1,
+        12,
+        15,
+        31
+      ],
+      "sha256": "1a033632cea56d380f9f56b90184f6ac071c6f006004c786a48f1122a2841f54"
+    },
+    {
+      "output": "red-1.png",
+      "source": "object_events/pics/people/red_normal.png frame 1",
+      "size": [
+        16,
+        32
+      ],
+      "alpha_bbox": [
+        1,
+        12,
+        15,
+        31
+      ],
+      "sha256": "3560b087508bff53f586046b7961ec8cbb1e59b5047e0670beef9d9b9eae2dc1"
+    },
+    {
+      "output": "red-2.png",
+      "source": "object_events/pics/people/red_normal.png frame 2",
+      "size": [
+        16,
+        32
+      ],
+      "alpha_bbox": [
+        0,
+        12,
+        14,
+        31
+      ],
+      "sha256": "9e50024ebcc869fafaa51ddc66c11fb7e62ac4ed5892759822b201d0fbd95617"
+    },
+    {
+      "output": "red-3.png",
+      "source": "object_events/pics/people/red_normal.png frame 3",
+      "size": [
+        16,
+        32
+      ],
+      "alpha_bbox": [
+        0,
+        13,
+        15,
+        32
+      ],
+      "sha256": "800db0d3070ec2146c4a96f7be90a71d2e71a512615e851996653d5409c47450"
+    },
+    {
+      "output": "red-4.png",
+      "source": "object_events/pics/people/red_normal.png frame 4",
+      "size": [
+        16,
+        32
+      ],
+      "alpha_bbox": [
+        1,
+        13,
+        16,
+        32
+      ],
+      "sha256": "9b2ec9fa475df9c1ab313da9f37d52e20eb9f1d8002de5939008154f43586b9a"
+    },
+    {
+      "output": "red-5.png",
+      "source": "object_events/pics/people/red_normal.png frame 5",
+      "size": [
+        16,
+        32
+      ],
+      "alpha_bbox": [
+        1,
+        13,
+        15,
+        32
+      ],
+      "sha256": "a05a767e454d684fc4e2198ed3cfd68260913f1914c3466a2b4e0d8cbf5bfabe"
+    },
+    {
+      "output": "red-6.png",
+      "source": "object_events/pics/people/red_normal.png frame 6",
+      "size": [
+        16,
+        32
+      ],
+      "alpha_bbox": [
+        1,
+        13,
+        15,
+        32
+      ],
+      "sha256": "2f73b20d77198f999050f5e64f417b15c306c2ea4830683e522057abc52361de"
+    },
+    {
+      "output": "red-7.png",
+      "source": "object_events/pics/people/red_normal.png frame 7",
+      "size": [
+        16,
+        32
+      ],
+      "alpha_bbox": [
+        0,
+        13,
+        14,
+        31
+      ],
+      "sha256": "c796161d001082873c4d558426b197add1ef393817d982be98ec508670209491"
+    },
+    {
+      "output": "red-8.png",
+      "source": "object_events/pics/people/red_normal.png frame 8",
+      "size": [
+        16,
+        32
+      ],
+      "alpha_bbox": [
+        0,
+        13,
+        14,
+        31
+      ],
+      "sha256": "de2a31257d88e558af6fe8257b6824e19cafb8f0a6e283032069c172ce3f8e7a"
+    },
+    {
+      "output": "evolution-bg.png",
+      "source": "evolution_scene/bg.png + bg.bin + transition.pal; bright phase adaptation",
+      "size": [
+        256,
+        256
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "sha256": "95c1d8b302aee8c5fbe40043540a36c985d58c80e5a409f0dafb1614e091b662"
+    },
+    {
+      "output": "evolution-bg2.png",
+      "source": "evolution_scene/bg.png + bg2.bin + transition.pal; bright phase adaptation",
+      "size": [
+        256,
+        256
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "sha256": "297c5c0c257c764acccf422e7e99578e0b11f9ed5accb1524136bdad9f0f9434"
+    },
+    {
+      "output": "evolution-sparkle.png",
+      "source": "evolution_scene/sparkle.png embedded palette",
+      "size": [
+        8,
+        8
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        8,
+        8
+      ],
+      "sha256": "50b2a771f06aea10ea0bd5561a23a15f8b743e4b05ac060485c34a79adb7ecb5"
+    }
+  ]
+}

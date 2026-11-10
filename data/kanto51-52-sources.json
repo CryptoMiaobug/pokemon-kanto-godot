@@ -1,0 +1,60 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "mapping": [
+    {
+      "map": "victory-road-1f",
+      "redObject": 1,
+      "fireRedTrainer": "CooltrainerNaomi",
+      "slice": 51
+    },
+    {
+      "map": "victory-road-1f",
+      "redObject": 2,
+      "fireRedTrainer": "CooltrainerRolando",
+      "slice": 51
+    },
+    {
+      "map": "victory-road-2f",
+      "redObject": 1,
+      "fireRedTrainer": "BlackBeltDaisuke",
+      "slice": 52
+    },
+    {
+      "map": "victory-road-2f",
+      "redObject": 2,
+      "fireRedTrainer": "JugglerNelson",
+      "slice": 52
+    },
+    {
+      "map": "victory-road-2f",
+      "redObject": 3,
+      "fireRedTrainer": "TamerVincent",
+      "slice": 52
+    },
+    {
+      "map": "victory-road-2f",
+      "redObject": 4,
+      "fireRedTrainer": "PokemaniacDawson",
+      "slice": 52
+    },
+    {
+      "map": "victory-road-2f",
+      "redObject": 5,
+      "fireRedTrainer": "JugglerGregory",
+      "slice": 52
+    }
+  ],
+  "sources": [
+    "Red data/maps/VictoryRoad1F.json and VictoryRoad2F.json actors retained",
+    "FR src/data/trainer_parties.h, trainers.h, wild_encounters.json, pokemon/species_info.h, pokemon/level_up_learnsets.h",
+    "FR src/battle_script_commands.c Cmd_tryimprison and battle_util.c GetImprisonedMovesCount"
+  ],
+  "sourceSHA256": {
+    "src/data/trainer_parties.h": "cb135d9cbdfc52c87066374d582506830a8c93561eab2033d847331c2de00299",
+    "src/data/trainers.h": "b2105a3b1d1baec02d8f6a89f44bcdf6a05cbaac1d6d8872766eec49aa8555bc",
+    "src/data/wild_encounters.json": "a6399199987e1bdf8502e9bfdcfc9d8ad57d74df206d22ba20f020492bd3bf7c"
+  },
+  "adaptation": "Existing Red geometry/static actors; E confirmation rather than sight/approach. Exact complete ordered FR parties, source explicit moves and held items/healing inventory. Existing fixed IV/nature/AI subset; RolePlay retains explicitly disclosed no-ability-effects boundary. Source Imprison added. No 3F trainers/wild, legendary capture or item pickup.",
+  "rights": "Original artwork rights remain with holders; redistribution clearance not established"
+}

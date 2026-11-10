@@ -1,0 +1,403 @@
+{
+  "vermilion-city": [
+    {
+      "index": 5,
+      "cell": [
+        18,
+        31
+      ],
+      "target": "vermilion-dock",
+      "target_index": 0,
+      "arrival": [
+        14,
+        1
+      ],
+      "direction": "down"
+    },
+    {
+      "index": 6,
+      "cell": [
+        19,
+        31
+      ],
+      "target": "vermilion-dock",
+      "target_index": 0,
+      "arrival": [
+        14,
+        1
+      ],
+      "direction": "down"
+    }
+  ],
+  "vermilion-dock": [
+    {
+      "index": 0,
+      "cell": [
+        14,
+        0
+      ],
+      "target": "vermilion-city",
+      "target_index": 5,
+      "arrival": [
+        18,
+        30
+      ],
+      "direction": "up"
+    },
+    {
+      "index": 1,
+      "cell": [
+        14,
+        2
+      ],
+      "target": "ssanne-1f",
+      "target_index": 1,
+      "arrival": [
+        27,
+        1
+      ],
+      "direction": "down"
+    }
+  ],
+  "ssanne-1f": [
+    {
+      "index": 0,
+      "cell": [
+        26,
+        0
+      ],
+      "target": "vermilion-dock",
+      "target_index": 1,
+      "arrival": [
+        14,
+        2
+      ],
+      "direction": "up"
+    },
+    {
+      "index": 1,
+      "cell": [
+        27,
+        0
+      ],
+      "target": "vermilion-dock",
+      "target_index": 1,
+      "arrival": [
+        14,
+        2
+      ],
+      "direction": "up"
+    },
+    {
+      "index": 2,
+      "cell": [
+        31,
+        8
+      ],
+      "target": "ssanne-1f-rooms",
+      "target_index": 0,
+      "arrival": [
+        0,
+        1
+      ],
+      "direction": "down"
+    },
+    {
+      "index": 3,
+      "cell": [
+        23,
+        8
+      ],
+      "target": "ssanne-1f-rooms",
+      "target_index": 1,
+      "arrival": [
+        10,
+        1
+      ],
+      "direction": "down"
+    },
+    {
+      "index": 4,
+      "cell": [
+        19,
+        8
+      ],
+      "target": "ssanne-1f-rooms",
+      "target_index": 2,
+      "arrival": [
+        20,
+        1
+      ],
+      "direction": "down"
+    },
+    {
+      "index": 5,
+      "cell": [
+        15,
+        8
+      ],
+      "target": "ssanne-1f-rooms",
+      "target_index": 3,
+      "arrival": [
+        0,
+        11
+      ],
+      "direction": "down"
+    },
+    {
+      "index": 6,
+      "cell": [
+        11,
+        8
+      ],
+      "target": "ssanne-1f-rooms",
+      "target_index": 4,
+      "arrival": [
+        10,
+        11
+      ],
+      "direction": "down"
+    },
+    {
+      "index": 7,
+      "cell": [
+        7,
+        8
+      ],
+      "target": "ssanne-1f-rooms",
+      "target_index": 5,
+      "arrival": [
+        20,
+        11
+      ],
+      "direction": "down"
+    },
+    {
+      "index": 8,
+      "cell": [
+        2,
+        6
+      ],
+      "target": "ssanne-2f",
+      "target_index": 6,
+      "arrival": [
+        2,
+        5
+      ],
+      "direction": "up"
+    },
+    {
+      "index": 9,
+      "cell": [
+        37,
+        15
+      ],
+      "closed": true,
+      "reason": "其他船层与厨房本轮未开放。"
+    },
+    {
+      "index": 10,
+      "cell": [
+        3,
+        16
+      ],
+      "closed": true,
+      "reason": "其他船层与厨房本轮未开放。"
+    }
+  ],
+  "ssanne-1f-rooms": [
+    {
+      "index": 0,
+      "cell": [
+        0,
+        0
+      ],
+      "target": "ssanne-1f",
+      "target_index": 2,
+      "arrival": [
+        31,
+        7
+      ],
+      "direction": "up"
+    },
+    {
+      "index": 1,
+      "cell": [
+        10,
+        0
+      ],
+      "target": "ssanne-1f",
+      "target_index": 3,
+      "arrival": [
+        23,
+        7
+      ],
+      "direction": "up"
+    },
+    {
+      "index": 2,
+      "cell": [
+        20,
+        0
+      ],
+      "target": "ssanne-1f",
+      "target_index": 4,
+      "arrival": [
+        19,
+        7
+      ],
+      "direction": "up"
+    },
+    {
+      "index": 3,
+      "cell": [
+        0,
+        10
+      ],
+      "target": "ssanne-1f",
+      "target_index": 5,
+      "arrival": [
+        15,
+        7
+      ],
+      "direction": "up"
+    },
+    {
+      "index": 4,
+      "cell": [
+        10,
+        10
+      ],
+      "target": "ssanne-1f",
+      "target_index": 6,
+      "arrival": [
+        11,
+        7
+      ],
+      "direction": "up"
+    },
+    {
+      "index": 5,
+      "cell": [
+        20,
+        10
+      ],
+      "target": "ssanne-1f",
+      "target_index": 7,
+      "arrival": [
+        7,
+        7
+      ],
+      "direction": "up"
+    }
+  ],
+  "ssanne-2f": [
+    {
+      "index": 0,
+      "cell": [
+        9,
+        11
+      ],
+      "closed": true,
+      "reason": "二层客房与其他船层本轮未开放。"
+    },
+    {
+      "index": 1,
+      "cell": [
+        13,
+        11
+      ],
+      "closed": true,
+      "reason": "二层客房与其他船层本轮未开放。"
+    },
+    {
+      "index": 2,
+      "cell": [
+        17,
+        11
+      ],
+      "closed": true,
+      "reason": "二层客房与其他船层本轮未开放。"
+    },
+    {
+      "index": 3,
+      "cell": [
+        21,
+        11
+      ],
+      "closed": true,
+      "reason": "二层客房与其他船层本轮未开放。"
+    },
+    {
+      "index": 4,
+      "cell": [
+        25,
+        11
+      ],
+      "closed": true,
+      "reason": "二层客房与其他船层本轮未开放。"
+    },
+    {
+      "index": 5,
+      "cell": [
+        29,
+        11
+      ],
+      "closed": true,
+      "reason": "二层客房与其他船层本轮未开放。"
+    },
+    {
+      "index": 6,
+      "cell": [
+        2,
+        4
+      ],
+      "target": "ssanne-1f",
+      "target_index": 8,
+      "arrival": [
+        2,
+        7
+      ],
+      "direction": "up"
+    },
+    {
+      "index": 7,
+      "cell": [
+        2,
+        12
+      ],
+      "closed": true,
+      "reason": "二层客房与其他船层本轮未开放。"
+    },
+    {
+      "index": 8,
+      "cell": [
+        36,
+        4
+      ],
+      "target": "ssanne-captain",
+      "target_index": 0,
+      "arrival": [
+        0,
+        6
+      ],
+      "direction": "up"
+    }
+  ],
+  "ssanne-captain": [
+    {
+      "index": 0,
+      "cell": [
+        0,
+        7
+      ],
+      "target": "ssanne-2f",
+      "target_index": 8,
+      "arrival": [
+        36,
+        5
+      ],
+      "direction": "down"
+    }
+  ]
+}

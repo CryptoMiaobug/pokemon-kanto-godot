@@ -1,0 +1,75 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/LoreleisRoom.json",
+  "mapSHA256": "829bb7f3e13900229fe4e5a36be96bdf56b01ed13839ca6e69035ce2f5876759",
+  "warps": [
+    {
+      "x": 4,
+      "y": 11,
+      "destMap": "INDIGO_PLATEAU_LOBBY",
+      "destMapId": 174,
+      "destMapName": "IndigoPlateauLobby",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 5,
+      "y": 11,
+      "destMap": "INDIGO_PLATEAU_LOBBY",
+      "destMapId": 174,
+      "destMapName": "IndigoPlateauLobby",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "destMap": "BRUNOS_ROOM",
+      "destMapId": 246,
+      "destMapName": "BrunosRoom",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "destMap": "BRUNOS_ROOM",
+      "destMapId": 246,
+      "destMapName": "BrunosRoom",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "LORELEISROOM_LORELEI",
+      "x": 5,
+      "y": 2,
+      "sprite": "SPRITE_LORELEI",
+      "spriteId": 59,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_LORELEISROOM_LORELEI",
+      "textIndex": 1,
+      "trainer": {
+        "trainerClass": "OPP_LORELEI",
+        "trainerClassId": 44,
+        "trainerPartyIndex": 1,
+        "header": "LoreleisRoomTrainerHeader0",
+        "eventFlag": "EVENT_BEAT_LORELEIS_ROOM_TRAINER_0",
+        "eventFlagIndex": 2273,
+        "sightRange": 0,
+        "textBefore": "LoreleisRoomLoreleiBeforeBattleText",
+        "textEnd": "LoreleisRoomLoreleiEndBattleText",
+        "textAfter": "LoreleisRoomLoreleiAfterBattleText"
+      }
+    }
+  ],
+  "adaptation": "Red geometry, collision, actors, Route21 north connection and original service doors. Center nurse/PC reuse existing interfaces. Mansion and lab remain closed. Gym returns FireRed Secret Key refusal; mansion/key acquisition is slice35. Mart implements only FireRed Hyper Potion 1200 from its seven-item stock.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

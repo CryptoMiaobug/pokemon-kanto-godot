@@ -1,0 +1,42 @@
+{
+  "baseline": "94935795e6cdcc0146298c053c8b163dfd1eb4d4",
+  "sources": [
+    "Red four original maps + source warp indices",
+    "FR full Route7 rate21 table"
+  ],
+  "dependencies": {
+    "existing": [
+      "all encounter species/moves",
+      "door stair arrival latch",
+      "v3 map location"
+    ],
+    "required": [
+      "four native maps and parent LAST_MAP adapters"
+    ],
+    "deferred": [
+      "Saffron gate drinks prerequisite",
+      "Celadon next slice",
+      "trades hidden items"
+    ]
+  },
+  "story": [
+    {
+      "before": "Route8",
+      "action": "door13,3 then stair4,4",
+      "after": "east underground47,2",
+      "reward": 0
+    },
+    {
+      "before": "east passage",
+      "action": "ordinary walk west then stair2,5",
+      "after": "Route7 room4,4",
+      "reward": 0
+    },
+    {
+      "before": "Route7 room",
+      "action": "south original door",
+      "after": "Route7 original5,13 + adjacent landing",
+      "reward": 0
+    }
+  ]
+}

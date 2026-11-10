@@ -1,0 +1,78 @@
+{
+  "source": "sDiglettsCaveB1F_FireRed",
+  "encounter_rate": 5,
+  "slots": [
+    {
+      "species_id": "diglett",
+      "min_level": 18,
+      "max_level": 18,
+      "weight": 20
+    },
+    {
+      "species_id": "diglett",
+      "min_level": 19,
+      "max_level": 19,
+      "weight": 20
+    },
+    {
+      "species_id": "diglett",
+      "min_level": 17,
+      "max_level": 17,
+      "weight": 10
+    },
+    {
+      "species_id": "diglett",
+      "min_level": 15,
+      "max_level": 15,
+      "weight": 10
+    },
+    {
+      "species_id": "diglett",
+      "min_level": 16,
+      "max_level": 16,
+      "weight": 10
+    },
+    {
+      "species_id": "diglett",
+      "min_level": 20,
+      "max_level": 20,
+      "weight": 10
+    },
+    {
+      "species_id": "diglett",
+      "min_level": 21,
+      "max_level": 21,
+      "weight": 5
+    },
+    {
+      "species_id": "diglett",
+      "min_level": 22,
+      "max_level": 22,
+      "weight": 5
+    },
+    {
+      "species_id": "diglett",
+      "min_level": 17,
+      "max_level": 17,
+      "weight": 4
+    },
+    {
+      "species_id": "dugtrio",
+      "min_level": 29,
+      "max_level": 29,
+      "weight": 4
+    },
+    {
+      "species_id": "diglett",
+      "min_level": 17,
+      "max_level": 17,
+      "weight": 1
+    },
+    {
+      "species_id": "dugtrio",
+      "min_level": 31,
+      "max_level": 31,
+      "weight": 1
+    }
+  ]
+}

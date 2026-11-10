@@ -1,0 +1,87 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/CinnabarPokecenter.json",
+  "mapSHA256": "c21e563c6e0bf8d9bd9032486c409a23cd61b8dc8f9ab4a299538f1f93cde16b",
+  "warps": [
+    {
+      "x": 3,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 4,
+      "destWarpIndex": 3
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "CINNABARPOKECENTER_NURSE",
+      "x": 3,
+      "y": 1,
+      "sprite": "SPRITE_NURSE",
+      "spriteId": 41,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_CINNABARPOKECENTER_NURSE",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "CINNABARPOKECENTER_COOLTRAINER_F",
+      "x": 9,
+      "y": 4,
+      "sprite": "SPRITE_COOLTRAINER_F",
+      "spriteId": 6,
+      "movement": "WALK",
+      "rangeOrDirection": "ANY_DIR",
+      "rangeOrDirectionValue": 0,
+      "behavior": "walk_any",
+      "textId": "TEXT_CINNABARPOKECENTER_COOLTRAINER_F",
+      "textIndex": 2
+    },
+    {
+      "index": 3,
+      "const": "CINNABARPOKECENTER_GENTLEMAN",
+      "x": 2,
+      "y": 6,
+      "sprite": "SPRITE_GENTLEMAN",
+      "spriteId": 16,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_CINNABARPOKECENTER_GENTLEMAN",
+      "textIndex": 3
+    },
+    {
+      "index": 4,
+      "const": "CINNABARPOKECENTER_LINK_RECEPTIONIST",
+      "x": 11,
+      "y": 2,
+      "sprite": "SPRITE_LINK_RECEPTIONIST",
+      "spriteId": 42,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_CINNABARPOKECENTER_LINK_RECEPTIONIST",
+      "textIndex": 4
+    }
+  ],
+  "adaptation": "Red geometry, collision, actors, Route21 north connection and original service doors. Center nurse/PC reuse existing interfaces. Mansion and lab remain closed. Gym returns FireRed Secret Key refusal; mansion/key acquisition is slice35. Mart implements only FireRed Hyper Potion 1200 from its seven-item stock.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

@@ -1,0 +1,189 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "baseline": "d38fd74",
+  "maps": "Red data/maps/PokemonTower3F..7F.json and MrFujisHouse.json; original foot geometry, actors, warp indices",
+  "rules": "FR trainer_parties.h/trainers.h, wild_encounters.json, level_up_learnsets.h, battle_script_commands.c, PokemonTower_5F/6F/7F and VolunteerPokemonHouse scripts",
+  "existing": [
+    "paired indexed warps",
+    "atomic trainer settlement",
+    "optional v3 flags",
+    "confusion/sleep/paralysis",
+    "source sprites/importer"
+  ],
+  "required": [
+    "Gastly/Haunter; source current moves Curse/NightShade/Spite/Lick",
+    "Scope identification/no-scope refusal",
+    "four purified cells healing latch",
+    "Marowak30 Bonemerang special uncapturable battle and atomic release",
+    "three Rocket teams and rescue/return then separate flute claim",
+    "key-item menu"
+  ],
+  "deferred": [
+    "07 onward",
+    "ordinary floor items",
+    "sight AI/cutscenes/music",
+    "complete abilities/held items/battle engine"
+  ],
+  "stages": [
+    [
+      "01",
+      "2F->3F",
+      "three trainers and wild",
+      "stop 4F"
+    ],
+    [
+      "02",
+      "3F->4F",
+      "three trainers/wild",
+      "stop 5F"
+    ],
+    [
+      "03",
+      "4F->5F",
+      "four trainers/wild/purified enter heal then latch until leave",
+      "stop 6F"
+    ],
+    [
+      "04",
+      "5F->6F",
+      "three trainers/wild",
+      "stop special event"
+    ],
+    [
+      "05",
+      "scope + trigger10,16",
+      "cancel/loss retry; win growth + released atomically",
+      "7F pending"
+    ],
+    [
+      "06",
+      "released ->7F",
+      "three independent Rocket wins; rescue atomically flags+house location; separate E flute once",
+      "batch end"
+    ]
+  ],
+  "map": "data/maps/PokemonTower3F.json",
+  "mapSHA256": "9a2d027e88589a3c1c778591afd67ecc0b3e61319d38e2bfdf7162673072f9e4",
+  "warps": [
+    {
+      "x": 3,
+      "y": 9,
+      "destMap": "POKEMON_TOWER_2F",
+      "destMapId": 143,
+      "destMapName": "PokemonTower2F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 18,
+      "y": 9,
+      "destMap": "POKEMON_TOWER_4F",
+      "destMapId": 145,
+      "destMapName": "PokemonTower4F",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "POKEMONTOWER3F_CHANNELER1",
+      "x": 12,
+      "y": 3,
+      "sprite": "SPRITE_CHANNELER",
+      "spriteId": 25,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_POKEMONTOWER3F_CHANNELER1",
+      "textIndex": 1,
+      "trainer": {
+        "trainerClass": "OPP_CHANNELER",
+        "trainerClassId": 45,
+        "trainerPartyIndex": 5,
+        "header": "PokemonTower3TrainerHeader0",
+        "eventFlag": "EVENT_BEAT_POKEMONTOWER_3_TRAINER_0",
+        "eventFlagIndex": 241,
+        "sightRange": 2,
+        "textBefore": "PokemonTower3FChanneler1BattleText",
+        "textEnd": "PokemonTower3FChanneler1EndBattleText",
+        "textAfter": "PokemonTower3FChanneler1AfterBattleText"
+      }
+    },
+    {
+      "index": 2,
+      "const": "POKEMONTOWER3F_CHANNELER2",
+      "x": 9,
+      "y": 8,
+      "sprite": "SPRITE_CHANNELER",
+      "spriteId": 25,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_POKEMONTOWER3F_CHANNELER2",
+      "textIndex": 2,
+      "trainer": {
+        "trainerClass": "OPP_CHANNELER",
+        "trainerClassId": 45,
+        "trainerPartyIndex": 6,
+        "header": "PokemonTower3TrainerHeader1",
+        "eventFlag": "EVENT_BEAT_POKEMONTOWER_3_TRAINER_1",
+        "eventFlagIndex": 242,
+        "sightRange": 3,
+        "textBefore": "PokemonTower3FChanneler2BattleText",
+        "textEnd": "PokemonTower3FChanneler2EndBattleText",
+        "textAfter": "PokemonTower3FChanneler2AfterBattleText"
+      }
+    },
+    {
+      "index": 3,
+      "const": "POKEMONTOWER3F_CHANNELER3",
+      "x": 10,
+      "y": 13,
+      "sprite": "SPRITE_CHANNELER",
+      "spriteId": 25,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_POKEMONTOWER3F_CHANNELER3",
+      "textIndex": 3,
+      "trainer": {
+        "trainerClass": "OPP_CHANNELER",
+        "trainerClassId": 45,
+        "trainerPartyIndex": 8,
+        "header": "PokemonTower3TrainerHeader2",
+        "eventFlag": "EVENT_BEAT_POKEMONTOWER_3_TRAINER_2",
+        "eventFlagIndex": 243,
+        "sightRange": 2,
+        "textBefore": "PokemonTower3FChanneler3BattleText",
+        "textEnd": "PokemonTower3FChanneler3EndBattleText",
+        "textAfter": "PokemonTower3FChanneler3AfterBattleText"
+      }
+    },
+    {
+      "index": 4,
+      "const": "POKEMONTOWER3F_ESCAPE_ROPE",
+      "x": 12,
+      "y": 1,
+      "sprite": "SPRITE_POKE_BALL",
+      "spriteId": 61,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_POKEMONTOWER3F_ESCAPE_ROPE",
+      "textIndex": 4,
+      "item": "ESCAPE_ROPE",
+      "itemId": 29,
+      "toggleIndex": 57,
+      "toggleConst": "TOGGLE_POKEMON_TOWER_3F_ITEM",
+      "startsHidden": false
+    }
+  ],
+  "rights": "Original rights holders; redistribution clearance not established",
+  "sprite": "native16px static nearest local1x/world2x source feet anchor"
+}

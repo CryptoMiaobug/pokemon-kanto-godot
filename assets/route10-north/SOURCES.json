@@ -1,0 +1,130 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/Route10.json",
+  "sha256": "5a5bfd721eb68a1bb99c4084c81d73b95a27e6e30b69191c6ab47980660bacf9",
+  "connections": {
+    "south": {
+      "map": "LAVENDER_TOWN",
+      "mapId": 4,
+      "mapName": "LavenderTown",
+      "offset": 0,
+      "dx": 0,
+      "dy": 36,
+      "copyRect": {
+        "x": 0,
+        "y": 0,
+        "w": 10,
+        "h": 3
+      },
+      "onEnter": {
+        "newY": 0,
+        "xAdd": 0
+      },
+      "macro": {
+        "stripSrc": 0,
+        "stripDest": 627,
+        "stripLength": 10,
+        "connectedWidth": 10,
+        "yAlign": 0,
+        "xAlign": 0,
+        "viewPointer": 17
+      }
+    },
+    "west": {
+      "map": "ROUTE_9",
+      "mapId": 20,
+      "mapName": "Route9",
+      "offset": 0,
+      "dx": -30,
+      "dy": 0,
+      "copyRect": {
+        "x": 27,
+        "y": 0,
+        "w": 3,
+        "h": 9
+      },
+      "onEnter": {
+        "newX": 59,
+        "yAdd": 0
+      },
+      "macro": {
+        "stripSrc": 27,
+        "stripDest": 48,
+        "stripLength": 9,
+        "connectedWidth": 30,
+        "yAlign": 0,
+        "xAlign": 59,
+        "viewPointer": 66
+      }
+    }
+  },
+  "warps": [
+    {
+      "x": 11,
+      "y": 19,
+      "destMap": "ROCK_TUNNEL_POKECENTER",
+      "destMapId": 81,
+      "destMapName": "RockTunnelPokecenter",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 8,
+      "y": 17,
+      "destMap": "ROCK_TUNNEL_1F",
+      "destMapId": 82,
+      "destMapName": "RockTunnel1F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 8,
+      "y": 53,
+      "destMap": "ROCK_TUNNEL_1F",
+      "destMapId": 82,
+      "destMapName": "RockTunnel1F",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 6,
+      "y": 39,
+      "destMap": "POWER_PLANT",
+      "destMapId": 83,
+      "destMapName": "PowerPlant",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "actors": [
+    {
+      "index": 4,
+      "const": "ROUTE10_COOLTRAINER_F1",
+      "x": 7,
+      "y": 25,
+      "sprite": "SPRITE_COOLTRAINER_F",
+      "spriteId": 6,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROUTE10_COOLTRAINER_F1",
+      "textIndex": 4,
+      "trainer": {
+        "trainerClass": "OPP_JR_TRAINER_F",
+        "trainerClassId": 6,
+        "trainerPartyIndex": 7,
+        "header": "Route10TrainerHeader3",
+        "eventFlag": "EVENT_BEAT_ROUTE_10_TRAINER_3",
+        "eventFlagIndex": 1108,
+        "sightRange": 3,
+        "textBefore": "Route10CooltrainerF1BattleText",
+        "textEnd": "Route10CooltrainerF1EndBattleText",
+        "textAfter": "Route10CooltrainerF1AfterBattleText"
+      }
+    }
+  ],
+  "adaptation": "Original Red feet/grass/ledges and16px actors local1x world2x nearest; Route10 north original first30 rows only; lower mountains and water already impassable; center/tunnel original doors no warp, explicit deferred message. Route9 item/hidden/sign extras deferred. E trainer confirmation no sight. Mixed FR parties and walking encounters.",
+  "rights": "Original rights holders; no redistribution clearance."
+}

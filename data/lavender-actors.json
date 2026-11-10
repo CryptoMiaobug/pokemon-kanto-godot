@@ -1,0 +1,172 @@
+[
+  {
+    "map": "lavender-town",
+    "cell": [
+      15,
+      9
+    ],
+    "facing": "down",
+    "sprite": "res://assets/lavender-town/actor-1.png",
+    "redObject": 1,
+    "role": "visitor",
+    "alphaBBox": [
+      0,
+      2,
+      16,
+      16
+    ]
+  },
+  {
+    "map": "lavender-town",
+    "cell": [
+      9,
+      10
+    ],
+    "facing": "down",
+    "sprite": "res://assets/lavender-town/actor-2.png",
+    "redObject": 2,
+    "role": "visitor",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "map": "lavender-town",
+    "cell": [
+      8,
+      7
+    ],
+    "facing": "down",
+    "sprite": "res://assets/lavender-town/actor-3.png",
+    "redObject": 3,
+    "role": "visitor",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "map": "lavender-center",
+    "cell": [
+      3,
+      1
+    ],
+    "facing": "down",
+    "sprite": "res://assets/lavender-center/actor-1.png",
+    "redObject": 1,
+    "role": "nurse",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "map": "lavender-center",
+    "cell": [
+      5,
+      3
+    ],
+    "facing": "down",
+    "sprite": "res://assets/lavender-center/actor-2.png",
+    "redObject": 2,
+    "role": "visitor",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "map": "lavender-center",
+    "cell": [
+      2,
+      6
+    ],
+    "facing": "down",
+    "sprite": "res://assets/lavender-center/actor-3.png",
+    "redObject": 3,
+    "role": "visitor",
+    "alphaBBox": [
+      0,
+      2,
+      16,
+      16
+    ]
+  },
+  {
+    "map": "lavender-center",
+    "cell": [
+      11,
+      2
+    ],
+    "facing": "down",
+    "sprite": "res://assets/lavender-center/actor-4.png",
+    "redObject": 4,
+    "role": "link",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ]
+  },
+  {
+    "map": "lavender-mart",
+    "cell": [
+      0,
+      5
+    ],
+    "facing": "right",
+    "sprite": "res://assets/lavender-mart/actor-1.png",
+    "redObject": 1,
+    "role": "clerk",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "map": "lavender-mart",
+    "cell": [
+      3,
+      4
+    ],
+    "facing": "down",
+    "sprite": "res://assets/lavender-mart/actor-2.png",
+    "redObject": 2,
+    "role": "visitor",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "map": "lavender-mart",
+    "cell": [
+      7,
+      2
+    ],
+    "facing": "down",
+    "sprite": "res://assets/lavender-mart/actor-3.png",
+    "redObject": 3,
+    "role": "visitor",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  }
+]

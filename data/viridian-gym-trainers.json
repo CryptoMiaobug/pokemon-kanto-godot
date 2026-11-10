@@ -1,0 +1,558 @@
+[
+  {
+    "id": "viridian_yuji",
+    "map": "viridian-gym",
+    "name": "精英训练家雄二",
+    "title": "常青道馆 · 精英训练家雄二",
+    "cell": [
+      12,
+      7
+    ],
+    "sprite": "res://assets/viridian-gym/actor-2.png",
+    "portrait": "res://assets/viridian-gym/cool_trainer_m-portrait.png",
+    "reward": 1368,
+    "moneyCoefficient": 9,
+    "party": [
+      {
+        "species_id": "sandslash",
+        "level": 38,
+        "ivs": 12,
+        "nature": {
+          "up": "spa",
+          "down": "def"
+        },
+        "moves": [
+          "slash",
+          "swift",
+          "sandattack",
+          "poisonsting"
+        ]
+      },
+      {
+        "species_id": "graveler",
+        "level": 38,
+        "ivs": 12,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "rockblast",
+          "magnitude",
+          "mudsport",
+          "defensecurl"
+        ]
+      },
+      {
+        "species_id": "onix",
+        "level": 38,
+        "ivs": 12,
+        "nature": {
+          "up": "spa",
+          "down": "def"
+        },
+        "moves": [
+          "dragonbreath",
+          "sandstorm",
+          "rockthrow",
+          "bind"
+        ]
+      },
+      {
+        "species_id": "graveler",
+        "level": 38,
+        "ivs": 12,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "rockblast",
+          "magnitude",
+          "rollout",
+          "defensecurl"
+        ]
+      },
+      {
+        "species_id": "marowak",
+        "level": 38,
+        "ivs": 12,
+        "nature": {
+          "up": "def",
+          "down": "spd"
+        },
+        "moves": [
+          "bonemerang",
+          "headbutt",
+          "leer",
+          "growl"
+        ]
+      }
+    ],
+    "intro": "嘿！你已经快没力气了吧！",
+    "defeat": "我反而没力气了！",
+    "after": "想跟上馆主，就需要更强的力量。",
+    "redObject": 2,
+    "fireRedTrainer": "CooltrainerYuji",
+    "slice": 43,
+    "items": [
+      "hyperpotion"
+    ]
+  },
+  {
+    "id": "viridian_atsushi",
+    "map": "viridian-gym",
+    "name": "空手道王敦",
+    "title": "常青道馆 · 空手道王敦",
+    "cell": [
+      11,
+      11
+    ],
+    "sprite": "res://assets/viridian-gym/actor-3.png",
+    "portrait": "res://assets/viridian-gym/black_belt-portrait.png",
+    "reward": 960,
+    "moneyCoefficient": 6,
+    "party": [
+      {
+        "species_id": "machop",
+        "level": 40,
+        "ivs": 12,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "revenge",
+          "vitalthrow",
+          "submission",
+          "crosschop"
+        ],
+        "held_item": "blackbelt"
+      },
+      {
+        "species_id": "machoke",
+        "level": 40,
+        "ivs": 12,
+        "nature": {
+          "up": "atk",
+          "down": "spd"
+        },
+        "moves": [
+          "seismictoss",
+          "foresight",
+          "revenge",
+          "vitalthrow"
+        ],
+        "held_item": "blackbelt"
+      }
+    ],
+    "intro": "吼！我的怒气已经燃起来了！",
+    "defeat": "哇！",
+    "after": "我还不够格！",
+    "redObject": 3,
+    "fireRedTrainer": "BlackBeltAtsushi",
+    "slice": 43,
+    "items": []
+  },
+  {
+    "id": "viridian_jason",
+    "map": "viridian-gym",
+    "name": "驯兽师杰森",
+    "title": "常青道馆 · 驯兽师杰森",
+    "cell": [
+      10,
+      7
+    ],
+    "sprite": "res://assets/viridian-gym/actor-4.png",
+    "portrait": "res://assets/viridian-gym/tamer-portrait.png",
+    "reward": 1720,
+    "moneyCoefficient": 10,
+    "party": [
+      {
+        "species_id": "rhyhorn",
+        "level": 43,
+        "ivs": 4,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "scaryface",
+          "rockblast",
+          "horndrill",
+          "takedown"
+        ]
+      }
+    ],
+    "intro": "我和宝可梦奏出美妙的音乐！",
+    "defeat": "你们配合得天衣无缝！",
+    "after": "你知道我们馆主是谁吗？",
+    "redObject": 4,
+    "fireRedTrainer": "TamerJason",
+    "slice": 43,
+    "items": []
+  },
+  {
+    "id": "viridian_kiyo",
+    "map": "viridian-gym",
+    "name": "空手道王清",
+    "title": "常青道馆 · 空手道王清",
+    "cell": [
+      3,
+      7
+    ],
+    "sprite": "res://assets/viridian-gym/actor-5.png",
+    "portrait": "res://assets/viridian-gym/black_belt-portrait.png",
+    "reward": 1032,
+    "moneyCoefficient": 6,
+    "party": [
+      {
+        "species_id": "machoke",
+        "level": 43,
+        "ivs": 12,
+        "nature": {
+          "up": "def",
+          "down": "spa"
+        },
+        "moves": [
+          "foresight",
+          "revenge",
+          "vitalthrow",
+          "submission"
+        ],
+        "held_item": "blackbelt"
+      }
+    ],
+    "intro": "空手道才是武术的最高境界！",
+    "defeat": "哎呀！",
+    "after": "要是我的宝可梦也和我一样擅长空手道……",
+    "redObject": 5,
+    "fireRedTrainer": "BlackBeltKiyo",
+    "slice": 43,
+    "items": []
+  },
+  {
+    "id": "viridian_warren",
+    "map": "viridian-gym",
+    "name": "精英训练家沃伦",
+    "title": "常青道馆 · 精英训练家沃伦",
+    "cell": [
+      13,
+      5
+    ],
+    "sprite": "res://assets/viridian-gym/actor-6.png",
+    "portrait": "res://assets/viridian-gym/cool_trainer_m-portrait.png",
+    "reward": 1404,
+    "moneyCoefficient": 9,
+    "party": [
+      {
+        "species_id": "marowak",
+        "level": 37,
+        "ivs": 12,
+        "nature": {
+          "up": "spe",
+          "down": "atk"
+        },
+        "moves": [
+          "bonemerang",
+          "headbutt",
+          "leer",
+          "growl"
+        ]
+      },
+      {
+        "species_id": "marowak",
+        "level": 37,
+        "ivs": 12,
+        "nature": {
+          "up": "def",
+          "down": "spd"
+        },
+        "moves": [
+          "bonemerang",
+          "headbutt",
+          "leer",
+          "growl"
+        ]
+      },
+      {
+        "species_id": "rhyhorn",
+        "level": 38,
+        "ivs": 12,
+        "nature": {
+          "up": "atk",
+          "down": "spe"
+        },
+        "moves": [
+          "takedown",
+          "rockblast",
+          "furyattack",
+          "scaryface"
+        ]
+      },
+      {
+        "species_id": "nidorina",
+        "level": 39,
+        "ivs": 12,
+        "nature": {
+          "up": "atk",
+          "down": "spd"
+        },
+        "moves": [
+          "furyswipes",
+          "bite",
+          "poisonsting",
+          "doublekick"
+        ]
+      },
+      {
+        "species_id": "nidoqueen",
+        "level": 39,
+        "ivs": 12,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "bodyslam",
+          "bite",
+          "poisonsting",
+          "doublekick"
+        ]
+      }
+    ],
+    "intro": "真正有实力的人，赢得也漂亮！",
+    "defeat": "我失手了！",
+    "after": "这样输掉，馆主会责备我的……",
+    "redObject": 6,
+    "fireRedTrainer": "CooltrainerWarren",
+    "slice": 44,
+    "items": [
+      "hyperpotion"
+    ]
+  },
+  {
+    "id": "viridian_takashi",
+    "map": "viridian-gym",
+    "name": "空手道王隆",
+    "title": "常青道馆 · 空手道王隆",
+    "cell": [
+      10,
+      1
+    ],
+    "sprite": "res://assets/viridian-gym/actor-7.png",
+    "portrait": "res://assets/viridian-gym/black_belt-portrait.png",
+    "reward": 912,
+    "moneyCoefficient": 6,
+    "party": [
+      {
+        "species_id": "machoke",
+        "level": 38,
+        "ivs": 12,
+        "nature": {
+          "up": "spe",
+          "down": "atk"
+        },
+        "moves": [
+          "seismictoss",
+          "foresight",
+          "revenge",
+          "vitalthrow"
+        ],
+        "held_item": "blackbelt"
+      },
+      {
+        "species_id": "machop",
+        "level": 38,
+        "ivs": 12,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "foresight",
+          "revenge",
+          "vitalthrow",
+          "submission"
+        ],
+        "held_item": "blackbelt"
+      },
+      {
+        "species_id": "machoke",
+        "level": 38,
+        "ivs": 12,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "seismictoss",
+          "foresight",
+          "revenge",
+          "vitalthrow"
+        ],
+        "held_item": "blackbelt"
+      }
+    ],
+    "intro": "我是空手道之王！你的命运由我决定！",
+    "defeat": "呀！",
+    "after": "你想挑战联盟？别太得意！",
+    "redObject": 7,
+    "fireRedTrainer": "BlackBeltTakashi",
+    "slice": 44,
+    "items": []
+  },
+  {
+    "id": "viridian_cole",
+    "map": "viridian-gym",
+    "name": "驯兽师科尔",
+    "title": "常青道馆 · 驯兽师科尔",
+    "cell": [
+      2,
+      16
+    ],
+    "sprite": "res://assets/viridian-gym/actor-8.png",
+    "portrait": "res://assets/viridian-gym/tamer-portrait.png",
+    "reward": 1560,
+    "moneyCoefficient": 10,
+    "party": [
+      {
+        "species_id": "arbok",
+        "level": 39,
+        "ivs": 4,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "bite",
+          "glare",
+          "screech",
+          "acid"
+        ]
+      },
+      {
+        "species_id": "tauros",
+        "level": 39,
+        "ivs": 4,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "scaryface",
+          "pursuit",
+          "swagger",
+          "rest"
+        ]
+      }
+    ],
+    "intro": "我的鞭声会让你的宝可梦畏缩！",
+    "defeat": "哎哟！",
+    "after": "等等！我只是大意了！",
+    "redObject": 8,
+    "fireRedTrainer": "TamerCole",
+    "slice": 44,
+    "items": []
+  },
+  {
+    "id": "viridian_samuel",
+    "map": "viridian-gym",
+    "name": "精英训练家塞缪尔",
+    "title": "常青道馆 · 精英训练家塞缪尔",
+    "cell": [
+      6,
+      5
+    ],
+    "sprite": "res://assets/viridian-gym/actor-9.png",
+    "portrait": "res://assets/viridian-gym/cool_trainer_m-portrait.png",
+    "reward": 1404,
+    "moneyCoefficient": 9,
+    "party": [
+      {
+        "species_id": "sandslash",
+        "level": 37,
+        "ivs": 12,
+        "nature": {
+          "up": "def",
+          "down": "spd"
+        },
+        "moves": [
+          "slash",
+          "swift",
+          "sandattack",
+          "poisonsting"
+        ]
+      },
+      {
+        "species_id": "sandslash",
+        "level": 37,
+        "ivs": 12,
+        "nature": {
+          "up": "def",
+          "down": "spe"
+        },
+        "moves": [
+          "slash",
+          "swift",
+          "sandattack",
+          "poisonsting"
+        ]
+      },
+      {
+        "species_id": "rhyhorn",
+        "level": 38,
+        "ivs": 12,
+        "nature": {
+          "up": "atk",
+          "down": "spe"
+        },
+        "moves": [
+          "takedown",
+          "rockblast",
+          "furyattack",
+          "scaryface"
+        ]
+      },
+      {
+        "species_id": "nidorino",
+        "level": 39,
+        "ivs": 12,
+        "nature": {
+          "up": "spa",
+          "down": "atk"
+        },
+        "moves": [
+          "furyattack",
+          "hornattack",
+          "poisonsting",
+          "doublekick"
+        ]
+      },
+      {
+        "species_id": "nidoking",
+        "level": 39,
+        "ivs": 12,
+        "nature": {
+          "up": "spe",
+          "down": "spa"
+        },
+        "moves": [
+          "thrash",
+          "doublekick",
+          "poisonsting",
+          "focusenergy"
+        ]
+      }
+    ],
+    "intro": "道馆关闭了很久，不过馆主终于回来了！",
+    "defeat": "我竟然被打败了？",
+    "after": "只有打败馆主，才能前往宝可梦联盟！",
+    "redObject": 9,
+    "fireRedTrainer": "CooltrainerSamuel",
+    "slice": 44,
+    "items": [
+      "superpotion"
+    ]
+  }
+]

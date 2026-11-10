@@ -1,0 +1,95 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/CeladonMart2F.json",
+  "connections": {},
+  "warps": [
+    {
+      "x": 12,
+      "y": 1,
+      "destMap": "CELADON_MART_1F",
+      "destMapId": 122,
+      "destMapName": "CeladonMart1F",
+      "destWarp": 5,
+      "destWarpIndex": 4
+    },
+    {
+      "x": 16,
+      "y": 1,
+      "destMap": "CELADON_MART_3F",
+      "destMapId": 124,
+      "destMapName": "CeladonMart3F",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "destMap": "CELADON_MART_ELEVATOR",
+      "destMapId": 127,
+      "destMapName": "CeladonMartElevator",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "CELADONMART2F_CLERK1",
+      "x": 5,
+      "y": 3,
+      "sprite": "SPRITE_CLERK",
+      "spriteId": 38,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_CELADONMART2F_CLERK1",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "CELADONMART2F_CLERK2",
+      "x": 6,
+      "y": 3,
+      "sprite": "SPRITE_CLERK",
+      "spriteId": 38,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_CELADONMART2F_CLERK2",
+      "textIndex": 2
+    },
+    {
+      "index": 3,
+      "const": "CELADONMART2F_MIDDLE_AGED_MAN",
+      "x": 19,
+      "y": 5,
+      "sprite": "SPRITE_MIDDLE_AGED_MAN",
+      "spriteId": 10,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_CELADONMART2F_MIDDLE_AGED_MAN",
+      "textIndex": 3
+    },
+    {
+      "index": 4,
+      "const": "CELADONMART2F_GIRL",
+      "x": 14,
+      "y": 4,
+      "sprite": "SPRITE_GIRL",
+      "spriteId": 13,
+      "movement": "WALK",
+      "rangeOrDirection": "UP_DOWN",
+      "rangeOrDirectionValue": 1,
+      "behavior": "walk_up_down",
+      "textId": "TEXT_CELADONMART2F_GIRL",
+      "textIndex": 4
+    }
+  ],
+  "rights": "Original rights holders; no redistribution clearance.",
+  "adaptation": "Native Red feet/NPCs/pair/ledges; original stairs latch; parent LAST_MAP explicit. Static source actors; walking/random facing deferred. Source mart1F/2F only; other floors/elevator/story deferred."
+}

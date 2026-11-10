@@ -1,0 +1,62 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/DiglettsCaveRoute2.json",
+  "mapSHA256": "78533ecd837dc28650192408c6666411d78762557d131204fcd9eea465a2be80",
+  "tileset": "data/tilesets/Cavern.json",
+  "gfx": "assets/tilesets/cavern.png",
+  "warps": [
+    {
+      "x": 2,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "destMap": "DIGLETTS_CAVE",
+      "destMapId": 197,
+      "destMapName": "DiglettsCave",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "DIGLETTSCAVEROUTE2_FISHING_GURU",
+      "x": 3,
+      "y": 3,
+      "sprite": "SPRITE_FISHING_GURU",
+      "spriteId": 39,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_DIGLETTSCAVEROUTE2_FISHING_GURU",
+      "textIndex": 1
+    }
+  ],
+  "localScale": 1,
+  "worldScale": 2,
+  "feetAnchor": [
+    8,
+    16
+  ],
+  "adaptation": "Red geometry/static standing actors; FireRed rules retained. Route11 trainers and all new encounters deferred O13-4; Gate2F/services deferred. No walking NPC/audio.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

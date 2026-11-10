@@ -1,0 +1,80 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/ChampionsRoom.json",
+  "mapSHA256": "941abf61dc125122e0db220f36a29b24afac12ca71eb65ec5e5c9dfa4eeebe2d",
+  "warps": [
+    {
+      "x": 3,
+      "y": 7,
+      "destMap": "LANCES_ROOM",
+      "destMapId": 113,
+      "destMapName": "LancesRoom",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "destMap": "LANCES_ROOM",
+      "destMapId": 113,
+      "destMapName": "LancesRoom",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "destMap": "HALL_OF_FAME",
+      "destMapId": 118,
+      "destMapName": "HallOfFame",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "destMap": "HALL_OF_FAME",
+      "destMapId": 118,
+      "destMapName": "HallOfFame",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "CHAMPIONSROOM_RIVAL",
+      "x": 4,
+      "y": 2,
+      "sprite": "SPRITE_BLUE",
+      "spriteId": 2,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_CHAMPIONSROOM_RIVAL",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "CHAMPIONSROOM_OAK",
+      "x": 3,
+      "y": 7,
+      "sprite": "SPRITE_OAK",
+      "spriteId": 3,
+      "movement": "STAY",
+      "rangeOrDirection": "UP",
+      "rangeOrDirectionValue": 209,
+      "behavior": "face_up",
+      "textId": "TEXT_CHAMPIONSROOM_OAK",
+      "textIndex": 2,
+      "toggleIndex": 214,
+      "toggleConst": "TOGGLE_CHAMPIONS_ROOM_OAK",
+      "startsHidden": true
+    }
+  ],
+  "adaptation": "Red geometry, collision, actors, Route21 north connection and original service doors. Center nurse/PC reuse existing interfaces. Mansion and lab remain closed. Gym returns FireRed Secret Key refusal; mansion/key acquisition is slice35. Mart implements only FireRed Hyper Potion 1200 from its seven-item stock.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

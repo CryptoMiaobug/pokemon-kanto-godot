@@ -1,0 +1,178 @@
+[
+  {
+    "map": "rocket-hideout-b2f",
+    "cell": [
+      20,
+      12
+    ],
+    "sprite": "res://assets/rocket-hideout-b2f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item_deferred": false,
+    "startsHidden": false,
+    "item": "",
+    "id": "rocket_b2_1",
+    "name": "基地B2F队员1",
+    "title": "火箭队 · 地下2层",
+    "facing": "down",
+    "party": [
+      {
+        "species_id": "zubat",
+        "level": 17,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "bite",
+          "astonish",
+          "supersonic",
+          "leechlife"
+        ]
+      },
+      {
+        "species_id": "koffing",
+        "level": 17,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "smog",
+          "tackle",
+          "poisongas"
+        ]
+      },
+      {
+        "species_id": "grimer",
+        "level": 17,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spe"
+        },
+        "moves": [
+          "sludge",
+          "disable",
+          "harden",
+          "pound"
+        ]
+      },
+      {
+        "species_id": "zubat",
+        "level": 17,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "bite",
+          "astonish",
+          "supersonic",
+          "leechlife"
+        ]
+      },
+      {
+        "species_id": "raticate",
+        "level": 17,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "hyperfang",
+          "quickattack",
+          "tailwhip",
+          "tackle"
+        ]
+      }
+    ],
+    "reward": 544,
+    "portrait": "res://assets/rocket-hideout-b2f/actor-1-trainer.png",
+    "intro": "你竟然闯进这里！来对战吧！",
+    "defeat": "可恶！",
+    "after": "火箭队不会就这样算了！",
+    "fireRedTrainer": "TeamRocketGrunt13"
+  },
+  {
+    "map": "rocket-hideout-b2f",
+    "cell": [
+      1,
+      11
+    ],
+    "sprite": "res://assets/rocket-hideout-b2f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "item_deferred": true,
+    "startsHidden": false,
+    "item": "MOON_STONE"
+  },
+  {
+    "map": "rocket-hideout-b2f",
+    "cell": [
+      16,
+      8
+    ],
+    "sprite": "res://assets/rocket-hideout-b2f/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "item_deferred": true,
+    "startsHidden": false,
+    "item": "NUGGET"
+  },
+  {
+    "map": "rocket-hideout-b2f",
+    "cell": [
+      6,
+      12
+    ],
+    "sprite": "res://assets/rocket-hideout-b2f/actor-4.png",
+    "redObject": 4,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "item_deferred": true,
+    "startsHidden": false,
+    "item": "TM_HORN_DRILL"
+  },
+  {
+    "map": "rocket-hideout-b2f",
+    "cell": [
+      3,
+      21
+    ],
+    "sprite": "res://assets/rocket-hideout-b2f/actor-5.png",
+    "redObject": 5,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "item_deferred": true,
+    "startsHidden": false,
+    "item": "SUPER_POTION"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "source": "data/maps/MtMoonPokecenter.json",
+  "originalSources": {
+    "header": "data/maps/headers/MtMoonPokecenter.asm",
+    "objects": "data/maps/objects/MtMoonPokecenter.asm",
+    "blocks": "maps/MtMoonPokecenter.blk",
+    "script": "scripts/MtMoonPokecenter.asm"
+  },
+  "mapSHA256": "0cd6fe172f47125247509d5bb18c6fa96a50eb784a5bc1b8ce1e33f38c4976b1",
+  "tiles": "assets/tilesets/pokecenter.png",
+  "adaptation": "Original Red geometry/foot collision; Route4 west22 cells only, blocked eastern map edge; MtMoon cave warp closed. Existing outdoor recolor and neutral original center. Route3 north x-50 to Route4; east Pewter y-8 to Route3. Original eight battle NPCs only, E-confirm interaction; no auto sight/cave/events.",
+  "rights": "Pokemon assets remain rights-holder property; no redistribution clearance."
+}

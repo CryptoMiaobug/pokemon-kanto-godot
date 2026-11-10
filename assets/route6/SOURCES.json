@@ -1,0 +1,261 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/Route6.json",
+  "mapSHA256": "bc57410120ed6da535d85a04c6d7319435f7094b5823e4816118fb273518eabf",
+  "tiles": "assets/tilesets/overworld.png",
+  "connections": {
+    "north": {
+      "map": "SAFFRON_CITY",
+      "mapId": 10,
+      "mapName": "SaffronCity",
+      "offset": -5,
+      "dx": -5,
+      "dy": -18,
+      "copyRect": {
+        "x": 2,
+        "y": 15,
+        "w": 16,
+        "h": 3
+      },
+      "onEnter": {
+        "newY": 35,
+        "xAdd": 10
+      },
+      "macro": {
+        "stripSrc": 302,
+        "stripDest": 0,
+        "stripLength": 16,
+        "connectedWidth": 20,
+        "yAlign": 35,
+        "xAlign": 10,
+        "viewPointer": 469
+      }
+    },
+    "south": {
+      "map": "VERMILION_CITY",
+      "mapId": 5,
+      "mapName": "VermilionCity",
+      "offset": -5,
+      "dx": -5,
+      "dy": 18,
+      "copyRect": {
+        "x": 2,
+        "y": 0,
+        "w": 16,
+        "h": 3
+      },
+      "onEnter": {
+        "newY": 0,
+        "xAdd": 10
+      },
+      "macro": {
+        "stripSrc": 2,
+        "stripDest": 336,
+        "stripLength": 16,
+        "connectedWidth": 20,
+        "yAlign": 0,
+        "xAlign": 10,
+        "viewPointer": 27
+      }
+    }
+  },
+  "warps": [
+    {
+      "x": 9,
+      "y": 1,
+      "destMap": "ROUTE_6_GATE",
+      "destMapId": 73,
+      "destMapName": "Route6Gate",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "destMap": "ROUTE_6_GATE",
+      "destMapId": 73,
+      "destMapName": "Route6Gate",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "destMap": "ROUTE_6_GATE",
+      "destMapId": 73,
+      "destMapName": "Route6Gate",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 17,
+      "y": 13,
+      "destMap": "UNDERGROUND_PATH_ROUTE_6",
+      "destMapId": 74,
+      "destMapName": "UndergroundPathRoute6",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "ROUTE6_COOLTRAINER_M1",
+      "x": 10,
+      "y": 21,
+      "sprite": "SPRITE_COOLTRAINER_M",
+      "spriteId": 7,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_ROUTE6_COOLTRAINER_M1",
+      "textIndex": 1,
+      "trainer": {
+        "trainerClass": "OPP_JR_TRAINER_M",
+        "trainerClassId": 5,
+        "trainerPartyIndex": 4,
+        "header": "Route6TrainerHeader0",
+        "eventFlag": "EVENT_BEAT_ROUTE_6_TRAINER_0",
+        "eventFlagIndex": 1041,
+        "sightRange": 0,
+        "textBefore": "Route6CooltrainerM1BattleText",
+        "textEnd": "Route6CooltrainerM1EndBattleText",
+        "textAfter": "Route6CooltrainerAfterBattleText"
+      }
+    },
+    {
+      "index": 2,
+      "const": "ROUTE6_COOLTRAINER_F1",
+      "x": 11,
+      "y": 21,
+      "sprite": "SPRITE_COOLTRAINER_F",
+      "spriteId": 6,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROUTE6_COOLTRAINER_F1",
+      "textIndex": 2,
+      "trainer": {
+        "trainerClass": "OPP_JR_TRAINER_F",
+        "trainerClassId": 6,
+        "trainerPartyIndex": 2,
+        "header": "Route6TrainerHeader1",
+        "eventFlag": "EVENT_BEAT_ROUTE_6_TRAINER_1",
+        "eventFlagIndex": 1042,
+        "sightRange": 0,
+        "textBefore": "Route6CooltrainerF1BattleText",
+        "textEnd": "Route6CooltrainerF1EndBattleText",
+        "textAfter": "Route6CooltrainerAfterBattleText"
+      }
+    },
+    {
+      "index": 3,
+      "const": "ROUTE6_YOUNGSTER1",
+      "x": 0,
+      "y": 15,
+      "sprite": "SPRITE_YOUNGSTER",
+      "spriteId": 4,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_ROUTE6_YOUNGSTER1",
+      "textIndex": 3,
+      "trainer": {
+        "trainerClass": "OPP_BUG_CATCHER",
+        "trainerClassId": 2,
+        "trainerPartyIndex": 10,
+        "header": "Route6TrainerHeader2",
+        "eventFlag": "EVENT_BEAT_ROUTE_6_TRAINER_2",
+        "eventFlagIndex": 1043,
+        "sightRange": 4,
+        "textBefore": "Route6Youngster1BattleText",
+        "textEnd": "Route6Youngster1EndBattleText",
+        "textAfter": "Route6Youngster1AfterBattleText"
+      }
+    },
+    {
+      "index": 4,
+      "const": "ROUTE6_COOLTRAINER_M2",
+      "x": 11,
+      "y": 31,
+      "sprite": "SPRITE_COOLTRAINER_M",
+      "spriteId": 7,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROUTE6_COOLTRAINER_M2",
+      "textIndex": 4,
+      "trainer": {
+        "trainerClass": "OPP_JR_TRAINER_M",
+        "trainerClassId": 5,
+        "trainerPartyIndex": 5,
+        "header": "Route6TrainerHeader3",
+        "eventFlag": "EVENT_BEAT_ROUTE_6_TRAINER_3",
+        "eventFlagIndex": 1044,
+        "sightRange": 3,
+        "textBefore": "Route6CooltrainerM2BattleText",
+        "textEnd": "Route6CooltrainerM2EndBattleText",
+        "textAfter": "Route6CooltrainerM2AfterBattleText"
+      }
+    },
+    {
+      "index": 5,
+      "const": "ROUTE6_COOLTRAINER_F2",
+      "x": 11,
+      "y": 30,
+      "sprite": "SPRITE_COOLTRAINER_F",
+      "spriteId": 6,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROUTE6_COOLTRAINER_F2",
+      "textIndex": 5,
+      "trainer": {
+        "trainerClass": "OPP_JR_TRAINER_F",
+        "trainerClassId": 6,
+        "trainerPartyIndex": 3,
+        "header": "Route6TrainerHeader4",
+        "eventFlag": "EVENT_BEAT_ROUTE_6_TRAINER_4",
+        "eventFlagIndex": 1045,
+        "sightRange": 3,
+        "textBefore": "Route6CooltrainerF2BattleText",
+        "textEnd": "Route6CooltrainerF2EndBattleText",
+        "textAfter": "Route6CooltrainerF2AfterBattleText"
+      }
+    },
+    {
+      "index": 6,
+      "const": "ROUTE6_YOUNGSTER2",
+      "x": 19,
+      "y": 26,
+      "sprite": "SPRITE_YOUNGSTER",
+      "spriteId": 4,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROUTE6_YOUNGSTER2",
+      "textIndex": 6,
+      "trainer": {
+        "trainerClass": "OPP_BUG_CATCHER",
+        "trainerClassId": 2,
+        "trainerPartyIndex": 11,
+        "header": "Route6TrainerHeader5",
+        "eventFlag": "EVENT_BEAT_ROUTE_6_TRAINER_5",
+        "eventFlagIndex": 1046,
+        "sightRange": 3,
+        "textBefore": "Route6Youngster2BattleText",
+        "textEnd": "Route6Youngster2EndBattleText",
+        "textAfter": "Route6Youngster2AfterBattleText"
+      }
+    }
+  ],
+  "adaptation": "Original geometry/foot collision/grass/ledges; actors fixed at original cells, static16px local1x world2x nearest. E trainer confirmation, no auto sight. Underground original indices and LAST_MAP resolved to parent route; landing latch. Vermilion exterior only, buildings/dock/Route11 and Saffron gate closed by runtime boundary/prompts, source tiles preserved. No trade, hidden items, drinks, daycare or ship features.",
+  "rights": "Original rights holders; no redistribution clearance."
+}

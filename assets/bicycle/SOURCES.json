@@ -1,0 +1,69 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "sheet": "assets/sprites/red_bike.png",
+  "sha256": "cf1b65aee67b2a207892ef0ab118eb61509c8891d181529864fd550b328530cc",
+  "frames": [
+    {
+      "frame": 0,
+      "bbox": [
+        1,
+        0,
+        15,
+        16
+      ]
+    },
+    {
+      "frame": 1,
+      "bbox": [
+        1,
+        0,
+        15,
+        16
+      ]
+    },
+    {
+      "frame": 2,
+      "bbox": [
+        1,
+        0,
+        16,
+        16
+      ]
+    },
+    {
+      "frame": 3,
+      "bbox": [
+        0,
+        0,
+        14,
+        16
+      ]
+    },
+    {
+      "frame": 4,
+      "bbox": [
+        0,
+        0,
+        14,
+        16
+      ]
+    },
+    {
+      "frame": 5,
+      "bbox": [
+        0,
+        0,
+        15,
+        16
+      ]
+    }
+  ],
+  "localScale": 1,
+  "worldScale": 2,
+  "feetAnchor": [
+    8,
+    16
+  ],
+  "adaptation": "Red original bike appearance; local continuous movement speed2x walking, no acceleration/Route17 slope yet.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

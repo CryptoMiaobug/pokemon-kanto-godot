@@ -1,0 +1,689 @@
+{
+  "source_revision": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "source": "src/data/pokemon/evolution.h",
+  "source_sha256": "a7d05352fb5b7039b8851049bc9575dc8eaa4450bf9964d03b7857db98c32d3c",
+  "rules": {
+    "abra": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 16,
+        "target": "kadabra",
+        "enabled": true
+      }
+    ],
+    "bellsprout": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 21,
+        "target": "weepinbell",
+        "enabled": true
+      }
+    ],
+    "bulbasaur": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 16,
+        "target": "ivysaur",
+        "enabled": true
+      }
+    ],
+    "caterpie": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 7,
+        "target": "metapod",
+        "enabled": true
+      }
+    ],
+    "chansey": [
+      {
+        "method": "EVO_FRIENDSHIP",
+        "param": 0,
+        "target": "blissey",
+        "enabled": true
+      }
+    ],
+    "charmander": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 16,
+        "target": "charmeleon",
+        "enabled": true
+      }
+    ],
+    "charmeleon": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 36,
+        "target": "charizard",
+        "enabled": true
+      }
+    ],
+    "clefairy": [
+      {
+        "method": "EVO_ITEM",
+        "param": "moon_stone",
+        "target": "clefable",
+        "enabled": true
+      }
+    ],
+    "cubone": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 28,
+        "target": "marowak",
+        "enabled": true
+      }
+    ],
+    "diglett": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 26,
+        "target": "dugtrio",
+        "enabled": true
+      }
+    ],
+    "doduo": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 31,
+        "target": "dodrio",
+        "enabled": true
+      }
+    ],
+    "dragonair": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 55,
+        "target": "dragonite",
+        "enabled": true
+      }
+    ],
+    "dratini": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 30,
+        "target": "dragonair",
+        "enabled": true
+      }
+    ],
+    "drowzee": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 26,
+        "target": "hypno",
+        "enabled": true
+      }
+    ],
+    "eevee": [
+      {
+        "method": "EVO_ITEM",
+        "param": "thunder_stone",
+        "target": "jolteon",
+        "enabled": true
+      },
+      {
+        "method": "EVO_ITEM",
+        "param": "water_stone",
+        "target": "vaporeon",
+        "enabled": true
+      },
+      {
+        "method": "EVO_ITEM",
+        "param": "fire_stone",
+        "target": "flareon",
+        "enabled": true
+      },
+      {
+        "method": "EVO_FRIENDSHIP_DAY",
+        "param": 0,
+        "target": "espeon",
+        "enabled": false
+      },
+      {
+        "method": "EVO_FRIENDSHIP_NIGHT",
+        "param": 0,
+        "target": "umbreon",
+        "enabled": false
+      }
+    ],
+    "ekans": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 22,
+        "target": "arbok",
+        "enabled": true
+      }
+    ],
+    "exeggcute": [
+      {
+        "method": "EVO_ITEM",
+        "param": "leaf_stone",
+        "target": "exeggutor",
+        "enabled": true
+      }
+    ],
+    "gastly": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 25,
+        "target": "haunter",
+        "enabled": true
+      }
+    ],
+    "geodude": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 25,
+        "target": "graveler",
+        "enabled": true
+      }
+    ],
+    "gloom": [
+      {
+        "method": "EVO_ITEM",
+        "param": "leaf_stone",
+        "target": "vileplume",
+        "enabled": true
+      },
+      {
+        "method": "EVO_ITEM",
+        "param": "sun_stone",
+        "target": "bellossom",
+        "enabled": true
+      }
+    ],
+    "golbat": [
+      {
+        "method": "EVO_FRIENDSHIP",
+        "param": 0,
+        "target": "crobat",
+        "enabled": true
+      }
+    ],
+    "goldeen": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 33,
+        "target": "seaking",
+        "enabled": true
+      }
+    ],
+    "graveler": [
+      {
+        "method": "EVO_TRADE",
+        "param": 0,
+        "target": "golem",
+        "enabled": true
+      }
+    ],
+    "grimer": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 38,
+        "target": "muk",
+        "enabled": true
+      }
+    ],
+    "growlithe": [
+      {
+        "method": "EVO_ITEM",
+        "param": "fire_stone",
+        "target": "arcanine",
+        "enabled": true
+      }
+    ],
+    "haunter": [
+      {
+        "method": "EVO_TRADE",
+        "param": 0,
+        "target": "gengar",
+        "enabled": true
+      }
+    ],
+    "horsea": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 32,
+        "target": "seadra",
+        "enabled": true
+      }
+    ],
+    "ivysaur": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 32,
+        "target": "venusaur",
+        "enabled": true
+      }
+    ],
+    "jigglypuff": [
+      {
+        "method": "EVO_ITEM",
+        "param": "moon_stone",
+        "target": "wigglytuff",
+        "enabled": true
+      }
+    ],
+    "kabuto": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 40,
+        "target": "kabutops",
+        "enabled": true
+      }
+    ],
+    "kadabra": [
+      {
+        "method": "EVO_TRADE",
+        "param": 0,
+        "target": "alakazam",
+        "enabled": true
+      }
+    ],
+    "kakuna": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 10,
+        "target": "beedrill",
+        "enabled": true
+      }
+    ],
+    "koffing": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 35,
+        "target": "weezing",
+        "enabled": true
+      }
+    ],
+    "krabby": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 28,
+        "target": "kingler",
+        "enabled": true
+      }
+    ],
+    "machoke": [
+      {
+        "method": "EVO_TRADE",
+        "param": 0,
+        "target": "machamp",
+        "enabled": true
+      }
+    ],
+    "machop": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 28,
+        "target": "machoke",
+        "enabled": true
+      }
+    ],
+    "magikarp": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 20,
+        "target": "gyarados",
+        "enabled": true
+      }
+    ],
+    "magnemite": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 30,
+        "target": "magneton",
+        "enabled": true
+      }
+    ],
+    "mankey": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 28,
+        "target": "primeape",
+        "enabled": true
+      }
+    ],
+    "meowth": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 28,
+        "target": "persian",
+        "enabled": true
+      }
+    ],
+    "metapod": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 10,
+        "target": "butterfree",
+        "enabled": true
+      }
+    ],
+    "nidoran_f": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 16,
+        "target": "nidorina",
+        "enabled": true
+      }
+    ],
+    "nidoran_m": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 16,
+        "target": "nidorino",
+        "enabled": true
+      }
+    ],
+    "nidorina": [
+      {
+        "method": "EVO_ITEM",
+        "param": "moon_stone",
+        "target": "nidoqueen",
+        "enabled": true
+      }
+    ],
+    "nidorino": [
+      {
+        "method": "EVO_ITEM",
+        "param": "moon_stone",
+        "target": "nidoking",
+        "enabled": true
+      }
+    ],
+    "oddish": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 21,
+        "target": "gloom",
+        "enabled": true
+      }
+    ],
+    "omanyte": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 40,
+        "target": "omastar",
+        "enabled": true
+      }
+    ],
+    "onix": [
+      {
+        "method": "EVO_TRADE_ITEM",
+        "param": "metal_coat",
+        "target": "steelix",
+        "enabled": true
+      }
+    ],
+    "paras": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 24,
+        "target": "parasect",
+        "enabled": true
+      }
+    ],
+    "pidgeotto": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 36,
+        "target": "pidgeot",
+        "enabled": true
+      }
+    ],
+    "pidgey": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 18,
+        "target": "pidgeotto",
+        "enabled": true
+      }
+    ],
+    "pikachu": [
+      {
+        "method": "EVO_ITEM",
+        "param": "thunder_stone",
+        "target": "raichu",
+        "enabled": true
+      }
+    ],
+    "poliwag": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 25,
+        "target": "poliwhirl",
+        "enabled": true
+      }
+    ],
+    "poliwhirl": [
+      {
+        "method": "EVO_ITEM",
+        "param": "water_stone",
+        "target": "poliwrath",
+        "enabled": true
+      },
+      {
+        "method": "EVO_TRADE_ITEM",
+        "param": "kings_rock",
+        "target": "politoed",
+        "enabled": true
+      }
+    ],
+    "ponyta": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 40,
+        "target": "rapidash",
+        "enabled": true
+      }
+    ],
+    "porygon": [
+      {
+        "method": "EVO_TRADE_ITEM",
+        "param": "up_grade",
+        "target": "porygon2",
+        "enabled": true
+      }
+    ],
+    "psyduck": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 33,
+        "target": "golduck",
+        "enabled": true
+      }
+    ],
+    "rattata": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 20,
+        "target": "raticate",
+        "enabled": true
+      }
+    ],
+    "rhyhorn": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 42,
+        "target": "rhydon",
+        "enabled": true
+      }
+    ],
+    "sandshrew": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 22,
+        "target": "sandslash",
+        "enabled": true
+      }
+    ],
+    "scyther": [
+      {
+        "method": "EVO_TRADE_ITEM",
+        "param": "metal_coat",
+        "target": "scizor",
+        "enabled": true
+      }
+    ],
+    "seadra": [
+      {
+        "method": "EVO_TRADE_ITEM",
+        "param": "dragon_scale",
+        "target": "kingdra",
+        "enabled": true
+      }
+    ],
+    "seel": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 34,
+        "target": "dewgong",
+        "enabled": true
+      }
+    ],
+    "shellder": [
+      {
+        "method": "EVO_ITEM",
+        "param": "water_stone",
+        "target": "cloyster",
+        "enabled": true
+      }
+    ],
+    "slowpoke": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 37,
+        "target": "slowbro",
+        "enabled": true
+      },
+      {
+        "method": "EVO_TRADE_ITEM",
+        "param": "kings_rock",
+        "target": "slowking",
+        "enabled": true
+      }
+    ],
+    "spearow": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 20,
+        "target": "fearow",
+        "enabled": true
+      }
+    ],
+    "squirtle": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 16,
+        "target": "wartortle",
+        "enabled": true
+      }
+    ],
+    "staryu": [
+      {
+        "method": "EVO_ITEM",
+        "param": "water_stone",
+        "target": "starmie",
+        "enabled": true
+      }
+    ],
+    "tentacool": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 30,
+        "target": "tentacruel",
+        "enabled": true
+      }
+    ],
+    "venonat": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 31,
+        "target": "venomoth",
+        "enabled": true
+      }
+    ],
+    "voltorb": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 30,
+        "target": "electrode",
+        "enabled": true
+      }
+    ],
+    "vulpix": [
+      {
+        "method": "EVO_ITEM",
+        "param": "fire_stone",
+        "target": "ninetales",
+        "enabled": true
+      }
+    ],
+    "wartortle": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 36,
+        "target": "blastoise",
+        "enabled": true
+      }
+    ],
+    "weedle": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 7,
+        "target": "kakuna",
+        "enabled": true
+      }
+    ],
+    "weepinbell": [
+      {
+        "method": "EVO_ITEM",
+        "param": "leaf_stone",
+        "target": "victreebel",
+        "enabled": true
+      }
+    ],
+    "zubat": [
+      {
+        "method": "EVO_LEVEL",
+        "param": 22,
+        "target": "golbat",
+        "enabled": true
+      }
+    ]
+  },
+  "counts": {
+    "EVO_LEVEL": 52,
+    "EVO_FRIENDSHIP": 2,
+    "EVO_ITEM": 17,
+    "EVO_FRIENDSHIP_DAY": 1,
+    "EVO_FRIENDSHIP_NIGHT": 1,
+    "EVO_TRADE": 4,
+    "EVO_TRADE_ITEM": 6
+  },
+  "added_species": [
+    "bellossom",
+    "blissey",
+    "crobat",
+    "dratini",
+    "eevee",
+    "flareon",
+    "golem",
+    "jolteon",
+    "kabutops",
+    "kingdra",
+    "krabby",
+    "omastar",
+    "politoed",
+    "poliwrath",
+    "porygon",
+    "porygon2",
+    "scizor",
+    "slowking",
+    "steelix",
+    "vaporeon"
+  ],
+  "disabled_reason": "FireRed removes time-of-day evolutions because it has no RTC."
+}

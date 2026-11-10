@@ -1,0 +1,70 @@
+{
+  "repository": "BrandeisPatrick/pokemon-red-web",
+  "commit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "mapSource": "local-source/ViridianMart.json",
+  "tilesetSource": "local-source/Mart.json",
+  "originalSources": {
+    "header": "data/maps/headers/ViridianMart.asm",
+    "objects": "data/maps/objects/ViridianMart.asm",
+    "blocks": "maps/ViridianMart.blk",
+    "script": "scripts/ViridianMart.asm"
+  },
+  "mapSHA256": "eee4e38a6fedc066feeb55fa836b876bde2e7baa5771dd56b5357ffd393ee4c7",
+  "art": "Existing approved Pallet recolored Overworld atlas; interior original atlas mapped to existing four neutral material colors, no geometry redrawn.",
+  "adaptation": "Red original Mart geometry, feet-tile collision and clerk; existing neutral tint; other NPCs/story not implemented. FireRed purchase subset separately documented.",
+  "rights": "Original Pokemon assets rights retained; source availability is not redistribution permission.",
+  "clerk": {
+    "source": "assets/sprites/clerk.png",
+    "frame": [
+      0,
+      32,
+      16,
+      16
+    ],
+    "flipX": true,
+    "sourceCell": [
+      0,
+      5
+    ],
+    "renderCenter": [
+      8,
+      88
+    ],
+    "nativeSize": [
+      16,
+      16
+    ],
+    "scale": 2,
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  "connections": {
+    "cityDoor": [
+      29,
+      19
+    ],
+    "cityReturnFeet": [
+      472,
+      329
+    ],
+    "interiorExits": [
+      [
+        3,
+        7
+      ],
+      [
+        4,
+        7
+      ]
+    ],
+    "interactionCell": [
+      2,
+      5
+    ],
+    "face": "left"
+  }
+}

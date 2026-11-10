@@ -1,0 +1,290 @@
+[
+  {
+    "map": "route2",
+    "cell": [
+      5,
+      10
+    ],
+    "block_cell": [
+      2,
+      5
+    ],
+    "original": 50,
+    "replacement": 109,
+    "patch": "res://assets/route2/cut-50-109.png",
+    "cells": [
+      {
+        "cell": [
+          4,
+          10
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          5,
+          10
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          4,
+          11
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          5,
+          11
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "route2",
+    "cell": [
+      15,
+      22
+    ],
+    "block_cell": [
+      7,
+      11
+    ],
+    "original": 50,
+    "replacement": 109,
+    "patch": "res://assets/route2/cut-50-109.png",
+    "cells": [
+      {
+        "cell": [
+          14,
+          22
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          15,
+          22
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          14,
+          23
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          15,
+          23
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "route2",
+    "cell": [
+      5,
+      38
+    ],
+    "block_cell": [
+      2,
+      19
+    ],
+    "original": 50,
+    "replacement": 109,
+    "patch": "res://assets/route2/cut-50-109.png",
+    "cells": [
+      {
+        "cell": [
+          4,
+          38
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          5,
+          38
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          4,
+          39
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          5,
+          39
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "route2",
+    "cell": [
+      12,
+      52
+    ],
+    "block_cell": [
+      6,
+      26
+    ],
+    "original": 52,
+    "replacement": 111,
+    "patch": "res://assets/route2/cut-52-111.png",
+    "cells": [
+      {
+        "cell": [
+          12,
+          52
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          13,
+          52
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          12,
+          53
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          13,
+          53
+        ],
+        "foot": 80,
+        "solid": 1
+      }
+    ]
+  },
+  {
+    "map": "route2",
+    "cell": [
+      12,
+      60
+    ],
+    "block_cell": [
+      6,
+      30
+    ],
+    "original": 52,
+    "replacement": 111,
+    "patch": "res://assets/route2/cut-52-111.png",
+    "cells": [
+      {
+        "cell": [
+          12,
+          60
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          13,
+          60
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          12,
+          61
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          13,
+          61
+        ],
+        "foot": 80,
+        "solid": 1
+      }
+    ]
+  },
+  {
+    "map": "route2",
+    "cell": [
+      12,
+      68
+    ],
+    "block_cell": [
+      6,
+      34
+    ],
+    "original": 52,
+    "replacement": 111,
+    "patch": "res://assets/route2/cut-52-111.png",
+    "cells": [
+      {
+        "cell": [
+          12,
+          68
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          13,
+          68
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          12,
+          69
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          13,
+          69
+        ],
+        "foot": 80,
+        "solid": 1
+      }
+    ]
+  }
+]

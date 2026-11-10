@@ -1,0 +1,462 @@
+[
+  {
+    "id": "route3_colton",
+    "map": "route3",
+    "name": "捕虫少年科尔顿",
+    "title": "捕虫少年科尔顿 · 3号道路",
+    "cell": [
+      10,
+      6
+    ],
+    "facing": "right",
+    "sprite": "res://assets/route3/colton.png",
+    "portrait": "res://assets/route3/bug_catcher-trainer.png",
+    "reward": 120,
+    "party": [
+      {
+        "species_id": "caterpie",
+        "level": 10,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "tackle",
+          "stringshot"
+        ]
+      },
+      {
+        "species_id": "weedle",
+        "level": 10,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "poisonsting",
+          "stringshot"
+        ]
+      },
+      {
+        "species_id": "caterpie",
+        "level": 10,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "tackle",
+          "stringshot"
+        ]
+      }
+    ],
+    "intro": "嘿！我在常青森林见过你！",
+    "defeat": "你又打败我了！",
+    "after": "除了森林里的宝可梦，还有其他种类呢！",
+    "redObject": 2,
+    "sourceIntro": "Hey! I met you in VIRIDIAN FOREST!",
+    "sourceDefeat": "You beat me again!",
+    "fireRedTrainer": "BugCatcherColton",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "route3_ben",
+    "map": "route3",
+    "name": "短裤小子本",
+    "title": "短裤小子本 · 3号道路",
+    "cell": [
+      14,
+      4
+    ],
+    "facing": "down",
+    "sprite": "res://assets/route3/ben.png",
+    "portrait": "res://assets/route3/youngster-trainer.png",
+    "reward": 176,
+    "party": [
+      {
+        "species_id": "rattata",
+        "level": 11,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spa"
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack"
+        ]
+      },
+      {
+        "species_id": "ekans",
+        "level": 11,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "wrap",
+          "leer",
+          "poisonsting"
+        ]
+      }
+    ],
+    "intro": "嗨！我喜欢短裤！穿着舒服又方便！",
+    "defeat": "真不敢相信！",
+    "after": "你用中心的PC寄存宝可梦吗？每个盒子能放30只。",
+    "redObject": 3,
+    "sourceIntro": "Hi! I like shorts! They're comfy and easy to wear!",
+    "sourceDefeat": "I don't believe it!",
+    "fireRedTrainer": "YoungsterBen",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "route3_janice",
+    "map": "route3",
+    "name": "少女珍妮丝",
+    "title": "少女珍妮丝 · 3号道路",
+    "cell": [
+      16,
+      9
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route3/janice.png",
+    "portrait": "res://assets/route3/lass-trainer.png",
+    "reward": 144,
+    "party": [
+      {
+        "species_id": "pidgey",
+        "level": 9,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "atk"
+        },
+        "moves": [
+          "tackle",
+          "sandattack",
+          "gust"
+        ]
+      },
+      {
+        "species_id": "pidgey",
+        "level": 9,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "tackle",
+          "sandattack",
+          "gust"
+        ]
+      }
+    ],
+    "intro": "你刚才在看我，对吧？",
+    "defeat": "你真坏！",
+    "after": "不想对战就别盯着人看！",
+    "redObject": 4,
+    "sourceIntro": "You looked at me, didn't you?",
+    "sourceDefeat": "You're mean!",
+    "fireRedTrainer": "LassJanice",
+    "alphaBBox": [
+      1,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "route3_greg",
+    "map": "route3",
+    "name": "捕虫少年格雷格",
+    "title": "捕虫少年格雷格 · 3号道路",
+    "cell": [
+      19,
+      5
+    ],
+    "facing": "down",
+    "sprite": "res://assets/route3/greg.png",
+    "portrait": "res://assets/route3/bug_catcher-trainer.png",
+    "reward": 108,
+    "party": [
+      {
+        "species_id": "weedle",
+        "level": 9,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "poisonsting",
+          "stringshot"
+        ]
+      },
+      {
+        "species_id": "kakuna",
+        "level": 9,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spa"
+        },
+        "moves": [
+          "harden"
+        ]
+      },
+      {
+        "species_id": "caterpie",
+        "level": 9,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spd"
+        },
+        "moves": [
+          "tackle",
+          "stringshot"
+        ]
+      },
+      {
+        "species_id": "metapod",
+        "level": 9,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "harden"
+        ]
+      }
+    ],
+    "intro": "你是训练家吗？马上来对战吧！",
+    "defeat": "要是有新宝可梦，我就赢了！",
+    "after": "PC盒子满了，就换另一个盒子。",
+    "redObject": 5,
+    "sourceIntro": "Are you a trainer? Let's fight!",
+    "sourceDefeat": "If I had new POKéMON I would've won!",
+    "fireRedTrainer": "BugCatcherGreg",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "route3_sally",
+    "map": "route3",
+    "name": "少女莎莉",
+    "title": "少女莎莉 · 3号道路",
+    "cell": [
+      23,
+      4
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route3/sally.png",
+    "portrait": "res://assets/route3/lass-trainer.png",
+    "reward": 160,
+    "party": [
+      {
+        "species_id": "rattata",
+        "level": 10,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack"
+        ]
+      },
+      {
+        "species_id": "nidoran_f",
+        "level": 10,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "atk"
+        },
+        "moves": [
+          "growl",
+          "scratch",
+          "tailwhip"
+        ]
+      }
+    ],
+    "intro": "你看我的眼神真有意思！",
+    "defeat": "对我好一点嘛！",
+    "after": "不让训练家看到，就能避开对战。",
+    "redObject": 6,
+    "sourceIntro": "That look you gave me, it's so intriguing!",
+    "sourceDefeat": "Be nice!",
+    "fireRedTrainer": "LassSally",
+    "alphaBBox": [
+      1,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "route3_calvin",
+    "map": "route3",
+    "name": "短裤小子卡尔文",
+    "title": "短裤小子卡尔文 · 3号道路",
+    "cell": [
+      22,
+      9
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route3/calvin.png",
+    "portrait": "res://assets/route3/youngster-trainer.png",
+    "reward": 224,
+    "party": [
+      {
+        "species_id": "spearow",
+        "level": 14,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "peck",
+          "growl",
+          "leer",
+          "furyattack"
+        ]
+      }
+    ],
+    "intro": "嘿！你怎么没穿短裤？",
+    "defeat": "输了！输了！输了！",
+    "after": "就算冬天，我也一直穿短裤。",
+    "redObject": 7,
+    "sourceIntro": "Hey! You're not wearing shorts!",
+    "sourceDefeat": "Lost! Lost! Lost!",
+    "fireRedTrainer": "YoungsterCalvin",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "route3_james",
+    "map": "route3",
+    "name": "捕虫少年詹姆斯",
+    "title": "捕虫少年詹姆斯 · 3号道路",
+    "cell": [
+      24,
+      6
+    ],
+    "facing": "right",
+    "sprite": "res://assets/route3/james.png",
+    "portrait": "res://assets/route3/bug_catcher-trainer.png",
+    "reward": 132,
+    "party": [
+      {
+        "species_id": "caterpie",
+        "level": 11,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spd"
+        },
+        "moves": [
+          "tackle",
+          "stringshot"
+        ]
+      },
+      {
+        "species_id": "metapod",
+        "level": 11,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "harden"
+        ]
+      }
+    ],
+    "intro": "来和我刚抓到的宝可梦对战吧！",
+    "defeat": "彻底输了！",
+    "after": "训练过的宝可梦比野生的更强。",
+    "redObject": 8,
+    "sourceIntro": "You can fight my new POKéMON!",
+    "sourceDefeat": "Done like dinner!",
+    "fireRedTrainer": "BugCatcherJames",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "route3_robin",
+    "map": "route3",
+    "name": "少女罗宾",
+    "title": "少女罗宾 · 3号道路",
+    "cell": [
+      33,
+      10
+    ],
+    "facing": "up",
+    "sprite": "res://assets/route3/robin.png",
+    "portrait": "res://assets/route3/lass-trainer.png",
+    "reward": 224,
+    "party": [
+      {
+        "species_id": "jigglypuff",
+        "level": 14,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "sing",
+          "defensecurl",
+          "pound",
+          "disable"
+        ]
+      }
+    ],
+    "intro": "呀！你碰到我了吗？",
+    "defeat": "就这样？",
+    "after": "4号道路就在月见山脚下。",
+    "redObject": 9,
+    "sourceIntro": "Eek! Did you touch me?",
+    "sourceDefeat": "That's it?",
+    "fireRedTrainer": "LassRobin",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  }
+]

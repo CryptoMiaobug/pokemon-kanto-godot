@@ -1,0 +1,610 @@
+{
+  "bulbasaur": [
+    "OVERGROW",
+    "NONE"
+  ],
+  "charmander": [
+    "BLAZE",
+    "NONE"
+  ],
+  "squirtle": [
+    "TORRENT",
+    "NONE"
+  ],
+  "rattata": [
+    "RUN_AWAY",
+    "GUTS"
+  ],
+  "pidgey": [
+    "KEEN_EYE",
+    "NONE"
+  ],
+  "ivysaur": [
+    "OVERGROW",
+    "NONE"
+  ],
+  "charmeleon": [
+    "BLAZE",
+    "NONE"
+  ],
+  "wartortle": [
+    "TORRENT",
+    "NONE"
+  ],
+  "raticate": [
+    "RUN_AWAY",
+    "GUTS"
+  ],
+  "pidgeotto": [
+    "KEEN_EYE",
+    "NONE"
+  ],
+  "venusaur": [
+    "OVERGROW",
+    "NONE"
+  ],
+  "charizard": [
+    "BLAZE",
+    "NONE"
+  ],
+  "blastoise": [
+    "TORRENT",
+    "NONE"
+  ],
+  "pidgeot": [
+    "KEEN_EYE",
+    "NONE"
+  ],
+  "caterpie": [
+    "SHIELD_DUST",
+    "NONE"
+  ],
+  "metapod": [
+    "SHED_SKIN",
+    "NONE"
+  ],
+  "butterfree": [
+    "COMPOUND_EYES",
+    "NONE"
+  ],
+  "weedle": [
+    "SHIELD_DUST",
+    "NONE"
+  ],
+  "kakuna": [
+    "SHED_SKIN",
+    "NONE"
+  ],
+  "beedrill": [
+    "SWARM",
+    "NONE"
+  ],
+  "pikachu": [
+    "STATIC",
+    "NONE"
+  ],
+  "geodude": [
+    "ROCK_HEAD",
+    "STURDY"
+  ],
+  "onix": [
+    "ROCK_HEAD",
+    "STURDY"
+  ],
+  "sandshrew": [
+    "SAND_VEIL",
+    "NONE"
+  ],
+  "spearow": [
+    "KEEN_EYE",
+    "NONE"
+  ],
+  "fearow": [
+    "KEEN_EYE",
+    "NONE"
+  ],
+  "mankey": [
+    "VITAL_SPIRIT",
+    "NONE"
+  ],
+  "primeape": [
+    "VITAL_SPIRIT",
+    "NONE"
+  ],
+  "nidoran_m": [
+    "POISON_POINT",
+    "NONE"
+  ],
+  "nidorino": [
+    "POISON_POINT",
+    "NONE"
+  ],
+  "nidoran_f": [
+    "POISON_POINT",
+    "NONE"
+  ],
+  "nidorina": [
+    "POISON_POINT",
+    "NONE"
+  ],
+  "jigglypuff": [
+    "CUTE_CHARM",
+    "NONE"
+  ],
+  "ekans": [
+    "INTIMIDATE",
+    "SHED_SKIN"
+  ],
+  "arbok": [
+    "INTIMIDATE",
+    "SHED_SKIN"
+  ],
+  "zubat": [
+    "INNER_FOCUS",
+    "NONE"
+  ],
+  "paras": [
+    "EFFECT_SPORE",
+    "NONE"
+  ],
+  "clefairy": [
+    "CUTE_CHARM",
+    "NONE"
+  ],
+  "oddish": [
+    "CHLOROPHYLL",
+    "NONE"
+  ],
+  "bellsprout": [
+    "CHLOROPHYLL",
+    "NONE"
+  ],
+  "magnemite": [
+    "MAGNET_PULL",
+    "STURDY"
+  ],
+  "voltorb": [
+    "SOUNDPROOF",
+    "STATIC"
+  ],
+  "grimer": [
+    "STENCH",
+    "STICKY_HOLD"
+  ],
+  "koffing": [
+    "LEVITATE",
+    "NONE"
+  ],
+  "horsea": [
+    "SWIFT_SWIM",
+    "NONE"
+  ],
+  "shellder": [
+    "SHELL_ARMOR",
+    "NONE"
+  ],
+  "goldeen": [
+    "SWIFT_SWIM",
+    "WATER_VEIL"
+  ],
+  "staryu": [
+    "ILLUMINATE",
+    "NATURAL_CURE"
+  ],
+  "starmie": [
+    "ILLUMINATE",
+    "NATURAL_CURE"
+  ],
+  "abra": [
+    "SYNCHRONIZE",
+    "INNER_FOCUS"
+  ],
+  "slowpoke": [
+    "OBLIVIOUS",
+    "OWN_TEMPO"
+  ],
+  "machop": [
+    "GUTS",
+    "NONE"
+  ],
+  "drowzee": [
+    "INSOMNIA",
+    "NONE"
+  ],
+  "meowth": [
+    "PICKUP",
+    "NONE"
+  ],
+  "kadabra": [
+    "SYNCHRONIZE",
+    "INNER_FOCUS"
+  ],
+  "raichu": [
+    "STATIC",
+    "NONE"
+  ],
+  "growlithe": [
+    "INTIMIDATE",
+    "FLASH_FIRE"
+  ],
+  "venonat": [
+    "COMPOUND_EYES",
+    "NONE"
+  ],
+  "graveler": [
+    "ROCK_HEAD",
+    "STURDY"
+  ],
+  "cubone": [
+    "ROCK_HEAD",
+    "LIGHTNING_ROD"
+  ],
+  "poliwag": [
+    "WATER_ABSORB",
+    "DAMP"
+  ],
+  "poliwhirl": [
+    "WATER_ABSORB",
+    "DAMP"
+  ],
+  "muk": [
+    "STENCH",
+    "STICKY_HOLD"
+  ],
+  "vulpix": [
+    "FLASH_FIRE",
+    "NONE"
+  ],
+  "weepinbell": [
+    "CHLOROPHYLL",
+    "NONE"
+  ],
+  "exeggcute": [
+    "CHLOROPHYLL",
+    "NONE"
+  ],
+  "victreebel": [
+    "CHLOROPHYLL",
+    "NONE"
+  ],
+  "tangela": [
+    "CHLOROPHYLL",
+    "NONE"
+  ],
+  "vileplume": [
+    "CHLOROPHYLL",
+    "NONE"
+  ],
+  "gloom": [
+    "CHLOROPHYLL",
+    "NONE"
+  ],
+  "sandslash": [
+    "SAND_VEIL",
+    "NONE"
+  ],
+  "rhyhorn": [
+    "LIGHTNING_ROD",
+    "ROCK_HEAD"
+  ],
+  "kangaskhan": [
+    "EARLY_BIRD",
+    "NONE"
+  ],
+  "gyarados": [
+    "INTIMIDATE",
+    "NONE"
+  ],
+  "gastly": [
+    "LEVITATE",
+    "NONE"
+  ],
+  "haunter": [
+    "LEVITATE",
+    "NONE"
+  ],
+  "marowak": [
+    "ROCK_HEAD",
+    "LIGHTNING_ROD"
+  ],
+  "golbat": [
+    "INNER_FOCUS",
+    "NONE"
+  ],
+  "weezing": [
+    "LEVITATE",
+    "NONE"
+  ],
+  "magneton": [
+    "MAGNET_PULL",
+    "STURDY"
+  ],
+  "electrode": [
+    "SOUNDPROOF",
+    "STATIC"
+  ],
+  "hypno": [
+    "INSOMNIA",
+    "NONE"
+  ],
+  "mr_mime": [
+    "SOUNDPROOF",
+    "NONE"
+  ],
+  "machoke": [
+    "GUTS",
+    "NONE"
+  ],
+  "alakazam": [
+    "SYNCHRONIZE",
+    "INNER_FOCUS"
+  ],
+  "lapras": [
+    "WATER_ABSORB",
+    "SHELL_ARMOR"
+  ],
+  "nidoqueen": [
+    "POISON_POINT",
+    "NONE"
+  ],
+  "slowbro": [
+    "OBLIVIOUS",
+    "OWN_TEMPO"
+  ],
+  "venomoth": [
+    "SHIELD_DUST",
+    "NONE"
+  ],
+  "snorlax": [
+    "IMMUNITY",
+    "THICK_FAT"
+  ],
+  "seaking": [
+    "SWIFT_SWIM",
+    "WATER_VEIL"
+  ],
+  "tentacool": [
+    "CLEAR_BODY",
+    "LIQUID_OOZE"
+  ],
+  "magikarp": [
+    "SWIFT_SWIM",
+    "NONE"
+  ],
+  "ditto": [
+    "LIMBER",
+    "NONE"
+  ],
+  "doduo": [
+    "RUN_AWAY",
+    "EARLY_BIRD"
+  ],
+  "farfetchd": [
+    "KEEN_EYE",
+    "INNER_FOCUS"
+  ],
+  "dodrio": [
+    "RUN_AWAY",
+    "EARLY_BIRD"
+  ],
+  "wigglytuff": [
+    "CUTE_CHARM",
+    "NONE"
+  ],
+  "tentacruel": [
+    "CLEAR_BODY",
+    "LIQUID_OOZE"
+  ],
+  "seadra": [
+    "POISON_POINT",
+    "NONE"
+  ],
+  "cloyster": [
+    "SHELL_ARMOR",
+    "NONE"
+  ],
+  "ninetales": [
+    "FLASH_FIRE",
+    "NONE"
+  ],
+  "ponyta": [
+    "RUN_AWAY",
+    "FLASH_FIRE"
+  ],
+  "rapidash": [
+    "RUN_AWAY",
+    "FLASH_FIRE"
+  ],
+  "arcanine": [
+    "INTIMIDATE",
+    "FLASH_FIRE"
+  ],
+  "tauros": [
+    "INTIMIDATE",
+    "NONE"
+  ],
+  "nidoking": [
+    "POISON_POINT",
+    "NONE"
+  ],
+  "dugtrio": [
+    "SAND_VEIL",
+    "ARENA_TRAP"
+  ],
+  "psyduck": [
+    "DAMP",
+    "CLOUD_NINE"
+  ],
+  "persian": [
+    "LIMBER",
+    "NONE"
+  ],
+  "lickitung": [
+    "OWN_TEMPO",
+    "OBLIVIOUS"
+  ],
+  "golduck": [
+    "DAMP",
+    "CLOUD_NINE"
+  ],
+  "exeggutor": [
+    "CHLOROPHYLL",
+    "NONE"
+  ],
+  "dewgong": [
+    "THICK_FAT",
+    "NONE"
+  ],
+  "chansey": [
+    "NATURAL_CURE",
+    "SERENE_GRACE"
+  ],
+  "kingler": [
+    "HYPER_CUTTER",
+    "SHELL_ARMOR"
+  ],
+  "parasect": [
+    "EFFECT_SPORE",
+    "NONE"
+  ],
+  "jynx": [
+    "OBLIVIOUS",
+    "NONE"
+  ],
+  "hitmonchan": [
+    "KEEN_EYE",
+    "NONE"
+  ],
+  "hitmonlee": [
+    "LIMBER",
+    "NONE"
+  ],
+  "machamp": [
+    "GUTS",
+    "NONE"
+  ],
+  "gengar": [
+    "LEVITATE",
+    "NONE"
+  ],
+  "dragonair": [
+    "SHED_SKIN",
+    "NONE"
+  ],
+  "aerodactyl": [
+    "ROCK_HEAD",
+    "PRESSURE"
+  ],
+  "dragonite": [
+    "INNER_FOCUS",
+    "NONE"
+  ],
+  "rhydon": [
+    "LIGHTNING_ROD",
+    "ROCK_HEAD"
+  ],
+  "seel": [
+    "THICK_FAT",
+    "NONE"
+  ],
+  "scyther": [
+    "SWARM",
+    "NONE"
+  ],
+  "diglett": [
+    "SAND_VEIL",
+    "ARENA_TRAP"
+  ],
+  "omanyte": [
+    "SWIFT_SWIM",
+    "SHELL_ARMOR"
+  ],
+  "kabuto": [
+    "SWIFT_SWIM",
+    "BATTLE_ARMOR"
+  ],
+  "clefable": [
+    "CUTE_CHARM",
+    "NONE"
+  ],
+  "blissey": [
+    "NATURAL_CURE",
+    "SERENE_GRACE"
+  ],
+  "crobat": [
+    "INNER_FOCUS",
+    "NONE"
+  ],
+  "dratini": [
+    "SHED_SKIN",
+    "NONE"
+  ],
+  "eevee": [
+    "RUN_AWAY",
+    "NONE"
+  ],
+  "golem": [
+    "ROCK_HEAD",
+    "STURDY"
+  ],
+  "kabutops": [
+    "SWIFT_SWIM",
+    "BATTLE_ARMOR"
+  ],
+  "kingdra": [
+    "SWIFT_SWIM",
+    "NONE"
+  ],
+  "krabby": [
+    "HYPER_CUTTER",
+    "SHELL_ARMOR"
+  ],
+  "omastar": [
+    "SWIFT_SWIM",
+    "SHELL_ARMOR"
+  ],
+  "porygon": [
+    "TRACE",
+    "NONE"
+  ],
+  "porygon2": [
+    "TRACE",
+    "NONE"
+  ],
+  "scizor": [
+    "SWARM",
+    "NONE"
+  ],
+  "steelix": [
+    "ROCK_HEAD",
+    "STURDY"
+  ],
+  "bellossom": [
+    "CHLOROPHYLL",
+    "NONE"
+  ],
+  "flareon": [
+    "FLASH_FIRE",
+    "NONE"
+  ],
+  "jolteon": [
+    "VOLT_ABSORB",
+    "NONE"
+  ],
+  "politoed": [
+    "WATER_ABSORB",
+    "DAMP"
+  ],
+  "poliwrath": [
+    "WATER_ABSORB",
+    "DAMP"
+  ],
+  "slowking": [
+    "OBLIVIOUS",
+    "OWN_TEMPO"
+  ],
+  "vaporeon": [
+    "WATER_ABSORB",
+    "NONE"
+  ]
+}

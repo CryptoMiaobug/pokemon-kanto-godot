@@ -1,0 +1,28 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "map": "data/maps/VermilionDock.json",
+  "mapSHA256": "87e52365aa5687dabf564f4628f750ffd1d50fb4457ee86869366f9d811dff54",
+  "tiles": "assets/tilesets/ship_port.png",
+  "warps": [
+    {
+      "x": 14,
+      "y": 0,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 6,
+      "destWarpIndex": 5
+    },
+    {
+      "x": 14,
+      "y": 2,
+      "destMap": "SS_ANNE_1F",
+      "destMapId": 95,
+      "destMapName": "SSAnne1F",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    }
+  ],
+  "actors": [],
+  "adaptation": "Original feet geometry and initial NPC cells; static down-facing 16px local1x/world2x nearest. No random movement. Only dock and first-floor boarding; all other warps closed with scope notice. No battles, captain, HM01 or departure. Rights remain with original holders; no redistribution clearance."
+}

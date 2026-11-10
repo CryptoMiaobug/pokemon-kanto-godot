@@ -1,0 +1,74 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/VermilionMart.json",
+  "mapSHA256": "76769daadd2a0225d0fab47a08c9fe5b7714d08aaef434a300817e5b2b840c3e",
+  "tiles": "assets/tilesets/pokecenter.png",
+  "warps": [
+    {
+      "x": 3,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 3,
+      "destWarpIndex": 2
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "VERMILIONMART_CLERK",
+      "x": 0,
+      "y": 5,
+      "sprite": "SPRITE_CLERK",
+      "spriteId": 38,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_VERMILIONMART_CLERK",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "VERMILIONMART_COOLTRAINER_M",
+      "x": 5,
+      "y": 6,
+      "sprite": "SPRITE_COOLTRAINER_M",
+      "spriteId": 7,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_VERMILIONMART_COOLTRAINER_M",
+      "textIndex": 2
+    },
+    {
+      "index": 3,
+      "const": "VERMILIONMART_COOLTRAINER_F",
+      "x": 3,
+      "y": 3,
+      "sprite": "SPRITE_COOLTRAINER_F",
+      "spriteId": 6,
+      "movement": "WALK",
+      "rangeOrDirection": "LEFT_RIGHT",
+      "rangeOrDirectionValue": 2,
+      "behavior": "walk_left_right",
+      "textId": "TEXT_VERMILIONMART_COOLTRAINER_F",
+      "textIndex": 3
+    }
+  ],
+  "hiddenObjects": [],
+  "adaptation": "Original feet geometry and NPC initial positions; static16px local1x/world2x nearest and existing neutral palette. Nurse and clerk reuse existing E service, source counter reach cell3,3 /2,5. PC investigation13,3 from13,4. No link/trade; visitor lines only scope notices. Mart FireRed stock functional subset Poke Ball200 only; six unimplemented items not sold.",
+  "rights": "Original rights holders; no redistribution clearance."
+}

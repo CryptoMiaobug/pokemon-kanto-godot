@@ -1,0 +1,41 @@
+{
+  "repository": "pret/pokefirered",
+  "commit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "mapping": "battle_gfx_sfx_util.c: player back, opponent front",
+  "rights": "Original Pokemon artwork; redistribution clearance not established",
+  "alignment": "Original 64x64 canvas, proportional nearest-neighbor species portrait rectangle; single 4x, double aspect-fit 170/64; no trim",
+  "frames": [
+    {
+      "source": "graphics/battle_anims/sprites/substitute.png",
+      "source_sha256": "37cd465eb9cb552cc4ed3c5870c3ddd320217afb43228acdea5ec4625624eef5",
+      "output": "substitute.png",
+      "sha256": "fd23f0bcb99701bd980f6a19f92211980558242cdf8c413338076b261fd1c20b",
+      "canvas": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        17,
+        16,
+        47,
+        48
+      ]
+    },
+    {
+      "source": "graphics/battle_anims/sprites/substitute_back.png",
+      "source_sha256": "52df6795b0e09adbd36d0367dc0638e89516dc4e41249510793b892e5299b8c3",
+      "output": "substitute_back.png",
+      "sha256": "2666870f34e9fcf48fee2d76d3e40bec1dbfcb1ee7397707d556ba52497fcd87",
+      "canvas": [
+        64,
+        64
+      ],
+      "alpha_bbox": [
+        16,
+        16,
+        47,
+        47
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "source": "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.inc + src/data/items.json",
+  "sold": [
+    "ultra_balls",
+    "great_balls",
+    "full_restores",
+    "max_potions",
+    "revives",
+    "full_heals",
+    "max_repels"
+  ],
+  "items": [
+    {
+      "id": "ultra_balls",
+      "source_id": "ITEM_ULTRA_BALL",
+      "name": "高级球",
+      "price": 1200
+    },
+    {
+      "id": "great_balls",
+      "source_id": "ITEM_GREAT_BALL",
+      "name": "超级球",
+      "price": 600
+    },
+    {
+      "id": "full_restores",
+      "source_id": "ITEM_FULL_RESTORE",
+      "name": "全复药",
+      "price": 3000
+    },
+    {
+      "id": "max_potions",
+      "source_id": "ITEM_MAX_POTION",
+      "name": "全满药",
+      "price": 2500
+    },
+    {
+      "id": "revives",
+      "source_id": "ITEM_REVIVE",
+      "name": "活力碎片",
+      "price": 1500
+    },
+    {
+      "id": "full_heals",
+      "source_id": "ITEM_FULL_HEAL",
+      "name": "万灵药",
+      "price": 600
+    },
+    {
+      "id": "max_repels",
+      "source_id": "ITEM_MAX_REPEL",
+      "name": "黄金喷雾",
+      "price": 700
+    }
+  ]
+}

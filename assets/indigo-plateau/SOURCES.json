@@ -1,0 +1,57 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "map": "data/maps/IndigoPlateau.json",
+  "mapSHA256": "065eb4caf3ba55c319072289d5c2a59399bc7a16778266feb14cc4be8da5d6fe",
+  "warps": [
+    {
+      "x": 9,
+      "y": 5,
+      "destMap": "INDIGO_PLATEAU_LOBBY",
+      "destMapId": 174,
+      "destMapName": "IndigoPlateauLobby",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "destMap": "INDIGO_PLATEAU_LOBBY",
+      "destMapId": 174,
+      "destMapName": "IndigoPlateauLobby",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "connections": {
+    "south": {
+      "map": "ROUTE_23",
+      "mapId": 34,
+      "mapName": "Route23",
+      "offset": 0,
+      "dx": 0,
+      "dy": 9,
+      "copyRect": {
+        "x": 0,
+        "y": 0,
+        "w": 10,
+        "h": 3
+      },
+      "onEnter": {
+        "newY": 0,
+        "xAdd": 0
+      },
+      "macro": {
+        "stripSrc": 0,
+        "stripDest": 195,
+        "stripLength": 10,
+        "connectedWidth": 10,
+        "yAlign": 0,
+        "xAlign": 0,
+        "viewPointer": 17
+      }
+    }
+  },
+  "actors": [],
+  "adaptation": "Exact Red geometry; trainers/wild deferred51-53, Moltres display only, items deferred; Indigo exterior connection only, lobby54 closed. Transient stones reset on map entry; switch/fallen flags latch until Route23 reset. Atomic local save adaptation.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

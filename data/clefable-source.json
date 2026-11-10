@@ -1,0 +1,15 @@
+{
+  "revision": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "files": {
+    "src/data/pokemon/species_info.h": "9c2da1284f7859700b315abda0499334c422f2c6776d576c788fcd1e4050f71e",
+    "src/data/pokemon/level_up_learnsets.h": "d6563a88fa893d1433a02027cb13ba9574a6828a96b1a730b1d767fd7c5a0cc6",
+    "src/data/pokemon/evolution.h": "a7d05352fb5b7039b8851049bc9575dc8eaa4450bf9964d03b7857db98c32d3c",
+    "src/pokemon_icon.c": "2034625b3e4b804fb8052400b98bf1920a9cb435699338f18c34ea32e3e2f967",
+    "graphics/pokemon/clefable/front.png": "e71329b76f2eefb453917eb72b82a1e41437c933447778d960a0404880130198",
+    "graphics/pokemon/clefable/normal.pal": "cc2f5988137afff26b865c5e83518c55443a196f51df299a3e346d1cde9faf30",
+    "graphics/pokemon/clefable/back.png": "c0dc8169db24a10e89ff21d5b042e9e608a3bac728aeea63660d052f96f13fbb",
+    "graphics/pokemon/clefable/icon.png": "ce5148ca52a2589d4fb907f496f0c6b7d37b3ef3d7cfca90a697ef15d7d5f9b4",
+    "graphics/pokemon/icon_palettes/icon_palette_0.pal": "3fc608122b12800dc17d5d562cfdc424a76bd47719e4874556ff53b055f92083"
+  },
+  "scope": "Only Clefable species and original front/back/icon; existing Moon Stone mapping unchanged; no new encounters or dex UI."
+}

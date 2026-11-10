@@ -1,0 +1,23 @@
+{
+  "league-lorelei": {
+    "block": [
+      2,
+      0
+    ],
+    "patch": "res://assets/league-lorelei/open-door.png"
+  },
+  "league-bruno": {
+    "block": [
+      2,
+      0
+    ],
+    "patch": "res://assets/league-bruno/open-door.png"
+  },
+  "league-agatha": {
+    "block": [
+      2,
+      0
+    ],
+    "patch": "res://assets/league-agatha/open-door.png"
+  }
+}

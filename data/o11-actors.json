@@ -1,0 +1,32 @@
+[
+  {
+    "map": "route5-gate",
+    "redObject": 1,
+    "cell": [
+      1,
+      3
+    ],
+    "sprite": "res://assets/route5-gate/actor-1.png",
+    "facing": "right"
+  },
+  {
+    "map": "route6-gate",
+    "redObject": 1,
+    "cell": [
+      6,
+      2
+    ],
+    "sprite": "res://assets/route6-gate/actor-1.png",
+    "facing": "left"
+  },
+  {
+    "map": "route8-gate",
+    "redObject": 1,
+    "cell": [
+      2,
+      1
+    ],
+    "sprite": "res://assets/route8-gate/actor-1.png",
+    "facing": "down"
+  }
+]

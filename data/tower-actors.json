@@ -1,0 +1,560 @@
+[
+  {
+    "map": "pokemon-tower-3f",
+    "cell": [
+      12,
+      3
+    ],
+    "sprite": "res://assets/pokemon-tower-3f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      3,
+      0,
+      14,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "pokemon-tower-3f",
+    "cell": [
+      9,
+      8
+    ],
+    "sprite": "res://assets/pokemon-tower-3f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "pokemon-tower-3f",
+    "cell": [
+      10,
+      13
+    ],
+    "sprite": "res://assets/pokemon-tower-3f/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "pokemon-tower-3f",
+    "cell": [
+      12,
+      1
+    ],
+    "sprite": "res://assets/pokemon-tower-3f/actor-4.png",
+    "redObject": 4,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "startsHidden": false,
+    "item": "ESCAPE_ROPE",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "pokemon-tower-4f",
+    "cell": [
+      5,
+      10
+    ],
+    "sprite": "res://assets/pokemon-tower-4f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      2,
+      0,
+      13,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "pokemon-tower-4f",
+    "cell": [
+      15,
+      7
+    ],
+    "sprite": "res://assets/pokemon-tower-4f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "pokemon-tower-4f",
+    "cell": [
+      14,
+      12
+    ],
+    "sprite": "res://assets/pokemon-tower-4f/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      3,
+      0,
+      14,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "pokemon-tower-4f",
+    "cell": [
+      12,
+      10
+    ],
+    "sprite": "res://assets/pokemon-tower-4f/actor-4.png",
+    "redObject": 4,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "startsHidden": false,
+    "item": "ELIXER",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "pokemon-tower-4f",
+    "cell": [
+      9,
+      10
+    ],
+    "sprite": "res://assets/pokemon-tower-4f/actor-5.png",
+    "redObject": 5,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "startsHidden": false,
+    "item": "AWAKENING",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "pokemon-tower-4f",
+    "cell": [
+      12,
+      16
+    ],
+    "sprite": "res://assets/pokemon-tower-4f/actor-6.png",
+    "redObject": 6,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "startsHidden": false,
+    "item": "HP_UP",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "pokemon-tower-5f",
+    "cell": [
+      12,
+      8
+    ],
+    "sprite": "res://assets/pokemon-tower-5f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "pokemon-tower-5f",
+    "cell": [
+      17,
+      7
+    ],
+    "sprite": "res://assets/pokemon-tower-5f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      3,
+      0,
+      14,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "pokemon-tower-5f",
+    "cell": [
+      14,
+      3
+    ],
+    "sprite": "res://assets/pokemon-tower-5f/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      3,
+      0,
+      14,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "pokemon-tower-5f",
+    "cell": [
+      6,
+      10
+    ],
+    "sprite": "res://assets/pokemon-tower-5f/actor-4.png",
+    "redObject": 4,
+    "alphaBBox": [
+      2,
+      0,
+      13,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "pokemon-tower-5f",
+    "cell": [
+      9,
+      16
+    ],
+    "sprite": "res://assets/pokemon-tower-5f/actor-5.png",
+    "redObject": 5,
+    "alphaBBox": [
+      2,
+      0,
+      13,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "pokemon-tower-5f",
+    "cell": [
+      6,
+      14
+    ],
+    "sprite": "res://assets/pokemon-tower-5f/actor-6.png",
+    "redObject": 6,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "startsHidden": false,
+    "item": "NUGGET",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "pokemon-tower-6f",
+    "cell": [
+      12,
+      10
+    ],
+    "sprite": "res://assets/pokemon-tower-6f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      2,
+      0,
+      13,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "pokemon-tower-6f",
+    "cell": [
+      9,
+      5
+    ],
+    "sprite": "res://assets/pokemon-tower-6f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "pokemon-tower-6f",
+    "cell": [
+      16,
+      5
+    ],
+    "sprite": "res://assets/pokemon-tower-6f/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      3,
+      0,
+      14,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "pokemon-tower-6f",
+    "cell": [
+      6,
+      8
+    ],
+    "sprite": "res://assets/pokemon-tower-6f/actor-4.png",
+    "redObject": 4,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "startsHidden": false,
+    "item": "RARE_CANDY",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "pokemon-tower-6f",
+    "cell": [
+      14,
+      14
+    ],
+    "sprite": "res://assets/pokemon-tower-6f/actor-5.png",
+    "redObject": 5,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "startsHidden": false,
+    "item": "X_ACCURACY",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "pokemon-tower-7f",
+    "cell": [
+      9,
+      11
+    ],
+    "sprite": "res://assets/pokemon-tower-7f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "pokemon-tower-7f",
+    "cell": [
+      12,
+      9
+    ],
+    "sprite": "res://assets/pokemon-tower-7f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "pokemon-tower-7f",
+    "cell": [
+      9,
+      7
+    ],
+    "sprite": "res://assets/pokemon-tower-7f/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "pokemon-tower-7f",
+    "cell": [
+      10,
+      3
+    ],
+    "sprite": "res://assets/pokemon-tower-7f/actor-4.png",
+    "redObject": 4,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "mr-fujis-house",
+    "cell": [
+      3,
+      5
+    ],
+    "sprite": "res://assets/mr-fujis-house/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "mr-fujis-house",
+    "cell": [
+      6,
+      3
+    ],
+    "sprite": "res://assets/mr-fujis-house/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      0,
+      2,
+      16,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "mr-fujis-house",
+    "cell": [
+      6,
+      4
+    ],
+    "sprite": "res://assets/mr-fujis-house/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "mr-fujis-house",
+    "cell": [
+      1,
+      3
+    ],
+    "sprite": "res://assets/mr-fujis-house/actor-4.png",
+    "redObject": 4,
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "mr-fujis-house",
+    "cell": [
+      3,
+      1
+    ],
+    "sprite": "res://assets/mr-fujis-house/actor-5.png",
+    "redObject": 5,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "startsHidden": true,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。"
+  },
+  {
+    "map": "mr-fujis-house",
+    "cell": [
+      3,
+      3
+    ],
+    "sprite": "res://assets/mr-fujis-house/actor-6.png",
+    "redObject": 6,
+    "alphaBBox": [
+      1,
+      3,
+      16,
+      14
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。"
+  }
+]

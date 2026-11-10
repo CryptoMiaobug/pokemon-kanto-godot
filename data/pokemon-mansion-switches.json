@@ -1,0 +1,1156 @@
+{
+  "doors": [
+    {
+      "map": "pokemon-mansion-1f",
+      "block_cell": [
+        12,
+        6
+      ],
+      "states": [
+        {
+          "block": 14,
+          "cells": [
+            {
+              "cell": [
+                24,
+                12
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                25,
+                12
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                24,
+                13
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                25,
+                13
+              ],
+              "foot": 1,
+              "solid": 0
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-1f/door-0-0.png"
+        },
+        {
+          "block": 45,
+          "cells": [
+            {
+              "cell": [
+                24,
+                12
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                25,
+                12
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                24,
+                13
+              ],
+              "foot": 24,
+              "solid": 1
+            },
+            {
+              "cell": [
+                25,
+                13
+              ],
+              "foot": 24,
+              "solid": 1
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-1f/door-0-1.png"
+        }
+      ]
+    },
+    {
+      "map": "pokemon-mansion-1f",
+      "block_cell": [
+        8,
+        3
+      ],
+      "states": [
+        {
+          "block": 45,
+          "cells": [
+            {
+              "cell": [
+                16,
+                6
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                17,
+                6
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                16,
+                7
+              ],
+              "foot": 24,
+              "solid": 1
+            },
+            {
+              "cell": [
+                17,
+                7
+              ],
+              "foot": 24,
+              "solid": 1
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-1f/door-1-0.png"
+        },
+        {
+          "block": 14,
+          "cells": [
+            {
+              "cell": [
+                16,
+                6
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                17,
+                6
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                16,
+                7
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                17,
+                7
+              ],
+              "foot": 1,
+              "solid": 0
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-1f/door-1-1.png"
+        }
+      ]
+    },
+    {
+      "map": "pokemon-mansion-1f",
+      "block_cell": [
+        10,
+        8
+      ],
+      "states": [
+        {
+          "block": 45,
+          "cells": [
+            {
+              "cell": [
+                20,
+                16
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                21,
+                16
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                20,
+                17
+              ],
+              "foot": 24,
+              "solid": 1
+            },
+            {
+              "cell": [
+                21,
+                17
+              ],
+              "foot": 24,
+              "solid": 1
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-1f/door-2-0.png"
+        },
+        {
+          "block": 14,
+          "cells": [
+            {
+              "cell": [
+                20,
+                16
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                21,
+                16
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                20,
+                17
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                21,
+                17
+              ],
+              "foot": 1,
+              "solid": 0
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-1f/door-2-1.png"
+        }
+      ]
+    },
+    {
+      "map": "pokemon-mansion-1f",
+      "block_cell": [
+        13,
+        13
+      ],
+      "states": [
+        {
+          "block": 45,
+          "cells": [
+            {
+              "cell": [
+                26,
+                26
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                27,
+                26
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                26,
+                27
+              ],
+              "foot": 24,
+              "solid": 1
+            },
+            {
+              "cell": [
+                27,
+                27
+              ],
+              "foot": 24,
+              "solid": 1
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-1f/door-3-0.png"
+        },
+        {
+          "block": 14,
+          "cells": [
+            {
+              "cell": [
+                26,
+                26
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                27,
+                26
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                26,
+                27
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                27,
+                27
+              ],
+              "foot": 1,
+              "solid": 0
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-1f/door-3-1.png"
+        }
+      ]
+    },
+    {
+      "map": "pokemon-mansion-2f",
+      "block_cell": [
+        4,
+        2
+      ],
+      "states": [
+        {
+          "block": 14,
+          "cells": [
+            {
+              "cell": [
+                8,
+                4
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                9,
+                4
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                8,
+                5
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                9,
+                5
+              ],
+              "foot": 1,
+              "solid": 0
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-2f/door-0-0.png"
+        },
+        {
+          "block": 95,
+          "cells": [
+            {
+              "cell": [
+                8,
+                4
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                9,
+                4
+              ],
+              "foot": 36,
+              "solid": 1
+            },
+            {
+              "cell": [
+                8,
+                5
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                9,
+                5
+              ],
+              "foot": 36,
+              "solid": 1
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-2f/door-0-1.png"
+        }
+      ]
+    },
+    {
+      "map": "pokemon-mansion-2f",
+      "block_cell": [
+        9,
+        4
+      ],
+      "states": [
+        {
+          "block": 84,
+          "cells": [
+            {
+              "cell": [
+                18,
+                8
+              ],
+              "foot": 24,
+              "solid": 1
+            },
+            {
+              "cell": [
+                19,
+                8
+              ],
+              "foot": 24,
+              "solid": 1
+            },
+            {
+              "cell": [
+                18,
+                9
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                19,
+                9
+              ],
+              "foot": 1,
+              "solid": 0
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-2f/door-1-0.png"
+        },
+        {
+          "block": 14,
+          "cells": [
+            {
+              "cell": [
+                18,
+                8
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                19,
+                8
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                18,
+                9
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                19,
+                9
+              ],
+              "foot": 1,
+              "solid": 0
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-2f/door-1-1.png"
+        }
+      ]
+    },
+    {
+      "map": "pokemon-mansion-2f",
+      "block_cell": [
+        3,
+        11
+      ],
+      "states": [
+        {
+          "block": 95,
+          "cells": [
+            {
+              "cell": [
+                6,
+                22
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                7,
+                22
+              ],
+              "foot": 36,
+              "solid": 1
+            },
+            {
+              "cell": [
+                6,
+                23
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                7,
+                23
+              ],
+              "foot": 36,
+              "solid": 1
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-2f/door-2-0.png"
+        },
+        {
+          "block": 14,
+          "cells": [
+            {
+              "cell": [
+                6,
+                22
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                7,
+                22
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                6,
+                23
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                7,
+                23
+              ],
+              "foot": 1,
+              "solid": 0
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-2f/door-2-1.png"
+        }
+      ]
+    },
+    {
+      "map": "pokemon-mansion-3f",
+      "block_cell": [
+        7,
+        2
+      ],
+      "states": [
+        {
+          "block": 14,
+          "cells": [
+            {
+              "cell": [
+                14,
+                4
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                15,
+                4
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                14,
+                5
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                15,
+                5
+              ],
+              "foot": 1,
+              "solid": 0
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-3f/door-0-0.png"
+        },
+        {
+          "block": 95,
+          "cells": [
+            {
+              "cell": [
+                14,
+                4
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                15,
+                4
+              ],
+              "foot": 36,
+              "solid": 1
+            },
+            {
+              "cell": [
+                14,
+                5
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                15,
+                5
+              ],
+              "foot": 36,
+              "solid": 1
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-3f/door-0-1.png"
+        }
+      ]
+    },
+    {
+      "map": "pokemon-mansion-3f",
+      "block_cell": [
+        7,
+        5
+      ],
+      "states": [
+        {
+          "block": 95,
+          "cells": [
+            {
+              "cell": [
+                14,
+                10
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                15,
+                10
+              ],
+              "foot": 36,
+              "solid": 1
+            },
+            {
+              "cell": [
+                14,
+                11
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                15,
+                11
+              ],
+              "foot": 36,
+              "solid": 1
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-3f/door-1-0.png"
+        },
+        {
+          "block": 14,
+          "cells": [
+            {
+              "cell": [
+                14,
+                10
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                15,
+                10
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                14,
+                11
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                15,
+                11
+              ],
+              "foot": 1,
+              "solid": 0
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-3f/door-1-1.png"
+        }
+      ]
+    },
+    {
+      "map": "pokemon-mansion-b1f",
+      "block_cell": [
+        13,
+        8
+      ],
+      "states": [
+        {
+          "block": 14,
+          "cells": [
+            {
+              "cell": [
+                26,
+                16
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                27,
+                16
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                26,
+                17
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                27,
+                17
+              ],
+              "foot": 1,
+              "solid": 0
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-b1f/door-0-0.png"
+        },
+        {
+          "block": 45,
+          "cells": [
+            {
+              "cell": [
+                26,
+                16
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                27,
+                16
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                26,
+                17
+              ],
+              "foot": 24,
+              "solid": 1
+            },
+            {
+              "cell": [
+                27,
+                17
+              ],
+              "foot": 24,
+              "solid": 1
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-b1f/door-0-1.png"
+        }
+      ]
+    },
+    {
+      "map": "pokemon-mansion-b1f",
+      "block_cell": [
+        6,
+        11
+      ],
+      "states": [
+        {
+          "block": 14,
+          "cells": [
+            {
+              "cell": [
+                12,
+                22
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                13,
+                22
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                12,
+                23
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                13,
+                23
+              ],
+              "foot": 1,
+              "solid": 0
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-b1f/door-1-0.png"
+        },
+        {
+          "block": 95,
+          "cells": [
+            {
+              "cell": [
+                12,
+                22
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                13,
+                22
+              ],
+              "foot": 36,
+              "solid": 1
+            },
+            {
+              "cell": [
+                12,
+                23
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                13,
+                23
+              ],
+              "foot": 36,
+              "solid": 1
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-b1f/door-1-1.png"
+        }
+      ]
+    },
+    {
+      "map": "pokemon-mansion-b1f",
+      "block_cell": [
+        4,
+        3
+      ],
+      "states": [
+        {
+          "block": 95,
+          "cells": [
+            {
+              "cell": [
+                8,
+                6
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                9,
+                6
+              ],
+              "foot": 36,
+              "solid": 1
+            },
+            {
+              "cell": [
+                8,
+                7
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                9,
+                7
+              ],
+              "foot": 36,
+              "solid": 1
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-b1f/door-2-0.png"
+        },
+        {
+          "block": 14,
+          "cells": [
+            {
+              "cell": [
+                8,
+                6
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                9,
+                6
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                8,
+                7
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                9,
+                7
+              ],
+              "foot": 1,
+              "solid": 0
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-b1f/door-2-1.png"
+        }
+      ]
+    },
+    {
+      "map": "pokemon-mansion-b1f",
+      "block_cell": [
+        8,
+        8
+      ],
+      "states": [
+        {
+          "block": 84,
+          "cells": [
+            {
+              "cell": [
+                16,
+                16
+              ],
+              "foot": 24,
+              "solid": 1
+            },
+            {
+              "cell": [
+                17,
+                16
+              ],
+              "foot": 24,
+              "solid": 1
+            },
+            {
+              "cell": [
+                16,
+                17
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                17,
+                17
+              ],
+              "foot": 1,
+              "solid": 0
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-b1f/door-3-0.png"
+        },
+        {
+          "block": 14,
+          "cells": [
+            {
+              "cell": [
+                16,
+                16
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                17,
+                16
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                16,
+                17
+              ],
+              "foot": 1,
+              "solid": 0
+            },
+            {
+              "cell": [
+                17,
+                17
+              ],
+              "foot": 1,
+              "solid": 0
+            }
+          ],
+          "patch": "res://assets/pokemon-mansion-b1f/door-3-1.png"
+        }
+      ]
+    }
+  ],
+  "switches": [
+    {
+      "map": "pokemon-mansion-1f",
+      "cell": [
+        2,
+        5
+      ],
+      "facing": "up",
+      "routine": "Mansion1Script_Switches"
+    },
+    {
+      "map": "pokemon-mansion-2f",
+      "cell": [
+        2,
+        11
+      ],
+      "facing": "up",
+      "routine": "Mansion2Script_Switches"
+    },
+    {
+      "map": "pokemon-mansion-3f",
+      "cell": [
+        10,
+        5
+      ],
+      "facing": "up",
+      "routine": "Mansion3Script_Switches"
+    },
+    {
+      "map": "pokemon-mansion-b1f",
+      "cell": [
+        20,
+        3
+      ],
+      "facing": "up",
+      "routine": "Mansion4Script_Switches"
+    },
+    {
+      "map": "pokemon-mansion-b1f",
+      "cell": [
+        18,
+        25
+      ],
+      "facing": "up",
+      "routine": "Mansion4Script_Switches"
+    }
+  ]
+}

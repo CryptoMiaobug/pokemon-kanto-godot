@@ -1,0 +1,174 @@
+{
+  "red_commit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "firered_commit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "sources": [
+    "data/maps/RockTunnel1F.json",
+    "data/maps/RockTunnelB1F.json",
+    "data/maps/RockTunnel_1F/map.json",
+    "data/maps/RockTunnel_B1F/map.json",
+    "src/data/trainer_parties.h",
+    "src/data/trainers.h",
+    "src/battle_script_commands.c"
+  ],
+  "mapping": [
+    {
+      "map": "rock-tunnel-1f",
+      "redObject": 1,
+      "fireRedTrainer": "HIKER_LENNY",
+      "reward": 684,
+      "sourceIntro": "This tunnel goes a long way, kid!"
+    },
+    {
+      "map": "rock-tunnel-1f",
+      "redObject": 2,
+      "fireRedTrainer": "HIKER_OLIVER",
+      "reward": 720,
+      "sourceIntro": "Hmm.  Maybe I'm lost in here…"
+    },
+    {
+      "map": "rock-tunnel-1f",
+      "redObject": 3,
+      "fireRedTrainer": "HIKER_LUCAS",
+      "reward": 756,
+      "sourceIntro": "Outsiders like you need to show me  some respect!"
+    },
+    {
+      "map": "rock-tunnel-1f",
+      "redObject": 4,
+      "fireRedTrainer": "POKEMANIAC_ASHTON",
+      "reward": 1104,
+      "sourceIntro": "POKéMON fight!  Ready, go!"
+    },
+    {
+      "map": "rock-tunnel-1f",
+      "redObject": 5,
+      "fireRedTrainer": "PICNICKER_LEAH",
+      "reward": 440,
+      "sourceIntro": "Eek!  Don't try anything funny in the  dark!"
+    },
+    {
+      "map": "rock-tunnel-1f",
+      "redObject": 6,
+      "fireRedTrainer": "PICNICKER_DANA",
+      "reward": 400,
+      "sourceIntro": "I came this far looking for wild  POKéMON."
+    },
+    {
+      "map": "rock-tunnel-1f",
+      "redObject": 7,
+      "fireRedTrainer": "PICNICKER_ARIANA",
+      "reward": 380,
+      "sourceIntro": "You have POKéMON!  Let's start!"
+    },
+    {
+      "map": "rock-tunnel-b1f",
+      "redObject": 1,
+      "fireRedTrainer": "PICNICKER_SOFIA",
+      "reward": 420,
+      "sourceIntro": "Do you know how you can avoid  getting lost in the mountains?  You can bend twigs as trail  markers."
+    },
+    {
+      "map": "rock-tunnel-b1f",
+      "redObject": 2,
+      "fireRedTrainer": "HIKER_DUDLEY",
+      "reward": 756,
+      "sourceIntro": "Hahaha!  Can you beat my power?"
+    },
+    {
+      "map": "rock-tunnel-b1f",
+      "redObject": 3,
+      "fireRedTrainer": "POKEMANIAC_COOPER",
+      "reward": 960,
+      "sourceIntro": "You have a POKéDEX?  I want one, too."
+    },
+    {
+      "map": "rock-tunnel-b1f",
+      "redObject": 4,
+      "fireRedTrainer": "POKEMANIAC_STEVE",
+      "reward": 1056,
+      "sourceIntro": "Um… Do you know about POKéMON  cosplay?"
+    },
+    {
+      "map": "rock-tunnel-b1f",
+      "redObject": 5,
+      "fireRedTrainer": "HIKER_ALLEN",
+      "reward": 900,
+      "sourceIntro": "My POKéMON techniques will leave  you crying!"
+    },
+    {
+      "map": "rock-tunnel-b1f",
+      "redObject": 6,
+      "fireRedTrainer": "PICNICKER_MARTHA",
+      "reward": 440,
+      "sourceIntro": "I don't often come here, but I will  battle you."
+    },
+    {
+      "map": "rock-tunnel-b1f",
+      "redObject": 7,
+      "fireRedTrainer": "HIKER_ERIC",
+      "reward": 720,
+      "sourceIntro": "Hit me with your best shot!"
+    },
+    {
+      "map": "rock-tunnel-b1f",
+      "redObject": 8,
+      "fireRedTrainer": "POKEMANIAC_WINSTON",
+      "reward": 1200,
+      "sourceIntro": "I draw illustrations of POKéMON  when I'm home."
+    }
+  ],
+  "dependencies": {
+    "required": [
+      "graveler",
+      "cubone",
+      "rollout lock5 power doubling defensecurl",
+      "boneclub flinch",
+      "whirlwind force out"
+    ],
+    "existing": [
+      "atomic reward growth flags",
+      "E confirm cancel",
+      "north critical rules",
+      "headbutt flinch",
+      "selfdestruct",
+      "seismictoss"
+    ],
+    "deferred": [
+      "darkness Flash",
+      "abilities held items complete AI",
+      "items tutors RockSmash"
+    ]
+  },
+  "story": [
+    {
+      "before": "unbeaten",
+      "action": "E then Esc",
+      "after": "unbeaten",
+      "reward": 0
+    },
+    {
+      "before": "unbeaten",
+      "action": "confirm and win",
+      "after": "beaten",
+      "reward": "source last level × class multiplier ×4, atomic with growth"
+    },
+    {
+      "before": "unbeaten",
+      "action": "lose or interrupted exit",
+      "after": "unbeaten",
+      "reward": 0
+    },
+    {
+      "before": "beaten",
+      "action": "E",
+      "after": "beaten",
+      "reward": 0
+    },
+    {
+      "before": "unbeaten",
+      "action": "real write failure",
+      "after": "exact before battle memory and disk",
+      "reward": 0
+    }
+  ]
+}

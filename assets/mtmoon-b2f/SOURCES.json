@@ -1,0 +1,8 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/MtMoonB2F.json",
+  "tiles": "assets/tilesets/cavern.png",
+  "adaptation": "Original blocks/foot solid/pair collisions; neutral original cavern palette; exact zero based destination warp index/cell. Preserve entering facing; latch arrival until leaving cell. No NPC/item/fossil event, B1F LAST_MAP exit closed without geometry edits.",
+  "rights": "Original rights holders; no distribution clearance asserted."
+}

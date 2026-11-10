@@ -1,0 +1,115 @@
+{
+  "source": "sRoute23_FireRed",
+  "land": {
+    "encounter_rate": 21,
+    "slots": [
+      {
+        "species_id": "mankey",
+        "min_level": 32,
+        "max_level": 32,
+        "weight": 20
+      },
+      {
+        "species_id": "fearow",
+        "min_level": 40,
+        "max_level": 40,
+        "weight": 20
+      },
+      {
+        "species_id": "mankey",
+        "min_level": 34,
+        "max_level": 34,
+        "weight": 10
+      },
+      {
+        "species_id": "spearow",
+        "min_level": 34,
+        "max_level": 34,
+        "weight": 10
+      },
+      {
+        "species_id": "ekans",
+        "min_level": 32,
+        "max_level": 32,
+        "weight": 10
+      },
+      {
+        "species_id": "ekans",
+        "min_level": 34,
+        "max_level": 34,
+        "weight": 10
+      },
+      {
+        "species_id": "primeape",
+        "min_level": 42,
+        "max_level": 42,
+        "weight": 5
+      },
+      {
+        "species_id": "arbok",
+        "min_level": 44,
+        "max_level": 44,
+        "weight": 5
+      },
+      {
+        "species_id": "spearow",
+        "min_level": 32,
+        "max_level": 32,
+        "weight": 4
+      },
+      {
+        "species_id": "fearow",
+        "min_level": 42,
+        "max_level": 42,
+        "weight": 4
+      },
+      {
+        "species_id": "spearow",
+        "min_level": 32,
+        "max_level": 32,
+        "weight": 1
+      },
+      {
+        "species_id": "fearow",
+        "min_level": 44,
+        "max_level": 44,
+        "weight": 1
+      }
+    ]
+  },
+  "water": {
+    "encounter_rate": 2,
+    "slots": [
+      {
+        "species_id": "psyduck",
+        "min_level": 20,
+        "max_level": 25,
+        "weight": 60
+      },
+      {
+        "species_id": "psyduck",
+        "min_level": 20,
+        "max_level": 25,
+        "weight": 30
+      },
+      {
+        "species_id": "psyduck",
+        "min_level": 25,
+        "max_level": 30,
+        "weight": 5
+      },
+      {
+        "species_id": "psyduck",
+        "min_level": 30,
+        "max_level": 35,
+        "weight": 4
+      },
+      {
+        "species_id": "psyduck",
+        "min_level": 35,
+        "max_level": 40,
+        "weight": 1
+      }
+    ]
+  }
+}

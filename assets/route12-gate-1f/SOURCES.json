@@ -1,0 +1,72 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/Route12Gate1F.json",
+  "mapSHA256": "e79babf8f0f95b747ae631bd24eaa258d1be70931c3fcda1559e215e10281b37",
+  "warps": [
+    {
+      "x": 4,
+      "y": 0,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "destMap": "ROUTE_12_GATE_2F",
+      "destMapId": 195,
+      "destMapName": "Route12Gate2F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "ROUTE12GATE1F_GUARD",
+      "x": 1,
+      "y": 3,
+      "sprite": "SPRITE_GUARD",
+      "spriteId": 49,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_ROUTE12GATE1F_GUARD",
+      "textIndex": 1
+    }
+  ],
+  "adaptation": "Red original geometry/foot collision/static16px actors; FR full ordered source teams. Route12 stage18 north64 rows, remainder19. No added FR-only double-battle actors. Original Red seven road trainers mapped by dialogue identity; E manual, no auto sight. Rod/items/Gate2F/Route11/14 deferred. Water stays blocked until Surf slice30.",
+  "rights": "Original rights holders; redistribution clearance not established"
+}

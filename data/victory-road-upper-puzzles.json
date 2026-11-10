@@ -1,0 +1,162 @@
+{
+  "patches": {
+    "victory-road-2f": [
+      {
+        "flag": "victory_road_2f_open1",
+        "switch": [
+          1,
+          16
+        ],
+        "block": [
+          3,
+          4
+        ],
+        "openBlock": 21,
+        "cells": [
+          {
+            "cell": [
+              6,
+              8
+            ],
+            "foot": 5,
+            "solid": 0
+          },
+          {
+            "cell": [
+              7,
+              8
+            ],
+            "foot": 5,
+            "solid": 0
+          },
+          {
+            "cell": [
+              6,
+              9
+            ],
+            "foot": 5,
+            "solid": 0
+          },
+          {
+            "cell": [
+              7,
+              9
+            ],
+            "foot": 5,
+            "solid": 0
+          }
+        ],
+        "patch": "res://assets/victory-road-2f/victory_road_2f_open1.png"
+      },
+      {
+        "flag": "victory_road_2f_open2",
+        "switch": [
+          9,
+          16
+        ],
+        "block": [
+          11,
+          7
+        ],
+        "openBlock": 29,
+        "cells": [
+          {
+            "cell": [
+              22,
+              14
+            ],
+            "foot": 5,
+            "solid": 0
+          },
+          {
+            "cell": [
+              23,
+              14
+            ],
+            "foot": 5,
+            "solid": 0
+          },
+          {
+            "cell": [
+              22,
+              15
+            ],
+            "foot": 16,
+            "solid": 1
+          },
+          {
+            "cell": [
+              23,
+              15
+            ],
+            "foot": 16,
+            "solid": 1
+          }
+        ],
+        "patch": "res://assets/victory-road-2f/victory_road_2f_open2.png"
+      }
+    ],
+    "victory-road-3f": [
+      {
+        "flag": "victory_road_3f_open",
+        "switch": [
+          3,
+          5
+        ],
+        "block": [
+          3,
+          5
+        ],
+        "openBlock": 29,
+        "cells": [
+          {
+            "cell": [
+              6,
+              10
+            ],
+            "foot": 5,
+            "solid": 0
+          },
+          {
+            "cell": [
+              7,
+              10
+            ],
+            "foot": 5,
+            "solid": 0
+          },
+          {
+            "cell": [
+              6,
+              11
+            ],
+            "foot": 16,
+            "solid": 1
+          },
+          {
+            "cell": [
+              7,
+              11
+            ],
+            "foot": 16,
+            "solid": 1
+          }
+        ],
+        "patch": "res://assets/victory-road-3f/victory_road_3f_open.png"
+      }
+    ]
+  },
+  "hole": [
+    23,
+    15
+  ],
+  "fallenCell": [
+    23,
+    16
+  ],
+  "playerFall": [
+    22,
+    16
+  ],
+  "source": "src/game/scripts/regions/kanto6.js + kanto6_lib.js; data/maps_meta.json dungeonWarp2"
+}

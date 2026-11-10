@@ -1,0 +1,88 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ec0c99b626d74f455c3b93660377",
+  "redMap": "data/maps/CinnabarGym.json",
+  "mapSHA256": "a47b5393acf7d877b3ce1f45271f53155e71d70838f911e5f109a065871e111a",
+  "tileset": "data/tilesets/Facility.json",
+  "dynamicGateBlocks": [
+    {
+      "block": [
+        9,
+        3
+      ],
+      "closed": 84,
+      "open": 14
+    },
+    {
+      "block": [
+        6,
+        3
+      ],
+      "closed": 84,
+      "open": 14
+    },
+    {
+      "block": [
+        6,
+        6
+      ],
+      "closed": 84,
+      "open": 14
+    },
+    {
+      "block": [
+        3,
+        8
+      ],
+      "closed": 95,
+      "open": 14
+    },
+    {
+      "block": [
+        2,
+        6
+      ],
+      "closed": 84,
+      "open": 14
+    },
+    {
+      "block": [
+        2,
+        3
+      ],
+      "closed": 84,
+      "open": 14
+    }
+  ],
+  "trainerMapping": "Red objects 2-8 map in order to FireRed Erik, Quinn, Avery, Ramon, Derek, Dusty, Zac; Red object 1 is Blaine and excluded. FireRed defines parties and quiz flags.",
+  "redWarps": [
+    {
+      "x": 16,
+      "y": 17,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 17,
+      "y": 17,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 2,
+      "destWarpIndex": 1
+    }
+  ],
+  "fireRedPartySources": [
+    "SuperNerdErik",
+    "BurglarQuinn",
+    "SuperNerdAvery",
+    "BurglarRamon",
+    "SuperNerdDerek",
+    "BurglarDusty",
+    "SuperNerdZac"
+  ],
+  "adaptation": "Red 20x18 cells, native tileset recolor and foot collision; gate art and solid derive from block state. Original source art rights remain with rights holders; no redistribution clearance."
+}

@@ -1,0 +1,246 @@
+[
+  {
+    "id": "route10_clark",
+    "map": "route10-south",
+    "name": "登山男克拉克",
+    "title": "克拉克 · 10号道路南段",
+    "cell": [
+      3,
+      9
+    ],
+    "sourceCell": [
+      3,
+      57
+    ],
+    "facing": "up",
+    "sprite": "res://assets/route10-south/actor-2.png",
+    "portrait": "res://assets/route10-south/actor-2-trainer.png",
+    "reward": 756,
+    "party": [
+      {
+        "species_id": "geodude",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "magnitude",
+          "rockthrow",
+          "mudsport",
+          "defensecurl"
+        ]
+      },
+      {
+        "species_id": "onix",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "harden",
+          "rockthrow",
+          "bind",
+          "screech"
+        ]
+      }
+    ],
+    "intro": "哈哈哈哈！",
+    "defeat": "你真厉害！",
+    "after": "在山里走路可真舒服！",
+    "redObject": 2,
+    "fireRedTrainer": "HikerClark",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ]
+  },
+  {
+    "id": "route10_herman",
+    "map": "route10-south",
+    "name": "宝可梦收藏家赫尔曼",
+    "title": "赫尔曼 · 10号道路南段",
+    "cell": [
+      14,
+      16
+    ],
+    "sourceCell": [
+      14,
+      64
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route10-south/actor-3.png",
+    "portrait": "res://assets/route10-south/actor-3-trainer.png",
+    "reward": 960,
+    "party": [
+      {
+        "species_id": "cubone",
+        "level": 20,
+        "ivs": 3,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "tailwhip",
+          "boneclub",
+          "headbutt",
+          "leer"
+        ]
+      },
+      {
+        "species_id": "slowpoke",
+        "level": 20,
+        "ivs": 3,
+        "nature": {
+          "up": "spa",
+          "down": "def"
+        },
+        "moves": [
+          "tackle",
+          "growl",
+          "watergun",
+          "confusion"
+        ]
+      }
+    ],
+    "intro": "小家伙，想看看我的宝可梦吗？",
+    "defeat": "真是羡慕！",
+    "after": "我要多抓一些宝可梦。",
+    "redObject": 3,
+    "fireRedTrainer": "PokemaniacHerman",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "route10_trent",
+    "map": "route10-south",
+    "name": "登山男特伦特",
+    "title": "特伦特 · 10号道路南段",
+    "cell": [
+      3,
+      13
+    ],
+    "sourceCell": [
+      3,
+      61
+    ],
+    "facing": "down",
+    "sprite": "res://assets/route10-south/actor-5.png",
+    "portrait": "res://assets/route10-south/actor-5-trainer.png",
+    "reward": 684,
+    "party": [
+      {
+        "species_id": "onix",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "screech",
+          "bind",
+          "rockthrow",
+          "harden"
+        ]
+      },
+      {
+        "species_id": "graveler",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "defensecurl",
+          "mudsport",
+          "rockthrow",
+          "magnitude"
+        ]
+      }
+    ],
+    "intro": "啊！山里的空气真美味！",
+    "defeat": "清醒过来了！",
+    "after": "吃东西的时候，山里的空气也很美味。",
+    "redObject": 5,
+    "fireRedTrainer": "HikerTrent",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ]
+  },
+  {
+    "id": "route10_carol",
+    "map": "route10-south",
+    "name": "野餐女孩卡萝尔",
+    "title": "卡萝尔 · 10号道路南段",
+    "cell": [
+      7,
+      6
+    ],
+    "sourceCell": [
+      7,
+      54
+    ],
+    "facing": "down",
+    "sprite": "res://assets/route10-south/actor-6.png",
+    "portrait": "res://assets/route10-south/actor-6-trainer.png",
+    "reward": 420,
+    "party": [
+      {
+        "species_id": "pidgey",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "sandattack",
+          "gust",
+          "quickattack",
+          "whirlwind"
+        ]
+      },
+      {
+        "species_id": "pidgeotto",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "atk"
+        },
+        "moves": [
+          "sandattack",
+          "gust",
+          "quickattack",
+          "whirlwind"
+        ]
+      }
+    ],
+    "intro": "这段艰难的山路让我有点头晕。",
+    "defeat": "我太累了！",
+    "after": "前面不远就是紫苑镇。",
+    "redObject": 6,
+    "fireRedTrainer": "PicnickerCarol",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  }
+]

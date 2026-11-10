@@ -1,0 +1,198 @@
+{
+  "revision": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "entries": [
+    {
+      "item": "fr_tm09",
+      "kind": "ground",
+      "map": "mtmoon-1f",
+      "cell": [
+        5,
+        31
+      ],
+      "source_map": "MtMoon1F",
+      "fire_red_cell": [
+        11,
+        35
+      ],
+      "source_script": "data/scripts/item_ball_scripts.inc:MtMoon_1F_EventScript_ItemTM09",
+      "adaptation": "FR reward in same Red room; separate adjacent cell preserves legacy Red item and consumed-save identity."
+    },
+    {
+      "item": "fr_tm46",
+      "kind": "ground",
+      "map": "mtmoon-b2f",
+      "cell": [
+        28,
+        5
+      ],
+      "source_map": "MtMoonB2F",
+      "fire_red_cell": [
+        35,
+        5
+      ],
+      "source_script": "data/scripts/item_ball_scripts.inc:MtMoon_B2F_EventScript_ItemTM46",
+      "adaptation": "FR reward in same Red room; separate adjacent cell preserves legacy Red item and consumed-save identity."
+    },
+    {
+      "item": "fr_tm12",
+      "kind": "ground",
+      "map": "rocket-hideout-b2f",
+      "cell": [
+        6,
+        11
+      ],
+      "source_map": "RocketHideoutB2F",
+      "fire_red_cell": [
+        5,
+        7
+      ],
+      "source_script": "data/scripts/item_ball_scripts.inc:RocketHideout_B2F_EventScript_ItemTM12",
+      "adaptation": "FR reward in same Red room; separate adjacent cell preserves legacy Red item and consumed-save identity."
+    },
+    {
+      "item": "fr_tm21",
+      "kind": "ground",
+      "map": "rocket-hideout-b3f",
+      "cell": [
+        25,
+        17
+      ],
+      "source_map": "RocketHideoutB3F",
+      "fire_red_cell": [
+        19,
+        14
+      ],
+      "source_script": "data/scripts/item_ball_scripts.inc:RocketHideout_B3F_EventScript_ItemTM21",
+      "adaptation": "FR reward in same Red room; separate adjacent cell preserves legacy Red item and consumed-save identity."
+    },
+    {
+      "item": "fr_tm49",
+      "kind": "ground",
+      "map": "rocket-hideout-b4f",
+      "cell": [
+        9,
+        5
+      ],
+      "source_map": "RocketHideoutB4F",
+      "fire_red_cell": [
+        1,
+        6
+      ],
+      "source_script": "data/scripts/item_ball_scripts.inc:RocketHideout_B4F_EventScript_ItemTM49",
+      "adaptation": "FR reward in same Red room; separate adjacent cell preserves legacy Red item and consumed-save identity."
+    },
+    {
+      "item": "fr_tm48",
+      "kind": "ground",
+      "map": "route12",
+      "cell": [
+        14,
+        34
+      ],
+      "source_map": "Route12",
+      "fire_red_cell": [
+        18,
+        36
+      ],
+      "source_script": "data/scripts/item_ball_scripts.inc:Route12_EventScript_ItemTM48",
+      "adaptation": "FR reward in same Red room; separate adjacent cell preserves legacy Red item and consumed-save identity."
+    },
+    {
+      "item": "fr_tm47",
+      "kind": "ground",
+      "map": "safari-zone-north",
+      "cell": [
+        18,
+        7
+      ],
+      "source_map": "SafariZoneNorth",
+      "fire_red_cell": [
+        28,
+        9
+      ],
+      "source_script": "data/scripts/item_ball_scripts.inc:SafariZone_North_EventScript_ItemTM47",
+      "adaptation": "FR reward in same Red room; separate adjacent cell preserves legacy Red item and consumed-save identity."
+    },
+    {
+      "item": "fr_tm01",
+      "kind": "ground",
+      "map": "silph-co-5f",
+      "cell": [
+        2,
+        14
+      ],
+      "source_map": "SilphCo5F",
+      "fire_red_cell": [
+        1,
+        18
+      ],
+      "source_script": "data/scripts/item_ball_scripts.inc:SilphCo_5F_EventScript_ItemTM01",
+      "adaptation": "FR reward in same Red room; separate adjacent cell preserves legacy Red item and consumed-save identity."
+    },
+    {
+      "item": "fr_tm02",
+      "kind": "ground",
+      "map": "victory-road-1f",
+      "cell": [
+        11,
+        1
+      ],
+      "source_map": "VictoryRoad1F",
+      "fire_red_cell": [
+        14,
+        1
+      ],
+      "source_script": "data/scripts/item_ball_scripts.inc:VictoryRoad_1F_EventScript_ItemTM02",
+      "adaptation": "FR reward in same Red room; separate adjacent cell preserves legacy Red item and consumed-save identity."
+    },
+    {
+      "item": "fr_tm50",
+      "kind": "ground",
+      "map": "victory-road-3f",
+      "cell": [
+        7,
+        6
+      ],
+      "source_map": "VictoryRoad3F",
+      "fire_red_cell": [
+        12,
+        9
+      ],
+      "source_script": "data/scripts/item_ball_scripts.inc:VictoryRoad_3F_EventScript_ItemTM50",
+      "adaptation": "FR reward in same Red room; separate adjacent cell preserves legacy Red item and consumed-save identity."
+    },
+    {
+      "item": "fr_tm41",
+      "kind": "ground",
+      "map": "silph-co-4f",
+      "cell": [
+        5,
+        9
+      ],
+      "source_map": "SilphCo4F",
+      "fire_red_cell": [
+        30,
+        18
+      ],
+      "source_script": "data/scripts/item_ball_scripts.inc:SilphCo_4F_EventScript_ItemTM41",
+      "adaptation": "FR reward in same Red room; separate adjacent cell preserves legacy Red item and consumed-save identity."
+    },
+    {
+      "item": "fr_tm27",
+      "kind": "npc",
+      "map": "route12-gate-2f",
+      "cell": [
+        3,
+        4
+      ],
+      "source_script": "data/maps/Route12_NorthEntrance_2F/scripts.inc:Route12_NorthEntrance_2F_EventScript_Lass",
+      "condition": "once; no friendship or gender gate; capacity checked"
+    },
+    {
+      "item": "fr_tm10",
+      "kind": "pickup",
+      "source_script": "src/battle_script_commands.c:Cmd_pickup",
+      "condition": "victory; PICKUP; empty held slot; 10% trigger then 5% TM10; take held item into TM Case"
+    }
+  ]
+}

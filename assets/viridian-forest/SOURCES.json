@@ -1,0 +1,16 @@
+{
+  "repository": "BrandeisPatrick/pokemon-red-web",
+  "commit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "map": {
+    "header": "data/maps/headers/ViridianForest.asm",
+    "objects": "data/maps/objects/ViridianForest.asm",
+    "blocks": "maps/ViridianForest.blk",
+    "script": "scripts/ViridianForest.asm"
+  },
+  "tileset": "data/tilesets/Forest.json",
+  "mapSHA256": "546a40afc12516982d99cbf39a96a9eda9ed8551a3ad7da23ca4d2a0d683f703",
+  "art": "Existing Overworld recolor; original Forest 4-shade green tint and original ForestGate existing neutral tint; no geometry redrawn",
+  "foreground": "Corrected original foot tile48: dotted walkable ground, including Red trainer objects2/3 cells, not canopy. Original src/overworld/render.js draws forest BG before actors. All Forest tiles remain ground; solid/trunk49 and pair-edge collision unchanged.",
+  "scope": "No trainer/NPC objects; original forest gates connect both ends; Route2 north Pewter boundary closed; other Route2 doors closed; no Cut/Flash/house/cave mechanics",
+  "rights": "Original Pokemon assets; internal development, no redistribution clearance"
+}

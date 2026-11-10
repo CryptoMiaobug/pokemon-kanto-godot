@@ -1,0 +1,1226 @@
+[
+  {
+    "map": "silph-co-1f",
+    "cell": [
+      4,
+      2
+    ],
+    "sprite": "res://assets/silph-co-1f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": true,
+    "item": ""
+  },
+  {
+    "map": "silph-co-2f",
+    "cell": [
+      10,
+      1
+    ],
+    "sprite": "res://assets/silph-co-2f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "facing": "up",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-2f",
+    "cell": [
+      5,
+      12
+    ],
+    "sprite": "res://assets/silph-co-2f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-2f",
+    "cell": [
+      24,
+      13
+    ],
+    "sprite": "res://assets/silph-co-2f/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      3,
+      0,
+      14,
+      16
+    ],
+    "facing": "left",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-2f",
+    "cell": [
+      16,
+      11
+    ],
+    "sprite": "res://assets/silph-co-2f/actor-4.png",
+    "redObject": 4,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "up",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-2f",
+    "cell": [
+      24,
+      7
+    ],
+    "sprite": "res://assets/silph-co-2f/actor-5.png",
+    "redObject": 5,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "up",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-3f",
+    "cell": [
+      24,
+      8
+    ],
+    "sprite": "res://assets/silph-co-3f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-3f",
+    "cell": [
+      20,
+      7
+    ],
+    "sprite": "res://assets/silph-co-3f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "left",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-3f",
+    "cell": [
+      7,
+      9
+    ],
+    "sprite": "res://assets/silph-co-3f/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-3f",
+    "cell": [
+      8,
+      5
+    ],
+    "sprite": "res://assets/silph-co-3f/actor-4.png",
+    "redObject": 4,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": "HYPER_POTION"
+  },
+  {
+    "map": "silph-co-4f",
+    "cell": [
+      6,
+      2
+    ],
+    "sprite": "res://assets/silph-co-4f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-4f",
+    "cell": [
+      9,
+      14
+    ],
+    "sprite": "res://assets/silph-co-4f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "right",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-4f",
+    "cell": [
+      14,
+      6
+    ],
+    "sprite": "res://assets/silph-co-4f/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      3,
+      0,
+      14,
+      16
+    ],
+    "facing": "left",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-4f",
+    "cell": [
+      26,
+      10
+    ],
+    "sprite": "res://assets/silph-co-4f/actor-4.png",
+    "redObject": 4,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "up",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-4f",
+    "cell": [
+      3,
+      9
+    ],
+    "sprite": "res://assets/silph-co-4f/actor-5.png",
+    "redObject": 5,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": "FULL_HEAL"
+  },
+  {
+    "map": "silph-co-4f",
+    "cell": [
+      4,
+      7
+    ],
+    "sprite": "res://assets/silph-co-4f/actor-6.png",
+    "redObject": 6,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": "MAX_REVIVE"
+  },
+  {
+    "map": "silph-co-4f",
+    "cell": [
+      5,
+      8
+    ],
+    "sprite": "res://assets/silph-co-4f/actor-7.png",
+    "redObject": 7,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": "ESCAPE_ROPE"
+  },
+  {
+    "map": "silph-co-5f",
+    "cell": [
+      13,
+      9
+    ],
+    "sprite": "res://assets/silph-co-5f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-5f",
+    "cell": [
+      8,
+      16
+    ],
+    "sprite": "res://assets/silph-co-5f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "right",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-5f",
+    "cell": [
+      8,
+      3
+    ],
+    "sprite": "res://assets/silph-co-5f/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      2,
+      0,
+      13,
+      16
+    ],
+    "facing": "right",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-5f",
+    "cell": [
+      18,
+      10
+    ],
+    "sprite": "res://assets/silph-co-5f/actor-4.png",
+    "redObject": 4,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "up",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-5f",
+    "cell": [
+      28,
+      4
+    ],
+    "sprite": "res://assets/silph-co-5f/actor-5.png",
+    "redObject": 5,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "up",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-5f",
+    "cell": [
+      2,
+      13
+    ],
+    "sprite": "res://assets/silph-co-5f/actor-6.png",
+    "redObject": 6,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": "TM_TAKE_DOWN"
+  },
+  {
+    "map": "silph-co-5f",
+    "cell": [
+      4,
+      6
+    ],
+    "sprite": "res://assets/silph-co-5f/actor-7.png",
+    "redObject": 7,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": "PROTEIN"
+  },
+  {
+    "map": "silph-co-5f",
+    "cell": [
+      21,
+      16
+    ],
+    "sprite": "res://assets/silph-co-5f/actor-8.png",
+    "redObject": 8,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": "CARD_KEY"
+  },
+  {
+    "map": "silph-co-5f",
+    "cell": [
+      22,
+      12
+    ],
+    "sprite": "res://assets/silph-co-5f/actor-9.png",
+    "redObject": 9,
+    "alphaBBox": [
+      1,
+      1,
+      13,
+      15
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-5f",
+    "cell": [
+      25,
+      10
+    ],
+    "sprite": "res://assets/silph-co-5f/actor-10.png",
+    "redObject": 10,
+    "alphaBBox": [
+      1,
+      1,
+      13,
+      15
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-5f",
+    "cell": [
+      24,
+      6
+    ],
+    "sprite": "res://assets/silph-co-5f/actor-11.png",
+    "redObject": 11,
+    "alphaBBox": [
+      1,
+      1,
+      13,
+      15
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-6f",
+    "cell": [
+      10,
+      6
+    ],
+    "sprite": "res://assets/silph-co-6f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-6f",
+    "cell": [
+      20,
+      6
+    ],
+    "sprite": "res://assets/silph-co-6f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-6f",
+    "cell": [
+      21,
+      6
+    ],
+    "sprite": "res://assets/silph-co-6f/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-6f",
+    "cell": [
+      11,
+      10
+    ],
+    "sprite": "res://assets/silph-co-6f/actor-4.png",
+    "redObject": 4,
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "facing": "right",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-6f",
+    "cell": [
+      18,
+      13
+    ],
+    "sprite": "res://assets/silph-co-6f/actor-5.png",
+    "redObject": 5,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "up",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-6f",
+    "cell": [
+      17,
+      3
+    ],
+    "sprite": "res://assets/silph-co-6f/actor-6.png",
+    "redObject": 6,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "right",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-6f",
+    "cell": [
+      7,
+      8
+    ],
+    "sprite": "res://assets/silph-co-6f/actor-7.png",
+    "redObject": 7,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-6f",
+    "cell": [
+      14,
+      15
+    ],
+    "sprite": "res://assets/silph-co-6f/actor-8.png",
+    "redObject": 8,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "left",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-6f",
+    "cell": [
+      3,
+      12
+    ],
+    "sprite": "res://assets/silph-co-6f/actor-9.png",
+    "redObject": 9,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": "HP_UP"
+  },
+  {
+    "map": "silph-co-6f",
+    "cell": [
+      2,
+      15
+    ],
+    "sprite": "res://assets/silph-co-6f/actor-10.png",
+    "redObject": 10,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": "X_ACCURACY"
+  },
+  {
+    "map": "silph-co-7f",
+    "cell": [
+      1,
+      5
+    ],
+    "sprite": "res://assets/silph-co-7f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-7f",
+    "cell": [
+      13,
+      13
+    ],
+    "sprite": "res://assets/silph-co-7f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "up",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-7f",
+    "cell": [
+      7,
+      10
+    ],
+    "sprite": "res://assets/silph-co-7f/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-7f",
+    "cell": [
+      10,
+      8
+    ],
+    "sprite": "res://assets/silph-co-7f/actor-4.png",
+    "redObject": 4,
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-7f",
+    "cell": [
+      13,
+      1
+    ],
+    "sprite": "res://assets/silph-co-7f/actor-5.png",
+    "redObject": 5,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-7f",
+    "cell": [
+      2,
+      13
+    ],
+    "sprite": "res://assets/silph-co-7f/actor-6.png",
+    "redObject": 6,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-7f",
+    "cell": [
+      20,
+      2
+    ],
+    "sprite": "res://assets/silph-co-7f/actor-7.png",
+    "redObject": 7,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "left",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-7f",
+    "cell": [
+      19,
+      14
+    ],
+    "sprite": "res://assets/silph-co-7f/actor-8.png",
+    "redObject": 8,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "right",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-7f",
+    "cell": [
+      3,
+      7
+    ],
+    "sprite": "res://assets/silph-co-7f/actor-9.png",
+    "redObject": 9,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "up",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-7f",
+    "cell": [
+      1,
+      9
+    ],
+    "sprite": "res://assets/silph-co-7f/actor-10.png",
+    "redObject": 10,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": "CALCIUM"
+  },
+  {
+    "map": "silph-co-7f",
+    "cell": [
+      24,
+      11
+    ],
+    "sprite": "res://assets/silph-co-7f/actor-11.png",
+    "redObject": 11,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": "TM_SWORDS_DANCE"
+  },
+  {
+    "map": "silph-co-8f",
+    "cell": [
+      4,
+      2
+    ],
+    "sprite": "res://assets/silph-co-8f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-8f",
+    "cell": [
+      19,
+      2
+    ],
+    "sprite": "res://assets/silph-co-8f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "left",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-8f",
+    "cell": [
+      10,
+      2
+    ],
+    "sprite": "res://assets/silph-co-8f/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-8f",
+    "cell": [
+      12,
+      15
+    ],
+    "sprite": "res://assets/silph-co-8f/actor-4.png",
+    "redObject": 4,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "right",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-9f",
+    "cell": [
+      3,
+      14
+    ],
+    "sprite": "res://assets/silph-co-9f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-9f",
+    "cell": [
+      2,
+      4
+    ],
+    "sprite": "res://assets/silph-co-9f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "up",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-9f",
+    "cell": [
+      21,
+      13
+    ],
+    "sprite": "res://assets/silph-co-9f/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-9f",
+    "cell": [
+      13,
+      16
+    ],
+    "sprite": "res://assets/silph-co-9f/actor-4.png",
+    "redObject": 4,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "up",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-10f",
+    "cell": [
+      1,
+      9
+    ],
+    "sprite": "res://assets/silph-co-10f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "right",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-10f",
+    "cell": [
+      10,
+      2
+    ],
+    "sprite": "res://assets/silph-co-10f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      3,
+      0,
+      14,
+      16
+    ],
+    "facing": "left",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-10f",
+    "cell": [
+      9,
+      15
+    ],
+    "sprite": "res://assets/silph-co-10f/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-10f",
+    "cell": [
+      2,
+      12
+    ],
+    "sprite": "res://assets/silph-co-10f/actor-4.png",
+    "redObject": 4,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": "TM_EARTHQUAKE"
+  },
+  {
+    "map": "silph-co-10f",
+    "cell": [
+      4,
+      14
+    ],
+    "sprite": "res://assets/silph-co-10f/actor-5.png",
+    "redObject": 5,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": "RARE_CANDY"
+  },
+  {
+    "map": "silph-co-10f",
+    "cell": [
+      5,
+      11
+    ],
+    "sprite": "res://assets/silph-co-10f/actor-6.png",
+    "redObject": 6,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": "CARBOS"
+  },
+  {
+    "map": "silph-co-11f",
+    "cell": [
+      7,
+      5
+    ],
+    "sprite": "res://assets/silph-co-11f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-11f",
+    "cell": [
+      10,
+      5
+    ],
+    "sprite": "res://assets/silph-co-11f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      0,
+      1,
+      16,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-11f",
+    "cell": [
+      6,
+      9
+    ],
+    "sprite": "res://assets/silph-co-11f/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      1,
+      1,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-11f",
+    "cell": [
+      3,
+      16
+    ],
+    "sprite": "res://assets/silph-co-11f/actor-4.png",
+    "redObject": 4,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "up",
+    "startsHidden": false,
+    "item": ""
+  },
+  {
+    "map": "silph-co-11f",
+    "cell": [
+      15,
+      9
+    ],
+    "sprite": "res://assets/silph-co-11f/actor-5.png",
+    "redObject": 5,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "up",
+    "startsHidden": false,
+    "item": ""
+  }
+]

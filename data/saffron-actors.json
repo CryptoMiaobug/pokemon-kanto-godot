@@ -1,0 +1,393 @@
+[
+  {
+    "map": "route7-gate",
+    "redObject": 1,
+    "cell": [
+      3,
+      1
+    ],
+    "sprite": "res://assets/route7-gate/actor-1.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 1,
+    "cell": [
+      7,
+      6
+    ],
+    "sprite": "res://assets/saffron-city/actor-1.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 2,
+    "cell": [
+      20,
+      8
+    ],
+    "sprite": "res://assets/saffron-city/actor-2.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 3,
+    "cell": [
+      34,
+      4
+    ],
+    "sprite": "res://assets/saffron-city/actor-3.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 4,
+    "cell": [
+      13,
+      12
+    ],
+    "sprite": "res://assets/saffron-city/actor-4.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 5,
+    "cell": [
+      11,
+      25
+    ],
+    "sprite": "res://assets/saffron-city/actor-5.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 6,
+    "cell": [
+      32,
+      13
+    ],
+    "sprite": "res://assets/saffron-city/actor-6.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 7,
+    "cell": [
+      18,
+      30
+    ],
+    "sprite": "res://assets/saffron-city/actor-7.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 8,
+    "cell": [
+      8,
+      14
+    ],
+    "sprite": "res://assets/saffron-city/actor-8.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": true
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 9,
+    "cell": [
+      23,
+      23
+    ],
+    "sprite": "res://assets/saffron-city/actor-9.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": true
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 10,
+    "cell": [
+      17,
+      30
+    ],
+    "sprite": "res://assets/saffron-city/actor-10.png",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": true
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 11,
+    "cell": [
+      30,
+      12
+    ],
+    "sprite": "res://assets/saffron-city/actor-11.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": true
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 12,
+    "cell": [
+      31,
+      12
+    ],
+    "sprite": "res://assets/saffron-city/actor-12.png",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": true
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 13,
+    "cell": [
+      18,
+      8
+    ],
+    "sprite": "res://assets/saffron-city/actor-13.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "up",
+    "startsHidden": true
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 14,
+    "cell": [
+      18,
+      22
+    ],
+    "sprite": "res://assets/saffron-city/actor-14.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false
+  },
+  {
+    "map": "saffron-city",
+    "redObject": 15,
+    "cell": [
+      19,
+      22
+    ],
+    "sprite": "res://assets/saffron-city/actor-15.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": true
+  },
+  {
+    "map": "saffron-center",
+    "redObject": 1,
+    "cell": [
+      3,
+      1
+    ],
+    "sprite": "res://assets/saffron-center/actor-1.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false
+  },
+  {
+    "map": "saffron-center",
+    "redObject": 2,
+    "cell": [
+      5,
+      5
+    ],
+    "sprite": "res://assets/saffron-center/actor-2.png",
+    "alphaBBox": [
+      0,
+      1,
+      16,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false
+  },
+  {
+    "map": "saffron-center",
+    "redObject": 3,
+    "cell": [
+      8,
+      3
+    ],
+    "sprite": "res://assets/saffron-center/actor-3.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false
+  },
+  {
+    "map": "saffron-center",
+    "redObject": 4,
+    "cell": [
+      11,
+      2
+    ],
+    "sprite": "res://assets/saffron-center/actor-4.png",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false
+  },
+  {
+    "map": "saffron-mart",
+    "redObject": 1,
+    "cell": [
+      0,
+      5
+    ],
+    "sprite": "res://assets/saffron-mart/actor-1.png",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "facing": "right",
+    "startsHidden": false
+  },
+  {
+    "map": "saffron-mart",
+    "redObject": 2,
+    "cell": [
+      4,
+      2
+    ],
+    "sprite": "res://assets/saffron-mart/actor-2.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false
+  },
+  {
+    "map": "saffron-mart",
+    "redObject": 3,
+    "cell": [
+      6,
+      5
+    ],
+    "sprite": "res://assets/saffron-mart/actor-3.png",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "facing": "down",
+    "startsHidden": false
+  }
+]

@@ -1,0 +1,96 @@
+{
+  "trainer": {
+    "id": "mtmoonb2f_miguel",
+    "map": "mtmoon-b2f",
+    "name": "理科男米格尔",
+    "title": "理科男米格尔 · 化石学者",
+    "cell": [
+      12,
+      8
+    ],
+    "facing": "right",
+    "sprite": "res://assets/moon-fossils/miguel.png",
+    "portrait": "res://assets/mtmoon-trainers/super_nerd-trainer.png",
+    "reward": 288,
+    "party": [
+      {
+        "species_id": "grimer",
+        "level": 12,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "poisongas",
+          "pound",
+          "harden",
+          "disable"
+        ]
+      },
+      {
+        "species_id": "voltorb",
+        "level": 12,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spd"
+        },
+        "moves": [
+          "charge",
+          "tackle",
+          "screech"
+        ]
+      },
+      {
+        "species_id": "koffing",
+        "level": 12,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spe"
+        },
+        "moves": [
+          "poisongas",
+          "tackle",
+          "smog"
+        ]
+      }
+    ],
+    "intro": "喂，站住！这些化石是我找到的！两块都是我的！",
+    "defeat": "好吧！我分给你！",
+    "after": "我们一人拿一块化石！不许贪心！",
+    "redObject": 1,
+    "fireRedTrainer": "TRAINER_SUPER_NERD_MIGUEL"
+  },
+  "items": [
+    {
+      "id": "dome_fossil",
+      "name": "甲壳化石",
+      "cell": [
+        12,
+        6
+      ],
+      "scientist_cell": [
+        13,
+        7
+      ],
+      "sourceItem": "ITEM_DOME_FOSSIL",
+      "sprite": "res://assets/moon-fossils/fossil.png"
+    },
+    {
+      "id": "helix_fossil",
+      "name": "贝壳化石",
+      "cell": [
+        13,
+        6
+      ],
+      "scientist_cell": [
+        12,
+        7
+      ],
+      "sourceItem": "ITEM_HELIX_FOSSIL",
+      "sprite": "res://assets/moon-fossils/fossil.png"
+    }
+  ]
+}

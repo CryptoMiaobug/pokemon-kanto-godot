@@ -1,0 +1,116 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/PokemonFanClub.json",
+  "mapSHA256": "dfbe3a0f801a48198a46a23162282a4e19bf9a9b72094332a9474f67214a824f",
+  "tiles": "assets/tilesets/interior.png",
+  "warps": [
+    {
+      "x": 2,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 2,
+      "destWarpIndex": 1
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "POKEMONFANCLUB_PIKACHU_FAN",
+      "x": 6,
+      "y": 3,
+      "sprite": "SPRITE_FISHER",
+      "spriteId": 47,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_POKEMONFANCLUB_PIKACHU_FAN",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "POKEMONFANCLUB_SEEL_FAN",
+      "x": 1,
+      "y": 3,
+      "sprite": "SPRITE_GIRL",
+      "spriteId": 13,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_POKEMONFANCLUB_SEEL_FAN",
+      "textIndex": 2
+    },
+    {
+      "index": 3,
+      "const": "POKEMONFANCLUB_PIKACHU",
+      "x": 6,
+      "y": 4,
+      "sprite": "SPRITE_FAIRY",
+      "spriteId": 56,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_POKEMONFANCLUB_PIKACHU",
+      "textIndex": 3
+    },
+    {
+      "index": 4,
+      "const": "POKEMONFANCLUB_SEEL",
+      "x": 1,
+      "y": 4,
+      "sprite": "SPRITE_SEEL",
+      "spriteId": 60,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_POKEMONFANCLUB_SEEL",
+      "textIndex": 4
+    },
+    {
+      "index": 5,
+      "const": "POKEMONFANCLUB_CHAIRMAN",
+      "x": 3,
+      "y": 1,
+      "sprite": "SPRITE_GENTLEMAN",
+      "spriteId": 16,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_POKEMONFANCLUB_CHAIRMAN",
+      "textIndex": 5
+    },
+    {
+      "index": 6,
+      "const": "POKEMONFANCLUB_RECEPTIONIST",
+      "x": 5,
+      "y": 1,
+      "sprite": "SPRITE_LINK_RECEPTIONIST",
+      "spriteId": 42,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_POKEMONFANCLUB_RECEPTIONIST",
+      "textIndex": 6
+    }
+  ],
+  "adaptation": "Red geometry/16px actors local1x world2x nearest. FireRed Fly/HM/Bicycle rules with Red gate four trigger cells (FR five cells on different geometry). Gate2F static visitors/binocular text only; trades deferred. Route17 south exit deferred. NPC walking/cry/audio/cutscene omitted.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

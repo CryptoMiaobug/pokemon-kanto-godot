@@ -1,0 +1,7 @@
+{
+  "source_revision": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "vitamins": ["hp_ups", "proteins", "irons", "calciums", "zincs", "carbos"],
+  "prices": {"hp_ups": 9800, "proteins": 9800, "irons": 9800, "calciums": 9800, "zincs": 9800, "carbos": 9800},
+  "battle_items": ["x_attacks", "x_defends", "x_speeds", "x_specials", "x_accuracies", "guard_specs", "dire_hits"],
+  "notice": "营养药柜台：六种营养药各9800。战斗道具柜台：力量强化500、防御强化550、速度强化350、特攻强化350、命中强化950、防御喷雾700、要害攻击650。"
+}

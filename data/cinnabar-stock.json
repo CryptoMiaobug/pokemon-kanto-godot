@@ -1,0 +1,44 @@
+{
+  "source": "data/maps/CinnabarIsland_Mart/scripts.inc + src/data/items.json",
+  "full_source_stock": [
+    {
+      "item_id": "ITEM_ULTRA_BALL",
+      "price": 1200,
+      "implemented": false
+    },
+    {
+      "item_id": "ITEM_GREAT_BALL",
+      "price": 600,
+      "implemented": false
+    },
+    {
+      "item_id": "ITEM_HYPER_POTION",
+      "price": 1200,
+      "implemented": true
+    },
+    {
+      "item_id": "ITEM_REVIVE",
+      "price": 1500,
+      "implemented": false
+    },
+    {
+      "item_id": "ITEM_FULL_HEAL",
+      "price": 600,
+      "implemented": false
+    },
+    {
+      "item_id": "ITEM_ESCAPE_ROPE",
+      "price": 550,
+      "implemented": false
+    },
+    {
+      "item_id": "ITEM_MAX_REPEL",
+      "price": 700,
+      "implemented": false
+    }
+  ],
+  "sold": [
+    "hyper_potions"
+  ],
+  "notice": "原货单子集：仅厉害伤药1200；其余六种原货品延期。"
+}

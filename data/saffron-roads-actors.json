@@ -1,0 +1,512 @@
+[
+  {
+    "map": "saffron-gym",
+    "cell": [
+      9,
+      8
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/saffron-gym/actor-1.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "saffron-gym",
+    "cell": [
+      10,
+      1
+    ],
+    "redObject": 2,
+    "sprite": "res://assets/saffron-gym/actor-2.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "saffron-gym",
+    "cell": [
+      17,
+      1
+    ],
+    "redObject": 3,
+    "sprite": "res://assets/saffron-gym/actor-3.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "saffron-gym",
+    "cell": [
+      3,
+      7
+    ],
+    "redObject": 4,
+    "sprite": "res://assets/saffron-gym/actor-4.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "saffron-gym",
+    "cell": [
+      17,
+      7
+    ],
+    "redObject": 5,
+    "sprite": "res://assets/saffron-gym/actor-5.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "saffron-gym",
+    "cell": [
+      3,
+      13
+    ],
+    "redObject": 6,
+    "sprite": "res://assets/saffron-gym/actor-6.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "saffron-gym",
+    "cell": [
+      17,
+      13
+    ],
+    "redObject": 7,
+    "sprite": "res://assets/saffron-gym/actor-7.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "saffron-gym",
+    "cell": [
+      3,
+      1
+    ],
+    "redObject": 8,
+    "sprite": "res://assets/saffron-gym/actor-8.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "saffron-gym",
+    "cell": [
+      10,
+      15
+    ],
+    "redObject": 9,
+    "sprite": "res://assets/saffron-gym/actor-9.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "route12-gate-1f",
+    "cell": [
+      1,
+      3
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/route12-gate-1f/actor-1.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "route12",
+    "cell": [
+      10,
+      62
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/route12/actor-1.png",
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      15
+    ],
+    "item": ""
+  },
+  {
+    "map": "route12",
+    "cell": [
+      14,
+      31
+    ],
+    "redObject": 2,
+    "sprite": "res://assets/route12/actor-2.png",
+    "facing": "left",
+    "alphaBBox": [
+      2,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "route12",
+    "cell": [
+      5,
+      39
+    ],
+    "redObject": 3,
+    "sprite": "res://assets/route12/actor-3.png",
+    "facing": "up",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "route12",
+    "cell": [
+      11,
+      92
+    ],
+    "redObject": 4,
+    "sprite": "res://assets/route12/actor-4.png",
+    "facing": "left",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "route12",
+    "cell": [
+      14,
+      76
+    ],
+    "redObject": 5,
+    "sprite": "res://assets/route12/actor-5.png",
+    "facing": "up",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "route12",
+    "cell": [
+      12,
+      40
+    ],
+    "redObject": 6,
+    "sprite": "res://assets/route12/actor-6.png",
+    "facing": "left",
+    "alphaBBox": [
+      2,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "route12",
+    "cell": [
+      9,
+      52
+    ],
+    "redObject": 7,
+    "sprite": "res://assets/route12/actor-7.png",
+    "facing": "right",
+    "alphaBBox": [
+      1,
+      0,
+      14,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "route12",
+    "cell": [
+      6,
+      87
+    ],
+    "redObject": 8,
+    "sprite": "res://assets/route12/actor-8.png",
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "route12",
+    "cell": [
+      14,
+      35
+    ],
+    "redObject": 9,
+    "sprite": "res://assets/route12/actor-9.png",
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "item": "TM_PAY_DAY"
+  },
+  {
+    "map": "route12",
+    "cell": [
+      5,
+      89
+    ],
+    "redObject": 10,
+    "sprite": "res://assets/route12/actor-10.png",
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "item": "IRON"
+  },
+  {
+    "map": "route13",
+    "cell": [
+      49,
+      10
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/route13/actor-1.png",
+    "facing": "right",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "route13",
+    "cell": [
+      48,
+      10
+    ],
+    "redObject": 2,
+    "sprite": "res://assets/route13/actor-2.png",
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "route13",
+    "cell": [
+      27,
+      9
+    ],
+    "redObject": 3,
+    "sprite": "res://assets/route13/actor-3.png",
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "route13",
+    "cell": [
+      23,
+      10
+    ],
+    "redObject": 4,
+    "sprite": "res://assets/route13/actor-4.png",
+    "facing": "left",
+    "alphaBBox": [
+      1,
+      0,
+      14,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "route13",
+    "cell": [
+      50,
+      5
+    ],
+    "redObject": 5,
+    "sprite": "res://assets/route13/actor-5.png",
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "route13",
+    "cell": [
+      12,
+      4
+    ],
+    "redObject": 6,
+    "sprite": "res://assets/route13/actor-6.png",
+    "facing": "right",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "route13",
+    "cell": [
+      33,
+      6
+    ],
+    "redObject": 7,
+    "sprite": "res://assets/route13/actor-7.png",
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      1,
+      16,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "route13",
+    "cell": [
+      32,
+      6
+    ],
+    "redObject": 8,
+    "sprite": "res://assets/route13/actor-8.png",
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      1,
+      16,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "route13",
+    "cell": [
+      10,
+      7
+    ],
+    "redObject": 9,
+    "sprite": "res://assets/route13/actor-9.png",
+    "facing": "up",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "route13",
+    "cell": [
+      7,
+      13
+    ],
+    "redObject": 10,
+    "sprite": "res://assets/route13/actor-10.png",
+    "facing": "up",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  }
+]

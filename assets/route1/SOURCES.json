@@ -1,0 +1,8 @@
+{
+  "map": "pret/pokered Route1.blk via BrandeisPatrick/pokemon-red-web ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "sourceLocal": "local-source/Route1.json",
+  "tiles": "Same existing assets/pallet-town/tiles.png material recoloring, original Red tile geometry",
+  "geometry": "20x36 movement cells,16px; tile bottom-left collision and bottom-right grass 82; original ledge pairs",
+  "adaptation": "North connects original ViridianCity with +10 movement-cell x offset; south connects Pallet. Only FireRed rules separately.",
+  "mapSHA256": "daa60041ece82080bfabc5d142081ccbdfd827f338cd4a180ad15a9f8a022c2e"
+}

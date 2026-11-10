@@ -1,0 +1,316 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/FuchsiaCity.json",
+  "mapSHA256": "4474ef1a8d6336a7030f980e46594553d5fb622784d6a29ea3d3bd0d8cc36fc5",
+  "warps": [
+    {
+      "x": 5,
+      "y": 13,
+      "destMap": "FUCHSIA_MART",
+      "destMapId": 152,
+      "destMapName": "FuchsiaMart",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 11,
+      "y": 27,
+      "destMap": "FUCHSIA_BILLS_GRANDPAS_HOUSE",
+      "destMapId": 153,
+      "destMapName": "FuchsiaBillsGrandpasHouse",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 19,
+      "y": 27,
+      "destMap": "FUCHSIA_POKECENTER",
+      "destMapId": 154,
+      "destMapName": "FuchsiaPokecenter",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 27,
+      "y": 27,
+      "destMap": "WARDENS_HOUSE",
+      "destMapId": 155,
+      "destMapName": "WardensHouse",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 18,
+      "y": 3,
+      "destMap": "SAFARI_ZONE_GATE",
+      "destMapId": 156,
+      "destMapName": "SafariZoneGate",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 5,
+      "y": 27,
+      "destMap": "FUCHSIA_GYM",
+      "destMapId": 157,
+      "destMapName": "FuchsiaGym",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 22,
+      "y": 13,
+      "destMap": "FUCHSIA_MEETING_ROOM",
+      "destMapId": 158,
+      "destMapName": "FuchsiaMeetingRoom",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 31,
+      "y": 27,
+      "destMap": "FUCHSIA_GOOD_ROD_HOUSE",
+      "destMapId": 164,
+      "destMapName": "FuchsiaGoodRodHouse",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 31,
+      "y": 24,
+      "destMap": "FUCHSIA_GOOD_ROD_HOUSE",
+      "destMapId": 164,
+      "destMapName": "FuchsiaGoodRodHouse",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "connections": {
+    "south": {
+      "map": "ROUTE_19",
+      "mapId": 30,
+      "mapName": "Route19",
+      "offset": 5,
+      "dx": 5,
+      "dy": 18,
+      "copyRect": {
+        "x": 0,
+        "y": 0,
+        "w": 10,
+        "h": 3
+      },
+      "onEnter": {
+        "newY": 0,
+        "xAdd": -10
+      },
+      "macro": {
+        "stripSrc": 0,
+        "stripDest": 554,
+        "stripLength": 10,
+        "connectedWidth": 10,
+        "yAlign": 0,
+        "xAlign": -10,
+        "viewPointer": 17
+      }
+    },
+    "west": {
+      "map": "ROUTE_18",
+      "mapId": 29,
+      "mapName": "Route18",
+      "offset": 4,
+      "dx": -25,
+      "dy": 4,
+      "copyRect": {
+        "x": 22,
+        "y": 0,
+        "w": 3,
+        "h": 9
+      },
+      "onEnter": {
+        "newX": 49,
+        "yAdd": -8
+      },
+      "macro": {
+        "stripSrc": 22,
+        "stripDest": 182,
+        "stripLength": 9,
+        "connectedWidth": 25,
+        "yAlign": -8,
+        "xAlign": 49,
+        "viewPointer": 56
+      }
+    },
+    "east": {
+      "map": "ROUTE_15",
+      "mapId": 26,
+      "mapName": "Route15",
+      "offset": 4,
+      "dx": 20,
+      "dy": 4,
+      "copyRect": {
+        "x": 0,
+        "y": 0,
+        "w": 3,
+        "h": 9
+      },
+      "onEnter": {
+        "newX": 0,
+        "yAdd": -8
+      },
+      "macro": {
+        "stripSrc": 0,
+        "stripDest": 205,
+        "stripLength": 9,
+        "connectedWidth": 30,
+        "yAlign": -8,
+        "xAlign": 0,
+        "viewPointer": 37
+      }
+    }
+  },
+  "actors": [
+    {
+      "index": 1,
+      "const": "FUCHSIACITY_YOUNGSTER1",
+      "x": 10,
+      "y": 12,
+      "sprite": "SPRITE_YOUNGSTER",
+      "spriteId": 4,
+      "movement": "WALK",
+      "rangeOrDirection": "LEFT_RIGHT",
+      "rangeOrDirectionValue": 2,
+      "behavior": "walk_left_right",
+      "textId": "TEXT_FUCHSIACITY_YOUNGSTER1",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "FUCHSIACITY_GAMBLER",
+      "x": 28,
+      "y": 17,
+      "sprite": "SPRITE_GAMBLER",
+      "spriteId": 11,
+      "movement": "WALK",
+      "rangeOrDirection": "LEFT_RIGHT",
+      "rangeOrDirectionValue": 2,
+      "behavior": "walk_left_right",
+      "textId": "TEXT_FUCHSIACITY_GAMBLER",
+      "textIndex": 2
+    },
+    {
+      "index": 3,
+      "const": "FUCHSIACITY_ERIK",
+      "x": 30,
+      "y": 14,
+      "sprite": "SPRITE_FISHER",
+      "spriteId": 47,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_FUCHSIACITY_ERIK",
+      "textIndex": 3
+    },
+    {
+      "index": 4,
+      "const": "FUCHSIACITY_YOUNGSTER2",
+      "x": 24,
+      "y": 8,
+      "sprite": "SPRITE_YOUNGSTER",
+      "spriteId": 4,
+      "movement": "STAY",
+      "rangeOrDirection": "UP",
+      "rangeOrDirectionValue": 209,
+      "behavior": "face_up",
+      "textId": "TEXT_FUCHSIACITY_YOUNGSTER2",
+      "textIndex": 4
+    },
+    {
+      "index": 5,
+      "const": "FUCHSIACITY_CHANSEY",
+      "x": 31,
+      "y": 5,
+      "sprite": "SPRITE_FAIRY",
+      "spriteId": 56,
+      "movement": "WALK",
+      "rangeOrDirection": "ANY_DIR",
+      "rangeOrDirectionValue": 0,
+      "behavior": "walk_any",
+      "textId": "TEXT_FUCHSIACITY_CHANSEY",
+      "textIndex": 5
+    },
+    {
+      "index": 6,
+      "const": "FUCHSIACITY_VOLTORB",
+      "x": 25,
+      "y": 6,
+      "sprite": "SPRITE_POKE_BALL",
+      "spriteId": 61,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_FUCHSIACITY_VOLTORB",
+      "textIndex": 6
+    },
+    {
+      "index": 7,
+      "const": "FUCHSIACITY_KANGASKHAN",
+      "x": 12,
+      "y": 6,
+      "sprite": "SPRITE_MONSTER",
+      "spriteId": 5,
+      "movement": "WALK",
+      "rangeOrDirection": "LEFT_RIGHT",
+      "rangeOrDirectionValue": 2,
+      "behavior": "walk_left_right",
+      "textId": "TEXT_FUCHSIACITY_KANGASKHAN",
+      "textIndex": 7
+    },
+    {
+      "index": 8,
+      "const": "FUCHSIACITY_SLOWPOKE",
+      "x": 30,
+      "y": 12,
+      "sprite": "SPRITE_MONSTER",
+      "spriteId": 5,
+      "movement": "WALK",
+      "rangeOrDirection": "LEFT_RIGHT",
+      "rangeOrDirectionValue": 2,
+      "behavior": "walk_left_right",
+      "textId": "TEXT_FUCHSIACITY_SLOWPOKE",
+      "textIndex": 8
+    },
+    {
+      "index": 9,
+      "const": "FUCHSIACITY_LAPRAS",
+      "x": 8,
+      "y": 17,
+      "sprite": "SPRITE_SEEL",
+      "spriteId": 60,
+      "movement": "WALK",
+      "rangeOrDirection": "ANY_DIR",
+      "rangeOrDirectionValue": 0,
+      "behavior": "walk_any",
+      "textId": "TEXT_FUCHSIACITY_LAPRAS",
+      "textIndex": 9
+    },
+    {
+      "index": 10,
+      "const": "FUCHSIACITY_FOSSIL",
+      "x": 6,
+      "y": 5,
+      "sprite": "SPRITE_FOSSIL",
+      "spriteId": 62,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_FUCHSIACITY_FOSSIL",
+      "textIndex": 10
+    }
+  ],
+  "adaptation": "Red geometry/collision/actors; FireRed complete ordered teams. FR-only doubles, Route15 item, Gate2F, Safari/warden/TM06 deferred.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

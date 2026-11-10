@@ -1,0 +1,19 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "source": "data/maps/PewterGym.json",
+  "originalSources": {
+    "header": "data/maps/headers/PewterGym.asm",
+    "objects": "data/maps/objects/PewterGym.asm",
+    "blocks": "maps/PewterGym.blk",
+    "script": "scripts/PewterGym.asm"
+  },
+  "mapSHA256": "d18f5742fbe30b5ae8ccc7c1eadaab1dec30b0e6649bcfe0605ba003768acd11",
+  "tiles": "assets/tilesets/gym.png",
+  "adaptation": "Original geometry/foot collision. Existing outdoor recolor or four neutral interior colors; only gym and center open, Route3 closed, other city NPCs/buildings/guide omitted. Route2 connection x+10 cells north / -10 south.",
+  "rights": "Pokemon assets remain rights-holder property; no redistribution clearance.",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "trainers": "src/data/trainer_parties.h sParty_CamperLiam / sParty_LeaderBrock; trainers.h custom moves IV0; battle_main.c money class Camper5 Leader25; original name hash nature",
+  "actors": "Red PewterGym object1 super_nerd front [4,1], object2 cooltrainer_m right [3,6]; source16px/2x world nearest fixed frame; original guide not generated",
+  "badge": "FireRed graphics/trainer_card/badges.png first16x16; embedded original palette/transparency0. trainer_card.c first badge2x2 tiles; scripts.inc FLAG_BADGE01_GET after Brock win. No TM39 or badge stat/obedience/Flash effects.",
+  "newSpecies": "FireRed species_info.h / level_up_learnsets.h and graphics/pokemon/{geodude,onix,sandshrew}/{front,back,icon}; no new wild table or later evolutions."
+}

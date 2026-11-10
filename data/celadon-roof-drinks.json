@@ -1,0 +1,7 @@
+{
+  "source_revision": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "prices": {"fresh_water": 200, "soda_pop": 300, "lemonade": 350},
+  "healing": {"fresh_water": 50, "soda_pop": 60, "lemonade": 80},
+  "rewards": {"fresh_water": {"tm": "tm16", "move": "light_screen"}, "soda_pop": {"tm": "tm20", "move": "safeguard"}, "lemonade": {"tm": "tm33", "move": "reflect"}},
+  "compatibility_source": "src/data/pokemon/tmhm_learnsets.h; gen3 species only"
+}

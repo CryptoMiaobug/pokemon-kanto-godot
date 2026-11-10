@@ -1,0 +1,111 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/Route7.json",
+  "connections": {
+    "west": {
+      "map": "CELADON_CITY",
+      "mapId": 6,
+      "mapName": "CeladonCity",
+      "offset": -4,
+      "dx": -25,
+      "dy": -4,
+      "copyRect": {
+        "x": 22,
+        "y": 1,
+        "w": 3,
+        "h": 15
+      },
+      "onEnter": {
+        "newX": 49,
+        "yAdd": 8
+      },
+      "macro": {
+        "stripSrc": 47,
+        "stripDest": 0,
+        "stripLength": 15,
+        "connectedWidth": 25,
+        "yAlign": 8,
+        "xAlign": 49,
+        "viewPointer": 56
+      }
+    },
+    "east": {
+      "map": "SAFFRON_CITY",
+      "mapId": 10,
+      "mapName": "SaffronCity",
+      "offset": -4,
+      "dx": 10,
+      "dy": -4,
+      "copyRect": {
+        "x": 0,
+        "y": 1,
+        "w": 3,
+        "h": 15
+      },
+      "onEnter": {
+        "newX": 0,
+        "yAdd": 8
+      },
+      "macro": {
+        "stripSrc": 20,
+        "stripDest": 13,
+        "stripLength": 15,
+        "connectedWidth": 20,
+        "yAlign": 8,
+        "xAlign": 0,
+        "viewPointer": 27
+      }
+    }
+  },
+  "warps": [
+    {
+      "x": 18,
+      "y": 9,
+      "destMap": "ROUTE_7_GATE",
+      "destMapId": 76,
+      "destMapName": "Route7Gate",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 18,
+      "y": 10,
+      "destMap": "ROUTE_7_GATE",
+      "destMapId": 76,
+      "destMapName": "Route7Gate",
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 11,
+      "y": 9,
+      "destMap": "ROUTE_7_GATE",
+      "destMapId": 76,
+      "destMapName": "Route7Gate",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 11,
+      "y": 10,
+      "destMap": "ROUTE_7_GATE",
+      "destMapId": 76,
+      "destMapName": "Route7Gate",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 5,
+      "y": 13,
+      "destMap": "UNDERGROUND_PATH_ROUTE_7",
+      "destMapId": 77,
+      "destMapName": "UndergroundPathRoute7",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "actors": [],
+  "rights": "Original rights holders; no redistribution clearance.",
+  "adaptation": "Native Red feet/NPCs/pair/ledges; original stairs latch; parent LAST_MAP explicit. Saffron drinks prerequisite not bypassed, no trades/hidden items. Celadon next slice."
+}

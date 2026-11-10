@@ -1,0 +1,500 @@
+{
+  "gates": [
+    {
+      "id": 1,
+      "block": [
+        9,
+        3
+      ],
+      "closed": 84,
+      "open": 14,
+      "cells": [
+        [
+          18,
+          6
+        ],
+        [
+          19,
+          6
+        ],
+        [
+          18,
+          7
+        ],
+        [
+          19,
+          7
+        ]
+      ],
+      "closedCollision": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "openCollision": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": true,
+      "question": "绿毛虫会进化成铁甲蛹吗？",
+      "answer": true
+    },
+    {
+      "id": 2,
+      "block": [
+        6,
+        3
+      ],
+      "closed": 84,
+      "open": 14,
+      "cells": [
+        [
+          12,
+          6
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          12,
+          7
+        ],
+        [
+          13,
+          7
+        ]
+      ],
+      "closedCollision": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "openCollision": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "question": "联盟认可的徽章一共有9枚吗？",
+      "answer": false
+    },
+    {
+      "id": 3,
+      "block": [
+        6,
+        6
+      ],
+      "closed": 84,
+      "open": 14,
+      "cells": [
+        [
+          12,
+          12
+        ],
+        [
+          13,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          13
+        ]
+      ],
+      "closedCollision": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "openCollision": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "question": "蚊香蝌蚪会进化三次吗？",
+      "answer": false
+    },
+    {
+      "id": 4,
+      "block": [
+        3,
+        8
+      ],
+      "closed": 95,
+      "open": 14,
+      "cells": [
+        [
+          6,
+          16
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          7,
+          17
+        ]
+      ],
+      "closedCollision": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "openCollision": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "question": "电系招式对地面属性有效吗？",
+      "answer": false
+    },
+    {
+      "id": 5,
+      "block": [
+        2,
+        6
+      ],
+      "closed": 84,
+      "open": 14,
+      "cells": [
+        [
+          4,
+          12
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          4,
+          13
+        ],
+        [
+          5,
+          13
+        ]
+      ],
+      "closedCollision": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "openCollision": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": true,
+      "question": "相同种类和等级的宝可梦也会有差异吗？",
+      "answer": true
+    },
+    {
+      "id": 6,
+      "block": [
+        2,
+        3
+      ],
+      "closed": 84,
+      "open": 14,
+      "cells": [
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "closedCollision": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "openCollision": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": false,
+      "question": "TM28里装的是墓石攻击吗？",
+      "answer": false
+    }
+  ],
+  "redHiddenEvents": [
+    {
+      "x": 17,
+      "y": 13,
+      "routine": "GymStatues",
+      "arg": "SPRITE_FACING_UP",
+      "argValue": 4,
+      "kind": "event"
+    },
+    {
+      "x": 15,
+      "y": 7,
+      "routine": "PrintCinnabarQuiz",
+      "arg": "(FALSE << 4) | 1",
+      "argValue": 1,
+      "kind": "event"
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "routine": "PrintCinnabarQuiz",
+      "arg": "(TRUE  << 4) | 2",
+      "argValue": 18,
+      "kind": "event"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "routine": "PrintCinnabarQuiz",
+      "arg": "(TRUE  << 4) | 3",
+      "argValue": 19,
+      "kind": "event"
+    },
+    {
+      "x": 9,
+      "y": 13,
+      "routine": "PrintCinnabarQuiz",
+      "arg": "(TRUE  << 4) | 4",
+      "argValue": 20,
+      "kind": "event"
+    },
+    {
+      "x": 1,
+      "y": 13,
+      "routine": "PrintCinnabarQuiz",
+      "arg": "(FALSE << 4) | 5",
+      "argValue": 5,
+      "kind": "event"
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "routine": "PrintCinnabarQuiz",
+      "arg": "(TRUE  << 4) | 6",
+      "argValue": 22,
+      "kind": "event"
+    }
+  ],
+  "redObjects": [
+    {
+      "index": 1,
+      "const": "CINNABARGYM_BLAINE",
+      "x": 3,
+      "y": 3,
+      "sprite": "SPRITE_MIDDLE_AGED_MAN",
+      "spriteId": 10,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_CINNABARGYM_BLAINE",
+      "textIndex": 1,
+      "trainer": {
+        "trainerClass": "OPP_BLAINE",
+        "trainerClassId": 39,
+        "trainerPartyIndex": 1,
+        "header": null
+      }
+    },
+    {
+      "index": 2,
+      "const": "CINNABARGYM_SUPER_NERD1",
+      "x": 17,
+      "y": 2,
+      "sprite": "SPRITE_SUPER_NERD",
+      "spriteId": 12,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_CINNABARGYM_SUPER_NERD1",
+      "textIndex": 2,
+      "trainer": {
+        "trainerClass": "OPP_SUPER_NERD",
+        "trainerClassId": 8,
+        "trainerPartyIndex": 9,
+        "header": null
+      }
+    },
+    {
+      "index": 3,
+      "const": "CINNABARGYM_SUPER_NERD2",
+      "x": 17,
+      "y": 8,
+      "sprite": "SPRITE_SUPER_NERD",
+      "spriteId": 12,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_CINNABARGYM_SUPER_NERD2",
+      "textIndex": 3,
+      "trainer": {
+        "trainerClass": "OPP_BURGLAR",
+        "trainerClassId": 11,
+        "trainerPartyIndex": 4,
+        "header": null
+      }
+    },
+    {
+      "index": 4,
+      "const": "CINNABARGYM_SUPER_NERD3",
+      "x": 11,
+      "y": 4,
+      "sprite": "SPRITE_SUPER_NERD",
+      "spriteId": 12,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_CINNABARGYM_SUPER_NERD3",
+      "textIndex": 4,
+      "trainer": {
+        "trainerClass": "OPP_SUPER_NERD",
+        "trainerClassId": 8,
+        "trainerPartyIndex": 10,
+        "header": null
+      }
+    },
+    {
+      "index": 5,
+      "const": "CINNABARGYM_SUPER_NERD4",
+      "x": 11,
+      "y": 8,
+      "sprite": "SPRITE_SUPER_NERD",
+      "spriteId": 12,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_CINNABARGYM_SUPER_NERD4",
+      "textIndex": 5,
+      "trainer": {
+        "trainerClass": "OPP_BURGLAR",
+        "trainerClassId": 11,
+        "trainerPartyIndex": 5,
+        "header": null
+      }
+    },
+    {
+      "index": 6,
+      "const": "CINNABARGYM_SUPER_NERD5",
+      "x": 11,
+      "y": 14,
+      "sprite": "SPRITE_SUPER_NERD",
+      "spriteId": 12,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_CINNABARGYM_SUPER_NERD5",
+      "textIndex": 6,
+      "trainer": {
+        "trainerClass": "OPP_SUPER_NERD",
+        "trainerClassId": 8,
+        "trainerPartyIndex": 11,
+        "header": null
+      }
+    },
+    {
+      "index": 7,
+      "const": "CINNABARGYM_SUPER_NERD6",
+      "x": 3,
+      "y": 14,
+      "sprite": "SPRITE_SUPER_NERD",
+      "spriteId": 12,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_CINNABARGYM_SUPER_NERD6",
+      "textIndex": 7,
+      "trainer": {
+        "trainerClass": "OPP_BURGLAR",
+        "trainerClassId": 11,
+        "trainerPartyIndex": 6,
+        "header": null
+      }
+    },
+    {
+      "index": 8,
+      "const": "CINNABARGYM_SUPER_NERD7",
+      "x": 3,
+      "y": 8,
+      "sprite": "SPRITE_SUPER_NERD",
+      "spriteId": 12,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_CINNABARGYM_SUPER_NERD7",
+      "textIndex": 8,
+      "trainer": {
+        "trainerClass": "OPP_SUPER_NERD",
+        "trainerClassId": 8,
+        "trainerPartyIndex": 12,
+        "header": null
+      }
+    },
+    {
+      "index": 9,
+      "const": "CINNABARGYM_GYM_GUIDE",
+      "x": 16,
+      "y": 13,
+      "sprite": "SPRITE_GYM_GUIDE",
+      "spriteId": 36,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_CINNABARGYM_GYM_GUIDE",
+      "textIndex": 9
+    }
+  ],
+  "fireRedPartyMapping": [
+    "SuperNerdErik",
+    "BurglarQuinn",
+    "SuperNerdAvery",
+    "BurglarRamon",
+    "SuperNerdDerek",
+    "BurglarDusty",
+    "SuperNerdZac"
+  ],
+  "blaineParty": "LeaderBlaine"
+}

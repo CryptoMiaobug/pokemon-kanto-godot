@@ -1,0 +1,406 @@
+[
+  {
+    "id": "victory_george",
+    "map": "victory-road-3f",
+    "name": "精英训练家乔治",
+    "title": "冠军之路 · 精英训练家乔治",
+    "cell": [
+      28,
+      5
+    ],
+    "sprite": "res://assets/victory-road-3f/actor-1.png",
+    "portrait": "res://assets/victory-road-3f/cool_trainer_m-portrait.png",
+    "redObject": 1,
+    "fireRedTrainer": "CooltrainerGeorge",
+    "sourceName": "GEORGE",
+    "moneyCoefficient": 9,
+    "reward": 1512,
+    "party": [
+      {
+        "species_id": "exeggutor",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "eggbomb",
+          "confusion",
+          "stunspore",
+          "sleeppowder"
+        ]
+      },
+      {
+        "species_id": "sandslash",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "furyswipes",
+          "swift",
+          "poisonsting",
+          "sandattack"
+        ]
+      },
+      {
+        "species_id": "cloyster",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "def",
+          "down": "spe"
+        },
+        "moves": [
+          "spikecannon",
+          "spikes",
+          "aurorabeam",
+          "supersonic"
+        ]
+      },
+      {
+        "species_id": "electrode",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "spark",
+          "sonicboom",
+          "screech",
+          "lightscreen"
+        ]
+      },
+      {
+        "species_id": "arcanine",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "flamewheel",
+          "roar",
+          "bite",
+          "takedown"
+        ]
+      }
+    ],
+    "items": [
+      "hyperpotion"
+    ],
+    "slice": 53,
+    "intro": "走过冠军之路，让我看看你的实力！",
+    "defeat": "很精彩！向宝可梦联盟前进吧！",
+    "after": "出洞后就是石英高原，先做好补给。"
+  },
+  {
+    "id": "victory_alexa",
+    "map": "victory-road-3f",
+    "name": "精英训练家阿莱克莎",
+    "title": "冠军之路 · 精英训练家阿莱克莎",
+    "cell": [
+      7,
+      13
+    ],
+    "sprite": "res://assets/victory-road-3f/actor-2.png",
+    "portrait": "res://assets/victory-road-3f/cool_trainer_f-portrait.png",
+    "redObject": 2,
+    "fireRedTrainer": "CooltrainerAlexa",
+    "sourceName": "ALEXA",
+    "moneyCoefficient": 9,
+    "reward": 1512,
+    "party": [
+      {
+        "species_id": "clefairy",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "spe",
+          "down": "atk"
+        },
+        "moves": [
+          "lightscreen",
+          "cosmicpower",
+          "doubleslap",
+          "encore"
+        ]
+      },
+      {
+        "species_id": "jigglypuff",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "sing",
+          "bodyslam",
+          "rollout",
+          "disable"
+        ]
+      },
+      {
+        "species_id": "persian",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "payday",
+          "faintattack",
+          "bite",
+          "screech"
+        ]
+      },
+      {
+        "species_id": "dewgong",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "sheercold",
+          "takedown",
+          "rest",
+          "aurorabeam"
+        ]
+      },
+      {
+        "species_id": "chansey",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "sing",
+          "eggbomb",
+          "softboiled",
+          "minimize"
+        ]
+      }
+    ],
+    "items": [
+      "fullrestore"
+    ],
+    "slice": 53,
+    "intro": "走过冠军之路，让我看看你的实力！",
+    "defeat": "很精彩！向宝可梦联盟前进吧！",
+    "after": "出洞后就是石英高原，先做好补给。"
+  },
+  {
+    "id": "victory_colby",
+    "map": "victory-road-3f",
+    "name": "精英训练家科尔比",
+    "title": "冠军之路 · 精英训练家科尔比",
+    "cell": [
+      6,
+      14
+    ],
+    "sprite": "res://assets/victory-road-3f/actor-3.png",
+    "portrait": "res://assets/victory-road-3f/cool_trainer_m-portrait.png",
+    "redObject": 3,
+    "fireRedTrainer": "CooltrainerColby",
+    "sourceName": "COLBY",
+    "moneyCoefficient": 9,
+    "reward": 1548,
+    "party": [
+      {
+        "species_id": "kingler",
+        "level": 41,
+        "ivs": 12,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "guillotine",
+          "stomp",
+          "mudshot",
+          "bubble"
+        ]
+      },
+      {
+        "species_id": "poliwhirl",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "bodyslam",
+          "doubleslap",
+          "watergun",
+          "hypnosis"
+        ]
+      },
+      {
+        "species_id": "tentacruel",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "spd",
+          "down": "atk"
+        },
+        "moves": [
+          "barrier",
+          "wrap",
+          "bubblebeam",
+          "acid"
+        ]
+      },
+      {
+        "species_id": "seadra",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "watergun",
+          "smokescreen",
+          "twister",
+          "leer"
+        ]
+      },
+      {
+        "species_id": "blastoise",
+        "level": 43,
+        "ivs": 12,
+        "nature": {
+          "up": "atk",
+          "down": "spd"
+        },
+        "moves": [
+          "watergun",
+          "bite",
+          "rapidspin",
+          "raindance"
+        ]
+      }
+    ],
+    "items": [
+      "hyperpotion"
+    ],
+    "slice": 53,
+    "intro": "走过冠军之路，让我看看你的实力！",
+    "defeat": "很精彩！向宝可梦联盟前进吧！",
+    "after": "出洞后就是石英高原，先做好补给。"
+  },
+  {
+    "id": "victory_caroline",
+    "map": "victory-road-3f",
+    "name": "精英训练家卡罗琳",
+    "title": "冠军之路 · 精英训练家卡罗琳",
+    "cell": [
+      13,
+      3
+    ],
+    "sprite": "res://assets/victory-road-3f/actor-4.png",
+    "portrait": "res://assets/victory-road-3f/cool_trainer_f-portrait.png",
+    "redObject": 4,
+    "fireRedTrainer": "CooltrainerCaroline",
+    "sourceName": "CAROLINE",
+    "moneyCoefficient": 9,
+    "reward": 1512,
+    "party": [
+      {
+        "species_id": "bellsprout",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "spe",
+          "down": "atk"
+        },
+        "moves": [
+          "razorleaf",
+          "acid",
+          "stunspore",
+          "poisonpowder"
+        ]
+      },
+      {
+        "species_id": "weepinbell",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "atk",
+          "down": "spa"
+        },
+        "moves": [
+          "razorleaf",
+          "acid",
+          "sleeppowder",
+          "poisonpowder"
+        ]
+      },
+      {
+        "species_id": "victreebel",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "def",
+          "down": "spd"
+        },
+        "moves": [
+          "razorleaf",
+          "acid",
+          "stunspore",
+          "sleeppowder"
+        ]
+      },
+      {
+        "species_id": "paras",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "def",
+          "down": "spd"
+        },
+        "moves": [
+          "growth",
+          "slash",
+          "leechlife",
+          "stunspore"
+        ]
+      },
+      {
+        "species_id": "parasect",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "spore",
+          "slash",
+          "leechlife",
+          "poisonpowder"
+        ]
+      }
+    ],
+    "items": [
+      "hyperpotion"
+    ],
+    "slice": 53,
+    "intro": "走过冠军之路，让我看看你的实力！",
+    "defeat": "很精彩！向宝可梦联盟前进吧！",
+    "after": "出洞后就是石英高原，先做好补给。"
+  }
+]

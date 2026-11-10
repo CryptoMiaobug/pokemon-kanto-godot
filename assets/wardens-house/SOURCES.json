@@ -1,0 +1,78 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/WardensHouse.json",
+  "mapSHA256": "90ff1114d822dd3c4592cc806add5205c46589bcb25e93ba2ee7a5c7599f64ae",
+  "warps": [
+    {
+      "x": 4,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 4,
+      "destWarpIndex": 3
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "WARDENSHOUSE_WARDEN",
+      "x": 2,
+      "y": 3,
+      "sprite": "SPRITE_WARDEN",
+      "spriteId": 45,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_WARDENSHOUSE_WARDEN",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "WARDENSHOUSE_RARE_CANDY",
+      "x": 8,
+      "y": 3,
+      "sprite": "SPRITE_POKE_BALL",
+      "spriteId": 61,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_WARDENSHOUSE_RARE_CANDY",
+      "textIndex": 2,
+      "item": "RARE_CANDY",
+      "itemId": 40,
+      "toggleIndex": 71,
+      "toggleConst": "TOGGLE_WARDENS_HOUSE_ITEM",
+      "startsHidden": false
+    },
+    {
+      "index": 3,
+      "const": "WARDENSHOUSE_BOULDER",
+      "x": 8,
+      "y": 4,
+      "sprite": "SPRITE_BOULDER",
+      "spriteId": 63,
+      "movement": "STAY",
+      "rangeOrDirection": "BOULDER_MOVEMENT_BYTE_2",
+      "rangeOrDirectionValue": 16,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_WARDENSHOUSE_BOULDER",
+      "textIndex": 3
+    }
+  ],
+  "adaptation": "Red geometry/collision/actors; FireRed complete ordered teams. Safari capture/rest houses/ordinary items deferred; Gold Teeth and HM03 enabled29.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

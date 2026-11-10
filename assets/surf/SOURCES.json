@@ -1,0 +1,70 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "sheet": "assets/sprites/seel.png",
+  "sha256": "068ff23b580f99363684abe3d610bc84e59fc96b13ce047d47e449f61229d169",
+  "selection": "data/sprites.json player.surf SPRITE_SEEL",
+  "scale": 1,
+  "worldScale": 2,
+  "feetAnchor": [
+    8,
+    16
+  ],
+  "frames": [
+    {
+      "frame": 0,
+      "bbox": [
+        0,
+        2,
+        16,
+        14
+      ]
+    },
+    {
+      "frame": 1,
+      "bbox": [
+        0,
+        2,
+        16,
+        15
+      ]
+    },
+    {
+      "frame": 2,
+      "bbox": [
+        0,
+        2,
+        16,
+        13
+      ]
+    },
+    {
+      "frame": 3,
+      "bbox": [
+        1,
+        2,
+        15,
+        14
+      ]
+    },
+    {
+      "frame": 4,
+      "bbox": [
+        0,
+        1,
+        16,
+        15
+      ]
+    },
+    {
+      "frame": 5,
+      "bbox": [
+        0,
+        3,
+        16,
+        13
+      ]
+    }
+  ],
+  "adaptation": "Source overworld creature riding representation, not FR rider composite; no surf music or wake effect.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

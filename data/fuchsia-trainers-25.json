@@ -1,0 +1,99 @@
+[
+  {
+    "map": "fuchsia-gym",
+    "cell": [
+      4,
+      10
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/fuchsia-gym/actor-1.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": "",
+    "id": "fuchsia_koga",
+    "name": "阿桔",
+    "title": "浅红道馆",
+    "party": [
+      {
+        "species_id": "koffing",
+        "level": 37,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "selfdestruct",
+          "sludge",
+          "smokescreen",
+          "toxic"
+        ]
+      },
+      {
+        "species_id": "muk",
+        "level": 39,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "atk"
+        },
+        "moves": [
+          "minimize",
+          "sludge",
+          "acidarmor",
+          "toxic"
+        ]
+      },
+      {
+        "species_id": "koffing",
+        "level": 37,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spa"
+        },
+        "moves": [
+          "selfdestruct",
+          "sludge",
+          "smokescreen",
+          "toxic"
+        ]
+      },
+      {
+        "species_id": "weezing",
+        "level": 43,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "tackle",
+          "sludge",
+          "smokescreen",
+          "toxic"
+        ]
+      }
+    ],
+    "reward": 4300,
+    "portrait": "res://assets/fuchsia-gym/trainer-1-trainer.png",
+    "fireRedTrainer": "LeaderKoga",
+    "sourceName": "KOGA",
+    "sourceFemale": false,
+    "moneyCoefficient": 25,
+    "intro": "来对战吧！",
+    "defeat": "你赢了！",
+    "after": "训练仍要继续。",
+    "badge": "soul",
+    "items": [
+      "hyperpotion",
+      "hyperpotion",
+      "fullheal"
+    ]
+  }
+]

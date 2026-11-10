@@ -1,0 +1,381 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/Route11.json",
+  "mapSHA256": "ae924024cedd615ce5c0ea0be7c89d3f0ce3bef203f02d4bd3f73fb198059e83",
+  "tileset": "data/tilesets/Overworld.json",
+  "gfx": "assets/tilesets/overworld.png",
+  "warps": [
+    {
+      "x": 49,
+      "y": 8,
+      "destMap": "ROUTE_11_GATE_1F",
+      "destMapId": 84,
+      "destMapName": "Route11Gate1F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 49,
+      "y": 9,
+      "destMap": "ROUTE_11_GATE_1F",
+      "destMapId": 84,
+      "destMapName": "Route11Gate1F",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 58,
+      "y": 8,
+      "destMap": "ROUTE_11_GATE_1F",
+      "destMapId": 84,
+      "destMapName": "Route11Gate1F",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 58,
+      "y": 9,
+      "destMap": "ROUTE_11_GATE_1F",
+      "destMapId": 84,
+      "destMapName": "Route11Gate1F",
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "destMap": "DIGLETTS_CAVE_ROUTE_11",
+      "destMapId": 85,
+      "destMapName": "DiglettsCaveRoute11",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "connections": {
+    "west": {
+      "map": "VERMILION_CITY",
+      "mapId": 5,
+      "mapName": "VermilionCity",
+      "offset": -4,
+      "dx": -20,
+      "dy": -4,
+      "copyRect": {
+        "x": 17,
+        "y": 1,
+        "w": 3,
+        "h": 15
+      },
+      "onEnter": {
+        "newX": 39,
+        "yAdd": 8
+      },
+      "macro": {
+        "stripSrc": 37,
+        "stripDest": 0,
+        "stripLength": 15,
+        "connectedWidth": 20,
+        "yAlign": 8,
+        "xAlign": 39,
+        "viewPointer": 46
+      }
+    },
+    "east": {
+      "map": "ROUTE_12",
+      "mapId": 23,
+      "mapName": "Route12",
+      "offset": -27,
+      "dx": 30,
+      "dy": -27,
+      "copyRect": {
+        "x": 0,
+        "y": 24,
+        "w": 3,
+        "h": 15
+      },
+      "onEnter": {
+        "newX": 0,
+        "yAdd": 54
+      },
+      "macro": {
+        "stripSrc": 240,
+        "stripDest": 33,
+        "stripLength": 15,
+        "connectedWidth": 10,
+        "yAlign": 54,
+        "xAlign": 0,
+        "viewPointer": 17
+      }
+    }
+  },
+  "actors": [
+    {
+      "index": 1,
+      "const": "ROUTE11_GAMBLER1",
+      "x": 10,
+      "y": 14,
+      "sprite": "SPRITE_GAMBLER",
+      "spriteId": 11,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROUTE11_GAMBLER1",
+      "textIndex": 1,
+      "trainer": {
+        "trainerClass": "OPP_GAMBLER",
+        "trainerClassId": 17,
+        "trainerPartyIndex": 1,
+        "header": "Route11TrainerHeader0",
+        "eventFlag": "EVENT_BEAT_ROUTE_11_TRAINER_0",
+        "eventFlagIndex": 1137,
+        "sightRange": 3,
+        "textBefore": "Route11Gambler1BattleText",
+        "textEnd": "Route11Gambler1EndBattleText",
+        "textAfter": "Route11Gambler1AfterBattleText"
+      }
+    },
+    {
+      "index": 2,
+      "const": "ROUTE11_GAMBLER2",
+      "x": 26,
+      "y": 9,
+      "sprite": "SPRITE_GAMBLER",
+      "spriteId": 11,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROUTE11_GAMBLER2",
+      "textIndex": 2,
+      "trainer": {
+        "trainerClass": "OPP_GAMBLER",
+        "trainerClassId": 17,
+        "trainerPartyIndex": 2,
+        "header": "Route11TrainerHeader1",
+        "eventFlag": "EVENT_BEAT_ROUTE_11_TRAINER_1",
+        "eventFlagIndex": 1138,
+        "sightRange": 2,
+        "textBefore": "Route11Gambler2BattleText",
+        "textEnd": "Route11Gambler2EndBattleText",
+        "textAfter": "Route11Gambler2AfterBattleText"
+      }
+    },
+    {
+      "index": 3,
+      "const": "ROUTE11_YOUNGSTER1",
+      "x": 13,
+      "y": 5,
+      "sprite": "SPRITE_YOUNGSTER",
+      "spriteId": 4,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROUTE11_YOUNGSTER1",
+      "textIndex": 3,
+      "trainer": {
+        "trainerClass": "OPP_YOUNGSTER",
+        "trainerClassId": 1,
+        "trainerPartyIndex": 9,
+        "header": "Route11TrainerHeader2",
+        "eventFlag": "EVENT_BEAT_ROUTE_11_TRAINER_2",
+        "eventFlagIndex": 1139,
+        "sightRange": 3,
+        "textBefore": "Route11Youngster1BattleText",
+        "textEnd": "Route11Youngster1EndBattleText",
+        "textAfter": "Route11Youngster1AfterBattleText"
+      }
+    },
+    {
+      "index": 4,
+      "const": "ROUTE11_SUPER_NERD1",
+      "x": 36,
+      "y": 11,
+      "sprite": "SPRITE_SUPER_NERD",
+      "spriteId": 12,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROUTE11_SUPER_NERD1",
+      "textIndex": 4,
+      "trainer": {
+        "trainerClass": "OPP_ENGINEER",
+        "trainerClassId": 12,
+        "trainerPartyIndex": 2,
+        "header": "Route11TrainerHeader3",
+        "eventFlag": "EVENT_BEAT_ROUTE_11_TRAINER_3",
+        "eventFlagIndex": 1140,
+        "sightRange": 3,
+        "textBefore": "Route11SuperNerd1BattleText",
+        "textEnd": "Route11SuperNerd1EndBattleText",
+        "textAfter": "Route11SuperNerd1AfterBattleText"
+      }
+    },
+    {
+      "index": 5,
+      "const": "ROUTE11_YOUNGSTER2",
+      "x": 22,
+      "y": 4,
+      "sprite": "SPRITE_YOUNGSTER",
+      "spriteId": 4,
+      "movement": "STAY",
+      "rangeOrDirection": "UP",
+      "rangeOrDirectionValue": 209,
+      "behavior": "face_up",
+      "textId": "TEXT_ROUTE11_YOUNGSTER2",
+      "textIndex": 5,
+      "trainer": {
+        "trainerClass": "OPP_YOUNGSTER",
+        "trainerClassId": 1,
+        "trainerPartyIndex": 10,
+        "header": "Route11TrainerHeader4",
+        "eventFlag": "EVENT_BEAT_ROUTE_11_TRAINER_4",
+        "eventFlagIndex": 1141,
+        "sightRange": 4,
+        "textBefore": "Route11Youngster2BattleText",
+        "textEnd": "Route11Youngster2EndBattleText",
+        "textAfter": "Route11Youngster2AfterBattleText"
+      }
+    },
+    {
+      "index": 6,
+      "const": "ROUTE11_GAMBLER3",
+      "x": 45,
+      "y": 7,
+      "sprite": "SPRITE_GAMBLER",
+      "spriteId": 11,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROUTE11_GAMBLER3",
+      "textIndex": 6,
+      "trainer": {
+        "trainerClass": "OPP_GAMBLER",
+        "trainerClassId": 17,
+        "trainerPartyIndex": 3,
+        "header": "Route11TrainerHeader5",
+        "eventFlag": "EVENT_BEAT_ROUTE_11_TRAINER_5",
+        "eventFlagIndex": 1142,
+        "sightRange": 3,
+        "textBefore": "Route11Gambler3BattleText",
+        "textEnd": "Route11Gambler3EndBattleText",
+        "textAfter": "Route11Gambler3AfterBattleText"
+      }
+    },
+    {
+      "index": 7,
+      "const": "ROUTE11_GAMBLER4",
+      "x": 33,
+      "y": 3,
+      "sprite": "SPRITE_GAMBLER",
+      "spriteId": 11,
+      "movement": "STAY",
+      "rangeOrDirection": "UP",
+      "rangeOrDirectionValue": 209,
+      "behavior": "face_up",
+      "textId": "TEXT_ROUTE11_GAMBLER4",
+      "textIndex": 7,
+      "trainer": {
+        "trainerClass": "OPP_GAMBLER",
+        "trainerClassId": 17,
+        "trainerPartyIndex": 4,
+        "header": "Route11TrainerHeader6",
+        "eventFlag": "EVENT_BEAT_ROUTE_11_TRAINER_6",
+        "eventFlagIndex": 1143,
+        "sightRange": 3,
+        "textBefore": "Route11Gambler4BattleText",
+        "textEnd": "Route11Gambler4EndBattleText",
+        "textAfter": "Route11Gambler4AfterBattleText"
+      }
+    },
+    {
+      "index": 8,
+      "const": "ROUTE11_YOUNGSTER3",
+      "x": 43,
+      "y": 5,
+      "sprite": "SPRITE_YOUNGSTER",
+      "spriteId": 4,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_ROUTE11_YOUNGSTER3",
+      "textIndex": 8,
+      "trainer": {
+        "trainerClass": "OPP_YOUNGSTER",
+        "trainerClassId": 1,
+        "trainerPartyIndex": 11,
+        "header": "Route11TrainerHeader7",
+        "eventFlag": "EVENT_BEAT_ROUTE_11_TRAINER_7",
+        "eventFlagIndex": 1144,
+        "sightRange": 4,
+        "textBefore": "Route11Youngster3BattleText",
+        "textEnd": "Route11Youngster3EndBattleText",
+        "textAfter": "Route11Youngster3AfterBattleText"
+      }
+    },
+    {
+      "index": 9,
+      "const": "ROUTE11_SUPER_NERD2",
+      "x": 45,
+      "y": 16,
+      "sprite": "SPRITE_SUPER_NERD",
+      "spriteId": 12,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROUTE11_SUPER_NERD2",
+      "textIndex": 9,
+      "trainer": {
+        "trainerClass": "OPP_ENGINEER",
+        "trainerClassId": 12,
+        "trainerPartyIndex": 3,
+        "header": "Route11TrainerHeader8",
+        "eventFlag": "EVENT_BEAT_ROUTE_11_TRAINER_8",
+        "eventFlagIndex": 1145,
+        "sightRange": 3,
+        "textBefore": "Route11SuperNerd2BattleText",
+        "textEnd": "Route11SuperNerd2EndBattleText",
+        "textAfter": "Route11SuperNerd2AfterBattleText"
+      }
+    },
+    {
+      "index": 10,
+      "const": "ROUTE11_YOUNGSTER4",
+      "x": 22,
+      "y": 12,
+      "sprite": "SPRITE_YOUNGSTER",
+      "spriteId": 4,
+      "movement": "STAY",
+      "rangeOrDirection": "UP",
+      "rangeOrDirectionValue": 209,
+      "behavior": "face_up",
+      "textId": "TEXT_ROUTE11_YOUNGSTER4",
+      "textIndex": 10,
+      "trainer": {
+        "trainerClass": "OPP_YOUNGSTER",
+        "trainerClassId": 1,
+        "trainerPartyIndex": 12,
+        "header": "Route11TrainerHeader9",
+        "eventFlag": "EVENT_BEAT_ROUTE_11_TRAINER_9",
+        "eventFlagIndex": 1146,
+        "sightRange": 4,
+        "textBefore": "Route11Youngster4BattleText",
+        "textEnd": "Route11Youngster4EndBattleText",
+        "textAfter": "Route11Youngster4AfterBattleText"
+      }
+    }
+  ],
+  "localScale": 1,
+  "worldScale": 2,
+  "feetAnchor": [
+    8,
+    16
+  ],
+  "adaptation": "Red geometry/static standing actors; FireRed rules retained. Route11 trainers and all new encounters deferred O13-4; Gate2F/services deferred. No walking NPC/audio.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

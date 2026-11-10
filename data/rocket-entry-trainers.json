@@ -1,0 +1,393 @@
+[
+  {
+    "map": "game-corner",
+    "cell": [
+      9,
+      5
+    ],
+    "sprite": "res://assets/game-corner/actor-11.png",
+    "redObject": 11,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item_deferred": false,
+    "id": "rocket_poster",
+    "name": "海报守卫",
+    "title": "火箭队 · 游戏厅",
+    "facing": "up",
+    "party": [
+      {
+        "species_id": "raticate",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "tailwhip",
+          "quickattack",
+          "hyperfang",
+          "scaryface"
+        ]
+      },
+      {
+        "species_id": "zubat",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "leechlife",
+          "astonish",
+          "supersonic",
+          "bite"
+        ]
+      }
+    ],
+    "reward": 640,
+    "portrait": "res://assets/game-corner/actor-11-trainer.png",
+    "intro": "我在保护这张海报！走开，否则就对战！",
+    "defeat": "可恶！",
+    "after": "海报后面有个开关。",
+    "fireRedTrainer": "TeamRocketGrunt7"
+  },
+  {
+    "map": "rocket-hideout-b1f",
+    "cell": [
+      26,
+      8
+    ],
+    "sprite": "res://assets/rocket-hideout-b1f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item_deferred": false,
+    "id": "rocket_b1_1",
+    "name": "基地队员1",
+    "title": "火箭队 · 地下1层",
+    "facing": "left",
+    "party": [
+      {
+        "species_id": "drowzee",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spd"
+        },
+        "moves": [
+          "disable",
+          "confusion",
+          "headbutt",
+          "poisongas"
+        ]
+      },
+      {
+        "species_id": "machop",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "leer",
+          "focusenergy",
+          "karatechop",
+          "seismictoss"
+        ]
+      }
+    ],
+    "reward": 672,
+    "portrait": "res://assets/rocket-hideout-b1f/actor-1-trainer.png",
+    "intro": "你怎么闯进我们的秘密基地的？",
+    "defeat": "可恶！",
+    "after": "你打败我了。",
+    "fireRedTrainer": "TeamRocketGrunt8"
+  },
+  {
+    "map": "rocket-hideout-b1f",
+    "cell": [
+      12,
+      6
+    ],
+    "sprite": "res://assets/rocket-hideout-b1f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item_deferred": false,
+    "id": "rocket_b1_2",
+    "name": "基地队员2",
+    "title": "火箭队 · 地下1层",
+    "facing": "right",
+    "party": [
+      {
+        "species_id": "raticate",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "tailwhip",
+          "quickattack",
+          "hyperfang",
+          "scaryface"
+        ]
+      },
+      {
+        "species_id": "raticate",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "tailwhip",
+          "quickattack",
+          "hyperfang",
+          "scaryface"
+        ]
+      }
+    ],
+    "reward": 672,
+    "portrait": "res://assets/rocket-hideout-b1f/actor-2-trainer.png",
+    "intro": "你怎么闯进我们的秘密基地的？",
+    "defeat": "可恶！",
+    "after": "你打败我了。",
+    "fireRedTrainer": "TeamRocketGrunt9"
+  },
+  {
+    "map": "rocket-hideout-b1f",
+    "cell": [
+      18,
+      17
+    ],
+    "sprite": "res://assets/rocket-hideout-b1f/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item_deferred": false,
+    "id": "rocket_b1_3",
+    "name": "基地队员3",
+    "title": "火箭队 · 地下1层",
+    "facing": "down",
+    "party": [
+      {
+        "species_id": "grimer",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "minimize",
+          "sludge",
+          "disable",
+          "harden"
+        ]
+      },
+      {
+        "species_id": "koffing",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "smog",
+          "tackle",
+          "poisongas"
+        ]
+      },
+      {
+        "species_id": "koffing",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "smog",
+          "tackle",
+          "poisongas"
+        ]
+      }
+    ],
+    "reward": 640,
+    "portrait": "res://assets/rocket-hideout-b1f/actor-3-trainer.png",
+    "intro": "你怎么闯进我们的秘密基地的？",
+    "defeat": "可恶！",
+    "after": "你打败我了。",
+    "fireRedTrainer": "TeamRocketGrunt10"
+  },
+  {
+    "map": "rocket-hideout-b1f",
+    "cell": [
+      15,
+      25
+    ],
+    "sprite": "res://assets/rocket-hideout-b1f/actor-4.png",
+    "redObject": 4,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item_deferred": false,
+    "id": "rocket_b1_4",
+    "name": "基地队员4",
+    "title": "火箭队 · 地下1层",
+    "facing": "right",
+    "party": [
+      {
+        "species_id": "rattata",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spd"
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack",
+          "hyperfang"
+        ]
+      },
+      {
+        "species_id": "raticate",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spd"
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack",
+          "hyperfang"
+        ]
+      },
+      {
+        "species_id": "raticate",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spd"
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack",
+          "hyperfang"
+        ]
+      },
+      {
+        "species_id": "rattata",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spe"
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack",
+          "hyperfang"
+        ]
+      }
+    ],
+    "reward": 608,
+    "portrait": "res://assets/rocket-hideout-b1f/actor-4-trainer.png",
+    "intro": "你怎么闯进我们的秘密基地的？",
+    "defeat": "可恶！",
+    "after": "你打败我了。",
+    "fireRedTrainer": "TeamRocketGrunt11"
+  },
+  {
+    "map": "rocket-hideout-b1f",
+    "cell": [
+      28,
+      18
+    ],
+    "sprite": "res://assets/rocket-hideout-b1f/actor-5.png",
+    "redObject": 5,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item_deferred": false,
+    "id": "rocket_b1_5",
+    "name": "基地队员5",
+    "title": "火箭队 · 地下1层",
+    "facing": "left",
+    "party": [
+      {
+        "species_id": "grimer",
+        "level": 22,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "minimize",
+          "sludge",
+          "disable",
+          "harden"
+        ]
+      },
+      {
+        "species_id": "koffing",
+        "level": 22,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "sludge",
+          "smog",
+          "tackle",
+          "poisongas"
+        ]
+      }
+    ],
+    "reward": 704,
+    "portrait": "res://assets/rocket-hideout-b1f/actor-5-trainer.png",
+    "intro": "你怎么闯进我们的秘密基地的？",
+    "defeat": "可恶！",
+    "after": "你打败我了。",
+    "fireRedTrainer": "TeamRocketGrunt12"
+  }
+]

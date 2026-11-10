@@ -1,0 +1,138 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "map": "data/maps/SSAnne1F.json",
+  "mapSHA256": "3a0eceaa4eafbfab4a6a00136127026abd84af3e4b9d6fd09c6611d2b871ca2e",
+  "tiles": "assets/tilesets/ship.png",
+  "warps": [
+    {
+      "x": 26,
+      "y": 0,
+      "destMap": "VERMILION_DOCK",
+      "destMapId": 94,
+      "destMapName": "VermilionDock",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 27,
+      "y": 0,
+      "destMap": "VERMILION_DOCK",
+      "destMapId": 94,
+      "destMapName": "VermilionDock",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 31,
+      "y": 8,
+      "destMap": "SS_ANNE_1F_ROOMS",
+      "destMapId": 102,
+      "destMapName": "SSAnne1FRooms",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 23,
+      "y": 8,
+      "destMap": "SS_ANNE_1F_ROOMS",
+      "destMapId": 102,
+      "destMapName": "SSAnne1FRooms",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 19,
+      "y": 8,
+      "destMap": "SS_ANNE_1F_ROOMS",
+      "destMapId": 102,
+      "destMapName": "SSAnne1FRooms",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 15,
+      "y": 8,
+      "destMap": "SS_ANNE_1F_ROOMS",
+      "destMapId": 102,
+      "destMapName": "SSAnne1FRooms",
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 11,
+      "y": 8,
+      "destMap": "SS_ANNE_1F_ROOMS",
+      "destMapId": 102,
+      "destMapName": "SSAnne1FRooms",
+      "destWarp": 5,
+      "destWarpIndex": 4
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "destMap": "SS_ANNE_1F_ROOMS",
+      "destMapId": 102,
+      "destMapName": "SSAnne1FRooms",
+      "destWarp": 6,
+      "destWarpIndex": 5
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "destMap": "SS_ANNE_2F",
+      "destMapId": 96,
+      "destMapName": "SSAnne2F",
+      "destWarp": 7,
+      "destWarpIndex": 6
+    },
+    {
+      "x": 37,
+      "y": 15,
+      "destMap": "SS_ANNE_B1F",
+      "destMapId": 98,
+      "destMapName": "SSAnneB1F",
+      "destWarp": 6,
+      "destWarpIndex": 5
+    },
+    {
+      "x": 3,
+      "y": 16,
+      "destMap": "SS_ANNE_KITCHEN",
+      "destMapId": 100,
+      "destMapName": "SSAnneKitchen",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "SSANNE1F_WAITER",
+      "x": 12,
+      "y": 6,
+      "sprite": "SPRITE_WAITER",
+      "spriteId": 26,
+      "movement": "WALK",
+      "rangeOrDirection": "LEFT_RIGHT",
+      "rangeOrDirectionValue": 2,
+      "behavior": "walk_left_right",
+      "textId": "TEXT_SSANNE1F_WAITER",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "SSANNE1F_SAILOR",
+      "x": 27,
+      "y": 5,
+      "sprite": "SPRITE_SAILOR",
+      "spriteId": 19,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_SSANNE1F_SAILOR",
+      "textIndex": 2
+    }
+  ],
+  "adaptation": "Original feet geometry and initial NPC cells; static down-facing 16px local1x/world2x nearest. No random movement. Only dock and first-floor boarding; all other warps closed with scope notice. No battles, captain, HM01 or departure. Rights remain with original holders; no redistribution clearance."
+}

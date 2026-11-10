@@ -1,0 +1,124 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/SeafoamIslandsB2F.json",
+  "sourceSHA256": {
+    "local-source/SeafoamIslandsB2F.json": "991e82ff17061c4b2840ece05f06efc20e7323ece0c93dd26fc3394f215a9aee",
+    "local-source/Cavern.json": "d95d59e9f082aea3f91ebe7772f09cd66fc600ab37ea59e3dbd7752ffbeab37a",
+    "local-source/cavern.png": "ab046ffca60189a3a686043170308d5709af448f3df33a2f5ad836f22f52fa33",
+    "local-source/maps_meta.json": "6fdd9977083b9c54ad2904c11cab81dc6ed1b9d884dc8ce9ab649fc11635d4a6",
+    "local-source/kanto5_lib.js": "60c79c5641946dd41cde22fed3bc96bff11c3c3185bc687dedded625d2bac5a6",
+    "local-source/kanto5.js": "ffdc8f7135c63a4e8e93a9d9e52978045a315f6784b95e70e46ecbecc5974f12",
+    "local-source/special_data.js": "c35a70062b2c71a0b38fda11eb727ec5c27e38ab28b2ad7f060b81f070f25734",
+    "local-source/wild_encounters.json": "a6399199987e1bdf8502e9bfdcfc9d8ad57d74df206d22ba20f020492bd3bf7c",
+    "local-source/level_up_learnsets.h": "d6563a88fa893d1433a02027cb13ba9574a6828a96b1a730b1d767fd7c5a0cc6",
+    "local-source/battle_moves.h": "54e08c749547afaf73eb2f1e4f4e3023f4d8e186d2f608c29bd6419c291b5384"
+  },
+  "warps": [
+    {
+      "x": 5,
+      "y": 3,
+      "destMap": "SEAFOAM_ISLANDS_B1F",
+      "destMapId": 159,
+      "destMapName": "SeafoamIslandsB1F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 5,
+      "y": 13,
+      "destMap": "SEAFOAM_ISLANDS_B3F",
+      "destMapId": 161,
+      "destMapName": "SeafoamIslandsB3F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 13,
+      "y": 7,
+      "destMap": "SEAFOAM_ISLANDS_B1F",
+      "destMapId": 159,
+      "destMapName": "SeafoamIslandsB1F",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 19,
+      "y": 15,
+      "destMap": "SEAFOAM_ISLANDS_B1F",
+      "destMapId": 159,
+      "destMapName": "SeafoamIslandsB1F",
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 25,
+      "y": 3,
+      "destMap": "SEAFOAM_ISLANDS_B3F",
+      "destMapId": 161,
+      "destMapName": "SeafoamIslandsB3F",
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 25,
+      "y": 11,
+      "destMap": "SEAFOAM_ISLANDS_B1F",
+      "destMapId": 159,
+      "destMapName": "SeafoamIslandsB1F",
+      "destWarp": 6,
+      "destWarpIndex": 5
+    },
+    {
+      "x": 25,
+      "y": 14,
+      "destMap": "SEAFOAM_ISLANDS_B3F",
+      "destMapId": 161,
+      "destMapName": "SeafoamIslandsB3F",
+      "destWarp": 5,
+      "destWarpIndex": 4
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "SEAFOAMISLANDSB2F_BOULDER1",
+      "x": 18,
+      "y": 6,
+      "sprite": "SPRITE_BOULDER",
+      "spriteId": 63,
+      "movement": "STAY",
+      "rangeOrDirection": "BOULDER_MOVEMENT_BYTE_2",
+      "rangeOrDirectionValue": 16,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_SEAFOAMISLANDSB2F_BOULDER1",
+      "textIndex": 1,
+      "toggleIndex": 219,
+      "toggleConst": "TOGGLE_SEAFOAM_ISLANDS_B2F_BOULDER_1",
+      "startsHidden": true
+    },
+    {
+      "index": 2,
+      "const": "SEAFOAMISLANDSB2F_BOULDER2",
+      "x": 23,
+      "y": 6,
+      "sprite": "SPRITE_BOULDER",
+      "spriteId": 63,
+      "movement": "STAY",
+      "rangeOrDirection": "BOULDER_MOVEMENT_BYTE_2",
+      "rangeOrDirectionValue": 16,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_SEAFOAMISLANDSB2F_BOULDER2",
+      "textIndex": 2,
+      "toggleIndex": 220,
+      "toggleConst": "TOGGLE_SEAFOAM_ISLANDS_B2F_BOULDER_2",
+      "startsHidden": true
+    }
+  ],
+  "adaptation": "O07 full source geometry. B3F unblocked-current water entry/falls deferred until O08; after both B2F falls free Surf supported. B4F holes reject stones; no terminal stone disappears. Fishing deferred.",
+  "codeLicenseFiles": {
+    "local-source/work": [],
+    "local-source/decomp": []
+  },
+  "rights": "Code license inventory is separate from original game artwork; redistribution clearance not established."
+}

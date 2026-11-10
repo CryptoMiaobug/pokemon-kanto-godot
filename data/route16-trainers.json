@@ -1,0 +1,323 @@
+[
+  {
+    "id": "route16_lao",
+    "map": "route16",
+    "name": "暴走族老",
+    "title": "暴走族老 · 16号道路",
+    "cell": [
+      17,
+      12
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route16/actor-1.png",
+    "portrait": "res://assets/route16/lao-trainer.png",
+    "party": [
+      {
+        "species_id": "grimer",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "screech",
+          "minimize",
+          "sludge",
+          "disable"
+        ]
+      },
+      {
+        "species_id": "koffing",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spd"
+        },
+        "moves": [
+          "smokescreen",
+          "sludge",
+          "smog",
+          "tackle"
+        ]
+      }
+    ],
+    "reward": 580,
+    "intro": "来一场宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "自行车道就在南边。17号道路尚未开放。",
+    "redObject": 1,
+    "fireRedTrainer": "BikerLao"
+  },
+  {
+    "id": "route16_koji",
+    "map": "route16",
+    "name": "光头男浩二",
+    "title": "光头男浩二 · 16号道路",
+    "cell": [
+      14,
+      13
+    ],
+    "facing": "right",
+    "sprite": "res://assets/route16/actor-2.png",
+    "portrait": "res://assets/route16/koji-trainer.png",
+    "party": [
+      {
+        "species_id": "machop",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spe"
+        },
+        "moves": [
+          "karatechop",
+          "seismictoss",
+          "foresight",
+          "revenge"
+        ]
+      },
+      {
+        "species_id": "mankey",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "karatechop",
+          "furyswipes",
+          "focusenergy",
+          "seismictoss"
+        ]
+      },
+      {
+        "species_id": "machop",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "karatechop",
+          "seismictoss",
+          "foresight",
+          "revenge"
+        ]
+      }
+    ],
+    "reward": 672,
+    "intro": "来一场宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "自行车道就在南边。17号道路尚未开放。",
+    "redObject": 2,
+    "fireRedTrainer": "CueBallKoji"
+  },
+  {
+    "id": "route16_luke",
+    "map": "route16",
+    "name": "光头男卢克",
+    "title": "光头男卢克 · 16号道路",
+    "cell": [
+      11,
+      12
+    ],
+    "facing": "up",
+    "sprite": "res://assets/route16/actor-3.png",
+    "portrait": "res://assets/route16/luke-trainer.png",
+    "party": [
+      {
+        "species_id": "mankey",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spd"
+        },
+        "moves": [
+          "karatechop",
+          "furyswipes",
+          "focusenergy",
+          "seismictoss"
+        ]
+      },
+      {
+        "species_id": "machop",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spd"
+        },
+        "moves": [
+          "karatechop",
+          "seismictoss",
+          "foresight",
+          "revenge"
+        ]
+      }
+    ],
+    "reward": 696,
+    "intro": "来一场宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "自行车道就在南边。17号道路尚未开放。",
+    "redObject": 3,
+    "fireRedTrainer": "CueBallLuke"
+  },
+  {
+    "id": "route16_hideo",
+    "map": "route16",
+    "name": "暴走族秀雄",
+    "title": "暴走族秀雄 · 16号道路",
+    "cell": [
+      9,
+      11
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route16/actor-4.png",
+    "portrait": "res://assets/route16/hideo-trainer.png",
+    "party": [
+      {
+        "species_id": "weezing",
+        "level": 33,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spa"
+        },
+        "moves": [
+          "selfdestruct",
+          "sludge",
+          "smokescreen",
+          "haze"
+        ]
+      }
+    ],
+    "reward": 660,
+    "intro": "来一场宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "自行车道就在南边。17号道路尚未开放。",
+    "redObject": 4,
+    "fireRedTrainer": "BikerHideo"
+  },
+  {
+    "id": "route16_camron",
+    "map": "route16",
+    "name": "光头男卡姆伦",
+    "title": "光头男卡姆伦 · 16号道路",
+    "cell": [
+      6,
+      10
+    ],
+    "facing": "right",
+    "sprite": "res://assets/route16/actor-5.png",
+    "portrait": "res://assets/route16/camron-trainer.png",
+    "party": [
+      {
+        "species_id": "mankey",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "karatechop",
+          "furyswipes",
+          "focusenergy",
+          "seismictoss"
+        ]
+      },
+      {
+        "species_id": "machop",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spa"
+        },
+        "moves": [
+          "karatechop",
+          "seismictoss",
+          "foresight",
+          "revenge"
+        ]
+      }
+    ],
+    "reward": 696,
+    "intro": "来一场宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "自行车道就在南边。17号道路尚未开放。",
+    "redObject": 5,
+    "fireRedTrainer": "CueBallCamron"
+  },
+  {
+    "id": "route16_ruben",
+    "map": "route16",
+    "name": "暴走族鲁本",
+    "title": "暴走族鲁本 · 16号道路",
+    "cell": [
+      3,
+      12
+    ],
+    "facing": "right",
+    "sprite": "res://assets/route16/actor-6.png",
+    "portrait": "res://assets/route16/ruben-trainer.png",
+    "party": [
+      {
+        "species_id": "weezing",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "smokescreen",
+          "sludge",
+          "smog",
+          "tackle"
+        ]
+      },
+      {
+        "species_id": "koffing",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spe"
+        },
+        "moves": [
+          "smokescreen",
+          "sludge",
+          "smog",
+          "tackle"
+        ]
+      },
+      {
+        "species_id": "weezing",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "smokescreen",
+          "sludge",
+          "smog",
+          "tackle"
+        ]
+      }
+    ],
+    "reward": 560,
+    "intro": "来一场宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "自行车道就在南边。17号道路尚未开放。",
+    "redObject": 6,
+    "fireRedTrainer": "BikerRuben"
+  }
+]

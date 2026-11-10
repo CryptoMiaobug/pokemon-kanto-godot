@@ -1,0 +1,78 @@
+{
+  "source": "sSafariZoneNorth_FireRed",
+  "encounter_rate": 21,
+  "slots": [
+    {
+      "species_id": "rhyhorn",
+      "min_level": 26,
+      "max_level": 26,
+      "weight": 20
+    },
+    {
+      "species_id": "nidoran_m",
+      "min_level": 30,
+      "max_level": 30,
+      "weight": 20
+    },
+    {
+      "species_id": "exeggcute",
+      "min_level": 25,
+      "max_level": 25,
+      "weight": 10
+    },
+    {
+      "species_id": "exeggcute",
+      "min_level": 27,
+      "max_level": 27,
+      "weight": 10
+    },
+    {
+      "species_id": "paras",
+      "min_level": 23,
+      "max_level": 23,
+      "weight": 10
+    },
+    {
+      "species_id": "nidorino",
+      "min_level": 30,
+      "max_level": 30,
+      "weight": 10
+    },
+    {
+      "species_id": "nidorina",
+      "min_level": 30,
+      "max_level": 30,
+      "weight": 5
+    },
+    {
+      "species_id": "venomoth",
+      "min_level": 32,
+      "max_level": 32,
+      "weight": 5
+    },
+    {
+      "species_id": "paras",
+      "min_level": 23,
+      "max_level": 23,
+      "weight": 4
+    },
+    {
+      "species_id": "chansey",
+      "min_level": 26,
+      "max_level": 26,
+      "weight": 4
+    },
+    {
+      "species_id": "paras",
+      "min_level": 23,
+      "max_level": 23,
+      "weight": 1
+    },
+    {
+      "species_id": "tauros",
+      "min_level": 28,
+      "max_level": 28,
+      "weight": 1
+    }
+  ]
+}

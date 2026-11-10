@@ -1,0 +1,105 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/VermilionPokecenter.json",
+  "mapSHA256": "95331c090b25276cac43b1a4ea93cb8d575ad39256e56d52e36dc0de49bb9ee0",
+  "tiles": "assets/tilesets/pokecenter.png",
+  "warps": [
+    {
+      "x": 3,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "VERMILIONPOKECENTER_NURSE",
+      "x": 3,
+      "y": 1,
+      "sprite": "SPRITE_NURSE",
+      "spriteId": 41,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_VERMILIONPOKECENTER_NURSE",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "VERMILIONPOKECENTER_FISHING_GURU",
+      "x": 10,
+      "y": 5,
+      "sprite": "SPRITE_FISHING_GURU",
+      "spriteId": 39,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_VERMILIONPOKECENTER_FISHING_GURU",
+      "textIndex": 2
+    },
+    {
+      "index": 3,
+      "const": "VERMILIONPOKECENTER_SAILOR",
+      "x": 5,
+      "y": 4,
+      "sprite": "SPRITE_SAILOR",
+      "spriteId": 19,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_VERMILIONPOKECENTER_SAILOR",
+      "textIndex": 3
+    },
+    {
+      "index": 4,
+      "const": "VERMILIONPOKECENTER_LINK_RECEPTIONIST",
+      "x": 11,
+      "y": 2,
+      "sprite": "SPRITE_LINK_RECEPTIONIST",
+      "spriteId": 42,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_VERMILIONPOKECENTER_LINK_RECEPTIONIST",
+      "textIndex": 4
+    }
+  ],
+  "hiddenObjects": [
+    {
+      "x": 13,
+      "y": 3,
+      "routine": "OpenPokemonCenterPC",
+      "arg": "SPRITE_FACING_UP",
+      "argValue": 4,
+      "kind": "event"
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "routine": "PrintBenchGuyText",
+      "arg": "SPRITE_FACING_UP",
+      "argValue": 4,
+      "kind": "event"
+    }
+  ],
+  "adaptation": "Original feet geometry and NPC initial positions; static16px local1x/world2x nearest and existing neutral palette. Nurse and clerk reuse existing E service, source counter reach cell3,3 /2,5. PC investigation13,3 from13,4. No link/trade; visitor lines only scope notices. Mart FireRed stock functional subset Poke Ball200 only; six unimplemented items not sold.",
+  "rights": "Original rights holders; no redistribution clearance."
+}

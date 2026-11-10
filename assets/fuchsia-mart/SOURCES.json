@@ -1,0 +1,73 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/FuchsiaMart.json",
+  "mapSHA256": "7e903939dc54b95a0ffd960d86103df3eb8c0e37a7f10b979e22aabb179929d8",
+  "warps": [
+    {
+      "x": 3,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "FUCHSIAMART_CLERK",
+      "x": 0,
+      "y": 5,
+      "sprite": "SPRITE_CLERK",
+      "spriteId": 38,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_FUCHSIAMART_CLERK",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "FUCHSIAMART_MIDDLE_AGED_MAN",
+      "x": 4,
+      "y": 2,
+      "sprite": "SPRITE_MIDDLE_AGED_MAN",
+      "spriteId": 10,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_FUCHSIAMART_MIDDLE_AGED_MAN",
+      "textIndex": 2
+    },
+    {
+      "index": 3,
+      "const": "FUCHSIAMART_COOLTRAINER_F",
+      "x": 6,
+      "y": 5,
+      "sprite": "SPRITE_COOLTRAINER_F",
+      "spriteId": 6,
+      "movement": "WALK",
+      "rangeOrDirection": "UP_DOWN",
+      "rangeOrDirectionValue": 1,
+      "behavior": "walk_up_down",
+      "textId": "TEXT_FUCHSIAMART_COOLTRAINER_F",
+      "textIndex": 3
+    }
+  ],
+  "adaptation": "Red geometry/collision/actors; FireRed complete ordered teams. FR-only doubles, Route15 item, Gate2F, Safari/warden/TM06 deferred.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

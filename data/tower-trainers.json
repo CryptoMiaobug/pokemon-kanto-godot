@@ -1,0 +1,841 @@
+[
+  {
+    "map": "pokemon-tower-3f",
+    "cell": [
+      12,
+      3
+    ],
+    "sprite": "res://assets/pokemon-tower-3f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      3,
+      0,
+      14,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。",
+    "id": "tower3_1",
+    "name": "灵媒 Patricia",
+    "title": "宝可梦塔 · 3层",
+    "party": [
+      {
+        "species_id": "gastly",
+        "level": 22,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "atk"
+        },
+        "moves": [
+          "spite",
+          "curse",
+          "nightshade",
+          "confuseray"
+        ]
+      }
+    ],
+    "reward": 704,
+    "portrait": "res://assets/pokemon-tower-3f/actor-1-trainer.png",
+    "fireRedTrainer": "ChannelerPatricia",
+    "intro": "滚出去……来对战吧！",
+    "defeat": "终于清醒过来了！",
+    "after": "愿这里的灵魂得到安宁。"
+  },
+  {
+    "map": "pokemon-tower-3f",
+    "cell": [
+      9,
+      8
+    ],
+    "sprite": "res://assets/pokemon-tower-3f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。",
+    "id": "tower3_2",
+    "name": "灵媒 Carly",
+    "title": "宝可梦塔 · 3层",
+    "party": [
+      {
+        "species_id": "gastly",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spd"
+        },
+        "moves": [
+          "spite",
+          "curse",
+          "nightshade",
+          "confuseray"
+        ]
+      }
+    ],
+    "reward": 768,
+    "portrait": "res://assets/pokemon-tower-3f/actor-2-trainer.png",
+    "fireRedTrainer": "ChannelerCarly",
+    "intro": "滚出去……来对战吧！",
+    "defeat": "终于清醒过来了！",
+    "after": "愿这里的灵魂得到安宁。"
+  },
+  {
+    "map": "pokemon-tower-3f",
+    "cell": [
+      10,
+      13
+    ],
+    "sprite": "res://assets/pokemon-tower-3f/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。",
+    "id": "tower3_3",
+    "name": "灵媒 Hope",
+    "title": "宝可梦塔 · 3层",
+    "party": [
+      {
+        "species_id": "gastly",
+        "level": 23,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spa"
+        },
+        "moves": [
+          "spite",
+          "curse",
+          "nightshade",
+          "confuseray"
+        ]
+      }
+    ],
+    "reward": 736,
+    "portrait": "res://assets/pokemon-tower-3f/actor-3-trainer.png",
+    "fireRedTrainer": "ChannelerHope",
+    "intro": "滚出去……来对战吧！",
+    "defeat": "终于清醒过来了！",
+    "after": "愿这里的灵魂得到安宁。"
+  },
+  {
+    "map": "pokemon-tower-4f",
+    "cell": [
+      5,
+      10
+    ],
+    "sprite": "res://assets/pokemon-tower-4f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      2,
+      0,
+      13,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。",
+    "id": "tower4_1",
+    "name": "灵媒 Paula",
+    "title": "宝可梦塔 · 4层",
+    "party": [
+      {
+        "species_id": "gastly",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "spite",
+          "curse",
+          "nightshade",
+          "confuseray"
+        ]
+      }
+    ],
+    "reward": 768,
+    "portrait": "res://assets/pokemon-tower-4f/actor-1-trainer.png",
+    "fireRedTrainer": "ChannelerPaula",
+    "intro": "滚出去……来对战吧！",
+    "defeat": "终于清醒过来了！",
+    "after": "愿这里的灵魂得到安宁。"
+  },
+  {
+    "map": "pokemon-tower-4f",
+    "cell": [
+      15,
+      7
+    ],
+    "sprite": "res://assets/pokemon-tower-4f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。",
+    "id": "tower4_2",
+    "name": "灵媒 Laurel",
+    "title": "宝可梦塔 · 4层",
+    "party": [
+      {
+        "species_id": "gastly",
+        "level": 23,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "atk"
+        },
+        "moves": [
+          "spite",
+          "curse",
+          "nightshade",
+          "confuseray"
+        ]
+      },
+      {
+        "species_id": "gastly",
+        "level": 23,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "atk"
+        },
+        "moves": [
+          "spite",
+          "curse",
+          "nightshade",
+          "confuseray"
+        ]
+      }
+    ],
+    "reward": 736,
+    "portrait": "res://assets/pokemon-tower-4f/actor-2-trainer.png",
+    "fireRedTrainer": "ChannelerLaurel",
+    "intro": "滚出去……来对战吧！",
+    "defeat": "终于清醒过来了！",
+    "after": "愿这里的灵魂得到安宁。"
+  },
+  {
+    "map": "pokemon-tower-4f",
+    "cell": [
+      14,
+      12
+    ],
+    "sprite": "res://assets/pokemon-tower-4f/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      3,
+      0,
+      14,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。",
+    "id": "tower4_3",
+    "name": "灵媒 Jody",
+    "title": "宝可梦塔 · 4层",
+    "party": [
+      {
+        "species_id": "gastly",
+        "level": 22,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spa"
+        },
+        "moves": [
+          "spite",
+          "curse",
+          "nightshade",
+          "confuseray"
+        ]
+      }
+    ],
+    "reward": 704,
+    "portrait": "res://assets/pokemon-tower-4f/actor-3-trainer.png",
+    "fireRedTrainer": "ChannelerJody",
+    "intro": "滚出去……来对战吧！",
+    "defeat": "终于清醒过来了！",
+    "after": "愿这里的灵魂得到安宁。"
+  },
+  {
+    "map": "pokemon-tower-5f",
+    "cell": [
+      17,
+      7
+    ],
+    "sprite": "res://assets/pokemon-tower-5f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      3,
+      0,
+      14,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。",
+    "id": "tower5_1",
+    "name": "灵媒 Tammy",
+    "title": "宝可梦塔 · 5层",
+    "party": [
+      {
+        "species_id": "haunter",
+        "level": 23,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "def"
+        },
+        "moves": [
+          "spite",
+          "curse",
+          "nightshade",
+          "confuseray"
+        ]
+      }
+    ],
+    "reward": 736,
+    "portrait": "res://assets/pokemon-tower-5f/actor-2-trainer.png",
+    "fireRedTrainer": "ChannelerTammy",
+    "intro": "滚出去……来对战吧！",
+    "defeat": "终于清醒过来了！",
+    "after": "愿这里的灵魂得到安宁。"
+  },
+  {
+    "map": "pokemon-tower-5f",
+    "cell": [
+      14,
+      3
+    ],
+    "sprite": "res://assets/pokemon-tower-5f/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      3,
+      0,
+      14,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。",
+    "id": "tower5_2",
+    "name": "灵媒 Ruth",
+    "title": "宝可梦塔 · 5层",
+    "party": [
+      {
+        "species_id": "gastly",
+        "level": 22,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "spite",
+          "curse",
+          "nightshade",
+          "confuseray"
+        ]
+      }
+    ],
+    "reward": 704,
+    "portrait": "res://assets/pokemon-tower-5f/actor-3-trainer.png",
+    "fireRedTrainer": "ChannelerRuth",
+    "intro": "滚出去……来对战吧！",
+    "defeat": "终于清醒过来了！",
+    "after": "愿这里的灵魂得到安宁。"
+  },
+  {
+    "map": "pokemon-tower-5f",
+    "cell": [
+      6,
+      10
+    ],
+    "sprite": "res://assets/pokemon-tower-5f/actor-4.png",
+    "redObject": 4,
+    "alphaBBox": [
+      2,
+      0,
+      13,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。",
+    "id": "tower5_3",
+    "name": "灵媒 Karina",
+    "title": "宝可梦塔 · 5层",
+    "party": [
+      {
+        "species_id": "gastly",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "atk"
+        },
+        "moves": [
+          "spite",
+          "curse",
+          "nightshade",
+          "confuseray"
+        ]
+      }
+    ],
+    "reward": 768,
+    "portrait": "res://assets/pokemon-tower-5f/actor-4-trainer.png",
+    "fireRedTrainer": "ChannelerKarina",
+    "intro": "滚出去……来对战吧！",
+    "defeat": "终于清醒过来了！",
+    "after": "愿这里的灵魂得到安宁。"
+  },
+  {
+    "map": "pokemon-tower-5f",
+    "cell": [
+      9,
+      16
+    ],
+    "sprite": "res://assets/pokemon-tower-5f/actor-5.png",
+    "redObject": 5,
+    "alphaBBox": [
+      2,
+      0,
+      13,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。",
+    "id": "tower5_4",
+    "name": "灵媒 Janae",
+    "title": "宝可梦塔 · 5层",
+    "party": [
+      {
+        "species_id": "gastly",
+        "level": 22,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "spite",
+          "curse",
+          "nightshade",
+          "confuseray"
+        ]
+      }
+    ],
+    "reward": 704,
+    "portrait": "res://assets/pokemon-tower-5f/actor-5-trainer.png",
+    "fireRedTrainer": "ChannelerJanae",
+    "intro": "滚出去……来对战吧！",
+    "defeat": "终于清醒过来了！",
+    "after": "愿这里的灵魂得到安宁。"
+  },
+  {
+    "map": "pokemon-tower-6f",
+    "cell": [
+      12,
+      10
+    ],
+    "sprite": "res://assets/pokemon-tower-6f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      2,
+      0,
+      13,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。",
+    "id": "tower6_1",
+    "name": "灵媒 Angelica",
+    "title": "宝可梦塔 · 6层",
+    "party": [
+      {
+        "species_id": "gastly",
+        "level": 22,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "atk"
+        },
+        "moves": [
+          "spite",
+          "curse",
+          "nightshade",
+          "confuseray"
+        ]
+      },
+      {
+        "species_id": "gastly",
+        "level": 22,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "spite",
+          "curse",
+          "nightshade",
+          "confuseray"
+        ]
+      },
+      {
+        "species_id": "gastly",
+        "level": 22,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "atk"
+        },
+        "moves": [
+          "spite",
+          "curse",
+          "nightshade",
+          "confuseray"
+        ]
+      }
+    ],
+    "reward": 704,
+    "portrait": "res://assets/pokemon-tower-6f/actor-1-trainer.png",
+    "fireRedTrainer": "ChannelerAngelica",
+    "intro": "滚出去……来对战吧！",
+    "defeat": "终于清醒过来了！",
+    "after": "愿这里的灵魂得到安宁。"
+  },
+  {
+    "map": "pokemon-tower-6f",
+    "cell": [
+      9,
+      5
+    ],
+    "sprite": "res://assets/pokemon-tower-6f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。",
+    "id": "tower6_2",
+    "name": "灵媒 Emilia",
+    "title": "宝可梦塔 · 6层",
+    "party": [
+      {
+        "species_id": "gastly",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "atk"
+        },
+        "moves": [
+          "spite",
+          "curse",
+          "nightshade",
+          "confuseray"
+        ]
+      }
+    ],
+    "reward": 768,
+    "portrait": "res://assets/pokemon-tower-6f/actor-2-trainer.png",
+    "fireRedTrainer": "ChannelerEmilia",
+    "intro": "滚出去……来对战吧！",
+    "defeat": "终于清醒过来了！",
+    "after": "愿这里的灵魂得到安宁。"
+  },
+  {
+    "map": "pokemon-tower-6f",
+    "cell": [
+      16,
+      5
+    ],
+    "sprite": "res://assets/pokemon-tower-6f/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      3,
+      0,
+      14,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。",
+    "id": "tower6_3",
+    "name": "灵媒 Jennifer",
+    "title": "宝可梦塔 · 6层",
+    "party": [
+      {
+        "species_id": "gastly",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spd"
+        },
+        "moves": [
+          "spite",
+          "curse",
+          "nightshade",
+          "confuseray"
+        ]
+      }
+    ],
+    "reward": 768,
+    "portrait": "res://assets/pokemon-tower-6f/actor-3-trainer.png",
+    "fireRedTrainer": "ChannelerJennifer",
+    "intro": "滚出去……来对战吧！",
+    "defeat": "终于清醒过来了！",
+    "after": "愿这里的灵魂得到安宁。"
+  },
+  {
+    "map": "pokemon-tower-7f",
+    "cell": [
+      9,
+      11
+    ],
+    "sprite": "res://assets/pokemon-tower-7f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。",
+    "id": "tower7_1",
+    "name": "火箭队员 1",
+    "title": "宝可梦塔 · 7层",
+    "party": [
+      {
+        "species_id": "zubat",
+        "level": 25,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "astonish",
+          "supersonic",
+          "bite",
+          "wingattack"
+        ]
+      },
+      {
+        "species_id": "zubat",
+        "level": 25,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "astonish",
+          "supersonic",
+          "bite",
+          "wingattack"
+        ]
+      },
+      {
+        "species_id": "golbat",
+        "level": 25,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spd"
+        },
+        "moves": [
+          "astonish",
+          "supersonic",
+          "bite",
+          "wingattack"
+        ]
+      }
+    ],
+    "reward": 800,
+    "portrait": "res://assets/pokemon-tower-7f/actor-1-trainer.png",
+    "fireRedTrainer": "TeamRocketGrunt19",
+    "intro": "滚出去……来对战吧！",
+    "defeat": "终于清醒过来了！",
+    "after": "愿这里的灵魂得到安宁。"
+  },
+  {
+    "map": "pokemon-tower-7f",
+    "cell": [
+      12,
+      9
+    ],
+    "sprite": "res://assets/pokemon-tower-7f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。",
+    "id": "tower7_2",
+    "name": "火箭队员 2",
+    "title": "宝可梦塔 · 7层",
+    "party": [
+      {
+        "species_id": "koffing",
+        "level": 26,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "def"
+        },
+        "moves": [
+          "smog",
+          "selfdestruct",
+          "sludge",
+          "smokescreen"
+        ]
+      },
+      {
+        "species_id": "drowzee",
+        "level": 26,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "disable",
+          "confusion",
+          "headbutt",
+          "poisongas"
+        ]
+      }
+    ],
+    "reward": 832,
+    "portrait": "res://assets/pokemon-tower-7f/actor-2-trainer.png",
+    "fireRedTrainer": "TeamRocketGrunt20",
+    "intro": "滚出去……来对战吧！",
+    "defeat": "终于清醒过来了！",
+    "after": "愿这里的灵魂得到安宁。"
+  },
+  {
+    "map": "pokemon-tower-7f",
+    "cell": [
+      9,
+      7
+    ],
+    "sprite": "res://assets/pokemon-tower-7f/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "愿宝可梦的灵魂安息。",
+    "id": "tower7_3",
+    "name": "火箭队员 3",
+    "title": "宝可梦塔 · 7层",
+    "party": [
+      {
+        "species_id": "zubat",
+        "level": 23,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "astonish",
+          "supersonic",
+          "bite",
+          "wingattack"
+        ]
+      },
+      {
+        "species_id": "rattata",
+        "level": 23,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spd"
+        },
+        "moves": [
+          "tailwhip",
+          "quickattack",
+          "hyperfang",
+          "focusenergy"
+        ]
+      },
+      {
+        "species_id": "raticate",
+        "level": 23,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spd"
+        },
+        "moves": [
+          "tailwhip",
+          "quickattack",
+          "hyperfang",
+          "scaryface"
+        ]
+      },
+      {
+        "species_id": "zubat",
+        "level": 23,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "astonish",
+          "supersonic",
+          "bite",
+          "wingattack"
+        ]
+      }
+    ],
+    "reward": 736,
+    "portrait": "res://assets/pokemon-tower-7f/actor-3-trainer.png",
+    "fireRedTrainer": "TeamRocketGrunt21",
+    "intro": "滚出去……来对战吧！",
+    "defeat": "终于清醒过来了！",
+    "after": "愿这里的灵魂得到安宁。"
+  }
+]

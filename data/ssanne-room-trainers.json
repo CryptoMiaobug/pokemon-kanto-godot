@@ -1,0 +1,161 @@
+[
+  {
+    "map": "ssanne-1f-rooms",
+    "cell": [
+      11,
+      4
+    ],
+    "sprite": "res://assets/ssanne-1f-rooms/actor-2.png",
+    "redObject": 2,
+    "facing": "up",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "text": "",
+    "id": "ssanne1f_arthur",
+    "name": "绅士亚瑟",
+    "title": "绅士亚瑟 · 圣安奴号1F",
+    "portrait": "res://assets/ssanne-1f-rooms/arthur-trainer.png",
+    "party": [
+      {
+        "species_id": "nidoran_m",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "peck",
+          "focusenergy",
+          "doublekick",
+          "poisonsting"
+        ]
+      },
+      {
+        "species_id": "nidoran_f",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "scratch",
+          "tailwhip",
+          "doublekick",
+          "poisonsting"
+        ]
+      }
+    ],
+    "reward": 1368,
+    "intro": "你这没礼貌的小子！怎么敢闯进来！",
+    "defeat": "哼！没礼貌的孩子！",
+    "after": "我想一个人待着！出去！",
+    "fireRedTrainer": "GentlemanArthur"
+  },
+  {
+    "map": "ssanne-1f-rooms",
+    "cell": [
+      11,
+      14
+    ],
+    "sprite": "res://assets/ssanne-1f-rooms/actor-3.png",
+    "redObject": 3,
+    "facing": "up",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "text": "",
+    "id": "ssanne1f_tyler",
+    "name": "短裤小子泰勒",
+    "title": "短裤小子泰勒 · 圣安奴号1F",
+    "portrait": "res://assets/ssanne-1f-rooms/tyler-trainer.png",
+    "party": [
+      {
+        "species_id": "nidoran_m",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spd"
+        },
+        "moves": [
+          "focusenergy",
+          "doublekick",
+          "poisonsting",
+          "hornattack"
+        ]
+      }
+    ],
+    "reward": 336,
+    "intro": "我喜欢宝可梦！你呢？",
+    "defeat": "哇！你真厉害！",
+    "after": "和我做朋友，好吗？这样我们就能交换宝可梦了！（交换未实现）",
+    "fireRedTrainer": "YoungsterTyler"
+  },
+  {
+    "map": "ssanne-1f-rooms",
+    "cell": [
+      13,
+      11
+    ],
+    "sprite": "res://assets/ssanne-1f-rooms/actor-4.png",
+    "redObject": 4,
+    "facing": "left",
+    "alphaBBox": [
+      1,
+      0,
+      14,
+      16
+    ],
+    "text": "",
+    "id": "ssanne1f_ann",
+    "name": "少女安",
+    "title": "少女安 · 圣安奴号1F",
+    "portrait": "res://assets/ssanne-1f-rooms/ann-trainer.png",
+    "party": [
+      {
+        "species_id": "pidgey",
+        "level": 18,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spd"
+        },
+        "moves": [
+          "tackle",
+          "sandattack",
+          "gust",
+          "quickattack"
+        ]
+      },
+      {
+        "species_id": "nidoran_f",
+        "level": 18,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "atk"
+        },
+        "moves": [
+          "scratch",
+          "tailwhip",
+          "doublekick",
+          "poisonsting"
+        ]
+      }
+    ],
+    "reward": 288,
+    "intro": "这些宝可梦是我从世界各地收集来的！",
+    "defeat": "哦不！我可是环游世界才找到它们的！",
+    "after": "你伤了我的宝可梦！请送它们去宝可梦中心！",
+    "fireRedTrainer": "LassAnn"
+  }
+]

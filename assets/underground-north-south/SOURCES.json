@@ -1,0 +1,31 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/UndergroundPathNorthSouth.json",
+  "mapSHA256": "a33cf93d5c1da346ff2d74dc9c57928538c64b08e9aaf9682fe169413fa03e9b",
+  "tiles": "assets/tilesets/underground.png",
+  "connections": {},
+  "warps": [
+    {
+      "x": 5,
+      "y": 4,
+      "destMap": "UNDERGROUND_PATH_ROUTE_5",
+      "destMapId": 71,
+      "destMapName": "UndergroundPathRoute5",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 2,
+      "y": 41,
+      "destMap": "UNDERGROUND_PATH_ROUTE_6",
+      "destMapId": 74,
+      "destMapName": "UndergroundPathRoute6",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    }
+  ],
+  "actors": [],
+  "adaptation": "Original geometry/foot collision/grass/ledges; actors fixed at original cells, static16px local1x world2x nearest. E trainer confirmation, no auto sight. Underground original indices and LAST_MAP resolved to parent route; landing latch. Vermilion exterior only, buildings/dock/Route11 and Saffron gate closed by runtime boundary/prompts, source tiles preserved. No trade, hidden items, drinks, daycare or ship features.",
+  "rights": "Original rights holders; no redistribution clearance."
+}

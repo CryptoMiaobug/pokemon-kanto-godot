@@ -1,0 +1,115 @@
+{
+  "revision": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/MtEmber_RubyPath_1F/map.json",
+  "mapSHA256": "5263ec6486246ff0b3d01ccbf73bb8e93c7aac3c2f4ed58285a5066ce13f3901",
+  "layout": {
+    "id": "LAYOUT_MT_EMBER_RUBY_PATH_1F",
+    "name": "MtEmber_RubyPath_1F_Layout",
+    "width": 27,
+    "height": 19,
+    "border_width": 2,
+    "border_height": 2,
+    "primary_tileset": "gTileset_General",
+    "secondary_tileset": "gTileset_MtEmber",
+    "border_filepath": "data/layouts/MtEmber_RubyPath_1F/border.bin",
+    "blockdata_filepath": "data/layouts/MtEmber_RubyPath_1F/map.bin"
+  },
+  "warps": [
+    {
+      "x": 22,
+      "y": 17,
+      "elevation": 3,
+      "dest_map": "MAP_MT_EMBER_EXTERIOR",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_MT_EMBER_RUBY_PATH_B1F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 24,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_MT_EMBER_RUBY_PATH_B2F_STAIRS",
+      "dest_warp_id": "1"
+    }
+  ],
+  "connections": null,
+  "actors": [
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+      "x": 18,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_RockSmash",
+      "flag": "FLAG_TEMP_12"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+      "x": 23,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_RockSmash",
+      "flag": "FLAG_TEMP_13"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+      "x": 20,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_RockSmash",
+      "flag": "FLAG_TEMP_14"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+      "x": 19,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_RockSmash",
+      "flag": "FLAG_TEMP_15"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+      "x": 21,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_RockSmash",
+      "flag": "FLAG_TEMP_16"
+    }
+  ],
+  "adaptation": "FireRed 16px metatiles, source collision/elevation/behavior; original palette static first frame; no coordinate doubling.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

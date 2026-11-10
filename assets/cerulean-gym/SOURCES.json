@@ -1,0 +1,125 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/CeruleanGym.json",
+  "mapSHA256": "99eedfae7f1fba9c43ce831347bab5ed9c7ee9dab54521cbc465677359680a36",
+  "tiles": "assets/tilesets/gym.png",
+  "warps": [
+    {
+      "x": 4,
+      "y": 13,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 5,
+      "y": 13,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 4,
+      "destWarpIndex": 3
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "CERULEANGYM_MISTY",
+      "x": 4,
+      "y": 2,
+      "sprite": "SPRITE_BRUNETTE_GIRL",
+      "spriteId": 29,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_CERULEANGYM_MISTY",
+      "textIndex": 1,
+      "trainer": {
+        "trainerClass": "OPP_MISTY",
+        "trainerClassId": 35,
+        "trainerPartyIndex": 1,
+        "header": null
+      }
+    },
+    {
+      "index": 2,
+      "const": "CERULEANGYM_COOLTRAINER_F",
+      "x": 2,
+      "y": 3,
+      "sprite": "SPRITE_COOLTRAINER_F",
+      "spriteId": 6,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_CERULEANGYM_COOLTRAINER_F",
+      "textIndex": 2,
+      "trainer": {
+        "trainerClass": "OPP_JR_TRAINER_F",
+        "trainerClassId": 6,
+        "trainerPartyIndex": 1,
+        "header": "CeruleanGymTrainerHeader0",
+        "eventFlag": "EVENT_BEAT_CERULEAN_GYM_TRAINER_0",
+        "eventFlagIndex": 186,
+        "sightRange": 3,
+        "textBefore": "CeruleanGymBattleText1",
+        "textEnd": "CeruleanGymEndBattleText1",
+        "textAfter": "CeruleanGymAfterBattleText1"
+      }
+    },
+    {
+      "index": 3,
+      "const": "CERULEANGYM_SWIMMER",
+      "x": 8,
+      "y": 7,
+      "sprite": "SPRITE_SWIMMER",
+      "spriteId": 34,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_CERULEANGYM_SWIMMER",
+      "textIndex": 3,
+      "trainer": {
+        "trainerClass": "OPP_SWIMMER",
+        "trainerClassId": 15,
+        "trainerPartyIndex": 1,
+        "header": "CeruleanGymTrainerHeader1",
+        "eventFlag": "EVENT_BEAT_CERULEAN_GYM_TRAINER_1",
+        "eventFlagIndex": 187,
+        "sightRange": 3,
+        "textBefore": "CeruleanGymBattleText2",
+        "textEnd": "CeruleanGymEndBattleText2",
+        "textAfter": "CeruleanGymAfterBattleText2"
+      }
+    },
+    {
+      "index": 4,
+      "const": "CERULEANGYM_GYM_GUIDE",
+      "x": 7,
+      "y": 10,
+      "sprite": "SPRITE_GYM_GUIDE",
+      "spriteId": 36,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_CERULEANGYM_GYM_GUIDE",
+      "textIndex": 4
+    }
+  ],
+  "fireRed": [
+    "src/data/trainer_parties.h sParty_LeaderMisty / PicnickerDiana / SwimmerMaleLuis",
+    "src/data/trainers.h",
+    "src/battle_main.c class Leader25 / Picnicker5 / SwimmerM1",
+    "data/maps/CeruleanCity_Gym/scripts.inc FLAG_BADGE02_GET",
+    "src/data/battle_moves.h",
+    "graphics/trainer_card/badges.png second16x16"
+  ],
+  "adaptation": "Original10x14 Red geometry foot collision; solid water plus four actor cells, E confirmation replaces automatic sight. Red original16px actors same fixed tint/native1x/world2x/nearest/cell-center feet anchor; static poses only. FireRed parties/moves/IV0 and name-hash natures, prizes2100/380/64. Shared necessary AI subset, scoped source healing viability branch for Misty; no trainer item use (source Misty has Super Potion), TM03, badge obedience/Cut/stat effects, respawn changes, leader auto-defeating remaining gym trainers, rival/north route. New species no evolution expansion. Recover half-maxHP floor/min1; Water Pulse20% existing confusion; Icicle Spear original2-5 distribution; Water Sport halves Fire while user remains; Swift bypass accuracy stages; Rapid Spin clears implemented user bind/seed after effective damage, no hazards implemented.",
+  "rights": "Original rights holders; no redistribution clearance asserted."
+}

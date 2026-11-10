@@ -1,0 +1,118 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/CeladonMart3F.json",
+  "mapSHA256": "35698ed5ab46a3a49cb9524ccaa50bad206cdf025b72b0e8dc3e2117944d8bdd",
+  "tileset": "data/tilesets/Lobby.json",
+  "gfx": "assets/tilesets/lobby.png",
+  "warps": [
+    {
+      "x": 12,
+      "y": 1,
+      "destMap": "CELADON_MART_4F",
+      "destMapId": 125,
+      "destMapName": "CeladonMart4F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 16,
+      "y": 1,
+      "destMap": "CELADON_MART_2F",
+      "destMapId": 123,
+      "destMapName": "CeladonMart2F",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "destMap": "CELADON_MART_ELEVATOR",
+      "destMapId": 127,
+      "destMapName": "CeladonMartElevator",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "CELADONMART3F_CLERK",
+      "x": 16,
+      "y": 5,
+      "sprite": "SPRITE_CLERK",
+      "spriteId": 38,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_CELADONMART3F_CLERK",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "CELADONMART3F_GAMEBOY_KID1",
+      "x": 11,
+      "y": 6,
+      "sprite": "SPRITE_GAMEBOY_KID",
+      "spriteId": 55,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_CELADONMART3F_GAMEBOY_KID1",
+      "textIndex": 2
+    },
+    {
+      "index": 3,
+      "const": "CELADONMART3F_GAMEBOY_KID2",
+      "x": 7,
+      "y": 2,
+      "sprite": "SPRITE_GAMEBOY_KID",
+      "spriteId": 55,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_CELADONMART3F_GAMEBOY_KID2",
+      "textIndex": 3
+    },
+    {
+      "index": 4,
+      "const": "CELADONMART3F_GAMEBOY_KID3",
+      "x": 8,
+      "y": 2,
+      "sprite": "SPRITE_GAMEBOY_KID",
+      "spriteId": 55,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_CELADONMART3F_GAMEBOY_KID3",
+      "textIndex": 4
+    },
+    {
+      "index": 5,
+      "const": "CELADONMART3F_LITTLE_BOY",
+      "x": 2,
+      "y": 5,
+      "sprite": "SPRITE_LITTLE_BOY",
+      "spriteId": 53,
+      "movement": "STAY",
+      "rangeOrDirection": "UP",
+      "rangeOrDirectionValue": 209,
+      "behavior": "face_up",
+      "textId": "TEXT_CELADONMART3F_LITTLE_BOY",
+      "textIndex": 5
+    }
+  ],
+  "localScale": 1,
+  "worldScale": 2,
+  "feetAnchor": [
+    8,
+    16
+  ],
+  "adaptation": "Red geometry/static actors; FireRed Counter tutor and semantic actor dialogue mapping added by O16-2 (docs/o16-2-work.md). Red TM18 gift is not granted. Game consoles/signs, walking NPC and audio deferred.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

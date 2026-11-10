@@ -1,0 +1,20 @@
+{
+  "poke_ball": {
+    "name": "精灵球",
+    "catch_multiplier": 1
+  },
+  "potion": {
+    "name": "伤药",
+    "heal": 20
+  },
+  "master_ball": {
+    "name": "大师球",
+    "inventory": "master_balls",
+    "guaranteed_capture": true,
+    "contexts": [
+      "wild_battle"
+    ],
+    "source": "FR item/handleballthrow",
+    "price": 0
+  }
+}

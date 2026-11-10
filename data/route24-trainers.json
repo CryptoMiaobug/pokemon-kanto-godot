@@ -1,0 +1,415 @@
+[
+  {
+    "id": "route24_cale",
+    "map": "route24",
+    "name": "捕虫少年凯尔",
+    "title": "捕虫少年凯尔 · 金珠桥",
+    "cell": [
+      11,
+      31
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route24/cale.png",
+    "portrait": "res://assets/route24/cale-trainer.png",
+    "reward": 120,
+    "party": [
+      {
+        "species_id": "caterpie",
+        "level": 10,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "def"
+        },
+        "moves": [
+          "tackle",
+          "stringshot"
+        ]
+      },
+      {
+        "species_id": "weedle",
+        "level": 10,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "poisonsting",
+          "stringshot"
+        ]
+      },
+      {
+        "species_id": "metapod",
+        "level": 10,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "harden"
+        ]
+      },
+      {
+        "species_id": "kakuna",
+        "level": 10,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "harden"
+        ]
+      }
+    ],
+    "intro": "大家叫这里金珠桥！打败五名训练家，就能赢得奖品！",
+    "defeat": "呼！真厉害！",
+    "after": "我尽力了，没有遗憾！",
+    "redObject": 7,
+    "fireRedTrainer": "BugCatcherCale",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "route24_ali",
+    "map": "route24",
+    "name": "少女阿莉",
+    "title": "少女阿莉 · 金珠桥",
+    "cell": [
+      10,
+      28
+    ],
+    "facing": "right",
+    "sprite": "res://assets/route24/ali.png",
+    "portrait": "res://assets/route24/ali-trainer.png",
+    "reward": 192,
+    "party": [
+      {
+        "species_id": "pidgey",
+        "level": 12,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "tackle",
+          "sandattack",
+          "gust"
+        ]
+      },
+      {
+        "species_id": "oddish",
+        "level": 12,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "absorb",
+          "sweetscent"
+        ]
+      },
+      {
+        "species_id": "bellsprout",
+        "level": 12,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spe"
+        },
+        "moves": [
+          "vinewhip",
+          "growth",
+          "wrap"
+        ]
+      }
+    ],
+    "intro": "我是第二个！这次要认真了！",
+    "defeat": "怎么会输！",
+    "after": "我尽力了，没有遗憾！",
+    "redObject": 6,
+    "fireRedTrainer": "LassAli",
+    "alphaBBox": [
+      2,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "route24_timmy",
+    "map": "route24",
+    "name": "短裤小子蒂米",
+    "title": "短裤小子蒂米 · 金珠桥",
+    "cell": [
+      11,
+      25
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route24/timmy.png",
+    "portrait": "res://assets/route24/timmy-trainer.png",
+    "reward": 224,
+    "party": [
+      {
+        "species_id": "sandshrew",
+        "level": 14,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "scratch",
+          "defensecurl",
+          "sandattack"
+        ]
+      },
+      {
+        "species_id": "ekans",
+        "level": 14,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "wrap",
+          "leer",
+          "poisonsting",
+          "bite"
+        ]
+      }
+    ],
+    "intro": "第三个来了！我可不好对付！",
+    "defeat": "哎呀，被彻底打败了！",
+    "after": "我尽力了，没有遗憾！",
+    "redObject": 5,
+    "fireRedTrainer": "YoungsterTimmy",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "route24_reli",
+    "map": "route24",
+    "name": "少女蕾莉",
+    "title": "少女蕾莉 · 金珠桥",
+    "cell": [
+      10,
+      22
+    ],
+    "facing": "right",
+    "sprite": "res://assets/route24/reli.png",
+    "portrait": "res://assets/route24/reli-trainer.png",
+    "reward": 256,
+    "party": [
+      {
+        "species_id": "nidoran_m",
+        "level": 16,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "leer",
+          "peck",
+          "focusenergy",
+          "doublekick"
+        ]
+      },
+      {
+        "species_id": "nidoran_f",
+        "level": 16,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spa"
+        },
+        "moves": [
+          "growl",
+          "scratch",
+          "tailwhip",
+          "doublekick"
+        ]
+      }
+    ],
+    "intro": "我是第四个！你累了吗？",
+    "defeat": "我也输了！",
+    "after": "我尽力了，没有遗憾！",
+    "redObject": 4,
+    "fireRedTrainer": "LassReli",
+    "alphaBBox": [
+      2,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "route24_ethan",
+    "map": "route24",
+    "name": "露营少年伊桑",
+    "title": "露营少年伊桑 · 金珠桥",
+    "cell": [
+      11,
+      19
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route24/ethan.png",
+    "portrait": "res://assets/route24/ethan-trainer.png",
+    "reward": 360,
+    "party": [
+      {
+        "species_id": "mankey",
+        "level": 18,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "leer",
+          "lowkick",
+          "karatechop",
+          "furyswipes"
+        ]
+      }
+    ],
+    "intro": "好！我是第五个！我要打败你！",
+    "defeat": "哇，太厉害了！",
+    "after": "我尽力了，没有遗憾！",
+    "redObject": 3,
+    "fireRedTrainer": "CamperEthan",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "route24_shane",
+    "map": "route24",
+    "name": "露营少年谢恩",
+    "title": "露营少年谢恩 · 金珠桥",
+    "cell": [
+      5,
+      20
+    ],
+    "facing": "up",
+    "sprite": "res://assets/route24/shane.png",
+    "portrait": "res://assets/route24/shane-trainer.png",
+    "reward": 280,
+    "party": [
+      {
+        "species_id": "rattata",
+        "level": 14,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack",
+          "hyperfang"
+        ]
+      },
+      {
+        "species_id": "ekans",
+        "level": 14,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spa"
+        },
+        "moves": [
+          "wrap",
+          "leer",
+          "poisonsting",
+          "bite"
+        ]
+      }
+    ],
+    "intro": "我在草丛里看到了你的表现！",
+    "defeat": "果然如此！",
+    "after": "我尽力了，没有遗憾！",
+    "redObject": 2,
+    "fireRedTrainer": "CamperShane",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "route24_rocket",
+    "map": "route24",
+    "name": "神秘训练家",
+    "title": "神秘训练家 · 金珠桥",
+    "cell": [
+      11,
+      15
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route24/rocket.png",
+    "portrait": "res://assets/route24/rocket-trainer.png",
+    "reward": 480,
+    "party": [
+      {
+        "species_id": "ekans",
+        "level": 15,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "wrap",
+          "leer",
+          "poisonsting",
+          "bite"
+        ]
+      },
+      {
+        "species_id": "zubat",
+        "level": 15,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "leechlife",
+          "astonish",
+          "supersonic"
+        ]
+      }
+    ],
+    "intro": "顺便问一句，要不要加入火箭队？看来得让你信服！",
+    "defeat": "啊，你真厉害！",
+    "after": "以你的实力，可以成为火箭队的干部！",
+    "redObject": 1,
+    "fireRedTrainer": "TeamRocketGrunt6",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  }
+]

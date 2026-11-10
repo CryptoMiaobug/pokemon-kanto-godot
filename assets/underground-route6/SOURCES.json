@@ -1,0 +1,55 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/UndergroundPathRoute6.json",
+  "mapSHA256": "21552d7b083550dd41e3d008dd0ee87cedf5a970f0729b4c97c1763ce5acf6c1",
+  "tiles": "assets/tilesets/gate.png",
+  "connections": {},
+  "warps": [
+    {
+      "x": 3,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "destMap": "UNDERGROUND_PATH_NORTH_SOUTH",
+      "destMapId": 119,
+      "destMapName": "UndergroundPathNorthSouth",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "UNDERGROUNDPATHROUTE6_GIRL",
+      "x": 2,
+      "y": 3,
+      "sprite": "SPRITE_GIRL",
+      "spriteId": 13,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_UNDERGROUNDPATHROUTE6_GIRL",
+      "textIndex": 1
+    }
+  ],
+  "adaptation": "Original geometry/foot collision/grass/ledges; actors fixed at original cells, static16px local1x world2x nearest. E trainer confirmation, no auto sight. Underground original indices and LAST_MAP resolved to parent route; landing latch. Vermilion exterior only, buildings/dock/Route11 and Saffron gate closed by runtime boundary/prompts, source tiles preserved. No trade, hidden items, drinks, daycare or ship features.",
+  "rights": "Original rights holders; no redistribution clearance."
+}

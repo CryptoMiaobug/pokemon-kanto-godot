@@ -1,0 +1,261 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/Route10.json",
+  "mapSHA256": "5a5bfd721eb68a1bb99c4084c81d73b95a27e6e30b69191c6ab47980660bacf9",
+  "sourceYOffset": 48,
+  "connections": {
+    "south": {
+      "map": "LAVENDER_TOWN",
+      "mapId": 4,
+      "mapName": "LavenderTown",
+      "offset": 0,
+      "dx": 0,
+      "dy": 36,
+      "copyRect": {
+        "x": 0,
+        "y": 0,
+        "w": 10,
+        "h": 3
+      },
+      "onEnter": {
+        "newY": 0,
+        "xAdd": 0
+      },
+      "macro": {
+        "stripSrc": 0,
+        "stripDest": 627,
+        "stripLength": 10,
+        "connectedWidth": 10,
+        "yAlign": 0,
+        "xAlign": 0,
+        "viewPointer": 17
+      }
+    },
+    "west": {
+      "map": "ROUTE_9",
+      "mapId": 20,
+      "mapName": "Route9",
+      "offset": 0,
+      "dx": -30,
+      "dy": 0,
+      "copyRect": {
+        "x": 27,
+        "y": 0,
+        "w": 3,
+        "h": 9
+      },
+      "onEnter": {
+        "newX": 59,
+        "yAdd": 0
+      },
+      "macro": {
+        "stripSrc": 27,
+        "stripDest": 48,
+        "stripLength": 9,
+        "connectedWidth": 30,
+        "yAlign": 0,
+        "xAlign": 59,
+        "viewPointer": 66
+      }
+    }
+  },
+  "warps": [
+    {
+      "x": 11,
+      "y": 19,
+      "destMap": "ROCK_TUNNEL_POKECENTER",
+      "destMapId": 81,
+      "destMapName": "RockTunnelPokecenter",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 8,
+      "y": 17,
+      "destMap": "ROCK_TUNNEL_1F",
+      "destMapId": 82,
+      "destMapName": "RockTunnel1F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 8,
+      "y": 53,
+      "destMap": "ROCK_TUNNEL_1F",
+      "destMapId": 82,
+      "destMapName": "RockTunnel1F",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 6,
+      "y": 39,
+      "destMap": "POWER_PLANT",
+      "destMapId": 83,
+      "destMapName": "PowerPlant",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "ROUTE10_SUPER_NERD1",
+      "x": 10,
+      "y": 44,
+      "sprite": "SPRITE_SUPER_NERD",
+      "spriteId": 12,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROUTE10_SUPER_NERD1",
+      "textIndex": 1,
+      "trainer": {
+        "trainerClass": "OPP_POKEMANIAC",
+        "trainerClassId": 7,
+        "trainerPartyIndex": 1,
+        "header": "Route10TrainerHeader0",
+        "eventFlag": "EVENT_BEAT_ROUTE_10_TRAINER_0",
+        "eventFlagIndex": 1105,
+        "sightRange": 4,
+        "textBefore": "Route10SuperNerd1BattleText",
+        "textEnd": "Route10SuperNerd1EndBattleText",
+        "textAfter": "Route10SuperNerd1AfterBattleText"
+      }
+    },
+    {
+      "index": 2,
+      "const": "ROUTE10_HIKER1",
+      "x": 3,
+      "y": 57,
+      "sprite": "SPRITE_HIKER",
+      "spriteId": 14,
+      "movement": "STAY",
+      "rangeOrDirection": "UP",
+      "rangeOrDirectionValue": 209,
+      "behavior": "face_up",
+      "textId": "TEXT_ROUTE10_HIKER1",
+      "textIndex": 2,
+      "trainer": {
+        "trainerClass": "OPP_HIKER",
+        "trainerClassId": 9,
+        "trainerPartyIndex": 7,
+        "header": "Route10TrainerHeader1",
+        "eventFlag": "EVENT_BEAT_ROUTE_10_TRAINER_1",
+        "eventFlagIndex": 1106,
+        "sightRange": 3,
+        "textBefore": "Route10Hiker1BattleText",
+        "textEnd": "Route10Hiker1EndBattleText",
+        "textAfter": "Route10Hiker1AfterBattleText"
+      }
+    },
+    {
+      "index": 3,
+      "const": "ROUTE10_SUPER_NERD2",
+      "x": 14,
+      "y": 64,
+      "sprite": "SPRITE_SUPER_NERD",
+      "spriteId": 12,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROUTE10_SUPER_NERD2",
+      "textIndex": 3,
+      "trainer": {
+        "trainerClass": "OPP_POKEMANIAC",
+        "trainerClassId": 7,
+        "trainerPartyIndex": 2,
+        "header": "Route10TrainerHeader2",
+        "eventFlag": "EVENT_BEAT_ROUTE_10_TRAINER_2",
+        "eventFlagIndex": 1107,
+        "sightRange": 4,
+        "textBefore": "Route10SuperNerd2BattleText",
+        "textEnd": "Route10SuperNerd2EndBattleText",
+        "textAfter": "Route10SuperNerd2AfterBattleText"
+      }
+    },
+    {
+      "index": 4,
+      "const": "ROUTE10_COOLTRAINER_F1",
+      "x": 7,
+      "y": 25,
+      "sprite": "SPRITE_COOLTRAINER_F",
+      "spriteId": 6,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROUTE10_COOLTRAINER_F1",
+      "textIndex": 4,
+      "trainer": {
+        "trainerClass": "OPP_JR_TRAINER_F",
+        "trainerClassId": 6,
+        "trainerPartyIndex": 7,
+        "header": "Route10TrainerHeader3",
+        "eventFlag": "EVENT_BEAT_ROUTE_10_TRAINER_3",
+        "eventFlagIndex": 1108,
+        "sightRange": 3,
+        "textBefore": "Route10CooltrainerF1BattleText",
+        "textEnd": "Route10CooltrainerF1EndBattleText",
+        "textAfter": "Route10CooltrainerF1AfterBattleText"
+      }
+    },
+    {
+      "index": 5,
+      "const": "ROUTE10_HIKER2",
+      "x": 3,
+      "y": 61,
+      "sprite": "SPRITE_HIKER",
+      "spriteId": 14,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROUTE10_HIKER2",
+      "textIndex": 5,
+      "trainer": {
+        "trainerClass": "OPP_HIKER",
+        "trainerClassId": 9,
+        "trainerPartyIndex": 8,
+        "header": "Route10TrainerHeader4",
+        "eventFlag": "EVENT_BEAT_ROUTE_10_TRAINER_4",
+        "eventFlagIndex": 1109,
+        "sightRange": 2,
+        "textBefore": "Route10Hiker2BattleText",
+        "textEnd": "Route10Hiker2EndBattleText",
+        "textAfter": "Route10Hiker2AfterBattleText"
+      }
+    },
+    {
+      "index": 6,
+      "const": "ROUTE10_COOLTRAINER_F2",
+      "x": 7,
+      "y": 54,
+      "sprite": "SPRITE_COOLTRAINER_F",
+      "spriteId": 6,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROUTE10_COOLTRAINER_F2",
+      "textIndex": 6,
+      "trainer": {
+        "trainerClass": "OPP_JR_TRAINER_F",
+        "trainerClassId": 6,
+        "trainerPartyIndex": 8,
+        "header": "Route10TrainerHeader5",
+        "eventFlag": "EVENT_BEAT_ROUTE_10_TRAINER_5",
+        "eventFlagIndex": 1110,
+        "sightRange": 2,
+        "textBefore": "Route10CooltrainerF2BattleText",
+        "textEnd": "Route10CooltrainerF2EndBattleText",
+        "textAfter": "Route10CooltrainerF2AfterBattleText"
+      }
+    }
+  ],
+  "adaptation": "Original Red feet, land/surf blocking, pair collisions and ledges. Static original16px actors local1x world2x same anchor. Route10 south rows48..71 only: isolated Power Plant water island and Mark y44 remain inaccessible/deferred, no surf and no invented grass. Lavender tower/Fuji/name rater/houses/Route8/12 deferred at original boundaries. Center nurse/PC existing interfaces; FR source stock subset Super Potion700 heals50 only, all other source items omitted explicitly.",
+  "rights": "Original rights holders; no redistribution clearance."
+}

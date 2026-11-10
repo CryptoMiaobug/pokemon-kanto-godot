@@ -1,0 +1,140 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/SSAnne2F.json",
+  "mapSHA256": "247382fa67c15328b4de61e931a2581ca7506f1fadff38e09cb948063d29410e",
+  "warps": [
+    {
+      "x": 9,
+      "y": 11,
+      "destMap": "SS_ANNE_2F_ROOMS",
+      "destMapId": 103,
+      "destMapName": "SSAnne2FRooms",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 13,
+      "y": 11,
+      "destMap": "SS_ANNE_2F_ROOMS",
+      "destMapId": 103,
+      "destMapName": "SSAnne2FRooms",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 17,
+      "y": 11,
+      "destMap": "SS_ANNE_2F_ROOMS",
+      "destMapId": 103,
+      "destMapName": "SSAnne2FRooms",
+      "destWarp": 5,
+      "destWarpIndex": 4
+    },
+    {
+      "x": 21,
+      "y": 11,
+      "destMap": "SS_ANNE_2F_ROOMS",
+      "destMapId": 103,
+      "destMapName": "SSAnne2FRooms",
+      "destWarp": 7,
+      "destWarpIndex": 6
+    },
+    {
+      "x": 25,
+      "y": 11,
+      "destMap": "SS_ANNE_2F_ROOMS",
+      "destMapId": 103,
+      "destMapName": "SSAnne2FRooms",
+      "destWarp": 9,
+      "destWarpIndex": 8
+    },
+    {
+      "x": 29,
+      "y": 11,
+      "destMap": "SS_ANNE_2F_ROOMS",
+      "destMapId": 103,
+      "destMapName": "SSAnne2FRooms",
+      "destWarp": 11,
+      "destWarpIndex": 10
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "destMap": "SS_ANNE_1F",
+      "destMapId": 95,
+      "destMapName": "SSAnne1F",
+      "destWarp": 9,
+      "destWarpIndex": 8
+    },
+    {
+      "x": 2,
+      "y": 12,
+      "destMap": "SS_ANNE_3F",
+      "destMapId": 97,
+      "destMapName": "SSAnne3F",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 36,
+      "y": 4,
+      "destMap": "SS_ANNE_CAPTAINS_ROOM",
+      "destMapId": 101,
+      "destMapName": "SSAnneCaptainsRoom",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "SSANNE2F_WAITER",
+      "x": 3,
+      "y": 7,
+      "sprite": "SPRITE_WAITER",
+      "spriteId": 26,
+      "movement": "WALK",
+      "rangeOrDirection": "UP_DOWN",
+      "rangeOrDirectionValue": 1,
+      "behavior": "walk_up_down",
+      "textId": "TEXT_SSANNE2F_WAITER",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "SSANNE2F_RIVAL",
+      "x": 36,
+      "y": 4,
+      "sprite": "SPRITE_BLUE",
+      "spriteId": 2,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_SSANNE2F_RIVAL",
+      "textIndex": 2,
+      "trainer": {
+        "trainerClass": "OPP_RIVAL1",
+        "trainerClassId": 25,
+        "trainerPartyIndex": 1,
+        "header": null
+      },
+      "toggleIndex": 113,
+      "toggleConst": "TOGGLE_SS_ANNE_2F_RIVAL",
+      "startsHidden": true
+    }
+  ],
+  "ruleSources": [
+    "src/game/scripts/regions/kanto3.js SSANNE2F_RIVAL_COORDS and encounter",
+    "FR src/data/trainer_parties.h RivalSsAnne*",
+    "FR src/data/trainers.h",
+    "FR src/battle_main.c RIVAL_LATE9",
+    "FR src/battle_script_commands.c payout/burn",
+    "FR src/pokemon.c burn damage",
+    "FR src/battle_util.c burn1/8",
+    "FR src/data/battle_moves.h KINESIS",
+    "FR data/battle_ai_scripts.s"
+  ],
+  "adaptation": "Red40x18 source feet, objects and indices; 1F8<->2F6 stairs land southern adjacent original floor. Waiter static down instead of wandering. Rival source hidden[36,4], step trigger[36or37,8], staged at source approach terminal[36,7]; approach/exit animation omitted. Entering original trigger opens cancellable E confirmation and blocks north until won; E reopens after cancel/defeat; victorious rival hidden. Source FR three ordered parties, IV/nature/default moves/reward720; independent flag, shared atomic settlement. No second-floor rooms, captain/HM01/departure, 3F or 1F deferred trainer/TM work. Kadabra and Kinesis required; burn/MetalClaw self boost required minimal Gen3 subset; AI scoped supported effects, no abilities/held items/complete AI. Original assets belong to original rights holders; redistribution permission not established."
+}

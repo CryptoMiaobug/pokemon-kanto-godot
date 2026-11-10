@@ -1,0 +1,38 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/DiglettsCave.json",
+  "mapSHA256": "41f422f83149e76a14c831c37b0e2430883c4e8869930f07588b086f41066ffb",
+  "tileset": "data/tilesets/Cavern.json",
+  "gfx": "assets/tilesets/cavern.png",
+  "warps": [
+    {
+      "x": 5,
+      "y": 5,
+      "destMap": "DIGLETTS_CAVE_ROUTE_2",
+      "destMapId": 46,
+      "destMapName": "DiglettsCaveRoute2",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 37,
+      "y": 31,
+      "destMap": "DIGLETTS_CAVE_ROUTE_11",
+      "destMapId": 85,
+      "destMapName": "DiglettsCaveRoute11",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    }
+  ],
+  "connections": {},
+  "actors": [],
+  "localScale": 1,
+  "worldScale": 2,
+  "feetAnchor": [
+    8,
+    16
+  ],
+  "adaptation": "Red geometry/static standing actors; FireRed rules retained. Route11 trainers and all new encounters deferred O13-4; Gate2F/services deferred. No walking NPC/audio.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

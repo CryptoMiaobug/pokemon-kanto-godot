@@ -1,0 +1,52 @@
+[
+  {
+    "id": "cerulean_rocket_thief",
+    "map": "cerulean-city",
+    "name": "火箭队手下",
+    "title": "屋后火箭队 · FireRed队伍",
+    "cell": [
+      30,
+      8
+    ],
+    "facing": "down",
+    "sprite": "res://assets/cerulean-thief/rocket.png",
+    "portrait": "res://assets/route24/rocket-trainer.png",
+    "reward": 544,
+    "party": [
+      {
+        "species_id": "machop",
+        "level": 17,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spa"
+        },
+        "moves": [
+          "lowkick",
+          "leer",
+          "focusenergy",
+          "karatechop"
+        ]
+      },
+      {
+        "species_id": "drowzee",
+        "level": 17,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "hypnosis",
+          "disable",
+          "confusion",
+          "headbutt"
+        ]
+      }
+    ],
+    "intro": "嘿！这里不是你的地盘！我只是个无辜的旁观者！",
+    "defeat": "住手！我认输了！我会安静离开！",
+    "after": "我把偷来的招式学习器还给你！",
+    "fireRedTrainer": "TeamRocketGrunt5"
+  }
+]

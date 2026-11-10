@@ -1,0 +1,44 @@
+{
+  "source": "data/maps/VermilionCity_Mart/scripts.inc + src/data/items.json",
+  "full_source_stock": [
+    {
+      "item_id": "ITEM_POKE_BALL",
+      "price": 200,
+      "implemented": true
+    },
+    {
+      "item_id": "ITEM_SUPER_POTION",
+      "price": 700,
+      "implemented": false
+    },
+    {
+      "item_id": "ITEM_ANTIDOTE",
+      "price": 100,
+      "implemented": false
+    },
+    {
+      "item_id": "ITEM_PARALYZE_HEAL",
+      "price": 200,
+      "implemented": false
+    },
+    {
+      "item_id": "ITEM_AWAKENING",
+      "price": 250,
+      "implemented": false
+    },
+    {
+      "item_id": "ITEM_ICE_HEAL",
+      "price": 250,
+      "implemented": false
+    },
+    {
+      "item_id": "ITEM_REPEL",
+      "price": 350,
+      "implemented": false
+    }
+  ],
+  "sold": [
+    "balls"
+  ],
+  "notice": "货单子集：仅精灵球200；其余原货品暂未实现，不出售。"
+}

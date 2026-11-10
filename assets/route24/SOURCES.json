@@ -1,0 +1,254 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/Route24.json",
+  "mapSHA256": "ae8fa5b913c6a4e7347d7f908cb4418b5e98ddfe0ef6b41fee1cc566e7d9c0c8",
+  "connections": {
+    "south": {
+      "map": "CERULEAN_CITY",
+      "mapId": 3,
+      "mapName": "CeruleanCity",
+      "offset": -5,
+      "dx": -5,
+      "dy": 18,
+      "copyRect": {
+        "x": 2,
+        "y": 0,
+        "w": 16,
+        "h": 3
+      },
+      "onEnter": {
+        "newY": 0,
+        "xAdd": 10
+      },
+      "macro": {
+        "stripSrc": 2,
+        "stripDest": 336,
+        "stripLength": 16,
+        "connectedWidth": 20,
+        "yAlign": 0,
+        "xAlign": 10,
+        "viewPointer": 27
+      }
+    },
+    "east": {
+      "map": "ROUTE_25",
+      "mapId": 36,
+      "mapName": "Route25",
+      "offset": 0,
+      "dx": 10,
+      "dy": 0,
+      "copyRect": {
+        "x": 0,
+        "y": 0,
+        "w": 3,
+        "h": 9
+      },
+      "onEnter": {
+        "newX": 0,
+        "yAdd": 0
+      },
+      "macro": {
+        "stripSrc": 0,
+        "stripDest": 61,
+        "stripLength": 9,
+        "connectedWidth": 30,
+        "yAlign": 0,
+        "xAlign": 0,
+        "viewPointer": 37
+      }
+    }
+  },
+  "actors": [
+    {
+      "index": 1,
+      "const": "ROUTE24_COOLTRAINER_M1",
+      "x": 11,
+      "y": 15,
+      "sprite": "SPRITE_COOLTRAINER_M",
+      "spriteId": 7,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROUTE24_COOLTRAINER_M1",
+      "textIndex": 1,
+      "trainer": {
+        "trainerClass": "OPP_ROCKET",
+        "trainerClassId": 30,
+        "trainerPartyIndex": 6,
+        "header": null
+      },
+      "toggleIndex": 36,
+      "toggleConst": "TOGGLE_NUGGET_BRIDGE_GUY",
+      "startsHidden": false
+    },
+    {
+      "index": 2,
+      "const": "ROUTE24_COOLTRAINER_M2",
+      "x": 5,
+      "y": 20,
+      "sprite": "SPRITE_COOLTRAINER_M",
+      "spriteId": 7,
+      "movement": "STAY",
+      "rangeOrDirection": "UP",
+      "rangeOrDirectionValue": 209,
+      "behavior": "face_up",
+      "textId": "TEXT_ROUTE24_COOLTRAINER_M2",
+      "textIndex": 2,
+      "trainer": {
+        "trainerClass": "OPP_JR_TRAINER_M",
+        "trainerClassId": 5,
+        "trainerPartyIndex": 2,
+        "header": "Route24TrainerHeader0",
+        "eventFlag": "EVENT_BEAT_ROUTE_24_TRAINER_0",
+        "eventFlagIndex": 1346,
+        "sightRange": 4,
+        "textBefore": "Route24CooltrainerM2BattleText",
+        "textEnd": "Route24CooltrainerM2EndBattleText",
+        "textAfter": "Route24CooltrainerM2AfterBattleText"
+      }
+    },
+    {
+      "index": 3,
+      "const": "ROUTE24_COOLTRAINER_M3",
+      "x": 11,
+      "y": 19,
+      "sprite": "SPRITE_COOLTRAINER_M",
+      "spriteId": 7,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROUTE24_COOLTRAINER_M3",
+      "textIndex": 3,
+      "trainer": {
+        "trainerClass": "OPP_JR_TRAINER_M",
+        "trainerClassId": 5,
+        "trainerPartyIndex": 3,
+        "header": "Route24TrainerHeader1",
+        "eventFlag": "EVENT_BEAT_ROUTE_24_TRAINER_1",
+        "eventFlagIndex": 1347,
+        "sightRange": 1,
+        "textBefore": "Route24CooltrainerM3BattleText",
+        "textEnd": "Route24CooltrainerM3EndBattleText",
+        "textAfter": "Route24CooltrainerM3AfterBattleText"
+      }
+    },
+    {
+      "index": 4,
+      "const": "ROUTE24_COOLTRAINER_F1",
+      "x": 10,
+      "y": 22,
+      "sprite": "SPRITE_COOLTRAINER_F",
+      "spriteId": 6,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_ROUTE24_COOLTRAINER_F1",
+      "textIndex": 4,
+      "trainer": {
+        "trainerClass": "OPP_LASS",
+        "trainerClassId": 3,
+        "trainerPartyIndex": 7,
+        "header": "Route24TrainerHeader2",
+        "eventFlag": "EVENT_BEAT_ROUTE_24_TRAINER_2",
+        "eventFlagIndex": 1348,
+        "sightRange": 1,
+        "textBefore": "Route24CooltrainerF1BattleText",
+        "textEnd": "Route24CooltrainerF1EndBattleText",
+        "textAfter": "Route24CooltrainerF1AfterBattleText"
+      }
+    },
+    {
+      "index": 5,
+      "const": "ROUTE24_YOUNGSTER1",
+      "x": 11,
+      "y": 25,
+      "sprite": "SPRITE_YOUNGSTER",
+      "spriteId": 4,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROUTE24_YOUNGSTER1",
+      "textIndex": 5,
+      "trainer": {
+        "trainerClass": "OPP_YOUNGSTER",
+        "trainerClassId": 1,
+        "trainerPartyIndex": 4,
+        "header": "Route24TrainerHeader3",
+        "eventFlag": "EVENT_BEAT_ROUTE_24_TRAINER_3",
+        "eventFlagIndex": 1349,
+        "sightRange": 1,
+        "textBefore": "Route24Youngster1BattleText",
+        "textEnd": "Route24Youngster1EndBattleText",
+        "textAfter": "Route24Youngster1AfterBattleText"
+      }
+    },
+    {
+      "index": 6,
+      "const": "ROUTE24_COOLTRAINER_F2",
+      "x": 10,
+      "y": 28,
+      "sprite": "SPRITE_COOLTRAINER_F",
+      "spriteId": 6,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_ROUTE24_COOLTRAINER_F2",
+      "textIndex": 6,
+      "trainer": {
+        "trainerClass": "OPP_LASS",
+        "trainerClassId": 3,
+        "trainerPartyIndex": 8,
+        "header": "Route24TrainerHeader4",
+        "eventFlag": "EVENT_BEAT_ROUTE_24_TRAINER_4",
+        "eventFlagIndex": 1350,
+        "sightRange": 1,
+        "textBefore": "Route24CooltrainerF2BattleText",
+        "textEnd": "Route24CooltrainerF2EndBattleText",
+        "textAfter": "Route24CooltrainerF2AfterBattleText"
+      }
+    },
+    {
+      "index": 7,
+      "const": "ROUTE24_YOUNGSTER2",
+      "x": 11,
+      "y": 31,
+      "sprite": "SPRITE_YOUNGSTER",
+      "spriteId": 4,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROUTE24_YOUNGSTER2",
+      "textIndex": 7,
+      "trainer": {
+        "trainerClass": "OPP_BUG_CATCHER",
+        "trainerClassId": 2,
+        "trainerPartyIndex": 9,
+        "header": "Route24TrainerHeader5",
+        "eventFlag": "EVENT_BEAT_ROUTE_24_TRAINER_5",
+        "eventFlagIndex": 1351,
+        "sightRange": 1,
+        "textBefore": "Route24Youngster2BattleText",
+        "textEnd": "Route24Youngster2EndBattleText",
+        "textAfter": "Route24Youngster2AfterBattleText"
+      }
+    }
+  ],
+  "fireRed": [
+    "src/data/trainer_parties.h",
+    "src/data/trainers.h",
+    "src/battle_main.c money table / trainer personality",
+    "src/data/wild_encounters.json sRoute24_FireRed land",
+    "data/maps/Route24/scripts.inc giveitem NUGGET before battle",
+    "src/data/items.json ITEM_NUGGET",
+    "src/battle_script_commands.c critical chance / teleport",
+    "data/battle_scripts_1.s Teleport"
+  ],
+  "adaptation": "Red20x36 original geometry, original static16px NPCs nearest/local1x/world2x/same center feet anchor. South city x+10 cells, reverse-10; east Route25 closed. Original city rival hidden[20,2], approaches3 steps to[20,5] on original[20or21,6] trigger; static E-confirm staged at terminal cell, no animation, blocks north until win. Three source starter variants, stable player starter mapping. Five bridge trainers must be won before Nugget; Nugget item count1 committed before Rocket battle, no sale; distinct Rocket flag/reward480. Route24 off-bridge Shane included; TM pickup omitted. No Fame Checker, north Route25/Bill, original approach animation or auto sight. Wild Abra original Teleport works only in wild battles; trainer Teleport fails. Necessary Gen3 critical subset scoped to this new slice, no abilities/items/barriers. Rights remain original holders, no redistribution clearance."
+}

@@ -1,0 +1,66 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/LancesRoom.json",
+  "mapSHA256": "82dbdf0d67f81353dd975bf6b79c19bbc78c77bd50a8faf692553be43882058a",
+  "warps": [
+    {
+      "x": 24,
+      "y": 16,
+      "destMap": "AGATHAS_ROOM",
+      "destMapId": 247,
+      "destMapName": "AgathasRoom",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "destMap": "CHAMPIONS_ROOM",
+      "destMapId": 120,
+      "destMapName": "ChampionsRoom",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "destMap": "CHAMPIONS_ROOM",
+      "destMapId": 120,
+      "destMapName": "ChampionsRoom",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "LANCESROOM_LANCE",
+      "x": 6,
+      "y": 1,
+      "sprite": "SPRITE_LANCE",
+      "spriteId": 30,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_LANCESROOM_LANCE",
+      "textIndex": 1,
+      "trainer": {
+        "trainerClass": "OPP_LANCE",
+        "trainerClassId": 47,
+        "trainerPartyIndex": 1,
+        "header": "LancesRoomTrainerHeader0",
+        "eventFlag": "EVENT_BEAT_LANCES_ROOM_TRAINER_0",
+        "eventFlagIndex": 2297,
+        "sightRange": 0,
+        "textBefore": "LancesRoomLanceBeforeBattleText",
+        "textEnd": "LancesRoomLanceEndBattleText",
+        "textAfter": "LancesRoomLanceAfterBattleText"
+      }
+    }
+  ],
+  "adaptation": "Red geometry, collision, actors, Route21 north connection and original service doors. Center nurse/PC reuse existing interfaces. Mansion and lab remain closed. Gym returns FireRed Secret Key refusal; mansion/key acquisition is slice35. Mart implements only FireRed Hyper Potion 1200 from its seven-item stock.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

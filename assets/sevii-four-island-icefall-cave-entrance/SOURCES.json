@@ -1,0 +1,44 @@
+{
+  "revision": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/FourIsland_IcefallCave_Entrance/map.json",
+  "mapSHA256": "5b3658a89b320938e4d7a0da8d37550d92e2461ce3134fa617edfd99f022157f",
+  "layout": {
+    "id": "LAYOUT_FOUR_ISLAND_ICEFALL_CAVE_ENTRANCE",
+    "name": "FourIsland_IcefallCave_Entrance_Layout",
+    "width": 30,
+    "height": 36,
+    "border_width": 2,
+    "border_height": 2,
+    "primary_tileset": "gTileset_General",
+    "secondary_tileset": "gTileset_SeafoamIslands",
+    "border_filepath": "data/layouts/FourIsland_IcefallCave_Entrance/border.bin",
+    "blockdata_filepath": "data/layouts/FourIsland_IcefallCave_Entrance/map.bin"
+  },
+  "warps": [
+    {
+      "x": 17,
+      "y": 30,
+      "elevation": 3,
+      "dest_map": "MAP_FOUR_ISLAND",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 10,
+      "y": 21,
+      "elevation": 3,
+      "dest_map": "MAP_FOUR_ISLAND_ICEFALL_CAVE_1F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "elevation": 3,
+      "dest_map": "MAP_FOUR_ISLAND_ICEFALL_CAVE_1F",
+      "dest_warp_id": "1"
+    }
+  ],
+  "connections": null,
+  "actors": [],
+  "adaptation": "FireRed 16px metatiles, source collision/elevation/behavior; original palette static first frame; no coordinate doubling.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

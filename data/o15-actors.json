@@ -1,0 +1,56 @@
+[
+  {
+    "map": "cinnabar-lab",
+    "redObject": 1,
+    "cell": [
+      1,
+      3
+    ],
+    "facing": "down",
+    "sprite": "res://assets/cinnabar-lab/actor-1.png",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "role": "guide",
+    "fireRedIdentity": "Scientist"
+  },
+  {
+    "map": "cinnabar-lab-fossil-room",
+    "redObject": 1,
+    "cell": [
+      5,
+      2
+    ],
+    "facing": "down",
+    "sprite": "res://assets/cinnabar-lab-fossil-room/actor-1.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "role": "fossil_scientist",
+    "fireRedIdentity": "FossilScientist"
+  },
+  {
+    "map": "cinnabar-lab-fossil-room",
+    "redObject": 2,
+    "cell": [
+      7,
+      6
+    ],
+    "facing": "up",
+    "sprite": "res://assets/cinnabar-lab-fossil-room/actor-2.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "role": "trade_deferred",
+    "fireRedIdentity": "Garett"
+  }
+]

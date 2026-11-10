@@ -1,0 +1,37 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/Route18Gate2F.json",
+  "mapSHA256": "d0fd37a15d1a643719d7f9b9cf9d4b7e570e580fd2df9e507844d2a9f3fab8a1",
+  "tiles": "assets/tilesets/gate.png",
+  "connections": {},
+  "warps": [
+    {
+      "x": 7,
+      "y": 7,
+      "destMap": "ROUTE_18_GATE_1F",
+      "destMapId": 190,
+      "destMapName": "Route18Gate1F",
+      "destWarp": 5,
+      "destWarpIndex": 4
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "ROUTE18GATE2F_YOUNGSTER",
+      "x": 4,
+      "y": 2,
+      "sprite": "SPRITE_YOUNGSTER",
+      "spriteId": 4,
+      "movement": "WALK",
+      "rangeOrDirection": "LEFT_RIGHT",
+      "rangeOrDirectionValue": 2,
+      "behavior": "walk_left_right",
+      "textId": "TEXT_ROUTE18GATE2F_YOUNGSTER",
+      "textIndex": 1
+    }
+  ],
+  "adaptation": "Full deterministic Red geometry; O03 upper rows retained in source form. FireRed trainer parties and encounters. Trades, hidden items, signs and sight activation deferred.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

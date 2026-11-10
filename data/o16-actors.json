@@ -1,0 +1,240 @@
+[
+  {
+    "map": "celadon-mart-3f",
+    "redObject": 1,
+    "cell": [
+      16,
+      5
+    ],
+    "facing": "down",
+    "sprite": "res://assets/celadon-mart-3f/actor-1.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "role": "counter_tutor"
+  },
+  {
+    "map": "celadon-mart-3f",
+    "redObject": 2,
+    "cell": [
+      11,
+      6
+    ],
+    "facing": "right",
+    "sprite": "res://assets/celadon-mart-3f/actor-2.png",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "role": "dialogue"
+  },
+  {
+    "map": "celadon-mart-3f",
+    "redObject": 3,
+    "cell": [
+      7,
+      2
+    ],
+    "facing": "down",
+    "sprite": "res://assets/celadon-mart-3f/actor-3.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "role": "dialogue"
+  },
+  {
+    "map": "celadon-mart-3f",
+    "redObject": 4,
+    "cell": [
+      8,
+      2
+    ],
+    "facing": "down",
+    "sprite": "res://assets/celadon-mart-3f/actor-4.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "role": "dialogue"
+  },
+  {
+    "map": "celadon-mart-3f",
+    "redObject": 5,
+    "cell": [
+      2,
+      5
+    ],
+    "facing": "up",
+    "sprite": "res://assets/celadon-mart-3f/actor-5.png",
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      16
+    ],
+    "role": "dialogue"
+  },
+  {
+    "map": "celadon-mart-4f",
+    "redObject": 1,
+    "cell": [
+      5,
+      7
+    ],
+    "facing": "down",
+    "sprite": "res://assets/celadon-mart-4f/actor-1.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "role": "service_deferred"
+  },
+  {
+    "map": "celadon-mart-4f",
+    "redObject": 2,
+    "cell": [
+      15,
+      5
+    ],
+    "facing": "down",
+    "sprite": "res://assets/celadon-mart-4f/actor-2.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "role": "service_deferred"
+  },
+  {
+    "map": "celadon-mart-4f",
+    "redObject": 3,
+    "cell": [
+      5,
+      2
+    ],
+    "facing": "down",
+    "sprite": "res://assets/celadon-mart-4f/actor-3.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "role": "service_deferred"
+  },
+  {
+    "map": "celadon-mart-5f",
+    "redObject": 1,
+    "cell": [
+      14,
+      5
+    ],
+    "facing": "down",
+    "sprite": "res://assets/celadon-mart-5f/actor-1.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "role": "service_deferred"
+  },
+  {
+    "map": "celadon-mart-5f",
+    "redObject": 2,
+    "cell": [
+      2,
+      6
+    ],
+    "facing": "down",
+    "sprite": "res://assets/celadon-mart-5f/actor-2.png",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "role": "service_deferred"
+  },
+  {
+    "map": "celadon-mart-5f",
+    "redObject": 3,
+    "cell": [
+      5,
+      3
+    ],
+    "facing": "down",
+    "sprite": "res://assets/celadon-mart-5f/actor-3.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "role": "service_deferred"
+  },
+  {
+    "map": "celadon-mart-5f",
+    "redObject": 4,
+    "cell": [
+      6,
+      3
+    ],
+    "facing": "down",
+    "sprite": "res://assets/celadon-mart-5f/actor-4.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "role": "service_deferred"
+  },
+  {
+    "map": "celadon-mart-roof",
+    "redObject": 1,
+    "cell": [
+      10,
+      4
+    ],
+    "facing": "left",
+    "sprite": "res://assets/celadon-mart-roof/actor-1.png",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "role": "service_deferred"
+  },
+  {
+    "map": "celadon-mart-roof",
+    "redObject": 2,
+    "cell": [
+      5,
+      5
+    ],
+    "facing": "down",
+    "sprite": "res://assets/celadon-mart-roof/actor-2.png",
+    "alphaBBox": [
+      0,
+      2,
+      16,
+      16
+    ],
+    "role": "service_deferred"
+  }
+]

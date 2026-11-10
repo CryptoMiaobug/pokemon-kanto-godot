@@ -1,0 +1,8 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/RockTunnelB1F.json",
+  "tiles": "assets/tilesets/cavern.png",
+  "adaptation": "Original Red geometry and pair collisions; original static16px NPCs deferred battle with explicit E message; full-lit adaptation, original darkness and Flash not implemented, no badge gate. Four exact indexed stair pairs with arrival latch. North original doorway triggers at source Route10 tile8,17; arrives at interior south-adjacent tile15,4; south original exit deferred. No items, hidden events, Rock Smash or Flash quest.",
+  "rights": "Original rights holders; no distribution clearance asserted."
+}

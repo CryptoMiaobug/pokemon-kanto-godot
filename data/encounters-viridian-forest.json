@@ -1,0 +1,78 @@
+{
+  "source": "sViridianForest_FireRed",
+  "encounter_rate": 14,
+  "slots": [
+    {
+      "species_id": "caterpie",
+      "min_level": 4,
+      "max_level": 4,
+      "weight": 20
+    },
+    {
+      "species_id": "weedle",
+      "min_level": 4,
+      "max_level": 4,
+      "weight": 20
+    },
+    {
+      "species_id": "caterpie",
+      "min_level": 5,
+      "max_level": 5,
+      "weight": 10
+    },
+    {
+      "species_id": "weedle",
+      "min_level": 5,
+      "max_level": 5,
+      "weight": 10
+    },
+    {
+      "species_id": "caterpie",
+      "min_level": 3,
+      "max_level": 3,
+      "weight": 10
+    },
+    {
+      "species_id": "weedle",
+      "min_level": 3,
+      "max_level": 3,
+      "weight": 10
+    },
+    {
+      "species_id": "metapod",
+      "min_level": 5,
+      "max_level": 5,
+      "weight": 5
+    },
+    {
+      "species_id": "kakuna",
+      "min_level": 5,
+      "max_level": 5,
+      "weight": 5
+    },
+    {
+      "species_id": "kakuna",
+      "min_level": 4,
+      "max_level": 4,
+      "weight": 4
+    },
+    {
+      "species_id": "pikachu",
+      "min_level": 3,
+      "max_level": 3,
+      "weight": 4
+    },
+    {
+      "species_id": "kakuna",
+      "min_level": 6,
+      "max_level": 6,
+      "weight": 1
+    },
+    {
+      "species_id": "pikachu",
+      "min_level": 5,
+      "max_level": 5,
+      "weight": 1
+    }
+  ]
+}

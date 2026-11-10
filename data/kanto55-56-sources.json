@@ -1,0 +1,59 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "rooms": [
+    [
+      "LoreleisRoom",
+      "league-lorelei",
+      [
+        72,
+        153
+      ]
+    ],
+    [
+      "BrunosRoom",
+      "league-bruno",
+      [
+        72,
+        153
+      ]
+    ],
+    [
+      "AgathasRoom",
+      "league-agatha",
+      [
+        72,
+        153
+      ]
+    ],
+    [
+      "LancesRoom",
+      "league-lance",
+      [
+        392,
+        249
+      ]
+    ],
+    [
+      "ChampionsRoom",
+      "league-champion",
+      [
+        72,
+        89
+      ]
+    ]
+  ],
+  "ruleSources": [
+    "data/scripts/pokemon_league.inc",
+    "data/scripts/hall_of_fame.inc",
+    "data/maps/PokemonLeague_LoreleisRoom/scripts.inc",
+    "data/maps/PokemonLeague_BrunosRoom/scripts.inc",
+    "data/maps/PokemonLeague_AgathasRoom/scripts.inc",
+    "src/overworld.c",
+    "src/data/trainer_parties.h",
+    "src/data/trainers.h",
+    "src/battle_script_commands.c",
+    "src/battle_util.c"
+  ],
+  "adaptation": "Red geometry and FR mechanics. Enter lock applies on warp rather than scripted five steps. Lobby nurse respawn for league losses. Lance and later deferred59+. E confirms battle. No full ability/gender engine."
+}

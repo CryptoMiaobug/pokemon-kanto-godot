@@ -1,0 +1,291 @@
+[
+  {
+    "map": "fuchsia-city",
+    "cell": [
+      10,
+      12
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/fuchsia-city/actor-1.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "fuchsia-city",
+    "cell": [
+      28,
+      17
+    ],
+    "redObject": 2,
+    "sprite": "res://assets/fuchsia-city/actor-2.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "fuchsia-city",
+    "cell": [
+      30,
+      14
+    ],
+    "redObject": 3,
+    "sprite": "res://assets/fuchsia-city/actor-3.png",
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "fuchsia-city",
+    "cell": [
+      24,
+      8
+    ],
+    "redObject": 4,
+    "sprite": "res://assets/fuchsia-city/actor-4.png",
+    "facing": "up",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "fuchsia-city",
+    "cell": [
+      31,
+      5
+    ],
+    "redObject": 5,
+    "sprite": "res://assets/fuchsia-city/actor-5.png",
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      2,
+      16,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "fuchsia-city",
+    "cell": [
+      25,
+      6
+    ],
+    "redObject": 6,
+    "sprite": "res://assets/fuchsia-city/actor-6.png",
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "item": ""
+  },
+  {
+    "map": "fuchsia-city",
+    "cell": [
+      12,
+      6
+    ],
+    "redObject": 7,
+    "sprite": "res://assets/fuchsia-city/actor-7.png",
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "fuchsia-city",
+    "cell": [
+      30,
+      12
+    ],
+    "redObject": 8,
+    "sprite": "res://assets/fuchsia-city/actor-8.png",
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "fuchsia-city",
+    "cell": [
+      8,
+      17
+    ],
+    "redObject": 9,
+    "sprite": "res://assets/fuchsia-city/actor-9.png",
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      2,
+      16,
+      14
+    ],
+    "item": ""
+  },
+  {
+    "map": "fuchsia-city",
+    "cell": [
+      6,
+      5
+    ],
+    "redObject": 10,
+    "sprite": "res://assets/fuchsia-city/actor-10.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      1,
+      14,
+      15
+    ],
+    "item": ""
+  },
+  {
+    "map": "fuchsia-center",
+    "cell": [
+      3,
+      1
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/fuchsia-center/actor-1.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "fuchsia-center",
+    "cell": [
+      2,
+      3
+    ],
+    "redObject": 2,
+    "sprite": "res://assets/fuchsia-center/actor-2.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "fuchsia-center",
+    "cell": [
+      6,
+      5
+    ],
+    "redObject": 3,
+    "sprite": "res://assets/fuchsia-center/actor-3.png",
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "fuchsia-center",
+    "cell": [
+      11,
+      2
+    ],
+    "redObject": 4,
+    "sprite": "res://assets/fuchsia-center/actor-4.png",
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "fuchsia-mart",
+    "cell": [
+      0,
+      5
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/fuchsia-mart/actor-1.png",
+    "facing": "right",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "fuchsia-mart",
+    "cell": [
+      4,
+      2
+    ],
+    "redObject": 2,
+    "sprite": "res://assets/fuchsia-mart/actor-2.png",
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "fuchsia-mart",
+    "cell": [
+      6,
+      5
+    ],
+    "redObject": 3,
+    "sprite": "res://assets/fuchsia-mart/actor-3.png",
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "item": ""
+  }
+]

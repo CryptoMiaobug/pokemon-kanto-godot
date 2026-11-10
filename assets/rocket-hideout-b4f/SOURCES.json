@@ -1,0 +1,360 @@
+{
+  "baseline_commit": "fce79b13787603b82f634e6a7cb5baff1a0b3e1f",
+  "red_commit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "firered_commit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "instruction_reads": [
+    "AGENTS.md",
+    "pixel-rpg-scene-reskin/SKILL.md",
+    "targeted-check-recovery.md",
+    "route-story-integration.md",
+    "source-driven-game-development.md",
+    "source-game-rules.md",
+    "sprite-scale-alignment.md",
+    "templates/game-slice-result.json"
+  ],
+  "sources": [
+    "Red data/maps/RocketHideoutB4F.json RocketHideoutElevator.json PokemonTower1F.json PokemonTower2F.json",
+    "Red src/game/scripts/regions/kanto4.js hideoutB4FDoor hideoutGiovanni RocketHideoutB4F.onTextAsm ROCKET_HIDEOUT_FLOORS towerRivalEncounter",
+    "FireRed data/maps/RocketHideout_B4F/scripts.inc PokemonTower_2F/scripts.inc",
+    "FireRed src/data/trainer_parties.h TeamRocketGrunt16..18 BossGiovanni RivalPokemonTower*",
+    "FireRed src/data/trainers.h src/battle_main.c src/data/pokemon/level_up_learnsets.h"
+  ],
+  "slices": [
+    {
+      "id": "post-b3-1",
+      "scope": "B4F original geometry/stairs and Grunt18 full party; Lift Key drop then pickup",
+      "required": [
+        "720 feet nine source objects three warp indices",
+        "Grunt18 full two ordered mons reward672",
+        "optional v3 rocket_story.key_dropped and items.lift_key atomic transitions"
+      ],
+      "story": [
+        "unbeaten -> cancel/lose/interruption -> unbeaten",
+        "win -> beaten reward growth atomic",
+        "post-win source after-battle text -> key dropped atomic",
+        "key visible at [10,2] -> E pickup -> Lift Key1 atomic",
+        "repeat no reward; real write failure exact rollback"
+      ],
+      "deferred": [
+        "elevator and other B4 trainers until next slices"
+      ]
+    },
+    {
+      "id": "post-b3-2",
+      "scope": "original elevator B1/B2/B4 and both door guards",
+      "required": [
+        "elevator48 feet panel source sign and all indexed exits",
+        "Grunt16 and17 complete rosters rewards736 and736 source verified by generator",
+        "both guard flags -> original block[12,5]45 to14 artwork and collision"
+      ],
+      "story": [
+        "enter lift records source floor",
+        "panel without key rejected; Esc no mutation",
+        "select B1/B2/B4 persists floor; exits return selected floor",
+        "two wins jointly unlock door; rewards atomic with trainer flags"
+      ],
+      "deferred": [
+        "Giovanni until slice3"
+      ]
+    },
+    {
+      "id": "post-b3-3",
+      "scope": "Giovanni ordered three mons and separate Silph Scope pickup",
+      "required": [
+        "Onix25 Rhyhorn24 Kangaskhan29 source IV30/default moves reward2900",
+        "required Rhyhorn/Kangaskhan data and only reachable missing effects",
+        "Giovanni win -> hidden and scope visible [25,2]; pickup atomic"
+      ],
+      "story": [
+        "both guards prerequisite physical door",
+        "cancel/lose/interruption no victory",
+        "win -> reward/growth/flag atomic -> scope pending",
+        "E pickup -> items.silph_scope1 atomic; repeat no duplication"
+      ],
+      "deferred": [
+        "full AI abilities held items optional items and animation"
+      ]
+    },
+    {
+      "id": "post-b3-4",
+      "scope": "Lavender original tower entrance and 1F NPC exploration",
+      "required": [
+        "360 feet five actors original entrance indices",
+        "source NPC meaning no fake Scope entry prerequisite",
+        "2F stair explicitly deferred until slice5"
+      ],
+      "story": [
+        "town original warp1 -> tower1F -> return",
+        "E source mourning/reception/channeler dialogue no rewards"
+      ],
+      "deferred": [
+        "ghost encounters upper floors Fuji flute"
+      ]
+    },
+    {
+      "id": "post-b3-5",
+      "scope": "Tower2F original trigger rival full five-mon three branches",
+      "required": [
+        "360 feet two actors two indexed stairs",
+        "source triggers [15,5]/[14,6], cancel/retry and win-hide",
+        "FR RivalPokemonTower three full ordered source branches reward900",
+        "required Gyarados data and only source reachable missing effects"
+      ],
+      "story": [
+        "1F stair -> 2F",
+        "source step or E -> cancellable battle",
+        "win reward/growth/flag atomic -> rival hidden",
+        "cancel/loss/interruption retry no reward; repeat no reward"
+      ],
+      "deferred": [
+        "3F and above ghost encounters Channeler trainers Fuji flute"
+      ]
+    }
+  ],
+  "existing": [
+    "indexed warp arrival lock",
+    "atomic trainer reward growth flags and v3 save rename",
+    "16px static same-scale actor importer",
+    "most roster species and move effects"
+  ],
+  "fixture": {
+    "actual_baseline_money": 6412,
+    "actual_venusaur_hp": 44,
+    "actual_razorleaf_slot": 3,
+    "actual_razorleaf_pp": 13,
+    "policy": "position-only checkpoints retain all legitimately earned rewards; healing through nurse; no batch victories/items injected; final one normal same-profile restart"
+  },
+  "boundary": "fifth slice ends at Tower2F original stair to3F, explicitly unopened; no all-tower expansion",
+  "map": "data/maps/RocketHideoutB4F.json",
+  "mapSHA256": "c6bbc89bb3d6706b51a812f51fb2a9b47643a422bdff1376bc59eb5a601f8700",
+  "actors": [
+    {
+      "index": 1,
+      "const": "ROCKETHIDEOUTB4F_GIOVANNI",
+      "x": 25,
+      "y": 3,
+      "sprite": "SPRITE_GIOVANNI",
+      "spriteId": 23,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROCKETHIDEOUTB4F_GIOVANNI",
+      "textIndex": 1,
+      "trainer": {
+        "trainerClass": "OPP_GIOVANNI",
+        "trainerClassId": 29,
+        "trainerPartyIndex": 1,
+        "header": null
+      },
+      "toggleIndex": 131,
+      "toggleConst": "TOGGLE_ROCKET_HIDEOUT_B4F_GIOVANNI",
+      "startsHidden": false
+    },
+    {
+      "index": 2,
+      "const": "ROCKETHIDEOUTB4F_ROCKET1",
+      "x": 23,
+      "y": 12,
+      "sprite": "SPRITE_ROCKET",
+      "spriteId": 24,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROCKETHIDEOUTB4F_ROCKET1",
+      "textIndex": 2,
+      "trainer": {
+        "trainerClass": "OPP_ROCKET",
+        "trainerClassId": 30,
+        "trainerPartyIndex": 16,
+        "header": "RocketHideout4TrainerHeader0",
+        "eventFlag": "EVENT_BEAT_ROCKET_HIDEOUT_4_TRAINER_0",
+        "eventFlagIndex": 1698,
+        "sightRange": 0,
+        "textBefore": "RocketHideoutB4FRocket1BattleText",
+        "textEnd": "RocketHideoutB4FRocket1EndBattleText",
+        "textAfter": "RocketHideoutB4FRocket1AfterBattleText"
+      }
+    },
+    {
+      "index": 3,
+      "const": "ROCKETHIDEOUTB4F_ROCKET2",
+      "x": 26,
+      "y": 12,
+      "sprite": "SPRITE_ROCKET",
+      "spriteId": 24,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROCKETHIDEOUTB4F_ROCKET2",
+      "textIndex": 3,
+      "trainer": {
+        "trainerClass": "OPP_ROCKET",
+        "trainerClassId": 30,
+        "trainerPartyIndex": 17,
+        "header": "RocketHideout4TrainerHeader1",
+        "eventFlag": "EVENT_BEAT_ROCKET_HIDEOUT_4_TRAINER_1",
+        "eventFlagIndex": 1699,
+        "sightRange": 0,
+        "textBefore": "RocketHideoutB4FRocket2BattleText",
+        "textEnd": "RocketHideoutB4FRocket2EndBattleText",
+        "textAfter": "RocketHideoutB4FRocket2AfterBattleText"
+      }
+    },
+    {
+      "index": 4,
+      "const": "ROCKETHIDEOUTB4F_ROCKET3",
+      "x": 11,
+      "y": 2,
+      "sprite": "SPRITE_ROCKET",
+      "spriteId": 24,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROCKETHIDEOUTB4F_ROCKET3",
+      "textIndex": 4,
+      "trainer": {
+        "trainerClass": "OPP_ROCKET",
+        "trainerClassId": 30,
+        "trainerPartyIndex": 18,
+        "header": "RocketHideout4TrainerHeader2",
+        "eventFlag": "EVENT_BEAT_ROCKET_HIDEOUT_4_TRAINER_2",
+        "eventFlagIndex": 1700,
+        "sightRange": 1,
+        "textBefore": "RocketHideoutB4FRocket3BattleText",
+        "textEnd": "RocketHideoutB4FRocket3EndBattleText",
+        "textAfter": "RocketHideoutB4FRocket3AfterBattleText"
+      }
+    },
+    {
+      "index": 5,
+      "const": "ROCKETHIDEOUTB4F_HP_UP",
+      "x": 10,
+      "y": 12,
+      "sprite": "SPRITE_POKE_BALL",
+      "spriteId": 61,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_ROCKETHIDEOUTB4F_HP_UP",
+      "textIndex": 5,
+      "item": "HP_UP",
+      "itemId": 35,
+      "toggleIndex": 132,
+      "toggleConst": "TOGGLE_ROCKET_HIDEOUT_B4F_ITEM_1",
+      "startsHidden": false
+    },
+    {
+      "index": 6,
+      "const": "ROCKETHIDEOUTB4F_TM_RAZOR_WIND",
+      "x": 9,
+      "y": 4,
+      "sprite": "SPRITE_POKE_BALL",
+      "spriteId": 61,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_ROCKETHIDEOUTB4F_TM_RAZOR_WIND",
+      "textIndex": 6,
+      "item": "TM_RAZOR_WIND",
+      "itemId": 202,
+      "toggleIndex": 133,
+      "toggleConst": "TOGGLE_ROCKET_HIDEOUT_B4F_ITEM_2",
+      "startsHidden": false
+    },
+    {
+      "index": 7,
+      "const": "ROCKETHIDEOUTB4F_IRON",
+      "x": 12,
+      "y": 20,
+      "sprite": "SPRITE_POKE_BALL",
+      "spriteId": 61,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_ROCKETHIDEOUTB4F_IRON",
+      "textIndex": 7,
+      "item": "IRON",
+      "itemId": 37,
+      "toggleIndex": 134,
+      "toggleConst": "TOGGLE_ROCKET_HIDEOUT_B4F_ITEM_3",
+      "startsHidden": false
+    },
+    {
+      "index": 8,
+      "const": "ROCKETHIDEOUTB4F_SILPH_SCOPE",
+      "x": 25,
+      "y": 2,
+      "sprite": "SPRITE_POKE_BALL",
+      "spriteId": 61,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_ROCKETHIDEOUTB4F_SILPH_SCOPE",
+      "textIndex": 8,
+      "item": "SILPH_SCOPE",
+      "itemId": 72,
+      "toggleIndex": 135,
+      "toggleConst": "TOGGLE_ROCKET_HIDEOUT_B4F_ITEM_4",
+      "startsHidden": true
+    },
+    {
+      "index": 9,
+      "const": "ROCKETHIDEOUTB4F_LIFT_KEY",
+      "x": 10,
+      "y": 2,
+      "sprite": "SPRITE_POKE_BALL",
+      "spriteId": 61,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_ROCKETHIDEOUTB4F_LIFT_KEY",
+      "textIndex": 9,
+      "item": "LIFT_KEY",
+      "itemId": 74,
+      "toggleIndex": 136,
+      "toggleConst": "TOGGLE_ROCKET_HIDEOUT_B4F_ITEM_5",
+      "startsHidden": true
+    }
+  ],
+  "warps": [
+    {
+      "x": 19,
+      "y": 10,
+      "destMap": "ROCKET_HIDEOUT_B3F",
+      "destMapId": 201,
+      "destMapName": "RocketHideoutB3F",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 24,
+      "y": 15,
+      "destMap": "ROCKET_HIDEOUT_ELEVATOR",
+      "destMapId": 203,
+      "destMapName": "RocketHideoutElevator",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 25,
+      "y": 15,
+      "destMap": "ROCKET_HIDEOUT_ELEVATOR",
+      "destMapId": 203,
+      "destMapName": "RocketHideoutElevator",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    }
+  ],
+  "signs": [],
+  "rights": "Original rights holders; redistribution clearance not established.",
+  "adaptation": "Original16px static actors same local1x/world2x nearest and source feet anchor; source Red layout, FR roster/rules. Movement/sight/music/animations and nonessential items deferred."
+}

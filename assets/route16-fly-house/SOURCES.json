@@ -1,0 +1,60 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/Route16FlyHouse.json",
+  "mapSHA256": "9bf8f408c33ad8951091e908c19fd9d699c3d1309f2c6582f70caf997e5c7f56",
+  "tiles": "assets/tilesets/house.png",
+  "warps": [
+    {
+      "x": 2,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 9,
+      "destWarpIndex": 8
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 9,
+      "destWarpIndex": 8
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "ROUTE16FLYHOUSE_BRUNETTE_GIRL",
+      "x": 2,
+      "y": 3,
+      "sprite": "SPRITE_BRUNETTE_GIRL",
+      "spriteId": 29,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_ROUTE16FLYHOUSE_BRUNETTE_GIRL",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "ROUTE16FLYHOUSE_FEAROW",
+      "x": 6,
+      "y": 4,
+      "sprite": "SPRITE_BIRD",
+      "spriteId": 9,
+      "movement": "WALK",
+      "rangeOrDirection": "ANY_DIR",
+      "rangeOrDirectionValue": 0,
+      "behavior": "walk_any",
+      "textId": "TEXT_ROUTE16FLYHOUSE_FEAROW",
+      "textIndex": 2
+    }
+  ],
+  "adaptation": "Red geometry/16px actors local1x world2x nearest. FireRed Fly/HM/Bicycle rules with Red gate four trigger cells (FR five cells on different geometry). Gate2F static visitors/binocular text only; trades deferred. Route17 south exit deferred. NPC walking/cry/audio/cutscene omitted.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

@@ -1,0 +1,1258 @@
+{
+  "sevii-four-island-harbor": {
+    "source": "FourIsland_Harbor",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          8,
+          2
+        ],
+        "source_destination": "MAP_FOUR_ISLAND",
+        "target": "sevii-four-island",
+        "target_index": 6,
+        "arrival": [
+          10,
+          28
+        ],
+        "door": false
+      }
+    ],
+    "connections": []
+  },
+  "sevii-four-island-icefall-cave-1-f": {
+    "source": "FourIsland_IcefallCave_1F",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          3,
+          17
+        ],
+        "source_destination": "MAP_FOUR_ISLAND_ICEFALL_CAVE_ENTRANCE",
+        "target": "sevii-four-island-icefall-cave-entrance",
+        "target_index": 1,
+        "arrival": [
+          10,
+          21
+        ],
+        "door": false
+      },
+      {
+        "index": 1,
+        "cell": [
+          2,
+          8
+        ],
+        "source_destination": "MAP_FOUR_ISLAND_ICEFALL_CAVE_ENTRANCE",
+        "target": "sevii-four-island-icefall-cave-entrance",
+        "target_index": 2,
+        "arrival": [
+          9,
+          7
+        ],
+        "door": false
+      },
+      {
+        "index": 2,
+        "cell": [
+          12,
+          12
+        ],
+        "source_destination": "MAP_FOUR_ISLAND_ICEFALL_CAVE_B1F",
+        "target": "sevii-four-island-icefall-cave-b1-f",
+        "target_index": 0,
+        "arrival": [
+          12,
+          12
+        ],
+        "door": false
+      },
+      {
+        "index": 3,
+        "cell": [
+          12,
+          3
+        ],
+        "source_destination": "MAP_FOUR_ISLAND_ICEFALL_CAVE_B1F",
+        "target": "sevii-four-island-icefall-cave-b1-f",
+        "target_index": 1,
+        "arrival": [
+          12,
+          3
+        ],
+        "door": false
+      },
+      {
+        "index": 4,
+        "cell": [
+          15,
+          16
+        ],
+        "source_destination": "MAP_FOUR_ISLAND_ICEFALL_CAVE_B1F",
+        "target": "sevii-four-island-icefall-cave-b1-f",
+        "target_index": 2,
+        "arrival": [
+          15,
+          16
+        ],
+        "door": false
+      },
+      {
+        "index": 5,
+        "cell": [
+          3,
+          6
+        ],
+        "source_destination": "MAP_FOUR_ISLAND_ICEFALL_CAVE_BACK",
+        "closed": true,
+        "reason": "此支线不在当前七岛HM路线范围。",
+        "door": false
+      }
+    ],
+    "connections": []
+  },
+  "sevii-four-island-icefall-cave-b1-f": {
+    "source": "FourIsland_IcefallCave_B1F",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          12,
+          12
+        ],
+        "source_destination": "MAP_FOUR_ISLAND_ICEFALL_CAVE_1F",
+        "target": "sevii-four-island-icefall-cave-1-f",
+        "target_index": 2,
+        "arrival": [
+          12,
+          12
+        ],
+        "door": false
+      },
+      {
+        "index": 1,
+        "cell": [
+          12,
+          3
+        ],
+        "source_destination": "MAP_FOUR_ISLAND_ICEFALL_CAVE_1F",
+        "target": "sevii-four-island-icefall-cave-1-f",
+        "target_index": 3,
+        "arrival": [
+          12,
+          3
+        ],
+        "door": false
+      },
+      {
+        "index": 2,
+        "cell": [
+          15,
+          16
+        ],
+        "source_destination": "MAP_FOUR_ISLAND_ICEFALL_CAVE_1F",
+        "target": "sevii-four-island-icefall-cave-1-f",
+        "target_index": 4,
+        "arrival": [
+          15,
+          16
+        ],
+        "door": false
+      }
+    ],
+    "connections": []
+  },
+  "sevii-four-island-icefall-cave-entrance": {
+    "source": "FourIsland_IcefallCave_Entrance",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          17,
+          30
+        ],
+        "source_destination": "MAP_FOUR_ISLAND",
+        "target": "sevii-four-island",
+        "target_index": 3,
+        "arrival": [
+          38,
+          12
+        ],
+        "door": false
+      },
+      {
+        "index": 1,
+        "cell": [
+          10,
+          21
+        ],
+        "source_destination": "MAP_FOUR_ISLAND_ICEFALL_CAVE_1F",
+        "target": "sevii-four-island-icefall-cave-1-f",
+        "target_index": 0,
+        "arrival": [
+          3,
+          17
+        ],
+        "door": false
+      },
+      {
+        "index": 2,
+        "cell": [
+          9,
+          7
+        ],
+        "source_destination": "MAP_FOUR_ISLAND_ICEFALL_CAVE_1F",
+        "target": "sevii-four-island-icefall-cave-1-f",
+        "target_index": 1,
+        "arrival": [
+          2,
+          8
+        ],
+        "door": false
+      }
+    ],
+    "connections": []
+  },
+  "sevii-four-island": {
+    "source": "FourIsland",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          18,
+          20
+        ],
+        "source_destination": "MAP_FOUR_ISLAND_POKEMON_CENTER_1F",
+        "closed": true,
+        "reason": "此支线不在当前七岛HM路线范围。",
+        "door": true
+      },
+      {
+        "index": 1,
+        "cell": [
+          12,
+          13
+        ],
+        "source_destination": "MAP_FOUR_ISLAND_POKEMON_DAY_CARE",
+        "closed": true,
+        "reason": "此支线不在当前七岛HM路线范围。",
+        "door": true
+      },
+      {
+        "index": 2,
+        "cell": [
+          25,
+          14
+        ],
+        "source_destination": "MAP_FOUR_ISLAND_HOUSE1",
+        "closed": true,
+        "reason": "此支线不在当前七岛HM路线范围。",
+        "door": true
+      },
+      {
+        "index": 3,
+        "cell": [
+          38,
+          12
+        ],
+        "source_destination": "MAP_FOUR_ISLAND_ICEFALL_CAVE_ENTRANCE",
+        "target": "sevii-four-island-icefall-cave-entrance",
+        "target_index": 0,
+        "arrival": [
+          17,
+          30
+        ],
+        "door": false
+      },
+      {
+        "index": 4,
+        "cell": [
+          33,
+          23
+        ],
+        "source_destination": "MAP_FOUR_ISLAND_LORELEIS_HOUSE",
+        "closed": true,
+        "reason": "此支线不在当前七岛HM路线范围。",
+        "door": true
+      },
+      {
+        "index": 5,
+        "cell": [
+          25,
+          26
+        ],
+        "source_destination": "MAP_FOUR_ISLAND_HOUSE2",
+        "closed": true,
+        "reason": "此支线不在当前七岛HM路线范围。",
+        "door": true
+      },
+      {
+        "index": 6,
+        "cell": [
+          10,
+          28
+        ],
+        "source_destination": "MAP_FOUR_ISLAND_HARBOR",
+        "target": "sevii-four-island-harbor",
+        "target_index": 0,
+        "arrival": [
+          8,
+          2
+        ],
+        "door": false
+      },
+      {
+        "index": 7,
+        "cell": [
+          22,
+          26
+        ],
+        "source_destination": "MAP_FOUR_ISLAND_MART",
+        "closed": true,
+        "reason": "此支线不在当前七岛HM路线范围。",
+        "door": true
+      }
+    ],
+    "connections": []
+  },
+  "sevii-mt-ember-exterior": {
+    "source": "MtEmber_Exterior",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          28,
+          48
+        ],
+        "source_destination": "MAP_ONE_ISLAND_KINDLE_ROAD",
+        "target": "sevii-one-island-kindle-road",
+        "target_index": 0,
+        "arrival": [
+          11,
+          6
+        ],
+        "door": false
+      },
+      {
+        "index": 1,
+        "cell": [
+          29,
+          48
+        ],
+        "source_destination": "MAP_ONE_ISLAND_KINDLE_ROAD",
+        "target": "sevii-one-island-kindle-road",
+        "target_index": 1,
+        "arrival": [
+          12,
+          6
+        ],
+        "door": false
+      },
+      {
+        "index": 2,
+        "cell": [
+          14,
+          24
+        ],
+        "source_destination": "MAP_MT_EMBER_SUMMIT_PATH_1F",
+        "closed": true,
+        "reason": "此支线不在当前七岛HM路线范围。",
+        "door": false
+      },
+      {
+        "index": 3,
+        "cell": [
+          39,
+          19
+        ],
+        "source_destination": "MAP_MT_EMBER_SUMMIT_PATH_3F",
+        "closed": true,
+        "reason": "此支线不在当前七岛HM路线范围。",
+        "door": false
+      },
+      {
+        "index": 4,
+        "cell": [
+          29,
+          7
+        ],
+        "source_destination": "MAP_MT_EMBER_SUMMIT",
+        "closed": true,
+        "reason": "此支线不在当前七岛HM路线范围。",
+        "door": false
+      },
+      {
+        "index": 5,
+        "cell": [
+          42,
+          39
+        ],
+        "source_destination": "MAP_MT_EMBER_RUBY_PATH_1F",
+        "target": "sevii-mt-ember-ruby-path-1-f",
+        "target_index": 0,
+        "arrival": [
+          22,
+          17
+        ],
+        "door": false
+      }
+    ],
+    "connections": []
+  },
+  "sevii-mt-ember-ruby-path-1-f": {
+    "source": "MtEmber_RubyPath_1F",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          22,
+          17
+        ],
+        "source_destination": "MAP_MT_EMBER_EXTERIOR",
+        "target": "sevii-mt-ember-exterior",
+        "target_index": 5,
+        "arrival": [
+          42,
+          39
+        ],
+        "door": false
+      },
+      {
+        "index": 1,
+        "cell": [
+          1,
+          1
+        ],
+        "source_destination": "MAP_MT_EMBER_RUBY_PATH_B1F",
+        "target": "sevii-mt-ember-ruby-path-b1-f",
+        "target_index": 0,
+        "arrival": [
+          9,
+          21
+        ],
+        "door": false
+      },
+      {
+        "index": 2,
+        "cell": [
+          24,
+          5
+        ],
+        "source_destination": "MAP_MT_EMBER_RUBY_PATH_B2F_STAIRS",
+        "target": "sevii-mt-ember-ruby-path-b2-f-stairs",
+        "target_index": 1,
+        "arrival": [
+          1,
+          4
+        ],
+        "door": false
+      }
+    ],
+    "connections": []
+  },
+  "sevii-mt-ember-ruby-path-b1-f-stairs": {
+    "source": "MtEmber_RubyPath_B1F_Stairs",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          4,
+          1
+        ],
+        "source_destination": "MAP_MT_EMBER_RUBY_PATH_B3F",
+        "target": "sevii-mt-ember-ruby-path-b3-f",
+        "target_index": 1,
+        "arrival": [
+          19,
+          19
+        ],
+        "door": false
+      },
+      {
+        "index": 1,
+        "cell": [
+          1,
+          5
+        ],
+        "source_destination": "MAP_MT_EMBER_RUBY_PATH_B2F_STAIRS",
+        "target": "sevii-mt-ember-ruby-path-b2-f-stairs",
+        "target_index": 0,
+        "arrival": [
+          6,
+          1
+        ],
+        "door": false
+      }
+    ],
+    "connections": []
+  },
+  "sevii-mt-ember-ruby-path-b1-f": {
+    "source": "MtEmber_RubyPath_B1F",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          9,
+          21
+        ],
+        "source_destination": "MAP_MT_EMBER_RUBY_PATH_1F",
+        "target": "sevii-mt-ember-ruby-path-1-f",
+        "target_index": 1,
+        "arrival": [
+          1,
+          1
+        ],
+        "door": false
+      },
+      {
+        "index": 1,
+        "cell": [
+          6,
+          1
+        ],
+        "source_destination": "MAP_MT_EMBER_RUBY_PATH_B2F",
+        "target": "sevii-mt-ember-ruby-path-b2-f",
+        "target_index": 0,
+        "arrival": [
+          1,
+          7
+        ],
+        "door": false
+      }
+    ],
+    "connections": []
+  },
+  "sevii-mt-ember-ruby-path-b2-f-stairs": {
+    "source": "MtEmber_RubyPath_B2F_Stairs",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          6,
+          1
+        ],
+        "source_destination": "MAP_MT_EMBER_RUBY_PATH_B1F_STAIRS",
+        "target": "sevii-mt-ember-ruby-path-b1-f-stairs",
+        "target_index": 1,
+        "arrival": [
+          1,
+          5
+        ],
+        "door": false
+      },
+      {
+        "index": 1,
+        "cell": [
+          1,
+          4
+        ],
+        "source_destination": "MAP_MT_EMBER_RUBY_PATH_1F",
+        "target": "sevii-mt-ember-ruby-path-1-f",
+        "target_index": 2,
+        "arrival": [
+          24,
+          5
+        ],
+        "door": false
+      }
+    ],
+    "connections": []
+  },
+  "sevii-mt-ember-ruby-path-b2-f": {
+    "source": "MtEmber_RubyPath_B2F",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          1,
+          7
+        ],
+        "source_destination": "MAP_MT_EMBER_RUBY_PATH_B1F",
+        "target": "sevii-mt-ember-ruby-path-b1-f",
+        "target_index": 1,
+        "arrival": [
+          6,
+          1
+        ],
+        "door": false
+      },
+      {
+        "index": 1,
+        "cell": [
+          13,
+          9
+        ],
+        "source_destination": "MAP_MT_EMBER_RUBY_PATH_B3F",
+        "target": "sevii-mt-ember-ruby-path-b3-f",
+        "target_index": 0,
+        "arrival": [
+          1,
+          4
+        ],
+        "door": false
+      }
+    ],
+    "connections": []
+  },
+  "sevii-mt-ember-ruby-path-b3-f": {
+    "source": "MtEmber_RubyPath_B3F",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          1,
+          4
+        ],
+        "source_destination": "MAP_MT_EMBER_RUBY_PATH_B2F",
+        "target": "sevii-mt-ember-ruby-path-b2-f",
+        "target_index": 1,
+        "arrival": [
+          13,
+          9
+        ],
+        "door": false
+      },
+      {
+        "index": 1,
+        "cell": [
+          19,
+          19
+        ],
+        "source_destination": "MAP_MT_EMBER_RUBY_PATH_B1F_STAIRS",
+        "target": "sevii-mt-ember-ruby-path-b1-f-stairs",
+        "target_index": 0,
+        "arrival": [
+          4,
+          1
+        ],
+        "door": false
+      },
+      {
+        "index": 2,
+        "cell": [
+          5,
+          19
+        ],
+        "source_destination": "MAP_MT_EMBER_RUBY_PATH_B4F",
+        "target": "sevii-mt-ember-ruby-path-b4-f",
+        "target_index": 1,
+        "arrival": [
+          4,
+          2
+        ],
+        "door": false
+      }
+    ],
+    "connections": []
+  },
+  "sevii-mt-ember-ruby-path-b4-f": {
+    "source": "MtEmber_RubyPath_B4F",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          14,
+          14
+        ],
+        "source_destination": "MAP_MT_EMBER_RUBY_PATH_B5F",
+        "target": "sevii-mt-ember-ruby-path-b5-f",
+        "target_index": 0,
+        "arrival": [
+          11,
+          7
+        ],
+        "door": false
+      },
+      {
+        "index": 1,
+        "cell": [
+          4,
+          2
+        ],
+        "source_destination": "MAP_MT_EMBER_RUBY_PATH_B3F",
+        "target": "sevii-mt-ember-ruby-path-b3-f",
+        "target_index": 2,
+        "arrival": [
+          5,
+          19
+        ],
+        "door": false
+      }
+    ],
+    "connections": []
+  },
+  "sevii-mt-ember-ruby-path-b5-f": {
+    "source": "MtEmber_RubyPath_B5F",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          11,
+          7
+        ],
+        "source_destination": "MAP_MT_EMBER_RUBY_PATH_B4F",
+        "target": "sevii-mt-ember-ruby-path-b4-f",
+        "target_index": 0,
+        "arrival": [
+          14,
+          14
+        ],
+        "door": false
+      }
+    ],
+    "connections": []
+  },
+  "sevii-one-island-harbor": {
+    "source": "OneIsland_Harbor",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          8,
+          2
+        ],
+        "source_destination": "MAP_ONE_ISLAND",
+        "target": "sevii-one-island",
+        "target_index": 3,
+        "arrival": [
+          12,
+          18
+        ],
+        "door": false
+      }
+    ],
+    "connections": []
+  },
+  "sevii-one-island-kindle-road-ember-spa": {
+    "source": "OneIsland_KindleRoad_EmberSpa",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          13,
+          36
+        ],
+        "source_destination": "MAP_ONE_ISLAND_KINDLE_ROAD",
+        "target": "sevii-one-island-kindle-road",
+        "target_index": 2,
+        "arrival": [
+          15,
+          58
+        ],
+        "door": false
+      }
+    ],
+    "connections": []
+  },
+  "sevii-one-island-kindle-road": {
+    "source": "OneIsland_KindleRoad",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          11,
+          6
+        ],
+        "source_destination": "MAP_MT_EMBER_EXTERIOR",
+        "target": "sevii-mt-ember-exterior",
+        "target_index": 0,
+        "arrival": [
+          28,
+          48
+        ],
+        "door": false
+      },
+      {
+        "index": 1,
+        "cell": [
+          12,
+          6
+        ],
+        "source_destination": "MAP_MT_EMBER_EXTERIOR",
+        "target": "sevii-mt-ember-exterior",
+        "target_index": 1,
+        "arrival": [
+          29,
+          48
+        ],
+        "door": false
+      },
+      {
+        "index": 2,
+        "cell": [
+          15,
+          58
+        ],
+        "source_destination": "MAP_ONE_ISLAND_KINDLE_ROAD_EMBER_SPA",
+        "target": "sevii-one-island-kindle-road-ember-spa",
+        "target_index": 0,
+        "arrival": [
+          13,
+          36
+        ],
+        "door": false
+      }
+    ],
+    "connections": [
+      {
+        "direction": "left",
+        "offset": 120,
+        "target": "sevii-one-island"
+      }
+    ]
+  },
+  "sevii-one-island-pokemon-center-1-f": {
+    "source": "OneIsland_PokemonCenter_1F",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          9,
+          9
+        ],
+        "source_destination": "MAP_ONE_ISLAND",
+        "target": "sevii-one-island",
+        "target_index": 0,
+        "arrival": [
+          14,
+          6
+        ],
+        "door": false
+      },
+      {
+        "index": 1,
+        "cell": [
+          1,
+          5
+        ],
+        "source_destination": "MAP_ONE_ISLAND_POKEMON_CENTER_2F",
+        "closed": true,
+        "reason": "此支线不在当前七岛HM路线范围。",
+        "door": false
+      }
+    ],
+    "connections": []
+  },
+  "sevii-one-island": {
+    "source": "OneIsland",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          14,
+          5
+        ],
+        "source_destination": "MAP_ONE_ISLAND_POKEMON_CENTER_1F",
+        "target": "sevii-one-island-pokemon-center-1-f",
+        "target_index": 0,
+        "arrival": [
+          9,
+          9
+        ],
+        "door": true
+      },
+      {
+        "index": 1,
+        "cell": [
+          19,
+          9
+        ],
+        "source_destination": "MAP_ONE_ISLAND_HOUSE1",
+        "closed": true,
+        "reason": "此支线不在当前七岛HM路线范围。",
+        "door": true
+      },
+      {
+        "index": 2,
+        "cell": [
+          8,
+          11
+        ],
+        "source_destination": "MAP_ONE_ISLAND_HOUSE2",
+        "closed": true,
+        "reason": "此支线不在当前七岛HM路线范围。",
+        "door": true
+      },
+      {
+        "index": 3,
+        "cell": [
+          12,
+          18
+        ],
+        "source_destination": "MAP_ONE_ISLAND_HARBOR",
+        "target": "sevii-one-island-harbor",
+        "target_index": 0,
+        "arrival": [
+          8,
+          2
+        ],
+        "door": false
+      }
+    ],
+    "connections": [
+      {
+        "direction": "right",
+        "offset": -120,
+        "target": "sevii-one-island-kindle-road"
+      }
+    ]
+  },
+  "sevii-three-island-berry-forest": {
+    "source": "ThreeIsland_BerryForest",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          43,
+          41
+        ],
+        "source_destination": "MAP_THREE_ISLAND_BOND_BRIDGE",
+        "target": "sevii-three-island-bond-bridge",
+        "target_index": 0,
+        "arrival": [
+          12,
+          6
+        ],
+        "door": false
+      },
+      {
+        "index": 1,
+        "cell": [
+          42,
+          41
+        ],
+        "source_destination": "MAP_THREE_ISLAND_BOND_BRIDGE",
+        "target": "sevii-three-island-bond-bridge",
+        "target_index": 0,
+        "arrival": [
+          12,
+          6
+        ],
+        "door": false
+      },
+      {
+        "index": 2,
+        "cell": [
+          44,
+          41
+        ],
+        "source_destination": "MAP_THREE_ISLAND_BOND_BRIDGE",
+        "target": "sevii-three-island-bond-bridge",
+        "target_index": 1,
+        "arrival": [
+          13,
+          6
+        ],
+        "door": false
+      }
+    ],
+    "connections": []
+  },
+  "sevii-three-island-bond-bridge": {
+    "source": "ThreeIsland_BondBridge",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          12,
+          6
+        ],
+        "source_destination": "MAP_THREE_ISLAND_BERRY_FOREST",
+        "target": "sevii-three-island-berry-forest",
+        "target_index": 0,
+        "arrival": [
+          43,
+          41
+        ],
+        "door": false
+      },
+      {
+        "index": 1,
+        "cell": [
+          13,
+          6
+        ],
+        "source_destination": "MAP_THREE_ISLAND_BERRY_FOREST",
+        "target": "sevii-three-island-berry-forest",
+        "target_index": 0,
+        "arrival": [
+          43,
+          41
+        ],
+        "door": false
+      }
+    ],
+    "connections": [
+      {
+        "direction": "right",
+        "offset": 0,
+        "target": "sevii-three-island"
+      }
+    ]
+  },
+  "sevii-three-island-harbor": {
+    "source": "ThreeIsland_Harbor",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          8,
+          2
+        ],
+        "source_destination": "MAP_THREE_ISLAND_PORT",
+        "target": "sevii-three-island-port",
+        "target_index": 2,
+        "arrival": [
+          12,
+          13
+        ],
+        "door": false
+      }
+    ],
+    "connections": []
+  },
+  "sevii-three-island-port": {
+    "source": "ThreeIsland_Port",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          16,
+          4
+        ],
+        "source_destination": "MAP_THREE_ISLAND_DUNSPARCE_TUNNEL",
+        "closed": true,
+        "reason": "此支线不在当前七岛HM路线范围。",
+        "door": false
+      },
+      {
+        "index": 1,
+        "cell": [
+          38,
+          5
+        ],
+        "source_destination": "MAP_THREE_ISLAND_DUNSPARCE_TUNNEL",
+        "closed": true,
+        "reason": "此支线不在当前七岛HM路线范围。",
+        "door": false
+      },
+      {
+        "index": 2,
+        "cell": [
+          12,
+          13
+        ],
+        "source_destination": "MAP_THREE_ISLAND_HARBOR",
+        "target": "sevii-three-island-harbor",
+        "target_index": 0,
+        "arrival": [
+          8,
+          2
+        ],
+        "door": false
+      }
+    ],
+    "connections": [
+      {
+        "direction": "up",
+        "offset": 0,
+        "target": "sevii-three-island"
+      }
+    ]
+  },
+  "sevii-three-island": {
+    "source": "ThreeIsland",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          3,
+          31
+        ],
+        "source_destination": "MAP_THREE_ISLAND_HOUSE1",
+        "closed": true,
+        "reason": "此支线不在当前七岛HM路线范围。",
+        "door": true
+      },
+      {
+        "index": 1,
+        "cell": [
+          14,
+          27
+        ],
+        "source_destination": "MAP_THREE_ISLAND_POKEMON_CENTER_1F",
+        "closed": true,
+        "reason": "此支线不在当前七岛HM路线范围。",
+        "door": true
+      },
+      {
+        "index": 2,
+        "cell": [
+          18,
+          12
+        ],
+        "source_destination": "MAP_THREE_ISLAND_MART",
+        "closed": true,
+        "reason": "此支线不在当前七岛HM路线范围。",
+        "door": true
+      },
+      {
+        "index": 3,
+        "cell": [
+          4,
+          6
+        ],
+        "source_destination": "MAP_THREE_ISLAND_HOUSE2",
+        "closed": true,
+        "reason": "此支线不在当前七岛HM路线范围。",
+        "door": true
+      },
+      {
+        "index": 4,
+        "cell": [
+          12,
+          6
+        ],
+        "source_destination": "MAP_THREE_ISLAND_HOUSE3",
+        "closed": true,
+        "reason": "此支线不在当前七岛HM路线范围。",
+        "door": true
+      },
+      {
+        "index": 5,
+        "cell": [
+          12,
+          12
+        ],
+        "source_destination": "MAP_THREE_ISLAND_HOUSE4",
+        "closed": true,
+        "reason": "此支线不在当前七岛HM路线范围。",
+        "door": true
+      },
+      {
+        "index": 6,
+        "cell": [
+          13,
+          19
+        ],
+        "source_destination": "MAP_THREE_ISLAND_HOUSE5",
+        "closed": true,
+        "reason": "此支线不在当前七岛HM路线范围。",
+        "door": true
+      }
+    ],
+    "connections": [
+      {
+        "direction": "down",
+        "offset": 0,
+        "target": "sevii-three-island-port"
+      },
+      {
+        "direction": "left",
+        "offset": 0,
+        "target": "sevii-three-island-bond-bridge"
+      }
+    ]
+  },
+  "sevii-two-island-harbor": {
+    "source": "TwoIsland_Harbor",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          8,
+          2
+        ],
+        "source_destination": "MAP_TWO_ISLAND",
+        "target": "sevii-two-island",
+        "target_index": 3,
+        "arrival": [
+          10,
+          8
+        ],
+        "door": false
+      }
+    ],
+    "connections": []
+  },
+  "sevii-two-island-joyful-game-corner": {
+    "source": "TwoIsland_JoyfulGameCorner",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          5,
+          8
+        ],
+        "source_destination": "MAP_TWO_ISLAND",
+        "target": "sevii-two-island",
+        "target_index": 0,
+        "arrival": [
+          39,
+          10
+        ],
+        "door": false
+      }
+    ],
+    "connections": []
+  },
+  "sevii-two-island": {
+    "source": "TwoIsland",
+    "warps": [
+      {
+        "index": 0,
+        "cell": [
+          39,
+          9
+        ],
+        "source_destination": "MAP_TWO_ISLAND_JOYFUL_GAME_CORNER",
+        "target": "sevii-two-island-joyful-game-corner",
+        "target_index": 0,
+        "arrival": [
+          5,
+          8
+        ],
+        "door": true
+      },
+      {
+        "index": 1,
+        "cell": [
+          33,
+          9
+        ],
+        "source_destination": "MAP_TWO_ISLAND_HOUSE",
+        "closed": true,
+        "reason": "此支线不在当前七岛HM路线范围。",
+        "door": true
+      },
+      {
+        "index": 2,
+        "cell": [
+          21,
+          7
+        ],
+        "source_destination": "MAP_TWO_ISLAND_POKEMON_CENTER_1F",
+        "closed": true,
+        "reason": "此支线不在当前七岛HM路线范围。",
+        "door": true
+      },
+      {
+        "index": 3,
+        "cell": [
+          10,
+          8
+        ],
+        "source_destination": "MAP_TWO_ISLAND_HARBOR",
+        "target": "sevii-two-island-harbor",
+        "target_index": 0,
+        "arrival": [
+          8,
+          2
+        ],
+        "door": false
+      }
+    ],
+    "connections": []
+  }
+}

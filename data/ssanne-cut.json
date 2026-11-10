@@ -1,0 +1,126 @@
+{
+  "compatible": [
+    "bulbasaur",
+    "charmander",
+    "rattata",
+    "ivysaur",
+    "charmeleon",
+    "raticate",
+    "venusaur",
+    "charizard",
+    "beedrill",
+    "sandshrew",
+    "nidoran_m",
+    "nidorino",
+    "nidoran_f",
+    "nidorina",
+    "paras",
+    "oddish",
+    "bellsprout",
+    "meowth",
+    "bellossom",
+    "diglett",
+    "dragonite",
+    "dugtrio",
+    "farfetchd",
+    "gloom",
+    "kabutops",
+    "kangaskhan",
+    "kingler",
+    "krabby",
+    "lickitung",
+    "nidoking",
+    "nidoqueen",
+    "parasect",
+    "persian",
+    "rhydon",
+    "sandslash",
+    "scizor",
+    "scyther",
+    "steelix",
+    "tangela",
+    "tentacool",
+    "tentacruel",
+    "victreebel",
+    "vileplume",
+    "weepinbell"
+  ],
+  "hm_moves": [
+    "cut"
+  ],
+  "item": "hm01",
+  "move": "cut",
+  "captain": {
+    "map": "ssanne-captain",
+    "cell": [
+      4,
+      2
+    ],
+    "facing": "up",
+    "sprite": "res://assets/ssanne-captain/captain.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  "trees": [
+    {
+      "map": "vermilion-city",
+      "cell": [
+        15,
+        18
+      ],
+      "block_cell": [
+        7,
+        9
+      ],
+      "original": 53,
+      "replacement": 76,
+      "patch": "res://assets/ssanne-captain/cut-block-53-76.png",
+      "cells": [
+        {
+          "cell": [
+            14,
+            18
+          ],
+          "foot": 44,
+          "solid": 0
+        },
+        {
+          "cell": [
+            15,
+            18
+          ],
+          "foot": 44,
+          "solid": 0
+        },
+        {
+          "cell": [
+            14,
+            19
+          ],
+          "foot": 80,
+          "solid": 1
+        },
+        {
+          "cell": [
+            15,
+            19
+          ],
+          "foot": 44,
+          "solid": 0
+        }
+      ]
+    }
+  ],
+  "gym": {
+    "map": "vermilion-city",
+    "cell": [
+      12,
+      19
+    ],
+    "sourceWarpIndex": 3
+  }
+}

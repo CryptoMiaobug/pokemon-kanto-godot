@@ -1,0 +1,142 @@
+[
+  {
+    "id": "viridian_forest_rick",
+    "name": "捕虫少年瑞克",
+    "cell": [
+      30,
+      33
+    ],
+    "facing": "left",
+    "redObject": 2,
+    "redFlag": "EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_0",
+    "redPartyIndex": 1,
+    "fireRedTrainer": "TRAINER_BUG_CATCHER_RICK",
+    "sourceIntro": "Hey! You have POKéMON! Come on! Let's battle'em! ",
+    "intro": "嘿！你也有宝可梦！来对战吧！",
+    "defeat": "不！绿毛虫撑不住了！",
+    "after": "嘘！会把虫子吓跑的。",
+    "reward": 72,
+    "party": [
+      {
+        "species_id": "weedle",
+        "level": 6,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "def"
+        },
+        "moves": [
+          "poisonsting",
+          "stringshot"
+        ]
+      },
+      {
+        "species_id": "caterpie",
+        "level": 6,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "def"
+        },
+        "moves": [
+          "tackle",
+          "stringshot"
+        ]
+      }
+    ],
+    "portrait": "res://assets/forest-trainers/trainer.png"
+  },
+  {
+    "id": "viridian_forest_doug",
+    "name": "捕虫少年道格",
+    "cell": [
+      30,
+      19
+    ],
+    "facing": "left",
+    "redObject": 3,
+    "redFlag": "EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_1",
+    "redPartyIndex": 2,
+    "fireRedTrainer": "TRAINER_BUG_CATCHER_DOUG",
+    "sourceIntro": "Yo! You can't jam out if you're a POKéMON trainer! ",
+    "intro": "喂！宝可梦训练家可不能临阵退缩！",
+    "defeat": "咦？我已经没有宝可梦了！",
+    "after": "可恶！我要去抓更强的宝可梦！",
+    "reward": 84,
+    "party": [
+      {
+        "species_id": "weedle",
+        "level": 7,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spe"
+        },
+        "moves": [
+          "poisonsting",
+          "stringshot"
+        ]
+      },
+      {
+        "species_id": "kakuna",
+        "level": 7,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spa"
+        },
+        "moves": [
+          "harden"
+        ]
+      },
+      {
+        "species_id": "weedle",
+        "level": 7,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "poisonsting",
+          "stringshot"
+        ]
+      }
+    ],
+    "portrait": "res://assets/forest-trainers/trainer.png"
+  },
+  {
+    "id": "viridian_forest_sammy",
+    "name": "捕虫少年萨米",
+    "cell": [
+      2,
+      18
+    ],
+    "facing": "left",
+    "redObject": 4,
+    "redFlag": "EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_2",
+    "redPartyIndex": 3,
+    "fireRedTrainer": "TRAINER_BUG_CATCHER_SAMMY",
+    "sourceIntro": "Hey, wait up! What's the hurry? ",
+    "intro": "嘿，等一下！你这么着急要去哪儿？",
+    "defeat": "我认输！你真厉害！",
+    "after": "地上有时能找到东西。我在找掉落的物品。",
+    "reward": 108,
+    "party": [
+      {
+        "species_id": "weedle",
+        "level": 9,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "poisonsting",
+          "stringshot"
+        ]
+      }
+    ],
+    "portrait": "res://assets/forest-trainers/trainer.png"
+  }
+]

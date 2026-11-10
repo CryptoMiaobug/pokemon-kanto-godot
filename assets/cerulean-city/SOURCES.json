@@ -1,0 +1,211 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "map": "data/maps/CeruleanCity.json",
+  "mapSHA256": "bcc48a3c0372ab06bfa5757129d207b7a2f0743752a41f11b0ca5234997cb2e1",
+  "tiles": "assets/tilesets/overworld.png",
+  "connections": {
+    "north": {
+      "map": "ROUTE_24",
+      "mapId": 35,
+      "mapName": "Route24",
+      "offset": 5,
+      "dx": 5,
+      "dy": -18,
+      "copyRect": {
+        "x": 0,
+        "y": 15,
+        "w": 10,
+        "h": 3
+      },
+      "onEnter": {
+        "newY": 35,
+        "xAdd": -10
+      },
+      "macro": {
+        "stripSrc": 150,
+        "stripDest": 8,
+        "stripLength": 10,
+        "connectedWidth": 10,
+        "yAlign": 35,
+        "xAlign": -10,
+        "viewPointer": 289
+      }
+    },
+    "south": {
+      "map": "ROUTE_5",
+      "mapId": 16,
+      "mapName": "Route5",
+      "offset": 5,
+      "dx": 5,
+      "dy": 18,
+      "copyRect": {
+        "x": 0,
+        "y": 0,
+        "w": 10,
+        "h": 3
+      },
+      "onEnter": {
+        "newY": 0,
+        "xAdd": -10
+      },
+      "macro": {
+        "stripSrc": 0,
+        "stripDest": 554,
+        "stripLength": 10,
+        "connectedWidth": 10,
+        "yAlign": 0,
+        "xAlign": -10,
+        "viewPointer": 17
+      }
+    },
+    "west": {
+      "map": "ROUTE_4",
+      "mapId": 15,
+      "mapName": "Route4",
+      "offset": 4,
+      "dx": -45,
+      "dy": 4,
+      "copyRect": {
+        "x": 42,
+        "y": 0,
+        "w": 3,
+        "h": 9
+      },
+      "onEnter": {
+        "newX": 89,
+        "yAdd": -8
+      },
+      "macro": {
+        "stripSrc": 42,
+        "stripDest": 182,
+        "stripLength": 9,
+        "connectedWidth": 45,
+        "yAlign": -8,
+        "xAlign": 89,
+        "viewPointer": 96
+      }
+    },
+    "east": {
+      "map": "ROUTE_9",
+      "mapId": 20,
+      "mapName": "Route9",
+      "offset": 4,
+      "dx": 20,
+      "dy": 4,
+      "copyRect": {
+        "x": 0,
+        "y": 0,
+        "w": 3,
+        "h": 9
+      },
+      "onEnter": {
+        "newX": 0,
+        "yAdd": -8
+      },
+      "macro": {
+        "stripSrc": 0,
+        "stripDest": 205,
+        "stripLength": 9,
+        "connectedWidth": 30,
+        "yAlign": -8,
+        "xAlign": 0,
+        "viewPointer": 37
+      }
+    }
+  },
+  "warps": [
+    {
+      "x": 27,
+      "y": 11,
+      "destMap": "CERULEAN_TRASHED_HOUSE",
+      "destMapId": 62,
+      "destMapName": "CeruleanTrashedHouse",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 13,
+      "y": 15,
+      "destMap": "CERULEAN_TRADE_HOUSE",
+      "destMapId": 63,
+      "destMapName": "CeruleanTradeHouse",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 19,
+      "y": 17,
+      "destMap": "CERULEAN_POKECENTER",
+      "destMapId": 64,
+      "destMapName": "CeruleanPokecenter",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 30,
+      "y": 19,
+      "destMap": "CERULEAN_GYM",
+      "destMapId": 65,
+      "destMapName": "CeruleanGym",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 13,
+      "y": 25,
+      "destMap": "BIKE_SHOP",
+      "destMapId": 66,
+      "destMapName": "BikeShop",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 25,
+      "y": 25,
+      "destMap": "CERULEAN_MART",
+      "destMapId": 67,
+      "destMapName": "CeruleanMart",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "destMap": "CERULEAN_CAVE_1F",
+      "destMapId": 228,
+      "destMapName": "CeruleanCave1F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 27,
+      "y": 9,
+      "destMap": "CERULEAN_TRASHED_HOUSE",
+      "destMapId": 62,
+      "destMapName": "CeruleanTrashedHouse",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 9,
+      "y": 11,
+      "destMap": "CERULEAN_BADGE_HOUSE",
+      "destMapId": 230,
+      "destMapName": "CeruleanBadgeHouse",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 9,
+      "y": 9,
+      "destMap": "CERULEAN_BADGE_HOUSE",
+      "destMapId": 230,
+      "destMapName": "CeruleanBadgeHouse",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "adaptation": "Existing original block decoder, outdoor recolor/interior neutral palette and foot solid; tree foreground42/43. Center and gym open; other source door cells blocked as scope boundary. City actors/story/trade omitted. Nurse original[3,1] reused existing16px down sprite; center PC reuses existing framework. Outer unavailable routes closed with status, no added wall art.",
+  "rights": "Original rights holders; no redistribution clearance.",
+  "trashedHouseAddition": "Original front27,11/back27,9 reopened; bill ticket guard swap27,12->28,12, Rocket30,8 removed only after TM28; Route5 original south x-10. Other city actors/doors remain previous scope."
+}

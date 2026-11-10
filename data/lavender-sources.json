@@ -1,0 +1,57 @@
+{
+  "baseline": "9497cfac585af3581019e95305be6796d4413aec",
+  "sources": [
+    "Red Route10/LavenderTown/LavenderPokecenter/LavenderMart original maps",
+    "FR Route10 scripts/map/trainer_parties",
+    "FR LavenderTown_Mart scripts/items",
+    "src/data/pokemon/item_effects.h sItemEffect_SuperPotion heal50"
+  ],
+  "dependencies": {
+    "existing": [
+      "four teams all species and moves",
+      "nurse PC",
+      "atomic purchase"
+    ],
+    "required": [
+      "south maps connections trainer adapters",
+      "SuperPotion700 heal50 optional v3 inventory"
+    ],
+    "deferred": [
+      "PowerPlant Mark29 roster beyond land slice",
+      "tower Fuji flute name rater Route8/12",
+      "all other Lavender stock"
+    ]
+  },
+  "story": [
+    {
+      "before": "south tunnel",
+      "action": "original south door down",
+      "after": "Route10 south",
+      "reward": 0
+    },
+    {
+      "before": "unbeaten trainer",
+      "action": "E confirm win",
+      "after": "independent beaten flag plus source bonus",
+      "reward": "atomic"
+    },
+    {
+      "before": "city",
+      "action": "nurse confirm",
+      "after": "healed existing IDs no free items",
+      "reward": 0
+    },
+    {
+      "before": "shop",
+      "action": "confirm SuperPotion purchase",
+      "after": "money-700 inventory+1 atomic",
+      "reward": 0
+    },
+    {
+      "before": "any transaction",
+      "action": "cancel loss repeat or save failure",
+      "after": "no duplicate reward; save failure exact rollback",
+      "reward": 0
+    }
+  ]
+}

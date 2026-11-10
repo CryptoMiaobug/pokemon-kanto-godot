@@ -1,0 +1,77 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/SafariZoneGate.json",
+  "mapSHA256": "3fe95724636ab5c5867debbad3d4bd3a27055f79be4cdbfc869d999c63857701",
+  "warps": [
+    {
+      "x": 3,
+      "y": 5,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 5,
+      "destWarpIndex": 4
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 5,
+      "destWarpIndex": 4
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "destMap": "SAFARI_ZONE_CENTER",
+      "destMapId": 220,
+      "destMapName": "SafariZoneCenter",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "destMap": "SAFARI_ZONE_CENTER",
+      "destMapId": 220,
+      "destMapName": "SafariZoneCenter",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "SAFARIZONEGATE_SAFARI_ZONE_WORKER1",
+      "x": 6,
+      "y": 2,
+      "sprite": "SPRITE_SAFARI_ZONE_WORKER",
+      "spriteId": 35,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_SAFARIZONEGATE_SAFARI_ZONE_WORKER1",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "SAFARIZONEGATE_SAFARI_ZONE_WORKER2",
+      "x": 1,
+      "y": 4,
+      "sprite": "SPRITE_SAFARI_ZONE_WORKER",
+      "spriteId": 35,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_SAFARIZONEGATE_SAFARI_ZONE_WORKER2",
+      "textIndex": 2
+    }
+  ],
+  "adaptation": "Red geometry/collision/actors; FireRed complete ordered teams. FR-only doubles, Route15 item, Gate2F, Safari/warden/TM06 deferred.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

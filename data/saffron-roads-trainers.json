@@ -1,0 +1,1813 @@
+[
+  {
+    "map": "saffron-gym",
+    "cell": [
+      10,
+      1
+    ],
+    "redObject": 2,
+    "sprite": "res://assets/saffron-gym/actor-2.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": "",
+    "id": "saffrongym_amanda",
+    "name": "AMANDA",
+    "title": "金黄道馆",
+    "party": [
+      {
+        "species_id": "gastly",
+        "level": 34,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "atk"
+        },
+        "moves": [
+          "nightshade",
+          "confuseray",
+          "dreameater",
+          "destinybond"
+        ]
+      },
+      {
+        "species_id": "haunter",
+        "level": 34,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spd"
+        },
+        "moves": [
+          "nightshade",
+          "confuseray",
+          "shadowpunch",
+          "dreameater"
+        ]
+      }
+    ],
+    "reward": 1088,
+    "portrait": "res://assets/saffron-gym/trainer-2-trainer.png",
+    "fireRedTrainer": "ChannelerAmanda",
+    "sourceName": "AMANDA",
+    "sourceFemale": true,
+    "moneyCoefficient": 8,
+    "intro": "来与我的宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "你的实力很强。"
+  },
+  {
+    "map": "saffron-gym",
+    "cell": [
+      17,
+      1
+    ],
+    "redObject": 3,
+    "sprite": "res://assets/saffron-gym/actor-3.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": "",
+    "id": "saffrongym_johan",
+    "name": "JOHAN",
+    "title": "金黄道馆",
+    "party": [
+      {
+        "species_id": "kadabra",
+        "level": 31,
+        "ivs": 6,
+        "nature": {
+          "up": "spa",
+          "down": "spd"
+        },
+        "moves": [
+          "psybeam",
+          "reflect",
+          "recover",
+          "futuresight"
+        ]
+      },
+      {
+        "species_id": "slowpoke",
+        "level": 31,
+        "ivs": 6,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "watergun",
+          "confusion",
+          "disable",
+          "headbutt"
+        ]
+      },
+      {
+        "species_id": "mr_mime",
+        "level": 31,
+        "ivs": 6,
+        "nature": {
+          "up": "def",
+          "down": "spe"
+        },
+        "moves": [
+          "reflect",
+          "magicalleaf",
+          "encore",
+          "psybeam"
+        ]
+      },
+      {
+        "species_id": "kadabra",
+        "level": 31,
+        "ivs": 6,
+        "nature": {
+          "up": "spa",
+          "down": "atk"
+        },
+        "moves": [
+          "psybeam",
+          "reflect",
+          "recover",
+          "futuresight"
+        ]
+      }
+    ],
+    "reward": 620,
+    "portrait": "res://assets/saffron-gym/trainer-3-trainer.png",
+    "fireRedTrainer": "PsychicJohan",
+    "sourceName": "JOHAN",
+    "sourceFemale": false,
+    "moneyCoefficient": 5,
+    "intro": "来与我的宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "你的实力很强。"
+  },
+  {
+    "map": "saffron-gym",
+    "cell": [
+      3,
+      7
+    ],
+    "redObject": 4,
+    "sprite": "res://assets/saffron-gym/actor-4.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": "",
+    "id": "saffrongym_stacy",
+    "name": "STACY",
+    "title": "金黄道馆",
+    "party": [
+      {
+        "species_id": "haunter",
+        "level": 38,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "nightshade",
+          "confuseray",
+          "shadowpunch",
+          "dreameater"
+        ]
+      }
+    ],
+    "reward": 1216,
+    "portrait": "res://assets/saffron-gym/trainer-4-trainer.png",
+    "fireRedTrainer": "ChannelerStacy",
+    "sourceName": "STACY",
+    "sourceFemale": true,
+    "moneyCoefficient": 8,
+    "intro": "来与我的宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "你的实力很强。"
+  },
+  {
+    "map": "saffron-gym",
+    "cell": [
+      17,
+      7
+    ],
+    "redObject": 5,
+    "sprite": "res://assets/saffron-gym/actor-5.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": "",
+    "id": "saffrongym_tyron",
+    "name": "TYRON",
+    "title": "金黄道馆",
+    "party": [
+      {
+        "species_id": "mr_mime",
+        "level": 34,
+        "ivs": 6,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "magicalleaf",
+          "encore",
+          "psybeam",
+          "recycle"
+        ]
+      },
+      {
+        "species_id": "kadabra",
+        "level": 34,
+        "ivs": 6,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "reflect",
+          "recover",
+          "futuresight",
+          "roleplay"
+        ]
+      }
+    ],
+    "reward": 680,
+    "portrait": "res://assets/saffron-gym/trainer-5-trainer.png",
+    "fireRedTrainer": "PsychicTyron",
+    "sourceName": "TYRON",
+    "sourceFemale": false,
+    "moneyCoefficient": 5,
+    "intro": "来与我的宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "你的实力很强。"
+  },
+  {
+    "map": "saffron-gym",
+    "cell": [
+      3,
+      13
+    ],
+    "redObject": 6,
+    "sprite": "res://assets/saffron-gym/actor-6.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": "",
+    "id": "saffrongym_tasha",
+    "name": "TASHA",
+    "title": "金黄道馆",
+    "party": [
+      {
+        "species_id": "gastly",
+        "level": 33,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spd"
+        },
+        "moves": [
+          "nightshade",
+          "confuseray",
+          "dreameater",
+          "destinybond"
+        ]
+      },
+      {
+        "species_id": "gastly",
+        "level": 33,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "nightshade",
+          "confuseray",
+          "dreameater",
+          "destinybond"
+        ]
+      },
+      {
+        "species_id": "haunter",
+        "level": 33,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "nightshade",
+          "confuseray",
+          "shadowpunch",
+          "dreameater"
+        ]
+      }
+    ],
+    "reward": 1056,
+    "portrait": "res://assets/saffron-gym/trainer-6-trainer.png",
+    "fireRedTrainer": "ChannelerTasha",
+    "sourceName": "TASHA",
+    "sourceFemale": true,
+    "moneyCoefficient": 8,
+    "intro": "来与我的宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "你的实力很强。"
+  },
+  {
+    "map": "saffron-gym",
+    "cell": [
+      17,
+      13
+    ],
+    "redObject": 7,
+    "sprite": "res://assets/saffron-gym/actor-7.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": "",
+    "id": "saffrongym_cameron",
+    "name": "CAMERON",
+    "title": "金黄道馆",
+    "party": [
+      {
+        "species_id": "slowpoke",
+        "level": 33,
+        "ivs": 6,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "watergun",
+          "confusion",
+          "disable",
+          "headbutt"
+        ]
+      },
+      {
+        "species_id": "slowpoke",
+        "level": 33,
+        "ivs": 6,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "watergun",
+          "confusion",
+          "disable",
+          "headbutt"
+        ]
+      },
+      {
+        "species_id": "slowbro",
+        "level": 33,
+        "ivs": 6,
+        "nature": {
+          "up": "spd",
+          "down": "spa"
+        },
+        "moves": [
+          "watergun",
+          "confusion",
+          "disable",
+          "headbutt"
+        ]
+      }
+    ],
+    "reward": 660,
+    "portrait": "res://assets/saffron-gym/trainer-7-trainer.png",
+    "fireRedTrainer": "PsychicCameron",
+    "sourceName": "CAMERON",
+    "sourceFemale": false,
+    "moneyCoefficient": 5,
+    "intro": "来与我的宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "你的实力很强。"
+  },
+  {
+    "map": "saffron-gym",
+    "cell": [
+      3,
+      1
+    ],
+    "redObject": 8,
+    "sprite": "res://assets/saffron-gym/actor-8.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": "",
+    "id": "saffrongym_preston",
+    "name": "PRESTON",
+    "title": "金黄道馆",
+    "party": [
+      {
+        "species_id": "slowbro",
+        "level": 38,
+        "ivs": 6,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "disable",
+          "headbutt",
+          "amnesia",
+          "withdraw"
+        ]
+      }
+    ],
+    "reward": 760,
+    "portrait": "res://assets/saffron-gym/trainer-8-trainer.png",
+    "fireRedTrainer": "PsychicPreston",
+    "sourceName": "PRESTON",
+    "sourceFemale": false,
+    "moneyCoefficient": 5,
+    "intro": "来与我的宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "你的实力很强。"
+  },
+  {
+    "map": "saffron-gym",
+    "cell": [
+      9,
+      8
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/saffron-gym/actor-1.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": "",
+    "id": "saffron_sabrina",
+    "name": "娜姿",
+    "title": "金黄道馆",
+    "party": [
+      {
+        "species_id": "kadabra",
+        "level": 38,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "psybeam",
+          "reflect",
+          "futuresight",
+          "calmmind"
+        ]
+      },
+      {
+        "species_id": "mr_mime",
+        "level": 37,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "atk"
+        },
+        "moves": [
+          "barrier",
+          "psybeam",
+          "batonpass",
+          "calmmind"
+        ]
+      },
+      {
+        "species_id": "venomoth",
+        "level": 38,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "psybeam",
+          "gust",
+          "leechlife",
+          "supersonic"
+        ]
+      },
+      {
+        "species_id": "alakazam",
+        "level": 43,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "psychic",
+          "recover",
+          "futuresight",
+          "calmmind"
+        ]
+      }
+    ],
+    "reward": 4300,
+    "portrait": "res://assets/saffron-gym/trainer-1-trainer.png",
+    "fireRedTrainer": "LeaderSabrina",
+    "sourceName": "SABRINA",
+    "sourceFemale": true,
+    "moneyCoefficient": 25,
+    "intro": "来与我的宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "你的实力很强。",
+    "badge": "marsh",
+    "items": [
+      "hyperpotion",
+      "hyperpotion",
+      "fullheal"
+    ]
+  },
+  {
+    "map": "route12",
+    "cell": [
+      14,
+      31
+    ],
+    "redObject": 2,
+    "sprite": "res://assets/route12/actor-2.png",
+    "facing": "left",
+    "alphaBBox": [
+      2,
+      0,
+      15,
+      16
+    ],
+    "item": "",
+    "id": "route12_ned",
+    "name": "NED",
+    "title": "12号道路",
+    "party": [
+      {
+        "species_id": "goldeen",
+        "level": 22,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "tailwhip",
+          "watersport",
+          "supersonic",
+          "hornattack"
+        ]
+      },
+      {
+        "species_id": "poliwag",
+        "level": 22,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spe"
+        },
+        "moves": [
+          "bubble",
+          "hypnosis",
+          "watergun",
+          "doubleslap"
+        ]
+      },
+      {
+        "species_id": "goldeen",
+        "level": 22,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "tailwhip",
+          "watersport",
+          "supersonic",
+          "hornattack"
+        ]
+      }
+    ],
+    "reward": 792,
+    "portrait": "res://assets/route12/trainer-2-trainer.png",
+    "fireRedTrainer": "FishermanNed",
+    "sourceName": "NED",
+    "sourceFemale": false,
+    "moneyCoefficient": 9,
+    "intro": "来与我的宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "你的实力很强。"
+  },
+  {
+    "map": "route12",
+    "cell": [
+      5,
+      39
+    ],
+    "redObject": 3,
+    "sprite": "res://assets/route12/actor-3.png",
+    "facing": "up",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "item": "",
+    "id": "route12_chip",
+    "name": "CHIP",
+    "title": "12号道路",
+    "party": [
+      {
+        "species_id": "tentacool",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "atk"
+        },
+        "moves": [
+          "poisonsting",
+          "supersonic",
+          "constrict",
+          "acid"
+        ]
+      },
+      {
+        "species_id": "goldeen",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spd"
+        },
+        "moves": [
+          "watersport",
+          "supersonic",
+          "hornattack",
+          "flail"
+        ]
+      }
+    ],
+    "reward": 864,
+    "portrait": "res://assets/route12/trainer-3-trainer.png",
+    "fireRedTrainer": "FishermanChip",
+    "sourceName": "CHIP",
+    "sourceFemale": false,
+    "moneyCoefficient": 9,
+    "intro": "来与我的宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "你的实力很强。"
+  },
+  {
+    "map": "route12",
+    "cell": [
+      11,
+      92
+    ],
+    "redObject": 4,
+    "sprite": "res://assets/route12/actor-4.png",
+    "facing": "left",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "item": "",
+    "id": "route12_justin",
+    "name": "JUSTIN",
+    "title": "12号道路",
+    "party": [
+      {
+        "species_id": "nidoran_m",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spa"
+        },
+        "moves": [
+          "doublekick",
+          "poisonsting",
+          "hornattack",
+          "helpinghand"
+        ]
+      },
+      {
+        "species_id": "nidorino",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spa"
+        },
+        "moves": [
+          "doublekick",
+          "poisonsting",
+          "hornattack",
+          "helpinghand"
+        ]
+      }
+    ],
+    "reward": 580,
+    "portrait": "res://assets/route12/trainer-4-trainer.png",
+    "fireRedTrainer": "CamperJustin",
+    "sourceName": "JUSTIN",
+    "sourceFemale": false,
+    "moneyCoefficient": 5,
+    "intro": "来与我的宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "你的实力很强。"
+  },
+  {
+    "map": "route12",
+    "cell": [
+      14,
+      76
+    ],
+    "redObject": 5,
+    "sprite": "res://assets/route12/actor-5.png",
+    "facing": "up",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": "",
+    "id": "route12_luca",
+    "name": "LUCA",
+    "title": "12号道路",
+    "party": [
+      {
+        "species_id": "voltorb",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spa"
+        },
+        "moves": [
+          "screech",
+          "sonicboom",
+          "spark",
+          "selfdestruct"
+        ]
+      },
+      {
+        "species_id": "electrode",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "atk"
+        },
+        "moves": [
+          "screech",
+          "sonicboom",
+          "spark",
+          "selfdestruct"
+        ]
+      }
+    ],
+    "reward": 696,
+    "portrait": "res://assets/route12/trainer-5-trainer.png",
+    "fireRedTrainer": "RockerLuca",
+    "sourceName": "LUCA",
+    "sourceFemale": false,
+    "moneyCoefficient": 6,
+    "intro": "来与我的宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "你的实力很强。"
+  },
+  {
+    "map": "route12",
+    "cell": [
+      12,
+      40
+    ],
+    "redObject": 6,
+    "sprite": "res://assets/route12/actor-6.png",
+    "facing": "left",
+    "alphaBBox": [
+      2,
+      0,
+      15,
+      16
+    ],
+    "item": "",
+    "id": "route12_hank",
+    "name": "HANK",
+    "title": "12号道路",
+    "party": [
+      {
+        "species_id": "goldeen",
+        "level": 27,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spa"
+        },
+        "moves": [
+          "watersport",
+          "supersonic",
+          "hornattack",
+          "flail"
+        ]
+      }
+    ],
+    "reward": 972,
+    "portrait": "res://assets/route12/trainer-6-trainer.png",
+    "fireRedTrainer": "FishermanHank",
+    "sourceName": "HANK",
+    "sourceFemale": false,
+    "moneyCoefficient": 9,
+    "intro": "来与我的宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "你的实力很强。"
+  },
+  {
+    "map": "route12",
+    "cell": [
+      9,
+      52
+    ],
+    "redObject": 7,
+    "sprite": "res://assets/route12/actor-7.png",
+    "facing": "right",
+    "alphaBBox": [
+      1,
+      0,
+      14,
+      16
+    ],
+    "item": "",
+    "id": "route12_elliot",
+    "name": "ELLIOT",
+    "title": "12号道路",
+    "party": [
+      {
+        "species_id": "poliwag",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "atk"
+        },
+        "moves": [
+          "bubble",
+          "hypnosis",
+          "watergun",
+          "doubleslap"
+        ]
+      },
+      {
+        "species_id": "shellder",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "atk"
+        },
+        "moves": [
+          "tackle",
+          "withdraw",
+          "iciclespear",
+          "supersonic"
+        ]
+      },
+      {
+        "species_id": "goldeen",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spa"
+        },
+        "moves": [
+          "tailwhip",
+          "watersport",
+          "supersonic",
+          "hornattack"
+        ]
+      },
+      {
+        "species_id": "horsea",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spd"
+        },
+        "moves": [
+          "bubble",
+          "smokescreen",
+          "leer"
+        ]
+      }
+    ],
+    "reward": 756,
+    "portrait": "res://assets/route12/trainer-7-trainer.png",
+    "fireRedTrainer": "FishermanElliot",
+    "sourceName": "ELLIOT",
+    "sourceFemale": false,
+    "moneyCoefficient": 9,
+    "intro": "来与我的宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "你的实力很强。"
+  },
+  {
+    "map": "route12",
+    "cell": [
+      6,
+      87
+    ],
+    "redObject": 8,
+    "sprite": "res://assets/route12/actor-8.png",
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "item": "",
+    "id": "route12_andrew",
+    "name": "ANDREW",
+    "title": "12号道路",
+    "party": [
+      {
+        "species_id": "magikarp",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "splash",
+          "tackle"
+        ]
+      },
+      {
+        "species_id": "magikarp",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "splash",
+          "tackle"
+        ]
+      }
+    ],
+    "reward": 864,
+    "portrait": "res://assets/route12/trainer-8-trainer.png",
+    "fireRedTrainer": "FishermanAndrew",
+    "sourceName": "ANDREW",
+    "sourceFemale": false,
+    "moneyCoefficient": 9,
+    "intro": "来与我的宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "你的实力很强。"
+  },
+  {
+    "map": "route13",
+    "cell": [
+      49,
+      10
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/route13/actor-1.png",
+    "facing": "right",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "item": "",
+    "id": "route13_sebastian",
+    "name": "SEBASTIAN",
+    "title": "13号道路",
+    "party": [
+      {
+        "species_id": "pidgey",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "gust",
+          "quickattack",
+          "whirlwind",
+          "wingattack"
+        ]
+      },
+      {
+        "species_id": "pidgeotto",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "gust",
+          "quickattack",
+          "whirlwind",
+          "wingattack"
+        ]
+      }
+    ],
+    "reward": 696,
+    "portrait": "res://assets/route13/trainer-1-trainer.png",
+    "fireRedTrainer": "BirdKeeperSebastian",
+    "sourceName": "SEBASTIAN",
+    "sourceFemale": false,
+    "moneyCoefficient": 6,
+    "intro": "来与我的宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "你的实力很强。"
+  },
+  {
+    "map": "route13",
+    "cell": [
+      48,
+      10
+    ],
+    "redObject": 2,
+    "sprite": "res://assets/route13/actor-2.png",
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "item": "",
+    "id": "route13_alma",
+    "name": "ALMA",
+    "title": "13号道路",
+    "party": [
+      {
+        "species_id": "goldeen",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "atk"
+        },
+        "moves": [
+          "watersport",
+          "supersonic",
+          "hornattack",
+          "flail"
+        ]
+      },
+      {
+        "species_id": "poliwag",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "def"
+        },
+        "moves": [
+          "hypnosis",
+          "watergun",
+          "doubleslap",
+          "raindance"
+        ]
+      },
+      {
+        "species_id": "horsea",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spd"
+        },
+        "moves": [
+          "bubble",
+          "smokescreen",
+          "leer",
+          "watergun"
+        ]
+      }
+    ],
+    "reward": 560,
+    "portrait": "res://assets/route13/trainer-2-trainer.png",
+    "fireRedTrainer": "PicnickerAlma",
+    "sourceName": "ALMA",
+    "sourceFemale": true,
+    "moneyCoefficient": 5,
+    "intro": "来与我的宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "你的实力很强。"
+  },
+  {
+    "map": "route13",
+    "cell": [
+      27,
+      9
+    ],
+    "redObject": 3,
+    "sprite": "res://assets/route13/actor-3.png",
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "item": "",
+    "id": "route13_susie",
+    "name": "SUSIE",
+    "title": "13号道路",
+    "party": [
+      {
+        "species_id": "pidgey",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "atk"
+        },
+        "moves": [
+          "sandattack",
+          "gust",
+          "quickattack",
+          "whirlwind"
+        ]
+      },
+      {
+        "species_id": "meowth",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spa"
+        },
+        "moves": [
+          "scratch",
+          "growl",
+          "bite",
+          "payday"
+        ]
+      },
+      {
+        "species_id": "rattata",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "tailwhip",
+          "quickattack",
+          "hyperfang",
+          "focusenergy"
+        ]
+      },
+      {
+        "species_id": "pikachu",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spa"
+        },
+        "moves": [
+          "thunderwave",
+          "quickattack",
+          "doubleteam",
+          "slam"
+        ]
+      },
+      {
+        "species_id": "meowth",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "scratch",
+          "growl",
+          "bite",
+          "payday"
+        ]
+      }
+    ],
+    "reward": 480,
+    "portrait": "res://assets/route13/trainer-3-trainer.png",
+    "fireRedTrainer": "PicnickerSusie",
+    "sourceName": "SUSIE",
+    "sourceFemale": true,
+    "moneyCoefficient": 5,
+    "intro": "来与我的宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "你的实力很强。"
+  },
+  {
+    "map": "route13",
+    "cell": [
+      23,
+      10
+    ],
+    "redObject": 4,
+    "sprite": "res://assets/route13/actor-4.png",
+    "facing": "left",
+    "alphaBBox": [
+      1,
+      0,
+      14,
+      16
+    ],
+    "item": "",
+    "id": "route13_valerie",
+    "name": "VALERIE",
+    "title": "13号道路",
+    "party": [
+      {
+        "species_id": "poliwag",
+        "level": 30,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "hypnosis",
+          "watergun",
+          "doubleslap",
+          "raindance"
+        ]
+      },
+      {
+        "species_id": "poliwag",
+        "level": 30,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spa"
+        },
+        "moves": [
+          "hypnosis",
+          "watergun",
+          "doubleslap",
+          "raindance"
+        ]
+      }
+    ],
+    "reward": 600,
+    "portrait": "res://assets/route13/trainer-4-trainer.png",
+    "fireRedTrainer": "PicnickerValerie",
+    "sourceName": "VALERIE",
+    "sourceFemale": true,
+    "moneyCoefficient": 5,
+    "intro": "来与我的宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "你的实力很强。"
+  },
+  {
+    "map": "route13",
+    "cell": [
+      50,
+      5
+    ],
+    "redObject": 5,
+    "sprite": "res://assets/route13/actor-5.png",
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "item": "",
+    "id": "route13_gwen",
+    "name": "GWEN",
+    "title": "13号道路",
+    "party": [
+      {
+        "species_id": "pidgey",
+        "level": 27,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "atk"
+        },
+        "moves": [
+          "gust",
+          "quickattack",
+          "whirlwind",
+          "wingattack"
+        ]
+      },
+      {
+        "species_id": "meowth",
+        "level": 27,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spa"
+        },
+        "moves": [
+          "growl",
+          "bite",
+          "payday",
+          "faintattack"
+        ]
+      },
+      {
+        "species_id": "pidgey",
+        "level": 27,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spa"
+        },
+        "moves": [
+          "gust",
+          "quickattack",
+          "whirlwind",
+          "wingattack"
+        ]
+      },
+      {
+        "species_id": "pidgeotto",
+        "level": 27,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "gust",
+          "quickattack",
+          "whirlwind",
+          "wingattack"
+        ]
+      }
+    ],
+    "reward": 540,
+    "portrait": "res://assets/route13/trainer-5-trainer.png",
+    "fireRedTrainer": "PicnickerGwen",
+    "sourceName": "GWEN",
+    "sourceFemale": true,
+    "moneyCoefficient": 5,
+    "intro": "来与我的宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "你的实力很强。"
+  },
+  {
+    "map": "route13",
+    "cell": [
+      12,
+      4
+    ],
+    "redObject": 6,
+    "sprite": "res://assets/route13/actor-6.png",
+    "facing": "right",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "item": "",
+    "id": "route13_perry",
+    "name": "PERRY",
+    "title": "13号道路",
+    "party": [
+      {
+        "species_id": "spearow",
+        "level": 25,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spe"
+        },
+        "moves": [
+          "leer",
+          "furyattack",
+          "pursuit",
+          "aerialace"
+        ]
+      },
+      {
+        "species_id": "pidgey",
+        "level": 25,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "def"
+        },
+        "moves": [
+          "gust",
+          "quickattack",
+          "whirlwind",
+          "wingattack"
+        ]
+      },
+      {
+        "species_id": "pidgey",
+        "level": 25,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "atk"
+        },
+        "moves": [
+          "gust",
+          "quickattack",
+          "whirlwind",
+          "wingattack"
+        ]
+      },
+      {
+        "species_id": "spearow",
+        "level": 25,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "leer",
+          "furyattack",
+          "pursuit",
+          "aerialace"
+        ]
+      },
+      {
+        "species_id": "spearow",
+        "level": 25,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "leer",
+          "furyattack",
+          "pursuit",
+          "aerialace"
+        ]
+      }
+    ],
+    "reward": 600,
+    "portrait": "res://assets/route13/trainer-6-trainer.png",
+    "fireRedTrainer": "BirdKeeperPerry",
+    "sourceName": "PERRY",
+    "sourceFemale": false,
+    "moneyCoefficient": 6,
+    "intro": "来与我的宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "你的实力很强。"
+  },
+  {
+    "map": "route13",
+    "cell": [
+      33,
+      6
+    ],
+    "redObject": 7,
+    "sprite": "res://assets/route13/actor-7.png",
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      1,
+      16,
+      16
+    ],
+    "item": "",
+    "id": "route13_lola",
+    "name": "LOLA",
+    "title": "13号道路",
+    "party": [
+      {
+        "species_id": "rattata",
+        "level": 27,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "quickattack",
+          "hyperfang",
+          "focusenergy",
+          "pursuit"
+        ]
+      },
+      {
+        "species_id": "pikachu",
+        "level": 27,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spe"
+        },
+        "moves": [
+          "quickattack",
+          "doubleteam",
+          "slam",
+          "thunderbolt"
+        ]
+      },
+      {
+        "species_id": "rattata",
+        "level": 27,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spd"
+        },
+        "moves": [
+          "quickattack",
+          "hyperfang",
+          "focusenergy",
+          "pursuit"
+        ]
+      }
+    ],
+    "reward": 1944,
+    "portrait": "res://assets/route13/trainer-7-trainer.png",
+    "fireRedTrainer": "BeautyLola",
+    "sourceName": "LOLA",
+    "sourceFemale": true,
+    "moneyCoefficient": 18,
+    "intro": "来与我的宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "你的实力很强。"
+  },
+  {
+    "map": "route13",
+    "cell": [
+      32,
+      6
+    ],
+    "redObject": 8,
+    "sprite": "res://assets/route13/actor-8.png",
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      1,
+      16,
+      16
+    ],
+    "item": "",
+    "id": "route13_sheila",
+    "name": "SHEILA",
+    "title": "13号道路",
+    "party": [
+      {
+        "species_id": "clefairy",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "followme",
+          "minimize",
+          "defensecurl",
+          "metronome"
+        ]
+      },
+      {
+        "species_id": "meowth",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "growl",
+          "bite",
+          "payday",
+          "faintattack"
+        ]
+      }
+    ],
+    "reward": 2088,
+    "portrait": "res://assets/route13/trainer-8-trainer.png",
+    "fireRedTrainer": "BeautySheila",
+    "sourceName": "SHEILA",
+    "sourceFemale": true,
+    "moneyCoefficient": 18,
+    "intro": "来与我的宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "你的实力很强。"
+  },
+  {
+    "map": "route13",
+    "cell": [
+      10,
+      7
+    ],
+    "redObject": 9,
+    "sprite": "res://assets/route13/actor-9.png",
+    "facing": "up",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": "",
+    "id": "route13_jared",
+    "name": "JARED",
+    "title": "13号道路",
+    "party": [
+      {
+        "species_id": "koffing",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "smokescreen",
+          "sludge",
+          "smog",
+          "poisongas"
+        ]
+      },
+      {
+        "species_id": "koffing",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "smokescreen",
+          "sludge",
+          "smog",
+          "tackle"
+        ]
+      },
+      {
+        "species_id": "koffing",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "atk"
+        },
+        "moves": [
+          "smokescreen",
+          "sludge",
+          "smog",
+          "tackle"
+        ]
+      }
+    ],
+    "reward": 560,
+    "portrait": "res://assets/route13/trainer-9-trainer.png",
+    "fireRedTrainer": "BikerJared",
+    "sourceName": "JARED",
+    "sourceFemale": false,
+    "moneyCoefficient": 5,
+    "intro": "来与我的宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "你的实力很强。"
+  },
+  {
+    "map": "route13",
+    "cell": [
+      7,
+      13
+    ],
+    "redObject": 10,
+    "sprite": "res://assets/route13/actor-10.png",
+    "facing": "up",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": "",
+    "id": "route13_robert",
+    "name": "ROBERT",
+    "title": "13号道路",
+    "party": [
+      {
+        "species_id": "pidgey",
+        "level": 26,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "gust",
+          "quickattack",
+          "whirlwind",
+          "wingattack"
+        ]
+      },
+      {
+        "species_id": "pidgeotto",
+        "level": 26,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "def"
+        },
+        "moves": [
+          "sandattack",
+          "gust",
+          "quickattack",
+          "whirlwind"
+        ]
+      },
+      {
+        "species_id": "spearow",
+        "level": 26,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "leer",
+          "furyattack",
+          "pursuit",
+          "aerialace"
+        ]
+      },
+      {
+        "species_id": "fearow",
+        "level": 26,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "growl",
+          "leer",
+          "furyattack",
+          "pursuit"
+        ]
+      }
+    ],
+    "reward": 624,
+    "portrait": "res://assets/route13/trainer-10-trainer.png",
+    "fireRedTrainer": "BirdKeeperRobert",
+    "sourceName": "ROBERT",
+    "sourceFemale": false,
+    "moneyCoefficient": 6,
+    "intro": "来与我的宝可梦对战吧！",
+    "defeat": "你赢了！",
+    "after": "你的实力很强。"
+  }
+]

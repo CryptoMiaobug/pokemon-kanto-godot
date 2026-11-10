@@ -1,0 +1,142 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/PokemonMansion2F.json",
+  "mapSHA256": "28ed9ec3ea201593a19af12802ce22951f5bd13278d46a9c7396b85721b52edc",
+  "actors": [
+    {
+      "index": 1,
+      "const": "POKEMONMANSION2F_SUPER_NERD",
+      "x": 3,
+      "y": 17,
+      "sprite": "SPRITE_SUPER_NERD",
+      "spriteId": 12,
+      "movement": "WALK",
+      "rangeOrDirection": "LEFT_RIGHT",
+      "rangeOrDirectionValue": 2,
+      "behavior": "walk_left_right",
+      "textId": "TEXT_POKEMONMANSION2F_SUPER_NERD",
+      "textIndex": 1,
+      "trainer": {
+        "trainerClass": "OPP_BURGLAR",
+        "trainerClassId": 11,
+        "trainerPartyIndex": 7,
+        "header": "Mansion2TrainerHeader0",
+        "eventFlag": "EVENT_BEAT_MANSION_2_TRAINER_0",
+        "eventFlagIndex": 2049,
+        "sightRange": 0,
+        "textBefore": "PokemonMansion2FSuperNerdBattleText",
+        "textEnd": "PokemonMansion2FSuperNerdEndBattleText",
+        "textAfter": "PokemonMansion2FSuperNerdAfterBattleText"
+      }
+    },
+    {
+      "index": 2,
+      "const": "POKEMONMANSION2F_CALCIUM",
+      "x": 28,
+      "y": 7,
+      "sprite": "SPRITE_POKE_BALL",
+      "spriteId": 61,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_POKEMONMANSION2F_CALCIUM",
+      "textIndex": 2,
+      "item": "CALCIUM",
+      "itemId": 39,
+      "toggleIndex": 187,
+      "toggleConst": "TOGGLE_POKEMON_MANSION_2F_ITEM",
+      "startsHidden": false
+    },
+    {
+      "index": 3,
+      "const": "POKEMONMANSION2F_DIARY1",
+      "x": 18,
+      "y": 2,
+      "sprite": "SPRITE_POKEDEX",
+      "spriteId": 65,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_POKEMONMANSION2F_DIARY1",
+      "textIndex": 3
+    },
+    {
+      "index": 4,
+      "const": "POKEMONMANSION2F_DIARY2",
+      "x": 3,
+      "y": 22,
+      "sprite": "SPRITE_POKEDEX",
+      "spriteId": 65,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_POKEMONMANSION2F_DIARY2",
+      "textIndex": 4
+    }
+  ],
+  "warps": [
+    {
+      "x": 5,
+      "y": 10,
+      "destMap": "POKEMON_MANSION_1F",
+      "destMapId": 165,
+      "destMapName": "PokemonMansion1F",
+      "destWarp": 5,
+      "destWarpIndex": 4
+    },
+    {
+      "x": 7,
+      "y": 10,
+      "destMap": "POKEMON_MANSION_3F",
+      "destMapId": 215,
+      "destMapName": "PokemonMansion3F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 25,
+      "y": 14,
+      "destMap": "POKEMON_MANSION_3F",
+      "destMapId": 215,
+      "destMapName": "PokemonMansion3F",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "destMap": "POKEMON_MANSION_3F",
+      "destMapId": 215,
+      "destMapName": "PokemonMansion3F",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    }
+  ],
+  "doors": [
+    [
+      4,
+      2,
+      14,
+      95
+    ],
+    [
+      9,
+      4,
+      84,
+      14
+    ],
+    [
+      3,
+      11,
+      95,
+      14
+    ]
+  ],
+  "doorSource": "src/game/scripts/regions/kanto6_lib.js MANSION_DOORS",
+  "adaptation": "Red original geometry and actors; matched FR complete ordered party. Manual E challenge; static original actor frames, ordinary loot/diary interaction deferred; SECRET_KEY pickup implemented at stage38. FR-only Johnson absent from Red geometry and deferred. Source switch reset on Cinnabar exterior; local atomic toggle includes current safe location.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

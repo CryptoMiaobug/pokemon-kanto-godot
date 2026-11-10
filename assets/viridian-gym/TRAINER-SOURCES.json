@@ -1,0 +1,58 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "mapping": [
+    {
+      "redObject": 2,
+      "fireRedTrainer": "CooltrainerYuji",
+      "slice": 43
+    },
+    {
+      "redObject": 3,
+      "fireRedTrainer": "BlackBeltAtsushi",
+      "slice": 43
+    },
+    {
+      "redObject": 4,
+      "fireRedTrainer": "TamerJason",
+      "slice": 43
+    },
+    {
+      "redObject": 5,
+      "fireRedTrainer": "BlackBeltKiyo",
+      "slice": 43
+    },
+    {
+      "redObject": 6,
+      "fireRedTrainer": "CooltrainerWarren",
+      "slice": 44
+    },
+    {
+      "redObject": 7,
+      "fireRedTrainer": "BlackBeltTakashi",
+      "slice": 44
+    },
+    {
+      "redObject": 8,
+      "fireRedTrainer": "TamerCole",
+      "slice": 44
+    },
+    {
+      "redObject": 9,
+      "fireRedTrainer": "CooltrainerSamuel",
+      "slice": 44
+    }
+  ],
+  "sources": [
+    "Red data/maps/ViridianGym.json and data/text/ViridianGym.json",
+    "FireRed data/maps/ViridianCity_Gym/text.inc and scripts.inc",
+    "FireRed src/data/trainer_parties.h, trainers.h, pokemon/level_up_learnsets.h, species_info.h",
+    "FireRed battle_main.c CreateNPCTrainerParty and gTrainerMoneyTable; pokemon.c CalculateBaseDamage; battle_script_commands.c Cmd_ohko"
+  ],
+  "sourceSHA256": {
+    "src/data/trainer_parties.h": "cb135d9cbdfc52c87066374d582506830a8c93561eab2033d847331c2de00299",
+    "src/data/trainers.h": "b2105a3b1d1baec02d8f6a89f44bcdf6a05cbaac1d6d8872766eec49aa8555bc"
+  },
+  "adaptation": "Red static actors original positions unchanged. FR exact complete ordered parties; defaults level-derived last4, explicit overrides retained; fixed IV/nature convention; Black Belt held boost subset and source trainer healing items. Existing AI subset, no full abilities. Giovanni45, Revive and TM26 deferred.",
+  "rights": "Original artwork rights remain with rights holders; no redistribution clearance."
+}

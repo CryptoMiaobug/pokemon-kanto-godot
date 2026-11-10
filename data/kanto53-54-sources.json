@@ -1,0 +1,28 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "mapping": [
+    {
+      "redObject": 1,
+      "fireRedTrainer": "CooltrainerGeorge"
+    },
+    {
+      "redObject": 2,
+      "fireRedTrainer": "CooltrainerAlexa"
+    },
+    {
+      "redObject": 3,
+      "fireRedTrainer": "CooltrainerColby"
+    },
+    {
+      "redObject": 4,
+      "fireRedTrainer": "CooltrainerCaroline"
+    }
+  ],
+  "sources": [
+    "Red VictoryRoad3F.json IndigoPlateau.json IndigoPlateauLobby.json",
+    "FR trainer_parties.h trainers.h battle_moves.h wild_encounters.json items.json item_effects.h battle_script_commands.c item_use.c pokemon.c"
+  ],
+  "adaptation": "Full ordered FR teams/custom moves, Red actors. Existing fixed IV/nature and AI subset. E confirms rather than sight. 3F item pickups and legendary unsupported; E4 deferred55.",
+  "rights": "Original art copyright holders; redistribution clearance not established."
+}

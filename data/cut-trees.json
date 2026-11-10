@@ -1,0 +1,1682 @@
+[
+  {
+    "map": "celadon-city",
+    "cell": [
+      47,
+      20
+    ],
+    "block_cell": [
+      23,
+      10
+    ],
+    "original": 53,
+    "replacement": 76,
+    "patch": "res://assets/celadon-city/cut-53-76.png",
+    "cells": [
+      {
+        "cell": [
+          46,
+          20
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          47,
+          20
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          46,
+          21
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          47,
+          21
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "celadon-city",
+    "cell": [
+      35,
+      32
+    ],
+    "block_cell": [
+      17,
+      16
+    ],
+    "original": 50,
+    "replacement": 109,
+    "patch": "res://assets/celadon-city/cut-50-109.png",
+    "cells": [
+      {
+        "cell": [
+          34,
+          32
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          35,
+          32
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          34,
+          33
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          35,
+          33
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "celadon-gym",
+    "cell": [
+      2,
+      4
+    ],
+    "block_cell": [
+      1,
+      2
+    ],
+    "original": 60,
+    "replacement": 53,
+    "patch": "res://assets/celadon-gym/cut-60-53.png",
+    "cells": [
+      {
+        "cell": [
+          2,
+          4
+        ],
+        "foot": 43,
+        "solid": 0
+      },
+      {
+        "cell": [
+          3,
+          4
+        ],
+        "foot": 43,
+        "solid": 0
+      },
+      {
+        "cell": [
+          2,
+          5
+        ],
+        "foot": 46,
+        "solid": 1
+      },
+      {
+        "cell": [
+          3,
+          5
+        ],
+        "foot": 43,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "celadon-gym",
+    "cell": [
+      7,
+      5
+    ],
+    "block_cell": [
+      3,
+      2
+    ],
+    "original": 61,
+    "replacement": 54,
+    "patch": "res://assets/celadon-gym/cut-61-54.png",
+    "cells": [
+      {
+        "cell": [
+          6,
+          4
+        ],
+        "foot": 43,
+        "solid": 0
+      },
+      {
+        "cell": [
+          7,
+          4
+        ],
+        "foot": 46,
+        "solid": 1
+      },
+      {
+        "cell": [
+          6,
+          5
+        ],
+        "foot": 43,
+        "solid": 0
+      },
+      {
+        "cell": [
+          7,
+          5
+        ],
+        "foot": 43,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "celadon-gym",
+    "cell": [
+      5,
+      7
+    ],
+    "block_cell": [
+      2,
+      3
+    ],
+    "original": 63,
+    "replacement": 53,
+    "patch": "res://assets/celadon-gym/cut-63-53.png",
+    "cells": [
+      {
+        "cell": [
+          4,
+          6
+        ],
+        "foot": 43,
+        "solid": 0
+      },
+      {
+        "cell": [
+          5,
+          6
+        ],
+        "foot": 43,
+        "solid": 0
+      },
+      {
+        "cell": [
+          4,
+          7
+        ],
+        "foot": 46,
+        "solid": 1
+      },
+      {
+        "cell": [
+          5,
+          7
+        ],
+        "foot": 43,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "cerulean-city",
+    "cell": [
+      19,
+      28
+    ],
+    "block_cell": [
+      9,
+      14
+    ],
+    "original": 50,
+    "replacement": 109,
+    "patch": "res://assets/cerulean-city/cut-50-109.png",
+    "cells": [
+      {
+        "cell": [
+          18,
+          28
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          19,
+          28
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          18,
+          29
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          19,
+          29
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "fuchsia-city",
+    "cell": [
+      22,
+      7
+    ],
+    "block_cell": [
+      11,
+      3
+    ],
+    "original": 96,
+    "replacement": 110,
+    "patch": "res://assets/fuchsia-city/cut-96-110.png",
+    "cells": [
+      {
+        "cell": [
+          22,
+          6
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          23,
+          6
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          22,
+          7
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          23,
+          7
+        ],
+        "foot": 80,
+        "solid": 1
+      }
+    ]
+  },
+  {
+    "map": "fuchsia-city",
+    "cell": [
+      16,
+      11
+    ],
+    "block_cell": [
+      8,
+      5
+    ],
+    "original": 96,
+    "replacement": 110,
+    "patch": "res://assets/fuchsia-city/cut-96-110.png",
+    "cells": [
+      {
+        "cell": [
+          16,
+          10
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          17,
+          10
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          16,
+          11
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          17,
+          11
+        ],
+        "foot": 80,
+        "solid": 1
+      }
+    ]
+  },
+  {
+    "map": "fuchsia-city",
+    "cell": [
+      26,
+      13
+    ],
+    "block_cell": [
+      13,
+      6
+    ],
+    "original": 96,
+    "replacement": 110,
+    "patch": "res://assets/fuchsia-city/cut-96-110.png",
+    "cells": [
+      {
+        "cell": [
+          26,
+          12
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          27,
+          12
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          26,
+          13
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          27,
+          13
+        ],
+        "foot": 80,
+        "solid": 1
+      }
+    ]
+  },
+  {
+    "map": "fuchsia-city",
+    "cell": [
+      18,
+      19
+    ],
+    "block_cell": [
+      9,
+      9
+    ],
+    "original": 96,
+    "replacement": 110,
+    "patch": "res://assets/fuchsia-city/cut-96-110.png",
+    "cells": [
+      {
+        "cell": [
+          18,
+          18
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          19,
+          18
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          18,
+          19
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          19,
+          19
+        ],
+        "foot": 80,
+        "solid": 1
+      }
+    ]
+  },
+  {
+    "map": "pewter-city",
+    "cell": [
+      26,
+      4
+    ],
+    "block_cell": [
+      13,
+      2
+    ],
+    "original": 52,
+    "replacement": 111,
+    "patch": "res://assets/pewter-city/cut-52-111.png",
+    "cells": [
+      {
+        "cell": [
+          26,
+          4
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          27,
+          4
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          26,
+          5
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          27,
+          5
+        ],
+        "foot": 80,
+        "solid": 1
+      }
+    ]
+  },
+  {
+    "map": "route10-north",
+    "cell": [
+      9,
+      18
+    ],
+    "block_cell": [
+      4,
+      9
+    ],
+    "original": 53,
+    "replacement": 76,
+    "patch": "res://assets/route10-north/cut-53-76.png",
+    "cells": [
+      {
+        "cell": [
+          8,
+          18
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          9,
+          18
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          8,
+          19
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          9,
+          19
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "route10-north",
+    "cell": [
+      9,
+      20
+    ],
+    "block_cell": [
+      4,
+      10
+    ],
+    "original": 53,
+    "replacement": 76,
+    "patch": "res://assets/route10-north/cut-53-76.png",
+    "cells": [
+      {
+        "cell": [
+          8,
+          20
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          9,
+          20
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          8,
+          21
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          9,
+          21
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "route10-north",
+    "cell": [
+      9,
+      22
+    ],
+    "block_cell": [
+      4,
+      11
+    ],
+    "original": 53,
+    "replacement": 76,
+    "patch": "res://assets/route10-north/cut-53-76.png",
+    "cells": [
+      {
+        "cell": [
+          8,
+          22
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          9,
+          22
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          8,
+          23
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          9,
+          23
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "route10-north",
+    "cell": [
+      9,
+      24
+    ],
+    "block_cell": [
+      4,
+      12
+    ],
+    "original": 53,
+    "replacement": 76,
+    "patch": "res://assets/route10-north/cut-53-76.png",
+    "cells": [
+      {
+        "cell": [
+          8,
+          24
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          9,
+          24
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          8,
+          25
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          9,
+          25
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "route12",
+    "cell": [
+      7,
+      88
+    ],
+    "block_cell": [
+      3,
+      44
+    ],
+    "original": 53,
+    "replacement": 76,
+    "patch": "res://assets/route12/cut-53-76.png",
+    "cells": [
+      {
+        "cell": [
+          6,
+          88
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          7,
+          88
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          6,
+          89
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          7,
+          89
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "route12",
+    "cell": [
+      9,
+      99
+    ],
+    "block_cell": [
+      4,
+      49
+    ],
+    "original": 51,
+    "replacement": 108,
+    "patch": "res://assets/route12/cut-51-108.png",
+    "cells": [
+      {
+        "cell": [
+          8,
+          98
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          9,
+          98
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          8,
+          99
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          9,
+          99
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "route13",
+    "cell": [
+      34,
+      4
+    ],
+    "block_cell": [
+      17,
+      2
+    ],
+    "original": 52,
+    "replacement": 111,
+    "patch": "res://assets/route13/cut-52-111.png",
+    "cells": [
+      {
+        "cell": [
+          34,
+          4
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          35,
+          4
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          34,
+          5
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          35,
+          5
+        ],
+        "foot": 80,
+        "solid": 1
+      }
+    ]
+  },
+  {
+    "map": "route14",
+    "cell": [
+      5,
+      26
+    ],
+    "block_cell": [
+      2,
+      13
+    ],
+    "original": 53,
+    "replacement": 76,
+    "patch": "res://assets/route14/cut-53-76.png",
+    "cells": [
+      {
+        "cell": [
+          4,
+          26
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          5,
+          26
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          4,
+          27
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          5,
+          27
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "route14",
+    "cell": [
+      11,
+      32
+    ],
+    "block_cell": [
+      5,
+      16
+    ],
+    "original": 53,
+    "replacement": 76,
+    "patch": "res://assets/route14/cut-53-76.png",
+    "cells": [
+      {
+        "cell": [
+          10,
+          32
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          11,
+          32
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          10,
+          33
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          11,
+          33
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "route14",
+    "cell": [
+      3,
+      42
+    ],
+    "block_cell": [
+      1,
+      21
+    ],
+    "original": 53,
+    "replacement": 76,
+    "patch": "res://assets/route14/cut-53-76.png",
+    "cells": [
+      {
+        "cell": [
+          2,
+          42
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          3,
+          42
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          2,
+          43
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          3,
+          43
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "route16",
+    "cell": [
+      34,
+      9
+    ],
+    "block_cell": [
+      17,
+      4
+    ],
+    "original": 96,
+    "replacement": 110,
+    "patch": "res://assets/route16/cut-96-110.png",
+    "cells": [
+      {
+        "cell": [
+          34,
+          8
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          35,
+          8
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          34,
+          9
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          35,
+          9
+        ],
+        "foot": 80,
+        "solid": 1
+      }
+    ]
+  },
+  {
+    "map": "route2",
+    "cell": [
+      5,
+      10
+    ],
+    "block_cell": [
+      2,
+      5
+    ],
+    "original": 50,
+    "replacement": 109,
+    "patch": "res://assets/route2/cut-50-109.png",
+    "cells": [
+      {
+        "cell": [
+          4,
+          10
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          5,
+          10
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          4,
+          11
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          5,
+          11
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "route2",
+    "cell": [
+      15,
+      22
+    ],
+    "block_cell": [
+      7,
+      11
+    ],
+    "original": 50,
+    "replacement": 109,
+    "patch": "res://assets/route2/cut-50-109.png",
+    "cells": [
+      {
+        "cell": [
+          14,
+          22
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          15,
+          22
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          14,
+          23
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          15,
+          23
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "route2",
+    "cell": [
+      5,
+      38
+    ],
+    "block_cell": [
+      2,
+      19
+    ],
+    "original": 50,
+    "replacement": 109,
+    "patch": "res://assets/route2/cut-50-109.png",
+    "cells": [
+      {
+        "cell": [
+          4,
+          38
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          5,
+          38
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          4,
+          39
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          5,
+          39
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "route2",
+    "cell": [
+      12,
+      52
+    ],
+    "block_cell": [
+      6,
+      26
+    ],
+    "original": 52,
+    "replacement": 111,
+    "patch": "res://assets/route2/cut-52-111.png",
+    "cells": [
+      {
+        "cell": [
+          12,
+          52
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          13,
+          52
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          12,
+          53
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          13,
+          53
+        ],
+        "foot": 80,
+        "solid": 1
+      }
+    ]
+  },
+  {
+    "map": "route2",
+    "cell": [
+      12,
+      60
+    ],
+    "block_cell": [
+      6,
+      30
+    ],
+    "original": 52,
+    "replacement": 111,
+    "patch": "res://assets/route2/cut-52-111.png",
+    "cells": [
+      {
+        "cell": [
+          12,
+          60
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          13,
+          60
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          12,
+          61
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          13,
+          61
+        ],
+        "foot": 80,
+        "solid": 1
+      }
+    ]
+  },
+  {
+    "map": "route2",
+    "cell": [
+      12,
+      68
+    ],
+    "block_cell": [
+      6,
+      34
+    ],
+    "original": 52,
+    "replacement": 111,
+    "patch": "res://assets/route2/cut-52-111.png",
+    "cells": [
+      {
+        "cell": [
+          12,
+          68
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          13,
+          68
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          12,
+          69
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          13,
+          69
+        ],
+        "foot": 80,
+        "solid": 1
+      }
+    ]
+  },
+  {
+    "map": "route25",
+    "cell": [
+      26,
+      3
+    ],
+    "block_cell": [
+      13,
+      1
+    ],
+    "original": 96,
+    "replacement": 110,
+    "patch": "res://assets/route25/cut-96-110.png",
+    "cells": [
+      {
+        "cell": [
+          26,
+          2
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          27,
+          2
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          26,
+          3
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          27,
+          3
+        ],
+        "foot": 80,
+        "solid": 1
+      }
+    ]
+  },
+  {
+    "map": "route8",
+    "cell": [
+      41,
+      10
+    ],
+    "block_cell": [
+      20,
+      5
+    ],
+    "original": 53,
+    "replacement": 76,
+    "patch": "res://assets/route8/cut-53-76.png",
+    "cells": [
+      {
+        "cell": [
+          40,
+          10
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          41,
+          10
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          40,
+          11
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          41,
+          11
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "route8",
+    "cell": [
+      29,
+      12
+    ],
+    "block_cell": [
+      14,
+      6
+    ],
+    "original": 53,
+    "replacement": 76,
+    "patch": "res://assets/route8/cut-53-76.png",
+    "cells": [
+      {
+        "cell": [
+          28,
+          12
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          29,
+          12
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          28,
+          13
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          29,
+          13
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "route9",
+    "cell": [
+      5,
+      8
+    ],
+    "block_cell": [
+      2,
+      4
+    ],
+    "original": 53,
+    "replacement": 76,
+    "patch": "res://assets/route9/cut-53-76.png",
+    "cells": [
+      {
+        "cell": [
+          4,
+          8
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          5,
+          8
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          4,
+          9
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          5,
+          9
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "vermilion-city",
+    "cell": [
+      15,
+      18
+    ],
+    "block_cell": [
+      7,
+      9
+    ],
+    "original": 53,
+    "replacement": 76,
+    "patch": "res://assets/vermilion-city/cut-53-76.png",
+    "cells": [
+      {
+        "cell": [
+          14,
+          18
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          15,
+          18
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          14,
+          19
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          15,
+          19
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "viridian-city",
+    "cell": [
+      14,
+      4
+    ],
+    "block_cell": [
+      7,
+      2
+    ],
+    "original": 52,
+    "replacement": 111,
+    "patch": "res://assets/viridian-city/cut-52-111.png",
+    "cells": [
+      {
+        "cell": [
+          14,
+          4
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          15,
+          4
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          14,
+          5
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          15,
+          5
+        ],
+        "foot": 80,
+        "solid": 1
+      }
+    ]
+  },
+  {
+    "map": "viridian-city",
+    "cell": [
+      8,
+      22
+    ],
+    "block_cell": [
+      4,
+      11
+    ],
+    "original": 52,
+    "replacement": 111,
+    "patch": "res://assets/viridian-city/cut-52-111.png",
+    "cells": [
+      {
+        "cell": [
+          8,
+          22
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          9,
+          22
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          8,
+          23
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          9,
+          23
+        ],
+        "foot": 80,
+        "solid": 1
+      }
+    ]
+  }
+]

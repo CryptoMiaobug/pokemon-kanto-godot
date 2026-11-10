@@ -1,0 +1,204 @@
+{
+  "baseline": "fb2a5087f4a81139dfc7d514a70259cbc8a30668",
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "instruction_reads": [
+    "AGENTS.md",
+    "pixel-rpg-scene-reskin/SKILL.md",
+    "targeted-check-recovery.md",
+    "route-story-integration.md",
+    "source-driven-game-development.md",
+    "source-game-rules.md"
+  ],
+  "sources": [
+    "Red data/maps/RocketHideoutB2F.json B3F B4F Elevator",
+    "Red src/overworld/special_data.js SPINNER_ARROWS arrowPath reversed RLE",
+    "Red src/game/scripts/regions/kanto4.js B4 door/key drop/Giovanni/scope/elevator floors",
+    "FireRed src/data/trainer_parties.h TeamRocketGrunt13..18 BossGiovanni",
+    "FireRed data/maps/RocketHideout_B2F..B4F/scripts.inc"
+  ],
+  "slices": [
+    {
+      "id": "rocket-b2",
+      "required": [
+        "30x28 geometry all43 arrows full reversed RLE routes source stops warp pairs NPCs",
+        "GRUNT13 five ordered custom moves reward544",
+        "input lock turning stop reset on map change save restoration"
+      ],
+      "existing": [
+        "all roster species/moves",
+        "shared trainer atomic rewards and indexed warps"
+      ],
+      "story": [
+        "B1 stairs -> B2 unlocked immediately",
+        "arrow entry -> forced reversed RLE walk -> source stopping tile -> controls return",
+        "confirm five-mon guard -> reward544 and flag once"
+      ],
+      "deferred": [
+        "B3 destination until slice2",
+        "elevator until slice4"
+      ]
+    }
+  ],
+  "map": "data/maps/RocketHideoutB2F.json",
+  "mapSHA256": "9d65abac5bcf93dafa91ded6ce712e1318555404d2dda4b05dda4ba161b0bd5a",
+  "actors": [
+    {
+      "index": 1,
+      "const": "ROCKETHIDEOUTB2F_ROCKET",
+      "x": 20,
+      "y": 12,
+      "sprite": "SPRITE_ROCKET",
+      "spriteId": 24,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROCKETHIDEOUTB2F_ROCKET",
+      "textIndex": 1,
+      "trainer": {
+        "trainerClass": "OPP_ROCKET",
+        "trainerClassId": 30,
+        "trainerPartyIndex": 13,
+        "header": "RocketHideout2TrainerHeader0",
+        "eventFlag": "EVENT_BEAT_ROCKET_HIDEOUT_2_TRAINER_0",
+        "eventFlagIndex": 1665,
+        "sightRange": 4,
+        "textBefore": "RocketHideoutB2FRocketBattleText",
+        "textEnd": "RocketHideoutB2FRocketEndBattleText",
+        "textAfter": "RocketHideoutB2FRocketAfterBattleText"
+      }
+    },
+    {
+      "index": 2,
+      "const": "ROCKETHIDEOUTB2F_MOON_STONE",
+      "x": 1,
+      "y": 11,
+      "sprite": "SPRITE_POKE_BALL",
+      "spriteId": 61,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_ROCKETHIDEOUTB2F_MOON_STONE",
+      "textIndex": 2,
+      "item": "MOON_STONE",
+      "itemId": 10,
+      "toggleIndex": 125,
+      "toggleConst": "TOGGLE_ROCKET_HIDEOUT_B2F_ITEM_1",
+      "startsHidden": false
+    },
+    {
+      "index": 3,
+      "const": "ROCKETHIDEOUTB2F_NUGGET",
+      "x": 16,
+      "y": 8,
+      "sprite": "SPRITE_POKE_BALL",
+      "spriteId": 61,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_ROCKETHIDEOUTB2F_NUGGET",
+      "textIndex": 3,
+      "item": "NUGGET",
+      "itemId": 49,
+      "toggleIndex": 126,
+      "toggleConst": "TOGGLE_ROCKET_HIDEOUT_B2F_ITEM_2",
+      "startsHidden": false
+    },
+    {
+      "index": 4,
+      "const": "ROCKETHIDEOUTB2F_TM_HORN_DRILL",
+      "x": 6,
+      "y": 12,
+      "sprite": "SPRITE_POKE_BALL",
+      "spriteId": 61,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_ROCKETHIDEOUTB2F_TM_HORN_DRILL",
+      "textIndex": 4,
+      "item": "TM_HORN_DRILL",
+      "itemId": 207,
+      "toggleIndex": 127,
+      "toggleConst": "TOGGLE_ROCKET_HIDEOUT_B2F_ITEM_3",
+      "startsHidden": false
+    },
+    {
+      "index": 5,
+      "const": "ROCKETHIDEOUTB2F_SUPER_POTION",
+      "x": 3,
+      "y": 21,
+      "sprite": "SPRITE_POKE_BALL",
+      "spriteId": 61,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_ROCKETHIDEOUTB2F_SUPER_POTION",
+      "textIndex": 5,
+      "item": "SUPER_POTION",
+      "itemId": 19,
+      "toggleIndex": 128,
+      "toggleConst": "TOGGLE_ROCKET_HIDEOUT_B2F_ITEM_4",
+      "startsHidden": false
+    }
+  ],
+  "warps": [
+    {
+      "x": 27,
+      "y": 8,
+      "destMap": "ROCKET_HIDEOUT_B1F",
+      "destMapId": 199,
+      "destMapName": "RocketHideoutB1F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 21,
+      "y": 8,
+      "destMap": "ROCKET_HIDEOUT_B3F",
+      "destMapId": 201,
+      "destMapName": "RocketHideoutB3F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 24,
+      "y": 19,
+      "destMap": "ROCKET_HIDEOUT_ELEVATOR",
+      "destMapId": 203,
+      "destMapName": "RocketHideoutElevator",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 21,
+      "y": 22,
+      "destMap": "ROCKET_HIDEOUT_B1F",
+      "destMapId": 199,
+      "destMapName": "RocketHideoutB1F",
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 25,
+      "y": 19,
+      "destMap": "ROCKET_HIDEOUT_ELEVATOR",
+      "destMapId": 203,
+      "destMapName": "RocketHideoutElevator",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    }
+  ],
+  "rights": "Original rights holders; no redistribution clearance.",
+  "adaptation": "Original source foot collision and Red source reversed RLE arrow movement; static16px native actors local1x/world2x nearest; E trainer confirmation without sight; deferred nonessential items visible.",
+  "scope": "B2F only; user narrowed scope 2026-11-04 00:22 UTC",
+  "deferred": [
+    "B3F",
+    "B4F and Lift Key",
+    "elevator Giovanni Silph Scope"
+  ]
+}

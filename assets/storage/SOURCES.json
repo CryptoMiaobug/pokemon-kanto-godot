@@ -1,0 +1,11 @@
+{
+  "repository": "pret/pokefirered",
+  "commit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "source": "graphics/pokemon_storage/wallpapers/forest/{tiles.png,tilemap.bin}",
+  "layout": "20x18 8px tiles, original embedded palette; UI scales to 600x360 for readable 6x5 slots",
+  "frame": "existing assets/pokemon/window.png, FireRed text_window/type1.png",
+  "icons": "existing assets/pokemon/*-icon.png, original FireRed icon palettes",
+  "computer": "existing Red ViridianPokecenter ground at [13,3], investigate from [13,4] facing up",
+  "rights": "Original Pok\u00e9mon artwork; internal development attribution, no redistribution clearance claimed.",
+  "sha256": "f49c4a95f5a88a7388bc8af5adcdbfffc42749e3c2af13c735caf27464262dca"
+}

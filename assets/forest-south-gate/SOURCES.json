@@ -1,0 +1,16 @@
+{
+  "repository": "BrandeisPatrick/pokemon-red-web",
+  "commit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "map": {
+    "header": "data/maps/headers/ViridianForestSouthGate.asm",
+    "objects": "data/maps/objects/ViridianForestSouthGate.asm",
+    "blocks": "maps/ViridianForestNorthGate.blk",
+    "script": "scripts/ViridianForestSouthGate.asm"
+  },
+  "tileset": "data/tilesets/ForestGate.json",
+  "mapSHA256": "e1207ef9ac7a0115e7256dcbabf0ee8af42031ec7406a2b184cae5ac38811d07",
+  "art": "Existing Overworld recolor; original Forest 4-shade green tint and original ForestGate existing neutral tint; no geometry redrawn",
+  "foreground": "Original Overworld canopy feet42/43 or Forest walkable canopy feet48; trunk49 remains solid",
+  "scope": "No trainer/NPC objects; original forest gates connect both ends; Route2 north Pewter boundary closed; other Route2 doors closed; no Cut/Flash/house/cave mechanics",
+  "rights": "Original Pokemon assets; internal development, no redistribution clearance"
+}

@@ -1,0 +1,362 @@
+[
+  {
+    "map": "pokemon-mansion-1f",
+    "cell": [
+      17,
+      17
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/pokemon-mansion-1f/actor-1.png",
+    "facing": "left",
+    "alphaBBox": [
+      3,
+      0,
+      14,
+      16
+    ],
+    "item": "",
+    "id": "mansion_ted",
+    "name": "TED",
+    "title": "pokemon-mansion-1f",
+    "party": [
+      {
+        "species_id": "electrode",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "screech",
+          "sonicboom",
+          "spark",
+          "selfdestruct"
+        ]
+      },
+      {
+        "species_id": "weezing",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "smog",
+          "selfdestruct",
+          "sludge",
+          "smokescreen"
+        ]
+      }
+    ],
+    "reward": 1392,
+    "moneyCoefficient": 12,
+    "portrait": "res://assets/pokemon-mansion-1f/actor-1-trainer.png",
+    "fireRedTrainer": "ScientistTed",
+    "sourceName": "TED",
+    "intro": "来对战吧！",
+    "defeat": "你赢了！",
+    "after": "雕像里藏着秘密开关。"
+  },
+  {
+    "map": "pokemon-mansion-2f",
+    "cell": [
+      3,
+      17
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/pokemon-mansion-2f/actor-1.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": "",
+    "id": "mansion_arnie",
+    "name": "ARNIE",
+    "title": "pokemon-mansion-2f",
+    "party": [
+      {
+        "species_id": "charmander",
+        "level": 34,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "metalclaw",
+          "smokescreen",
+          "scaryface",
+          "flamethrower"
+        ]
+      },
+      {
+        "species_id": "charmeleon",
+        "level": 34,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spd"
+        },
+        "moves": [
+          "metalclaw",
+          "smokescreen",
+          "scaryface",
+          "flamethrower"
+        ]
+      }
+    ],
+    "reward": 2992,
+    "moneyCoefficient": 22,
+    "portrait": "res://assets/pokemon-mansion-2f/actor-1-trainer.png",
+    "fireRedTrainer": "BurglarArnie",
+    "sourceName": "ARNIE",
+    "intro": "来对战吧！",
+    "defeat": "你赢了！",
+    "after": "雕像里藏着秘密开关。"
+  },
+  {
+    "map": "pokemon-mansion-3f",
+    "cell": [
+      5,
+      11
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/pokemon-mansion-3f/actor-1.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": "",
+    "id": "mansion_simon",
+    "name": "SIMON",
+    "title": "pokemon-mansion-3f",
+    "party": [
+      {
+        "species_id": "ninetales",
+        "level": 38,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "ember",
+          "quickattack",
+          "confuseray",
+          "safeguard"
+        ]
+      }
+    ],
+    "reward": 3344,
+    "moneyCoefficient": 22,
+    "portrait": "res://assets/pokemon-mansion-3f/actor-1-trainer.png",
+    "fireRedTrainer": "BurglarSimon",
+    "sourceName": "SIMON",
+    "intro": "来对战吧！",
+    "defeat": "你赢了！",
+    "after": "雕像里藏着秘密开关。"
+  },
+  {
+    "map": "pokemon-mansion-3f",
+    "cell": [
+      20,
+      11
+    ],
+    "redObject": 2,
+    "sprite": "res://assets/pokemon-mansion-3f/actor-2.png",
+    "facing": "left",
+    "alphaBBox": [
+      3,
+      0,
+      14,
+      16
+    ],
+    "item": "",
+    "id": "mansion_braydon",
+    "name": "BRAYDON",
+    "title": "pokemon-mansion-3f",
+    "party": [
+      {
+        "species_id": "magnemite",
+        "level": 33,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spa"
+        },
+        "moves": [
+          "sonicboom",
+          "thunderwave",
+          "spark",
+          "lockon"
+        ]
+      },
+      {
+        "species_id": "magneton",
+        "level": 33,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "supersonic",
+          "sonicboom",
+          "thunderwave",
+          "spark"
+        ]
+      },
+      {
+        "species_id": "voltorb",
+        "level": 33,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spa"
+        },
+        "moves": [
+          "sonicboom",
+          "spark",
+          "selfdestruct",
+          "rollout"
+        ]
+      }
+    ],
+    "reward": 1584,
+    "moneyCoefficient": 12,
+    "portrait": "res://assets/pokemon-mansion-3f/actor-2-trainer.png",
+    "fireRedTrainer": "ScientistBraydon",
+    "sourceName": "BRAYDON",
+    "intro": "来对战吧！",
+    "defeat": "你赢了！",
+    "after": "雕像里藏着秘密开关。"
+  },
+  {
+    "map": "pokemon-mansion-b1f",
+    "cell": [
+      16,
+      23
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/pokemon-mansion-b1f/actor-1.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": "",
+    "id": "mansion_lewis",
+    "name": "LEWIS",
+    "title": "pokemon-mansion-b1f",
+    "party": [
+      {
+        "species_id": "growlithe",
+        "level": 34,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "atk"
+        },
+        "moves": [
+          "leer",
+          "odorsleuth",
+          "takedown",
+          "flamewheel"
+        ]
+      },
+      {
+        "species_id": "ponyta",
+        "level": 34,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "ember",
+          "stomp",
+          "firespin",
+          "takedown"
+        ]
+      }
+    ],
+    "reward": 2992,
+    "moneyCoefficient": 22,
+    "portrait": "res://assets/pokemon-mansion-b1f/actor-1-trainer.png",
+    "fireRedTrainer": "BurglarLewis",
+    "sourceName": "LEWIS",
+    "intro": "来对战吧！",
+    "defeat": "你赢了！",
+    "after": "雕像里藏着秘密开关。"
+  },
+  {
+    "map": "pokemon-mansion-b1f",
+    "cell": [
+      27,
+      11
+    ],
+    "redObject": 2,
+    "sprite": "res://assets/pokemon-mansion-b1f/actor-2.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": "",
+    "id": "mansion_ivan",
+    "name": "IVAN",
+    "title": "pokemon-mansion-b1f",
+    "party": [
+      {
+        "species_id": "magnemite",
+        "level": 34,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "sonicboom",
+          "thunderwave",
+          "spark",
+          "lockon"
+        ]
+      },
+      {
+        "species_id": "electrode",
+        "level": 34,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spa"
+        },
+        "moves": [
+          "sonicboom",
+          "spark",
+          "selfdestruct",
+          "rollout"
+        ]
+      }
+    ],
+    "reward": 1632,
+    "moneyCoefficient": 12,
+    "portrait": "res://assets/pokemon-mansion-b1f/actor-2-trainer.png",
+    "fireRedTrainer": "ScientistIvan",
+    "sourceName": "IVAN",
+    "intro": "来对战吧！",
+    "defeat": "你赢了！",
+    "after": "雕像里藏着秘密开关。"
+  }
+]

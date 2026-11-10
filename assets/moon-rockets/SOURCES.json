@@ -1,0 +1,25 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "red": [
+    "data/maps/MtMoonB2F.json",
+    "data/text/MtMoonB2F.json",
+    "assets/sprites/rocket.png"
+  ],
+  "fireRed": [
+    "data/maps/MtMoon_B2F/scripts.inc",
+    "data/maps/MtMoon_B2F/text.inc",
+    "src/data/trainers.h",
+    "src/data/trainer_parties.h",
+    "src/battle_main.c",
+    "src/data/battle_moves.h",
+    "graphics/trainers/front_pics/rocket_grunt_m_front_pic.png",
+    "graphics/trainers/palettes/rocket_grunt_m.pal"
+  ],
+  "correspondence": "Red objects2..5 -> Grunt1..4 by four distinctive intro/defeat/post dialogues. FR 3:11+11 vs Red12+12; FR4:Rattata13/Sandshrew13 vs RedRaticate16. No FR map coordinates used.",
+  "actors": "Original Red 16px static down/up/left frames0/16/32; same neutral tint, local1x/world2x, center/feet anchor as approved 1F trainers. Own-cell entity collision only; no sight chase. alphaBBox per row.",
+  "party": "Existing original species assets/FR learnsets; default moves, IV0/EV0, cumulative source GRUNT+species English charset hash nature. Payout8*4*lastLevel, once stable ID.",
+  "necessaryEffect": "Hyper Fang80/90/15 with10% flinch reuses Astonish acted/flinched path; no other new mechanic or evolution.",
+  "scope": "Only4 Rockets; no scientist/fossils/items/exits/maps.",
+  "rights": "Original rights holders; no redistribution clearance asserted."
+}

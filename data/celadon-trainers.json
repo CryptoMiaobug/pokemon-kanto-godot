@@ -1,0 +1,541 @@
+[
+  {
+    "id": "celadon_erika",
+    "map": "celadon-gym",
+    "name": "馆主莉佳",
+    "title": "馆主莉佳 · 玉虹道馆",
+    "cell": [
+      4,
+      3
+    ],
+    "facing": "down",
+    "sprite": "res://assets/celadon-gym/erika.png",
+    "portrait": "res://assets/celadon-gym/erika-trainer.png",
+    "party": [
+      {
+        "species_id": "victreebel",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "atk"
+        },
+        "moves": [
+          "stunspore",
+          "acid",
+          "poisonpowder",
+          "gigadrain"
+        ]
+      },
+      {
+        "species_id": "tangela",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "poisonpowder",
+          "constrict",
+          "ingrain",
+          "gigadrain"
+        ]
+      },
+      {
+        "species_id": "vileplume",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "sleeppowder",
+          "acid",
+          "stunspore",
+          "gigadrain"
+        ]
+      }
+    ],
+    "reward": 2900,
+    "intro": "你好，天气真好……我好像睡着了。我是莉佳，研究插花，使用草属性宝可梦。原来你想挑战？我不会输的！",
+    "defeat": "我认输了！你很强，彩虹徽章是你的！",
+    "after": "彩虹徽章已获得；TM19奖励/教学、怪力与服从效果延期。",
+    "badge": "rainbow",
+    "redObject": 1,
+    "fireRedTrainer": "LeaderErika",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "celadon_kay",
+    "map": "celadon-gym",
+    "name": "少女凯",
+    "title": "少女凯 · 玉虹道馆",
+    "cell": [
+      2,
+      11
+    ],
+    "facing": "right",
+    "sprite": "res://assets/celadon-gym/kay.png",
+    "portrait": "res://assets/celadon-gym/kay-trainer.png",
+    "party": [
+      {
+        "species_id": "bellsprout",
+        "level": 23,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "atk"
+        },
+        "moves": [
+          "sleeppowder",
+          "poisonpowder",
+          "stunspore",
+          "acid"
+        ]
+      },
+      {
+        "species_id": "weepinbell",
+        "level": 23,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spa"
+        },
+        "moves": [
+          "wrap",
+          "sleeppowder",
+          "poisonpowder",
+          "stunspore"
+        ]
+      }
+    ],
+    "reward": 368,
+    "intro": "这里可是只欢迎真正淑女的道馆！",
+    "defeat": "你太粗鲁了！",
+    "after": "莉佳擅长草属性宝可梦。",
+    "badge": "",
+    "redObject": 2,
+    "fireRedTrainer": "LassKay",
+    "alphaBBox": [
+      2,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "celadon_bridget",
+    "map": "celadon-gym",
+    "name": "大姐姐布里姬",
+    "title": "大姐姐布里姬 · 玉虹道馆",
+    "cell": [
+      7,
+      10
+    ],
+    "facing": "left",
+    "sprite": "res://assets/celadon-gym/bridget.png",
+    "portrait": "res://assets/celadon-gym/bridget-trainer.png",
+    "party": [
+      {
+        "species_id": "oddish",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "sweetscent",
+          "poisonpowder",
+          "stunspore",
+          "sleeppowder"
+        ]
+      },
+      {
+        "species_id": "bellsprout",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "wrap",
+          "sleeppowder",
+          "poisonpowder",
+          "stunspore"
+        ]
+      },
+      {
+        "species_id": "oddish",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "sweetscent",
+          "poisonpowder",
+          "stunspore",
+          "sleeppowder"
+        ]
+      },
+      {
+        "species_id": "bellsprout",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spa"
+        },
+        "moves": [
+          "wrap",
+          "sleeppowder",
+          "poisonpowder",
+          "stunspore"
+        ]
+      }
+    ],
+    "reward": 1512,
+    "intro": "欢迎，我正觉得无聊呢！",
+    "defeat": "我的妆！",
+    "after": "莉佳擅长草属性宝可梦。",
+    "badge": "",
+    "redObject": 3,
+    "fireRedTrainer": "BeautyBridget",
+    "alphaBBox": [
+      2,
+      1,
+      16,
+      16
+    ]
+  },
+  {
+    "id": "celadon_tina",
+    "map": "celadon-gym",
+    "name": "野餐女孩蒂娜",
+    "title": "野餐女孩蒂娜 · 玉虹道馆",
+    "cell": [
+      9,
+      5
+    ],
+    "facing": "down",
+    "sprite": "res://assets/celadon-gym/tina.png",
+    "portrait": "res://assets/celadon-gym/tina-trainer.png",
+    "party": [
+      {
+        "species_id": "bulbasaur",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "vinewhip",
+          "poisonpowder",
+          "sleeppowder",
+          "razorleaf"
+        ]
+      },
+      {
+        "species_id": "ivysaur",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spd"
+        },
+        "moves": [
+          "vinewhip",
+          "poisonpowder",
+          "sleeppowder",
+          "razorleaf"
+        ]
+      }
+    ],
+    "reward": 480,
+    "intro": "你刚才是不是在偷看这里？",
+    "defeat": "真让我大开眼界！",
+    "after": "莉佳擅长草属性宝可梦。",
+    "badge": "",
+    "redObject": 4,
+    "fireRedTrainer": "PicnickerTina",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "celadon_tamia",
+    "map": "celadon-gym",
+    "name": "大姐姐塔米娅",
+    "title": "大姐姐塔米娅 · 玉虹道馆",
+    "cell": [
+      1,
+      5
+    ],
+    "facing": "down",
+    "sprite": "res://assets/celadon-gym/tamia.png",
+    "portrait": "res://assets/celadon-gym/tamia-trainer.png",
+    "party": [
+      {
+        "species_id": "bellsprout",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "sleeppowder",
+          "poisonpowder",
+          "stunspore",
+          "acid"
+        ]
+      },
+      {
+        "species_id": "bellsprout",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spa"
+        },
+        "moves": [
+          "sleeppowder",
+          "poisonpowder",
+          "stunspore",
+          "acid"
+        ]
+      }
+    ],
+    "reward": 1728,
+    "intro": "看看我的草属性宝可梦，它们很容易培育！",
+    "defeat": "不！",
+    "after": "莉佳擅长草属性宝可梦。",
+    "badge": "",
+    "redObject": 5,
+    "fireRedTrainer": "BeautyTamia",
+    "alphaBBox": [
+      0,
+      1,
+      16,
+      16
+    ]
+  },
+  {
+    "id": "celadon_lisa",
+    "map": "celadon-gym",
+    "name": "少女丽莎",
+    "title": "少女丽莎 · 玉虹道馆",
+    "cell": [
+      6,
+      3
+    ],
+    "facing": "down",
+    "sprite": "res://assets/celadon-gym/lisa.png",
+    "portrait": "res://assets/celadon-gym/lisa-trainer.png",
+    "party": [
+      {
+        "species_id": "oddish",
+        "level": 23,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "atk"
+        },
+        "moves": [
+          "poisonpowder",
+          "stunspore",
+          "sleeppowder",
+          "acid"
+        ]
+      },
+      {
+        "species_id": "gloom",
+        "level": 23,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "sweetscent",
+          "poisonpowder",
+          "stunspore",
+          "sleeppowder"
+        ]
+      }
+    ],
+    "reward": 368,
+    "intro": "别带虫属性和火属性宝可梦进来！",
+    "defeat": "啊！你！",
+    "after": "莉佳擅长草属性宝可梦。",
+    "badge": "",
+    "redObject": 6,
+    "fireRedTrainer": "LassLisa",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "celadon_lori",
+    "map": "celadon-gym",
+    "name": "大姐姐洛莉",
+    "title": "大姐姐洛莉 · 玉虹道馆",
+    "cell": [
+      3,
+      3
+    ],
+    "facing": "down",
+    "sprite": "res://assets/celadon-gym/lori.png",
+    "portrait": "res://assets/celadon-gym/lori-trainer.png",
+    "party": [
+      {
+        "species_id": "exeggcute",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spd"
+        },
+        "moves": [
+          "hypnosis",
+          "reflect",
+          "leechseed",
+          "confusion"
+        ]
+      }
+    ],
+    "reward": 1728,
+    "intro": "很高兴认识你，我的爱好是训练宝可梦。",
+    "defeat": "太精彩了！",
+    "after": "莉佳擅长草属性宝可梦。",
+    "badge": "",
+    "redObject": 7,
+    "fireRedTrainer": "BeautyLori",
+    "alphaBBox": [
+      0,
+      1,
+      16,
+      16
+    ]
+  },
+  {
+    "id": "celadon_mary",
+    "map": "celadon-gym",
+    "name": "精英训练家玛丽",
+    "title": "精英训练家玛丽 · 玉虹道馆",
+    "cell": [
+      5,
+      3
+    ],
+    "facing": "down",
+    "sprite": "res://assets/celadon-gym/mary.png",
+    "portrait": "res://assets/celadon-gym/mary-trainer.png",
+    "party": [
+      {
+        "species_id": "bellsprout",
+        "level": 22,
+        "ivs": 12,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "wrap",
+          "stunspore",
+          "poisonpowder",
+          "growth"
+        ]
+      },
+      {
+        "species_id": "oddish",
+        "level": 22,
+        "ivs": 12,
+        "nature": {
+          "up": "def",
+          "down": "spe"
+        },
+        "moves": [
+          "poisonpowder",
+          "stunspore",
+          "absorb",
+          "sweetscent"
+        ]
+      },
+      {
+        "species_id": "weepinbell",
+        "level": 22,
+        "ivs": 12,
+        "nature": {
+          "up": "spa",
+          "down": "def"
+        },
+        "moves": [
+          "vinewhip",
+          "stunspore",
+          "poisonpowder",
+          "growth"
+        ]
+      },
+      {
+        "species_id": "gloom",
+        "level": 22,
+        "ivs": 12,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "absorb",
+          "stunspore",
+          "poisonpowder",
+          "sweetscent"
+        ]
+      },
+      {
+        "species_id": "ivysaur",
+        "level": 22,
+        "ivs": 12,
+        "nature": {
+          "up": "def",
+          "down": "spe"
+        },
+        "moves": [
+          "razorleaf",
+          "sleeppowder",
+          "vinewhip",
+          "leechseed"
+        ]
+      }
+    ],
+    "reward": 792,
+    "intro": "欢迎来到玉虹道馆！可别小看这里的女士！",
+    "defeat": "被打败了！",
+    "after": "莉佳擅长草属性宝可梦。",
+    "badge": "",
+    "redObject": 8,
+    "fireRedTrainer": "CooltrainerMary",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  }
+]

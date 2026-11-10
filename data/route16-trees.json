@@ -1,0 +1,50 @@
+[
+  {
+    "map": "route16",
+    "cell": [
+      34,
+      9
+    ],
+    "block_cell": [
+      17,
+      4
+    ],
+    "original": 96,
+    "replacement": 110,
+    "patch": "res://assets/route16/cut-96-110.png",
+    "cells": [
+      {
+        "cell": [
+          34,
+          8
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          35,
+          8
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          34,
+          9
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          35,
+          9
+        ],
+        "foot": 80,
+        "solid": 1
+      }
+    ]
+  }
+]

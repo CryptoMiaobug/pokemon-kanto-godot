@@ -1,0 +1,522 @@
+[
+  {
+    "id": "victory_naomi",
+    "map": "victory-road-1f",
+    "name": "精英训练家直美",
+    "title": "冠军之路 · 精英训练家直美",
+    "cell": [
+      7,
+      5
+    ],
+    "sprite": "res://assets/victory-road-1f/actor-1.png",
+    "portrait": "res://assets/victory-road-1f/cool_trainer_f-portrait.png",
+    "redObject": 1,
+    "fireRedTrainer": "CooltrainerNaomi",
+    "sourceName": "NAOMI",
+    "moneyCoefficient": 9,
+    "reward": 1512,
+    "party": [
+      {
+        "species_id": "persian",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "spa",
+          "down": "def"
+        },
+        "moves": [
+          "furyswipes",
+          "screech",
+          "faintattack",
+          "payday"
+        ]
+      },
+      {
+        "species_id": "ponyta",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "agility",
+          "takedown",
+          "firespin",
+          "stomp"
+        ]
+      },
+      {
+        "species_id": "rapidash",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "furyattack",
+          "firespin",
+          "stomp",
+          "growl"
+        ]
+      },
+      {
+        "species_id": "vulpix",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "spe",
+          "down": "spa"
+        },
+        "moves": [
+          "flamethrower",
+          "confuseray",
+          "quickattack",
+          "imprison"
+        ]
+      },
+      {
+        "species_id": "ninetales",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "safeguard",
+          "willowisp",
+          "confuseray",
+          "firespin"
+        ]
+      }
+    ],
+    "items": [
+      "hyperpotion"
+    ],
+    "slice": 51,
+    "intro": "冠军之路上的训练家，来一场对战吧！",
+    "defeat": "你赢了！继续向宝可梦联盟前进吧！",
+    "after": "前面还有强大的对手，做好准备再前进。"
+  },
+  {
+    "id": "victory_rolando",
+    "map": "victory-road-1f",
+    "name": "精英训练家罗兰多",
+    "title": "冠军之路 · 精英训练家罗兰多",
+    "cell": [
+      3,
+      2
+    ],
+    "sprite": "res://assets/victory-road-1f/actor-2.png",
+    "portrait": "res://assets/victory-road-1f/cool_trainer_m-portrait.png",
+    "redObject": 2,
+    "fireRedTrainer": "CooltrainerRolando",
+    "sourceName": "ROLANDO",
+    "moneyCoefficient": 9,
+    "reward": 1512,
+    "party": [
+      {
+        "species_id": "raticate",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "superfang",
+          "pursuit",
+          "scaryface",
+          "quickattack"
+        ]
+      },
+      {
+        "species_id": "ivysaur",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "razorleaf",
+          "sleeppowder",
+          "sweetscent",
+          "synthesis"
+        ]
+      },
+      {
+        "species_id": "wartortle",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "watergun",
+          "bite",
+          "rapidspin",
+          "tailwhip"
+        ]
+      },
+      {
+        "species_id": "charmeleon",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "def",
+          "down": "spe"
+        },
+        "moves": [
+          "flamethrower",
+          "slash",
+          "smokescreen",
+          "scaryface"
+        ]
+      },
+      {
+        "species_id": "charizard",
+        "level": 42,
+        "ivs": 12,
+        "nature": {
+          "up": "spa",
+          "down": "atk"
+        },
+        "moves": [
+          "flamethrower",
+          "wingattack",
+          "smokescreen",
+          "scaryface"
+        ]
+      }
+    ],
+    "items": [
+      "hyperpotion"
+    ],
+    "slice": 51,
+    "intro": "冠军之路上的训练家，来一场对战吧！",
+    "defeat": "你赢了！继续向宝可梦联盟前进吧！",
+    "after": "前面还有强大的对手，做好准备再前进。"
+  },
+  {
+    "id": "victory_daisuke",
+    "map": "victory-road-2f",
+    "name": "空手道王大辅",
+    "title": "冠军之路 · 空手道王大辅",
+    "cell": [
+      12,
+      9
+    ],
+    "sprite": "res://assets/victory-road-2f/actor-1.png",
+    "portrait": "res://assets/victory-road-2f/black_belt-portrait.png",
+    "redObject": 1,
+    "fireRedTrainer": "BlackBeltDaisuke",
+    "sourceName": "DAISUKE",
+    "moneyCoefficient": 6,
+    "reward": 1032,
+    "party": [
+      {
+        "species_id": "machoke",
+        "level": 43,
+        "ivs": 12,
+        "nature": {
+          "up": "spa",
+          "down": "def"
+        },
+        "moves": [
+          "foresight",
+          "revenge",
+          "vitalthrow",
+          "submission"
+        ],
+        "held_item": "blackbelt"
+      },
+      {
+        "species_id": "machop",
+        "level": 43,
+        "ivs": 12,
+        "nature": {
+          "up": "def",
+          "down": "atk"
+        },
+        "moves": [
+          "vitalthrow",
+          "submission",
+          "crosschop",
+          "scaryface"
+        ],
+        "held_item": "blackbelt"
+      },
+      {
+        "species_id": "machoke",
+        "level": 43,
+        "ivs": 12,
+        "nature": {
+          "up": "spe",
+          "down": "atk"
+        },
+        "moves": [
+          "foresight",
+          "revenge",
+          "vitalthrow",
+          "submission"
+        ],
+        "held_item": "blackbelt"
+      }
+    ],
+    "items": [],
+    "slice": 52,
+    "intro": "冠军之路上的训练家，来一场对战吧！",
+    "defeat": "你赢了！继续向宝可梦联盟前进吧！",
+    "after": "前面还有强大的对手，做好准备再前进。"
+  },
+  {
+    "id": "victory_nelson",
+    "map": "victory-road-2f",
+    "name": "杂耍师尼尔森",
+    "title": "冠军之路 · 杂耍师尼尔森",
+    "cell": [
+      21,
+      13
+    ],
+    "sprite": "res://assets/victory-road-2f/actor-2.png",
+    "portrait": "res://assets/victory-road-2f/juggler-portrait.png",
+    "redObject": 2,
+    "fireRedTrainer": "JugglerNelson",
+    "sourceName": "NELSON",
+    "moneyCoefficient": 10,
+    "reward": 1640,
+    "party": [
+      {
+        "species_id": "drowzee",
+        "level": 41,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spd"
+        },
+        "moves": [
+          "meditate",
+          "psychic",
+          "psychup",
+          "swagger"
+        ]
+      },
+      {
+        "species_id": "hypno",
+        "level": 41,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "headbutt",
+          "poisongas",
+          "meditate",
+          "psychic"
+        ]
+      },
+      {
+        "species_id": "kadabra",
+        "level": 41,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "recover",
+          "futuresight",
+          "roleplay",
+          "psychic"
+        ]
+      },
+      {
+        "species_id": "kadabra",
+        "level": 41,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spe"
+        },
+        "moves": [
+          "recover",
+          "futuresight",
+          "roleplay",
+          "psychic"
+        ]
+      }
+    ],
+    "items": [],
+    "slice": 52,
+    "intro": "冠军之路上的训练家，来一场对战吧！",
+    "defeat": "你赢了！继续向宝可梦联盟前进吧！",
+    "after": "前面还有强大的对手，做好准备再前进。"
+  },
+  {
+    "id": "victory_vincent",
+    "map": "victory-road-2f",
+    "name": "驯兽师文森特",
+    "title": "冠军之路 · 驯兽师文森特",
+    "cell": [
+      19,
+      8
+    ],
+    "sprite": "res://assets/victory-road-2f/actor-3.png",
+    "portrait": "res://assets/victory-road-2f/tamer-portrait.png",
+    "redObject": 3,
+    "fireRedTrainer": "TamerVincent",
+    "sourceName": "VINCENT",
+    "moneyCoefficient": 10,
+    "reward": 1760,
+    "party": [
+      {
+        "species_id": "persian",
+        "level": 44,
+        "ivs": 4,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "payday",
+          "faintattack",
+          "screech",
+          "furyswipes"
+        ]
+      },
+      {
+        "species_id": "golduck",
+        "level": 44,
+        "ivs": 4,
+        "nature": {
+          "up": "def",
+          "down": "spa"
+        },
+        "moves": [
+          "confusion",
+          "screech",
+          "psychup",
+          "furyswipes"
+        ]
+      }
+    ],
+    "items": [],
+    "slice": 52,
+    "intro": "冠军之路上的训练家，来一场对战吧！",
+    "defeat": "你赢了！继续向宝可梦联盟前进吧！",
+    "after": "前面还有强大的对手，做好准备再前进。"
+  },
+  {
+    "id": "victory_dawson",
+    "map": "victory-road-2f",
+    "name": "宝可梦狂道森",
+    "title": "冠军之路 · 宝可梦狂道森",
+    "cell": [
+      4,
+      2
+    ],
+    "sprite": "res://assets/victory-road-2f/actor-4.png",
+    "portrait": "res://assets/victory-road-2f/pokemaniac-portrait.png",
+    "redObject": 4,
+    "fireRedTrainer": "PokemaniacDawson",
+    "sourceName": "DAWSON",
+    "moneyCoefficient": 12,
+    "reward": 1920,
+    "party": [
+      {
+        "species_id": "charmeleon",
+        "level": 40,
+        "ivs": 3,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "metalclaw",
+          "smokescreen",
+          "scaryface",
+          "flamethrower"
+        ]
+      },
+      {
+        "species_id": "lapras",
+        "level": 40,
+        "ivs": 3,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "confuseray",
+          "perishsong",
+          "icebeam",
+          "raindance"
+        ]
+      },
+      {
+        "species_id": "lickitung",
+        "level": 40,
+        "ivs": 3,
+        "nature": {
+          "up": "spa",
+          "down": "spd"
+        },
+        "moves": [
+          "stomp",
+          "wrap",
+          "disable",
+          "slam"
+        ]
+      }
+    ],
+    "items": [],
+    "slice": 52,
+    "intro": "冠军之路上的训练家，来一场对战吧！",
+    "defeat": "你赢了！继续向宝可梦联盟前进吧！",
+    "after": "前面还有强大的对手，做好准备再前进。"
+  },
+  {
+    "id": "victory_gregory",
+    "map": "victory-road-2f",
+    "name": "杂耍师格雷戈里",
+    "title": "冠军之路 · 杂耍师格雷戈里",
+    "cell": [
+      26,
+      3
+    ],
+    "sprite": "res://assets/victory-road-2f/actor-5.png",
+    "portrait": "res://assets/victory-road-2f/juggler-portrait.png",
+    "redObject": 5,
+    "fireRedTrainer": "JugglerGregory",
+    "sourceName": "GREGORY",
+    "moneyCoefficient": 10,
+    "reward": 1920,
+    "party": [
+      {
+        "species_id": "mr_mime",
+        "level": 48,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "psychic",
+          "roleplay",
+          "doubleslap",
+          "encore"
+        ]
+      }
+    ],
+    "items": [],
+    "slice": 52,
+    "intro": "冠军之路上的训练家，来一场对战吧！",
+    "defeat": "你赢了！继续向宝可梦联盟前进吧！",
+    "after": "前面还有强大的对手，做好准备再前进。"
+  }
+]

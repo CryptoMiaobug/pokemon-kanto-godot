@@ -1,0 +1,443 @@
+[
+  {
+    "id": "mtmoon1f_marcos",
+    "map": "mtmoon-1f",
+    "name": "登山男马科斯",
+    "title": "登山男马科斯 · 月见山一层",
+    "cell": [
+      5,
+      6
+    ],
+    "facing": "down",
+    "sprite": "res://assets/mtmoon-trainers/marcos.png",
+    "portrait": "res://assets/mtmoon-trainers/hiker-trainer.png",
+    "reward": 360,
+    "party": [
+      {
+        "species_id": "geodude",
+        "level": 10,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "tackle",
+          "defensecurl",
+          "mudsport"
+        ]
+      },
+      {
+        "species_id": "geodude",
+        "level": 10,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "tackle",
+          "defensecurl",
+          "mudsport"
+        ]
+      },
+      {
+        "species_id": "onix",
+        "level": 10,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spa"
+        },
+        "moves": [
+          "tackle",
+          "screech",
+          "bind"
+        ]
+      }
+    ],
+    "intro": "哇！吓我一跳！原来只是个孩子！",
+    "defeat": "哇！又吓一跳！",
+    "after": "你这样的孩子不该在这里游荡！",
+    "sourceText": {
+      "textBefore": "WHOA! You shocked me! Oh, you're just a kid!",
+      "textEnd": "Wow! Shocked again!",
+      "textAfter": "Kids like you shouldn't be here!"
+    },
+    "redObject": 1,
+    "fireRedTrainer": "HikerMarcos",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ]
+  },
+  {
+    "id": "mtmoon1f_josh",
+    "map": "mtmoon-1f",
+    "name": "短裤小子乔希",
+    "title": "短裤小子乔希 · 月见山一层",
+    "cell": [
+      12,
+      16
+    ],
+    "facing": "right",
+    "sprite": "res://assets/mtmoon-trainers/josh.png",
+    "portrait": "res://assets/mtmoon-trainers/youngster-trainer.png",
+    "reward": 160,
+    "party": [
+      {
+        "species_id": "rattata",
+        "level": 10,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "atk"
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack"
+        ]
+      },
+      {
+        "species_id": "rattata",
+        "level": 10,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spd"
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack"
+        ]
+      },
+      {
+        "species_id": "zubat",
+        "level": 10,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "atk"
+        },
+        "moves": [
+          "leechlife",
+          "astonish"
+        ]
+      }
+    ],
+    "intro": "你也是来探险的吗？",
+    "defeat": "输了真难受！",
+    "after": "我是来向女孩子炫耀的。",
+    "sourceText": {
+      "textBefore": "Did you come to explore too?",
+      "textEnd": "Losing stinks!",
+      "textAfter": "I came down here to show off to girls."
+    },
+    "redObject": 2,
+    "fireRedTrainer": "YoungsterJosh",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "mtmoon1f_miriam",
+    "map": "mtmoon-1f",
+    "name": "少女米莉安",
+    "title": "少女米莉安 · 月见山一层",
+    "cell": [
+      30,
+      4
+    ],
+    "facing": "down",
+    "sprite": "res://assets/mtmoon-trainers/miriam.png",
+    "portrait": "res://assets/mtmoon-trainers/lass-trainer.png",
+    "reward": 176,
+    "party": [
+      {
+        "species_id": "oddish",
+        "level": 11,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spd"
+        },
+        "moves": [
+          "absorb",
+          "sweetscent"
+        ]
+      },
+      {
+        "species_id": "bellsprout",
+        "level": 11,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "vinewhip",
+          "growth",
+          "wrap"
+        ]
+      }
+    ],
+    "intro": "哇！里面比我想的大多了！",
+    "defeat": "啊！我输了！",
+    "after": "要怎么离开这里呢？",
+    "sourceText": {
+      "textBefore": "Wow! It's way bigger in here than I thought!",
+      "textEnd": "Oh! I lost it!",
+      "textAfter": "How do you get out of here?"
+    },
+    "redObject": 3,
+    "fireRedTrainer": "LassMiriam",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "mtmoon1f_jovan",
+    "map": "mtmoon-1f",
+    "name": "理科男乔万",
+    "title": "理科男乔万 · 月见山一层",
+    "cell": [
+      24,
+      31
+    ],
+    "facing": "up",
+    "sprite": "res://assets/mtmoon-trainers/jovan.png",
+    "portrait": "res://assets/mtmoon-trainers/super_nerd-trainer.png",
+    "reward": 264,
+    "party": [
+      {
+        "species_id": "magnemite",
+        "level": 11,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spd"
+        },
+        "moves": [
+          "metalsound",
+          "tackle",
+          "thundershock",
+          "supersonic"
+        ]
+      },
+      {
+        "species_id": "voltorb",
+        "level": 11,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "charge",
+          "tackle",
+          "screech"
+        ]
+      }
+    ],
+    "intro": "什么！别偷偷靠近我！",
+    "defeat": "我的宝可梦不行啊！",
+    "after": "我得找到更强的宝可梦。",
+    "sourceText": {
+      "textBefore": "What! Don't sneak up on me!",
+      "textEnd": "My POKéMON won't do!",
+      "textAfter": "I have to find stronger POKéMON."
+    },
+    "redObject": 4,
+    "fireRedTrainer": "SuperNerdJovan",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "mtmoon1f_iris",
+    "map": "mtmoon-1f",
+    "name": "少女艾丽丝",
+    "title": "少女艾丽丝 · 月见山一层",
+    "cell": [
+      16,
+      23
+    ],
+    "facing": "down",
+    "sprite": "res://assets/mtmoon-trainers/iris.png",
+    "portrait": "res://assets/mtmoon-trainers/lass-trainer.png",
+    "reward": 224,
+    "party": [
+      {
+        "species_id": "clefairy",
+        "level": 14,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "def"
+        },
+        "moves": [
+          "growl",
+          "encore",
+          "sing",
+          "doubleslap"
+        ]
+      }
+    ],
+    "intro": "什么？我正在这里等朋友来找我。",
+    "defeat": "我输了？",
+    "after": "听说这里有很稀有的化石。",
+    "sourceText": {
+      "textBefore": "What? I'm waiting for my friends to find me here.",
+      "textEnd": "I lost?",
+      "textAfter": "I heard there are some very rare fossils here."
+    },
+    "redObject": 5,
+    "fireRedTrainer": "LassIris",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "mtmoon1f_kent",
+    "map": "mtmoon-1f",
+    "name": "捕虫少年肯特",
+    "title": "捕虫少年肯特 · 月见山一层",
+    "cell": [
+      7,
+      22
+    ],
+    "facing": "down",
+    "sprite": "res://assets/mtmoon-trainers/kent.png",
+    "portrait": "res://assets/mtmoon-trainers/bug_catcher-trainer.png",
+    "reward": 132,
+    "party": [
+      {
+        "species_id": "weedle",
+        "level": 11,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "atk"
+        },
+        "moves": [
+          "poisonsting",
+          "stringshot"
+        ]
+      },
+      {
+        "species_id": "kakuna",
+        "level": 11,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spd"
+        },
+        "moves": [
+          "harden"
+        ]
+      }
+    ],
+    "intro": "洞里有可疑的人，你呢？",
+    "defeat": "被你打败了！",
+    "after": "我看到了！他们一定是火箭队！",
+    "sourceText": {
+      "textBefore": "Suspicious men are in the cave. What about you?",
+      "textEnd": "You got me!",
+      "textAfter": "I saw them! I'm sure they're from TEAM ROCKET!"
+    },
+    "redObject": 6,
+    "fireRedTrainer": "BugCatcherKent",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "mtmoon1f_robby",
+    "map": "mtmoon-1f",
+    "name": "捕虫少年罗比",
+    "title": "捕虫少年罗比 · 月见山一层",
+    "cell": [
+      30,
+      27
+    ],
+    "facing": "right",
+    "sprite": "res://assets/mtmoon-trainers/robby.png",
+    "portrait": "res://assets/mtmoon-trainers/bug_catcher-trainer.png",
+    "reward": 120,
+    "party": [
+      {
+        "species_id": "caterpie",
+        "level": 10,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spa"
+        },
+        "moves": [
+          "tackle",
+          "stringshot"
+        ]
+      },
+      {
+        "species_id": "metapod",
+        "level": 10,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "harden"
+        ]
+      },
+      {
+        "species_id": "caterpie",
+        "level": 10,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spa"
+        },
+        "moves": [
+          "tackle",
+          "stringshot"
+        ]
+      }
+    ],
+    "intro": "穿过这个洞穴就能到华蓝市！",
+    "defeat": "我输了。",
+    "after": "超音蝠很难对付，抓到后也能帮上忙。",
+    "sourceText": {
+      "textBefore": "Go through this cave to get to CERULEAN CITY!",
+      "textEnd": "I lost.",
+      "textAfter": "ZUBAT is tough! But, it can be useful if you catch one."
+    },
+    "redObject": 7,
+    "fireRedTrainer": "BugCatcherRobby",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  }
+]

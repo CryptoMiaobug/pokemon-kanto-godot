@@ -1,0 +1,187 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "baseline": "d38fd74",
+  "maps": "Red data/maps/PokemonTower3F..7F.json and MrFujisHouse.json; original foot geometry, actors, warp indices",
+  "rules": "FR trainer_parties.h/trainers.h, wild_encounters.json, level_up_learnsets.h, battle_script_commands.c, PokemonTower_5F/6F/7F and VolunteerPokemonHouse scripts",
+  "existing": [
+    "paired indexed warps",
+    "atomic trainer settlement",
+    "optional v3 flags",
+    "confusion/sleep/paralysis",
+    "source sprites/importer"
+  ],
+  "required": [
+    "Gastly/Haunter; source current moves Curse/NightShade/Spite/Lick",
+    "Scope identification/no-scope refusal",
+    "four purified cells healing latch",
+    "Marowak30 Bonemerang special uncapturable battle and atomic release",
+    "three Rocket teams and rescue/return then separate flute claim",
+    "key-item menu"
+  ],
+  "deferred": [
+    "07 onward",
+    "ordinary floor items",
+    "sight AI/cutscenes/music",
+    "complete abilities/held items/battle engine"
+  ],
+  "stages": [
+    [
+      "01",
+      "2F->3F",
+      "three trainers and wild",
+      "stop 4F"
+    ],
+    [
+      "02",
+      "3F->4F",
+      "three trainers/wild",
+      "stop 5F"
+    ],
+    [
+      "03",
+      "4F->5F",
+      "four trainers/wild/purified enter heal then latch until leave",
+      "stop 6F"
+    ],
+    [
+      "04",
+      "5F->6F",
+      "three trainers/wild",
+      "stop special event"
+    ],
+    [
+      "05",
+      "scope + trigger10,16",
+      "cancel/loss retry; win growth + released atomically",
+      "7F pending"
+    ],
+    [
+      "06",
+      "released ->7F",
+      "three independent Rocket wins; rescue atomically flags+house location; separate E flute once",
+      "batch end"
+    ]
+  ],
+  "map": "data/maps/PokemonTower7F.json",
+  "mapSHA256": "865da364b369086368604b9c1731409a6189069ca4d58ff9d4217326dd394e18",
+  "warps": [
+    {
+      "x": 9,
+      "y": 16,
+      "destMap": "POKEMON_TOWER_6F",
+      "destMapId": 147,
+      "destMapName": "PokemonTower6F",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "POKEMONTOWER7F_ROCKET1",
+      "x": 9,
+      "y": 11,
+      "sprite": "SPRITE_ROCKET",
+      "spriteId": 24,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_POKEMONTOWER7F_ROCKET1",
+      "textIndex": 1,
+      "trainer": {
+        "trainerClass": "OPP_ROCKET",
+        "trainerClassId": 30,
+        "trainerPartyIndex": 19,
+        "header": "PokemonTower7TrainerHeader0",
+        "eventFlag": "EVENT_BEAT_POKEMONTOWER_7_TRAINER_0",
+        "eventFlagIndex": 273,
+        "sightRange": 3,
+        "textBefore": "PokemonTower7FRocket1BattleText",
+        "textEnd": "PokemonTower7FRocket1EndBattleText",
+        "textAfter": "PokemonTower7FRocket1AfterBattleText"
+      },
+      "toggleIndex": 64,
+      "toggleConst": "TOGGLE_POKEMON_TOWER_7F_ROCKET_1",
+      "startsHidden": false
+    },
+    {
+      "index": 2,
+      "const": "POKEMONTOWER7F_ROCKET2",
+      "x": 12,
+      "y": 9,
+      "sprite": "SPRITE_ROCKET",
+      "spriteId": 24,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_POKEMONTOWER7F_ROCKET2",
+      "textIndex": 2,
+      "trainer": {
+        "trainerClass": "OPP_ROCKET",
+        "trainerClassId": 30,
+        "trainerPartyIndex": 20,
+        "header": "PokemonTower7TrainerHeader1",
+        "eventFlag": "EVENT_BEAT_POKEMONTOWER_7_TRAINER_1",
+        "eventFlagIndex": 274,
+        "sightRange": 3,
+        "textBefore": "PokemonTower7FRocket2BattleText",
+        "textEnd": "PokemonTower7FRocket2EndBattleText",
+        "textAfter": "PokemonTower7FRocket2AfterBattleText"
+      },
+      "toggleIndex": 65,
+      "toggleConst": "TOGGLE_POKEMON_TOWER_7F_ROCKET_2",
+      "startsHidden": false
+    },
+    {
+      "index": 3,
+      "const": "POKEMONTOWER7F_ROCKET3",
+      "x": 9,
+      "y": 7,
+      "sprite": "SPRITE_ROCKET",
+      "spriteId": 24,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_POKEMONTOWER7F_ROCKET3",
+      "textIndex": 3,
+      "trainer": {
+        "trainerClass": "OPP_ROCKET",
+        "trainerClassId": 30,
+        "trainerPartyIndex": 21,
+        "header": "PokemonTower7TrainerHeader2",
+        "eventFlag": "EVENT_BEAT_POKEMONTOWER_7_TRAINER_2",
+        "eventFlagIndex": 275,
+        "sightRange": 3,
+        "textBefore": "PokemonTower7FRocket3BattleText",
+        "textEnd": "PokemonTower7FRocket3EndBattleText",
+        "textAfter": "PokemonTower7FRocket3AfterBattleText"
+      },
+      "toggleIndex": 66,
+      "toggleConst": "TOGGLE_POKEMON_TOWER_7F_ROCKET_3",
+      "startsHidden": false
+    },
+    {
+      "index": 4,
+      "const": "POKEMONTOWER7F_MR_FUJI",
+      "x": 10,
+      "y": 3,
+      "sprite": "SPRITE_MR_FUJI",
+      "spriteId": 22,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_POKEMONTOWER7F_MR_FUJI",
+      "textIndex": 4,
+      "toggleIndex": 67,
+      "toggleConst": "TOGGLE_POKEMON_TOWER_7F_MR_FUJI",
+      "startsHidden": false
+    }
+  ],
+  "rights": "Original rights holders; redistribution clearance not established",
+  "sprite": "native16px static nearest local1x/world2x source feet anchor"
+}

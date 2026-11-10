@@ -1,0 +1,596 @@
+[
+  {
+    "map": "rock-tunnel-1f",
+    "red_object": 1,
+    "fireRedTrainer": "HIKER_LENNY",
+    "party": [
+      {
+        "species_id": "geodude",
+        "level": 19,
+        "known_moves": [
+          "defensecurl",
+          "mudsport",
+          "rockthrow",
+          "magnitude"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      },
+      {
+        "species_id": "machop",
+        "level": 19,
+        "known_moves": [
+          "leer",
+          "focusenergy",
+          "karatechop",
+          "seismictoss"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      },
+      {
+        "species_id": "geodude",
+        "level": 19,
+        "known_moves": [
+          "defensecurl",
+          "mudsport",
+          "rockthrow",
+          "magnitude"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      },
+      {
+        "species_id": "geodude",
+        "level": 19,
+        "known_moves": [
+          "defensecurl",
+          "mudsport",
+          "rockthrow",
+          "magnitude"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      }
+    ],
+    "source_party_found": true,
+    "implementation": "implemented source custom moves respected",
+    "trainer_id": "rock_lenny"
+  },
+  {
+    "map": "rock-tunnel-1f",
+    "red_object": 2,
+    "fireRedTrainer": "HIKER_OLIVER",
+    "party": [
+      {
+        "species_id": "onix",
+        "level": 20,
+        "known_moves": [
+          "screech",
+          "bind",
+          "rockthrow",
+          "harden"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      },
+      {
+        "species_id": "onix",
+        "level": 20,
+        "known_moves": [
+          "screech",
+          "bind",
+          "rockthrow",
+          "harden"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      },
+      {
+        "species_id": "geodude",
+        "level": 20,
+        "known_moves": [
+          "defensecurl",
+          "mudsport",
+          "rockthrow",
+          "magnitude"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      }
+    ],
+    "source_party_found": true,
+    "implementation": "implemented source custom moves respected",
+    "trainer_id": "rock_oliver"
+  },
+  {
+    "map": "rock-tunnel-1f",
+    "red_object": 3,
+    "fireRedTrainer": "HIKER_LUCAS",
+    "party": [
+      {
+        "species_id": "geodude",
+        "level": 21,
+        "known_moves": [
+          "magnitude",
+          "rockthrow",
+          "mudsport",
+          "defensecurl"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      },
+      {
+        "species_id": "graveler",
+        "level": 21,
+        "known_moves": [
+          "magnitude",
+          "rockthrow",
+          "mudsport",
+          "defensecurl"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      }
+    ],
+    "source_party_found": true,
+    "implementation": "implemented source custom moves respected",
+    "trainer_id": "rock_lucas"
+  },
+  {
+    "map": "rock-tunnel-1f",
+    "red_object": 4,
+    "fireRedTrainer": "POKEMANIAC_ASHTON",
+    "party": [
+      {
+        "species_id": "cubone",
+        "level": 23,
+        "known_moves": [
+          "boneclub",
+          "headbutt",
+          "leer",
+          "focusenergy"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      },
+      {
+        "species_id": "slowpoke",
+        "level": 23,
+        "known_moves": [
+          "tackle",
+          "growl",
+          "watergun",
+          "confusion"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      }
+    ],
+    "source_party_found": true,
+    "implementation": "implemented source custom moves respected",
+    "trainer_id": "rock_ashton"
+  },
+  {
+    "map": "rock-tunnel-1f",
+    "red_object": 5,
+    "fireRedTrainer": "PICNICKER_LEAH",
+    "party": [
+      {
+        "species_id": "bellsprout",
+        "level": 22,
+        "known_moves": [
+          "wrap",
+          "sleeppowder",
+          "poisonpowder",
+          "stunspore"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      },
+      {
+        "species_id": "clefairy",
+        "level": 22,
+        "known_moves": [
+          "sing",
+          "doubleslap",
+          "followme",
+          "minimize"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      }
+    ],
+    "source_party_found": true,
+    "implementation": "implemented source custom moves respected",
+    "trainer_id": "rock_leah"
+  },
+  {
+    "map": "rock-tunnel-1f",
+    "red_object": 6,
+    "fireRedTrainer": "PICNICKER_DANA",
+    "party": [
+      {
+        "species_id": "meowth",
+        "level": 20,
+        "known_moves": [
+          "scratch",
+          "growl",
+          "bite",
+          "payday"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      },
+      {
+        "species_id": "oddish",
+        "level": 20,
+        "known_moves": [
+          "sweetscent",
+          "poisonpowder",
+          "stunspore",
+          "sleeppowder"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      },
+      {
+        "species_id": "pidgey",
+        "level": 20,
+        "known_moves": [
+          "sandattack",
+          "gust",
+          "quickattack",
+          "whirlwind"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      }
+    ],
+    "source_party_found": true,
+    "implementation": "implemented source custom moves respected",
+    "trainer_id": "rock_dana"
+  },
+  {
+    "map": "rock-tunnel-1f",
+    "red_object": 7,
+    "fireRedTrainer": "PICNICKER_ARIANA",
+    "party": [
+      {
+        "species_id": "pidgey",
+        "level": 19,
+        "known_moves": [
+          "sandattack",
+          "gust",
+          "quickattack",
+          "whirlwind"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      },
+      {
+        "species_id": "rattata",
+        "level": 19,
+        "known_moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack",
+          "hyperfang"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      },
+      {
+        "species_id": "rattata",
+        "level": 19,
+        "known_moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack",
+          "hyperfang"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      },
+      {
+        "species_id": "bellsprout",
+        "level": 19,
+        "known_moves": [
+          "wrap",
+          "sleeppowder",
+          "poisonpowder",
+          "stunspore"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      }
+    ],
+    "source_party_found": true,
+    "implementation": "implemented source custom moves respected",
+    "trainer_id": "rock_ariana"
+  },
+  {
+    "map": "rock-tunnel-b1f",
+    "red_object": 1,
+    "fireRedTrainer": "PICNICKER_SOFIA",
+    "party": [
+      {
+        "species_id": "jigglypuff",
+        "level": 21,
+        "known_moves": [
+          "defensecurl",
+          "pound",
+          "disable",
+          "rollout"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      },
+      {
+        "species_id": "pidgey",
+        "level": 21,
+        "known_moves": [
+          "sandattack",
+          "gust",
+          "quickattack",
+          "whirlwind"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      },
+      {
+        "species_id": "meowth",
+        "level": 21,
+        "known_moves": [
+          "scratch",
+          "growl",
+          "bite",
+          "payday"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      }
+    ],
+    "source_party_found": true,
+    "implementation": "implemented source custom moves respected",
+    "trainer_id": "rock_sofia"
+  },
+  {
+    "map": "rock-tunnel-b1f",
+    "red_object": 2,
+    "fireRedTrainer": "HIKER_DUDLEY",
+    "party": [
+      {
+        "species_id": "geodude",
+        "level": 21,
+        "known_moves": [
+          "magnitude",
+          "rockthrow",
+          "mudsport",
+          "defensecurl"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      },
+      {
+        "species_id": "geodude",
+        "level": 21,
+        "known_moves": [
+          "magnitude",
+          "rockthrow",
+          "mudsport",
+          "defensecurl"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      },
+      {
+        "species_id": "graveler",
+        "level": 21,
+        "known_moves": [
+          "magnitude",
+          "rockthrow",
+          "mudsport",
+          "defensecurl"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      }
+    ],
+    "source_party_found": true,
+    "implementation": "implemented source custom moves respected",
+    "trainer_id": "rock_dudley"
+  },
+  {
+    "map": "rock-tunnel-b1f",
+    "red_object": 3,
+    "fireRedTrainer": "POKEMANIAC_COOPER",
+    "party": [
+      {
+        "species_id": "slowpoke",
+        "level": 20,
+        "known_moves": [
+          "tackle",
+          "growl",
+          "watergun",
+          "confusion"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      },
+      {
+        "species_id": "slowpoke",
+        "level": 20,
+        "known_moves": [
+          "tackle",
+          "growl",
+          "watergun",
+          "confusion"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      },
+      {
+        "species_id": "slowpoke",
+        "level": 20,
+        "known_moves": [
+          "tackle",
+          "growl",
+          "watergun",
+          "confusion"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      }
+    ],
+    "source_party_found": true,
+    "implementation": "implemented source custom moves respected",
+    "trainer_id": "rock_cooper"
+  },
+  {
+    "map": "rock-tunnel-b1f",
+    "red_object": 4,
+    "fireRedTrainer": "POKEMANIAC_STEVE",
+    "party": [
+      {
+        "species_id": "charmander",
+        "level": 22,
+        "known_moves": [
+          "growl",
+          "ember",
+          "metalclaw",
+          "smokescreen"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      },
+      {
+        "species_id": "cubone",
+        "level": 22,
+        "known_moves": [
+          "boneclub",
+          "headbutt",
+          "leer",
+          "focusenergy"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      }
+    ],
+    "source_party_found": true,
+    "implementation": "implemented source custom moves respected",
+    "trainer_id": "rock_steve"
+  },
+  {
+    "map": "rock-tunnel-b1f",
+    "red_object": 5,
+    "fireRedTrainer": "HIKER_ALLEN",
+    "party": [
+      {
+        "species_id": "geodude",
+        "level": 25,
+        "known_moves": [
+          "magnitude",
+          "rockthrow",
+          "mudsport",
+          "defensecurl"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      }
+    ],
+    "source_party_found": true,
+    "implementation": "implemented source custom moves respected",
+    "trainer_id": "rock_allen"
+  },
+  {
+    "map": "rock-tunnel-b1f",
+    "red_object": 6,
+    "fireRedTrainer": "PICNICKER_MARTHA",
+    "party": [
+      {
+        "species_id": "oddish",
+        "level": 22,
+        "known_moves": [
+          "sweetscent",
+          "poisonpowder",
+          "stunspore",
+          "sleeppowder"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      },
+      {
+        "species_id": "bulbasaur",
+        "level": 22,
+        "known_moves": [
+          "vinewhip",
+          "poisonpowder",
+          "sleeppowder",
+          "razorleaf"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      }
+    ],
+    "source_party_found": true,
+    "implementation": "implemented source custom moves respected",
+    "trainer_id": "rock_martha"
+  },
+  {
+    "map": "rock-tunnel-b1f",
+    "red_object": 7,
+    "fireRedTrainer": "HIKER_ERIC",
+    "party": [
+      {
+        "species_id": "machop",
+        "level": 20,
+        "known_moves": [
+          "leer",
+          "focusenergy",
+          "karatechop",
+          "seismictoss"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      },
+      {
+        "species_id": "onix",
+        "level": 20,
+        "known_moves": [
+          "screech",
+          "bind",
+          "rockthrow",
+          "harden"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      }
+    ],
+    "source_party_found": true,
+    "implementation": "implemented source custom moves respected",
+    "trainer_id": "rock_eric"
+  },
+  {
+    "map": "rock-tunnel-b1f",
+    "red_object": 8,
+    "fireRedTrainer": "POKEMANIAC_WINSTON",
+    "party": [
+      {
+        "species_id": "slowpoke",
+        "level": 25,
+        "known_moves": [
+          "growl",
+          "watergun",
+          "confusion",
+          "disable"
+        ],
+        "species_present": true,
+        "missing_moves": []
+      }
+    ],
+    "source_party_found": true,
+    "implementation": "implemented source custom moves respected",
+    "trainer_id": "rock_winston"
+  }
+]

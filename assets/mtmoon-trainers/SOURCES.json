@@ -1,0 +1,16 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "correspondence": "All seven original objects, ordered parties and distinctive intro/defeat dialogue match Marcos/Josh/Miriam/Jovan/Iris/Kent/Robby. Red coordinates/directions; FR default moves/IV0, English source name hash nature.",
+  "rules": [
+    "src/data/trainer_parties.h",
+    "src/data/trainers.h",
+    "src/battle_main.c gTrainerMoneyTable/CreateNPCTrainerParty",
+    "src/battle_script_commands.c",
+    "src/battle_util.c",
+    "src/pokemon.c"
+  ],
+  "actors": "Original Red native16px frames down0/up16/right mirror32, local1x world2x nearest, cell center/feet anchor. No sight chase.",
+  "species": "Only Oddish/Bellsprout/Magnemite/Voltorb original front/back/icon and source growth/learnsets, no new evolution chain.",
+  "rights": "Original rights holders; no clearance asserted."
+}

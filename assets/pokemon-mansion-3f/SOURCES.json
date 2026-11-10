@@ -1,0 +1,158 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/PokemonMansion3F.json",
+  "mapSHA256": "98dda79d77c7f339375f03b7d55c0ecfd77436f527ae6344ee704faca3198f55",
+  "actors": [
+    {
+      "index": 1,
+      "const": "POKEMONMANSION3F_SUPER_NERD",
+      "x": 5,
+      "y": 11,
+      "sprite": "SPRITE_SUPER_NERD",
+      "spriteId": 12,
+      "movement": "WALK",
+      "rangeOrDirection": "LEFT_RIGHT",
+      "rangeOrDirectionValue": 2,
+      "behavior": "walk_left_right",
+      "textId": "TEXT_POKEMONMANSION3F_SUPER_NERD",
+      "textIndex": 1,
+      "trainer": {
+        "trainerClass": "OPP_BURGLAR",
+        "trainerClassId": 11,
+        "trainerPartyIndex": 8,
+        "header": "Mansion3TrainerHeader0",
+        "eventFlag": "EVENT_BEAT_MANSION_3_TRAINER_0",
+        "eventFlagIndex": 2065,
+        "sightRange": 0,
+        "textBefore": "PokemonMansion3FSuperNerdBattleText",
+        "textEnd": "PokemonMansion3FSuperNerdEndBattleText",
+        "textAfter": "PokemonMansion3FSuperNerdAfterBattleText"
+      }
+    },
+    {
+      "index": 2,
+      "const": "POKEMONMANSION3F_SCIENTIST",
+      "x": 20,
+      "y": 11,
+      "sprite": "SPRITE_SCIENTIST",
+      "spriteId": 32,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_POKEMONMANSION3F_SCIENTIST",
+      "textIndex": 2,
+      "trainer": {
+        "trainerClass": "OPP_SCIENTIST",
+        "trainerClassId": 28,
+        "trainerPartyIndex": 12,
+        "header": "Mansion3TrainerHeader1",
+        "eventFlag": "EVENT_BEAT_MANSION_3_TRAINER_1",
+        "eventFlagIndex": 2066,
+        "sightRange": 2,
+        "textBefore": "PokemonMansion3FScientistBattleText",
+        "textEnd": "PokemonMansion3FScientistEndBattleText",
+        "textAfter": "PokemonMansion3FScientistAfterBattleText"
+      }
+    },
+    {
+      "index": 3,
+      "const": "POKEMONMANSION3F_MAX_POTION",
+      "x": 1,
+      "y": 16,
+      "sprite": "SPRITE_POKE_BALL",
+      "spriteId": 61,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_POKEMONMANSION3F_MAX_POTION",
+      "textIndex": 3,
+      "item": "MAX_POTION",
+      "itemId": 17,
+      "toggleIndex": 188,
+      "toggleConst": "TOGGLE_POKEMON_MANSION_3F_ITEM_1",
+      "startsHidden": false
+    },
+    {
+      "index": 4,
+      "const": "POKEMONMANSION3F_IRON",
+      "x": 25,
+      "y": 5,
+      "sprite": "SPRITE_POKE_BALL",
+      "spriteId": 61,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_POKEMONMANSION3F_IRON",
+      "textIndex": 4,
+      "item": "IRON",
+      "itemId": 37,
+      "toggleIndex": 189,
+      "toggleConst": "TOGGLE_POKEMON_MANSION_3F_ITEM_2",
+      "startsHidden": false
+    },
+    {
+      "index": 5,
+      "const": "POKEMONMANSION3F_DIARY",
+      "x": 6,
+      "y": 12,
+      "sprite": "SPRITE_POKEDEX",
+      "spriteId": 65,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_POKEMONMANSION3F_DIARY",
+      "textIndex": 5
+    }
+  ],
+  "warps": [
+    {
+      "x": 7,
+      "y": 10,
+      "destMap": "POKEMON_MANSION_2F",
+      "destMapId": 214,
+      "destMapName": "PokemonMansion2F",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "destMap": "POKEMON_MANSION_2F",
+      "destMapId": 214,
+      "destMapName": "PokemonMansion2F",
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 25,
+      "y": 14,
+      "destMap": "POKEMON_MANSION_2F",
+      "destMapId": 214,
+      "destMapName": "PokemonMansion2F",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    }
+  ],
+  "doors": [
+    [
+      7,
+      2,
+      14,
+      95
+    ],
+    [
+      7,
+      5,
+      95,
+      14
+    ]
+  ],
+  "doorSource": "src/game/scripts/regions/kanto6_lib.js MANSION_DOORS",
+  "adaptation": "Red original geometry and actors; matched FR complete ordered party. Manual E challenge; static original actor frames, ordinary loot/diary interaction deferred; SECRET_KEY pickup implemented at stage38. FR-only Johnson absent from Red geometry and deferred. Source switch reset on Cinnabar exterior; local atomic toggle includes current safe location.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

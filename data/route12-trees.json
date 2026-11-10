@@ -1,0 +1,98 @@
+[
+  {
+    "map": "route12",
+    "cell": [
+      7,
+      88
+    ],
+    "block_cell": [
+      3,
+      44
+    ],
+    "original": 53,
+    "replacement": 76,
+    "patch": "res://assets/route12/cut-53-76.png",
+    "cells": [
+      {
+        "cell": [
+          6,
+          88
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          7,
+          88
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          6,
+          89
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          7,
+          89
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "route12",
+    "cell": [
+      9,
+      99
+    ],
+    "block_cell": [
+      4,
+      49
+    ],
+    "original": 51,
+    "replacement": 108,
+    "patch": "res://assets/route12/cut-51-108.png",
+    "cells": [
+      {
+        "cell": [
+          8,
+          98
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          9,
+          98
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          8,
+          99
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          9,
+          99
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  }
+]

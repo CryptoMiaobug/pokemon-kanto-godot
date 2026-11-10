@@ -1,0 +1,32 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/SilphCoElevator.json",
+  "mapSHA256": "7ff5c9fecd13a649b6ffefc668b1e1b92048ab97acd37aaa21a249b548485516",
+  "warps": [
+    {
+      "x": 1,
+      "y": 3,
+      "destMap": "UNUSED_MAP_ED",
+      "destMapId": 237,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0,
+      "placeholder": true
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "destMap": "UNUSED_MAP_ED",
+      "destMapId": 237,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0,
+      "placeholder": true
+    }
+  ],
+  "actors": [],
+  "doorSource": "src/game/scripts/regions/kanto5_lib.js SILPH_DOORS actual GateCoordinates; not unused maps_meta",
+  "adaptation": "Red geometry/actors native16px local1x world2x nearest, FR full parties/reward. E manual interaction; no auto sight or animation. Floors beyond slice explicitly closed. Non-key items deferred.",
+  "rights": "Original rights holders; redistribution clearance not established"
+}

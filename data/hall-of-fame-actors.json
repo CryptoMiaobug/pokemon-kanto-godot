@@ -1,0 +1,19 @@
+[
+  {
+    "map": "hall-of-fame",
+    "cell": [
+      5,
+      2
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/hall-of-fame/actor-1.png",
+    "facing": "down",
+    "role": "visitor",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ]
+  }
+]

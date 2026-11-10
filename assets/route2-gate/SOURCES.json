@@ -1,0 +1,85 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/Route2Gate.json",
+  "mapSHA256": "f05b51fb21d899bed535e0c428588b31b38aa7af6f1e307e13ec108f757de7d1",
+  "tileset": "data/tilesets/Gate.json",
+  "gfx": "assets/tilesets/gate.png",
+  "warps": [
+    {
+      "x": 4,
+      "y": 0,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 5,
+      "destWarpIndex": 4
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 5,
+      "destWarpIndex": 4
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "ROUTE2GATE_OAKS_AIDE",
+      "x": 1,
+      "y": 4,
+      "sprite": "SPRITE_SCIENTIST",
+      "spriteId": 32,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROUTE2GATE_OAKS_AIDE",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "ROUTE2GATE_YOUNGSTER",
+      "x": 5,
+      "y": 4,
+      "sprite": "SPRITE_YOUNGSTER",
+      "spriteId": 4,
+      "movement": "WALK",
+      "rangeOrDirection": "LEFT_RIGHT",
+      "rangeOrDirectionValue": 2,
+      "behavior": "walk_left_right",
+      "textId": "TEXT_ROUTE2GATE_YOUNGSTER",
+      "textIndex": 2
+    }
+  ],
+  "localScale": 1,
+  "worldScale": 2,
+  "feetAnchor": [
+    8,
+    16
+  ],
+  "adaptation": "Red geometry and static actors; FireRed dialogue identities. HM05 threshold/reward/teaching/use deferred O14-2/3; trade service deferred. No walking NPC/audio.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

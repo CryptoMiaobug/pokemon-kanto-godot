@@ -1,0 +1,175 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/PokemonMansion1F.json",
+  "mapSHA256": "95f76d0ceeb84570ddcce6c2cdc55abf0567a4f585859c76a83fd25855845133",
+  "actors": [
+    {
+      "index": 1,
+      "const": "POKEMONMANSION1F_SCIENTIST",
+      "x": 17,
+      "y": 17,
+      "sprite": "SPRITE_SCIENTIST",
+      "spriteId": 32,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_POKEMONMANSION1F_SCIENTIST",
+      "textIndex": 1,
+      "trainer": {
+        "trainerClass": "OPP_SCIENTIST",
+        "trainerClassId": 28,
+        "trainerPartyIndex": 4,
+        "header": "Mansion1TrainerHeader0",
+        "eventFlag": "EVENT_BEAT_MANSION_1_TRAINER_0",
+        "eventFlagIndex": 649,
+        "sightRange": 3,
+        "textBefore": "PokemonMansion1FScientistBattleText",
+        "textEnd": "PokemonMansion1FScientistEndBattleText",
+        "textAfter": "PokemonMansion1FScientistAfterBattleText"
+      }
+    },
+    {
+      "index": 2,
+      "const": "POKEMONMANSION1F_ESCAPE_ROPE",
+      "x": 14,
+      "y": 3,
+      "sprite": "SPRITE_POKE_BALL",
+      "spriteId": 61,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_POKEMONMANSION1F_ESCAPE_ROPE",
+      "textIndex": 2,
+      "item": "ESCAPE_ROPE",
+      "itemId": 29,
+      "toggleIndex": 72,
+      "toggleConst": "TOGGLE_POKEMON_MANSION_1F_ITEM_1",
+      "startsHidden": false
+    },
+    {
+      "index": 3,
+      "const": "POKEMONMANSION1F_CARBOS",
+      "x": 18,
+      "y": 21,
+      "sprite": "SPRITE_POKE_BALL",
+      "spriteId": 61,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_POKEMONMANSION1F_CARBOS",
+      "textIndex": 3,
+      "item": "CARBOS",
+      "itemId": 38,
+      "toggleIndex": 73,
+      "toggleConst": "TOGGLE_POKEMON_MANSION_1F_ITEM_2",
+      "startsHidden": false
+    }
+  ],
+  "warps": [
+    {
+      "x": 4,
+      "y": 27,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 5,
+      "y": 27,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 6,
+      "y": 27,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 7,
+      "y": 27,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "destMap": "POKEMON_MANSION_2F",
+      "destMapId": 214,
+      "destMapName": "PokemonMansion2F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 21,
+      "y": 23,
+      "destMap": "POKEMON_MANSION_B1F",
+      "destMapId": 216,
+      "destMapName": "PokemonMansionB1F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 26,
+      "y": 27,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 27,
+      "y": 27,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "doors": [
+    [
+      12,
+      6,
+      14,
+      45
+    ],
+    [
+      8,
+      3,
+      45,
+      14
+    ],
+    [
+      10,
+      8,
+      45,
+      14
+    ],
+    [
+      13,
+      13,
+      45,
+      14
+    ]
+  ],
+  "doorSource": "src/game/scripts/regions/kanto6_lib.js MANSION_DOORS",
+  "adaptation": "Red original geometry and actors; matched FR complete ordered party. Manual E challenge; static original actor frames, ordinary loot/diary interaction deferred; SECRET_KEY pickup implemented at stage38. FR-only Johnson absent from Red geometry and deferred. Source switch reset on Cinnabar exterior; local atomic toggle includes current safe location.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

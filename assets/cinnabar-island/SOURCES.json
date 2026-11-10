@@ -1,0 +1,141 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/CinnabarIsland.json",
+  "mapSHA256": "86f7b2bdb14686c5e11ce273913eb04999956389d545f554a112acdc66bf00a9",
+  "warps": [
+    {
+      "x": 6,
+      "y": 3,
+      "destMap": "POKEMON_MANSION_1F",
+      "destMapId": 165,
+      "destMapName": "PokemonMansion1F",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 18,
+      "y": 3,
+      "destMap": "CINNABAR_GYM",
+      "destMapId": 166,
+      "destMapName": "CinnabarGym",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "destMap": "CINNABAR_LAB",
+      "destMapId": 167,
+      "destMapName": "CinnabarLab",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 11,
+      "y": 11,
+      "destMap": "CINNABAR_POKECENTER",
+      "destMapId": 171,
+      "destMapName": "CinnabarPokecenter",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 15,
+      "y": 11,
+      "destMap": "CINNABAR_MART",
+      "destMapId": 172,
+      "destMapName": "CinnabarMart",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "connections": {
+    "north": {
+      "map": "ROUTE_21",
+      "mapId": 32,
+      "mapName": "Route21",
+      "offset": 0,
+      "dx": 0,
+      "dy": -45,
+      "copyRect": {
+        "x": 0,
+        "y": 42,
+        "w": 10,
+        "h": 3
+      },
+      "onEnter": {
+        "newY": 89,
+        "xAdd": 0
+      },
+      "macro": {
+        "stripSrc": 420,
+        "stripDest": 3,
+        "stripLength": 10,
+        "connectedWidth": 10,
+        "yAlign": 89,
+        "xAlign": 0,
+        "viewPointer": 721
+      }
+    },
+    "east": {
+      "map": "ROUTE_20",
+      "mapId": 31,
+      "mapName": "Route20",
+      "offset": 0,
+      "dx": 10,
+      "dy": 0,
+      "copyRect": {
+        "x": 0,
+        "y": 0,
+        "w": 3,
+        "h": 9
+      },
+      "onEnter": {
+        "newX": 0,
+        "yAdd": 0
+      },
+      "macro": {
+        "stripSrc": 0,
+        "stripDest": 61,
+        "stripLength": 9,
+        "connectedWidth": 50,
+        "yAlign": 0,
+        "xAlign": 0,
+        "viewPointer": 57
+      }
+    }
+  },
+  "actors": [
+    {
+      "index": 1,
+      "const": "CINNABARISLAND_GIRL",
+      "x": 12,
+      "y": 5,
+      "sprite": "SPRITE_GIRL",
+      "spriteId": 13,
+      "movement": "WALK",
+      "rangeOrDirection": "LEFT_RIGHT",
+      "rangeOrDirectionValue": 2,
+      "behavior": "walk_left_right",
+      "textId": "TEXT_CINNABARISLAND_GIRL",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "CINNABARISLAND_GAMBLER",
+      "x": 14,
+      "y": 6,
+      "sprite": "SPRITE_GAMBLER",
+      "spriteId": 11,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_CINNABARISLAND_GAMBLER",
+      "textIndex": 2
+    }
+  ],
+  "adaptation": "Red geometry, collision, actors, Route21 north connection and original service doors. Center nurse/PC reuse existing interfaces. Mansion and lab remain closed. Gym returns FireRed Secret Key refusal; mansion/key acquisition is slice35. Mart implements only FireRed Hyper Potion 1200 from its seven-item stock.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

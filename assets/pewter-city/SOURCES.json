@@ -1,0 +1,14 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "source": "data/maps/PewterCity.json",
+  "originalSources": {
+    "header": "data/maps/headers/PewterCity.asm",
+    "objects": "data/maps/objects/PewterCity.asm",
+    "blocks": "maps/PewterCity.blk",
+    "script": "scripts/PewterCity.asm"
+  },
+  "mapSHA256": "80f839add3569598fd3d6687be5bdcb34abc096dab75fbb1e5b7b7bdde99ea4e",
+  "tiles": "assets/tilesets/overworld.png",
+  "adaptation": "Original geometry/foot collision. Existing outdoor recolor or four neutral interior colors; only gym and center open, Route3 closed, other city NPCs/buildings/guide omitted. Route2 connection x+10 cells north / -10 south.",
+  "rights": "Pokemon assets remain rights-holder property; no redistribution clearance."
+}

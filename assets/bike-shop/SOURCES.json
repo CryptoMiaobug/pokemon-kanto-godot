@@ -1,0 +1,74 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/BikeShop.json",
+  "mapSHA256": "e7f65b36246e4443e47f3aaa5463269534842cb5a599d04630ca8b80ea622ce1",
+  "tiles": "assets/tilesets/club.png",
+  "warps": [
+    {
+      "x": 2,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 5,
+      "destWarpIndex": 4
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 5,
+      "destWarpIndex": 4
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "BIKESHOP_CLERK",
+      "x": 6,
+      "y": 2,
+      "sprite": "SPRITE_BIKE_SHOP_CLERK",
+      "spriteId": 21,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_BIKESHOP_CLERK",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "BIKESHOP_MIDDLE_AGED_WOMAN",
+      "x": 5,
+      "y": 6,
+      "sprite": "SPRITE_MIDDLE_AGED_WOMAN",
+      "spriteId": 28,
+      "movement": "WALK",
+      "rangeOrDirection": "UP_DOWN",
+      "rangeOrDirectionValue": 1,
+      "behavior": "walk_up_down",
+      "textId": "TEXT_BIKESHOP_MIDDLE_AGED_WOMAN",
+      "textIndex": 2
+    },
+    {
+      "index": 3,
+      "const": "BIKESHOP_YOUNGSTER",
+      "x": 1,
+      "y": 3,
+      "sprite": "SPRITE_YOUNGSTER",
+      "spriteId": 4,
+      "movement": "STAY",
+      "rangeOrDirection": "UP",
+      "rangeOrDirectionValue": 209,
+      "behavior": "face_up",
+      "textId": "TEXT_BIKESHOP_YOUNGSTER",
+      "textIndex": 3
+    }
+  ],
+  "adaptation": "Red geometry/16px actors local1x world2x nearest. FireRed Fly/HM/Bicycle rules with Red gate four trigger cells (FR five cells on different geometry). Gate2F static visitors/binocular text only; trades deferred. Route17 south exit deferred. NPC walking/cry/audio/cutscene omitted.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

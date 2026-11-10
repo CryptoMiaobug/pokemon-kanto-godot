@@ -1,0 +1,62 @@
+{
+  "source": "pret/pokefirered",
+  "revision": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "rewards": {
+    "pewter_brock": {
+      "badge": "boulder",
+      "tm": 39,
+      "item": "fr_tm39",
+      "move": "rocktomb",
+      "name": "TM39 岩石封锁"
+    },
+    "cerulean_misty": {
+      "badge": "cascade",
+      "tm": 3,
+      "item": "fr_tm03",
+      "move": "waterpulse",
+      "name": "TM03 水之波动"
+    },
+    "vermilion_surge": {
+      "badge": "thunder",
+      "tm": 34,
+      "item": "fr_tm34",
+      "move": "shockwave",
+      "name": "TM34 电击波"
+    },
+    "celadon_erika": {
+      "badge": "rainbow",
+      "tm": 19,
+      "item": "fr_tm19",
+      "move": "gigadrain",
+      "name": "TM19 终极吸取"
+    },
+    "fuchsia_koga": {
+      "badge": "soul",
+      "tm": 6,
+      "item": "fr_tm06",
+      "move": "toxic",
+      "name": "TM06 剧毒"
+    },
+    "saffron_sabrina": {
+      "badge": "marsh",
+      "tm": 4,
+      "item": "fr_tm04",
+      "move": "calmmind",
+      "name": "TM04 冥想"
+    },
+    "cinnabar_blaine": {
+      "badge": "volcano",
+      "tm": 38,
+      "item": "fr_tm38",
+      "move": "fireblast",
+      "name": "TM38 大字爆炎"
+    },
+    "viridian_giovanni": {
+      "badge": "earth",
+      "tm": 26,
+      "item": "tm_earthquake",
+      "move": "earthquake",
+      "name": "TM26 地震"
+    }
+  }
+}

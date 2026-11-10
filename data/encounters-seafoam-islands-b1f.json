@@ -1,0 +1,78 @@
+{
+  "source": "sSeafoamIslandsB1F_FireRed",
+  "encounter_rate": 7,
+  "slots": [
+    {
+      "species_id": "psyduck",
+      "min_level": 29,
+      "max_level": 29,
+      "weight": 20
+    },
+    {
+      "species_id": "psyduck",
+      "min_level": 31,
+      "max_level": 31,
+      "weight": 20
+    },
+    {
+      "species_id": "seel",
+      "min_level": 28,
+      "max_level": 28,
+      "weight": 10
+    },
+    {
+      "species_id": "zubat",
+      "min_level": 22,
+      "max_level": 22,
+      "weight": 10
+    },
+    {
+      "species_id": "zubat",
+      "min_level": 22,
+      "max_level": 22,
+      "weight": 10
+    },
+    {
+      "species_id": "zubat",
+      "min_level": 24,
+      "max_level": 24,
+      "weight": 10
+    },
+    {
+      "species_id": "golbat",
+      "min_level": 26,
+      "max_level": 26,
+      "weight": 5
+    },
+    {
+      "species_id": "golbat",
+      "min_level": 28,
+      "max_level": 28,
+      "weight": 5
+    },
+    {
+      "species_id": "golduck",
+      "min_level": 33,
+      "max_level": 33,
+      "weight": 4
+    },
+    {
+      "species_id": "zubat",
+      "min_level": 26,
+      "max_level": 26,
+      "weight": 4
+    },
+    {
+      "species_id": "golduck",
+      "min_level": 35,
+      "max_level": 35,
+      "weight": 1
+    },
+    {
+      "species_id": "golbat",
+      "min_level": 30,
+      "max_level": 30,
+      "weight": 1
+    }
+  ]
+}

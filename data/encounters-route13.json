@@ -1,0 +1,78 @@
+{
+  "source": "sRoute13_FireRed",
+  "encounter_rate": 21,
+  "slots": [
+    {
+      "species_id": "oddish",
+      "min_level": 24,
+      "max_level": 24,
+      "weight": 20
+    },
+    {
+      "species_id": "venonat",
+      "min_level": 24,
+      "max_level": 24,
+      "weight": 20
+    },
+    {
+      "species_id": "oddish",
+      "min_level": 22,
+      "max_level": 22,
+      "weight": 10
+    },
+    {
+      "species_id": "pidgey",
+      "min_level": 27,
+      "max_level": 27,
+      "weight": 10
+    },
+    {
+      "species_id": "pidgey",
+      "min_level": 25,
+      "max_level": 25,
+      "weight": 10
+    },
+    {
+      "species_id": "venonat",
+      "min_level": 26,
+      "max_level": 26,
+      "weight": 10
+    },
+    {
+      "species_id": "oddish",
+      "min_level": 26,
+      "max_level": 26,
+      "weight": 5
+    },
+    {
+      "species_id": "ditto",
+      "min_level": 25,
+      "max_level": 25,
+      "weight": 5
+    },
+    {
+      "species_id": "pidgeotto",
+      "min_level": 29,
+      "max_level": 29,
+      "weight": 4
+    },
+    {
+      "species_id": "gloom",
+      "min_level": 28,
+      "max_level": 28,
+      "weight": 4
+    },
+    {
+      "species_id": "pidgeotto",
+      "min_level": 29,
+      "max_level": 29,
+      "weight": 1
+    },
+    {
+      "species_id": "gloom",
+      "min_level": 30,
+      "max_level": 30,
+      "weight": 1
+    }
+  ]
+}

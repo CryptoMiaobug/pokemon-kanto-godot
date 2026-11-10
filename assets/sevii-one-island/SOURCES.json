@@ -1,0 +1,106 @@
+{
+  "revision": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/OneIsland/map.json",
+  "mapSHA256": "8ff9c70f1ba28578f506945a1dbbedc783837f54cbd141b23dd19e2abbd50d3e",
+  "layout": {
+    "id": "LAYOUT_ONE_ISLAND",
+    "name": "OneIsland_Layout",
+    "width": 24,
+    "height": 20,
+    "border_width": 2,
+    "border_height": 2,
+    "primary_tileset": "gTileset_General",
+    "secondary_tileset": "gTileset_SeviiIslands123",
+    "border_filepath": "data/layouts/OneIsland/border.bin",
+    "blockdata_filepath": "data/layouts/OneIsland/map.bin"
+  },
+  "warps": [
+    {
+      "x": 14,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_ONE_ISLAND_POKEMON_CENTER_1F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 19,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_ONE_ISLAND_HOUSE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 8,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_ONE_ISLAND_HOUSE2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 12,
+      "y": 18,
+      "elevation": 3,
+      "dest_map": "MAP_ONE_ISLAND_HARBOR",
+      "dest_warp_id": "0"
+    }
+  ],
+  "connections": [
+    {
+      "map": "MAP_ONE_ISLAND_TREASURE_BEACH",
+      "offset": 0,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_ONE_ISLAND_KINDLE_ROAD",
+      "offset": -120,
+      "direction": "right"
+    }
+  ],
+  "actors": [
+    {
+      "local_id": "LOCALID_ONE_ISLAND_BILL",
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_BILL",
+      "x": 12,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_ONE_ISLAND_BILL"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_1",
+      "x": 16,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "OneIsland_EventScript_OldMan",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_BALDING_MAN",
+      "x": 13,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "OneIsland_EventScript_BaldingMan",
+      "flag": "0"
+    }
+  ],
+  "adaptation": "FireRed 16px metatiles, source collision/elevation/behavior; original palette static first frame; no coordinate doubling.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

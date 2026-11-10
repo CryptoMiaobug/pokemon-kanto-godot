@@ -1,0 +1,73 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/SaffronMart.json",
+  "mapSHA256": "d8a018cca6fb121e5740754fff9d4f86ccee814f8b333a076241fcf2e012e801",
+  "warps": [
+    {
+      "x": 3,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 5,
+      "destWarpIndex": 4
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 5,
+      "destWarpIndex": 4
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "SAFFRONMART_CLERK",
+      "x": 0,
+      "y": 5,
+      "sprite": "SPRITE_CLERK",
+      "spriteId": 38,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_SAFFRONMART_CLERK",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "SAFFRONMART_SUPER_NERD",
+      "x": 4,
+      "y": 2,
+      "sprite": "SPRITE_SUPER_NERD",
+      "spriteId": 12,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_SAFFRONMART_SUPER_NERD",
+      "textIndex": 2
+    },
+    {
+      "index": 3,
+      "const": "SAFFRONMART_COOLTRAINER_F",
+      "x": 6,
+      "y": 5,
+      "sprite": "SPRITE_COOLTRAINER_F",
+      "spriteId": 6,
+      "movement": "WALK",
+      "rangeOrDirection": "ANY_DIR",
+      "rangeOrDirectionValue": 0,
+      "behavior": "walk_any",
+      "textId": "TEXT_SAFFRONMART_COOLTRAINER_F",
+      "textIndex": 3
+    }
+  ],
+  "connections": {},
+  "adaptation": "Red geometry/positions; FR consumed Tea and shared gate flag; Red door guard14/15 switch maps FR Fuji condition. Static16px local1x/world2x nearest. No company/gym interiors. Saffron shop explicitly reuses Lavender functional SuperPotion700 instead of unimplemented native stock.",
+  "rights": "Original rights holders; redistribution clearance not established"
+}

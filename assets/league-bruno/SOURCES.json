@@ -1,0 +1,75 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/BrunosRoom.json",
+  "mapSHA256": "776521e232323d28e9ad7a0b469d6d7d5b34e8b050bf7ae47ebc79bf7bfae76a",
+  "warps": [
+    {
+      "x": 4,
+      "y": 11,
+      "destMap": "LORELEIS_ROOM",
+      "destMapId": 245,
+      "destMapName": "LoreleisRoom",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 5,
+      "y": 11,
+      "destMap": "LORELEIS_ROOM",
+      "destMapId": 245,
+      "destMapName": "LoreleisRoom",
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "destMap": "AGATHAS_ROOM",
+      "destMapId": 247,
+      "destMapName": "AgathasRoom",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "destMap": "AGATHAS_ROOM",
+      "destMapId": 247,
+      "destMapName": "AgathasRoom",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "BRUNOSROOM_BRUNO",
+      "x": 5,
+      "y": 2,
+      "sprite": "SPRITE_BRUNO",
+      "spriteId": 58,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_BRUNOSROOM_BRUNO",
+      "textIndex": 1,
+      "trainer": {
+        "trainerClass": "OPP_BRUNO",
+        "trainerClassId": 33,
+        "trainerPartyIndex": 1,
+        "header": "BrunosRoomTrainerHeader0",
+        "eventFlag": "EVENT_BEAT_BRUNOS_ROOM_TRAINER_0",
+        "eventFlagIndex": 2281,
+        "sightRange": 0,
+        "textBefore": "BrunoBeforeBattleText",
+        "textEnd": "BrunoEndBattleText",
+        "textAfter": "BrunoAfterBattleText"
+      }
+    }
+  ],
+  "adaptation": "Red geometry, collision, actors, Route21 north connection and original service doors. Center nurse/PC reuse existing interfaces. Mansion and lab remain closed. Gym returns FireRed Secret Key refusal; mansion/key acquisition is slice35. Mart implements only FireRed Hyper Potion 1200 from its seven-item stock.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

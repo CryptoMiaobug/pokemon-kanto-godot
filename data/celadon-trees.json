@@ -1,0 +1,242 @@
+[
+  {
+    "map": "celadon-city",
+    "cell": [
+      47,
+      20
+    ],
+    "block_cell": [
+      23,
+      10
+    ],
+    "original": 53,
+    "replacement": 76,
+    "patch": "res://assets/celadon-city/cut-53-76.png",
+    "cells": [
+      {
+        "cell": [
+          46,
+          20
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          47,
+          20
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          46,
+          21
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          47,
+          21
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "celadon-city",
+    "cell": [
+      35,
+      32
+    ],
+    "block_cell": [
+      17,
+      16
+    ],
+    "original": 50,
+    "replacement": 109,
+    "patch": "res://assets/celadon-city/cut-50-109.png",
+    "cells": [
+      {
+        "cell": [
+          34,
+          32
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          35,
+          32
+        ],
+        "foot": 44,
+        "solid": 0
+      },
+      {
+        "cell": [
+          34,
+          33
+        ],
+        "foot": 80,
+        "solid": 1
+      },
+      {
+        "cell": [
+          35,
+          33
+        ],
+        "foot": 44,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "celadon-gym",
+    "cell": [
+      2,
+      4
+    ],
+    "block_cell": [
+      1,
+      2
+    ],
+    "original": 60,
+    "replacement": 53,
+    "patch": "res://assets/celadon-gym/cut-60-53.png",
+    "cells": [
+      {
+        "cell": [
+          2,
+          4
+        ],
+        "foot": 43,
+        "solid": 0
+      },
+      {
+        "cell": [
+          3,
+          4
+        ],
+        "foot": 43,
+        "solid": 0
+      },
+      {
+        "cell": [
+          2,
+          5
+        ],
+        "foot": 46,
+        "solid": 1
+      },
+      {
+        "cell": [
+          3,
+          5
+        ],
+        "foot": 43,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "celadon-gym",
+    "cell": [
+      7,
+      5
+    ],
+    "block_cell": [
+      3,
+      2
+    ],
+    "original": 61,
+    "replacement": 54,
+    "patch": "res://assets/celadon-gym/cut-61-54.png",
+    "cells": [
+      {
+        "cell": [
+          6,
+          4
+        ],
+        "foot": 43,
+        "solid": 0
+      },
+      {
+        "cell": [
+          7,
+          4
+        ],
+        "foot": 46,
+        "solid": 1
+      },
+      {
+        "cell": [
+          6,
+          5
+        ],
+        "foot": 43,
+        "solid": 0
+      },
+      {
+        "cell": [
+          7,
+          5
+        ],
+        "foot": 43,
+        "solid": 0
+      }
+    ]
+  },
+  {
+    "map": "celadon-gym",
+    "cell": [
+      5,
+      7
+    ],
+    "block_cell": [
+      2,
+      3
+    ],
+    "original": 63,
+    "replacement": 53,
+    "patch": "res://assets/celadon-gym/cut-63-53.png",
+    "cells": [
+      {
+        "cell": [
+          4,
+          6
+        ],
+        "foot": 43,
+        "solid": 0
+      },
+      {
+        "cell": [
+          5,
+          6
+        ],
+        "foot": 43,
+        "solid": 0
+      },
+      {
+        "cell": [
+          4,
+          7
+        ],
+        "foot": 46,
+        "solid": 1
+      },
+      {
+        "cell": [
+          5,
+          7
+        ],
+        "foot": 43,
+        "solid": 0
+      }
+    ]
+  }
+]

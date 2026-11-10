@@ -1,0 +1,27 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "source": "data/maps/Route3.json",
+  "originalSources": {
+    "header": "data/maps/headers/Route3.asm",
+    "objects": "data/maps/objects/Route3.asm",
+    "blocks": "maps/Route3.blk",
+    "script": "scripts/Route3.asm"
+  },
+  "mapSHA256": "b60a80714e40e1d74a70072fc0b74709c1a85db9943edc9f0c0104903fb7e8af",
+  "tiles": "assets/tilesets/overworld.png",
+  "adaptation": "Original Red geometry/foot collision; Route4 west22 cells only, blocked eastern map edge; MtMoon cave warp closed. Existing outdoor recolor and neutral original center. Route3 north x-50 to Route4; east Pewter y-8 to Route3. Original eight battle NPCs only, E-confirm interaction; no auto sight/cave/events.",
+  "rights": "Pokemon assets remain rights-holder property; no redistribution clearance.",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "trainerCorrespondence": "Red objects2..9 -> Colton/Ben/Janice/Greg/Sally/Calvin/James/Robin: exact distinctive dialogue and ordered species/levels; Sally NidoranM in Red becomes NidoranF in FR, intentional FR party. No source coordinates transplanted.",
+  "ruleSources": [
+    "src/data/trainer_parties.h",
+    "src/data/trainers.h",
+    "src/battle_main.c",
+    "src/battle_script_commands.c",
+    "data/maps/Route3/text.inc"
+  ],
+  "speciesSources": "11 original FireRed species front/back/icon + palettes, species_info/level_up_learnsets/evolution.h. Spearow20/Fearow,Mankey28/Primeape,NidoranM16/Nidorino,NidoranF16/Nidorina,Ekans22/Arbok only; no stone evolutions.",
+  "actors": "Red youngster/cooltrainer_f static native16px down0/up16/left32, right mirror; same1x local/2x world nearest/cell center anchor; alphaBBox per row; source original trainer portraits, no auto sight/approach.",
+  "badgeGate": "Red regions/kanto2.js PewterCity.onFrame checks EVENT_BEAT_BROCK before leaving-east guide. Runtime checks existing pewter_brock flag, no guide cutscene.",
+  "entrance": "Red Route4 west22 cells only; center door[11,5]; cave[18,5]closed; no eastern grass region/Route4 trainer/story/other roads."
+}

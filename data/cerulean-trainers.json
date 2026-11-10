@@ -1,0 +1,160 @@
+[
+  {
+    "id": "cerulean_misty",
+    "map": "cerulean-gym",
+    "name": "馆主小霞",
+    "title": "馆主小霞 · 华蓝道馆",
+    "cell": [
+      4,
+      2
+    ],
+    "facing": "down",
+    "sprite": "res://assets/cerulean-gym/misty.png",
+    "portrait": "res://assets/cerulean-gym/misty-trainer.png",
+    "reward": 2100,
+    "party": [
+      {
+        "species_id": "staryu",
+        "level": 18,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "tackle",
+          "harden",
+          "recover",
+          "waterpulse"
+        ]
+      },
+      {
+        "species_id": "starmie",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spd"
+        },
+        "moves": [
+          "swift",
+          "recover",
+          "rapidspin",
+          "waterpulse"
+        ]
+      }
+    ],
+    "intro": "你好，是新面孔呀！我的方针就是用水属性宝可梦全力进攻！",
+    "defeat": "哇！你太厉害了！蓝色徽章证明你打败了我！",
+    "after": "蓝色徽章是你战胜我的证明！",
+    "redObject": 1,
+    "fireRedTrainer": "LeaderMisty",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "badge": "cascade"
+  },
+  {
+    "id": "cerulean_diana",
+    "map": "cerulean-gym",
+    "name": "野餐女孩黛安娜",
+    "title": "野餐女孩黛安娜 · 华蓝道馆",
+    "cell": [
+      2,
+      3
+    ],
+    "facing": "right",
+    "sprite": "res://assets/cerulean-gym/diana.png",
+    "portrait": "res://assets/cerulean-gym/diana-trainer.png",
+    "reward": 380,
+    "party": [
+      {
+        "species_id": "goldeen",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spa"
+        },
+        "moves": [
+          "tailwhip",
+          "watersport",
+          "supersonic",
+          "hornattack"
+        ]
+      }
+    ],
+    "intro": "什么？你？有我做你的对手就够了，不用麻烦小霞！",
+    "defeat": "你压倒了我！",
+    "after": "和其他训练家交手，才知道自己真正的实力。",
+    "redObject": 2,
+    "fireRedTrainer": "PicnickerDiana",
+    "alphaBBox": [
+      2,
+      0,
+      15,
+      16
+    ],
+    "badge": ""
+  },
+  {
+    "id": "cerulean_luis",
+    "map": "cerulean-gym",
+    "name": "泳裤小伙路易斯",
+    "title": "泳裤小伙路易斯 · 华蓝道馆",
+    "cell": [
+      8,
+      7
+    ],
+    "facing": "left",
+    "sprite": "res://assets/cerulean-gym/luis.png",
+    "portrait": "res://assets/cerulean-gym/luis-trainer.png",
+    "reward": 64,
+    "party": [
+      {
+        "species_id": "horsea",
+        "level": 16,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spa"
+        },
+        "moves": [
+          "bubble",
+          "smokescreen",
+          "leer"
+        ]
+      },
+      {
+        "species_id": "shellder",
+        "level": 16,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "tackle",
+          "withdraw",
+          "iciclespear",
+          "supersonic"
+        ]
+      }
+    ],
+    "intro": "扑通！我是第一个！来吧！",
+    "defeat": "怎么会这样！",
+    "after": "小霞还会不断进步！",
+    "redObject": 3,
+    "fireRedTrainer": "SwimmerMaleLuis",
+    "alphaBBox": [
+      0,
+      4,
+      14,
+      16
+    ],
+    "badge": ""
+  }
+]

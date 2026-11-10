@@ -1,0 +1,72 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/Route15Gate1F.json",
+  "mapSHA256": "45bf34d425a0010abdc4c736d83f74f50ab2a58480ddfd7cbeb9dad064a62097",
+  "warps": [
+    {
+      "x": 0,
+      "y": 4,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "destMap": "ROUTE_15_GATE_2F",
+      "destMapId": 185,
+      "destMapName": "Route15Gate2F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "ROUTE15GATE1F_GUARD",
+      "x": 4,
+      "y": 1,
+      "sprite": "SPRITE_GUARD",
+      "spriteId": 49,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_ROUTE15GATE1F_GUARD",
+      "textIndex": 1
+    }
+  ],
+  "adaptation": "Red geometry/collision/actors; FireRed complete ordered teams. FR-only doubles, Route15 item, Gate2F, Safari/warden/TM06 deferred.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

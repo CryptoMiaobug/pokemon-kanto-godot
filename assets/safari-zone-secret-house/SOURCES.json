@@ -1,0 +1,45 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/SafariZoneSecretHouse.json",
+  "mapSHA256": "f1e6ed83c56529ac73d511c89becbf4114588d7e83886934e62f95da49b5b658",
+  "warps": [
+    {
+      "x": 2,
+      "y": 7,
+      "destMap": "SAFARI_ZONE_WEST",
+      "destMapId": 219,
+      "destMapName": "SafariZoneWest",
+      "destWarp": 7,
+      "destWarpIndex": 6
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "destMap": "SAFARI_ZONE_WEST",
+      "destMapId": 219,
+      "destMapName": "SafariZoneWest",
+      "destWarp": 7,
+      "destWarpIndex": 6
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "SAFARIZONESECRETHOUSE_FISHING_GURU",
+      "x": 3,
+      "y": 3,
+      "sprite": "SPRITE_FISHING_GURU",
+      "spriteId": 39,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_SAFARIZONESECRETHOUSE_FISHING_GURU",
+      "textIndex": 1
+    }
+  ],
+  "adaptation": "Red geometry/collision/actors; FireRed complete ordered teams. Safari capture/rest houses/ordinary items deferred; Gold Teeth and HM03 enabled29.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

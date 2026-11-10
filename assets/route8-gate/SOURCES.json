@@ -1,0 +1,62 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "map": "data/maps/Route8Gate.json",
+  "mapSHA256": "1ef3c2c2e518c68cc86510b98df2119adab74e2cb1b169c350606ea22fb591b9",
+  "tileset": "data/tilesets/Gate.json",
+  "warps": [
+    {
+      "x": 0,
+      "y": 3,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 4,
+      "destWarpIndex": 3
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "ROUTE8GATE_GUARD",
+      "x": 2,
+      "y": 1,
+      "sprite": "SPRITE_GUARD",
+      "spriteId": 49,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROUTE8GATE_GUARD",
+      "textIndex": 1
+    }
+  ],
+  "adaptation": "Red doubled gate geometry and source warp identity; FireRed Tea shared saffron_pass gate permission. Static guard only. No underground, daycare, trade, extra story or save field.",
+  "rights": "Original Pokemon assets remain rights-holder property; redistribution clearance not established."
+}

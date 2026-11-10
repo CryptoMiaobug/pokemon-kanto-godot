@@ -1,0 +1,22 @@
+{
+  "layout": "pret/pokered maps/PalletTown.blk, gfx/blocksets/overworld.bst, data/maps/objects/PalletTown.asm; local JSON extraction from BrandeisPatrick/pokemon-red-web ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "art": "Original Red 8px tile geometry from local extracted assets/tilesets/overworld.png, material-specific new colour interpretation using approved room palette; no official colour-art claim. Shutters/north gate drawn here. Layered tile generator retained.",
+  "texts": "pret/pokered text/PalletTown.asm; parent independently checked original text and objects 2026-11-03. Chinese is a faithful translation, NOT official Chinese. Your/rival labels substitute unavailable player names.",
+  "upstreamURLs": [
+    "https://github.com/pret/pokered/blob/master/maps/PalletTown.blk",
+    "https://github.com/pret/pokered/blob/master/gfx/blocksets/overworld.bst",
+    "https://github.com/pret/pokered/blob/master/text/PalletTown.asm",
+    "https://github.com/pret/pokered/blob/master/data/maps/objects/PalletTown.asm"
+  ],
+  "rights": "Original Pokémon art/layout copyright remains Nintendo/Game Freak/The Pokémon Company; source availability is not redistribution permission. Private local preview only.",
+  "changes": "No NPC added. Three original doors retained in layout; only own home connected. Rival and lab shutters blocked. North gate closed, south water blocked. No encounters or story hooks.",
+  "godotAdaptation": {
+    "changes": "Own home door visually shuttered using existing rival shutter and collision cell [5,5] blocked; no interiors. Added original fox at [8,7] as explicit non-story battle test entrance. Existing recolored Red layers and all other solid cells retained.",
+    "sourceFilesSHA256": {
+      "ground.png": "4ca995d13b9e9cf74f540802576d3272e6f10121a4fc60571c38480cc68c143c",
+      "foreground.png": "e93b37925254953bec5ee6428837bad38e8617893da4c11aa161ead5d64d7665",
+      "layout.json": "5811228bb3369c4113bf690c77a09fc1c96f23bb21696d47556a5cd68bfa887c"
+    },
+    "currentChanges": "Own/rival/lab doors closed, north gate restored from original Pallet block tiles and connected to Red Route1; fixed test creature removed. Historical source descriptions above refer to prior isolated-map baseline."
+  }
+}

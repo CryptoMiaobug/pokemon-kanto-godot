@@ -1,0 +1,18 @@
+[
+  {
+    "map": "route18-gate-1f",
+    "cell": [
+      4,
+      1
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/route18-gate-1f/actor-1.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "baseline": "8980952691103bcf8c11678f011e0572f82d8580",
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "sources": [
+    "Red data/maps/GameCorner.json RocketHideoutB1F.json CeladonCity.json",
+    "Red src/game/scripts/regions/kanto4.js HIDEOUT_STAIRS8,2 0x2a/0x43 and HIDEOUT_B1F_DOOR12,8 0x54/0x0e",
+    "FR data/maps/CeladonCity_GameCorner/scripts.inc RocketHideout_B1F/scripts.inc",
+    "FR src/data/trainer_parties.h TeamRocketGrunt7..12; trainers.h; battle_main.c TEAM_ROCKET coefficient8"
+  ],
+  "dependencies": {
+    "existing": [
+      "all six parties species moves status/evasion/secondary effects",
+      "atomic trainer growth/rewards",
+      "source geometry importer static16px actors and shared indexed warps"
+    ],
+    "required": [
+      "Red GameCorner20x18 and RocketHideoutB1F30x28",
+      "eleven GameCorner actors incl guard and five B1F trainers; source item sprites remain noncollectable",
+      "guard removal after victory; poster automatic switch commit; source stairs block swap",
+      "B1F fifth trainer source barrier opens after victory",
+      "optional v3 rocket_hideout_open bool; new map safe restoration"
+    ],
+    "deferred": [
+      "B2-B4 and spinner mechanisms",
+      "Lift Key elevator Giovanni Silph Scope",
+      "slots coins prizes",
+      "nonessential visible/hidden item pickup",
+      "source NPC wandering and guard exit walking animation; source position retained until victory then removed",
+      "full AI abilities held items"
+    ]
+  },
+  "story": [
+    {
+      "before": "guard present at9,5 in front of poster9,4",
+      "action": "confirm full FR two-mon battle",
+      "after": "640 and guard victory flag/growth atomic; guard disappears",
+      "repeat": "guard absent no repeated prize"
+    },
+    {
+      "before": "poster reachable after guard leaves",
+      "action": "E facing original poster; source auto-push, no invented yes/no",
+      "after": "rocket_hideout_open true atomic then source block8,2 wall42 -> stairs67",
+      "reward": 0,
+      "repeat": "already open no state/reward changes"
+    },
+    {
+      "before": "open stairs17,4",
+      "action": "walk source warp index2",
+      "after": "B1F warp index1 at21,2; reverse returns17,4",
+      "reward": 0
+    },
+    {
+      "before": "B1F trainer unbeaten",
+      "action": "win full source team",
+      "after": "individual flag and source prize atomic; fifth trainer also causes source barrier block12,8 closed84 -> open14",
+      "repeat": "no repeated prize"
+    },
+    {
+      "before": "cancel defeat interrupted battle actual write failure",
+      "action": "cancel/loss/failure",
+      "after": "no new reward or stage; failure restores exact prior memory and disk"
+    }
+  ],
+  "source_order_note": "FR and Red poster script has no explicit trainer-defeat check; original guard occupies the reachable investigation cell. Preserve physical ordering rather than inventing an extra flag lock. Fifth B1F trainer barrier is inside authorized B1F and is not an invented plot gate."
+}

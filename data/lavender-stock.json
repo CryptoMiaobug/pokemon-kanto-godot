@@ -1,0 +1,54 @@
+{
+  "source": "data/maps/LavenderTown_Mart/scripts.inc + src/data/items.json",
+  "full_source_stock": [
+    {
+      "item_id": "ITEM_GREAT_BALL",
+      "price": 600,
+      "implemented": false
+    },
+    {
+      "item_id": "ITEM_SUPER_POTION",
+      "price": 700,
+      "implemented": true
+    },
+    {
+      "item_id": "ITEM_REVIVE",
+      "price": 1500,
+      "implemented": false
+    },
+    {
+      "item_id": "ITEM_ANTIDOTE",
+      "price": 100,
+      "implemented": false
+    },
+    {
+      "item_id": "ITEM_PARALYZE_HEAL",
+      "price": 200,
+      "implemented": false
+    },
+    {
+      "item_id": "ITEM_BURN_HEAL",
+      "price": 250,
+      "implemented": false
+    },
+    {
+      "item_id": "ITEM_ICE_HEAL",
+      "price": 250,
+      "implemented": false
+    },
+    {
+      "item_id": "ITEM_ESCAPE_ROPE",
+      "price": 550,
+      "implemented": false
+    },
+    {
+      "item_id": "ITEM_SUPER_REPEL",
+      "price": 500,
+      "implemented": false
+    }
+  ],
+  "sold": [
+    "super_potions"
+  ],
+  "notice": "原货单子集：仅好伤药700，恢复50HP；其他原货品未实现。"
+}

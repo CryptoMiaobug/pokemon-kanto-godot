@@ -1,0 +1,55 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/HallOfFame.json",
+  "mapSHA256": "adced7bc6a88edc4bf4a963bf197a18efe59df834abe44d79713f3376075a328",
+  "warps": [
+    {
+      "x": 4,
+      "y": 7,
+      "destMap": "CHAMPIONS_ROOM",
+      "destMapId": 120,
+      "destMapName": "ChampionsRoom",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "destMap": "CHAMPIONS_ROOM",
+      "destMapId": 120,
+      "destMapName": "ChampionsRoom",
+      "destWarp": 4,
+      "destWarpIndex": 3
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "HALLOFFAME_OAK",
+      "x": 5,
+      "y": 2,
+      "sprite": "SPRITE_OAK",
+      "spriteId": 3,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_HALLOFFAME_OAK",
+      "textIndex": 1
+    }
+  ],
+  "adaptation": "Red HallOfFame geometry/actor (Oak). Entry triggers the FireRed PokemonLeague_HallOfFame_EnterRoom congratulation without walk/credit animation; EnterHallOfFame heal + game clear + Pallet continue warp; Task_Hof_InitMonData species/level snapshot with individual_id standing in for tid+personality.",
+  "rights": "Original rights holders; redistribution clearance not established.",
+  "ruleSources": [
+    "data/maps/PokemonLeague_HallOfFame/scripts.inc",
+    "data/maps/PokemonLeague_HallOfFame/text.inc",
+    "data/scripts/hall_of_fame.inc",
+    "src/post_battle_event_funcs.c",
+    "src/hall_of_fame.c",
+    "src/data/heal_locations.json",
+    "data/maps/PokemonLeague_ChampionsRoom/scripts.inc"
+  ],
+  "redEndingSource": "src/game/scripts/regions/kanto6_ending.js (recordHallOfFame, resetEliteFour, continuePositionAfterHallOfFame)"
+}

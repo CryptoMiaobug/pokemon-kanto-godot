@@ -1,0 +1,234 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/VermilionCity.json",
+  "mapSHA256": "7f53ef1ef36e017cf4b0c359d6ad1efc53105035a7bfe9c0746d63ced9a39d95",
+  "tiles": "assets/tilesets/overworld.png",
+  "connections": {
+    "north": {
+      "map": "ROUTE_6",
+      "mapId": 17,
+      "mapName": "Route6",
+      "offset": 5,
+      "dx": 5,
+      "dy": -18,
+      "copyRect": {
+        "x": 0,
+        "y": 15,
+        "w": 10,
+        "h": 3
+      },
+      "onEnter": {
+        "newY": 35,
+        "xAdd": -10
+      },
+      "macro": {
+        "stripSrc": 150,
+        "stripDest": 8,
+        "stripLength": 10,
+        "connectedWidth": 10,
+        "yAlign": 35,
+        "xAlign": -10,
+        "viewPointer": 289
+      }
+    },
+    "east": {
+      "map": "ROUTE_11",
+      "mapId": 22,
+      "mapName": "Route11",
+      "offset": 4,
+      "dx": 20,
+      "dy": 4,
+      "copyRect": {
+        "x": 0,
+        "y": 0,
+        "w": 3,
+        "h": 9
+      },
+      "onEnter": {
+        "newX": 0,
+        "yAdd": -8
+      },
+      "macro": {
+        "stripSrc": 0,
+        "stripDest": 205,
+        "stripLength": 9,
+        "connectedWidth": 30,
+        "yAlign": -8,
+        "xAlign": 0,
+        "viewPointer": 37
+      }
+    }
+  },
+  "warps": [
+    {
+      "x": 11,
+      "y": 3,
+      "destMap": "VERMILION_POKECENTER",
+      "destMapId": 89,
+      "destMapName": "VermilionPokecenter",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 9,
+      "y": 13,
+      "destMap": "POKEMON_FAN_CLUB",
+      "destMapId": 90,
+      "destMapName": "PokemonFanClub",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 23,
+      "y": 13,
+      "destMap": "VERMILION_MART",
+      "destMapId": 91,
+      "destMapName": "VermilionMart",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 12,
+      "y": 19,
+      "destMap": "VERMILION_GYM",
+      "destMapId": 92,
+      "destMapName": "VermilionGym",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 23,
+      "y": 19,
+      "destMap": "VERMILION_PIDGEY_HOUSE",
+      "destMapId": 93,
+      "destMapName": "VermilionPidgeyHouse",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 18,
+      "y": 31,
+      "destMap": "VERMILION_DOCK",
+      "destMapId": 94,
+      "destMapName": "VermilionDock",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 19,
+      "y": 31,
+      "destMap": "VERMILION_DOCK",
+      "destMapId": 94,
+      "destMapName": "VermilionDock",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 15,
+      "y": 13,
+      "destMap": "VERMILION_TRADE_HOUSE",
+      "destMapId": 196,
+      "destMapName": "VermilionTradeHouse",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "destMap": "VERMILION_OLD_ROD_HOUSE",
+      "destMapId": 163,
+      "destMapName": "VermilionOldRodHouse",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "VERMILIONCITY_BEAUTY",
+      "x": 19,
+      "y": 7,
+      "sprite": "SPRITE_BEAUTY",
+      "spriteId": 15,
+      "movement": "WALK",
+      "rangeOrDirection": "LEFT_RIGHT",
+      "rangeOrDirectionValue": 2,
+      "behavior": "walk_left_right",
+      "textId": "TEXT_VERMILIONCITY_BEAUTY",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "VERMILIONCITY_GAMBLER1",
+      "x": 14,
+      "y": 6,
+      "sprite": "SPRITE_GAMBLER",
+      "spriteId": 11,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_VERMILIONCITY_GAMBLER1",
+      "textIndex": 2
+    },
+    {
+      "index": 3,
+      "const": "VERMILIONCITY_SAILOR1",
+      "x": 19,
+      "y": 30,
+      "sprite": "SPRITE_SAILOR",
+      "spriteId": 19,
+      "movement": "STAY",
+      "rangeOrDirection": "UP",
+      "rangeOrDirectionValue": 209,
+      "behavior": "face_up",
+      "textId": "TEXT_VERMILIONCITY_SAILOR1",
+      "textIndex": 3
+    },
+    {
+      "index": 4,
+      "const": "VERMILIONCITY_GAMBLER2",
+      "x": 30,
+      "y": 7,
+      "sprite": "SPRITE_GAMBLER",
+      "spriteId": 11,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_VERMILIONCITY_GAMBLER2",
+      "textIndex": 4
+    },
+    {
+      "index": 5,
+      "const": "VERMILIONCITY_MACHOP",
+      "x": 29,
+      "y": 9,
+      "sprite": "SPRITE_MONSTER",
+      "spriteId": 5,
+      "movement": "WALK",
+      "rangeOrDirection": "UP_DOWN",
+      "rangeOrDirectionValue": 1,
+      "behavior": "walk_up_down",
+      "textId": "TEXT_VERMILIONCITY_MACHOP",
+      "textIndex": 5
+    },
+    {
+      "index": 6,
+      "const": "VERMILIONCITY_SAILOR2",
+      "x": 25,
+      "y": 27,
+      "sprite": "SPRITE_SAILOR",
+      "spriteId": 19,
+      "movement": "WALK",
+      "rangeOrDirection": "LEFT_RIGHT",
+      "rangeOrDirectionValue": 2,
+      "behavior": "walk_left_right",
+      "textId": "TEXT_VERMILIONCITY_SAILOR2",
+      "textIndex": 6
+    }
+  ],
+  "adaptation": "Original geometry/foot collision/grass/ledges; actors fixed at original cells, static16px local1x world2x nearest. E trainer confirmation, no auto sight. Underground original indices and LAST_MAP resolved to parent route; landing latch. Vermilion exterior only, buildings/dock/Route11 and Saffron gate closed by runtime boundary/prompts, source tiles preserved. No trade, hidden items, drinks, daycare or ship features.",
+  "rights": "Original rights holders; no redistribution clearance."
+}

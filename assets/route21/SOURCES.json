@@ -1,0 +1,300 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/Route21.json",
+  "mapSHA256": "c0fdf0130f4149525bfda3aa093ce330987034a144267a2b5c896b3bdf3ca477",
+  "connections": {
+    "north": {
+      "map": "PALLET_TOWN",
+      "mapId": 0,
+      "mapName": "PalletTown",
+      "offset": 0,
+      "dx": 0,
+      "dy": -9,
+      "copyRect": {
+        "x": 0,
+        "y": 6,
+        "w": 10,
+        "h": 3
+      },
+      "onEnter": {
+        "newY": 17,
+        "xAdd": 0
+      },
+      "macro": {
+        "stripSrc": 60,
+        "stripDest": 3,
+        "stripLength": 10,
+        "connectedWidth": 10,
+        "yAlign": 17,
+        "xAlign": 0,
+        "viewPointer": 145
+      }
+    },
+    "south": {
+      "map": "CINNABAR_ISLAND",
+      "mapId": 8,
+      "mapName": "CinnabarIsland",
+      "offset": 0,
+      "dx": 0,
+      "dy": 45,
+      "copyRect": {
+        "x": 0,
+        "y": 0,
+        "w": 10,
+        "h": 3
+      },
+      "onEnter": {
+        "newY": 0,
+        "xAdd": 0
+      },
+      "macro": {
+        "stripSrc": 0,
+        "stripDest": 771,
+        "stripLength": 10,
+        "connectedWidth": 10,
+        "yAlign": 0,
+        "xAlign": 0,
+        "viewPointer": 17
+      }
+    }
+  },
+  "actors": [
+    {
+      "index": 1,
+      "const": "ROUTE21_FISHER1",
+      "x": 4,
+      "y": 24,
+      "sprite": "SPRITE_FISHER",
+      "spriteId": 47,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROUTE21_FISHER1",
+      "textIndex": 1,
+      "trainer": {
+        "trainerClass": "OPP_FISHER",
+        "trainerClassId": 14,
+        "trainerPartyIndex": 7,
+        "header": "Route21TrainerHeader0",
+        "eventFlag": "EVENT_BEAT_ROUTE_21_TRAINER_0",
+        "eventFlagIndex": 1297,
+        "sightRange": 0,
+        "textBefore": "Route21Fisher1BattleText",
+        "textEnd": "Route21Fisher1EndBattleText",
+        "textAfter": "Route21Fisher1AfterBattleText"
+      }
+    },
+    {
+      "index": 2,
+      "const": "ROUTE21_FISHER2",
+      "x": 6,
+      "y": 25,
+      "sprite": "SPRITE_FISHER",
+      "spriteId": 47,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROUTE21_FISHER2",
+      "textIndex": 2,
+      "trainer": {
+        "trainerClass": "OPP_FISHER",
+        "trainerClassId": 14,
+        "trainerPartyIndex": 9,
+        "header": "Route21TrainerHeader1",
+        "eventFlag": "EVENT_BEAT_ROUTE_21_TRAINER_1",
+        "eventFlagIndex": 1298,
+        "sightRange": 0,
+        "textBefore": "Route21Fisher2BattleText",
+        "textEnd": "Route21Fisher2EndBattleText",
+        "textAfter": "Route21Fisher2AfterBattleText"
+      }
+    },
+    {
+      "index": 3,
+      "const": "ROUTE21_SWIMMER1",
+      "x": 10,
+      "y": 31,
+      "sprite": "SPRITE_SWIMMER",
+      "spriteId": 34,
+      "movement": "STAY",
+      "rangeOrDirection": "UP",
+      "rangeOrDirectionValue": 209,
+      "behavior": "face_up",
+      "textId": "TEXT_ROUTE21_SWIMMER1",
+      "textIndex": 3,
+      "trainer": {
+        "trainerClass": "OPP_SWIMMER",
+        "trainerClassId": 15,
+        "trainerPartyIndex": 12,
+        "header": "Route21TrainerHeader2",
+        "eventFlag": "EVENT_BEAT_ROUTE_21_TRAINER_2",
+        "eventFlagIndex": 1299,
+        "sightRange": 4,
+        "textBefore": "Route21Swimmer1BattleText",
+        "textEnd": "Route21Swimmer1EndBattleText",
+        "textAfter": "Route21Swimmer1AfterBattleText"
+      }
+    },
+    {
+      "index": 4,
+      "const": "ROUTE21_SWIMMER2",
+      "x": 12,
+      "y": 30,
+      "sprite": "SPRITE_SWIMMER",
+      "spriteId": 34,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_ROUTE21_SWIMMER2",
+      "textIndex": 4,
+      "trainer": {
+        "trainerClass": "OPP_CUE_BALL",
+        "trainerClassId": 16,
+        "trainerPartyIndex": 9,
+        "header": "Route21TrainerHeader3",
+        "eventFlag": "EVENT_BEAT_ROUTE_21_TRAINER_3",
+        "eventFlagIndex": 1300,
+        "sightRange": 4,
+        "textBefore": "Route21Swimmer2BattleText",
+        "textEnd": "Route21Swimmer2EndBattleText",
+        "textAfter": "Route21Swimmer2AfterBattleText"
+      }
+    },
+    {
+      "index": 5,
+      "const": "ROUTE21_SWIMMER3",
+      "x": 16,
+      "y": 63,
+      "sprite": "SPRITE_SWIMMER",
+      "spriteId": 34,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROUTE21_SWIMMER3",
+      "textIndex": 5,
+      "trainer": {
+        "trainerClass": "OPP_SWIMMER",
+        "trainerClassId": 15,
+        "trainerPartyIndex": 13,
+        "header": "Route21TrainerHeader4",
+        "eventFlag": "EVENT_BEAT_ROUTE_21_TRAINER_4",
+        "eventFlagIndex": 1301,
+        "sightRange": 4,
+        "textBefore": "Route21Swimmer3BattleText",
+        "textEnd": "Route21Swimmer3EndBattleText",
+        "textAfter": "Route21Swimmer3AfterBattleText"
+      }
+    },
+    {
+      "index": 6,
+      "const": "ROUTE21_SWIMMER4",
+      "x": 5,
+      "y": 71,
+      "sprite": "SPRITE_SWIMMER",
+      "spriteId": 34,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_ROUTE21_SWIMMER4",
+      "textIndex": 6,
+      "trainer": {
+        "trainerClass": "OPP_SWIMMER",
+        "trainerClassId": 15,
+        "trainerPartyIndex": 14,
+        "header": "Route21TrainerHeader5",
+        "eventFlag": "EVENT_BEAT_ROUTE_21_TRAINER_5",
+        "eventFlagIndex": 1302,
+        "sightRange": 4,
+        "textBefore": "Route21Swimmer4BattleText",
+        "textEnd": "Route21Swimmer4EndBattleText",
+        "textAfter": "Route21Swimmer4AfterBattleText"
+      }
+    },
+    {
+      "index": 7,
+      "const": "ROUTE21_SWIMMER5",
+      "x": 15,
+      "y": 71,
+      "sprite": "SPRITE_SWIMMER",
+      "spriteId": 34,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROUTE21_SWIMMER5",
+      "textIndex": 7,
+      "trainer": {
+        "trainerClass": "OPP_SWIMMER",
+        "trainerClassId": 15,
+        "trainerPartyIndex": 15,
+        "header": "Route21TrainerHeader6",
+        "eventFlag": "EVENT_BEAT_ROUTE_21_TRAINER_6",
+        "eventFlagIndex": 1303,
+        "sightRange": 3,
+        "textBefore": "Route21Swimmer5BattleText",
+        "textEnd": "Route21Swimmer5EndBattleText",
+        "textAfter": "Route21Swimmer5AfterBattleText"
+      }
+    },
+    {
+      "index": 8,
+      "const": "ROUTE21_FISHER3",
+      "x": 14,
+      "y": 56,
+      "sprite": "SPRITE_FISHER",
+      "spriteId": 47,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROUTE21_FISHER3",
+      "textIndex": 8,
+      "trainer": {
+        "trainerClass": "OPP_FISHER",
+        "trainerClassId": 14,
+        "trainerPartyIndex": 8,
+        "header": "Route21TrainerHeader7",
+        "eventFlag": "EVENT_BEAT_ROUTE_21_TRAINER_7",
+        "eventFlagIndex": 1304,
+        "sightRange": 0,
+        "textBefore": "Route21Fisher3BattleText",
+        "textEnd": "Route21Fisher3EndBattleText",
+        "textAfter": "Route21Fisher3AfterBattleText"
+      }
+    },
+    {
+      "index": 9,
+      "const": "ROUTE21_FISHER4",
+      "x": 17,
+      "y": 57,
+      "sprite": "SPRITE_FISHER",
+      "spriteId": 47,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_ROUTE21_FISHER4",
+      "textIndex": 9,
+      "trainer": {
+        "trainerClass": "OPP_FISHER",
+        "trainerClassId": 14,
+        "trainerPartyIndex": 10,
+        "header": "Route21TrainerHeader8",
+        "eventFlag": "EVENT_BEAT_ROUTE_21_TRAINER_8",
+        "eventFlagIndex": 1305,
+        "sightRange": 0,
+        "textBefore": "Route21Fisher4BattleText",
+        "textEnd": "Route21Fisher4EndBattleText",
+        "textAfter": "Route21Fisher4AfterBattleText"
+      }
+    }
+  ],
+  "adaptation": "Full Red geometry/actors; FR complete Route21 single and Lil-Ian combined party; water/land encounters. FR double encounter presented as one complete ordered party through existing single-party battle engine.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

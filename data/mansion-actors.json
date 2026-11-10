@@ -1,0 +1,66 @@
+[
+  {
+    "map": "celadon-mansion-1f",
+    "cell": [
+      0,
+      5
+    ],
+    "sprite": "res://assets/celadon-mansion-1f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "facing": "right"
+  },
+  {
+    "map": "celadon-mansion-1f",
+    "cell": [
+      1,
+      5
+    ],
+    "sprite": "res://assets/celadon-mansion-1f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "facing": "down"
+  },
+  {
+    "map": "celadon-mansion-1f",
+    "cell": [
+      1,
+      8
+    ],
+    "sprite": "res://assets/celadon-mansion-1f/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      0,
+      2,
+      16,
+      16
+    ],
+    "facing": "down"
+  },
+  {
+    "map": "celadon-mansion-1f",
+    "cell": [
+      4,
+      4
+    ],
+    "sprite": "res://assets/celadon-mansion-1f/actor-4.png",
+    "redObject": 4,
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "facing": "down"
+  }
+]

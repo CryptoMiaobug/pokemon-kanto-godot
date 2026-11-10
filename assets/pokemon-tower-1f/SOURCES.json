@@ -1,0 +1,236 @@
+{
+  "baseline_commit": "fce79b13787603b82f634e6a7cb5baff1a0b3e1f",
+  "red_commit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "firered_commit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "instruction_reads": [
+    "AGENTS.md",
+    "pixel-rpg-scene-reskin/SKILL.md",
+    "targeted-check-recovery.md",
+    "route-story-integration.md",
+    "source-driven-game-development.md",
+    "source-game-rules.md",
+    "sprite-scale-alignment.md",
+    "templates/game-slice-result.json"
+  ],
+  "sources": [
+    "Red data/maps/RocketHideoutB4F.json RocketHideoutElevator.json PokemonTower1F.json PokemonTower2F.json",
+    "Red src/game/scripts/regions/kanto4.js hideoutB4FDoor hideoutGiovanni RocketHideoutB4F.onTextAsm ROCKET_HIDEOUT_FLOORS towerRivalEncounter",
+    "FireRed data/maps/RocketHideout_B4F/scripts.inc PokemonTower_2F/scripts.inc",
+    "FireRed src/data/trainer_parties.h TeamRocketGrunt16..18 BossGiovanni RivalPokemonTower*",
+    "FireRed src/data/trainers.h src/battle_main.c src/data/pokemon/level_up_learnsets.h"
+  ],
+  "slices": [
+    {
+      "id": "post-b3-1",
+      "scope": "B4F original geometry/stairs and Grunt18 full party; Lift Key drop then pickup",
+      "required": [
+        "720 feet nine source objects three warp indices",
+        "Grunt18 full two ordered mons reward672",
+        "optional v3 rocket_story.key_dropped and items.lift_key atomic transitions"
+      ],
+      "story": [
+        "unbeaten -> cancel/lose/interruption -> unbeaten",
+        "win -> beaten reward growth atomic",
+        "post-win source after-battle text -> key dropped atomic",
+        "key visible at [10,2] -> E pickup -> Lift Key1 atomic",
+        "repeat no reward; real write failure exact rollback"
+      ],
+      "deferred": [
+        "elevator and other B4 trainers until next slices"
+      ]
+    },
+    {
+      "id": "post-b3-2",
+      "scope": "original elevator B1/B2/B4 and both door guards",
+      "required": [
+        "elevator48 feet panel source sign and all indexed exits",
+        "Grunt16 and17 complete rosters rewards736 and736 source verified by generator",
+        "both guard flags -> original block[12,5]45 to14 artwork and collision",
+        "source roster requires Sandslash species imported without evolution expansion"
+      ],
+      "story": [
+        "enter lift records source floor",
+        "panel without key rejected; Esc no mutation",
+        "select B1/B2/B4 persists floor; exits return selected floor",
+        "two wins jointly unlock door; rewards atomic with trainer flags"
+      ],
+      "deferred": [
+        "Giovanni until slice3"
+      ]
+    },
+    {
+      "id": "post-b3-3",
+      "scope": "Giovanni ordered three mons and separate Silph Scope pickup",
+      "required": [
+        "Onix25 Rhyhorn24 Kangaskhan29 source IV30/default moves reward2900",
+        "required Rhyhorn/Kangaskhan data and only reachable missing effects",
+        "Giovanni win -> hidden and scope visible [25,2]; pickup atomic",
+        "Rhyhorn Kangaskhan original data/art; Stomp65/100/20 flinch30 MegaPunch80/85/20 FakeOut firstfieldturn-only and Rage damage-hit attackrise minimal subset"
+      ],
+      "story": [
+        "both guards prerequisite physical door",
+        "cancel/lose/interruption no victory",
+        "win -> reward/growth/flag atomic -> scope pending",
+        "E pickup -> items.silph_scope1 atomic; repeat no duplication"
+      ],
+      "deferred": [
+        "full AI abilities held items optional items and animation"
+      ]
+    },
+    {
+      "id": "post-b3-4",
+      "scope": "Lavender original tower entrance and 1F NPC exploration",
+      "required": [
+        "360 feet five actors original entrance indices",
+        "source NPC meaning no fake Scope entry prerequisite",
+        "2F stair explicitly deferred until slice5"
+      ],
+      "story": [
+        "town original warp1 -> tower1F -> return",
+        "E source mourning/reception/channeler dialogue no rewards"
+      ],
+      "deferred": [
+        "ghost encounters upper floors Fuji flute"
+      ]
+    },
+    {
+      "id": "post-b3-5",
+      "scope": "Tower2F original trigger rival full five-mon three branches",
+      "required": [
+        "360 feet two actors two indexed stairs",
+        "source triggers [15,5]/[14,6], cancel/retry and win-hide",
+        "FR RivalPokemonTower three full ordered source branches reward900",
+        "required Gyarados data and only source reachable missing effects"
+      ],
+      "story": [
+        "1F stair -> 2F",
+        "source step or E -> cancellable battle",
+        "win reward/growth/flag atomic -> rival hidden",
+        "cancel/loss/interruption retry no reward; repeat no reward"
+      ],
+      "deferred": [
+        "3F and above ghost encounters Channeler trainers Fuji flute"
+      ]
+    }
+  ],
+  "existing": [
+    "indexed warp arrival lock",
+    "atomic trainer reward growth flags and v3 save rename",
+    "16px static same-scale actor importer",
+    "most roster species and move effects"
+  ],
+  "fixture": {
+    "actual_baseline_money": 6412,
+    "actual_venusaur_hp": 44,
+    "actual_razorleaf_slot": 3,
+    "actual_razorleaf_pp": 13,
+    "policy": "position-only checkpoints retain all legitimately earned rewards; healing through nurse; no batch victories/items injected; final one normal same-profile restart"
+  },
+  "boundary": "fifth slice ends at Tower2F original stair to3F, explicitly unopened; no all-tower expansion",
+  "map": "data/maps/PokemonTower1F.json",
+  "mapSHA256": "9662f7a52328c3662fba93ecc47830e85a8fb55cff5a3ef4777f4c27a5105b96",
+  "actors": [
+    {
+      "index": 1,
+      "const": "POKEMONTOWER1F_RECEPTIONIST",
+      "x": 15,
+      "y": 13,
+      "sprite": "SPRITE_LINK_RECEPTIONIST",
+      "spriteId": 42,
+      "movement": "STAY",
+      "rangeOrDirection": "UP",
+      "rangeOrDirectionValue": 209,
+      "behavior": "face_up",
+      "textId": "TEXT_POKEMONTOWER1F_RECEPTIONIST",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "POKEMONTOWER1F_MIDDLE_AGED_WOMAN",
+      "x": 6,
+      "y": 8,
+      "sprite": "SPRITE_MIDDLE_AGED_WOMAN",
+      "spriteId": 28,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_POKEMONTOWER1F_MIDDLE_AGED_WOMAN",
+      "textIndex": 2
+    },
+    {
+      "index": 3,
+      "const": "POKEMONTOWER1F_BALDING_GUY",
+      "x": 8,
+      "y": 12,
+      "sprite": "SPRITE_BALDING_GUY",
+      "spriteId": 52,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_POKEMONTOWER1F_BALDING_GUY",
+      "textIndex": 3
+    },
+    {
+      "index": 4,
+      "const": "POKEMONTOWER1F_GIRL",
+      "x": 13,
+      "y": 7,
+      "sprite": "SPRITE_GIRL",
+      "spriteId": 13,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_POKEMONTOWER1F_GIRL",
+      "textIndex": 4
+    },
+    {
+      "index": 5,
+      "const": "POKEMONTOWER1F_CHANNELER",
+      "x": 17,
+      "y": 7,
+      "sprite": "SPRITE_CHANNELER",
+      "spriteId": 25,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_POKEMONTOWER1F_CHANNELER",
+      "textIndex": 5
+    }
+  ],
+  "warps": [
+    {
+      "x": 10,
+      "y": 17,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 11,
+      "y": 17,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 18,
+      "y": 9,
+      "destMap": "POKEMON_TOWER_2F",
+      "destMapId": 143,
+      "destMapName": "PokemonTower2F",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    }
+  ],
+  "signs": [],
+  "rights": "Original rights holders; redistribution clearance not established.",
+  "adaptation": "Original16px static actors same local1x/world2x nearest and source feet anchor; source Red layout, FR roster/rules. Movement/sight/music/animations and nonessential items deferred."
+}

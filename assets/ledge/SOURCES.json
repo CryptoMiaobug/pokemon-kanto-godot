@@ -1,0 +1,15 @@
+{
+  "repository": "arkeve/Godot-Pokemon",
+  "commit": "f0527ebbf3717398d4a980b63993ad4e04c9580d",
+  "files": {
+    "player_shadow.png": {
+      "source": "Assets/Player/player_shadow.png",
+      "sha256": "8a2c3153adc75b1992087ef05009d8cc6890a8ce46d3759846352d611bb6da5a"
+    },
+    "jump_landing_dust.png": {
+      "source": "Assets/Player/jump_landing_dust.png",
+      "sha256": "57303aa995b41f66203421d1db025c7ae1680306511a1191662c56a10915fc97"
+    }
+  },
+  "adaptation": "Unmodified PNG; feet-centered native pixel size. Dust horizontal 3 x 16px frames."
+}

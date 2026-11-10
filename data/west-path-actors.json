@@ -1,0 +1,34 @@
+[
+  {
+    "map": "underground-route8",
+    "cell": [
+      3,
+      4
+    ],
+    "sprite": "res://assets/underground-route8/actor-1.png",
+    "facing": "down",
+    "redObject": 1,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "map": "underground-route7",
+    "cell": [
+      2,
+      4
+    ],
+    "sprite": "res://assets/underground-route7/actor-1.png",
+    "facing": "down",
+    "redObject": 1,
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ]
+  }
+]

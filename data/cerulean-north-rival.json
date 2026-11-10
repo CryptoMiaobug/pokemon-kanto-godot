@@ -1,0 +1,212 @@
+{
+  "id": "cerulean_north_rival",
+  "map": "cerulean-city",
+  "name": "劲敌",
+  "title": "劲敌 · 华蓝北口",
+  "cell": [
+    20,
+    5
+  ],
+  "sourceHiddenCell": [
+    20,
+    2
+  ],
+  "triggerCells": [
+    [
+      20,
+      6
+    ],
+    [
+      21,
+      6
+    ]
+  ],
+  "facing": "down",
+  "sprite": "res://assets/route24/rival.png",
+  "portrait": "res://assets/route24/rival-trainer.png",
+  "reward": 288,
+  "intro": "嘿！你也来了？让我们看看你变强了多少！",
+  "defeat": "喂，认真一点！你已经赢了！",
+  "after": "我去过正辉家！他知道很多宝可梦的事。",
+  "rival_for": {
+    "bulbasaur": "charmander",
+    "charmander": "squirtle",
+    "squirtle": "bulbasaur"
+  },
+  "teams": {
+    "squirtle": [
+      {
+        "species_id": "pidgeotto",
+        "level": 17,
+        "ivs": 6,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "tackle",
+          "sandattack",
+          "gust",
+          "quickattack"
+        ]
+      },
+      {
+        "species_id": "abra",
+        "level": 16,
+        "ivs": 6,
+        "nature": {
+          "up": "def",
+          "down": "spd"
+        },
+        "moves": [
+          "teleport"
+        ]
+      },
+      {
+        "species_id": "rattata",
+        "level": 15,
+        "ivs": 6,
+        "nature": {
+          "up": "atk",
+          "down": "spa"
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack"
+        ]
+      },
+      {
+        "species_id": "squirtle",
+        "level": 18,
+        "ivs": 12,
+        "nature": {
+          "up": "atk",
+          "down": "spa"
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "withdraw",
+          "watergun"
+        ]
+      }
+    ],
+    "bulbasaur": [
+      {
+        "species_id": "pidgeotto",
+        "level": 17,
+        "ivs": 6,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "tackle",
+          "sandattack",
+          "gust",
+          "quickattack"
+        ]
+      },
+      {
+        "species_id": "abra",
+        "level": 16,
+        "ivs": 6,
+        "nature": {
+          "up": "def",
+          "down": "spd"
+        },
+        "moves": [
+          "teleport"
+        ]
+      },
+      {
+        "species_id": "rattata",
+        "level": 15,
+        "ivs": 6,
+        "nature": {
+          "up": "atk",
+          "down": "spa"
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack"
+        ]
+      },
+      {
+        "species_id": "bulbasaur",
+        "level": 18,
+        "ivs": 12,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "sleeppowder",
+          "poisonpowder",
+          "vinewhip",
+          "leechseed"
+        ]
+      }
+    ],
+    "charmander": [
+      {
+        "species_id": "pidgeotto",
+        "level": 17,
+        "ivs": 6,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "tackle",
+          "sandattack",
+          "gust",
+          "quickattack"
+        ]
+      },
+      {
+        "species_id": "abra",
+        "level": 16,
+        "ivs": 6,
+        "nature": {
+          "up": "def",
+          "down": "spd"
+        },
+        "moves": [
+          "teleport"
+        ]
+      },
+      {
+        "species_id": "rattata",
+        "level": 15,
+        "ivs": 6,
+        "nature": {
+          "up": "atk",
+          "down": "spa"
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack"
+        ]
+      },
+      {
+        "species_id": "charmander",
+        "level": 18,
+        "ivs": 12,
+        "nature": {
+          "up": "spa",
+          "down": "spd"
+        },
+        "moves": [
+          "metalclaw",
+          "ember",
+          "growl",
+          "scratch"
+        ]
+      }
+    ]
+  }
+}

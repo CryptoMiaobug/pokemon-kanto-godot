@@ -1,0 +1,93 @@
+{
+  "revision": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/ThreeIsland_Port/map.json",
+  "mapSHA256": "359792aac362e68915f6d1723e93d9c0716d19a4af2eb93ce4f133e20840a7bc",
+  "layout": {
+    "id": "LAYOUT_THREE_ISLAND_PORT",
+    "name": "ThreeIsland_Port_Layout",
+    "width": 48,
+    "height": 20,
+    "border_width": 2,
+    "border_height": 2,
+    "primary_tileset": "gTileset_General",
+    "secondary_tileset": "gTileset_SeviiIslands123",
+    "border_filepath": "data/layouts/ThreeIsland_Port/border.bin",
+    "blockdata_filepath": "data/layouts/ThreeIsland_Port/map.bin"
+  },
+  "warps": [
+    {
+      "x": 16,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_THREE_ISLAND_DUNSPARCE_TUNNEL",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 38,
+      "y": 5,
+      "elevation": 3,
+      "dest_map": "MAP_THREE_ISLAND_DUNSPARCE_TUNNEL",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 12,
+      "y": 13,
+      "elevation": 3,
+      "dest_map": "MAP_THREE_ISLAND_HARBOR",
+      "dest_warp_id": "0"
+    }
+  ],
+  "connections": [
+    {
+      "map": "MAP_THREE_ISLAND",
+      "offset": 0,
+      "direction": "up"
+    }
+  ],
+  "actors": [
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_3",
+      "x": 14,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ThreeIsland_Port_EventScript_Woman",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_BIKER",
+      "x": 8,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_RIGHT_AND_LEFT",
+      "movement_range_x": 3,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ThreeIsland_Port_EventScript_Biker1",
+      "flag": "FLAG_HIDE_THREE_ISLAND_BIKERS"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_BIKER",
+      "x": 13,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_RIGHT_DOWN_LEFT",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ThreeIsland_Port_EventScript_Biker2",
+      "flag": "FLAG_HIDE_THREE_ISLAND_BIKERS"
+    }
+  ],
+  "adaptation": "FireRed 16px metatiles, source collision/elevation/behavior; original palette static first frame; no coordinate doubling.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

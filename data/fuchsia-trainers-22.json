@@ -1,0 +1,732 @@
+[
+  {
+    "map": "route15",
+    "cell": [
+      41,
+      11
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/route15/actor-1.png",
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "item": "",
+    "id": "route15_kindra",
+    "name": "KINDRA",
+    "title": "15号道路",
+    "party": [
+      {
+        "species_id": "gloom",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "atk"
+        },
+        "moves": [
+          "poisonpowder",
+          "stunspore",
+          "sleeppowder",
+          "acid"
+        ]
+      },
+      {
+        "species_id": "oddish",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spa"
+        },
+        "moves": [
+          "poisonpowder",
+          "stunspore",
+          "sleeppowder",
+          "acid"
+        ]
+      },
+      {
+        "species_id": "oddish",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "poisonpowder",
+          "stunspore",
+          "sleeppowder",
+          "acid"
+        ]
+      }
+    ],
+    "reward": 560,
+    "portrait": "res://assets/route15/trainer-1-trainer.png",
+    "fireRedTrainer": "PicnickerKindra",
+    "sourceName": "KINDRA",
+    "sourceFemale": true,
+    "moneyCoefficient": 5,
+    "intro": "来对战吧！",
+    "defeat": "你赢了！",
+    "after": "训练仍要继续。"
+  },
+  {
+    "map": "route15",
+    "cell": [
+      53,
+      10
+    ],
+    "redObject": 2,
+    "sprite": "res://assets/route15/actor-2.png",
+    "facing": "left",
+    "alphaBBox": [
+      1,
+      0,
+      14,
+      16
+    ],
+    "item": "",
+    "id": "route15_becky",
+    "name": "BECKY",
+    "title": "15号道路",
+    "party": [
+      {
+        "species_id": "pikachu",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spe"
+        },
+        "moves": [
+          "quickattack",
+          "doubleteam",
+          "slam",
+          "thunderbolt"
+        ]
+      },
+      {
+        "species_id": "raichu",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "thundershock",
+          "tailwhip",
+          "quickattack",
+          "thunderbolt"
+        ]
+      }
+    ],
+    "reward": 580,
+    "portrait": "res://assets/route15/trainer-2-trainer.png",
+    "fireRedTrainer": "PicnickerBecky",
+    "sourceName": "BECKY",
+    "sourceFemale": true,
+    "moneyCoefficient": 5,
+    "intro": "来对战吧！",
+    "defeat": "你赢了！",
+    "after": "训练仍要继续。"
+  },
+  {
+    "map": "route15",
+    "cell": [
+      31,
+      13
+    ],
+    "redObject": 3,
+    "sprite": "res://assets/route15/actor-3.png",
+    "facing": "up",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": "",
+    "id": "route15_edwin",
+    "name": "EDWIN",
+    "title": "15号道路",
+    "party": [
+      {
+        "species_id": "pidgeotto",
+        "level": 26,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "sandattack",
+          "gust",
+          "quickattack",
+          "whirlwind"
+        ]
+      },
+      {
+        "species_id": "farfetchd",
+        "level": 26,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "leer",
+          "furyattack",
+          "knockoff",
+          "furycutter"
+        ]
+      },
+      {
+        "species_id": "doduo",
+        "level": 26,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "atk"
+        },
+        "moves": [
+          "pursuit",
+          "furyattack",
+          "triattack",
+          "rage"
+        ]
+      },
+      {
+        "species_id": "pidgey",
+        "level": 26,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spe"
+        },
+        "moves": [
+          "gust",
+          "quickattack",
+          "whirlwind",
+          "wingattack"
+        ]
+      }
+    ],
+    "reward": 624,
+    "portrait": "res://assets/route15/trainer-3-trainer.png",
+    "fireRedTrainer": "BirdKeeperEdwin",
+    "sourceName": "EDWIN",
+    "sourceFemale": false,
+    "moneyCoefficient": 6,
+    "intro": "来对战吧！",
+    "defeat": "你赢了！",
+    "after": "训练仍要继续。"
+  },
+  {
+    "map": "route15",
+    "cell": [
+      35,
+      13
+    ],
+    "redObject": 4,
+    "sprite": "res://assets/route15/actor-4.png",
+    "facing": "up",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": "",
+    "id": "route15_chester",
+    "name": "CHESTER",
+    "title": "15号道路",
+    "party": [
+      {
+        "species_id": "dodrio",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spe"
+        },
+        "moves": [
+          "pursuit",
+          "furyattack",
+          "triattack",
+          "rage"
+        ]
+      },
+      {
+        "species_id": "doduo",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "def"
+        },
+        "moves": [
+          "pursuit",
+          "furyattack",
+          "triattack",
+          "rage"
+        ]
+      },
+      {
+        "species_id": "doduo",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "atk"
+        },
+        "moves": [
+          "pursuit",
+          "furyattack",
+          "triattack",
+          "rage"
+        ]
+      }
+    ],
+    "reward": 672,
+    "portrait": "res://assets/route15/trainer-4-trainer.png",
+    "fireRedTrainer": "BirdKeeperChester",
+    "sourceName": "CHESTER",
+    "sourceFemale": false,
+    "moneyCoefficient": 6,
+    "intro": "来对战吧！",
+    "defeat": "你赢了！",
+    "after": "训练仍要继续。"
+  },
+  {
+    "map": "route15",
+    "cell": [
+      53,
+      11
+    ],
+    "redObject": 5,
+    "sprite": "res://assets/route15/actor-5.png",
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      1,
+      16,
+      16
+    ],
+    "item": "",
+    "id": "route15_grace",
+    "name": "GRACE",
+    "title": "15号道路",
+    "party": [
+      {
+        "species_id": "pidgeotto",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "gust",
+          "quickattack",
+          "whirlwind",
+          "wingattack"
+        ]
+      },
+      {
+        "species_id": "wigglytuff",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "sing",
+          "disable",
+          "defensecurl",
+          "doubleslap"
+        ]
+      }
+    ],
+    "reward": 2088,
+    "portrait": "res://assets/route15/trainer-5-trainer.png",
+    "fireRedTrainer": "BeautyGrace",
+    "sourceName": "GRACE",
+    "sourceFemale": true,
+    "moneyCoefficient": 18,
+    "intro": "来对战吧！",
+    "defeat": "你赢了！",
+    "after": "训练仍要继续。"
+  },
+  {
+    "map": "route15",
+    "cell": [
+      41,
+      10
+    ],
+    "redObject": 6,
+    "sprite": "res://assets/route15/actor-6.png",
+    "facing": "right",
+    "alphaBBox": [
+      0,
+      1,
+      14,
+      16
+    ],
+    "item": "",
+    "id": "route15_olivia",
+    "name": "OLIVIA",
+    "title": "15号道路",
+    "party": [
+      {
+        "species_id": "bulbasaur",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "poisonpowder",
+          "sleeppowder",
+          "razorleaf",
+          "sweetscent"
+        ]
+      },
+      {
+        "species_id": "ivysaur",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "poisonpowder",
+          "sleeppowder",
+          "razorleaf",
+          "sweetscent"
+        ]
+      }
+    ],
+    "reward": 2088,
+    "portrait": "res://assets/route15/trainer-6-trainer.png",
+    "fireRedTrainer": "BeautyOlivia",
+    "sourceName": "OLIVIA",
+    "sourceFemale": true,
+    "moneyCoefficient": 18,
+    "intro": "来对战吧！",
+    "defeat": "你赢了！",
+    "after": "训练仍要继续。"
+  },
+  {
+    "map": "route15",
+    "cell": [
+      48,
+      10
+    ],
+    "redObject": 7,
+    "sprite": "res://assets/route15/actor-7.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": "",
+    "id": "route15_ernest",
+    "name": "ERNEST",
+    "title": "15号道路",
+    "party": [
+      {
+        "species_id": "koffing",
+        "level": 25,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spa"
+        },
+        "moves": [
+          "smokescreen",
+          "sludge",
+          "smog",
+          "tackle"
+        ]
+      },
+      {
+        "species_id": "koffing",
+        "level": 25,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "atk"
+        },
+        "moves": [
+          "smokescreen",
+          "sludge",
+          "smog",
+          "tackle"
+        ]
+      },
+      {
+        "species_id": "weezing",
+        "level": 25,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "smokescreen",
+          "sludge",
+          "smog",
+          "tackle"
+        ]
+      },
+      {
+        "species_id": "koffing",
+        "level": 25,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "atk"
+        },
+        "moves": [
+          "smokescreen",
+          "sludge",
+          "smog",
+          "tackle"
+        ]
+      },
+      {
+        "species_id": "grimer",
+        "level": 25,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "minimize",
+          "sludge",
+          "disable",
+          "pound"
+        ]
+      }
+    ],
+    "reward": 500,
+    "portrait": "res://assets/route15/trainer-7-trainer.png",
+    "fireRedTrainer": "BikerErnest",
+    "sourceName": "ERNEST",
+    "sourceFemale": false,
+    "moneyCoefficient": 5,
+    "intro": "来对战吧！",
+    "defeat": "你赢了！",
+    "after": "训练仍要继续。"
+  },
+  {
+    "map": "route15",
+    "cell": [
+      46,
+      10
+    ],
+    "redObject": 8,
+    "sprite": "res://assets/route15/actor-8.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": "",
+    "id": "route15_alex",
+    "name": "ALEX",
+    "title": "15号道路",
+    "party": [
+      {
+        "species_id": "koffing",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "smokescreen",
+          "sludge",
+          "smog",
+          "tackle"
+        ]
+      },
+      {
+        "species_id": "grimer",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spd"
+        },
+        "moves": [
+          "screech",
+          "minimize",
+          "sludge",
+          "disable"
+        ]
+      },
+      {
+        "species_id": "weezing",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "def"
+        },
+        "moves": [
+          "smokescreen",
+          "sludge",
+          "smog",
+          "tackle"
+        ]
+      }
+    ],
+    "reward": 560,
+    "portrait": "res://assets/route15/trainer-8-trainer.png",
+    "fireRedTrainer": "BikerAlex",
+    "sourceName": "ALEX",
+    "sourceFemale": false,
+    "moneyCoefficient": 5,
+    "intro": "来对战吧！",
+    "defeat": "你赢了！",
+    "after": "训练仍要继续。"
+  },
+  {
+    "map": "route15",
+    "cell": [
+      37,
+      5
+    ],
+    "redObject": 9,
+    "sprite": "res://assets/route15/actor-9.png",
+    "facing": "right",
+    "alphaBBox": [
+      2,
+      0,
+      15,
+      16
+    ],
+    "item": "",
+    "id": "route15_celia",
+    "name": "CELIA",
+    "title": "15号道路",
+    "party": [
+      {
+        "species_id": "clefairy",
+        "level": 33,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spe"
+        },
+        "moves": [
+          "minimize",
+          "defensecurl",
+          "metronome",
+          "cosmicpower"
+        ]
+      }
+    ],
+    "reward": 660,
+    "portrait": "res://assets/route15/trainer-9-trainer.png",
+    "fireRedTrainer": "PicnickerCelia",
+    "sourceName": "CELIA",
+    "sourceFemale": true,
+    "moneyCoefficient": 5,
+    "intro": "来对战吧！",
+    "defeat": "你赢了！",
+    "after": "训练仍要继续。"
+  },
+  {
+    "map": "route15",
+    "cell": [
+      18,
+      13
+    ],
+    "redObject": 10,
+    "sprite": "res://assets/route15/actor-10.png",
+    "facing": "up",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "item": "",
+    "id": "route15_yazmin",
+    "name": "YAZMIN",
+    "title": "15号道路",
+    "party": [
+      {
+        "species_id": "bellsprout",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spd"
+        },
+        "moves": [
+          "sleeppowder",
+          "poisonpowder",
+          "stunspore",
+          "acid"
+        ]
+      },
+      {
+        "species_id": "oddish",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "poisonpowder",
+          "stunspore",
+          "sleeppowder",
+          "acid"
+        ]
+      },
+      {
+        "species_id": "tangela",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "growth",
+          "poisonpowder",
+          "vinewhip",
+          "bind"
+        ]
+      }
+    ],
+    "reward": 580,
+    "portrait": "res://assets/route15/trainer-10-trainer.png",
+    "fireRedTrainer": "PicnickerYazmin",
+    "sourceName": "YAZMIN",
+    "sourceFemale": true,
+    "moneyCoefficient": 5,
+    "intro": "来对战吧！",
+    "defeat": "你赢了！",
+    "after": "训练仍要继续。"
+  }
+]

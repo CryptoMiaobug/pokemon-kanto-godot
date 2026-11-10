@@ -1,0 +1,78 @@
+{
+  "source": "sRoute3_FireRed",
+  "encounter_rate": 21,
+  "slots": [
+    {
+      "species_id": "spearow",
+      "min_level": 6,
+      "max_level": 6,
+      "weight": 20
+    },
+    {
+      "species_id": "pidgey",
+      "min_level": 6,
+      "max_level": 6,
+      "weight": 20
+    },
+    {
+      "species_id": "spearow",
+      "min_level": 7,
+      "max_level": 7,
+      "weight": 10
+    },
+    {
+      "species_id": "mankey",
+      "min_level": 7,
+      "max_level": 7,
+      "weight": 10
+    },
+    {
+      "species_id": "nidoran_m",
+      "min_level": 6,
+      "max_level": 6,
+      "weight": 10
+    },
+    {
+      "species_id": "pidgey",
+      "min_level": 7,
+      "max_level": 7,
+      "weight": 10
+    },
+    {
+      "species_id": "spearow",
+      "min_level": 8,
+      "max_level": 8,
+      "weight": 5
+    },
+    {
+      "species_id": "jigglypuff",
+      "min_level": 3,
+      "max_level": 3,
+      "weight": 5
+    },
+    {
+      "species_id": "nidoran_m",
+      "min_level": 7,
+      "max_level": 7,
+      "weight": 4
+    },
+    {
+      "species_id": "jigglypuff",
+      "min_level": 5,
+      "max_level": 5,
+      "weight": 4
+    },
+    {
+      "species_id": "nidoran_f",
+      "min_level": 6,
+      "max_level": 6,
+      "weight": 1
+    },
+    {
+      "species_id": "jigglypuff",
+      "min_level": 7,
+      "max_level": 7,
+      "weight": 1
+    }
+  ]
+}

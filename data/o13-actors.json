@@ -1,0 +1,223 @@
+[
+  {
+    "map": "route11",
+    "redObject": 1,
+    "cell": [
+      10,
+      14
+    ],
+    "facing": "down",
+    "sprite": "res://assets/route11/actor-1.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "role": "trainer_deferred"
+  },
+  {
+    "map": "route11",
+    "redObject": 2,
+    "cell": [
+      26,
+      9
+    ],
+    "facing": "down",
+    "sprite": "res://assets/route11/actor-2.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "role": "trainer_deferred"
+  },
+  {
+    "map": "route11",
+    "redObject": 3,
+    "cell": [
+      13,
+      5
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route11/actor-3.png",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "role": "trainer_deferred"
+  },
+  {
+    "map": "route11",
+    "redObject": 4,
+    "cell": [
+      36,
+      11
+    ],
+    "facing": "down",
+    "sprite": "res://assets/route11/actor-4.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "role": "trainer_deferred"
+  },
+  {
+    "map": "route11",
+    "redObject": 5,
+    "cell": [
+      22,
+      4
+    ],
+    "facing": "up",
+    "sprite": "res://assets/route11/actor-5.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "role": "trainer_deferred"
+  },
+  {
+    "map": "route11",
+    "redObject": 6,
+    "cell": [
+      45,
+      7
+    ],
+    "facing": "down",
+    "sprite": "res://assets/route11/actor-6.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "role": "trainer_deferred"
+  },
+  {
+    "map": "route11",
+    "redObject": 7,
+    "cell": [
+      33,
+      3
+    ],
+    "facing": "up",
+    "sprite": "res://assets/route11/actor-7.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "role": "trainer_deferred"
+  },
+  {
+    "map": "route11",
+    "redObject": 8,
+    "cell": [
+      43,
+      5
+    ],
+    "facing": "right",
+    "sprite": "res://assets/route11/actor-8.png",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "role": "trainer_deferred"
+  },
+  {
+    "map": "route11",
+    "redObject": 9,
+    "cell": [
+      45,
+      16
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route11/actor-9.png",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "role": "trainer_deferred"
+  },
+  {
+    "map": "route11",
+    "redObject": 10,
+    "cell": [
+      22,
+      12
+    ],
+    "facing": "up",
+    "sprite": "res://assets/route11/actor-10.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "role": "trainer_deferred"
+  },
+  {
+    "map": "route11-gate-1f",
+    "redObject": 1,
+    "cell": [
+      4,
+      1
+    ],
+    "facing": "down",
+    "sprite": "res://assets/route11-gate-1f/actor-1.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "role": "visitor"
+  },
+  {
+    "map": "digletts-cave-route11",
+    "redObject": 1,
+    "cell": [
+      2,
+      3
+    ],
+    "facing": "down",
+    "sprite": "res://assets/digletts-cave-route11/actor-1.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "role": "visitor"
+  },
+  {
+    "map": "digletts-cave-route2",
+    "redObject": 1,
+    "cell": [
+      3,
+      3
+    ],
+    "facing": "down",
+    "sprite": "res://assets/digletts-cave-route2/actor-1.png",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "role": "visitor"
+  }
+]

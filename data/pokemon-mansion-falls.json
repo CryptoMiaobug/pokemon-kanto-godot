@@ -1,0 +1,38 @@
+[
+  {
+    "cell": [
+      16,
+      14
+    ],
+    "target": "pokemon-mansion-1f",
+    "arrival": [
+      16,
+      14
+    ],
+    "dungeon_index": 1
+  },
+  {
+    "cell": [
+      17,
+      14
+    ],
+    "target": "pokemon-mansion-1f",
+    "arrival": [
+      16,
+      14
+    ],
+    "dungeon_index": 2
+  },
+  {
+    "cell": [
+      19,
+      14
+    ],
+    "target": "pokemon-mansion-2f",
+    "arrival": [
+      18,
+      14
+    ],
+    "dungeon_index": 3
+  }
+]

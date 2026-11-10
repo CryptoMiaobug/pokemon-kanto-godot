@@ -1,0 +1,13 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/MtMoon1F.json",
+  "tiles": "assets/tilesets/cavern.png",
+  "terrain": "graphics/battle_terrain/cave/terrain.{png,pal,bin}",
+  "species": [
+    "zubat",
+    "paras",
+    "clefairy"
+  ],
+  "adaptation": "Original blocks and foot/pair collisions, neutral same-source palette; no overhead tile category in cavern. No NPC/items/lower floors; no evolution chains. Rights remain original holders."
+}

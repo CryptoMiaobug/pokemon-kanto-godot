@@ -1,0 +1,530 @@
+[
+  {
+    "id": "o13_route11_hugo",
+    "map": "route11",
+    "redObject": 1,
+    "name": "赌徒Hugo",
+    "title": "11号道路训练家",
+    "cell": [
+      10,
+      14
+    ],
+    "facing": "down",
+    "sprite": "res://assets/route11/actor-1.png",
+    "portrait": "res://assets/route11/trainer-gamer_hugo.png",
+    "party": [
+      {
+        "species_id": "poliwag",
+        "level": 18,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "bubble",
+          "hypnosis",
+          "watergun"
+        ]
+      },
+      {
+        "species_id": "horsea",
+        "level": 18,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "bubble",
+          "smokescreen",
+          "leer"
+        ]
+      }
+    ],
+    "reward": 1296,
+    "intro": "来一场宝可梦对战吧！",
+    "defeat": "啊！我输了！",
+    "after": "继续向前探索吧。",
+    "sourceTrainer": "TRAINER_GAMER_HUGO",
+    "sourceParty": "GamerHugo",
+    "moneyCoefficient": 18
+  },
+  {
+    "id": "o13_route11_jasper",
+    "map": "route11",
+    "redObject": 2,
+    "name": "赌徒Jasper",
+    "title": "11号道路训练家",
+    "cell": [
+      26,
+      9
+    ],
+    "facing": "down",
+    "sprite": "res://assets/route11/actor-2.png",
+    "portrait": "res://assets/route11/trainer-gamer_jasper.png",
+    "party": [
+      {
+        "species_id": "bellsprout",
+        "level": 18,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "growth",
+          "wrap",
+          "sleeppowder",
+          "poisonpowder"
+        ]
+      },
+      {
+        "species_id": "oddish",
+        "level": 18,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "sweetscent",
+          "poisonpowder",
+          "stunspore",
+          "sleeppowder"
+        ]
+      }
+    ],
+    "reward": 1296,
+    "intro": "来一场宝可梦对战吧！",
+    "defeat": "啊！我输了！",
+    "after": "继续向前探索吧。",
+    "sourceTrainer": "TRAINER_GAMER_JASPER",
+    "sourceParty": "GamerJasper",
+    "moneyCoefficient": 18
+  },
+  {
+    "id": "o13_route11_eddie",
+    "map": "route11",
+    "redObject": 3,
+    "name": "训练家Eddie",
+    "title": "11号道路训练家",
+    "cell": [
+      13,
+      5
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route11/actor-3.png",
+    "portrait": "res://assets/route11/trainer-youngster_eddie.png",
+    "party": [
+      {
+        "species_id": "ekans",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "leer",
+          "poisonsting",
+          "bite",
+          "glare"
+        ]
+      }
+    ],
+    "reward": 336,
+    "intro": "来一场宝可梦对战吧！",
+    "defeat": "啊！我输了！",
+    "after": "继续向前探索吧。",
+    "sourceTrainer": "TRAINER_YOUNGSTER_EDDIE",
+    "sourceParty": "YoungsterEddie",
+    "moneyCoefficient": 4
+  },
+  {
+    "id": "o13_route11_braxton",
+    "map": "route11",
+    "redObject": 4,
+    "name": "工人Braxton",
+    "title": "11号道路训练家",
+    "cell": [
+      36,
+      11
+    ],
+    "facing": "down",
+    "sprite": "res://assets/route11/actor-4.png",
+    "portrait": "res://assets/route11/trainer-engineer_braxton.png",
+    "party": [
+      {
+        "species_id": "magnemite",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "thundershock",
+          "supersonic",
+          "sonicboom",
+          "thunderwave"
+        ]
+      }
+    ],
+    "reward": 1008,
+    "intro": "来一场宝可梦对战吧！",
+    "defeat": "啊！我输了！",
+    "after": "继续向前探索吧。",
+    "sourceTrainer": "TRAINER_ENGINEER_BRAXTON",
+    "sourceParty": "EngineerBraxton",
+    "moneyCoefficient": 12
+  },
+  {
+    "id": "o13_route11_dillon",
+    "map": "route11",
+    "redObject": 5,
+    "name": "训练家Dillon",
+    "title": "11号道路训练家",
+    "cell": [
+      22,
+      4
+    ],
+    "facing": "up",
+    "sprite": "res://assets/route11/actor-5.png",
+    "portrait": "res://assets/route11/trainer-youngster_dillon.png",
+    "party": [
+      {
+        "species_id": "sandshrew",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "scratch",
+          "defensecurl",
+          "sandattack",
+          "poisonsting"
+        ]
+      },
+      {
+        "species_id": "zubat",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "leechlife",
+          "astonish",
+          "supersonic",
+          "bite"
+        ]
+      }
+    ],
+    "reward": 304,
+    "intro": "来一场宝可梦对战吧！",
+    "defeat": "啊！我输了！",
+    "after": "继续向前探索吧。",
+    "sourceTrainer": "TRAINER_YOUNGSTER_DILLON",
+    "sourceParty": "YoungsterDillon",
+    "moneyCoefficient": 4
+  },
+  {
+    "id": "o13_route11_dirk",
+    "map": "route11",
+    "redObject": 6,
+    "name": "赌徒Dirk",
+    "title": "11号道路训练家",
+    "cell": [
+      45,
+      7
+    ],
+    "facing": "down",
+    "sprite": "res://assets/route11/actor-6.png",
+    "portrait": "res://assets/route11/trainer-gamer_dirk.png",
+    "party": [
+      {
+        "species_id": "voltorb",
+        "level": 18,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "charge",
+          "tackle",
+          "screech",
+          "sonicboom"
+        ]
+      },
+      {
+        "species_id": "magnemite",
+        "level": 18,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "tackle",
+          "thundershock",
+          "supersonic",
+          "sonicboom"
+        ]
+      }
+    ],
+    "reward": 1296,
+    "intro": "来一场宝可梦对战吧！",
+    "defeat": "啊！我输了！",
+    "after": "继续向前探索吧。",
+    "sourceTrainer": "TRAINER_GAMER_DIRK",
+    "sourceParty": "GamerDirk",
+    "moneyCoefficient": 18
+  },
+  {
+    "id": "o13_route11_darian",
+    "map": "route11",
+    "redObject": 7,
+    "name": "赌徒Darian",
+    "title": "11号道路训练家",
+    "cell": [
+      33,
+      3
+    ],
+    "facing": "up",
+    "sprite": "res://assets/route11/actor-7.png",
+    "portrait": "res://assets/route11/trainer-gamer_darian.png",
+    "party": [
+      {
+        "species_id": "growlithe",
+        "level": 18,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "bite",
+          "roar",
+          "ember",
+          "leer"
+        ]
+      },
+      {
+        "species_id": "vulpix",
+        "level": 18,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "tailwhip",
+          "roar",
+          "quickattack",
+          "willowisp"
+        ]
+      }
+    ],
+    "reward": 1296,
+    "intro": "来一场宝可梦对战吧！",
+    "defeat": "啊！我输了！",
+    "after": "继续向前探索吧。",
+    "sourceTrainer": "TRAINER_GAMER_DARIAN",
+    "sourceParty": "GamerDarian",
+    "moneyCoefficient": 18
+  },
+  {
+    "id": "o13_route11_yasu",
+    "map": "route11",
+    "redObject": 8,
+    "name": "训练家Yasu",
+    "title": "11号道路训练家",
+    "cell": [
+      43,
+      5
+    ],
+    "facing": "right",
+    "sprite": "res://assets/route11/actor-8.png",
+    "portrait": "res://assets/route11/trainer-youngster_yasu.png",
+    "party": [
+      {
+        "species_id": "rattata",
+        "level": 17,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack",
+          "hyperfang"
+        ]
+      },
+      {
+        "species_id": "rattata",
+        "level": 17,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack",
+          "hyperfang"
+        ]
+      },
+      {
+        "species_id": "raticate",
+        "level": 17,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack",
+          "hyperfang"
+        ]
+      }
+    ],
+    "reward": 272,
+    "intro": "来一场宝可梦对战吧！",
+    "defeat": "啊！我输了！",
+    "after": "继续向前探索吧。",
+    "sourceTrainer": "TRAINER_YOUNGSTER_YASU",
+    "sourceParty": "YoungsterYasu",
+    "moneyCoefficient": 4
+  },
+  {
+    "id": "o13_route11_bernie",
+    "map": "route11",
+    "redObject": 9,
+    "name": "工人Bernie",
+    "title": "11号道路训练家",
+    "cell": [
+      45,
+      16
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route11/actor-9.png",
+    "portrait": "res://assets/route11/trainer-engineer_bernie.png",
+    "party": [
+      {
+        "species_id": "magnemite",
+        "level": 18,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "tackle",
+          "thundershock",
+          "supersonic",
+          "sonicboom"
+        ]
+      },
+      {
+        "species_id": "magnemite",
+        "level": 18,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "tackle",
+          "thundershock",
+          "supersonic",
+          "sonicboom"
+        ]
+      },
+      {
+        "species_id": "magneton",
+        "level": 18,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "tackle",
+          "thundershock",
+          "supersonic",
+          "sonicboom"
+        ]
+      }
+    ],
+    "reward": 864,
+    "intro": "来一场宝可梦对战吧！",
+    "defeat": "啊！我输了！",
+    "after": "继续向前探索吧。",
+    "sourceTrainer": "TRAINER_ENGINEER_BERNIE",
+    "sourceParty": "EngineerBernie",
+    "moneyCoefficient": 12
+  },
+  {
+    "id": "o13_route11_dave",
+    "map": "route11",
+    "redObject": 10,
+    "name": "训练家Dave",
+    "title": "11号道路训练家",
+    "cell": [
+      22,
+      12
+    ],
+    "facing": "up",
+    "sprite": "res://assets/route11/actor-10.png",
+    "portrait": "res://assets/route11/trainer-youngster_dave.png",
+    "party": [
+      {
+        "species_id": "nidoran_m",
+        "level": 18,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "peck",
+          "focusenergy",
+          "doublekick",
+          "poisonsting"
+        ]
+      },
+      {
+        "species_id": "nidorino",
+        "level": 18,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "peck",
+          "focusenergy",
+          "doublekick",
+          "poisonsting"
+        ]
+      }
+    ],
+    "reward": 288,
+    "intro": "来一场宝可梦对战吧！",
+    "defeat": "啊！我输了！",
+    "after": "继续向前探索吧。",
+    "sourceTrainer": "TRAINER_YOUNGSTER_DAVE",
+    "sourceParty": "YoungsterDave",
+    "moneyCoefficient": 4
+  }
+]

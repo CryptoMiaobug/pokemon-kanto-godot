@@ -1,0 +1,138 @@
+[
+  {
+    "map": "fuchsia-gym",
+    "cell": [
+      4,
+      10
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/fuchsia-gym/actor-1.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "fuchsia-gym",
+    "cell": [
+      8,
+      13
+    ],
+    "redObject": 2,
+    "sprite": "res://assets/fuchsia-gym/actor-2.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "fuchsia-gym",
+    "cell": [
+      7,
+      8
+    ],
+    "redObject": 3,
+    "sprite": "res://assets/fuchsia-gym/actor-3.png",
+    "facing": "right",
+    "alphaBBox": [
+      3,
+      0,
+      13,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "fuchsia-gym",
+    "cell": [
+      1,
+      12
+    ],
+    "redObject": 4,
+    "sprite": "res://assets/fuchsia-gym/actor-4.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "fuchsia-gym",
+    "cell": [
+      3,
+      5
+    ],
+    "redObject": 5,
+    "sprite": "res://assets/fuchsia-gym/actor-5.png",
+    "facing": "up",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "fuchsia-gym",
+    "cell": [
+      8,
+      2
+    ],
+    "redObject": 6,
+    "sprite": "res://assets/fuchsia-gym/actor-6.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "fuchsia-gym",
+    "cell": [
+      2,
+      7
+    ],
+    "redObject": 7,
+    "sprite": "res://assets/fuchsia-gym/actor-7.png",
+    "facing": "left",
+    "alphaBBox": [
+      3,
+      0,
+      13,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "fuchsia-gym",
+    "cell": [
+      7,
+      15
+    ],
+    "redObject": 8,
+    "sprite": "res://assets/fuchsia-gym/actor-8.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  }
+]

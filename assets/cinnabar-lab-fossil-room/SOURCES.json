@@ -1,0 +1,67 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/CinnabarLabFossilRoom.json",
+  "mapSHA256": "9867140b39763c079950c6490bb3bcf1de1e0fb8fc87909e6e406d7c58bb9504",
+  "tileset": "data/tilesets/Lab.json",
+  "gfx": "assets/tilesets/lab.png",
+  "warps": [
+    {
+      "x": 2,
+      "y": 7,
+      "destMap": "CINNABAR_LAB",
+      "destMapId": 167,
+      "destMapName": "CinnabarLab",
+      "destWarp": 5,
+      "destWarpIndex": 4
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "destMap": "CINNABAR_LAB",
+      "destMapId": 167,
+      "destMapName": "CinnabarLab",
+      "destWarp": 5,
+      "destWarpIndex": 4
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "CINNABARLABFOSSILROOM_SCIENTIST1",
+      "x": 5,
+      "y": 2,
+      "sprite": "SPRITE_SCIENTIST",
+      "spriteId": 32,
+      "movement": "WALK",
+      "rangeOrDirection": "LEFT_RIGHT",
+      "rangeOrDirectionValue": 2,
+      "behavior": "walk_left_right",
+      "textId": "TEXT_CINNABARLABFOSSILROOM_SCIENTIST1",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "CINNABARLABFOSSILROOM_SCIENTIST2",
+      "x": 7,
+      "y": 6,
+      "sprite": "SPRITE_SCIENTIST",
+      "spriteId": 32,
+      "movement": "STAY",
+      "rangeOrDirection": "UP",
+      "rangeOrDirectionValue": 209,
+      "behavior": "face_up",
+      "textId": "TEXT_CINNABARLABFOSSILROOM_SCIENTIST2",
+      "textIndex": 2
+    }
+  ],
+  "localScale": 1,
+  "worldScale": 2,
+  "feetAnchor": [
+    8,
+    16
+  ],
+  "adaptation": "Red geometry/static actors; FireRed identity mapping by source dialogue: Red scientist1=FR FossilScientist, Red scientist2=FR Garett (different appearance/order); entrance FishingGuru=FR Scientist (different appearance). All services including fossil submission/progress/rewards/trade/PC deferred. Other two rooms closed at source door cells. No walking NPC/audio.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

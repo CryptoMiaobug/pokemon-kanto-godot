@@ -1,0 +1,629 @@
+[
+  {
+    "id": "route8_aidan",
+    "map": "route8",
+    "name": "理科男艾丹",
+    "title": "理科男艾丹 · 8号道路",
+    "cell": [
+      8,
+      5
+    ],
+    "facing": "right",
+    "sprite": "res://assets/route8/aidan.png",
+    "portrait": "res://assets/route8/aidan-trainer.png",
+    "reward": 480,
+    "party": [
+      {
+        "species_id": "voltorb",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "sonicboom",
+          "screech",
+          "tackle",
+          "charge"
+        ]
+      },
+      {
+        "species_id": "koffing",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "sludge",
+          "smog",
+          "tackle",
+          "poisongas"
+        ]
+      },
+      {
+        "species_id": "voltorb",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "atk"
+        },
+        "moves": [
+          "sonicboom",
+          "screech",
+          "tackle",
+          "charge"
+        ]
+      },
+      {
+        "species_id": "magnemite",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "atk"
+        },
+        "moves": [
+          "sonicboom",
+          "supersonic",
+          "thundershock",
+          "tackle"
+        ]
+      }
+    ],
+    "intro": "你很擅长宝可梦，可化学成绩如何？",
+    "defeat": "哎呀！熔化了！",
+    "after": "我的学业比对战更好！",
+    "sourceIntro": "You look good at POKéMON, but how's your chem? ",
+    "redObject": 1,
+    "fireRedTrainer": "SuperNerdAidan",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "route8_stan",
+    "map": "route8",
+    "name": "玩家斯坦",
+    "title": "玩家斯坦 · 8号道路",
+    "cell": [
+      13,
+      9
+    ],
+    "facing": "up",
+    "sprite": "res://assets/route8/stan.png",
+    "portrait": "res://assets/route8/stan-trainer.png",
+    "reward": 1584,
+    "party": [
+      {
+        "species_id": "poliwag",
+        "level": 22,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spd"
+        },
+        "moves": [
+          "bubble",
+          "hypnosis",
+          "watergun",
+          "doubleslap"
+        ]
+      },
+      {
+        "species_id": "poliwag",
+        "level": 22,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spe"
+        },
+        "moves": [
+          "bubble",
+          "hypnosis",
+          "watergun",
+          "doubleslap"
+        ]
+      },
+      {
+        "species_id": "poliwhirl",
+        "level": 22,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "bubble",
+          "hypnosis",
+          "watergun",
+          "doubleslap"
+        ]
+      }
+    ],
+    "intro": "好！来玩一局吧！",
+    "defeat": "差一点！",
+    "after": "今天不太顺利。",
+    "sourceIntro": "All right! Let's roll the dice! ",
+    "redObject": 2,
+    "fireRedTrainer": "GamerStan",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "route8_glenn",
+    "map": "route8",
+    "name": "理科男格伦",
+    "title": "理科男格伦 · 8号道路",
+    "cell": [
+      42,
+      6
+    ],
+    "facing": "up",
+    "sprite": "res://assets/route8/glenn.png",
+    "portrait": "res://assets/route8/glenn-trainer.png",
+    "reward": 528,
+    "party": [
+      {
+        "species_id": "grimer",
+        "level": 22,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spd"
+        },
+        "moves": [
+          "harden",
+          "disable",
+          "sludge",
+          "minimize"
+        ]
+      },
+      {
+        "species_id": "muk",
+        "level": 22,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spd"
+        },
+        "moves": [
+          "harden",
+          "disable",
+          "sludge",
+          "minimize"
+        ]
+      },
+      {
+        "species_id": "grimer",
+        "level": 22,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "harden",
+          "disable",
+          "sludge",
+          "minimize"
+        ]
+      }
+    ],
+    "intro": "你得知道，获胜需要策略！",
+    "defeat": "不合逻辑！",
+    "after": "先派臭泥，然后……然后……",
+    "sourceIntro": "You need strategy to win at this! ",
+    "redObject": 3,
+    "fireRedTrainer": "SuperNerdGlenn",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "route8_paige",
+    "map": "route8",
+    "name": "少女佩姬",
+    "title": "少女佩姬 · 8号道路",
+    "cell": [
+      26,
+      3
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route8/paige.png",
+    "portrait": "res://assets/route8/paige-trainer.png",
+    "reward": 368,
+    "party": [
+      {
+        "species_id": "nidoran_f",
+        "level": 23,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spe"
+        },
+        "moves": [
+          "doublekick",
+          "poisonsting",
+          "bite",
+          "helpinghand"
+        ]
+      },
+      {
+        "species_id": "nidorina",
+        "level": 23,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "tailwhip",
+          "doublekick",
+          "poisonsting",
+          "bite"
+        ]
+      }
+    ],
+    "intro": "我喜欢尼多兰，所以收集它们！",
+    "defeat": "为什么？为什么？",
+    "after": "宝可梦长大后不好看，我不想让它们进化！",
+    "sourceIntro": "I like NIDORAN, so I collect them! ",
+    "redObject": 4,
+    "fireRedTrainer": "LassPaige",
+    "alphaBBox": [
+      1,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "route8_leslie",
+    "map": "route8",
+    "name": "理科男莱斯利",
+    "title": "理科男莱斯利 · 8号道路",
+    "cell": [
+      26,
+      4
+    ],
+    "facing": "right",
+    "sprite": "res://assets/route8/leslie.png",
+    "portrait": "res://assets/route8/leslie-trainer.png",
+    "reward": 624,
+    "party": [
+      {
+        "species_id": "koffing",
+        "level": 26,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "sludge",
+          "smokescreen",
+          "smog",
+          "selfdestruct"
+        ]
+      }
+    ],
+    "intro": "学校很有趣，宝可梦也是！",
+    "defeat": "我还是专心学习吧。",
+    "after": "金黄市的关卡挡住了去路。",
+    "sourceIntro": "School is fun, but so are POKéMON. ",
+    "redObject": 5,
+    "fireRedTrainer": "SuperNerdLeslie",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "route8_andrea",
+    "map": "route8",
+    "name": "少女安德莉亚",
+    "title": "少女安德莉亚 · 8号道路",
+    "cell": [
+      26,
+      5
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route8/andrea.png",
+    "portrait": "res://assets/route8/andrea-trainer.png",
+    "reward": 384,
+    "party": [
+      {
+        "species_id": "meowth",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "scratch",
+          "growl",
+          "bite",
+          "payday"
+        ]
+      },
+      {
+        "species_id": "meowth",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spa"
+        },
+        "moves": [
+          "scratch",
+          "growl",
+          "bite",
+          "payday"
+        ]
+      },
+      {
+        "species_id": "meowth",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spe"
+        },
+        "moves": [
+          "scratch",
+          "growl",
+          "bite",
+          "payday"
+        ]
+      }
+    ],
+    "intro": "喵喵真可爱，喵喵喵！",
+    "defeat": "喵！",
+    "after": "波波和小拉达也很可爱！",
+    "sourceIntro": "MEOWTH is so cute, meow, meow, meow! ",
+    "redObject": 6,
+    "fireRedTrainer": "LassAndrea",
+    "alphaBBox": [
+      1,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "route8_megan",
+    "map": "route8",
+    "name": "少女梅根",
+    "title": "少女梅根 · 8号道路",
+    "cell": [
+      26,
+      6
+    ],
+    "facing": "right",
+    "sprite": "res://assets/route8/megan.png",
+    "portrait": "res://assets/route8/megan-trainer.png",
+    "reward": 304,
+    "party": [
+      {
+        "species_id": "pidgey",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spe"
+        },
+        "moves": [
+          "sandattack",
+          "gust",
+          "quickattack",
+          "whirlwind"
+        ]
+      },
+      {
+        "species_id": "rattata",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack",
+          "hyperfang"
+        ]
+      },
+      {
+        "species_id": "nidoran_m",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "peck",
+          "focusenergy",
+          "doublekick",
+          "poisonsting"
+        ]
+      },
+      {
+        "species_id": "meowth",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spa"
+        },
+        "moves": [
+          "scratch",
+          "growl",
+          "bite",
+          "payday"
+        ]
+      },
+      {
+        "species_id": "pikachu",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spd"
+        },
+        "moves": [
+          "tailwhip",
+          "thunderwave",
+          "quickattack",
+          "doubleteam"
+        ]
+      }
+    ],
+    "intro": "像这样站在这里，看起来很傻吧！",
+    "defeat": "看你做了什么！",
+    "after": "金黄市的守卫不让我们通过。",
+    "sourceIntro": "We must look silly standing here like this! ",
+    "redObject": 7,
+    "fireRedTrainer": "LassMegan",
+    "alphaBBox": [
+      2,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "route8_rich",
+    "map": "route8",
+    "name": "玩家里奇",
+    "title": "玩家里奇 · 8号道路",
+    "cell": [
+      46,
+      13
+    ],
+    "facing": "down",
+    "sprite": "res://assets/route8/rich.png",
+    "portrait": "res://assets/route8/rich-trainer.png",
+    "reward": 1728,
+    "party": [
+      {
+        "species_id": "growlithe",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "roar",
+          "ember",
+          "leer",
+          "odorsleuth"
+        ]
+      },
+      {
+        "species_id": "vulpix",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "roar",
+          "quickattack",
+          "willowisp",
+          "confuseray"
+        ]
+      }
+    ],
+    "intro": "我是喜欢四处游玩的玩家！",
+    "defeat": "错过了好机会！",
+    "after": "游戏和宝可梦让我停不下来！",
+    "sourceIntro": "I'm a rambling, gambling dude! ",
+    "redObject": 8,
+    "fireRedTrainer": "GamerRich",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "route8_julia",
+    "map": "route8",
+    "name": "少女朱莉娅",
+    "title": "少女朱莉娅 · 8号道路",
+    "cell": [
+      51,
+      12
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route8/julia.png",
+    "portrait": "res://assets/route8/julia-trainer.png",
+    "reward": 352,
+    "party": [
+      {
+        "species_id": "clefairy",
+        "level": 22,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "atk"
+        },
+        "moves": [
+          "sing",
+          "doubleslap",
+          "followme",
+          "minimize"
+        ]
+      },
+      {
+        "species_id": "clefairy",
+        "level": 22,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "atk"
+        },
+        "moves": [
+          "sing",
+          "doubleslap",
+          "followme",
+          "minimize"
+        ]
+      }
+    ],
+    "intro": "哪种宝可梦又圆又可爱又毛茸茸？",
+    "defeat": "别欺负我的皮皮！",
+    "after": "听说皮皮碰到月之石会进化。",
+    "sourceIntro": "What's a cute, round and fluffy POKéMON? ",
+    "redObject": 9,
+    "fireRedTrainer": "LassJulia",
+    "alphaBBox": [
+      1,
+      0,
+      14,
+      16
+    ]
+  }
+]

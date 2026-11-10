@@ -1,0 +1,83 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/BillsHouse.json",
+  "mapSHA256": "dc25b37b854d3ee924d060695cdf76b8cfd7de6765609d4fb4fab021f143dbd0",
+  "tiles": "assets/tilesets/interior.png",
+  "connections": {},
+  "warps": [
+    {
+      "x": 2,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "BILLSHOUSE_BILL_POKEMON",
+      "x": 6,
+      "y": 5,
+      "sprite": "SPRITE_MONSTER",
+      "spriteId": 5,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_BILLSHOUSE_BILL_POKEMON",
+      "textIndex": 1,
+      "toggleIndex": 97,
+      "toggleConst": "TOGGLE_BILL_POKEMON",
+      "startsHidden": false
+    },
+    {
+      "index": 2,
+      "const": "BILLSHOUSE_BILL1",
+      "x": 4,
+      "y": 4,
+      "sprite": "SPRITE_SUPER_NERD",
+      "spriteId": 12,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_BILLSHOUSE_BILL_SS_TICKET",
+      "textIndex": 2,
+      "toggleIndex": 98,
+      "toggleConst": "TOGGLE_BILL_1",
+      "startsHidden": true
+    },
+    {
+      "index": 3,
+      "const": "BILLSHOUSE_BILL2",
+      "x": 6,
+      "y": 5,
+      "sprite": "SPRITE_SUPER_NERD",
+      "spriteId": 12,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_BILLSHOUSE_BILL_CHECK_OUT_MY_RARE_POKEMON",
+      "textIndex": 3,
+      "toggleIndex": 99,
+      "toggleConst": "TOGGLE_BILL_2",
+      "startsHidden": true
+    }
+  ],
+  "adaptation": "Original foot collision, original16px static actors local1x/world2x nearest same anchor. Route25 west24 zero offset, original45,3 house door / house2or3,7 exit. Nine trainer actors, E confirms, no auto sight. TM/hidden items omitted. Bill original monster6,5, PC investigation1,4 facing up, restored human4,4 terminal; final return human6,5. Stage commits replace approach/teleporter animation, source conversation -> enter -> PC -> human -> ticket. Mid-stage persists for recovery rather than source reset on leaving. No other Cerulean events/guard toggle/Rocket hide/favorite-mon UI/ship access.",
+  "rights": "Original rights holders; no redistribution clearance."
+}

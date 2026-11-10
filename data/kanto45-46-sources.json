@@ -1,0 +1,16 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "sources": [
+    "Red src/game/scripts/regions/kanto1.js Route22 trigger29,4/29,5 and ViridianGym object1",
+    "FR src/data/trainer_parties.h, trainers.h, pokemon/species_info.h, pokemon/level_up_learnsets.h",
+    "FR data/maps/ViridianCity_Gym/scripts.inc and Route22/scripts.inc",
+    "FR battle_scripts_1.s SolarBeam/Synthesis; battle_script_commands.c recoverbasedonsunlight; pokemon.c SolarBeam weather"
+  ],
+  "sourceSHA256": {
+    "src/data/trainer_parties.h": "cb135d9cbdfc52c87066374d582506830a8c93561eab2033d847331c2de00299",
+    "src/data/trainers.h": "b2105a3b1d1baec02d8f6a89f44bcdf6a05cbaac1d6d8872766eec49aa8555bc"
+  },
+  "adaptation": "Red geometry and trigger cells; FR parties/rules. Confirmable trigger replaces approach animation; cancel/defeat retrigger after leaving cells. Giovanni badge, source gym flags, cash and growth atomic. Post-battle advice retained without granting unusable TM26; TM teaching and Giovanni disappearance deferred. Route22 late winner actor removed and collision released, independent early flag retained. No Route23.",
+  "rights": "Original artwork rights remain with holders; no redistribution clearance"
+}

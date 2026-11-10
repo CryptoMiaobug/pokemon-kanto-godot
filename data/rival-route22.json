@@ -1,0 +1,96 @@
+{
+  "id": "route22_early",
+  "reward": 144,
+  "rival_for": {
+    "bulbasaur": "charmander",
+    "charmander": "squirtle",
+    "squirtle": "bulbasaur"
+  },
+  "teams": {
+    "squirtle": [
+      {
+        "species_id": "pidgey",
+        "level": 9,
+        "ivs": 6,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "tackle",
+          "sandattack"
+        ]
+      },
+      {
+        "species_id": "squirtle",
+        "level": 9,
+        "ivs": 6,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "tackle",
+          "tailwhip"
+        ]
+      }
+    ],
+    "bulbasaur": [
+      {
+        "species_id": "pidgey",
+        "level": 9,
+        "ivs": 6,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "tackle",
+          "sandattack"
+        ]
+      },
+      {
+        "species_id": "bulbasaur",
+        "level": 9,
+        "ivs": 6,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "tackle",
+          "growl"
+        ]
+      }
+    ],
+    "charmander": [
+      {
+        "species_id": "pidgey",
+        "level": 9,
+        "ivs": 6,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "tackle",
+          "sandattack"
+        ]
+      },
+      {
+        "species_id": "charmander",
+        "level": 9,
+        "ivs": 6,
+        "nature": {
+          "up": "spa",
+          "down": "atk"
+        },
+        "moves": [
+          "scratch",
+          "growl"
+        ]
+      }
+    ]
+  },
+  "sourceCommit": "7e3f822652ecce0c99b626d74f455c3b93660377"
+}

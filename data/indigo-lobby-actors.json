@@ -1,0 +1,87 @@
+[
+  {
+    "map": "indigo-lobby",
+    "cell": [
+      7,
+      5
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/indigo-lobby/actor-1.png",
+    "facing": "down",
+    "role": "nurse",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "map": "indigo-lobby",
+    "cell": [
+      4,
+      9
+    ],
+    "redObject": 2,
+    "sprite": "res://assets/indigo-lobby/actor-2.png",
+    "facing": "right",
+    "role": "visitor",
+    "alphaBBox": [
+      2,
+      0,
+      13,
+      16
+    ]
+  },
+  {
+    "map": "indigo-lobby",
+    "cell": [
+      5,
+      1
+    ],
+    "redObject": 3,
+    "sprite": "res://assets/indigo-lobby/actor-3.png",
+    "facing": "down",
+    "role": "visitor",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "map": "indigo-lobby",
+    "cell": [
+      0,
+      5
+    ],
+    "redObject": 4,
+    "sprite": "res://assets/indigo-lobby/actor-4.png",
+    "facing": "right",
+    "role": "clerk",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "map": "indigo-lobby",
+    "cell": [
+      13,
+      6
+    ],
+    "redObject": 5,
+    "sprite": "res://assets/indigo-lobby/actor-5.png",
+    "facing": "down",
+    "role": "link",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ]
+  }
+]

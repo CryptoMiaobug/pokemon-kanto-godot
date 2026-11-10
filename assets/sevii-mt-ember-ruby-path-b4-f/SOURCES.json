@@ -1,0 +1,37 @@
+{
+  "revision": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/MtEmber_RubyPath_B4F/map.json",
+  "mapSHA256": "8cb031bb0ce1b6f62c559395bd63e56053c2c99e7915417cc651eb43ad20450f",
+  "layout": {
+    "id": "LAYOUT_MT_EMBER_RUBY_PATH_B4F",
+    "name": "MtEmber_RubyPath_B4F_Layout",
+    "width": 18,
+    "height": 16,
+    "border_width": 2,
+    "border_height": 2,
+    "primary_tileset": "gTileset_General",
+    "secondary_tileset": "gTileset_MtEmber",
+    "border_filepath": "data/layouts/MtEmber_RubyPath_B4F/border.bin",
+    "blockdata_filepath": "data/layouts/MtEmber_RubyPath_B4F/map.bin"
+  },
+  "warps": [
+    {
+      "x": 14,
+      "y": 14,
+      "elevation": 3,
+      "dest_map": "MAP_MT_EMBER_RUBY_PATH_B5F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "elevation": 3,
+      "dest_map": "MAP_MT_EMBER_RUBY_PATH_B3F",
+      "dest_warp_id": "2"
+    }
+  ],
+  "connections": null,
+  "actors": [],
+  "adaptation": "FireRed 16px metatiles, source collision/elevation/behavior; original palette static first frame; no coordinate doubling.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

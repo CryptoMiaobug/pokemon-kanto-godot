@@ -1,0 +1,21 @@
+{
+  "source": "Red ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "flower": "assets/tilesets/flower/flower1..3.png, approved atlas flower palette",
+  "water": "approved Overworld tile20, row rotation as src/overworld/tileanim.js",
+  "placement": "source blocks and animatedTiles; exact RGBA matching excludes patched or differently tinted tiles; unsupported maps retain static art",
+  "rights": "Original Pokemon assets, private local project; no redistribution license established.",
+  "maps": 3,
+  "hashes": {
+    "flower-2.png": "bd6583244208d4e3fc0c0deda5b86f47a5fe0e30ad4d71daebffe2e305ae3f0b",
+    "water-1.png": "af710ab661edb0452e5b0670e24017021a3d6d73aa0073604ba1668021aceac9",
+    "water-4.png": "b7eba82e85f1691d05f3feed54ca50b2cf6d78886f0d234a960b56ba429c9a26",
+    "water-0.png": "da2180941f7b4dcec967a728a4c98ff2a14ba0f352acf550979ed1fb6d0fbc73",
+    "flower-1.png": "c07aa06cf9b24b1a1c1bb307b38f75b9d91b3ce10e75671df8707fa7345dd656",
+    "water-5.png": "e67c564225fd13af3514bff282635ea74c89268aab6797a2d56040df20a3c39c",
+    "water-7.png": "a8ceb8ba1b74ed880af4cc88223b2014b505eb8077a920e0ec4e437009af696e",
+    "flower-0.png": "8d4894419f9f21314bd167e51bb974afc63033f11fe7e951be47a39184dd6f78",
+    "water-2.png": "9f78fb67b4d44dc0bce502a29dadad0909dbab1a1e7aefacec921236be560981",
+    "water-6.png": "2bf0b48ae86be0d54521e51b0bb5cbfb93211152533db828f4de882eefd7ff9f",
+    "water-3.png": "ae1629d0b1ec90fb24bd2661c5babc23f578762922c867aff9a2b3857ad8cc99"
+  }
+}

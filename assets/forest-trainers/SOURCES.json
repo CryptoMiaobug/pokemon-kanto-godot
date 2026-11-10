@@ -1,0 +1,30 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "Red data/maps/ViridianForest.json battle objects 2/3/4 only",
+  "mapping": "Ordered teams and distinctive before/defeat/after dialogue match Rick/Doug/Sammy. FireRed-only Anthony and Charlie not placed on Red map. Red nonbattle objects not generated.",
+  "rules": [
+    "src/data/trainer_parties.h",
+    "src/data/trainers.h",
+    "src/battle_main.c::CreateNPCTrainerParty / gTrainerMoneyTable",
+    "src/battle_script_commands.c::Cmd_getmoneyreward",
+    "data/maps/ViridianForest/text.inc"
+  ],
+  "sprite": "Red assets/sprites/youngster.png x0 y32 w16 h16 LEFT; original static facing, existing four material tint; fixed 1x local/2x world nearest",
+  "alphaBBox": [
+    2,
+    0,
+    14,
+    16
+  ],
+  "referenceRivalBBox": [
+    1,
+    0,
+    15,
+    16
+  ],
+  "feetAnchor": "same center cell x16+8,y16+8 as original Red rival; native body uses original occupied cell",
+  "portrait": "FireRed graphics/trainers/front_pics/bug_catcher_front_pic.png + palettes/bug_catcher.pal; indexed transparency0",
+  "adaptation": "E from adjacent facing cell; no automatic sight or approach cutscene; FireRed default Gen3 learnsets IV0 EV0 personality by original name hash, prize4*lastLevel*3.",
+  "rights": "Pokemon art remains rights-holder property; repository availability grants no redistribution clearance."
+}

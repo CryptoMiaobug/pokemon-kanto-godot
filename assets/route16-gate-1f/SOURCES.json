@@ -1,0 +1,123 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/Route16Gate1F.json",
+  "mapSHA256": "6cec11b8d0b7fdafae63b378b0e6622b4b444e4e3a34aa83360bad32ede1af01",
+  "tiles": "assets/tilesets/gate.png",
+  "warps": [
+    {
+      "x": 0,
+      "y": 8,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 5,
+      "destWarpIndex": 4
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 6,
+      "destWarpIndex": 5
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 7,
+      "destWarpIndex": 6
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 8,
+      "destWarpIndex": 7
+    },
+    {
+      "x": 6,
+      "y": 12,
+      "destMap": "ROUTE_16_GATE_2F",
+      "destMapId": 187,
+      "destMapName": "Route16Gate2F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "ROUTE16GATE1F_GUARD",
+      "x": 4,
+      "y": 5,
+      "sprite": "SPRITE_GUARD",
+      "spriteId": 49,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROUTE16GATE1F_GUARD",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "ROUTE16GATE1F_GAMBLER",
+      "x": 4,
+      "y": 3,
+      "sprite": "SPRITE_GAMBLER",
+      "spriteId": 11,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_ROUTE16GATE1F_GAMBLER",
+      "textIndex": 2
+    }
+  ],
+  "adaptation": "Red geometry/16px actors local1x world2x nearest. FireRed Fly/HM/Bicycle rules with Red gate four trigger cells (FR five cells on different geometry). Gate2F static visitors/binocular text only; trades deferred. Route17 south exit deferred. NPC walking/cry/audio/cutscene omitted.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

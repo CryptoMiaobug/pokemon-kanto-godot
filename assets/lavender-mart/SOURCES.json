@@ -1,0 +1,74 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/LavenderMart.json",
+  "mapSHA256": "b190af18718808542ca51ca02ad6209c924e963e4509ab7002c669a958165b2a",
+  "sourceYOffset": 0,
+  "connections": {},
+  "warps": [
+    {
+      "x": 3,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 4,
+      "destWarpIndex": 3
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "LAVENDERMART_CLERK",
+      "x": 0,
+      "y": 5,
+      "sprite": "SPRITE_CLERK",
+      "spriteId": 38,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_LAVENDERMART_CLERK",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "LAVENDERMART_BALDING_GUY",
+      "x": 3,
+      "y": 4,
+      "sprite": "SPRITE_BALDING_GUY",
+      "spriteId": 52,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_LAVENDERMART_BALDING_GUY",
+      "textIndex": 2
+    },
+    {
+      "index": 3,
+      "const": "LAVENDERMART_COOLTRAINER_M",
+      "x": 7,
+      "y": 2,
+      "sprite": "SPRITE_COOLTRAINER_M",
+      "spriteId": 7,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_LAVENDERMART_COOLTRAINER_M",
+      "textIndex": 3
+    }
+  ],
+  "adaptation": "Original Red feet, land/surf blocking, pair collisions and ledges. Static original16px actors local1x world2x same anchor. Route10 south rows48..71 only: isolated Power Plant water island and Mark y44 remain inaccessible/deferred, no surf and no invented grass. Lavender tower/Fuji/name rater/houses/Route8/12 deferred at original boundaries. Center nurse/PC existing interfaces; FR source stock subset Super Potion700 heals50 only, all other source items omitted explicitly.",
+  "rights": "Original rights holders; no redistribution clearance."
+}

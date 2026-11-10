@@ -1,0 +1,98 @@
+[
+  {
+    "id": "pewter_liam",
+    "map": "pewter-gym",
+    "name": "露营少年利亚姆",
+    "cell": [
+      3,
+      6
+    ],
+    "facing": "right",
+    "sprite": "res://assets/pewter-gym/liam.png",
+    "portrait": "res://assets/pewter-gym/liam-trainer.png",
+    "reward": 220,
+    "intro": "站住！你离挑战小刚还差一万光年！",
+    "defeat": "可恶！光年不是时间单位啊！",
+    "after": "小刚的宝可梦很强。",
+    "party": [
+      {
+        "species_id": "geodude",
+        "level": 10,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spa"
+        },
+        "moves": [
+          "tackle",
+          "defensecurl"
+        ]
+      },
+      {
+        "species_id": "sandshrew",
+        "level": 11,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "scratch",
+          "defensecurl",
+          "sandattack"
+        ]
+      }
+    ],
+    "badge": "",
+    "ai": "bad_move_only",
+    "title": "露营少年利亚姆 · 尼比道馆"
+  },
+  {
+    "id": "pewter_brock",
+    "map": "pewter-gym",
+    "name": "馆主小刚",
+    "cell": [
+      4,
+      1
+    ],
+    "facing": "down",
+    "sprite": "res://assets/pewter-gym/brock.png",
+    "portrait": "res://assets/pewter-gym/brock-trainer.png",
+    "reward": 1400,
+    "intro": "我是尼比道馆的小刚！用你的全力来挑战吧！",
+    "defeat": "我低估了你。灰色徽章是你获胜的证明！",
+    "after": "你很有训练家的天赋。继续磨炼实力吧！",
+    "party": [
+      {
+        "species_id": "geodude",
+        "level": 12,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spa"
+        },
+        "moves": [
+          "tackle",
+          "defensecurl"
+        ]
+      },
+      {
+        "species_id": "onix",
+        "level": 14,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spa"
+        },
+        "moves": [
+          "tackle",
+          "bind",
+          "rocktomb"
+        ]
+      }
+    ],
+    "badge": "boulder",
+    "ai": "leader",
+    "title": "馆主小刚 · 尼比道馆"
+  }
+]

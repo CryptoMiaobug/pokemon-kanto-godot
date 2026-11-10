@@ -1,0 +1,17 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "mapRules": "Red geometry/actor cells, FireRed first-battle rosters and land encounter slots",
+  "sources": [
+    "src/data/wild_encounters.json",
+    "src/data/pokemon/species_info.h",
+    "src/data/pokemon/level_up_learnsets.h",
+    "src/data/battle_moves.h",
+    "src/data/trainers.h",
+    "src/data/trainer_parties.h",
+    "src/battle_main.c"
+  ],
+  "waterEncounters": "Route11 fishing/surf tables intentionally deferred",
+  "dig": "Gen III semi-invulnerable implementation; outdoor escape utility deferred",
+  "rights": "Original artwork remains rights-holder property; no redistribution clearance claimed."
+}

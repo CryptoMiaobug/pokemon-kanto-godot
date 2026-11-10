@@ -1,0 +1,44 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/SSAnneCaptainsRoom.json",
+  "mapSHA256": "f0863a7d45f8d7c703622a2f11287ed72ac776716cc9461a5faeec46b4cc38a5",
+  "warps": [
+    {
+      "x": 0,
+      "y": 7,
+      "destMap": "SS_ANNE_2F",
+      "destMapId": 96,
+      "destMapName": "SSAnne2F",
+      "destWarp": 9,
+      "destWarpIndex": 8
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "SSANNECAPTAINSROOM_CAPTAIN",
+      "x": 4,
+      "y": 2,
+      "sprite": "SPRITE_CAPTAIN",
+      "spriteId": 46,
+      "movement": "STAY",
+      "rangeOrDirection": "UP",
+      "rangeOrDirectionValue": 209,
+      "behavior": "face_up",
+      "textId": "TEXT_SSANNECAPTAINSROOM_CAPTAIN",
+      "textIndex": 1
+    }
+  ],
+  "ruleSources": [
+    "FR data/maps/SSAnne_CaptainsOffice/scripts.inc",
+    "FR src/data/pokemon/tmhm_learnsets.h",
+    "FR src/party_menu.c",
+    "FR src/pokemon_summary_screen.c",
+    "FR data/scripts/field_moves.inc",
+    "Red data/tilesets/Overworld.json cut",
+    "Red src/overworld/interact.js doCut",
+    "Red src/overworld/overworld.js enterMapNow newMapGrid"
+  ],
+  "adaptation": "Original6x8 feet and captain4,2 UP16px local1x/world2x nearest.2F8<->captain0; retain rival requirement. E rub/receive atomic with HM01, replay no reward. HMonly menu M, original current-species compatibility/no consume/newmove fullPP/4slot replace/HMforget blocked in shared growth. No friendship system. Cut50/95/30 direct physical move. Tree original15,18 fullblock53->76 visual/collision swap temporary until map change/reload. Source field badge02 plus party knowsCut and facing tree; HM ownership required for teaching only, not separately for field use. No Cut grass/other maps/departure/gym inside/move deleter. Ship remains accessible; original assets rights-holder property, no redistribution clearance."
+}

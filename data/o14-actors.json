@@ -1,0 +1,70 @@
+[
+  {
+    "map": "route2-gate",
+    "redObject": 1,
+    "cell": [
+      1,
+      4
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route2-gate/actor-1.png",
+    "alphaBBox": [
+      3,
+      0,
+      14,
+      16
+    ],
+    "role": "aide"
+  },
+  {
+    "map": "route2-gate",
+    "redObject": 2,
+    "cell": [
+      5,
+      4
+    ],
+    "facing": "down",
+    "sprite": "res://assets/route2-gate/actor-2.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "role": "visitor"
+  },
+  {
+    "map": "route2-trade-house",
+    "redObject": 1,
+    "cell": [
+      2,
+      4
+    ],
+    "facing": "right",
+    "sprite": "res://assets/route2-trade-house/actor-1.png",
+    "alphaBBox": [
+      2,
+      0,
+      13,
+      16
+    ],
+    "role": "visitor"
+  },
+  {
+    "map": "route2-trade-house",
+    "redObject": 2,
+    "cell": [
+      4,
+      1
+    ],
+    "facing": "down",
+    "sprite": "res://assets/route2-trade-house/actor-2.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "role": "visitor"
+  }
+]

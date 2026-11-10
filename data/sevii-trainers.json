@@ -1,0 +1,302 @@
+[
+  {
+    "id": "sevii_goon",
+    "map": "sevii-three-island",
+    "cell": [
+      8,
+      24
+    ],
+    "name": "暴走族",
+    "title": "暴走族",
+    "portrait": "res://assets/sevii-trainers/goon.png",
+    "sprite": "res://assets/sevii-three-island/actor-3.png",
+    "party": [
+      {
+        "species_id": "koffing",
+        "level": 37,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "haze",
+          "smokescreen",
+          "sludge",
+          "tackle"
+        ]
+      },
+      {
+        "species_id": "grimer",
+        "level": 37,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "acidarmor",
+          "screech",
+          "minimize",
+          "sludge"
+        ]
+      }
+    ],
+    "reward": 740,
+    "intro": "你想阻止我们吗？",
+    "defeat": "我们输了。",
+    "after": "本场已经结束。",
+    "sourceTrainer": "TRAINER_BIKER_GOON",
+    "sourceParty": "sParty_BikerGoon"
+  },
+  {
+    "id": "sevii_goon2",
+    "map": "sevii-three-island",
+    "cell": [
+      9,
+      23
+    ],
+    "name": "暴走族",
+    "title": "暴走族",
+    "portrait": "res://assets/sevii-trainers/goon2.png",
+    "sprite": "res://assets/sevii-three-island/actor-4.png",
+    "party": [
+      {
+        "species_id": "koffing",
+        "level": 38,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "haze",
+          "smokescreen",
+          "sludge",
+          "tackle"
+        ]
+      }
+    ],
+    "reward": 760,
+    "intro": "你想阻止我们吗？",
+    "defeat": "我们输了。",
+    "after": "本场已经结束。",
+    "sourceTrainer": "TRAINER_BIKER_GOON_2",
+    "sourceParty": "sParty_BikerGoon2"
+  },
+  {
+    "id": "sevii_goon3",
+    "map": "sevii-three-island",
+    "cell": [
+      9,
+      24
+    ],
+    "name": "暴走族",
+    "title": "暴走族",
+    "portrait": "res://assets/sevii-trainers/goon3.png",
+    "sprite": "res://assets/sevii-three-island/actor-5.png",
+    "party": [
+      {
+        "species_id": "grimer",
+        "level": 38,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "sludge",
+          "minimize",
+          "screech",
+          "acidarmor"
+        ]
+      }
+    ],
+    "reward": 760,
+    "intro": "你想阻止我们吗？",
+    "defeat": "我们输了。",
+    "after": "本场已经结束。",
+    "sourceTrainer": "TRAINER_BIKER_GOON_3",
+    "sourceParty": "sParty_BikerGoon3"
+  },
+  {
+    "id": "sevii_paxton",
+    "map": "sevii-three-island",
+    "cell": [
+      15,
+      31
+    ],
+    "name": "派克斯顿",
+    "title": "派克斯顿",
+    "portrait": "res://assets/sevii-trainers/paxton.png",
+    "sprite": "res://assets/sevii-three-island/actor-14.png",
+    "party": [
+      {
+        "species_id": "weezing",
+        "level": 39,
+        "ivs": 6,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "selfdestruct",
+          "sludge",
+          "smokescreen",
+          "haze"
+        ]
+      },
+      {
+        "species_id": "muk",
+        "level": 39,
+        "ivs": 6,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "sludge",
+          "minimize",
+          "screech",
+          "acidarmor"
+        ]
+      }
+    ],
+    "reward": 936,
+    "intro": "你想阻止我们吗？",
+    "defeat": "我们输了。",
+    "after": "本场已经结束。",
+    "sourceTrainer": "TRAINER_CUE_BALL_PAXTON",
+    "sourceParty": "sParty_CueBallPaxton"
+  },
+  {
+    "id": "sevii_grunt43",
+    "map": "sevii-mt-ember-exterior",
+    "cell": [
+      41,
+      40
+    ],
+    "name": "火箭队员",
+    "title": "火箭队员",
+    "portrait": "res://assets/sevii-trainers/grunt43.png",
+    "sprite": "res://assets/sevii-mt-ember-exterior/actor-2.png",
+    "party": [
+      {
+        "species_id": "cubone",
+        "level": 37,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "bonemerang",
+          "rage",
+          "falseswipe",
+          "thrash"
+        ]
+      },
+      {
+        "species_id": "marowak",
+        "level": 37,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "leer",
+          "focusenergy",
+          "bonemerang",
+          "rage"
+        ]
+      }
+    ],
+    "reward": 1184,
+    "intro": "你想阻止我们吗？",
+    "defeat": "我们输了。",
+    "after": "本场已经结束。",
+    "sourceTrainer": "TRAINER_TEAM_ROCKET_GRUNT_43",
+    "sourceParty": "sParty_TeamRocketGrunt43"
+  },
+  {
+    "id": "sevii_grunt44",
+    "map": "sevii-mt-ember-exterior",
+    "cell": [
+      42,
+      40
+    ],
+    "name": "火箭队员",
+    "title": "火箭队员",
+    "portrait": "res://assets/sevii-trainers/grunt44.png",
+    "sprite": "res://assets/sevii-mt-ember-exterior/actor-3.png",
+    "party": [
+      {
+        "species_id": "rattata",
+        "level": 35,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "hyperfang",
+          "focusenergy",
+          "pursuit",
+          "superfang"
+        ]
+      },
+      {
+        "species_id": "raticate",
+        "level": 35,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "quickattack",
+          "hyperfang",
+          "scaryface",
+          "pursuit"
+        ]
+      },
+      {
+        "species_id": "sandshrew",
+        "level": 35,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "sandattack",
+          "poisonsting",
+          "slash",
+          "swift"
+        ]
+      },
+      {
+        "species_id": "sandslash",
+        "level": 35,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "sandattack",
+          "poisonsting",
+          "slash",
+          "swift"
+        ]
+      }
+    ],
+    "reward": 1120,
+    "intro": "你想阻止我们吗？",
+    "defeat": "我们输了。",
+    "after": "本场已经结束。",
+    "sourceTrainer": "TRAINER_TEAM_ROCKET_GRUNT_44",
+    "sourceParty": "sParty_TeamRocketGrunt44"
+  }
+]

@@ -1,0 +1,1861 @@
+{
+  "celadon-city": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/CeladonCity.json"
+  },
+  "cerulean-city": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/CeruleanCity.json"
+  },
+  "cerulean-gym": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      17,
+      22,
+      25,
+      43,
+      60,
+      61,
+      63,
+      74,
+      76,
+      77,
+      3
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/CeruleanGym.json"
+  },
+  "fuchsia-city": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/FuchsiaCity.json"
+  },
+  "fuchsia-gym": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      17,
+      22,
+      25,
+      43,
+      60,
+      61,
+      63,
+      74,
+      76,
+      77,
+      3
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/FuchsiaGym.json"
+  },
+  "lavender-town": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/LavenderTown.json"
+  },
+  "mtmoon-1f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [
+      [
+        20,
+        5
+      ]
+    ],
+    "walkableTiles": [
+      5,
+      21,
+      24,
+      26,
+      32,
+      33,
+      34,
+      42,
+      45,
+      48
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/MtMoon1F.json"
+  },
+  "mtmoon-b1f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [
+      [
+        20,
+        5
+      ]
+    ],
+    "walkableTiles": [
+      5,
+      21,
+      24,
+      26,
+      32,
+      33,
+      34,
+      42,
+      45,
+      48
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/MtMoonB1F.json"
+  },
+  "mtmoon-b2f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [
+      [
+        20,
+        5
+      ]
+    ],
+    "walkableTiles": [
+      5,
+      21,
+      24,
+      26,
+      32,
+      33,
+      34,
+      42,
+      45,
+      48
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/MtMoonB2F.json"
+  },
+  "rock-tunnel-1f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [
+      [
+        20,
+        5
+      ]
+    ],
+    "walkableTiles": [
+      5,
+      21,
+      24,
+      26,
+      32,
+      33,
+      34,
+      42,
+      45,
+      48
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/RockTunnel1F.json"
+  },
+  "rock-tunnel-b1f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [
+      [
+        20,
+        5
+      ]
+    ],
+    "walkableTiles": [
+      5,
+      21,
+      24,
+      26,
+      32,
+      33,
+      34,
+      42,
+      45,
+      48
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/RockTunnelB1F.json"
+  },
+  "rocket-hideout-b1f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      1,
+      16,
+      17,
+      19,
+      27,
+      32,
+      33,
+      34,
+      48,
+      49,
+      50,
+      66,
+      67,
+      72,
+      82,
+      85,
+      88,
+      94
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/RocketHideoutB1F.json"
+  },
+  "rocket-hideout-b2f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      1,
+      16,
+      17,
+      19,
+      27,
+      32,
+      33,
+      34,
+      48,
+      49,
+      50,
+      66,
+      67,
+      72,
+      82,
+      85,
+      88,
+      94
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/RocketHideoutB2F.json"
+  },
+  "rocket-hideout-b3f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      1,
+      16,
+      17,
+      19,
+      27,
+      32,
+      33,
+      34,
+      48,
+      49,
+      50,
+      66,
+      67,
+      72,
+      82,
+      85,
+      88,
+      94
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/RocketHideoutB3F.json"
+  },
+  "rocket-hideout-b4f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      1,
+      16,
+      17,
+      19,
+      27,
+      32,
+      33,
+      34,
+      48,
+      49,
+      50,
+      66,
+      67,
+      72,
+      82,
+      85,
+      88,
+      94
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/RocketHideoutB4F.json"
+  },
+  "route10-north": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/Route10.json"
+  },
+  "route10-south": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/Route10.json"
+  },
+  "route12": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/Route12.json"
+  },
+  "route13": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/Route13.json"
+  },
+  "route14": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/Route14.json"
+  },
+  "route15": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/Route15.json"
+  },
+  "route22": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/Route22.json"
+  },
+  "route24": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/Route24.json"
+  },
+  "route25": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/Route25.json"
+  },
+  "route4-east": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/Route4.json"
+  },
+  "route5": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/Route5.json"
+  },
+  "route6": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/Route6.json"
+  },
+  "route7": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/Route7.json"
+  },
+  "route8": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/Route8.json"
+  },
+  "route9": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/Route9.json"
+  },
+  "safari-zone-east": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [
+      [
+        20,
+        46
+      ],
+      [
+        72,
+        46
+      ]
+    ],
+    "walkableTiles": [
+      30,
+      32,
+      46,
+      48,
+      52,
+      55,
+      57,
+      58,
+      64,
+      81,
+      82,
+      90,
+      92,
+      94,
+      95
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/SafariZoneEast.json"
+  },
+  "safari-zone-entry": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [
+      [
+        20,
+        46
+      ],
+      [
+        72,
+        46
+      ]
+    ],
+    "walkableTiles": [
+      30,
+      32,
+      46,
+      48,
+      52,
+      55,
+      57,
+      58,
+      64,
+      81,
+      82,
+      90,
+      92,
+      94,
+      95
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/SafariZoneCenter.json"
+  },
+  "safari-zone-north": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [
+      [
+        20,
+        46
+      ],
+      [
+        72,
+        46
+      ]
+    ],
+    "walkableTiles": [
+      30,
+      32,
+      46,
+      48,
+      52,
+      55,
+      57,
+      58,
+      64,
+      81,
+      82,
+      90,
+      92,
+      94,
+      95
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/SafariZoneNorth.json"
+  },
+  "safari-zone-west": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [
+      [
+        20,
+        46
+      ],
+      [
+        72,
+        46
+      ]
+    ],
+    "walkableTiles": [
+      30,
+      32,
+      46,
+      48,
+      52,
+      55,
+      57,
+      58,
+      64,
+      81,
+      82,
+      90,
+      92,
+      94,
+      95
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/SafariZoneWest.json"
+  },
+  "saffron-city": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/SaffronCity.json"
+  },
+  "saffron-gym": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      1,
+      16,
+      17,
+      19,
+      27,
+      32,
+      33,
+      34,
+      48,
+      49,
+      50,
+      66,
+      67,
+      72,
+      82,
+      85,
+      88,
+      94
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/SaffronGym.json"
+  },
+  "silph-co-10f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      1,
+      16,
+      17,
+      19,
+      27,
+      32,
+      33,
+      34,
+      48,
+      49,
+      50,
+      66,
+      67,
+      72,
+      82,
+      85,
+      88,
+      94
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/SilphCo10F.json"
+  },
+  "silph-co-1f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      1,
+      16,
+      17,
+      19,
+      27,
+      32,
+      33,
+      34,
+      48,
+      49,
+      50,
+      66,
+      67,
+      72,
+      82,
+      85,
+      88,
+      94
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/SilphCo1F.json"
+  },
+  "silph-co-2f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      1,
+      16,
+      17,
+      19,
+      27,
+      32,
+      33,
+      34,
+      48,
+      49,
+      50,
+      66,
+      67,
+      72,
+      82,
+      85,
+      88,
+      94
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/SilphCo2F.json"
+  },
+  "silph-co-3f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      1,
+      16,
+      17,
+      19,
+      27,
+      32,
+      33,
+      34,
+      48,
+      49,
+      50,
+      66,
+      67,
+      72,
+      82,
+      85,
+      88,
+      94
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/SilphCo3F.json"
+  },
+  "silph-co-4f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      1,
+      16,
+      17,
+      19,
+      27,
+      32,
+      33,
+      34,
+      48,
+      49,
+      50,
+      66,
+      67,
+      72,
+      82,
+      85,
+      88,
+      94
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/SilphCo4F.json"
+  },
+  "silph-co-5f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      1,
+      16,
+      17,
+      19,
+      27,
+      32,
+      33,
+      34,
+      48,
+      49,
+      50,
+      66,
+      67,
+      72,
+      82,
+      85,
+      88,
+      94
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/SilphCo5F.json"
+  },
+  "silph-co-6f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      1,
+      16,
+      17,
+      19,
+      27,
+      32,
+      33,
+      34,
+      48,
+      49,
+      50,
+      66,
+      67,
+      72,
+      82,
+      85,
+      88,
+      94
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/SilphCo6F.json"
+  },
+  "silph-co-7f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      1,
+      16,
+      17,
+      19,
+      27,
+      32,
+      33,
+      34,
+      48,
+      49,
+      50,
+      66,
+      67,
+      72,
+      82,
+      85,
+      88,
+      94
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/SilphCo7F.json"
+  },
+  "silph-co-8f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      1,
+      16,
+      17,
+      19,
+      27,
+      32,
+      33,
+      34,
+      48,
+      49,
+      50,
+      66,
+      67,
+      72,
+      82,
+      85,
+      88,
+      94
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/SilphCo8F.json"
+  },
+  "silph-co-9f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      1,
+      16,
+      17,
+      19,
+      27,
+      32,
+      33,
+      34,
+      48,
+      49,
+      50,
+      66,
+      67,
+      72,
+      82,
+      85,
+      88,
+      94
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/SilphCo9F.json"
+  },
+  "ssanne-1f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      4,
+      13,
+      23,
+      29,
+      30,
+      35,
+      52,
+      55,
+      57,
+      74
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/SSAnne1F.json"
+  },
+  "ssanne-1f-rooms": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      4,
+      13,
+      23,
+      29,
+      30,
+      35,
+      52,
+      55,
+      57,
+      74
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/SSAnne1FRooms.json"
+  },
+  "ssanne-2f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      4,
+      13,
+      23,
+      29,
+      30,
+      35,
+      52,
+      55,
+      57,
+      74
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/SSAnne2F.json"
+  },
+  "ssanne-captain": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      4,
+      13,
+      23,
+      29,
+      30,
+      35,
+      52,
+      55,
+      57,
+      74
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/SSAnneCaptainsRoom.json"
+  },
+  "vermilion-city": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/VermilionCity.json"
+  },
+  "vermilion-dock": {
+    "surfTiles": [
+      20
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      10,
+      26,
+      50,
+      59
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/VermilionDock.json"
+  },
+  "vermilion-gym": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      17,
+      22,
+      25,
+      43,
+      60,
+      61,
+      63,
+      74,
+      76,
+      77,
+      3
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/VermilionGym.json"
+  },
+  "route21": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/Route21.json"
+  },
+  "pallet-town": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/PalletTown.json"
+  },
+  "cinnabar-island": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/CinnabarIsland.json"
+  },
+  "route23": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      27,
+      35,
+      44,
+      45,
+      59,
+      69
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/Route23.json"
+  },
+  "route19": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/Route19.json"
+  },
+  "route20": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [],
+    "walkableTiles": [
+      0,
+      16,
+      27,
+      32,
+      33,
+      35,
+      44,
+      45,
+      46,
+      48,
+      49,
+      51,
+      57,
+      60,
+      62,
+      82,
+      84,
+      88,
+      91
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/Route20.json"
+  },
+  "seafoam-islands-1f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [
+      [
+        20,
+        5
+      ]
+    ],
+    "walkableTiles": [
+      5,
+      21,
+      24,
+      26,
+      32,
+      33,
+      34,
+      42,
+      45,
+      48
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/SeafoamIslands1F.json"
+  },
+  "seafoam-islands-b1f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [
+      [
+        20,
+        5
+      ]
+    ],
+    "walkableTiles": [
+      5,
+      21,
+      24,
+      26,
+      32,
+      33,
+      34,
+      42,
+      45,
+      48
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/SeafoamIslandsB1F.json"
+  },
+  "seafoam-islands-b2f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [
+      [
+        20,
+        5
+      ]
+    ],
+    "walkableTiles": [
+      5,
+      21,
+      24,
+      26,
+      32,
+      33,
+      34,
+      42,
+      45,
+      48
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/SeafoamIslandsB2F.json"
+  },
+  "seafoam-islands-b3f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [
+      [
+        20,
+        5
+      ]
+    ],
+    "walkableTiles": [
+      5,
+      21,
+      24,
+      26,
+      32,
+      33,
+      34,
+      42,
+      45,
+      48
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/SeafoamIslandsB3F.json"
+  },
+  "seafoam-islands-b4f": {
+    "surfTiles": [
+      20,
+      50,
+      72
+    ],
+    "pairCollisionsWater": [
+      [
+        20,
+        5
+      ]
+    ],
+    "walkableTiles": [
+      5,
+      21,
+      24,
+      26,
+      32,
+      33,
+      34,
+      42,
+      45,
+      48
+    ],
+    "isWaterTileset": true,
+    "source": "data/maps/SeafoamIslandsB4F.json"
+  }
+}

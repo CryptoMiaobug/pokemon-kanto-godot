@@ -1,0 +1,12 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/SeafoamIslandsB4F.json",
+  "actors": "Articuno source actor retained non-interactive; boulders only",
+  "sourceSHA256": {
+    "local-source/SeafoamIslandsB4F.json": "e639d8d6341d1a47a4bc05c38a3f74a66d0fa143d7c7606f0718b8670c46f740",
+    "local-source/kanto5.js": "ffdc8f7135c63a4e8e93a9d9e52978045a315f6784b95e70e46ecbecc5974f12",
+    "local-source/kanto5_lib.js": "60c79c5641946dd41cde22fed3bc96bff11c3c3185bc687dedded625d2bac5a6"
+  },
+  "rights": "Original map and artwork rights not cleared; code and assets are source-derived."
+}

@@ -1,0 +1,14 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "source": "data/maps/PewterPokecenter.json",
+  "originalSources": {
+    "header": "data/maps/headers/PewterPokecenter.asm",
+    "objects": "data/maps/objects/PewterPokecenter.asm",
+    "blocks": "maps/PewterPokecenter.blk",
+    "script": "scripts/PewterPokecenter.asm"
+  },
+  "mapSHA256": "22aaf79d9c0e4d97dd93b09215c38ba9f0cff5c47cacf79cc9b2de9e9c57420c",
+  "tiles": "assets/tilesets/pokecenter.png",
+  "adaptation": "Original geometry/foot collision. Existing outdoor recolor or four neutral interior colors; only gym and center open, Route3 closed, other city NPCs/buildings/guide omitted. Route2 connection x+10 cells north / -10 south.",
+  "rights": "Pokemon assets remain rights-holder property; no redistribution clearance."
+}

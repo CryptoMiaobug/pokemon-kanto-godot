@@ -1,0 +1,639 @@
+[
+  {
+    "id": "route9_alicia",
+    "map": "route9",
+    "name": "野餐女孩艾莉西亚",
+    "title": "艾莉西亚 · 9号道路",
+    "cell": [
+      13,
+      10
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route9/alicia.png",
+    "portrait": "res://assets/route9/alicia-trainer.png",
+    "reward": 360,
+    "party": [
+      {
+        "species_id": "oddish",
+        "level": 18,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "sweetscent",
+          "poisonpowder",
+          "stunspore",
+          "sleeppowder"
+        ]
+      },
+      {
+        "species_id": "bellsprout",
+        "level": 18,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spe"
+        },
+        "moves": [
+          "growth",
+          "wrap",
+          "sleeppowder",
+          "poisonpowder"
+        ]
+      },
+      {
+        "species_id": "oddish",
+        "level": 18,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spa"
+        },
+        "moves": [
+          "sweetscent",
+          "poisonpowder",
+          "stunspore",
+          "sleeppowder"
+        ]
+      },
+      {
+        "species_id": "bellsprout",
+        "level": 18,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spd"
+        },
+        "moves": [
+          "growth",
+          "wrap",
+          "sleeppowder",
+          "poisonpowder"
+        ]
+      }
+    ],
+    "intro": "你带着宝可梦！来对战吧！",
+    "defeat": "你骗了我！",
+    "after": "前方岩山隧道一片漆黑。",
+    "redObject": 1,
+    "fireRedTrainer": "PicnickerAlicia",
+    "alphaBBox": [
+      1,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "route9_chris",
+    "map": "route9",
+    "name": "露营少年克里斯",
+    "title": "克里斯 · 9号道路",
+    "cell": [
+      24,
+      7
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route9/chris.png",
+    "portrait": "res://assets/route9/chris-trainer.png",
+    "reward": 420,
+    "party": [
+      {
+        "species_id": "growlithe",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spd"
+        },
+        "moves": [
+          "roar",
+          "ember",
+          "leer",
+          "odorsleuth"
+        ]
+      },
+      {
+        "species_id": "charmander",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "growl",
+          "ember",
+          "metalclaw",
+          "smokescreen"
+        ]
+      }
+    ],
+    "intro": "谁带着这么棒的宝可梦走来了？",
+    "defeat": "眼前一黑！",
+    "after": "继续走吧！",
+    "redObject": 2,
+    "fireRedTrainer": "CamperChris",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "route9_drew",
+    "map": "route9",
+    "name": "露营少年德鲁",
+    "title": "德鲁 · 9号道路",
+    "cell": [
+      31,
+      7
+    ],
+    "facing": "right",
+    "sprite": "res://assets/route9/drew.png",
+    "portrait": "res://assets/route9/drew-trainer.png",
+    "reward": 380,
+    "party": [
+      {
+        "species_id": "rattata",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spa"
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack",
+          "hyperfang"
+        ]
+      },
+      {
+        "species_id": "sandshrew",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "scratch",
+          "defensecurl",
+          "sandattack",
+          "poisonsting"
+        ]
+      },
+      {
+        "species_id": "ekans",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "def"
+        },
+        "moves": [
+          "wrap",
+          "leer",
+          "poisonsting",
+          "bite"
+        ]
+      },
+      {
+        "species_id": "sandshrew",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "atk"
+        },
+        "moves": [
+          "scratch",
+          "defensecurl",
+          "sandattack",
+          "poisonsting"
+        ]
+      }
+    ],
+    "intro": "我要穿过岩山隧道去紫苑镇。",
+    "defeat": "比不过你。",
+    "after": "你也要去岩山隧道吗？",
+    "redObject": 3,
+    "fireRedTrainer": "CamperDrew",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "route9_caitlin",
+    "map": "route9",
+    "name": "野餐女孩凯特琳",
+    "title": "凯特琳 · 9号道路",
+    "cell": [
+      48,
+      8
+    ],
+    "facing": "right",
+    "sprite": "res://assets/route9/caitlin.png",
+    "portrait": "res://assets/route9/caitlin-trainer.png",
+    "reward": 460,
+    "party": [
+      {
+        "species_id": "meowth",
+        "level": 23,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "atk"
+        },
+        "moves": [
+          "scratch",
+          "growl",
+          "bite",
+          "payday"
+        ]
+      }
+    ],
+    "intro": "可别小看我！",
+    "defeat": "你太厉害了。",
+    "after": "祝你好运！",
+    "redObject": 4,
+    "fireRedTrainer": "PicnickerCaitlin",
+    "alphaBBox": [
+      2,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "route9_jeremy",
+    "map": "route9",
+    "name": "登山男杰里米",
+    "title": "杰里米 · 9号道路",
+    "cell": [
+      16,
+      15
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route9/jeremy.png",
+    "portrait": "res://assets/route9/jeremy-trainer.png",
+    "reward": 720,
+    "party": [
+      {
+        "species_id": "machop",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "atk"
+        },
+        "moves": [
+          "leer",
+          "focusenergy",
+          "karatechop",
+          "seismictoss"
+        ]
+      },
+      {
+        "species_id": "onix",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spa"
+        },
+        "moves": [
+          "screech",
+          "bind",
+          "rockthrow",
+          "harden"
+        ]
+      }
+    ],
+    "intro": "哈哈！正好，我很无聊呢！",
+    "defeat": "等等，我没有宝可梦了！",
+    "after": "你敢挑战我，真有勇气！",
+    "redObject": 5,
+    "fireRedTrainer": "HikerJeremy",
+    "alphaBBox": [
+      3,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "route9_brice",
+    "map": "route9",
+    "name": "登山男布赖斯",
+    "title": "布赖斯 · 9号道路",
+    "cell": [
+      43,
+      3
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route9/brice.png",
+    "portrait": "res://assets/route9/brice-trainer.png",
+    "reward": 720,
+    "party": [
+      {
+        "species_id": "geodude",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "def"
+        },
+        "moves": [
+          "defensecurl",
+          "mudsport",
+          "rockthrow",
+          "magnitude"
+        ]
+      },
+      {
+        "species_id": "machop",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "leer",
+          "focusenergy",
+          "karatechop",
+          "seismictoss"
+        ]
+      },
+      {
+        "species_id": "geodude",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "atk"
+        },
+        "moves": [
+          "defensecurl",
+          "mudsport",
+          "rockthrow",
+          "magnitude"
+        ]
+      }
+    ],
+    "intro": "哈哈！你这小家伙挺强嘛！",
+    "defeat": "什么？",
+    "after": "小孩子就该强壮！",
+    "redObject": 6,
+    "fireRedTrainer": "HikerBrice",
+    "alphaBBox": [
+      3,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "route9_brent",
+    "map": "route9",
+    "name": "捕虫少年布伦特",
+    "title": "布伦特 · 9号道路",
+    "cell": [
+      22,
+      2
+    ],
+    "facing": "down",
+    "sprite": "res://assets/route9/brent.png",
+    "portrait": "res://assets/route9/brent-trainer.png",
+    "reward": 228,
+    "party": [
+      {
+        "species_id": "beedrill",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "furyattack",
+          "focusenergy"
+        ]
+      },
+      {
+        "species_id": "beedrill",
+        "level": 19,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "furyattack",
+          "focusenergy"
+        ]
+      }
+    ],
+    "intro": "我每天早起，把宝可梦从茧养大！",
+    "defeat": "白费工夫了！",
+    "after": "得收集虫以外的宝可梦才能更强。",
+    "redObject": 7,
+    "fireRedTrainer": "BugCatcherBrent",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "route9_alan",
+    "map": "route9",
+    "name": "登山男艾伦",
+    "title": "艾伦 · 9号道路",
+    "cell": [
+      45,
+      15
+    ],
+    "facing": "right",
+    "sprite": "res://assets/route9/alan.png",
+    "portrait": "res://assets/route9/alan-trainer.png",
+    "reward": 756,
+    "party": [
+      {
+        "species_id": "geodude",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "magnitude",
+          "rockthrow",
+          "mudsport",
+          "defensecurl"
+        ]
+      },
+      {
+        "species_id": "onix",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "harden",
+          "rockthrow",
+          "bind",
+          "screech"
+        ]
+      }
+    ],
+    "intro": "哈哈哈！来吧！",
+    "defeat": "你赢得堂堂正正！",
+    "after": "我们豪爽的人总爱大笑！",
+    "redObject": 8,
+    "fireRedTrainer": "HikerAlan",
+    "alphaBBox": [
+      2,
+      0,
+      13,
+      16
+    ]
+  },
+  {
+    "id": "route9_conner",
+    "map": "route9",
+    "name": "捕虫少年康纳",
+    "title": "康纳 · 9号道路",
+    "cell": [
+      40,
+      8
+    ],
+    "facing": "right",
+    "sprite": "res://assets/route9/conner.png",
+    "portrait": "res://assets/route9/conner-trainer.png",
+    "reward": 240,
+    "party": [
+      {
+        "species_id": "caterpie",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "tackle",
+          "stringshot"
+        ]
+      },
+      {
+        "species_id": "weedle",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "def"
+        },
+        "moves": [
+          "poisonsting",
+          "stringshot"
+        ]
+      },
+      {
+        "species_id": "venonat",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spd"
+        },
+        "moves": [
+          "foresight",
+          "supersonic",
+          "confusion",
+          "poisonpowder"
+        ]
+      }
+    ],
+    "intro": "上吧，我的超级虫宝可梦！",
+    "defeat": "我的虫子……",
+    "after": "不喜欢虫宝可梦的人真烦！",
+    "redObject": 9,
+    "fireRedTrainer": "BugCatcherConner",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "route10_heidi",
+    "map": "route10-north",
+    "name": "野餐女孩海蒂",
+    "title": "海蒂 · 10号道路北段",
+    "cell": [
+      7,
+      25
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route10-north/heidi.png",
+    "portrait": "res://assets/route10-north/heidi-trainer.png",
+    "reward": 400,
+    "party": [
+      {
+        "species_id": "pikachu",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "thunderwave",
+          "quickattack",
+          "doubleteam",
+          "slam"
+        ]
+      },
+      {
+        "species_id": "clefairy",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spa"
+        },
+        "moves": [
+          "encore",
+          "sing",
+          "doubleslap",
+          "followme"
+        ]
+      }
+    ],
+    "intro": "我去过几次道馆，却总是输。",
+    "defeat": "训练了这么久还是输了！",
+    "after": "山里还有宝可梦收藏家呢。",
+    "redObject": 4,
+    "fireRedTrainer": "PicnickerHeidi",
+    "alphaBBox": [
+      1,
+      0,
+      14,
+      16
+    ]
+  }
+]

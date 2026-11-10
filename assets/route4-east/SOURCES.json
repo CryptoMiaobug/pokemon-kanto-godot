@@ -1,0 +1,38 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/Route4.json",
+  "mapSHA256": "eb7f045e5841732b6db6848b34928fe5181ba25738ee89c572a25552da3c6652",
+  "tiles": "existing pokemon-arena/src/assets/pallet-town/tiles.png; same Route3 decoder",
+  "crop": "original x24..89 y0..17; local x=source x-24, no geometry edits",
+  "warp": "MtMoonB1F index7 [27,3] LAST_MAP Route4 index2 [24,5]; reverse to cave index7",
+  "eastConnection": {
+    "map": "CERULEAN_CITY",
+    "mapId": 3,
+    "mapName": "CeruleanCity",
+    "offset": -4,
+    "dx": 45,
+    "dy": -4,
+    "copyRect": {
+      "x": 0,
+      "y": 1,
+      "w": 3,
+      "h": 15
+    },
+    "onEnter": {
+      "newX": 0,
+      "yAdd": 8
+    },
+    "macro": {
+      "stripSrc": 20,
+      "stripDest": 48,
+      "stripLength": 15,
+      "connectedWidth": 20,
+      "yAlign": 8,
+      "xAlign": 0,
+      "viewPointer": 27
+    }
+  },
+  "encounters": "src/data/wild_encounters.json sRoute4_FireRed land_mons",
+  "adaptation": "Retain source solid/foreground/ledges. Horizontal ledge adapter scoped to this map. Cerulean boundary closed with status only; no NPC/items/events. Original rights holders; no redistribution clearance."
+}

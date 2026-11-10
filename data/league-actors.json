@@ -1,0 +1,87 @@
+[
+  {
+    "map": "league-lorelei",
+    "cell": [
+      5,
+      2
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/league-lorelei/actor-1.png",
+    "facing": "down",
+    "role": "visitor",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "map": "league-bruno",
+    "cell": [
+      5,
+      2
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/league-bruno/actor-1.png",
+    "facing": "down",
+    "role": "visitor",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ]
+  },
+  {
+    "map": "league-agatha",
+    "cell": [
+      5,
+      2
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/league-agatha/actor-1.png",
+    "facing": "down",
+    "role": "visitor",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ]
+  },
+  {
+    "map": "league-lance",
+    "cell": [
+      6,
+      1
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/league-lance/actor-1.png",
+    "facing": "down",
+    "role": "visitor",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ]
+  },
+  {
+    "map": "league-champion",
+    "cell": [
+      4,
+      2
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/league-champion/actor-1.png",
+    "facing": "down",
+    "role": "visitor",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  }
+]

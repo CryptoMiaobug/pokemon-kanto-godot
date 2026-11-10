@@ -1,0 +1,87 @@
+[
+  {
+    "map": "safari-zone-west",
+    "cell": [
+      8,
+      20
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/safari-zone-west/actor-1.png",
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "item": "MAX_POTION"
+  },
+  {
+    "map": "safari-zone-west",
+    "cell": [
+      9,
+      7
+    ],
+    "redObject": 2,
+    "sprite": "res://assets/safari-zone-west/actor-2.png",
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "item": "TM_DOUBLE_TEAM"
+  },
+  {
+    "map": "safari-zone-west",
+    "cell": [
+      18,
+      18
+    ],
+    "redObject": 3,
+    "sprite": "res://assets/safari-zone-west/actor-3.png",
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "item": "MAX_REVIVE"
+  },
+  {
+    "map": "safari-zone-west",
+    "cell": [
+      19,
+      7
+    ],
+    "redObject": 4,
+    "sprite": "res://assets/safari-zone-west/actor-4.png",
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "item": "GOLD_TEETH"
+  },
+  {
+    "map": "safari-zone-secret-house",
+    "cell": [
+      3,
+      3
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/safari-zone-secret-house/actor-1.png",
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "item": ""
+  }
+]

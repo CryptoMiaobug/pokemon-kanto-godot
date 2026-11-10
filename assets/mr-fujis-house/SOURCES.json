@@ -1,0 +1,179 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "baseline": "d38fd74",
+  "maps": "Red data/maps/PokemonTower3F..7F.json and MrFujisHouse.json; original foot geometry, actors, warp indices",
+  "rules": "FR trainer_parties.h/trainers.h, wild_encounters.json, level_up_learnsets.h, battle_script_commands.c, PokemonTower_5F/6F/7F and VolunteerPokemonHouse scripts",
+  "existing": [
+    "paired indexed warps",
+    "atomic trainer settlement",
+    "optional v3 flags",
+    "confusion/sleep/paralysis",
+    "source sprites/importer"
+  ],
+  "required": [
+    "Gastly/Haunter; source current moves Curse/NightShade/Spite/Lick",
+    "Scope identification/no-scope refusal",
+    "four purified cells healing latch",
+    "Marowak30 Bonemerang special uncapturable battle and atomic release",
+    "three Rocket teams and rescue/return then separate flute claim",
+    "key-item menu"
+  ],
+  "deferred": [
+    "07 onward",
+    "ordinary floor items",
+    "sight AI/cutscenes/music",
+    "complete abilities/held items/battle engine"
+  ],
+  "stages": [
+    [
+      "01",
+      "2F->3F",
+      "three trainers and wild",
+      "stop 4F"
+    ],
+    [
+      "02",
+      "3F->4F",
+      "three trainers/wild",
+      "stop 5F"
+    ],
+    [
+      "03",
+      "4F->5F",
+      "four trainers/wild/purified enter heal then latch until leave",
+      "stop 6F"
+    ],
+    [
+      "04",
+      "5F->6F",
+      "three trainers/wild",
+      "stop special event"
+    ],
+    [
+      "05",
+      "scope + trigger10,16",
+      "cancel/loss retry; win growth + released atomically",
+      "7F pending"
+    ],
+    [
+      "06",
+      "released ->7F",
+      "three independent Rocket wins; rescue atomically flags+house location; separate E flute once",
+      "batch end"
+    ]
+  ],
+  "map": "data/maps/MrFujisHouse.json",
+  "mapSHA256": "0db92924087836d8aa0cee1170bde756e671d72c90e089ea33e244ec10ca1e04",
+  "warps": [
+    {
+      "x": 2,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 3,
+      "destWarpIndex": 2
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "MRFUJISHOUSE_SUPER_NERD",
+      "x": 3,
+      "y": 5,
+      "sprite": "SPRITE_SUPER_NERD",
+      "spriteId": 12,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_MRFUJISHOUSE_SUPER_NERD",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "MRFUJISHOUSE_LITTLE_GIRL",
+      "x": 6,
+      "y": 3,
+      "sprite": "SPRITE_LITTLE_GIRL",
+      "spriteId": 8,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_MRFUJISHOUSE_LITTLE_GIRL",
+      "textIndex": 2
+    },
+    {
+      "index": 3,
+      "const": "MRFUJISHOUSE_PSYDUCK",
+      "x": 6,
+      "y": 4,
+      "sprite": "SPRITE_MONSTER",
+      "spriteId": 5,
+      "movement": "STAY",
+      "rangeOrDirection": "UP",
+      "rangeOrDirectionValue": 209,
+      "behavior": "face_up",
+      "textId": "TEXT_MRFUJISHOUSE_PSYDUCK",
+      "textIndex": 3
+    },
+    {
+      "index": 4,
+      "const": "MRFUJISHOUSE_NIDORINO",
+      "x": 1,
+      "y": 3,
+      "sprite": "SPRITE_MONSTER",
+      "spriteId": 5,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_MRFUJISHOUSE_NIDORINO",
+      "textIndex": 4
+    },
+    {
+      "index": 5,
+      "const": "MRFUJISHOUSE_MR_FUJI",
+      "x": 3,
+      "y": 1,
+      "sprite": "SPRITE_MR_FUJI",
+      "spriteId": 22,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_MRFUJISHOUSE_MR_FUJI",
+      "textIndex": 5,
+      "toggleIndex": 68,
+      "toggleConst": "TOGGLE_MR_FUJIS_HOUSE_MR_FUJI",
+      "startsHidden": true
+    },
+    {
+      "index": 6,
+      "const": "MRFUJISHOUSE_POKEDEX",
+      "x": 3,
+      "y": 3,
+      "sprite": "SPRITE_POKEDEX",
+      "spriteId": 65,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_MRFUJISHOUSE_POKEDEX",
+      "textIndex": 6
+    }
+  ],
+  "rights": "Original rights holders; redistribution clearance not established",
+  "sprite": "native16px static nearest local1x/world2x source feet anchor"
+}

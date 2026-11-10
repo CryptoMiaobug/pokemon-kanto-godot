@@ -1,0 +1,88 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/LavenderPokecenter.json",
+  "mapSHA256": "bb9dbc426b478e70214280f8bcb5be4964ccae56a9928c03e4a88b5062e2ba68",
+  "sourceYOffset": 0,
+  "connections": {},
+  "warps": [
+    {
+      "x": 3,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "LAVENDERPOKECENTER_NURSE",
+      "x": 3,
+      "y": 1,
+      "sprite": "SPRITE_NURSE",
+      "spriteId": 41,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_LAVENDERPOKECENTER_NURSE",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "LAVENDERPOKECENTER_GENTLEMAN",
+      "x": 5,
+      "y": 3,
+      "sprite": "SPRITE_GENTLEMAN",
+      "spriteId": 16,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_LAVENDERPOKECENTER_GENTLEMAN",
+      "textIndex": 2
+    },
+    {
+      "index": 3,
+      "const": "LAVENDERPOKECENTER_LITTLE_GIRL",
+      "x": 2,
+      "y": 6,
+      "sprite": "SPRITE_LITTLE_GIRL",
+      "spriteId": 8,
+      "movement": "WALK",
+      "rangeOrDirection": "UP_DOWN",
+      "rangeOrDirectionValue": 1,
+      "behavior": "walk_up_down",
+      "textId": "TEXT_LAVENDERPOKECENTER_LITTLE_GIRL",
+      "textIndex": 3
+    },
+    {
+      "index": 4,
+      "const": "LAVENDERPOKECENTER_LINK_RECEPTIONIST",
+      "x": 11,
+      "y": 2,
+      "sprite": "SPRITE_LINK_RECEPTIONIST",
+      "spriteId": 42,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_LAVENDERPOKECENTER_LINK_RECEPTIONIST",
+      "textIndex": 4
+    }
+  ],
+  "adaptation": "Original Red feet, land/surf blocking, pair collisions and ledges. Static original16px actors local1x world2x same anchor. Route10 south rows48..71 only: isolated Power Plant water island and Mark y44 remain inaccessible/deferred, no surf and no invented grass. Lavender tower/Fuji/name rater/houses/Route8/12 deferred at original boundaries. Center nurse/PC existing interfaces; FR source stock subset Super Potion700 heals50 only, all other source items omitted explicitly.",
+  "rights": "Original rights holders; no redistribution clearance."
+}

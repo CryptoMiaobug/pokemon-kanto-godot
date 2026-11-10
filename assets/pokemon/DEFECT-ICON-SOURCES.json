@@ -1,0 +1,43 @@
+{
+  "repository": "pret/pokefirered",
+  "commit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "adaptation": "Existing project first-frame 32x32 static menu icons, not a new animation system",
+  "rights": "Original rights holders; redistribution clearance not established",
+  "records": [
+    {
+      "species": "rapidash",
+      "palette": 0,
+      "source_sha256": "123706b63678a5c6b8761290f96feaa1d24a73696857ddee3ab052405f9512f9",
+      "output": "assets/pokemon/rapidash-icon.png",
+      "sha256": "7b7cca6bd8d13845b4adb2d1ccea8196a4f061318b979cc4eb2fbaef46d7b6f4"
+    },
+    {
+      "species": "arcanine",
+      "palette": 0,
+      "source_sha256": "4c7c6a13345a92cd58ecda94e2cf5800f7898c8e7afd237ca122ed8c8ed67754",
+      "output": "assets/pokemon/arcanine-icon.png",
+      "sha256": "13345dcf181f0b05f2172c9115d78705f83cc87c6e8143080a558443eef86c12"
+    },
+    {
+      "species": "tauros",
+      "palette": 2,
+      "source_sha256": "66548222afb661eb1a570280c370cbac3a751932d4897ff06b40396291f24aa3",
+      "output": "assets/pokemon/tauros-icon.png",
+      "sha256": "af976b91e9bebf559d6949111b059dfc204bf1835be1f604ff6ac8fd8627fe90"
+    },
+    {
+      "species": "nidoking",
+      "palette": 2,
+      "source_sha256": "bed42084f96d89b234443e3fd314b99c605da9d953aa48c94df3fbeff4afe2fb",
+      "output": "assets/pokemon/nidoking-icon.png",
+      "sha256": "583d590ea239a96dba90e8edc603db871f5379842e198dd844b3d1d9de57ec04"
+    },
+    {
+      "species": "dugtrio",
+      "palette": 2,
+      "source_sha256": "5b05a42bac78d625036758a088554eb226d3ec33f6cc016ae167a623d8636a85",
+      "output": "assets/pokemon/dugtrio-icon.png",
+      "sha256": "41749aeac0ac8cbdff48158c49fd812f5478a4236434f447a3edb73145ca340d"
+    }
+  ]
+}

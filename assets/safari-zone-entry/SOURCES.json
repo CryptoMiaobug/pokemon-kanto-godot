@@ -1,0 +1,113 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/SafariZoneCenter.json",
+  "mapSHA256": "ef86632d89f9dcb64ad2f8b07b9a35dce4c062fc989ef1bf10bf392719fa9fee",
+  "warps": [
+    {
+      "x": 14,
+      "y": 25,
+      "destMap": "SAFARI_ZONE_GATE",
+      "destMapId": 156,
+      "destMapName": "SafariZoneGate",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 15,
+      "y": 25,
+      "destMap": "SAFARI_ZONE_GATE",
+      "destMapId": 156,
+      "destMapName": "SafariZoneGate",
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "destMap": "SAFARI_ZONE_WEST",
+      "destMapId": 219,
+      "destMapName": "SafariZoneWest",
+      "destWarp": 5,
+      "destWarpIndex": 4
+    },
+    {
+      "x": 0,
+      "y": 11,
+      "destMap": "SAFARI_ZONE_WEST",
+      "destMapId": 219,
+      "destMapName": "SafariZoneWest",
+      "destWarp": 6,
+      "destWarpIndex": 5
+    },
+    {
+      "x": 14,
+      "y": 0,
+      "destMap": "SAFARI_ZONE_NORTH",
+      "destMapId": 218,
+      "destMapName": "SafariZoneNorth",
+      "destWarp": 5,
+      "destWarpIndex": 4
+    },
+    {
+      "x": 15,
+      "y": 0,
+      "destMap": "SAFARI_ZONE_NORTH",
+      "destMapId": 218,
+      "destMapName": "SafariZoneNorth",
+      "destWarp": 6,
+      "destWarpIndex": 5
+    },
+    {
+      "x": 29,
+      "y": 10,
+      "destMap": "SAFARI_ZONE_EAST",
+      "destMapId": 217,
+      "destMapName": "SafariZoneEast",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 29,
+      "y": 11,
+      "destMap": "SAFARI_ZONE_EAST",
+      "destMapId": 217,
+      "destMapName": "SafariZoneEast",
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 17,
+      "y": 19,
+      "destMap": "SAFARI_ZONE_CENTER_REST_HOUSE",
+      "destMapId": 221,
+      "destMapName": "SafariZoneCenterRestHouse",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "SAFARIZONECENTER_NUGGET",
+      "x": 14,
+      "y": 10,
+      "sprite": "SPRITE_POKE_BALL",
+      "spriteId": 61,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_SAFARIZONECENTER_NUGGET",
+      "textIndex": 1,
+      "item": "NUGGET",
+      "itemId": 49,
+      "toggleIndex": 205,
+      "toggleConst": "TOGGLE_SAFARI_ZONE_CENTER_ITEM",
+      "startsHidden": false
+    }
+  ],
+  "adaptation": "Red geometry/collision/actors; FireRed complete ordered teams. Safari capture/rest houses/ordinary items deferred; Gold Teeth and HM03 enabled29.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

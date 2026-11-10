@@ -1,0 +1,69 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/CeruleanTrashedHouse.json",
+  "mapSHA256": "987c0cb2f4be29402b535cdf363083ad7992f915f6e2f1c56141ba1e2900662d",
+  "tiles": "assets/tilesets/house.png",
+  "connections": {},
+  "warps": [
+    {
+      "x": 2,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 8,
+      "destWarpIndex": 7
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "CERULEANTRASHEDHOUSE_FISHING_GURU",
+      "x": 2,
+      "y": 1,
+      "sprite": "SPRITE_FISHING_GURU",
+      "spriteId": 39,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_CERULEANTRASHEDHOUSE_FISHING_GURU",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "CERULEANTRASHEDHOUSE_GIRL",
+      "x": 5,
+      "y": 6,
+      "sprite": "SPRITE_GIRL",
+      "spriteId": 13,
+      "movement": "WALK",
+      "rangeOrDirection": "LEFT_RIGHT",
+      "rangeOrDirectionValue": 2,
+      "behavior": "walk_left_right",
+      "textId": "TEXT_CERULEANTRASHEDHOUSE_GIRL",
+      "textIndex": 2
+    }
+  ],
+  "adaptation": "Original feet/grass/ledges. House two original NPC blockers static16px. City front27,11/back27,9; interior front2or3,7/back3,0. Guard27,12 before SS ticket,28,12 after per Red billSSTicket; thief30,8 until TM28 received. E confirms thief battle; no auto approach/departure animation. Route5 north city x+10; unopened daycare, underground, gates retain original map art and prompt only, no fabricated wall or passage functionality.",
+  "rights": "Original rights holders; no redistribution clearance."
+}

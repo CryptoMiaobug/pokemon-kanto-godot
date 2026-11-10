@@ -1,0 +1,21 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "red": [
+    "data/maps/MtMoonB2F.json",
+    "data/text/MtMoonB2F.json",
+    "src/game/scripts/regions/kanto2.js mtMoonNerdPath",
+    "assets/sprites/super_nerd.png",
+    "assets/sprites/fossil.png"
+  ],
+  "fireRed": [
+    "src/data/trainer_parties.h sParty_SuperNerdMiguel",
+    "src/data/trainers.h",
+    "data/maps/MtMoon_B2F/scripts.inc",
+    "data/maps/MtMoon_B2F/text.inc",
+    "src/data/items.json",
+    "src/data/battle_moves.h"
+  ],
+  "adaptation": "Original16px sprites, same tint/local1x/world2x/center feet anchor; own-cell collision. E confirmation replaces approach scene. Original Red postchoice short paths resolve scientist to [13,7] for dome/[12,7] for helix; instant placement no animation. Two original fossil cells hidden only after atomic success. No revival/trade/full bag/exit. PoisonGas55% poison; Smog20/70/40% poison using existing poison subset.",
+  "rights": "Original rights holders; no clearance asserted."
+}

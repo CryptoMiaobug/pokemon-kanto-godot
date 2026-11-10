@@ -1,0 +1,121 @@
+[
+  {
+    "map": "vermilion-center",
+    "cell": [
+      3,
+      1
+    ],
+    "sprite": "res://assets/vermilion-center/actor-1.png",
+    "facing": "down",
+    "redObject": 1,
+    "role": "nurse",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "map": "vermilion-center",
+    "cell": [
+      10,
+      5
+    ],
+    "sprite": "res://assets/vermilion-center/actor-2.png",
+    "facing": "down",
+    "redObject": 2,
+    "role": "visitor",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ]
+  },
+  {
+    "map": "vermilion-center",
+    "cell": [
+      5,
+      4
+    ],
+    "sprite": "res://assets/vermilion-center/actor-3.png",
+    "facing": "down",
+    "redObject": 3,
+    "role": "visitor",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ]
+  },
+  {
+    "map": "vermilion-center",
+    "cell": [
+      11,
+      2
+    ],
+    "sprite": "res://assets/vermilion-center/actor-4.png",
+    "facing": "down",
+    "redObject": 4,
+    "role": "link",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ]
+  },
+  {
+    "map": "vermilion-mart",
+    "cell": [
+      0,
+      5
+    ],
+    "sprite": "res://assets/vermilion-mart/actor-1.png",
+    "facing": "right",
+    "redObject": 1,
+    "role": "clerk",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "map": "vermilion-mart",
+    "cell": [
+      5,
+      6
+    ],
+    "sprite": "res://assets/vermilion-mart/actor-2.png",
+    "facing": "down",
+    "redObject": 2,
+    "role": "visitor",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "map": "vermilion-mart",
+    "cell": [
+      3,
+      3
+    ],
+    "sprite": "res://assets/vermilion-mart/actor-3.png",
+    "facing": "down",
+    "redObject": 3,
+    "role": "visitor",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  }
+]

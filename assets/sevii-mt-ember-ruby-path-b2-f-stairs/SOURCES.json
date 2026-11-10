@@ -1,0 +1,66 @@
+{
+  "revision": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/MtEmber_RubyPath_B2F_Stairs/map.json",
+  "mapSHA256": "ea4c54f50558700d45d73588994536e7a4c6c4403b7b47847bfb86e37eaa31dd",
+  "layout": {
+    "id": "LAYOUT_MT_EMBER_RUBY_PATH_B2F_STAIRS",
+    "name": "MtEmber_RubyPath_B2F_Stairs_Layout",
+    "width": 8,
+    "height": 6,
+    "border_width": 2,
+    "border_height": 2,
+    "primary_tileset": "gTileset_General",
+    "secondary_tileset": "gTileset_MtEmber",
+    "border_filepath": "data/layouts/MtEmber_RubyPath_B2F_Stairs/border.bin",
+    "blockdata_filepath": "data/layouts/MtEmber_RubyPath_B2F_Stairs/map.bin"
+  },
+  "warps": [
+    {
+      "x": 6,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_MT_EMBER_RUBY_PATH_B1F_STAIRS",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_MT_EMBER_RUBY_PATH_1F",
+      "dest_warp_id": "2"
+    }
+  ],
+  "connections": null,
+  "actors": [
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+      "x": 4,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_RockSmash",
+      "flag": "FLAG_TEMP_12"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
+      "x": 6,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_RockSmash",
+      "flag": "FLAG_TEMP_13"
+    }
+  ],
+  "adaptation": "FireRed 16px metatiles, source collision/elevation/behavior; original palette static first frame; no coordinate doubling.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

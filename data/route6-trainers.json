@@ -1,0 +1,338 @@
+[
+  {
+    "map": "route6",
+    "cell": [
+      10,
+      21
+    ],
+    "sprite": "res://assets/route6/actor-1.png",
+    "facing": "right",
+    "redObject": 1,
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "id": "route6_ricky",
+    "name": "露营少年里奇",
+    "title": "露营少年里奇 · 6号道路",
+    "portrait": "res://assets/route6/ricky-trainer.png",
+    "reward": 400,
+    "party": [
+      {
+        "species_id": "squirtle",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "def"
+        },
+        "moves": [
+          "bubble",
+          "withdraw",
+          "watergun",
+          "bite"
+        ]
+      }
+    ],
+    "intro": "谁在那里？别偷听我们说话！",
+    "defeat": "我就是赢不了！",
+    "after": "悄悄话……",
+    "fireRedTrainer": "CamperRicky"
+  },
+  {
+    "map": "route6",
+    "cell": [
+      11,
+      21
+    ],
+    "sprite": "res://assets/route6/actor-2.png",
+    "facing": "left",
+    "redObject": 2,
+    "alphaBBox": [
+      1,
+      0,
+      14,
+      16
+    ],
+    "id": "route6_nancy",
+    "name": "野餐女孩南希",
+    "title": "野餐女孩南希 · 6号道路",
+    "portrait": "res://assets/route6/nancy-trainer.png",
+    "reward": 320,
+    "party": [
+      {
+        "species_id": "rattata",
+        "level": 16,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "atk"
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack",
+          "hyperfang"
+        ]
+      },
+      {
+        "species_id": "pikachu",
+        "level": 16,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spa"
+        },
+        "moves": [
+          "tailwhip",
+          "thunderwave",
+          "quickattack",
+          "doubleteam"
+        ]
+      }
+    ],
+    "intro": "打扰一下！这是私人谈话！",
+    "defeat": "我讨厌输掉。",
+    "after": "悄悄话……",
+    "fireRedTrainer": "PicnickerNancy"
+  },
+  {
+    "map": "route6",
+    "cell": [
+      0,
+      15
+    ],
+    "sprite": "res://assets/route6/actor-3.png",
+    "facing": "right",
+    "redObject": 3,
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "id": "route6_keigo",
+    "name": "捕虫少年圭吾",
+    "title": "捕虫少年圭吾 · 6号道路",
+    "portrait": "res://assets/route6/keigo-trainer.png",
+    "reward": 192,
+    "party": [
+      {
+        "species_id": "weedle",
+        "level": 16,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "poisonsting",
+          "stringshot"
+        ]
+      },
+      {
+        "species_id": "caterpie",
+        "level": 16,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "atk"
+        },
+        "moves": [
+          "tackle",
+          "stringshot"
+        ]
+      },
+      {
+        "species_id": "weedle",
+        "level": 16,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spe"
+        },
+        "moves": [
+          "poisonsting",
+          "stringshot"
+        ]
+      }
+    ],
+    "intro": "这里的虫宝可梦不多。",
+    "defeat": "不会吧！",
+    "after": "我喜欢虫宝可梦，要回常青森林了。",
+    "fireRedTrainer": "BugCatcherKeigo"
+  },
+  {
+    "map": "route6",
+    "cell": [
+      11,
+      31
+    ],
+    "sprite": "res://assets/route6/actor-4.png",
+    "facing": "left",
+    "redObject": 4,
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "id": "route6_jeff",
+    "name": "露营少年杰夫",
+    "title": "露营少年杰夫 · 6号道路",
+    "portrait": "res://assets/route6/jeff-trainer.png",
+    "reward": 320,
+    "party": [
+      {
+        "species_id": "spearow",
+        "level": 16,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "peck",
+          "growl",
+          "leer",
+          "furyattack"
+        ]
+      },
+      {
+        "species_id": "raticate",
+        "level": 16,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack",
+          "hyperfang"
+        ]
+      }
+    ],
+    "intro": "嗯？你想和我说话？",
+    "defeat": "没能赢过你……",
+    "after": "我该多带些宝可梦，那样更安心。",
+    "fireRedTrainer": "CamperJeff"
+  },
+  {
+    "map": "route6",
+    "cell": [
+      11,
+      30
+    ],
+    "sprite": "res://assets/route6/actor-5.png",
+    "facing": "left",
+    "redObject": 5,
+    "alphaBBox": [
+      1,
+      0,
+      14,
+      16
+    ],
+    "id": "route6_isabelle",
+    "name": "野餐女孩伊莎贝尔",
+    "title": "野餐女孩伊莎贝尔 · 6号道路",
+    "portrait": "res://assets/route6/isabelle-trainer.png",
+    "reward": 320,
+    "party": [
+      {
+        "species_id": "pidgey",
+        "level": 16,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "atk"
+        },
+        "moves": [
+          "tackle",
+          "sandattack",
+          "gust",
+          "quickattack"
+        ]
+      },
+      {
+        "species_id": "pidgey",
+        "level": 16,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "atk"
+        },
+        "moves": [
+          "tackle",
+          "sandattack",
+          "gust",
+          "quickattack"
+        ]
+      },
+      {
+        "species_id": "pidgey",
+        "level": 16,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "tackle",
+          "sandattack",
+          "gust",
+          "quickattack"
+        ]
+      }
+    ],
+    "intro": "我？好吧，一起来玩！",
+    "defeat": "不太顺利……",
+    "after": "我想变强，你有什么秘诀？",
+    "fireRedTrainer": "PicnickerIsabelle"
+  },
+  {
+    "map": "route6",
+    "cell": [
+      19,
+      26
+    ],
+    "sprite": "res://assets/route6/actor-6.png",
+    "facing": "left",
+    "redObject": 6,
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "id": "route6_elijah",
+    "name": "捕虫少年以利亚",
+    "title": "捕虫少年以利亚 · 6号道路",
+    "portrait": "res://assets/route6/elijah-trainer.png",
+    "reward": 240,
+    "party": [
+      {
+        "species_id": "butterfree",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spe"
+        },
+        "moves": [
+          "poisonpowder",
+          "stunspore",
+          "sleeppowder",
+          "supersonic"
+        ]
+      }
+    ],
+    "intro": "以前没见过你。你厉害吗？",
+    "defeat": "你太厉害了！",
+    "after": "是宝可梦太弱，还是我不够好？",
+    "fireRedTrainer": "BugCatcherElijah"
+  }
+]

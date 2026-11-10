@@ -1,0 +1,53 @@
+[
+  {
+    "map": "safari-zone-gate",
+    "cell": [
+      6,
+      2
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/safari-zone-gate/actor-1.png",
+    "facing": "left",
+    "alphaBBox": [
+      1,
+      0,
+      14,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "safari-zone-gate",
+    "cell": [
+      1,
+      4
+    ],
+    "redObject": 2,
+    "sprite": "res://assets/safari-zone-gate/actor-2.png",
+    "facing": "right",
+    "alphaBBox": [
+      2,
+      0,
+      15,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "safari-zone-entry",
+    "cell": [
+      14,
+      10
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/safari-zone-entry/actor-1.png",
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "item": "NUGGET"
+  }
+]

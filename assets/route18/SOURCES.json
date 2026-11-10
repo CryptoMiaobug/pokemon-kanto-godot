@@ -1,0 +1,183 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/Route18.json",
+  "mapSHA256": "d78157de44f828bb6d9c7795c4382c2a37c1a374e6a1c46922e339bd132c100c",
+  "tiles": "assets/tilesets/overworld.png",
+  "connections": {
+    "north": {
+      "map": "ROUTE_17",
+      "mapId": 28,
+      "mapName": "Route17",
+      "offset": 0,
+      "dx": 0,
+      "dy": -72,
+      "copyRect": {
+        "x": 0,
+        "y": 69,
+        "w": 10,
+        "h": 3
+      },
+      "onEnter": {
+        "newY": 143,
+        "xAdd": 0
+      },
+      "macro": {
+        "stripSrc": 690,
+        "stripDest": 3,
+        "stripLength": 10,
+        "connectedWidth": 10,
+        "yAlign": 143,
+        "xAlign": 0,
+        "viewPointer": 1153
+      }
+    },
+    "east": {
+      "map": "FUCHSIA_CITY",
+      "mapId": 7,
+      "mapName": "FuchsiaCity",
+      "offset": -4,
+      "dx": 25,
+      "dy": -4,
+      "copyRect": {
+        "x": 0,
+        "y": 1,
+        "w": 3,
+        "h": 15
+      },
+      "onEnter": {
+        "newX": 0,
+        "yAdd": 8
+      },
+      "macro": {
+        "stripSrc": 20,
+        "stripDest": 28,
+        "stripLength": 15,
+        "connectedWidth": 20,
+        "yAlign": 8,
+        "xAlign": 0,
+        "viewPointer": 27
+      }
+    }
+  },
+  "warps": [
+    {
+      "x": 33,
+      "y": 8,
+      "destMap": "ROUTE_18_GATE_1F",
+      "destMapId": 190,
+      "destMapName": "Route18Gate1F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 33,
+      "y": 9,
+      "destMap": "ROUTE_18_GATE_1F",
+      "destMapId": 190,
+      "destMapName": "Route18Gate1F",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 40,
+      "y": 8,
+      "destMap": "ROUTE_18_GATE_1F",
+      "destMapId": 190,
+      "destMapName": "Route18Gate1F",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 40,
+      "y": 9,
+      "destMap": "ROUTE_18_GATE_1F",
+      "destMapId": 190,
+      "destMapName": "Route18Gate1F",
+      "destWarp": 4,
+      "destWarpIndex": 3
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "ROUTE18_COOLTRAINER_M1",
+      "x": 36,
+      "y": 11,
+      "sprite": "SPRITE_COOLTRAINER_M",
+      "spriteId": 7,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_ROUTE18_COOLTRAINER_M1",
+      "textIndex": 1,
+      "trainer": {
+        "trainerClass": "OPP_BIRD_KEEPER",
+        "trainerClassId": 23,
+        "trainerPartyIndex": 8,
+        "header": "Route18TrainerHeader0",
+        "eventFlag": "EVENT_BEAT_ROUTE_18_TRAINER_0",
+        "eventFlagIndex": 1249,
+        "sightRange": 3,
+        "textBefore": "Route18CooltrainerM1BattleText",
+        "textEnd": "Route18CooltrainerM1EndBattleText",
+        "textAfter": "Route18CooltrainerM1AfterBattleText"
+      }
+    },
+    {
+      "index": 2,
+      "const": "ROUTE18_COOLTRAINER_M2",
+      "x": 40,
+      "y": 15,
+      "sprite": "SPRITE_COOLTRAINER_M",
+      "spriteId": 7,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROUTE18_COOLTRAINER_M2",
+      "textIndex": 2,
+      "trainer": {
+        "trainerClass": "OPP_BIRD_KEEPER",
+        "trainerClassId": 23,
+        "trainerPartyIndex": 9,
+        "header": "Route18TrainerHeader1",
+        "eventFlag": "EVENT_BEAT_ROUTE_18_TRAINER_1",
+        "eventFlagIndex": 1250,
+        "sightRange": 3,
+        "textBefore": "Route18CooltrainerM2BattleText",
+        "textEnd": "Route18CooltrainerM2EndBattleText",
+        "textAfter": "Route18CooltrainerM2AfterBattleText"
+      }
+    },
+    {
+      "index": 3,
+      "const": "ROUTE18_COOLTRAINER_M3",
+      "x": 42,
+      "y": 13,
+      "sprite": "SPRITE_COOLTRAINER_M",
+      "spriteId": 7,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROUTE18_COOLTRAINER_M3",
+      "textIndex": 3,
+      "trainer": {
+        "trainerClass": "OPP_BIRD_KEEPER",
+        "trainerClassId": 23,
+        "trainerPartyIndex": 10,
+        "header": "Route18TrainerHeader2",
+        "eventFlag": "EVENT_BEAT_ROUTE_18_TRAINER_2",
+        "eventFlagIndex": 1251,
+        "sightRange": 4,
+        "textBefore": "Route18CooltrainerM3BattleText",
+        "textEnd": "Route18CooltrainerM3EndBattleText",
+        "textAfter": "Route18CooltrainerM3AfterBattleText"
+      }
+    }
+  ],
+  "adaptation": "Full deterministic Red geometry; O03 upper rows retained in source form. FireRed trainer parties and encounters. Trades, hidden items, signs and sight activation deferred.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

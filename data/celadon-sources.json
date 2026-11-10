@@ -1,0 +1,42 @@
+{
+  "baseline": "62632cf4cf657409a7da574ebcecfaa9f92ac9c4",
+  "sources": [
+    "Red CeladonCity center mart1F/2F",
+    "FR DepartmentStore2F item stock",
+    "FR item_icon_table Potion image SuperPotion palette"
+  ],
+  "dependencies": {
+    "existing": [
+      "nurse PC",
+      "SuperPotion700 heal50 atomic purchase/use"
+    ],
+    "required": [
+      "four original maps and warps",
+      "city Route7 yoffset128",
+      "correct SuperPotion icon"
+    ],
+    "deferred": [
+      "3F+ roof elevator and TM counter",
+      "other8 source items",
+      "tea mansion casino base Fly Route16",
+      "gym next slice"
+    ]
+  },
+  "story": [
+    {
+      "before": "Route7 west",
+      "action": "walk west",
+      "after": "Celadon east y+128"
+    },
+    {
+      "before": "city original door",
+      "action": "enter source1F climb source stair",
+      "after": "2F original items counter"
+    },
+    {
+      "before": "buy confirm",
+      "action": "700 paid",
+      "after": "inventory+1 atomic; cancel/failure no change"
+    }
+  ]
+}

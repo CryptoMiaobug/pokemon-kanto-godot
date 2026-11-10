@@ -1,0 +1,155 @@
+[
+  {
+    "map": "cinnabar-island",
+    "cell": [
+      12,
+      5
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/cinnabar-island/actor-1.png",
+    "facing": "down",
+    "role": "visitor",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "map": "cinnabar-island",
+    "cell": [
+      14,
+      6
+    ],
+    "redObject": 2,
+    "sprite": "res://assets/cinnabar-island/actor-2.png",
+    "facing": "down",
+    "role": "visitor",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "map": "cinnabar-center",
+    "cell": [
+      3,
+      1
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/cinnabar-center/actor-1.png",
+    "facing": "down",
+    "role": "nurse",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "map": "cinnabar-center",
+    "cell": [
+      9,
+      4
+    ],
+    "redObject": 2,
+    "sprite": "res://assets/cinnabar-center/actor-2.png",
+    "facing": "down",
+    "role": "visitor",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "map": "cinnabar-center",
+    "cell": [
+      2,
+      6
+    ],
+    "redObject": 3,
+    "sprite": "res://assets/cinnabar-center/actor-3.png",
+    "facing": "down",
+    "role": "visitor",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "map": "cinnabar-center",
+    "cell": [
+      11,
+      2
+    ],
+    "redObject": 4,
+    "sprite": "res://assets/cinnabar-center/actor-4.png",
+    "facing": "down",
+    "role": "link",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ]
+  },
+  {
+    "map": "cinnabar-mart",
+    "cell": [
+      0,
+      5
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/cinnabar-mart/actor-1.png",
+    "facing": "right",
+    "role": "clerk",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "map": "cinnabar-mart",
+    "cell": [
+      6,
+      2
+    ],
+    "redObject": 2,
+    "sprite": "res://assets/cinnabar-mart/actor-2.png",
+    "facing": "down",
+    "role": "visitor",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "map": "cinnabar-mart",
+    "cell": [
+      3,
+      4
+    ],
+    "redObject": 3,
+    "sprite": "res://assets/cinnabar-mart/actor-3.png",
+    "facing": "down",
+    "role": "visitor",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  }
+]

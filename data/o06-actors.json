@@ -1,0 +1,82 @@
+[
+  {
+    "map": "seafoam-islands-1f",
+    "cell": [
+      18,
+      10
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/seafoam-islands-1f/actor-1.png",
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "boulder": true,
+    "hidden": false,
+    "toggle": "TOGGLE_SEAFOAM_ISLANDS_1F_BOULDER_1",
+    "immovable": false
+  },
+  {
+    "map": "seafoam-islands-1f",
+    "cell": [
+      26,
+      7
+    ],
+    "redObject": 2,
+    "sprite": "res://assets/seafoam-islands-1f/actor-2.png",
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "boulder": true,
+    "hidden": false,
+    "toggle": "TOGGLE_SEAFOAM_ISLANDS_1F_BOULDER_2",
+    "immovable": false
+  },
+  {
+    "map": "seafoam-islands-b1f",
+    "cell": [
+      17,
+      6
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/seafoam-islands-b1f/actor-1.png",
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "boulder": true,
+    "hidden": true,
+    "toggle": "TOGGLE_SEAFOAM_ISLANDS_B1F_BOULDER_1",
+    "immovable": false
+  },
+  {
+    "map": "seafoam-islands-b1f",
+    "cell": [
+      22,
+      6
+    ],
+    "redObject": 2,
+    "sprite": "res://assets/seafoam-islands-b1f/actor-2.png",
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "boulder": true,
+    "hidden": true,
+    "toggle": "TOGGLE_SEAFOAM_ISLANDS_B1F_BOULDER_2",
+    "immovable": false
+  }
+]

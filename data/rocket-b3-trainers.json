@@ -1,0 +1,137 @@
+[
+  {
+    "map": "rocket-hideout-b3f",
+    "cell": [
+      10,
+      22
+    ],
+    "sprite": "res://assets/rocket-hideout-b3f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item_deferred": false,
+    "startsHidden": false,
+    "item": "",
+    "id": "rocket_b3_1",
+    "name": "基地B3F队员1",
+    "title": "火箭队 · 地下3层",
+    "facing": "right",
+    "party": [
+      {
+        "species_id": "rattata",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spd"
+        },
+        "moves": [
+          "tailwhip",
+          "quickattack",
+          "hyperfang",
+          "focusenergy"
+        ]
+      },
+      {
+        "species_id": "raticate",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spd"
+        },
+        "moves": [
+          "tailwhip",
+          "quickattack",
+          "hyperfang",
+          "scaryface"
+        ]
+      },
+      {
+        "species_id": "drowzee",
+        "level": 20,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "hypnosis",
+          "disable",
+          "confusion",
+          "headbutt"
+        ]
+      }
+    ],
+    "reward": 640,
+    "portrait": "res://assets/rocket-hideout-b3f/actor-1-trainer.png",
+    "intro": "你竟然闯进这里！来对战吧！",
+    "defeat": "可恶！",
+    "after": "火箭队不会就这样算了！",
+    "fireRedTrainer": "TeamRocketGrunt14"
+  },
+  {
+    "map": "rocket-hideout-b3f",
+    "cell": [
+      26,
+      12
+    ],
+    "sprite": "res://assets/rocket-hideout-b3f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "item_deferred": false,
+    "startsHidden": false,
+    "item": "",
+    "id": "rocket_b3_2",
+    "name": "基地B3F队员2",
+    "title": "火箭队 · 地下3层",
+    "facing": "up",
+    "party": [
+      {
+        "species_id": "machop",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spa"
+        },
+        "moves": [
+          "leer",
+          "focusenergy",
+          "karatechop",
+          "seismictoss"
+        ]
+      },
+      {
+        "species_id": "machop",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "atk"
+        },
+        "moves": [
+          "leer",
+          "focusenergy",
+          "karatechop",
+          "seismictoss"
+        ]
+      }
+    ],
+    "reward": 672,
+    "portrait": "res://assets/rocket-hideout-b3f/actor-2-trainer.png",
+    "intro": "你竟然闯进这里！来对战吧！",
+    "defeat": "可恶！",
+    "after": "火箭队不会就这样算了！",
+    "fireRedTrainer": "TeamRocketGrunt15"
+  }
+]

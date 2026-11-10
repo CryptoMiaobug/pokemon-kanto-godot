@@ -1,0 +1,78 @@
+{
+  "source": "sPokemonTower3F_FireRed",
+  "encounter_rate": 2,
+  "slots": [
+    {
+      "species_id": "gastly",
+      "min_level": 15,
+      "max_level": 15,
+      "weight": 20
+    },
+    {
+      "species_id": "gastly",
+      "min_level": 16,
+      "max_level": 16,
+      "weight": 20
+    },
+    {
+      "species_id": "gastly",
+      "min_level": 17,
+      "max_level": 17,
+      "weight": 10
+    },
+    {
+      "species_id": "gastly",
+      "min_level": 13,
+      "max_level": 13,
+      "weight": 10
+    },
+    {
+      "species_id": "gastly",
+      "min_level": 14,
+      "max_level": 14,
+      "weight": 10
+    },
+    {
+      "species_id": "gastly",
+      "min_level": 18,
+      "max_level": 18,
+      "weight": 10
+    },
+    {
+      "species_id": "gastly",
+      "min_level": 19,
+      "max_level": 19,
+      "weight": 5
+    },
+    {
+      "species_id": "cubone",
+      "min_level": 15,
+      "max_level": 15,
+      "weight": 5
+    },
+    {
+      "species_id": "gastly",
+      "min_level": 17,
+      "max_level": 17,
+      "weight": 4
+    },
+    {
+      "species_id": "cubone",
+      "min_level": 17,
+      "max_level": 17,
+      "weight": 4
+    },
+    {
+      "species_id": "gastly",
+      "min_level": 17,
+      "max_level": 17,
+      "weight": 1
+    },
+    {
+      "species_id": "haunter",
+      "min_level": 20,
+      "max_level": 20,
+      "weight": 1
+    }
+  ]
+}

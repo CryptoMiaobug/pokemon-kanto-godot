@@ -1,0 +1,290 @@
+[
+  {
+    "map": "rocket-hideout-b4f",
+    "cell": [
+      25,
+      3
+    ],
+    "sprite": "res://assets/rocket-hideout-b4f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      1,
+      1,
+      15,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "这里是安放宝可梦灵魂的地方。"
+  },
+  {
+    "map": "rocket-hideout-b4f",
+    "cell": [
+      23,
+      12
+    ],
+    "sprite": "res://assets/rocket-hideout-b4f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "这里是安放宝可梦灵魂的地方。"
+  },
+  {
+    "map": "rocket-hideout-b4f",
+    "cell": [
+      26,
+      12
+    ],
+    "sprite": "res://assets/rocket-hideout-b4f/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "这里是安放宝可梦灵魂的地方。"
+  },
+  {
+    "map": "rocket-hideout-b4f",
+    "cell": [
+      11,
+      2
+    ],
+    "sprite": "res://assets/rocket-hideout-b4f/actor-4.png",
+    "redObject": 4,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "这里是安放宝可梦灵魂的地方。"
+  },
+  {
+    "map": "rocket-hideout-b4f",
+    "cell": [
+      10,
+      12
+    ],
+    "sprite": "res://assets/rocket-hideout-b4f/actor-5.png",
+    "redObject": 5,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "startsHidden": false,
+    "item": "HP_UP",
+    "text": "这里是安放宝可梦灵魂的地方。"
+  },
+  {
+    "map": "rocket-hideout-b4f",
+    "cell": [
+      9,
+      4
+    ],
+    "sprite": "res://assets/rocket-hideout-b4f/actor-6.png",
+    "redObject": 6,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "startsHidden": false,
+    "item": "TM_RAZOR_WIND",
+    "text": "这里是安放宝可梦灵魂的地方。"
+  },
+  {
+    "map": "rocket-hideout-b4f",
+    "cell": [
+      12,
+      20
+    ],
+    "sprite": "res://assets/rocket-hideout-b4f/actor-7.png",
+    "redObject": 7,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "startsHidden": false,
+    "item": "IRON",
+    "text": "这里是安放宝可梦灵魂的地方。"
+  },
+  {
+    "map": "rocket-hideout-b4f",
+    "cell": [
+      25,
+      2
+    ],
+    "sprite": "res://assets/rocket-hideout-b4f/actor-8.png",
+    "redObject": 8,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "startsHidden": true,
+    "item": "SILPH_SCOPE",
+    "text": "这里是安放宝可梦灵魂的地方。"
+  },
+  {
+    "map": "rocket-hideout-b4f",
+    "cell": [
+      10,
+      2
+    ],
+    "sprite": "res://assets/rocket-hideout-b4f/actor-9.png",
+    "redObject": 9,
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "startsHidden": true,
+    "item": "LIFT_KEY",
+    "text": "这里是安放宝可梦灵魂的地方。"
+  },
+  {
+    "map": "pokemon-tower-1f",
+    "cell": [
+      15,
+      13
+    ],
+    "sprite": "res://assets/pokemon-tower-1f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "欢迎来到宝可梦塔。这里安放着许多宝可梦的灵魂。"
+  },
+  {
+    "map": "pokemon-tower-1f",
+    "cell": [
+      6,
+      8
+    ],
+    "sprite": "res://assets/pokemon-tower-1f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "你是来悼念的吗？愿你平安。"
+  },
+  {
+    "map": "pokemon-tower-1f",
+    "cell": [
+      8,
+      12
+    ],
+    "sprite": "res://assets/pokemon-tower-1f/actor-3.png",
+    "redObject": 3,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "我来为我的皮皮祈祷。呜……眼泪停不下来。"
+  },
+  {
+    "map": "pokemon-tower-1f",
+    "cell": [
+      13,
+      7
+    ],
+    "sprite": "res://assets/pokemon-tower-1f/actor-4.png",
+    "redObject": 4,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "我的卡蒂狗……你为什么死去了？"
+  },
+  {
+    "map": "pokemon-tower-1f",
+    "cell": [
+      17,
+      7
+    ],
+    "sprite": "res://assets/pokemon-tower-1f/actor-5.png",
+    "redObject": 5,
+    "alphaBBox": [
+      3,
+      0,
+      14,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "我是一名灵媒！我感觉到塔上有恶作剧的幽灵！"
+  },
+  {
+    "map": "pokemon-tower-2f",
+    "cell": [
+      14,
+      5
+    ],
+    "sprite": "res://assets/pokemon-tower-2f/actor-1.png",
+    "redObject": 1,
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "这里是安放宝可梦灵魂的地方。"
+  },
+  {
+    "map": "pokemon-tower-2f",
+    "cell": [
+      3,
+      7
+    ],
+    "sprite": "res://assets/pokemon-tower-2f/actor-2.png",
+    "redObject": 2,
+    "alphaBBox": [
+      2,
+      0,
+      13,
+      16
+    ],
+    "startsHidden": false,
+    "item": "",
+    "text": "游荡幽灵无法辨认；检视镜也许能揭开真面目。"
+  }
+]

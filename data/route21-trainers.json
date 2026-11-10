@@ -1,0 +1,612 @@
+[
+  {
+    "map": "route21",
+    "cell": [
+      4,
+      24
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/route21/actor-1.png",
+    "facing": "left",
+    "alphaBBox": [
+      2,
+      0,
+      15,
+      16
+    ],
+    "id": "route21_ronald",
+    "name": "RONALD",
+    "title": "21号水路",
+    "party": [
+      {
+        "species_id": "seaking",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "watersport",
+          "supersonic",
+          "hornattack",
+          "flail"
+        ]
+      },
+      {
+        "species_id": "goldeen",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "watersport",
+          "supersonic",
+          "hornattack",
+          "flail"
+        ]
+      },
+      {
+        "species_id": "seaking",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "watersport",
+          "supersonic",
+          "hornattack",
+          "flail"
+        ]
+      },
+      {
+        "species_id": "seaking",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "watersport",
+          "supersonic",
+          "hornattack",
+          "flail"
+        ]
+      }
+    ],
+    "reward": 1008,
+    "portrait": "res://assets/route21/trainer-1-trainer.png",
+    "fireRedTrainer": "FishermanRonald",
+    "sourceName": "RONALD",
+    "moneyCoefficient": 9,
+    "intro": "海上的训练家来对战吧！",
+    "defeat": "你赢了！",
+    "after": "向南就是红莲岛。"
+  },
+  {
+    "map": "route21",
+    "cell": [
+      6,
+      25
+    ],
+    "redObject": 2,
+    "sprite": "res://assets/route21/actor-2.png",
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "id": "route21_wade",
+    "name": "WADE",
+    "title": "21号水路",
+    "party": [
+      {
+        "species_id": "magikarp",
+        "level": 27,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "splash",
+          "tackle"
+        ]
+      },
+      {
+        "species_id": "magikarp",
+        "level": 27,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "splash",
+          "tackle"
+        ]
+      },
+      {
+        "species_id": "magikarp",
+        "level": 27,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "splash",
+          "tackle"
+        ]
+      },
+      {
+        "species_id": "magikarp",
+        "level": 27,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "splash",
+          "tackle"
+        ]
+      },
+      {
+        "species_id": "magikarp",
+        "level": 27,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "splash",
+          "tackle"
+        ]
+      },
+      {
+        "species_id": "magikarp",
+        "level": 27,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "splash",
+          "tackle"
+        ]
+      }
+    ],
+    "reward": 972,
+    "portrait": "res://assets/route21/trainer-2-trainer.png",
+    "fireRedTrainer": "FishermanWade",
+    "sourceName": "WADE",
+    "moneyCoefficient": 9,
+    "intro": "海上的训练家来对战吧！",
+    "defeat": "你赢了！",
+    "after": "向南就是红莲岛。"
+  },
+  {
+    "map": "route21",
+    "cell": [
+      10,
+      31
+    ],
+    "redObject": 3,
+    "sprite": "res://assets/route21/actor-3.png",
+    "facing": "up",
+    "alphaBBox": [
+      1,
+      2,
+      15,
+      16
+    ],
+    "id": "route21_spencer",
+    "name": "SPENCER",
+    "title": "21号水路",
+    "party": [
+      {
+        "species_id": "seadra",
+        "level": 33,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "smokescreen",
+          "leer",
+          "watergun",
+          "twister"
+        ]
+      },
+      {
+        "species_id": "tentacruel",
+        "level": 33,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "constrict",
+          "acid",
+          "bubblebeam",
+          "wrap"
+        ]
+      }
+    ],
+    "reward": 132,
+    "portrait": "res://assets/route21/trainer-3-trainer.png",
+    "fireRedTrainer": "SwimmerMaleSpencer",
+    "sourceName": "SPENCER",
+    "moneyCoefficient": 1,
+    "intro": "海上的训练家来对战吧！",
+    "defeat": "你赢了！",
+    "after": "向南就是红莲岛。"
+  },
+  {
+    "map": "route21",
+    "cell": [
+      12,
+      30
+    ],
+    "redObject": 4,
+    "sprite": "res://assets/route21/actor-4.png",
+    "facing": "right",
+    "alphaBBox": [
+      2,
+      4,
+      16,
+      16
+    ],
+    "id": "route21_lil_ian",
+    "doubleBattle": true,
+    "name": "LIL & IAN",
+    "title": "21号水路",
+    "party": [
+      {
+        "species_id": "seadra",
+        "level": 33,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "smokescreen",
+          "leer",
+          "watergun",
+          "twister"
+        ]
+      },
+      {
+        "species_id": "starmie",
+        "level": 33,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "rapidspin",
+          "recover",
+          "swift",
+          "confuseray"
+        ]
+      }
+    ],
+    "reward": 132,
+    "portrait": "res://assets/route21/trainer-4-trainer.png",
+    "fireRedTrainer": "SisAndBroLilIan",
+    "sourceName": "LIL & IAN",
+    "moneyCoefficient": 1,
+    "intro": "海上的训练家来对战吧！",
+    "defeat": "你赢了！",
+    "after": "向南就是红莲岛。"
+  },
+  {
+    "map": "route21",
+    "cell": [
+      16,
+      63
+    ],
+    "redObject": 5,
+    "sprite": "res://assets/route21/actor-5.png",
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      1,
+      15,
+      16
+    ],
+    "id": "route21_jack",
+    "name": "JACK",
+    "title": "21号水路",
+    "party": [
+      {
+        "species_id": "starmie",
+        "level": 37,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "rapidspin",
+          "recover",
+          "swift",
+          "confuseray"
+        ]
+      }
+    ],
+    "reward": 148,
+    "portrait": "res://assets/route21/trainer-5-trainer.png",
+    "fireRedTrainer": "SwimmerMaleJack",
+    "sourceName": "JACK",
+    "moneyCoefficient": 1,
+    "intro": "海上的训练家来对战吧！",
+    "defeat": "你赢了！",
+    "after": "向南就是红莲岛。"
+  },
+  {
+    "map": "route21",
+    "cell": [
+      5,
+      71
+    ],
+    "redObject": 6,
+    "sprite": "res://assets/route21/actor-6.png",
+    "facing": "right",
+    "alphaBBox": [
+      2,
+      4,
+      16,
+      16
+    ],
+    "id": "route21_jerome",
+    "name": "JEROME",
+    "title": "21号水路",
+    "party": [
+      {
+        "species_id": "staryu",
+        "level": 33,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "camouflage",
+          "swift",
+          "bubblebeam",
+          "minimize"
+        ]
+      },
+      {
+        "species_id": "wartortle",
+        "level": 33,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "watergun",
+          "bite",
+          "rapidspin",
+          "protect"
+        ]
+      }
+    ],
+    "reward": 132,
+    "portrait": "res://assets/route21/trainer-6-trainer.png",
+    "fireRedTrainer": "SwimmerMaleJerome",
+    "sourceName": "JEROME",
+    "moneyCoefficient": 1,
+    "intro": "海上的训练家来对战吧！",
+    "defeat": "你赢了！",
+    "after": "向南就是红莲岛。"
+  },
+  {
+    "map": "route21",
+    "cell": [
+      15,
+      71
+    ],
+    "redObject": 7,
+    "sprite": "res://assets/route21/actor-7.png",
+    "facing": "left",
+    "alphaBBox": [
+      0,
+      4,
+      14,
+      16
+    ],
+    "id": "route21_roland",
+    "name": "ROLAND",
+    "title": "21号水路",
+    "party": [
+      {
+        "species_id": "poliwhirl",
+        "level": 32,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "hypnosis",
+          "watergun",
+          "doubleslap",
+          "raindance"
+        ]
+      },
+      {
+        "species_id": "tentacool",
+        "level": 32,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "constrict",
+          "acid",
+          "bubblebeam",
+          "wrap"
+        ]
+      },
+      {
+        "species_id": "seadra",
+        "level": 32,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "smokescreen",
+          "leer",
+          "watergun",
+          "twister"
+        ]
+      }
+    ],
+    "reward": 128,
+    "portrait": "res://assets/route21/trainer-7-trainer.png",
+    "fireRedTrainer": "SwimmerMaleRoland",
+    "sourceName": "ROLAND",
+    "moneyCoefficient": 1,
+    "intro": "海上的训练家来对战吧！",
+    "defeat": "你赢了！",
+    "after": "向南就是红莲岛。"
+  },
+  {
+    "map": "route21",
+    "cell": [
+      14,
+      56
+    ],
+    "redObject": 8,
+    "sprite": "res://assets/route21/actor-8.png",
+    "facing": "left",
+    "alphaBBox": [
+      2,
+      0,
+      15,
+      16
+    ],
+    "id": "route21_claude",
+    "name": "CLAUDE",
+    "title": "21号水路",
+    "party": [
+      {
+        "species_id": "shellder",
+        "level": 31,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "iciclespear",
+          "supersonic",
+          "aurorabeam",
+          "protect"
+        ]
+      },
+      {
+        "species_id": "cloyster",
+        "level": 31,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "withdraw",
+          "supersonic",
+          "aurorabeam",
+          "protect"
+        ]
+      }
+    ],
+    "reward": 1116,
+    "portrait": "res://assets/route21/trainer-8-trainer.png",
+    "fireRedTrainer": "FishermanClaude",
+    "sourceName": "CLAUDE",
+    "moneyCoefficient": 9,
+    "intro": "海上的训练家来对战吧！",
+    "defeat": "你赢了！",
+    "after": "向南就是红莲岛。"
+  },
+  {
+    "map": "route21",
+    "cell": [
+      17,
+      57
+    ],
+    "redObject": 9,
+    "sprite": "res://assets/route21/actor-9.png",
+    "facing": "right",
+    "alphaBBox": [
+      1,
+      0,
+      14,
+      16
+    ],
+    "id": "route21_nolan",
+    "name": "NOLAN",
+    "title": "21号水路",
+    "party": [
+      {
+        "species_id": "seaking",
+        "level": 33,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "supersonic",
+          "hornattack",
+          "flail",
+          "furyattack"
+        ]
+      },
+      {
+        "species_id": "goldeen",
+        "level": 33,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "supersonic",
+          "hornattack",
+          "flail",
+          "furyattack"
+        ]
+      }
+    ],
+    "reward": 1188,
+    "portrait": "res://assets/route21/trainer-9-trainer.png",
+    "fireRedTrainer": "FishermanNolan",
+    "sourceName": "NOLAN",
+    "moneyCoefficient": 9,
+    "intro": "海上的训练家来对战吧！",
+    "defeat": "你赢了！",
+    "after": "向南就是红莲岛。"
+  }
+]

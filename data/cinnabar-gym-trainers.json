@@ -1,0 +1,476 @@
+[
+  {
+    "id": "cinnabar_erik",
+    "map": "cinnabar-gym",
+    "name": "埃里克",
+    "title": "红莲道馆 · Erik",
+    "cell": [
+      17,
+      2
+    ],
+    "sprite": "res://assets/cinnabar-gym/erik.png",
+    "portrait": "res://assets/cinnabar-gym/super_nerd-portrait.png",
+    "reward": 864,
+    "party": [
+      {
+        "species_id": "vulpix",
+        "level": 36,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spa"
+        },
+        "moves": [
+          "confuseray",
+          "imprison",
+          "flamethrower",
+          "safeguard"
+        ]
+      },
+      {
+        "species_id": "vulpix",
+        "level": 36,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "atk"
+        },
+        "moves": [
+          "confuseray",
+          "imprison",
+          "flamethrower",
+          "safeguard"
+        ]
+      },
+      {
+        "species_id": "ninetales",
+        "level": 36,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "atk"
+        },
+        "moves": [
+          "ember",
+          "quickattack",
+          "confuseray",
+          "safeguard"
+        ]
+      }
+    ],
+    "intro": "想看看你的实力吗？",
+    "defeat": "继续磨炼你的宝可梦吧！",
+    "after": "训练家：已完成挑战。",
+    "redObject": 2,
+    "fireRedTrainer": "SuperNerdErik",
+    "moneyCoefficient": 6
+  },
+  {
+    "id": "cinnabar_quinn",
+    "map": "cinnabar-gym",
+    "name": "奎因",
+    "title": "红莲道馆 · Quinn",
+    "cell": [
+      17,
+      8
+    ],
+    "sprite": "res://assets/cinnabar-gym/quinn.png",
+    "portrait": "res://assets/cinnabar-gym/burglar-portrait.png",
+    "reward": 3168,
+    "party": [
+      {
+        "species_id": "growlithe",
+        "level": 36,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "leer",
+          "odorsleuth",
+          "takedown",
+          "flamewheel"
+        ]
+      },
+      {
+        "species_id": "vulpix",
+        "level": 36,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "confuseray",
+          "imprison",
+          "flamethrower",
+          "safeguard"
+        ]
+      },
+      {
+        "species_id": "ninetales",
+        "level": 36,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "atk"
+        },
+        "moves": [
+          "ember",
+          "quickattack",
+          "confuseray",
+          "safeguard"
+        ]
+      }
+    ],
+    "intro": "想看看你的实力吗？",
+    "defeat": "继续磨炼你的宝可梦吧！",
+    "after": "训练家：已完成挑战。",
+    "redObject": 3,
+    "fireRedTrainer": "BurglarQuinn",
+    "moneyCoefficient": 22
+  },
+  {
+    "id": "cinnabar_avery",
+    "map": "cinnabar-gym",
+    "name": "艾弗里",
+    "title": "红莲道馆 · Avery",
+    "cell": [
+      11,
+      4
+    ],
+    "sprite": "res://assets/cinnabar-gym/avery.png",
+    "portrait": "res://assets/cinnabar-gym/super_nerd-portrait.png",
+    "reward": 816,
+    "party": [
+      {
+        "species_id": "ponyta",
+        "level": 34,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spd"
+        },
+        "moves": [
+          "ember",
+          "stomp",
+          "firespin",
+          "takedown"
+        ]
+      },
+      {
+        "species_id": "charmander",
+        "level": 34,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "atk"
+        },
+        "moves": [
+          "metalclaw",
+          "smokescreen",
+          "scaryface",
+          "flamethrower"
+        ]
+      },
+      {
+        "species_id": "vulpix",
+        "level": 34,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "confuseray",
+          "imprison",
+          "flamethrower",
+          "safeguard"
+        ]
+      },
+      {
+        "species_id": "growlithe",
+        "level": 34,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spa"
+        },
+        "moves": [
+          "leer",
+          "odorsleuth",
+          "takedown",
+          "flamewheel"
+        ]
+      }
+    ],
+    "intro": "想看看你的实力吗？",
+    "defeat": "继续磨炼你的宝可梦吧！",
+    "after": "训练家：已完成挑战。",
+    "redObject": 4,
+    "fireRedTrainer": "SuperNerdAvery",
+    "moneyCoefficient": 6
+  },
+  {
+    "id": "cinnabar_ramon",
+    "map": "cinnabar-gym",
+    "name": "拉蒙",
+    "title": "红莲道馆 · Ramon",
+    "cell": [
+      11,
+      8
+    ],
+    "sprite": "res://assets/cinnabar-gym/ramon.png",
+    "portrait": "res://assets/cinnabar-gym/burglar-portrait.png",
+    "reward": 3608,
+    "party": [
+      {
+        "species_id": "ponyta",
+        "level": 41,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "stomp",
+          "firespin",
+          "takedown",
+          "agility"
+        ]
+      }
+    ],
+    "intro": "想看看你的实力吗？",
+    "defeat": "继续磨炼你的宝可梦吧！",
+    "after": "训练家：已完成挑战。",
+    "redObject": 5,
+    "fireRedTrainer": "BurglarRamon",
+    "moneyCoefficient": 22
+  },
+  {
+    "id": "cinnabar_derek",
+    "map": "cinnabar-gym",
+    "name": "德里克",
+    "title": "红莲道馆 · Derek",
+    "cell": [
+      11,
+      14
+    ],
+    "sprite": "res://assets/cinnabar-gym/derek.png",
+    "portrait": "res://assets/cinnabar-gym/super_nerd-portrait.png",
+    "reward": 984,
+    "party": [
+      {
+        "species_id": "rapidash",
+        "level": 41,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spa"
+        },
+        "moves": [
+          "firespin",
+          "takedown",
+          "agility",
+          "furyattack"
+        ]
+      }
+    ],
+    "intro": "想看看你的实力吗？",
+    "defeat": "继续磨炼你的宝可梦吧！",
+    "after": "训练家：已完成挑战。",
+    "redObject": 6,
+    "fireRedTrainer": "SuperNerdDerek",
+    "moneyCoefficient": 6
+  },
+  {
+    "id": "cinnabar_dusty",
+    "map": "cinnabar-gym",
+    "name": "达斯蒂",
+    "title": "红莲道馆 · Dusty",
+    "cell": [
+      3,
+      14
+    ],
+    "sprite": "res://assets/cinnabar-gym/dusty.png",
+    "portrait": "res://assets/cinnabar-gym/burglar-portrait.png",
+    "reward": 3256,
+    "party": [
+      {
+        "species_id": "vulpix",
+        "level": 37,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "atk"
+        },
+        "moves": [
+          "imprison",
+          "flamethrower",
+          "safeguard",
+          "grudge"
+        ]
+      },
+      {
+        "species_id": "growlithe",
+        "level": 37,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "atk"
+        },
+        "moves": [
+          "odorsleuth",
+          "takedown",
+          "flamewheel",
+          "helpinghand"
+        ]
+      }
+    ],
+    "intro": "想看看你的实力吗？",
+    "defeat": "继续磨炼你的宝可梦吧！",
+    "after": "训练家：已完成挑战。",
+    "redObject": 7,
+    "fireRedTrainer": "BurglarDusty",
+    "moneyCoefficient": 22
+  },
+  {
+    "id": "cinnabar_zac",
+    "map": "cinnabar-gym",
+    "name": "扎克",
+    "title": "红莲道馆 · Zac",
+    "cell": [
+      3,
+      8
+    ],
+    "sprite": "res://assets/cinnabar-gym/zac.png",
+    "portrait": "res://assets/cinnabar-gym/super_nerd-portrait.png",
+    "reward": 888,
+    "party": [
+      {
+        "species_id": "growlithe",
+        "level": 37,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "atk"
+        },
+        "moves": [
+          "odorsleuth",
+          "takedown",
+          "flamewheel",
+          "helpinghand"
+        ]
+      },
+      {
+        "species_id": "vulpix",
+        "level": 37,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spa"
+        },
+        "moves": [
+          "imprison",
+          "flamethrower",
+          "safeguard",
+          "grudge"
+        ]
+      }
+    ],
+    "intro": "想看看你的实力吗？",
+    "defeat": "继续磨炼你的宝可梦吧！",
+    "after": "训练家：已完成挑战。",
+    "redObject": 8,
+    "fireRedTrainer": "SuperNerdZac",
+    "moneyCoefficient": 6
+  },
+  {
+    "id": "cinnabar_blaine",
+    "map": "cinnabar-gym",
+    "name": "夏伯",
+    "title": "红莲道馆 · 夏伯",
+    "cell": [
+      3,
+      3
+    ],
+    "sprite": "res://assets/cinnabar-gym/blaine.png",
+    "portrait": "res://assets/cinnabar-gym/leader_blaine-portrait.png",
+    "reward": 4700,
+    "party": [
+      {
+        "species_id": "growlithe",
+        "level": 42,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "bite",
+          "roar",
+          "takedown",
+          "fireblast"
+        ]
+      },
+      {
+        "species_id": "ponyta",
+        "level": 40,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spe"
+        },
+        "moves": [
+          "stomp",
+          "bounce",
+          "firespin",
+          "fireblast"
+        ]
+      },
+      {
+        "species_id": "rapidash",
+        "level": 42,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "atk"
+        },
+        "moves": [
+          "stomp",
+          "bounce",
+          "firespin",
+          "fireblast"
+        ]
+      },
+      {
+        "species_id": "arcanine",
+        "level": 47,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spe"
+        },
+        "moves": [
+          "bite",
+          "roar",
+          "takedown",
+          "fireblast"
+        ]
+      }
+    ],
+    "badge": "volcano",
+    "intro": "火焰的威力，让你好好见识一下！",
+    "defeat": "你的实力确实不错。",
+    "after": "夏伯：火焰的威力并非唯一。",
+    "redObject": 1,
+    "fireRedTrainer": "LeaderBlaine",
+    "moneyCoefficient": 25,
+    "items": [
+      "hyperpotion",
+      "hyperpotion",
+      "fullheal"
+    ]
+  }
+]

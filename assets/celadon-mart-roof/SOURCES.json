@@ -1,0 +1,58 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/CeladonMartRoof.json",
+  "mapSHA256": "007edb23c6c115efe76018196b5e84dce2eadd71853a226dd46df0e89c3cdc59",
+  "tileset": "data/tilesets/Lobby.json",
+  "gfx": "assets/tilesets/lobby.png",
+  "warps": [
+    {
+      "x": 15,
+      "y": 2,
+      "destMap": "CELADON_MART_5F",
+      "destMapId": 136,
+      "destMapName": "CeladonMart5F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "CELADONMARTROOF_SUPER_NERD",
+      "x": 10,
+      "y": 4,
+      "sprite": "SPRITE_SUPER_NERD",
+      "spriteId": 12,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_CELADONMARTROOF_SUPER_NERD",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "CELADONMARTROOF_LITTLE_GIRL",
+      "x": 5,
+      "y": 5,
+      "sprite": "SPRITE_LITTLE_GIRL",
+      "spriteId": 8,
+      "movement": "WALK",
+      "rangeOrDirection": "ANY_DIR",
+      "rangeOrDirectionValue": 0,
+      "behavior": "walk_any",
+      "textId": "TEXT_CELADONMARTROOF_LITTLE_GIRL",
+      "textIndex": 2
+    }
+  ],
+  "localScale": 1,
+  "worldScale": 2,
+  "feetAnchor": [
+    8,
+    16
+  ],
+  "adaptation": "Red geometry/static actors; FireRed elevator floors 1-5; roof by stairs only. Counter teaching, all new shops, roof drinks/trades and GameBoy interactions deferred. No walking NPC/audio.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

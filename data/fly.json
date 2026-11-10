@@ -1,0 +1,102 @@
+{
+  "compatible": [
+    "pidgey",
+    "pidgeotto",
+    "charizard",
+    "pidgeot",
+    "spearow",
+    "fearow",
+    "doduo",
+    "farfetchd",
+    "dodrio",
+    "aerodactyl",
+    "dragonite",
+    "crobat"
+  ],
+  "destinations": [
+    {
+      "map": "pallet-town",
+      "cell": [
+        5,
+        6
+      ]
+    },
+    {
+      "map": "viridian-city",
+      "cell": [
+        23,
+        26
+      ]
+    },
+    {
+      "map": "pewter-city",
+      "cell": [
+        13,
+        26
+      ]
+    },
+    {
+      "map": "cerulean-city",
+      "cell": [
+        19,
+        18
+      ]
+    },
+    {
+      "map": "lavender-town",
+      "cell": [
+        3,
+        6
+      ]
+    },
+    {
+      "map": "vermilion-city",
+      "cell": [
+        11,
+        4
+      ]
+    },
+    {
+      "map": "celadon-city",
+      "cell": [
+        41,
+        10
+      ]
+    },
+    {
+      "map": "fuchsia-city",
+      "cell": [
+        19,
+        28
+      ]
+    },
+    {
+      "map": "cinnabar-island",
+      "cell": [
+        11,
+        12
+      ]
+    },
+    {
+      "map": "indigo-plateau",
+      "cell": [
+        9,
+        6
+      ]
+    },
+    {
+      "map": "saffron-city",
+      "cell": [
+        9,
+        30
+      ]
+    }
+  ],
+  "ruleSources": [
+    "src/party_menu.c",
+    "src/region_map.c",
+    "src/data/pokemon/tmhm_learnsets.h",
+    "src/data/battle_moves.h"
+  ],
+  "adaptation": "Visited implemented towns tracked prospectively; old saves register current town only. Red maps_meta fly landings, FR Thunder Badge/outdoor/party Fly restriction. No travel animation."
+}

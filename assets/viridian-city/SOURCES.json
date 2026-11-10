@@ -1,0 +1,16 @@
+{
+  "repository": "BrandeisPatrick/pokemon-red-web",
+  "commit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "mapSource": "local-source/ViridianCity.json",
+  "tilesetSource": "local-source/Overworld.json",
+  "originalSources": {
+    "header": "data/maps/headers/ViridianCity.asm",
+    "objects": "data/maps/objects/ViridianCity.asm",
+    "blocks": "maps/ViridianCity.blk",
+    "script": "scripts/ViridianCity.asm"
+  },
+  "mapSHA256": "bfbcbe0031ac661a2bf68607c31a40849995ecd8a8aac154f110c0714c1cb816",
+  "art": "Existing approved Pallet recolored Overworld atlas; interior original atlas mapped to existing four neutral material colors, no geometry redrawn.",
+  "adaptation": "Original Red geometry/foot-tile collision; tree top foreground split. Only center and mart doors active. Unimplemented outbound city connections blocked at boundary without added story. Other NPCs/PC/link inactive.",
+  "rights": "Original Pokemon assets rights retained; source availability is not redistribution permission."
+}

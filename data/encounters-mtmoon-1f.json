@@ -1,0 +1,78 @@
+{
+  "source": "sMtMoon1F_FireRed",
+  "encounter_rate": 7,
+  "slots": [
+    {
+      "species_id": "zubat",
+      "min_level": 7,
+      "max_level": 7,
+      "weight": 20
+    },
+    {
+      "species_id": "zubat",
+      "min_level": 8,
+      "max_level": 8,
+      "weight": 20
+    },
+    {
+      "species_id": "geodude",
+      "min_level": 7,
+      "max_level": 7,
+      "weight": 10
+    },
+    {
+      "species_id": "zubat",
+      "min_level": 9,
+      "max_level": 9,
+      "weight": 10
+    },
+    {
+      "species_id": "zubat",
+      "min_level": 10,
+      "max_level": 10,
+      "weight": 10
+    },
+    {
+      "species_id": "geodude",
+      "min_level": 8,
+      "max_level": 8,
+      "weight": 10
+    },
+    {
+      "species_id": "geodude",
+      "min_level": 9,
+      "max_level": 9,
+      "weight": 5
+    },
+    {
+      "species_id": "paras",
+      "min_level": 8,
+      "max_level": 8,
+      "weight": 5
+    },
+    {
+      "species_id": "zubat",
+      "min_level": 7,
+      "max_level": 7,
+      "weight": 4
+    },
+    {
+      "species_id": "zubat",
+      "min_level": 7,
+      "max_level": 7,
+      "weight": 4
+    },
+    {
+      "species_id": "zubat",
+      "min_level": 7,
+      "max_level": 7,
+      "weight": 1
+    },
+    {
+      "species_id": "clefairy",
+      "min_level": 8,
+      "max_level": 8,
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/SilphCo3F.json",
+  "mapSHA256": "6989730223e8510a2f893d6d0f2a221ef264d42123d37f5c66beae5807bf4efe",
+  "warps": [
+    {
+      "x": 26,
+      "y": 0,
+      "destMap": "SILPH_CO_2F",
+      "destMapId": 207,
+      "destMapName": "SilphCo2F",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 24,
+      "y": 0,
+      "destMap": "SILPH_CO_4F",
+      "destMapId": 209,
+      "destMapName": "SilphCo4F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 20,
+      "y": 0,
+      "destMap": "SILPH_CO_ELEVATOR",
+      "destMapId": 236,
+      "destMapName": "SilphCoElevator",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 23,
+      "y": 11,
+      "destMap": "SILPH_CO_3F",
+      "destMapId": 208,
+      "destMapName": "SilphCo3F",
+      "destWarp": 10,
+      "destWarpIndex": 9
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "destMap": "SILPH_CO_5F",
+      "destMapId": 210,
+      "destMapName": "SilphCo5F",
+      "destWarp": 6,
+      "destWarpIndex": 5
+    },
+    {
+      "x": 3,
+      "y": 15,
+      "destMap": "SILPH_CO_5F",
+      "destMapId": 210,
+      "destMapName": "SilphCo5F",
+      "destWarp": 7,
+      "destWarpIndex": 6
+    },
+    {
+      "x": 27,
+      "y": 3,
+      "destMap": "SILPH_CO_2F",
+      "destMapId": 207,
+      "destMapName": "SilphCo2F",
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 3,
+      "y": 11,
+      "destMap": "SILPH_CO_9F",
+      "destMapId": 233,
+      "destMapName": "SilphCo9F",
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 11,
+      "y": 11,
+      "destMap": "SILPH_CO_7F",
+      "destMapId": 212,
+      "destMapName": "SilphCo7F",
+      "destWarp": 5,
+      "destWarpIndex": 4
+    },
+    {
+      "x": 27,
+      "y": 15,
+      "destMap": "SILPH_CO_3F",
+      "destMapId": 208,
+      "destMapName": "SilphCo3F",
+      "destWarp": 4,
+      "destWarpIndex": 3
+    }
+  ],
+  "actors": [
+    {
+      "index": 1,
+      "const": "SILPHCO3F_SILPH_WORKER_M",
+      "x": 24,
+      "y": 8,
+      "sprite": "SPRITE_SILPH_WORKER_M",
+      "spriteId": 44,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_SILPHCO3F_SILPH_WORKER_M",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "SILPHCO3F_ROCKET",
+      "x": 20,
+      "y": 7,
+      "sprite": "SPRITE_ROCKET",
+      "spriteId": 24,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_SILPHCO3F_ROCKET",
+      "textIndex": 2,
+      "trainer": {
+        "trainerClass": "OPP_ROCKET",
+        "trainerClassId": 30,
+        "trainerPartyIndex": 25,
+        "header": "SilphCo3TrainerHeader0",
+        "eventFlag": "EVENT_BEAT_SILPH_CO_3F_TRAINER_0",
+        "eventFlagIndex": 1794,
+        "sightRange": 2,
+        "textBefore": "SilphCo3FRocketBattleText",
+        "textEnd": "SilphCo3FRocketEndBattleText",
+        "textAfter": "SilphCo3FRocketAfterBattleText"
+      },
+      "toggleIndex": 142,
+      "toggleConst": "TOGGLE_SILPH_CO_3F_1",
+      "startsHidden": false
+    },
+    {
+      "index": 3,
+      "const": "SILPHCO3F_SCIENTIST",
+      "x": 7,
+      "y": 9,
+      "sprite": "SPRITE_SCIENTIST",
+      "spriteId": 32,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_SILPHCO3F_SCIENTIST",
+      "textIndex": 3,
+      "trainer": {
+        "trainerClass": "OPP_SCIENTIST",
+        "trainerClassId": 28,
+        "trainerPartyIndex": 4,
+        "header": "SilphCo3TrainerHeader1",
+        "eventFlag": "EVENT_BEAT_SILPH_CO_3F_TRAINER_1",
+        "eventFlagIndex": 1795,
+        "sightRange": 3,
+        "textBefore": "SilphCo3FScientistBattleText",
+        "textEnd": "SilphCo3FScientistEndBattleText",
+        "textAfter": "SilphCo3FScientistAfterBattleText"
+      },
+      "toggleIndex": 143,
+      "toggleConst": "TOGGLE_SILPH_CO_3F_2",
+      "startsHidden": false
+    },
+    {
+      "index": 4,
+      "const": "SILPHCO3F_HYPER_POTION",
+      "x": 8,
+      "y": 5,
+      "sprite": "SPRITE_POKE_BALL",
+      "spriteId": 61,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_SILPHCO3F_HYPER_POTION",
+      "textIndex": 4,
+      "item": "HYPER_POTION",
+      "itemId": 18,
+      "toggleIndex": 144,
+      "toggleConst": "TOGGLE_SILPH_CO_3F_ITEM",
+      "startsHidden": false
+    }
+  ],
+  "doorSource": "src/game/scripts/regions/kanto5_lib.js SILPH_DOORS actual GateCoordinates; not unused maps_meta",
+  "adaptation": "Red geometry/actors native16px local1x world2x nearest, FR full parties/reward. E manual interaction; no auto sight or animation. Floors beyond slice explicitly closed. Non-key items deferred.",
+  "rights": "Original rights holders; redistribution clearance not established"
+}

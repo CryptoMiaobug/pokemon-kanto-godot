@@ -1,0 +1,36 @@
+[
+  {
+    "map": "safari-zone-north",
+    "cell": [
+      25,
+      1
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/safari-zone-north/actor-1.png",
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "item": "PROTEIN"
+  },
+  {
+    "map": "safari-zone-north",
+    "cell": [
+      19,
+      7
+    ],
+    "redObject": 2,
+    "sprite": "res://assets/safari-zone-north/actor-2.png",
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "item": "TM_SKULL_BASH"
+  }
+]

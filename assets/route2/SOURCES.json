@@ -1,0 +1,16 @@
+{
+  "repository": "BrandeisPatrick/pokemon-red-web",
+  "commit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "map": {
+    "header": "data/maps/headers/Route2.asm",
+    "objects": "data/maps/objects/Route2.asm",
+    "blocks": "maps/Route2.blk",
+    "script": "scripts/Route2.asm"
+  },
+  "tileset": "data/tilesets/Overworld.json",
+  "mapSHA256": "774677651da1c9b91944b4c08716ac57c7e7ba8a41ef97cf0b06311e9d58c2bb",
+  "art": "Existing Overworld recolor; original Forest 4-shade green tint and original ForestGate existing neutral tint; no geometry redrawn",
+  "foreground": "Original Overworld canopy feet42/43 or Forest walkable canopy feet48; trunk49 remains solid",
+  "scope": "No trainer/NPC objects; original forest gates connect both ends; Route2 north Pewter boundary closed; other Route2 doors closed; no Cut/Flash/house/cave mechanics",
+  "rights": "Original Pokemon assets; internal development, no redistribution clearance"
+}

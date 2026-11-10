@@ -1,0 +1,2480 @@
+{
+  "pound": {
+    "symbol": "POUND",
+    "effect": "EFFECT_HIT",
+    "source_pp": 35,
+    "source_power": 40,
+    "source_accuracy": 100
+  },
+  "karatechop": {
+    "symbol": "KARATE_CHOP",
+    "effect": "EFFECT_HIGH_CRITICAL",
+    "source_pp": 25,
+    "source_power": 50,
+    "source_accuracy": 100
+  },
+  "doubleslap": {
+    "symbol": "DOUBLE_SLAP",
+    "effect": "EFFECT_MULTI_HIT",
+    "source_pp": 10,
+    "source_power": 15,
+    "source_accuracy": 85
+  },
+  "cometpunch": {
+    "symbol": "COMET_PUNCH",
+    "effect": "EFFECT_MULTI_HIT",
+    "source_pp": 15,
+    "source_power": 18,
+    "source_accuracy": 85
+  },
+  "megapunch": {
+    "symbol": "MEGA_PUNCH",
+    "effect": "EFFECT_HIT",
+    "source_pp": 20,
+    "source_power": 80,
+    "source_accuracy": 85
+  },
+  "payday": {
+    "symbol": "PAY_DAY",
+    "effect": "EFFECT_PAY_DAY",
+    "source_pp": 20,
+    "source_power": 40,
+    "source_accuracy": 100
+  },
+  "firepunch": {
+    "symbol": "FIRE_PUNCH",
+    "effect": "EFFECT_BURN_HIT",
+    "source_pp": 15,
+    "source_power": 75,
+    "source_accuracy": 100
+  },
+  "icepunch": {
+    "symbol": "ICE_PUNCH",
+    "effect": "EFFECT_FREEZE_HIT",
+    "source_pp": 15,
+    "source_power": 75,
+    "source_accuracy": 100
+  },
+  "thunderpunch": {
+    "symbol": "THUNDER_PUNCH",
+    "effect": "EFFECT_PARALYZE_HIT",
+    "source_pp": 15,
+    "source_power": 75,
+    "source_accuracy": 100
+  },
+  "scratch": {
+    "symbol": "SCRATCH",
+    "effect": "EFFECT_HIT",
+    "source_pp": 35,
+    "source_power": 40,
+    "source_accuracy": 100
+  },
+  "vicegrip": {
+    "symbol": "VICE_GRIP",
+    "effect": "EFFECT_HIT",
+    "source_pp": 30,
+    "source_power": 55,
+    "source_accuracy": 100
+  },
+  "guillotine": {
+    "symbol": "GUILLOTINE",
+    "effect": "EFFECT_OHKO",
+    "source_pp": 5,
+    "source_power": 1,
+    "source_accuracy": 30
+  },
+  "razorwind": {
+    "symbol": "RAZOR_WIND",
+    "effect": "EFFECT_RAZOR_WIND",
+    "source_pp": 10,
+    "source_power": 80,
+    "source_accuracy": 100
+  },
+  "swordsdance": {
+    "symbol": "SWORDS_DANCE",
+    "effect": "EFFECT_ATTACK_UP_2",
+    "source_pp": 30,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "cut": {
+    "symbol": "CUT",
+    "effect": "EFFECT_HIT",
+    "source_pp": 30,
+    "source_power": 50,
+    "source_accuracy": 95
+  },
+  "gust": {
+    "symbol": "GUST",
+    "effect": "EFFECT_GUST",
+    "source_pp": 35,
+    "source_power": 40,
+    "source_accuracy": 100
+  },
+  "wingattack": {
+    "symbol": "WING_ATTACK",
+    "effect": "EFFECT_HIT",
+    "source_pp": 35,
+    "source_power": 60,
+    "source_accuracy": 100
+  },
+  "whirlwind": {
+    "symbol": "WHIRLWIND",
+    "effect": "EFFECT_ROAR",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "fly": {
+    "symbol": "FLY",
+    "effect": "EFFECT_SEMI_INVULNERABLE",
+    "source_pp": 15,
+    "source_power": 70,
+    "source_accuracy": 95
+  },
+  "bind": {
+    "symbol": "BIND",
+    "effect": "EFFECT_TRAP",
+    "source_pp": 20,
+    "source_power": 15,
+    "source_accuracy": 75
+  },
+  "slam": {
+    "symbol": "SLAM",
+    "effect": "EFFECT_HIT",
+    "source_pp": 20,
+    "source_power": 80,
+    "source_accuracy": 75
+  },
+  "vinewhip": {
+    "symbol": "VINE_WHIP",
+    "effect": "EFFECT_HIT",
+    "source_pp": 10,
+    "source_power": 35,
+    "source_accuracy": 100
+  },
+  "stomp": {
+    "symbol": "STOMP",
+    "effect": "EFFECT_FLINCH_MINIMIZE_HIT",
+    "source_pp": 20,
+    "source_power": 65,
+    "source_accuracy": 100
+  },
+  "doublekick": {
+    "symbol": "DOUBLE_KICK",
+    "effect": "EFFECT_DOUBLE_HIT",
+    "source_pp": 30,
+    "source_power": 30,
+    "source_accuracy": 100
+  },
+  "megakick": {
+    "symbol": "MEGA_KICK",
+    "effect": "EFFECT_HIT",
+    "source_pp": 5,
+    "source_power": 120,
+    "source_accuracy": 75
+  },
+  "jumpkick": {
+    "symbol": "JUMP_KICK",
+    "effect": "EFFECT_RECOIL_IF_MISS",
+    "source_pp": 25,
+    "source_power": 70,
+    "source_accuracy": 95
+  },
+  "rollingkick": {
+    "symbol": "ROLLING_KICK",
+    "effect": "EFFECT_FLINCH_HIT",
+    "source_pp": 15,
+    "source_power": 60,
+    "source_accuracy": 85
+  },
+  "sandattack": {
+    "symbol": "SAND_ATTACK",
+    "effect": "EFFECT_ACCURACY_DOWN",
+    "source_pp": 15,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "headbutt": {
+    "symbol": "HEADBUTT",
+    "effect": "EFFECT_FLINCH_HIT",
+    "source_pp": 15,
+    "source_power": 70,
+    "source_accuracy": 100
+  },
+  "hornattack": {
+    "symbol": "HORN_ATTACK",
+    "effect": "EFFECT_HIT",
+    "source_pp": 25,
+    "source_power": 65,
+    "source_accuracy": 100
+  },
+  "furyattack": {
+    "symbol": "FURY_ATTACK",
+    "effect": "EFFECT_MULTI_HIT",
+    "source_pp": 20,
+    "source_power": 15,
+    "source_accuracy": 85
+  },
+  "horndrill": {
+    "symbol": "HORN_DRILL",
+    "effect": "EFFECT_OHKO",
+    "source_pp": 5,
+    "source_power": 1,
+    "source_accuracy": 30
+  },
+  "tackle": {
+    "symbol": "TACKLE",
+    "effect": "EFFECT_HIT",
+    "source_pp": 35,
+    "source_power": 35,
+    "source_accuracy": 95
+  },
+  "bodyslam": {
+    "symbol": "BODY_SLAM",
+    "effect": "EFFECT_PARALYZE_HIT",
+    "source_pp": 15,
+    "source_power": 85,
+    "source_accuracy": 100
+  },
+  "wrap": {
+    "symbol": "WRAP",
+    "effect": "EFFECT_TRAP",
+    "source_pp": 20,
+    "source_power": 15,
+    "source_accuracy": 85
+  },
+  "takedown": {
+    "symbol": "TAKE_DOWN",
+    "effect": "EFFECT_RECOIL",
+    "source_pp": 20,
+    "source_power": 90,
+    "source_accuracy": 85
+  },
+  "thrash": {
+    "symbol": "THRASH",
+    "effect": "EFFECT_RAMPAGE",
+    "source_pp": 20,
+    "source_power": 90,
+    "source_accuracy": 100
+  },
+  "doubleedge": {
+    "symbol": "DOUBLE_EDGE",
+    "effect": "EFFECT_DOUBLE_EDGE",
+    "source_pp": 15,
+    "source_power": 120,
+    "source_accuracy": 100
+  },
+  "tailwhip": {
+    "symbol": "TAIL_WHIP",
+    "effect": "EFFECT_DEFENSE_DOWN",
+    "source_pp": 30,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "poisonsting": {
+    "symbol": "POISON_STING",
+    "effect": "EFFECT_POISON_HIT",
+    "source_pp": 35,
+    "source_power": 15,
+    "source_accuracy": 100
+  },
+  "twineedle": {
+    "symbol": "TWINEEDLE",
+    "effect": "EFFECT_TWINEEDLE",
+    "source_pp": 20,
+    "source_power": 25,
+    "source_accuracy": 100
+  },
+  "pinmissile": {
+    "symbol": "PIN_MISSILE",
+    "effect": "EFFECT_MULTI_HIT",
+    "source_pp": 20,
+    "source_power": 14,
+    "source_accuracy": 85
+  },
+  "leer": {
+    "symbol": "LEER",
+    "effect": "EFFECT_DEFENSE_DOWN",
+    "source_pp": 30,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "bite": {
+    "symbol": "BITE",
+    "effect": "EFFECT_FLINCH_HIT",
+    "source_pp": 25,
+    "source_power": 60,
+    "source_accuracy": 100
+  },
+  "growl": {
+    "symbol": "GROWL",
+    "effect": "EFFECT_ATTACK_DOWN",
+    "source_pp": 40,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "roar": {
+    "symbol": "ROAR",
+    "effect": "EFFECT_ROAR",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "sing": {
+    "symbol": "SING",
+    "effect": "EFFECT_SLEEP",
+    "source_pp": 15,
+    "source_power": 0,
+    "source_accuracy": 55
+  },
+  "supersonic": {
+    "symbol": "SUPERSONIC",
+    "effect": "EFFECT_CONFUSE",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 55
+  },
+  "sonicboom": {
+    "symbol": "SONIC_BOOM",
+    "effect": "EFFECT_SONICBOOM",
+    "source_pp": 20,
+    "source_power": 1,
+    "source_accuracy": 90
+  },
+  "disable": {
+    "symbol": "DISABLE",
+    "effect": "EFFECT_DISABLE",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 55
+  },
+  "acid": {
+    "symbol": "ACID",
+    "effect": "EFFECT_DEFENSE_DOWN_HIT",
+    "source_pp": 30,
+    "source_power": 40,
+    "source_accuracy": 100
+  },
+  "ember": {
+    "symbol": "EMBER",
+    "effect": "EFFECT_BURN_HIT",
+    "source_pp": 25,
+    "source_power": 40,
+    "source_accuracy": 100
+  },
+  "flamethrower": {
+    "symbol": "FLAMETHROWER",
+    "effect": "EFFECT_BURN_HIT",
+    "source_pp": 15,
+    "source_power": 95,
+    "source_accuracy": 100
+  },
+  "mist": {
+    "symbol": "MIST",
+    "effect": "EFFECT_MIST",
+    "source_pp": 30,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "watergun": {
+    "symbol": "WATER_GUN",
+    "effect": "EFFECT_HIT",
+    "source_pp": 25,
+    "source_power": 40,
+    "source_accuracy": 100
+  },
+  "hydropump": {
+    "symbol": "HYDRO_PUMP",
+    "effect": "EFFECT_HIT",
+    "source_pp": 5,
+    "source_power": 120,
+    "source_accuracy": 80
+  },
+  "surf": {
+    "symbol": "SURF",
+    "effect": "EFFECT_HIT",
+    "source_pp": 15,
+    "source_power": 95,
+    "source_accuracy": 100
+  },
+  "icebeam": {
+    "symbol": "ICE_BEAM",
+    "effect": "EFFECT_FREEZE_HIT",
+    "source_pp": 10,
+    "source_power": 95,
+    "source_accuracy": 100
+  },
+  "blizzard": {
+    "symbol": "BLIZZARD",
+    "effect": "EFFECT_FREEZE_HIT",
+    "source_pp": 5,
+    "source_power": 120,
+    "source_accuracy": 70
+  },
+  "psybeam": {
+    "symbol": "PSYBEAM",
+    "effect": "EFFECT_CONFUSE_HIT",
+    "source_pp": 20,
+    "source_power": 65,
+    "source_accuracy": 100
+  },
+  "bubblebeam": {
+    "symbol": "BUBBLE_BEAM",
+    "effect": "EFFECT_SPEED_DOWN_HIT",
+    "source_pp": 20,
+    "source_power": 65,
+    "source_accuracy": 100
+  },
+  "aurorabeam": {
+    "symbol": "AURORA_BEAM",
+    "effect": "EFFECT_ATTACK_DOWN_HIT",
+    "source_pp": 20,
+    "source_power": 65,
+    "source_accuracy": 100
+  },
+  "hyperbeam": {
+    "symbol": "HYPER_BEAM",
+    "effect": "EFFECT_RECHARGE",
+    "source_pp": 5,
+    "source_power": 150,
+    "source_accuracy": 90
+  },
+  "peck": {
+    "symbol": "PECK",
+    "effect": "EFFECT_HIT",
+    "source_pp": 35,
+    "source_power": 35,
+    "source_accuracy": 100
+  },
+  "drillpeck": {
+    "symbol": "DRILL_PECK",
+    "effect": "EFFECT_HIT",
+    "source_pp": 20,
+    "source_power": 80,
+    "source_accuracy": 100
+  },
+  "submission": {
+    "symbol": "SUBMISSION",
+    "effect": "EFFECT_RECOIL",
+    "source_pp": 25,
+    "source_power": 80,
+    "source_accuracy": 80
+  },
+  "lowkick": {
+    "symbol": "LOW_KICK",
+    "effect": "EFFECT_LOW_KICK",
+    "source_pp": 20,
+    "source_power": 1,
+    "source_accuracy": 100
+  },
+  "counter": {
+    "symbol": "COUNTER",
+    "effect": "EFFECT_COUNTER",
+    "source_pp": 20,
+    "source_power": 1,
+    "source_accuracy": 100
+  },
+  "seismictoss": {
+    "symbol": "SEISMIC_TOSS",
+    "effect": "EFFECT_LEVEL_DAMAGE",
+    "source_pp": 20,
+    "source_power": 1,
+    "source_accuracy": 100
+  },
+  "strength": {
+    "symbol": "STRENGTH",
+    "effect": "EFFECT_HIT",
+    "source_pp": 15,
+    "source_power": 80,
+    "source_accuracy": 100
+  },
+  "absorb": {
+    "symbol": "ABSORB",
+    "effect": "EFFECT_ABSORB",
+    "source_pp": 20,
+    "source_power": 20,
+    "source_accuracy": 100
+  },
+  "megadrain": {
+    "symbol": "MEGA_DRAIN",
+    "effect": "EFFECT_ABSORB",
+    "source_pp": 10,
+    "source_power": 40,
+    "source_accuracy": 100
+  },
+  "leechseed": {
+    "symbol": "LEECH_SEED",
+    "effect": "EFFECT_LEECH_SEED",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 90
+  },
+  "growth": {
+    "symbol": "GROWTH",
+    "effect": "EFFECT_SPECIAL_ATTACK_UP",
+    "source_pp": 40,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "razorleaf": {
+    "symbol": "RAZOR_LEAF",
+    "effect": "EFFECT_HIGH_CRITICAL",
+    "source_pp": 25,
+    "source_power": 55,
+    "source_accuracy": 95
+  },
+  "solarbeam": {
+    "symbol": "SOLAR_BEAM",
+    "effect": "EFFECT_SOLAR_BEAM",
+    "source_pp": 10,
+    "source_power": 120,
+    "source_accuracy": 100
+  },
+  "poisonpowder": {
+    "symbol": "POISON_POWDER",
+    "effect": "EFFECT_POISON",
+    "source_pp": 35,
+    "source_power": 0,
+    "source_accuracy": 75
+  },
+  "stunspore": {
+    "symbol": "STUN_SPORE",
+    "effect": "EFFECT_PARALYZE",
+    "source_pp": 30,
+    "source_power": 0,
+    "source_accuracy": 75
+  },
+  "sleeppowder": {
+    "symbol": "SLEEP_POWDER",
+    "effect": "EFFECT_SLEEP",
+    "source_pp": 15,
+    "source_power": 0,
+    "source_accuracy": 75
+  },
+  "petaldance": {
+    "symbol": "PETAL_DANCE",
+    "effect": "EFFECT_RAMPAGE",
+    "source_pp": 20,
+    "source_power": 70,
+    "source_accuracy": 100
+  },
+  "stringshot": {
+    "symbol": "STRING_SHOT",
+    "effect": "EFFECT_SPEED_DOWN",
+    "source_pp": 40,
+    "source_power": 0,
+    "source_accuracy": 95
+  },
+  "dragonrage": {
+    "symbol": "DRAGON_RAGE",
+    "effect": "EFFECT_DRAGON_RAGE",
+    "source_pp": 10,
+    "source_power": 1,
+    "source_accuracy": 100
+  },
+  "firespin": {
+    "symbol": "FIRE_SPIN",
+    "effect": "EFFECT_TRAP",
+    "source_pp": 15,
+    "source_power": 15,
+    "source_accuracy": 70
+  },
+  "thundershock": {
+    "symbol": "THUNDER_SHOCK",
+    "effect": "EFFECT_PARALYZE_HIT",
+    "source_pp": 30,
+    "source_power": 40,
+    "source_accuracy": 100
+  },
+  "thunderbolt": {
+    "symbol": "THUNDERBOLT",
+    "effect": "EFFECT_PARALYZE_HIT",
+    "source_pp": 15,
+    "source_power": 95,
+    "source_accuracy": 100
+  },
+  "thunderwave": {
+    "symbol": "THUNDER_WAVE",
+    "effect": "EFFECT_PARALYZE",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "thunder": {
+    "symbol": "THUNDER",
+    "effect": "EFFECT_THUNDER",
+    "source_pp": 10,
+    "source_power": 120,
+    "source_accuracy": 70
+  },
+  "rockthrow": {
+    "symbol": "ROCK_THROW",
+    "effect": "EFFECT_HIT",
+    "source_pp": 15,
+    "source_power": 50,
+    "source_accuracy": 90
+  },
+  "earthquake": {
+    "symbol": "EARTHQUAKE",
+    "effect": "EFFECT_EARTHQUAKE",
+    "source_pp": 10,
+    "source_power": 100,
+    "source_accuracy": 100
+  },
+  "fissure": {
+    "symbol": "FISSURE",
+    "effect": "EFFECT_OHKO",
+    "source_pp": 5,
+    "source_power": 1,
+    "source_accuracy": 30
+  },
+  "dig": {
+    "symbol": "DIG",
+    "effect": "EFFECT_SEMI_INVULNERABLE",
+    "source_pp": 10,
+    "source_power": 60,
+    "source_accuracy": 100
+  },
+  "toxic": {
+    "symbol": "TOXIC",
+    "effect": "EFFECT_TOXIC",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 85
+  },
+  "confusion": {
+    "symbol": "CONFUSION",
+    "effect": "EFFECT_CONFUSE_HIT",
+    "source_pp": 25,
+    "source_power": 50,
+    "source_accuracy": 100
+  },
+  "psychic": {
+    "symbol": "PSYCHIC",
+    "effect": "EFFECT_SPECIAL_DEFENSE_DOWN_HIT",
+    "source_pp": 10,
+    "source_power": 90,
+    "source_accuracy": 100
+  },
+  "hypnosis": {
+    "symbol": "HYPNOSIS",
+    "effect": "EFFECT_SLEEP",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 60
+  },
+  "meditate": {
+    "symbol": "MEDITATE",
+    "effect": "EFFECT_ATTACK_UP",
+    "source_pp": 40,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "agility": {
+    "symbol": "AGILITY",
+    "effect": "EFFECT_SPEED_UP_2",
+    "source_pp": 30,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "quickattack": {
+    "symbol": "QUICK_ATTACK",
+    "effect": "EFFECT_QUICK_ATTACK",
+    "source_pp": 30,
+    "source_power": 40,
+    "source_accuracy": 100
+  },
+  "rage": {
+    "symbol": "RAGE",
+    "effect": "EFFECT_RAGE",
+    "source_pp": 20,
+    "source_power": 20,
+    "source_accuracy": 100
+  },
+  "teleport": {
+    "symbol": "TELEPORT",
+    "effect": "EFFECT_TELEPORT",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "nightshade": {
+    "symbol": "NIGHT_SHADE",
+    "effect": "EFFECT_LEVEL_DAMAGE",
+    "source_pp": 15,
+    "source_power": 1,
+    "source_accuracy": 100
+  },
+  "mimic": {
+    "symbol": "MIMIC",
+    "effect": "EFFECT_MIMIC",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "screech": {
+    "symbol": "SCREECH",
+    "effect": "EFFECT_DEFENSE_DOWN_2",
+    "source_pp": 40,
+    "source_power": 0,
+    "source_accuracy": 85
+  },
+  "doubleteam": {
+    "symbol": "DOUBLE_TEAM",
+    "effect": "EFFECT_EVASION_UP",
+    "source_pp": 15,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "recover": {
+    "symbol": "RECOVER",
+    "effect": "EFFECT_RESTORE_HP",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "harden": {
+    "symbol": "HARDEN",
+    "effect": "EFFECT_DEFENSE_UP",
+    "source_pp": 30,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "minimize": {
+    "symbol": "MINIMIZE",
+    "effect": "EFFECT_MINIMIZE",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "smokescreen": {
+    "symbol": "SMOKESCREEN",
+    "effect": "EFFECT_ACCURACY_DOWN",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "confuseray": {
+    "symbol": "CONFUSE_RAY",
+    "effect": "EFFECT_CONFUSE",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "withdraw": {
+    "symbol": "WITHDRAW",
+    "effect": "EFFECT_DEFENSE_UP",
+    "source_pp": 40,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "defensecurl": {
+    "symbol": "DEFENSE_CURL",
+    "effect": "EFFECT_DEFENSE_CURL",
+    "source_pp": 40,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "barrier": {
+    "symbol": "BARRIER",
+    "effect": "EFFECT_DEFENSE_UP_2",
+    "source_pp": 30,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "lightscreen": {
+    "symbol": "LIGHT_SCREEN",
+    "effect": "EFFECT_LIGHT_SCREEN",
+    "source_pp": 30,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "haze": {
+    "symbol": "HAZE",
+    "effect": "EFFECT_HAZE",
+    "source_pp": 30,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "reflect": {
+    "symbol": "REFLECT",
+    "effect": "EFFECT_REFLECT",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "focusenergy": {
+    "symbol": "FOCUS_ENERGY",
+    "effect": "EFFECT_FOCUS_ENERGY",
+    "source_pp": 30,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "bide": {
+    "symbol": "BIDE",
+    "effect": "EFFECT_BIDE",
+    "source_pp": 10,
+    "source_power": 1,
+    "source_accuracy": 100
+  },
+  "metronome": {
+    "symbol": "METRONOME",
+    "effect": "EFFECT_METRONOME",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "mirrormove": {
+    "symbol": "MIRROR_MOVE",
+    "effect": "EFFECT_MIRROR_MOVE",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "selfdestruct": {
+    "symbol": "SELF_DESTRUCT",
+    "effect": "EFFECT_EXPLOSION",
+    "source_pp": 5,
+    "source_power": 200,
+    "source_accuracy": 100
+  },
+  "eggbomb": {
+    "symbol": "EGG_BOMB",
+    "effect": "EFFECT_HIT",
+    "source_pp": 10,
+    "source_power": 100,
+    "source_accuracy": 75
+  },
+  "lick": {
+    "symbol": "LICK",
+    "effect": "EFFECT_PARALYZE_HIT",
+    "source_pp": 30,
+    "source_power": 20,
+    "source_accuracy": 100
+  },
+  "smog": {
+    "symbol": "SMOG",
+    "effect": "EFFECT_POISON_HIT",
+    "source_pp": 20,
+    "source_power": 20,
+    "source_accuracy": 70
+  },
+  "sludge": {
+    "symbol": "SLUDGE",
+    "effect": "EFFECT_POISON_HIT",
+    "source_pp": 20,
+    "source_power": 65,
+    "source_accuracy": 100
+  },
+  "boneclub": {
+    "symbol": "BONE_CLUB",
+    "effect": "EFFECT_FLINCH_HIT",
+    "source_pp": 20,
+    "source_power": 65,
+    "source_accuracy": 85
+  },
+  "fireblast": {
+    "symbol": "FIRE_BLAST",
+    "effect": "EFFECT_BURN_HIT",
+    "source_pp": 5,
+    "source_power": 120,
+    "source_accuracy": 85
+  },
+  "waterfall": {
+    "symbol": "WATERFALL",
+    "effect": "EFFECT_HIT",
+    "source_pp": 15,
+    "source_power": 80,
+    "source_accuracy": 100
+  },
+  "clamp": {
+    "symbol": "CLAMP",
+    "effect": "EFFECT_TRAP",
+    "source_pp": 10,
+    "source_power": 35,
+    "source_accuracy": 75
+  },
+  "swift": {
+    "symbol": "SWIFT",
+    "effect": "EFFECT_ALWAYS_HIT",
+    "source_pp": 20,
+    "source_power": 60,
+    "source_accuracy": 0
+  },
+  "skullbash": {
+    "symbol": "SKULL_BASH",
+    "effect": "EFFECT_SKULL_BASH",
+    "source_pp": 15,
+    "source_power": 100,
+    "source_accuracy": 100
+  },
+  "spikecannon": {
+    "symbol": "SPIKE_CANNON",
+    "effect": "EFFECT_MULTI_HIT",
+    "source_pp": 15,
+    "source_power": 20,
+    "source_accuracy": 100
+  },
+  "constrict": {
+    "symbol": "CONSTRICT",
+    "effect": "EFFECT_SPEED_DOWN_HIT",
+    "source_pp": 35,
+    "source_power": 10,
+    "source_accuracy": 100
+  },
+  "amnesia": {
+    "symbol": "AMNESIA",
+    "effect": "EFFECT_SPECIAL_DEFENSE_UP_2",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "kinesis": {
+    "symbol": "KINESIS",
+    "effect": "EFFECT_ACCURACY_DOWN",
+    "source_pp": 15,
+    "source_power": 0,
+    "source_accuracy": 80
+  },
+  "softboiled": {
+    "symbol": "SOFT_BOILED",
+    "effect": "EFFECT_SOFTBOILED",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "hijumpkick": {
+    "symbol": "HI_JUMP_KICK",
+    "effect": "EFFECT_RECOIL_IF_MISS",
+    "source_pp": 20,
+    "source_power": 85,
+    "source_accuracy": 90
+  },
+  "glare": {
+    "symbol": "GLARE",
+    "effect": "EFFECT_PARALYZE",
+    "source_pp": 30,
+    "source_power": 0,
+    "source_accuracy": 75
+  },
+  "dreameater": {
+    "symbol": "DREAM_EATER",
+    "effect": "EFFECT_DREAM_EATER",
+    "source_pp": 15,
+    "source_power": 100,
+    "source_accuracy": 100
+  },
+  "poisongas": {
+    "symbol": "POISON_GAS",
+    "effect": "EFFECT_POISON",
+    "source_pp": 40,
+    "source_power": 0,
+    "source_accuracy": 55
+  },
+  "barrage": {
+    "symbol": "BARRAGE",
+    "effect": "EFFECT_MULTI_HIT",
+    "source_pp": 20,
+    "source_power": 15,
+    "source_accuracy": 85
+  },
+  "leechlife": {
+    "symbol": "LEECH_LIFE",
+    "effect": "EFFECT_ABSORB",
+    "source_pp": 15,
+    "source_power": 20,
+    "source_accuracy": 100
+  },
+  "lovelykiss": {
+    "symbol": "LOVELY_KISS",
+    "effect": "EFFECT_SLEEP",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 75
+  },
+  "skyattack": {
+    "symbol": "SKY_ATTACK",
+    "effect": "EFFECT_SKY_ATTACK",
+    "source_pp": 5,
+    "source_power": 140,
+    "source_accuracy": 90
+  },
+  "transform": {
+    "symbol": "TRANSFORM",
+    "effect": "EFFECT_TRANSFORM",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "bubble": {
+    "symbol": "BUBBLE",
+    "effect": "EFFECT_SPEED_DOWN_HIT",
+    "source_pp": 30,
+    "source_power": 20,
+    "source_accuracy": 100
+  },
+  "dizzypunch": {
+    "symbol": "DIZZY_PUNCH",
+    "effect": "EFFECT_CONFUSE_HIT",
+    "source_pp": 10,
+    "source_power": 70,
+    "source_accuracy": 100
+  },
+  "spore": {
+    "symbol": "SPORE",
+    "effect": "EFFECT_SLEEP",
+    "source_pp": 15,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "flash": {
+    "symbol": "FLASH",
+    "effect": "EFFECT_ACCURACY_DOWN",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 70
+  },
+  "psywave": {
+    "symbol": "PSYWAVE",
+    "effect": "EFFECT_PSYWAVE",
+    "source_pp": 15,
+    "source_power": 1,
+    "source_accuracy": 80
+  },
+  "splash": {
+    "symbol": "SPLASH",
+    "effect": "EFFECT_SPLASH",
+    "source_pp": 40,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "acidarmor": {
+    "symbol": "ACID_ARMOR",
+    "effect": "EFFECT_DEFENSE_UP_2",
+    "source_pp": 40,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "crabhammer": {
+    "symbol": "CRABHAMMER",
+    "effect": "EFFECT_HIGH_CRITICAL",
+    "source_pp": 10,
+    "source_power": 90,
+    "source_accuracy": 85
+  },
+  "explosion": {
+    "symbol": "EXPLOSION",
+    "effect": "EFFECT_EXPLOSION",
+    "source_pp": 5,
+    "source_power": 250,
+    "source_accuracy": 100
+  },
+  "furyswipes": {
+    "symbol": "FURY_SWIPES",
+    "effect": "EFFECT_MULTI_HIT",
+    "source_pp": 15,
+    "source_power": 18,
+    "source_accuracy": 80
+  },
+  "bonemerang": {
+    "symbol": "BONEMERANG",
+    "effect": "EFFECT_DOUBLE_HIT",
+    "source_pp": 10,
+    "source_power": 50,
+    "source_accuracy": 90
+  },
+  "rest": {
+    "symbol": "REST",
+    "effect": "EFFECT_REST",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "rockslide": {
+    "symbol": "ROCK_SLIDE",
+    "effect": "EFFECT_FLINCH_HIT",
+    "source_pp": 10,
+    "source_power": 75,
+    "source_accuracy": 90
+  },
+  "hyperfang": {
+    "symbol": "HYPER_FANG",
+    "effect": "EFFECT_FLINCH_HIT",
+    "source_pp": 15,
+    "source_power": 80,
+    "source_accuracy": 90
+  },
+  "sharpen": {
+    "symbol": "SHARPEN",
+    "effect": "EFFECT_ATTACK_UP",
+    "source_pp": 30,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "conversion": {
+    "symbol": "CONVERSION",
+    "effect": "EFFECT_CONVERSION",
+    "source_pp": 30,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "triattack": {
+    "symbol": "TRI_ATTACK",
+    "effect": "EFFECT_TRI_ATTACK",
+    "source_pp": 10,
+    "source_power": 80,
+    "source_accuracy": 100
+  },
+  "superfang": {
+    "symbol": "SUPER_FANG",
+    "effect": "EFFECT_SUPER_FANG",
+    "source_pp": 10,
+    "source_power": 1,
+    "source_accuracy": 90
+  },
+  "slash": {
+    "symbol": "SLASH",
+    "effect": "EFFECT_HIGH_CRITICAL",
+    "source_pp": 20,
+    "source_power": 70,
+    "source_accuracy": 100
+  },
+  "substitute": {
+    "symbol": "SUBSTITUTE",
+    "effect": "EFFECT_SUBSTITUTE",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "struggle": {
+    "symbol": "STRUGGLE",
+    "effect": "EFFECT_RECOIL",
+    "source_pp": 1,
+    "source_power": 50,
+    "source_accuracy": 100
+  },
+  "sketch": {
+    "symbol": "SKETCH",
+    "effect": "EFFECT_SKETCH",
+    "source_pp": 1,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "triplekick": {
+    "symbol": "TRIPLE_KICK",
+    "effect": "EFFECT_TRIPLE_KICK",
+    "source_pp": 10,
+    "source_power": 10,
+    "source_accuracy": 90
+  },
+  "thief": {
+    "symbol": "THIEF",
+    "effect": "EFFECT_THIEF",
+    "source_pp": 10,
+    "source_power": 40,
+    "source_accuracy": 100
+  },
+  "spiderweb": {
+    "symbol": "SPIDER_WEB",
+    "effect": "EFFECT_MEAN_LOOK",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "mindreader": {
+    "symbol": "MIND_READER",
+    "effect": "EFFECT_LOCK_ON",
+    "source_pp": 5,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "nightmare": {
+    "symbol": "NIGHTMARE",
+    "effect": "EFFECT_NIGHTMARE",
+    "source_pp": 15,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "flamewheel": {
+    "symbol": "FLAME_WHEEL",
+    "effect": "EFFECT_THAW_HIT",
+    "source_pp": 25,
+    "source_power": 60,
+    "source_accuracy": 100
+  },
+  "snore": {
+    "symbol": "SNORE",
+    "effect": "EFFECT_SNORE",
+    "source_pp": 15,
+    "source_power": 40,
+    "source_accuracy": 100
+  },
+  "curse": {
+    "symbol": "CURSE",
+    "effect": "EFFECT_CURSE",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "flail": {
+    "symbol": "FLAIL",
+    "effect": "EFFECT_FLAIL",
+    "source_pp": 15,
+    "source_power": 1,
+    "source_accuracy": 100
+  },
+  "conversion2": {
+    "symbol": "CONVERSION_2",
+    "effect": "EFFECT_CONVERSION_2",
+    "source_pp": 30,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "aeroblast": {
+    "symbol": "AEROBLAST",
+    "effect": "EFFECT_HIGH_CRITICAL",
+    "source_pp": 5,
+    "source_power": 100,
+    "source_accuracy": 95
+  },
+  "cottonspore": {
+    "symbol": "COTTON_SPORE",
+    "effect": "EFFECT_SPEED_DOWN_2",
+    "source_pp": 40,
+    "source_power": 0,
+    "source_accuracy": 85
+  },
+  "reversal": {
+    "symbol": "REVERSAL",
+    "effect": "EFFECT_FLAIL",
+    "source_pp": 15,
+    "source_power": 1,
+    "source_accuracy": 100
+  },
+  "spite": {
+    "symbol": "SPITE",
+    "effect": "EFFECT_SPITE",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "powdersnow": {
+    "symbol": "POWDER_SNOW",
+    "effect": "EFFECT_FREEZE_HIT",
+    "source_pp": 25,
+    "source_power": 40,
+    "source_accuracy": 100
+  },
+  "protect": {
+    "symbol": "PROTECT",
+    "effect": "EFFECT_PROTECT",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "machpunch": {
+    "symbol": "MACH_PUNCH",
+    "effect": "EFFECT_QUICK_ATTACK",
+    "source_pp": 30,
+    "source_power": 40,
+    "source_accuracy": 100
+  },
+  "scaryface": {
+    "symbol": "SCARY_FACE",
+    "effect": "EFFECT_SPEED_DOWN_2",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 90
+  },
+  "faintattack": {
+    "symbol": "FAINT_ATTACK",
+    "effect": "EFFECT_ALWAYS_HIT",
+    "source_pp": 20,
+    "source_power": 60,
+    "source_accuracy": 0
+  },
+  "sweetkiss": {
+    "symbol": "SWEET_KISS",
+    "effect": "EFFECT_CONFUSE",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 75
+  },
+  "bellydrum": {
+    "symbol": "BELLY_DRUM",
+    "effect": "EFFECT_BELLY_DRUM",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "sludgebomb": {
+    "symbol": "SLUDGE_BOMB",
+    "effect": "EFFECT_POISON_HIT",
+    "source_pp": 10,
+    "source_power": 90,
+    "source_accuracy": 100
+  },
+  "mudslap": {
+    "symbol": "MUD_SLAP",
+    "effect": "EFFECT_ACCURACY_DOWN_HIT",
+    "source_pp": 10,
+    "source_power": 20,
+    "source_accuracy": 100
+  },
+  "octazooka": {
+    "symbol": "OCTAZOOKA",
+    "effect": "EFFECT_ACCURACY_DOWN_HIT",
+    "source_pp": 10,
+    "source_power": 65,
+    "source_accuracy": 85
+  },
+  "spikes": {
+    "symbol": "SPIKES",
+    "effect": "EFFECT_SPIKES",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "zapcannon": {
+    "symbol": "ZAP_CANNON",
+    "effect": "EFFECT_PARALYZE_HIT",
+    "source_pp": 5,
+    "source_power": 100,
+    "source_accuracy": 50
+  },
+  "foresight": {
+    "symbol": "FORESIGHT",
+    "effect": "EFFECT_FORESIGHT",
+    "source_pp": 40,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "destinybond": {
+    "symbol": "DESTINY_BOND",
+    "effect": "EFFECT_DESTINY_BOND",
+    "source_pp": 5,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "perishsong": {
+    "symbol": "PERISH_SONG",
+    "effect": "EFFECT_PERISH_SONG",
+    "source_pp": 5,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "icywind": {
+    "symbol": "ICY_WIND",
+    "effect": "EFFECT_SPEED_DOWN_HIT",
+    "source_pp": 15,
+    "source_power": 55,
+    "source_accuracy": 95
+  },
+  "detect": {
+    "symbol": "DETECT",
+    "effect": "EFFECT_PROTECT",
+    "source_pp": 5,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "bonerush": {
+    "symbol": "BONE_RUSH",
+    "effect": "EFFECT_MULTI_HIT",
+    "source_pp": 10,
+    "source_power": 25,
+    "source_accuracy": 80
+  },
+  "lockon": {
+    "symbol": "LOCK_ON",
+    "effect": "EFFECT_LOCK_ON",
+    "source_pp": 5,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "outrage": {
+    "symbol": "OUTRAGE",
+    "effect": "EFFECT_RAMPAGE",
+    "source_pp": 15,
+    "source_power": 90,
+    "source_accuracy": 100
+  },
+  "sandstorm": {
+    "symbol": "SANDSTORM",
+    "effect": "EFFECT_SANDSTORM",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "gigadrain": {
+    "symbol": "GIGA_DRAIN",
+    "effect": "EFFECT_ABSORB",
+    "source_pp": 5,
+    "source_power": 60,
+    "source_accuracy": 100
+  },
+  "endure": {
+    "symbol": "ENDURE",
+    "effect": "EFFECT_ENDURE",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "charm": {
+    "symbol": "CHARM",
+    "effect": "EFFECT_ATTACK_DOWN_2",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "rollout": {
+    "symbol": "ROLLOUT",
+    "effect": "EFFECT_ROLLOUT",
+    "source_pp": 20,
+    "source_power": 30,
+    "source_accuracy": 90
+  },
+  "falseswipe": {
+    "symbol": "FALSE_SWIPE",
+    "effect": "EFFECT_FALSE_SWIPE",
+    "source_pp": 40,
+    "source_power": 40,
+    "source_accuracy": 100
+  },
+  "swagger": {
+    "symbol": "SWAGGER",
+    "effect": "EFFECT_SWAGGER",
+    "source_pp": 15,
+    "source_power": 0,
+    "source_accuracy": 90
+  },
+  "milkdrink": {
+    "symbol": "MILK_DRINK",
+    "effect": "EFFECT_SOFTBOILED",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "spark": {
+    "symbol": "SPARK",
+    "effect": "EFFECT_PARALYZE_HIT",
+    "source_pp": 20,
+    "source_power": 65,
+    "source_accuracy": 100
+  },
+  "furycutter": {
+    "symbol": "FURY_CUTTER",
+    "effect": "EFFECT_FURY_CUTTER",
+    "source_pp": 20,
+    "source_power": 10,
+    "source_accuracy": 95
+  },
+  "steelwing": {
+    "symbol": "STEEL_WING",
+    "effect": "EFFECT_DEFENSE_UP_HIT",
+    "source_pp": 25,
+    "source_power": 70,
+    "source_accuracy": 90
+  },
+  "meanlook": {
+    "symbol": "MEAN_LOOK",
+    "effect": "EFFECT_MEAN_LOOK",
+    "source_pp": 5,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "attract": {
+    "symbol": "ATTRACT",
+    "effect": "EFFECT_ATTRACT",
+    "source_pp": 15,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "sleeptalk": {
+    "symbol": "SLEEP_TALK",
+    "effect": "EFFECT_SLEEP_TALK",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "healbell": {
+    "symbol": "HEAL_BELL",
+    "effect": "EFFECT_HEAL_BELL",
+    "source_pp": 5,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "return": {
+    "symbol": "RETURN",
+    "effect": "EFFECT_RETURN",
+    "source_pp": 20,
+    "source_power": 1,
+    "source_accuracy": 100
+  },
+  "present": {
+    "symbol": "PRESENT",
+    "effect": "EFFECT_PRESENT",
+    "source_pp": 15,
+    "source_power": 1,
+    "source_accuracy": 90
+  },
+  "frustration": {
+    "symbol": "FRUSTRATION",
+    "effect": "EFFECT_FRUSTRATION",
+    "source_pp": 20,
+    "source_power": 1,
+    "source_accuracy": 100
+  },
+  "safeguard": {
+    "symbol": "SAFEGUARD",
+    "effect": "EFFECT_SAFEGUARD",
+    "source_pp": 25,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "painsplit": {
+    "symbol": "PAIN_SPLIT",
+    "effect": "EFFECT_PAIN_SPLIT",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "sacredfire": {
+    "symbol": "SACRED_FIRE",
+    "effect": "EFFECT_THAW_HIT",
+    "source_pp": 5,
+    "source_power": 100,
+    "source_accuracy": 95
+  },
+  "magnitude": {
+    "symbol": "MAGNITUDE",
+    "effect": "EFFECT_MAGNITUDE",
+    "source_pp": 30,
+    "source_power": 1,
+    "source_accuracy": 100
+  },
+  "dynamicpunch": {
+    "symbol": "DYNAMIC_PUNCH",
+    "effect": "EFFECT_CONFUSE_HIT",
+    "source_pp": 5,
+    "source_power": 100,
+    "source_accuracy": 50
+  },
+  "megahorn": {
+    "symbol": "MEGAHORN",
+    "effect": "EFFECT_HIT",
+    "source_pp": 10,
+    "source_power": 120,
+    "source_accuracy": 85
+  },
+  "dragonbreath": {
+    "symbol": "DRAGON_BREATH",
+    "effect": "EFFECT_PARALYZE_HIT",
+    "source_pp": 20,
+    "source_power": 60,
+    "source_accuracy": 100
+  },
+  "batonpass": {
+    "symbol": "BATON_PASS",
+    "effect": "EFFECT_BATON_PASS",
+    "source_pp": 40,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "encore": {
+    "symbol": "ENCORE",
+    "effect": "EFFECT_ENCORE",
+    "source_pp": 5,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "pursuit": {
+    "symbol": "PURSUIT",
+    "effect": "EFFECT_PURSUIT",
+    "source_pp": 20,
+    "source_power": 40,
+    "source_accuracy": 100
+  },
+  "rapidspin": {
+    "symbol": "RAPID_SPIN",
+    "effect": "EFFECT_RAPID_SPIN",
+    "source_pp": 40,
+    "source_power": 20,
+    "source_accuracy": 100
+  },
+  "sweetscent": {
+    "symbol": "SWEET_SCENT",
+    "effect": "EFFECT_EVASION_DOWN",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "irontail": {
+    "symbol": "IRON_TAIL",
+    "effect": "EFFECT_DEFENSE_DOWN_HIT",
+    "source_pp": 15,
+    "source_power": 100,
+    "source_accuracy": 75
+  },
+  "metalclaw": {
+    "symbol": "METAL_CLAW",
+    "effect": "EFFECT_ATTACK_UP_HIT",
+    "source_pp": 35,
+    "source_power": 50,
+    "source_accuracy": 95
+  },
+  "vitalthrow": {
+    "symbol": "VITAL_THROW",
+    "effect": "EFFECT_VITAL_THROW",
+    "source_pp": 10,
+    "source_power": 70,
+    "source_accuracy": 100
+  },
+  "morningsun": {
+    "symbol": "MORNING_SUN",
+    "effect": "EFFECT_MORNING_SUN",
+    "source_pp": 5,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "synthesis": {
+    "symbol": "SYNTHESIS",
+    "effect": "EFFECT_SYNTHESIS",
+    "source_pp": 5,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "moonlight": {
+    "symbol": "MOONLIGHT",
+    "effect": "EFFECT_MOONLIGHT",
+    "source_pp": 5,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "hiddenpower": {
+    "symbol": "HIDDEN_POWER",
+    "effect": "EFFECT_HIDDEN_POWER",
+    "source_pp": 15,
+    "source_power": 1,
+    "source_accuracy": 100
+  },
+  "crosschop": {
+    "symbol": "CROSS_CHOP",
+    "effect": "EFFECT_HIGH_CRITICAL",
+    "source_pp": 5,
+    "source_power": 100,
+    "source_accuracy": 80
+  },
+  "twister": {
+    "symbol": "TWISTER",
+    "effect": "EFFECT_TWISTER",
+    "source_pp": 20,
+    "source_power": 40,
+    "source_accuracy": 100
+  },
+  "raindance": {
+    "symbol": "RAIN_DANCE",
+    "effect": "EFFECT_RAIN_DANCE",
+    "source_pp": 5,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "sunnyday": {
+    "symbol": "SUNNY_DAY",
+    "effect": "EFFECT_SUNNY_DAY",
+    "source_pp": 5,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "crunch": {
+    "symbol": "CRUNCH",
+    "effect": "EFFECT_SPECIAL_DEFENSE_DOWN_HIT",
+    "source_pp": 15,
+    "source_power": 80,
+    "source_accuracy": 100
+  },
+  "mirrorcoat": {
+    "symbol": "MIRROR_COAT",
+    "effect": "EFFECT_MIRROR_COAT",
+    "source_pp": 20,
+    "source_power": 1,
+    "source_accuracy": 100
+  },
+  "psychup": {
+    "symbol": "PSYCH_UP",
+    "effect": "EFFECT_PSYCH_UP",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "extremespeed": {
+    "symbol": "EXTREME_SPEED",
+    "effect": "EFFECT_QUICK_ATTACK",
+    "source_pp": 5,
+    "source_power": 80,
+    "source_accuracy": 100
+  },
+  "ancientpower": {
+    "symbol": "ANCIENT_POWER",
+    "effect": "EFFECT_ALL_STATS_UP_HIT",
+    "source_pp": 5,
+    "source_power": 60,
+    "source_accuracy": 100
+  },
+  "shadowball": {
+    "symbol": "SHADOW_BALL",
+    "effect": "EFFECT_SPECIAL_DEFENSE_DOWN_HIT",
+    "source_pp": 15,
+    "source_power": 80,
+    "source_accuracy": 100
+  },
+  "futuresight": {
+    "symbol": "FUTURE_SIGHT",
+    "effect": "EFFECT_FUTURE_SIGHT",
+    "source_pp": 15,
+    "source_power": 80,
+    "source_accuracy": 90
+  },
+  "rocksmash": {
+    "symbol": "ROCK_SMASH",
+    "effect": "EFFECT_DEFENSE_DOWN_HIT",
+    "source_pp": 15,
+    "source_power": 20,
+    "source_accuracy": 100
+  },
+  "whirlpool": {
+    "symbol": "WHIRLPOOL",
+    "effect": "EFFECT_TRAP",
+    "source_pp": 15,
+    "source_power": 15,
+    "source_accuracy": 70
+  },
+  "beatup": {
+    "symbol": "BEAT_UP",
+    "effect": "EFFECT_BEAT_UP",
+    "source_pp": 10,
+    "source_power": 10,
+    "source_accuracy": 100
+  },
+  "fakeout": {
+    "symbol": "FAKE_OUT",
+    "effect": "EFFECT_FAKE_OUT",
+    "source_pp": 10,
+    "source_power": 40,
+    "source_accuracy": 100
+  },
+  "uproar": {
+    "symbol": "UPROAR",
+    "effect": "EFFECT_UPROAR",
+    "source_pp": 10,
+    "source_power": 50,
+    "source_accuracy": 100
+  },
+  "stockpile": {
+    "symbol": "STOCKPILE",
+    "effect": "EFFECT_STOCKPILE",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "spitup": {
+    "symbol": "SPIT_UP",
+    "effect": "EFFECT_SPIT_UP",
+    "source_pp": 10,
+    "source_power": 100,
+    "source_accuracy": 100
+  },
+  "swallow": {
+    "symbol": "SWALLOW",
+    "effect": "EFFECT_SWALLOW",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "heatwave": {
+    "symbol": "HEAT_WAVE",
+    "effect": "EFFECT_BURN_HIT",
+    "source_pp": 10,
+    "source_power": 100,
+    "source_accuracy": 90
+  },
+  "hail": {
+    "symbol": "HAIL",
+    "effect": "EFFECT_HAIL",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "torment": {
+    "symbol": "TORMENT",
+    "effect": "EFFECT_TORMENT",
+    "source_pp": 15,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "flatter": {
+    "symbol": "FLATTER",
+    "effect": "EFFECT_FLATTER",
+    "source_pp": 15,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "willowisp": {
+    "symbol": "WILL_O_WISP",
+    "effect": "EFFECT_WILL_O_WISP",
+    "source_pp": 15,
+    "source_power": 0,
+    "source_accuracy": 75
+  },
+  "memento": {
+    "symbol": "MEMENTO",
+    "effect": "EFFECT_MEMENTO",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "facade": {
+    "symbol": "FACADE",
+    "effect": "EFFECT_FACADE",
+    "source_pp": 20,
+    "source_power": 70,
+    "source_accuracy": 100
+  },
+  "focuspunch": {
+    "symbol": "FOCUS_PUNCH",
+    "effect": "EFFECT_FOCUS_PUNCH",
+    "source_pp": 20,
+    "source_power": 150,
+    "source_accuracy": 100
+  },
+  "smellingsalt": {
+    "symbol": "SMELLING_SALT",
+    "effect": "EFFECT_SMELLINGSALT",
+    "source_pp": 10,
+    "source_power": 60,
+    "source_accuracy": 100
+  },
+  "followme": {
+    "symbol": "FOLLOW_ME",
+    "effect": "EFFECT_FOLLOW_ME",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "naturepower": {
+    "symbol": "NATURE_POWER",
+    "effect": "EFFECT_NATURE_POWER",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "charge": {
+    "symbol": "CHARGE",
+    "effect": "EFFECT_CHARGE",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "taunt": {
+    "symbol": "TAUNT",
+    "effect": "EFFECT_TAUNT",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "helpinghand": {
+    "symbol": "HELPING_HAND",
+    "effect": "EFFECT_HELPING_HAND",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "trick": {
+    "symbol": "TRICK",
+    "effect": "EFFECT_TRICK",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "roleplay": {
+    "symbol": "ROLE_PLAY",
+    "effect": "EFFECT_ROLE_PLAY",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "wish": {
+    "symbol": "WISH",
+    "effect": "EFFECT_WISH",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "assist": {
+    "symbol": "ASSIST",
+    "effect": "EFFECT_ASSIST",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "ingrain": {
+    "symbol": "INGRAIN",
+    "effect": "EFFECT_INGRAIN",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "superpower": {
+    "symbol": "SUPERPOWER",
+    "effect": "EFFECT_SUPERPOWER",
+    "source_pp": 5,
+    "source_power": 120,
+    "source_accuracy": 100
+  },
+  "magiccoat": {
+    "symbol": "MAGIC_COAT",
+    "effect": "EFFECT_MAGIC_COAT",
+    "source_pp": 15,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "recycle": {
+    "symbol": "RECYCLE",
+    "effect": "EFFECT_RECYCLE",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "revenge": {
+    "symbol": "REVENGE",
+    "effect": "EFFECT_REVENGE",
+    "source_pp": 10,
+    "source_power": 60,
+    "source_accuracy": 100
+  },
+  "brickbreak": {
+    "symbol": "BRICK_BREAK",
+    "effect": "EFFECT_BRICK_BREAK",
+    "source_pp": 15,
+    "source_power": 75,
+    "source_accuracy": 100
+  },
+  "yawn": {
+    "symbol": "YAWN",
+    "effect": "EFFECT_YAWN",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "knockoff": {
+    "symbol": "KNOCK_OFF",
+    "effect": "EFFECT_KNOCK_OFF",
+    "source_pp": 20,
+    "source_power": 20,
+    "source_accuracy": 100
+  },
+  "endeavor": {
+    "symbol": "ENDEAVOR",
+    "effect": "EFFECT_ENDEAVOR",
+    "source_pp": 5,
+    "source_power": 1,
+    "source_accuracy": 100
+  },
+  "eruption": {
+    "symbol": "ERUPTION",
+    "effect": "EFFECT_ERUPTION",
+    "source_pp": 5,
+    "source_power": 150,
+    "source_accuracy": 100
+  },
+  "skillswap": {
+    "symbol": "SKILL_SWAP",
+    "effect": "EFFECT_SKILL_SWAP",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "imprison": {
+    "symbol": "IMPRISON",
+    "effect": "EFFECT_IMPRISON",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "refresh": {
+    "symbol": "REFRESH",
+    "effect": "EFFECT_REFRESH",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "grudge": {
+    "symbol": "GRUDGE",
+    "effect": "EFFECT_GRUDGE",
+    "source_pp": 5,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "snatch": {
+    "symbol": "SNATCH",
+    "effect": "EFFECT_SNATCH",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "secretpower": {
+    "symbol": "SECRET_POWER",
+    "effect": "EFFECT_SECRET_POWER",
+    "source_pp": 20,
+    "source_power": 70,
+    "source_accuracy": 100
+  },
+  "dive": {
+    "symbol": "DIVE",
+    "effect": "EFFECT_SEMI_INVULNERABLE",
+    "source_pp": 10,
+    "source_power": 60,
+    "source_accuracy": 100
+  },
+  "armthrust": {
+    "symbol": "ARM_THRUST",
+    "effect": "EFFECT_MULTI_HIT",
+    "source_pp": 20,
+    "source_power": 15,
+    "source_accuracy": 100
+  },
+  "camouflage": {
+    "symbol": "CAMOUFLAGE",
+    "effect": "EFFECT_CAMOUFLAGE",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "tailglow": {
+    "symbol": "TAIL_GLOW",
+    "effect": "EFFECT_SPECIAL_ATTACK_UP_2",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "lusterpurge": {
+    "symbol": "LUSTER_PURGE",
+    "effect": "EFFECT_SPECIAL_DEFENSE_DOWN_HIT",
+    "source_pp": 5,
+    "source_power": 70,
+    "source_accuracy": 100
+  },
+  "mistball": {
+    "symbol": "MIST_BALL",
+    "effect": "EFFECT_SPECIAL_ATTACK_DOWN_HIT",
+    "source_pp": 5,
+    "source_power": 70,
+    "source_accuracy": 100
+  },
+  "featherdance": {
+    "symbol": "FEATHER_DANCE",
+    "effect": "EFFECT_ATTACK_DOWN_2",
+    "source_pp": 15,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "teeterdance": {
+    "symbol": "TEETER_DANCE",
+    "effect": "EFFECT_TEETER_DANCE",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "blazekick": {
+    "symbol": "BLAZE_KICK",
+    "effect": "EFFECT_BLAZE_KICK",
+    "source_pp": 10,
+    "source_power": 85,
+    "source_accuracy": 90
+  },
+  "mudsport": {
+    "symbol": "MUD_SPORT",
+    "effect": "EFFECT_MUD_SPORT",
+    "source_pp": 15,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "iceball": {
+    "symbol": "ICE_BALL",
+    "effect": "EFFECT_ROLLOUT",
+    "source_pp": 20,
+    "source_power": 30,
+    "source_accuracy": 90
+  },
+  "needlearm": {
+    "symbol": "NEEDLE_ARM",
+    "effect": "EFFECT_FLINCH_MINIMIZE_HIT",
+    "source_pp": 15,
+    "source_power": 60,
+    "source_accuracy": 100
+  },
+  "slackoff": {
+    "symbol": "SLACK_OFF",
+    "effect": "EFFECT_RESTORE_HP",
+    "source_pp": 10,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "hypervoice": {
+    "symbol": "HYPER_VOICE",
+    "effect": "EFFECT_HIT",
+    "source_pp": 10,
+    "source_power": 90,
+    "source_accuracy": 100
+  },
+  "poisonfang": {
+    "symbol": "POISON_FANG",
+    "effect": "EFFECT_POISON_FANG",
+    "source_pp": 15,
+    "source_power": 50,
+    "source_accuracy": 100
+  },
+  "crushclaw": {
+    "symbol": "CRUSH_CLAW",
+    "effect": "EFFECT_DEFENSE_DOWN_HIT",
+    "source_pp": 10,
+    "source_power": 75,
+    "source_accuracy": 95
+  },
+  "blastburn": {
+    "symbol": "BLAST_BURN",
+    "effect": "EFFECT_RECHARGE",
+    "source_pp": 5,
+    "source_power": 150,
+    "source_accuracy": 90
+  },
+  "hydrocannon": {
+    "symbol": "HYDRO_CANNON",
+    "effect": "EFFECT_RECHARGE",
+    "source_pp": 5,
+    "source_power": 150,
+    "source_accuracy": 90
+  },
+  "meteormash": {
+    "symbol": "METEOR_MASH",
+    "effect": "EFFECT_ATTACK_UP_HIT",
+    "source_pp": 10,
+    "source_power": 100,
+    "source_accuracy": 85
+  },
+  "astonish": {
+    "symbol": "ASTONISH",
+    "effect": "EFFECT_FLINCH_MINIMIZE_HIT",
+    "source_pp": 15,
+    "source_power": 30,
+    "source_accuracy": 100
+  },
+  "weatherball": {
+    "symbol": "WEATHER_BALL",
+    "effect": "EFFECT_WEATHER_BALL",
+    "source_pp": 10,
+    "source_power": 50,
+    "source_accuracy": 100
+  },
+  "aromatherapy": {
+    "symbol": "AROMATHERAPY",
+    "effect": "EFFECT_HEAL_BELL",
+    "source_pp": 5,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "faketears": {
+    "symbol": "FAKE_TEARS",
+    "effect": "EFFECT_SPECIAL_DEFENSE_DOWN_2",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "aircutter": {
+    "symbol": "AIR_CUTTER",
+    "effect": "EFFECT_HIGH_CRITICAL",
+    "source_pp": 25,
+    "source_power": 55,
+    "source_accuracy": 95
+  },
+  "overheat": {
+    "symbol": "OVERHEAT",
+    "effect": "EFFECT_OVERHEAT",
+    "source_pp": 5,
+    "source_power": 140,
+    "source_accuracy": 90
+  },
+  "odorsleuth": {
+    "symbol": "ODOR_SLEUTH",
+    "effect": "EFFECT_FORESIGHT",
+    "source_pp": 40,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "rocktomb": {
+    "symbol": "ROCK_TOMB",
+    "effect": "EFFECT_SPEED_DOWN_HIT",
+    "source_pp": 10,
+    "source_power": 50,
+    "source_accuracy": 80
+  },
+  "silverwind": {
+    "symbol": "SILVER_WIND",
+    "effect": "EFFECT_ALL_STATS_UP_HIT",
+    "source_pp": 5,
+    "source_power": 60,
+    "source_accuracy": 100
+  },
+  "metalsound": {
+    "symbol": "METAL_SOUND",
+    "effect": "EFFECT_SPECIAL_DEFENSE_DOWN_2",
+    "source_pp": 40,
+    "source_power": 0,
+    "source_accuracy": 85
+  },
+  "grasswhistle": {
+    "symbol": "GRASS_WHISTLE",
+    "effect": "EFFECT_SLEEP",
+    "source_pp": 15,
+    "source_power": 0,
+    "source_accuracy": 55
+  },
+  "tickle": {
+    "symbol": "TICKLE",
+    "effect": "EFFECT_TICKLE",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "cosmicpower": {
+    "symbol": "COSMIC_POWER",
+    "effect": "EFFECT_COSMIC_POWER",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "waterspout": {
+    "symbol": "WATER_SPOUT",
+    "effect": "EFFECT_ERUPTION",
+    "source_pp": 5,
+    "source_power": 150,
+    "source_accuracy": 100
+  },
+  "signalbeam": {
+    "symbol": "SIGNAL_BEAM",
+    "effect": "EFFECT_CONFUSE_HIT",
+    "source_pp": 15,
+    "source_power": 75,
+    "source_accuracy": 100
+  },
+  "shadowpunch": {
+    "symbol": "SHADOW_PUNCH",
+    "effect": "EFFECT_ALWAYS_HIT",
+    "source_pp": 20,
+    "source_power": 60,
+    "source_accuracy": 0
+  },
+  "extrasensory": {
+    "symbol": "EXTRASENSORY",
+    "effect": "EFFECT_FLINCH_MINIMIZE_HIT",
+    "source_pp": 30,
+    "source_power": 80,
+    "source_accuracy": 100
+  },
+  "skyuppercut": {
+    "symbol": "SKY_UPPERCUT",
+    "effect": "EFFECT_SKY_UPPERCUT",
+    "source_pp": 15,
+    "source_power": 85,
+    "source_accuracy": 90
+  },
+  "sandtomb": {
+    "symbol": "SAND_TOMB",
+    "effect": "EFFECT_TRAP",
+    "source_pp": 15,
+    "source_power": 15,
+    "source_accuracy": 70
+  },
+  "sheercold": {
+    "symbol": "SHEER_COLD",
+    "effect": "EFFECT_OHKO",
+    "source_pp": 5,
+    "source_power": 1,
+    "source_accuracy": 30
+  },
+  "muddywater": {
+    "symbol": "MUDDY_WATER",
+    "effect": "EFFECT_ACCURACY_DOWN_HIT",
+    "source_pp": 10,
+    "source_power": 95,
+    "source_accuracy": 85
+  },
+  "bulletseed": {
+    "symbol": "BULLET_SEED",
+    "effect": "EFFECT_MULTI_HIT",
+    "source_pp": 30,
+    "source_power": 10,
+    "source_accuracy": 100
+  },
+  "aerialace": {
+    "symbol": "AERIAL_ACE",
+    "effect": "EFFECT_ALWAYS_HIT",
+    "source_pp": 20,
+    "source_power": 60,
+    "source_accuracy": 0
+  },
+  "iciclespear": {
+    "symbol": "ICICLE_SPEAR",
+    "effect": "EFFECT_MULTI_HIT",
+    "source_pp": 30,
+    "source_power": 10,
+    "source_accuracy": 100
+  },
+  "irondefense": {
+    "symbol": "IRON_DEFENSE",
+    "effect": "EFFECT_DEFENSE_UP_2",
+    "source_pp": 15,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "block": {
+    "symbol": "BLOCK",
+    "effect": "EFFECT_MEAN_LOOK",
+    "source_pp": 5,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "howl": {
+    "symbol": "HOWL",
+    "effect": "EFFECT_ATTACK_UP",
+    "source_pp": 40,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "dragonclaw": {
+    "symbol": "DRAGON_CLAW",
+    "effect": "EFFECT_HIT",
+    "source_pp": 15,
+    "source_power": 80,
+    "source_accuracy": 100
+  },
+  "frenzyplant": {
+    "symbol": "FRENZY_PLANT",
+    "effect": "EFFECT_RECHARGE",
+    "source_pp": 5,
+    "source_power": 150,
+    "source_accuracy": 90
+  },
+  "bulkup": {
+    "symbol": "BULK_UP",
+    "effect": "EFFECT_BULK_UP",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "bounce": {
+    "symbol": "BOUNCE",
+    "effect": "EFFECT_SEMI_INVULNERABLE",
+    "source_pp": 5,
+    "source_power": 85,
+    "source_accuracy": 85
+  },
+  "mudshot": {
+    "symbol": "MUD_SHOT",
+    "effect": "EFFECT_SPEED_DOWN_HIT",
+    "source_pp": 15,
+    "source_power": 55,
+    "source_accuracy": 95
+  },
+  "poisontail": {
+    "symbol": "POISON_TAIL",
+    "effect": "EFFECT_POISON_TAIL",
+    "source_pp": 25,
+    "source_power": 50,
+    "source_accuracy": 100
+  },
+  "covet": {
+    "symbol": "COVET",
+    "effect": "EFFECT_THIEF",
+    "source_pp": 40,
+    "source_power": 40,
+    "source_accuracy": 100
+  },
+  "volttackle": {
+    "symbol": "VOLT_TACKLE",
+    "effect": "EFFECT_DOUBLE_EDGE",
+    "source_pp": 15,
+    "source_power": 120,
+    "source_accuracy": 100
+  },
+  "magicalleaf": {
+    "symbol": "MAGICAL_LEAF",
+    "effect": "EFFECT_ALWAYS_HIT",
+    "source_pp": 20,
+    "source_power": 60,
+    "source_accuracy": 0
+  },
+  "watersport": {
+    "symbol": "WATER_SPORT",
+    "effect": "EFFECT_WATER_SPORT",
+    "source_pp": 15,
+    "source_power": 0,
+    "source_accuracy": 100
+  },
+  "calmmind": {
+    "symbol": "CALM_MIND",
+    "effect": "EFFECT_CALM_MIND",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "leafblade": {
+    "symbol": "LEAF_BLADE",
+    "effect": "EFFECT_HIGH_CRITICAL",
+    "source_pp": 15,
+    "source_power": 70,
+    "source_accuracy": 100
+  },
+  "dragondance": {
+    "symbol": "DRAGON_DANCE",
+    "effect": "EFFECT_DRAGON_DANCE",
+    "source_pp": 20,
+    "source_power": 0,
+    "source_accuracy": 0
+  },
+  "rockblast": {
+    "symbol": "ROCK_BLAST",
+    "effect": "EFFECT_MULTI_HIT",
+    "source_pp": 10,
+    "source_power": 25,
+    "source_accuracy": 80
+  },
+  "shockwave": {
+    "symbol": "SHOCK_WAVE",
+    "effect": "EFFECT_ALWAYS_HIT",
+    "source_pp": 20,
+    "source_power": 60,
+    "source_accuracy": 0
+  },
+  "waterpulse": {
+    "symbol": "WATER_PULSE",
+    "effect": "EFFECT_CONFUSE_HIT",
+    "source_pp": 20,
+    "source_power": 60,
+    "source_accuracy": 100
+  },
+  "doomdesire": {
+    "symbol": "DOOM_DESIRE",
+    "effect": "EFFECT_FUTURE_SIGHT",
+    "source_pp": 5,
+    "source_power": 120,
+    "source_accuracy": 85
+  },
+  "psychoboost": {
+    "symbol": "PSYCHO_BOOST",
+    "effect": "EFFECT_OVERHEAT",
+    "source_pp": 5,
+    "source_power": 140,
+    "source_accuracy": 90
+  }
+}

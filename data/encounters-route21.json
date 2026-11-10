@@ -1,0 +1,115 @@
+{
+  "source": "sRoute21North_FireRed + identical South",
+  "land": {
+    "encounter_rate": 14,
+    "slots": [
+      {
+        "species_id": "tangela",
+        "min_level": 22,
+        "max_level": 22,
+        "weight": 20
+      },
+      {
+        "species_id": "tangela",
+        "min_level": 23,
+        "max_level": 23,
+        "weight": 20
+      },
+      {
+        "species_id": "tangela",
+        "min_level": 24,
+        "max_level": 24,
+        "weight": 10
+      },
+      {
+        "species_id": "tangela",
+        "min_level": 21,
+        "max_level": 21,
+        "weight": 10
+      },
+      {
+        "species_id": "tangela",
+        "min_level": 25,
+        "max_level": 25,
+        "weight": 10
+      },
+      {
+        "species_id": "tangela",
+        "min_level": 20,
+        "max_level": 20,
+        "weight": 10
+      },
+      {
+        "species_id": "tangela",
+        "min_level": 19,
+        "max_level": 19,
+        "weight": 5
+      },
+      {
+        "species_id": "tangela",
+        "min_level": 26,
+        "max_level": 26,
+        "weight": 5
+      },
+      {
+        "species_id": "tangela",
+        "min_level": 18,
+        "max_level": 18,
+        "weight": 4
+      },
+      {
+        "species_id": "tangela",
+        "min_level": 27,
+        "max_level": 27,
+        "weight": 4
+      },
+      {
+        "species_id": "tangela",
+        "min_level": 17,
+        "max_level": 17,
+        "weight": 1
+      },
+      {
+        "species_id": "tangela",
+        "min_level": 28,
+        "max_level": 28,
+        "weight": 1
+      }
+    ]
+  },
+  "water": {
+    "encounter_rate": 2,
+    "slots": [
+      {
+        "species_id": "tentacool",
+        "min_level": 5,
+        "max_level": 10,
+        "weight": 60
+      },
+      {
+        "species_id": "tentacool",
+        "min_level": 10,
+        "max_level": 20,
+        "weight": 30
+      },
+      {
+        "species_id": "tentacool",
+        "min_level": 20,
+        "max_level": 30,
+        "weight": 5
+      },
+      {
+        "species_id": "tentacool",
+        "min_level": 30,
+        "max_level": 35,
+        "weight": 4
+      },
+      {
+        "species_id": "tentacool",
+        "min_level": 35,
+        "max_level": 40,
+        "weight": 1
+      }
+    ]
+  }
+}

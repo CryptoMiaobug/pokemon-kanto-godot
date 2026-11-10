@@ -1,0 +1,104 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/CeladonMart5F.json",
+  "mapSHA256": "fb8a831f06a05dd44cc4822920da5e895b86a2adfd3a7d45bef17df43ed536f1",
+  "tileset": "data/tilesets/Lobby.json",
+  "gfx": "assets/tilesets/lobby.png",
+  "warps": [
+    {
+      "x": 12,
+      "y": 1,
+      "destMap": "CELADON_MART_ROOF",
+      "destMapId": 126,
+      "destMapName": "CeladonMartRoof",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 16,
+      "y": 1,
+      "destMap": "CELADON_MART_4F",
+      "destMapId": 125,
+      "destMapName": "CeladonMart4F",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "destMap": "CELADON_MART_ELEVATOR",
+      "destMapId": 127,
+      "destMapName": "CeladonMartElevator",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "CELADONMART5F_GENTLEMAN",
+      "x": 14,
+      "y": 5,
+      "sprite": "SPRITE_GENTLEMAN",
+      "spriteId": 16,
+      "movement": "WALK",
+      "rangeOrDirection": "UP_DOWN",
+      "rangeOrDirectionValue": 1,
+      "behavior": "walk_up_down",
+      "textId": "TEXT_CELADONMART5F_GENTLEMAN",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "CELADONMART5F_SAILOR",
+      "x": 2,
+      "y": 6,
+      "sprite": "SPRITE_SAILOR",
+      "spriteId": 19,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_CELADONMART5F_SAILOR",
+      "textIndex": 2
+    },
+    {
+      "index": 3,
+      "const": "CELADONMART5F_CLERK1",
+      "x": 5,
+      "y": 3,
+      "sprite": "SPRITE_CLERK",
+      "spriteId": 38,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_CELADONMART5F_CLERK1",
+      "textIndex": 3
+    },
+    {
+      "index": 4,
+      "const": "CELADONMART5F_CLERK2",
+      "x": 6,
+      "y": 3,
+      "sprite": "SPRITE_CLERK",
+      "spriteId": 38,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_CELADONMART5F_CLERK2",
+      "textIndex": 4
+    }
+  ],
+  "localScale": 1,
+  "worldScale": 2,
+  "feetAnchor": [
+    8,
+    16
+  ],
+  "adaptation": "Red geometry/static actors; FireRed elevator floors 1-5; roof by stairs only. Counter teaching, all new shops, roof drinks/trades and GameBoy interactions deferred. No walking NPC/audio.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

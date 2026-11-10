@@ -1,0 +1,287 @@
+{
+  "baseline": "8980952691103bcf8c11678f011e0572f82d8580",
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "sources": [
+    "Red data/maps/GameCorner.json RocketHideoutB1F.json CeladonCity.json",
+    "Red src/game/scripts/regions/kanto4.js HIDEOUT_STAIRS8,2 0x2a/0x43 and HIDEOUT_B1F_DOOR12,8 0x54/0x0e",
+    "FR data/maps/CeladonCity_GameCorner/scripts.inc RocketHideout_B1F/scripts.inc",
+    "FR src/data/trainer_parties.h TeamRocketGrunt7..12; trainers.h; battle_main.c TEAM_ROCKET coefficient8"
+  ],
+  "dependencies": {
+    "existing": [
+      "all six parties species moves status/evasion/secondary effects",
+      "atomic trainer growth/rewards",
+      "source geometry importer static16px actors and shared indexed warps"
+    ],
+    "required": [
+      "Red GameCorner20x18 and RocketHideoutB1F30x28",
+      "eleven GameCorner actors incl guard and five B1F trainers; source item sprites remain noncollectable",
+      "guard removal after victory; poster automatic switch commit; source stairs block swap",
+      "B1F fifth trainer source barrier opens after victory",
+      "optional v3 rocket_hideout_open bool; new map safe restoration"
+    ],
+    "deferred": [
+      "B2-B4 and spinner mechanisms",
+      "Lift Key elevator Giovanni Silph Scope",
+      "slots coins prizes",
+      "nonessential visible/hidden item pickup",
+      "source NPC wandering and guard exit walking animation; source position retained until victory then removed",
+      "full AI abilities held items"
+    ]
+  },
+  "story": [
+    {
+      "before": "guard present at9,5 in front of poster9,4",
+      "action": "confirm full FR two-mon battle",
+      "after": "640 and guard victory flag/growth atomic; guard disappears",
+      "repeat": "guard absent no repeated prize"
+    },
+    {
+      "before": "poster reachable after guard leaves",
+      "action": "E facing original poster; source auto-push, no invented yes/no",
+      "after": "rocket_hideout_open true atomic then source block8,2 wall42 -> stairs67",
+      "reward": 0,
+      "repeat": "already open no state/reward changes"
+    },
+    {
+      "before": "open stairs17,4",
+      "action": "walk source warp index2",
+      "after": "B1F warp index1 at21,2; reverse returns17,4",
+      "reward": 0
+    },
+    {
+      "before": "B1F trainer unbeaten",
+      "action": "win full source team",
+      "after": "individual flag and source prize atomic; fifth trainer also causes source barrier block12,8 closed84 -> open14",
+      "repeat": "no repeated prize"
+    },
+    {
+      "before": "cancel defeat interrupted battle actual write failure",
+      "action": "cancel/loss/failure",
+      "after": "no new reward or stage; failure restores exact prior memory and disk"
+    }
+  ],
+  "source_order_note": "FR and Red poster script has no explicit trainer-defeat check; original guard occupies the reachable investigation cell. Preserve physical ordering rather than inventing an extra flag lock. Fifth B1F trainer barrier is inside authorized B1F and is not an invented plot gate.",
+  "map": "data/maps/RocketHideoutB1F.json",
+  "mapSHA256": "5564da77f5505a97a63ef52e8a224e1229b1939d313225bda5586e4fcdaba6d1",
+  "actors": [
+    {
+      "index": 1,
+      "const": "ROCKETHIDEOUTB1F_ROCKET1",
+      "x": 26,
+      "y": 8,
+      "sprite": "SPRITE_ROCKET",
+      "spriteId": 24,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROCKETHIDEOUTB1F_ROCKET1",
+      "textIndex": 1,
+      "trainer": {
+        "trainerClass": "OPP_ROCKET",
+        "trainerClassId": 30,
+        "trainerPartyIndex": 8,
+        "header": "RocketHideout1TrainerHeader0",
+        "eventFlag": "EVENT_BEAT_ROCKET_HIDEOUT_1_TRAINER_0",
+        "eventFlagIndex": 1649,
+        "sightRange": 3,
+        "textBefore": "RocketHideoutB1FRocket1BattleText",
+        "textEnd": "RocketHideoutB1FRocket1EndBattleText",
+        "textAfter": "RocketHideoutB1FRocket1AfterBattleText"
+      }
+    },
+    {
+      "index": 2,
+      "const": "ROCKETHIDEOUTB1F_ROCKET2",
+      "x": 12,
+      "y": 6,
+      "sprite": "SPRITE_ROCKET",
+      "spriteId": 24,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_ROCKETHIDEOUTB1F_ROCKET2",
+      "textIndex": 2,
+      "trainer": {
+        "trainerClass": "OPP_ROCKET",
+        "trainerClassId": 30,
+        "trainerPartyIndex": 9,
+        "header": "RocketHideout1TrainerHeader1",
+        "eventFlag": "EVENT_BEAT_ROCKET_HIDEOUT_1_TRAINER_1",
+        "eventFlagIndex": 1650,
+        "sightRange": 2,
+        "textBefore": "RocketHideoutB1FRocket2BattleText",
+        "textEnd": "RocketHideoutB1FRocket2EndBattleText",
+        "textAfter": "RocketHideoutB1FRocket2AfterBattleText"
+      }
+    },
+    {
+      "index": 3,
+      "const": "ROCKETHIDEOUTB1F_ROCKET3",
+      "x": 18,
+      "y": 17,
+      "sprite": "SPRITE_ROCKET",
+      "spriteId": 24,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROCKETHIDEOUTB1F_ROCKET3",
+      "textIndex": 3,
+      "trainer": {
+        "trainerClass": "OPP_ROCKET",
+        "trainerClassId": 30,
+        "trainerPartyIndex": 10,
+        "header": "RocketHideout1TrainerHeader2",
+        "eventFlag": "EVENT_BEAT_ROCKET_HIDEOUT_1_TRAINER_2",
+        "eventFlagIndex": 1651,
+        "sightRange": 2,
+        "textBefore": "RocketHideoutB1FRocket3BattleText",
+        "textEnd": "RocketHideoutB1FRocket3EndBattleText",
+        "textAfter": "RocketHideoutB1FRocket3AfterBattleText"
+      }
+    },
+    {
+      "index": 4,
+      "const": "ROCKETHIDEOUTB1F_ROCKET4",
+      "x": 15,
+      "y": 25,
+      "sprite": "SPRITE_ROCKET",
+      "spriteId": 24,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_ROCKETHIDEOUTB1F_ROCKET4",
+      "textIndex": 4,
+      "trainer": {
+        "trainerClass": "OPP_ROCKET",
+        "trainerClassId": 30,
+        "trainerPartyIndex": 11,
+        "header": "RocketHideout1TrainerHeader3",
+        "eventFlag": "EVENT_BEAT_ROCKET_HIDEOUT_1_TRAINER_3",
+        "eventFlagIndex": 1652,
+        "sightRange": 3,
+        "textBefore": "RocketHideoutB1FRocket4BattleText",
+        "textEnd": "RocketHideoutB1FRocket4EndBattleText",
+        "textAfter": "RocketHideoutB1FRocket4AfterBattleText"
+      }
+    },
+    {
+      "index": 5,
+      "const": "ROCKETHIDEOUTB1F_ROCKET5",
+      "x": 28,
+      "y": 18,
+      "sprite": "SPRITE_ROCKET",
+      "spriteId": 24,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROCKETHIDEOUTB1F_ROCKET5",
+      "textIndex": 5,
+      "trainer": {
+        "trainerClass": "OPP_ROCKET",
+        "trainerClassId": 30,
+        "trainerPartyIndex": 12,
+        "header": "RocketHideout1TrainerHeader4",
+        "eventFlag": "EVENT_BEAT_ROCKET_HIDEOUT_1_TRAINER_4",
+        "eventFlagIndex": 1653,
+        "sightRange": 3,
+        "textBefore": "RocketHideoutB1FRocket5BattleText",
+        "textEnd": "RocketHideoutB1FRocket5EndBattleText",
+        "textAfter": "RocketHideoutB1FRocket5AfterBattleText"
+      }
+    },
+    {
+      "index": 6,
+      "const": "ROCKETHIDEOUTB1F_ESCAPE_ROPE",
+      "x": 11,
+      "y": 14,
+      "sprite": "SPRITE_POKE_BALL",
+      "spriteId": 61,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_ROCKETHIDEOUTB1F_ESCAPE_ROPE",
+      "textIndex": 6,
+      "item": "ESCAPE_ROPE",
+      "itemId": 29,
+      "toggleIndex": 123,
+      "toggleConst": "TOGGLE_ROCKET_HIDEOUT_B1F_ITEM_1",
+      "startsHidden": false
+    },
+    {
+      "index": 7,
+      "const": "ROCKETHIDEOUTB1F_HYPER_POTION",
+      "x": 9,
+      "y": 17,
+      "sprite": "SPRITE_POKE_BALL",
+      "spriteId": 61,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_ROCKETHIDEOUTB1F_HYPER_POTION",
+      "textIndex": 7,
+      "item": "HYPER_POTION",
+      "itemId": 18,
+      "toggleIndex": 124,
+      "toggleConst": "TOGGLE_ROCKET_HIDEOUT_B1F_ITEM_2",
+      "startsHidden": false
+    }
+  ],
+  "warps": [
+    {
+      "x": 23,
+      "y": 2,
+      "destMap": "ROCKET_HIDEOUT_B2F",
+      "destMapId": 200,
+      "destMapName": "RocketHideoutB2F",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 21,
+      "y": 2,
+      "destMap": "GAME_CORNER",
+      "destMapId": 135,
+      "destMapName": "GameCorner",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 24,
+      "y": 19,
+      "destMap": "ROCKET_HIDEOUT_ELEVATOR",
+      "destMapId": 203,
+      "destMapName": "RocketHideoutElevator",
+      "destWarp": 1,
+      "destWarpIndex": 0
+    },
+    {
+      "x": 21,
+      "y": 24,
+      "destMap": "ROCKET_HIDEOUT_B2F",
+      "destMapId": 200,
+      "destMapName": "RocketHideoutB2F",
+      "destWarp": 4,
+      "destWarpIndex": 3
+    },
+    {
+      "x": 25,
+      "y": 19,
+      "destMap": "ROCKET_HIDEOUT_ELEVATOR",
+      "destMapId": 203,
+      "destMapName": "RocketHideoutElevator",
+      "destWarp": 2,
+      "destWarpIndex": 1
+    }
+  ],
+  "rights": "Original rights holders; no redistribution clearance.",
+  "adaptation": "Original Red foot geometry and source dynamic block swaps; static original16px NPCs local1x world2x nearest. E-confirm trainers no autosight. Deferred items still visible/noncollectable. Guard disappears after atomic win without walking exit animation."
+}

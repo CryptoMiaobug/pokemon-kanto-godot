@@ -1,0 +1,374 @@
+[
+  {
+    "id": "route17_raul",
+    "map": "route17",
+    "name": "光头男劳尔",
+    "title": "光头男劳尔 · 17号道路上段",
+    "cell": [
+      12,
+      19
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route17/actor-1.png",
+    "portrait": "res://assets/route17/raul-trainer.png",
+    "party": [
+      {
+        "species_id": "mankey",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "karatechop",
+          "furyswipes",
+          "focusenergy",
+          "seismictoss"
+        ]
+      },
+      {
+        "species_id": "primeape",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "furyswipes",
+          "focusenergy",
+          "seismictoss",
+          "rage"
+        ]
+      }
+    ],
+    "reward": 696,
+    "intro": "自行车道上也要认真对战！",
+    "defeat": "下坡太快了！",
+    "after": "南边道路尚在施工，请先返回上段。",
+    "redObject": 1,
+    "fireRedTrainer": "CueBallRaul"
+  },
+  {
+    "id": "route17_isaiah",
+    "map": "route17",
+    "name": "光头男以赛亚",
+    "title": "光头男以赛亚 · 17号道路上段",
+    "cell": [
+      11,
+      16
+    ],
+    "facing": "right",
+    "sprite": "res://assets/route17/actor-2.png",
+    "portrait": "res://assets/route17/isaiah-trainer.png",
+    "party": [
+      {
+        "species_id": "machop",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "karatechop",
+          "seismictoss",
+          "foresight",
+          "revenge"
+        ]
+      },
+      {
+        "species_id": "machamp",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "def"
+        },
+        "moves": [
+          "karatechop",
+          "seismictoss",
+          "foresight",
+          "revenge"
+        ]
+      }
+    ],
+    "reward": 696,
+    "intro": "自行车道上也要认真对战！",
+    "defeat": "下坡太快了！",
+    "after": "南边道路尚在施工，请先返回上段。",
+    "redObject": 2,
+    "fireRedTrainer": "CueBallIsaiah"
+  },
+  {
+    "id": "route17_virgil",
+    "map": "route17",
+    "name": "暴走族维吉尔",
+    "title": "暴走族维吉尔 · 17号道路上段",
+    "cell": [
+      4,
+      18
+    ],
+    "facing": "up",
+    "sprite": "res://assets/route17/actor-3.png",
+    "portrait": "res://assets/route17/virgil-trainer.png",
+    "party": [
+      {
+        "species_id": "weezing",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "atk"
+        },
+        "moves": [
+          "smokescreen",
+          "sludge",
+          "smog",
+          "tackle"
+        ]
+      },
+      {
+        "species_id": "koffing",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "smokescreen",
+          "sludge",
+          "smog",
+          "tackle"
+        ]
+      },
+      {
+        "species_id": "weezing",
+        "level": 28,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "smokescreen",
+          "sludge",
+          "smog",
+          "tackle"
+        ]
+      }
+    ],
+    "reward": 560,
+    "intro": "自行车道上也要认真对战！",
+    "defeat": "下坡太快了！",
+    "after": "南边道路尚在施工，请先返回上段。",
+    "redObject": 3,
+    "fireRedTrainer": "BikerVirgil"
+  },
+  {
+    "id": "route17_billy",
+    "map": "route17",
+    "name": "暴走族比利",
+    "title": "暴走族比利 · 17号道路上段",
+    "cell": [
+      7,
+      32
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route17/actor-4.png",
+    "portrait": "res://assets/route17/billy-trainer.png",
+    "party": [
+      {
+        "species_id": "muk",
+        "level": 33,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spd"
+        },
+        "moves": [
+          "disable",
+          "sludge",
+          "minimize",
+          "screech"
+        ]
+      }
+    ],
+    "reward": 660,
+    "intro": "自行车道上也要认真对战！",
+    "defeat": "下坡太快了！",
+    "after": "南边道路尚在施工，请先返回上段。",
+    "redObject": 4,
+    "fireRedTrainer": "BikerBilly"
+  },
+  {
+    "id": "route17_nikolas",
+    "map": "route17",
+    "name": "暴走族尼古拉斯",
+    "title": "暴走族尼古拉斯 · 17号道路上段",
+    "cell": [
+      14,
+      34
+    ],
+    "facing": "right",
+    "sprite": "res://assets/route17/actor-5.png",
+    "portrait": "res://assets/route17/nikolas-trainer.png",
+    "party": [
+      {
+        "species_id": "voltorb",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "atk"
+        },
+        "moves": [
+          "spark",
+          "sonicboom",
+          "screech",
+          "charge"
+        ]
+      },
+      {
+        "species_id": "voltorb",
+        "level": 29,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spd"
+        },
+        "moves": [
+          "spark",
+          "sonicboom",
+          "screech",
+          "charge"
+        ]
+      }
+    ],
+    "reward": 580,
+    "intro": "自行车道上也要认真对战！",
+    "defeat": "下坡太快了！",
+    "after": "南边道路尚在施工，请先返回上段。",
+    "redObject": 5,
+    "fireRedTrainer": "BikerNikolas"
+  },
+  {
+    "id": "route17_zeek",
+    "map": "route17",
+    "name": "光头男齐克",
+    "title": "光头男齐克 · 17号道路上段",
+    "cell": [
+      17,
+      58
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route17/actor-6.png",
+    "portrait": "res://assets/route17/zeek-trainer.png",
+    "party": [
+      {
+        "species_id": "machoke",
+        "level": 33,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "atk"
+        },
+        "moves": [
+          "seismictoss",
+          "foresight",
+          "revenge",
+          "vitalthrow"
+        ]
+      }
+    ],
+    "reward": 792,
+    "intro": "自行车道上也要认真对战！",
+    "defeat": "下坡太快了！",
+    "after": "南边道路尚在施工，请先返回上段。",
+    "redObject": 6,
+    "fireRedTrainer": "CueBallZeek"
+  },
+  {
+    "id": "route17_jamal",
+    "map": "route17",
+    "name": "光头男贾马尔",
+    "title": "光头男贾马尔 · 17号道路上段",
+    "cell": [
+      2,
+      68
+    ],
+    "facing": "right",
+    "sprite": "res://assets/route17/actor-7.png",
+    "portrait": "res://assets/route17/jamal-trainer.png",
+    "party": [
+      {
+        "species_id": "mankey",
+        "level": 26,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spa"
+        },
+        "moves": [
+          "karatechop",
+          "furyswipes",
+          "focusenergy",
+          "seismictoss"
+        ]
+      },
+      {
+        "species_id": "mankey",
+        "level": 26,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "atk"
+        },
+        "moves": [
+          "karatechop",
+          "furyswipes",
+          "focusenergy",
+          "seismictoss"
+        ]
+      },
+      {
+        "species_id": "machamp",
+        "level": 26,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spd"
+        },
+        "moves": [
+          "karatechop",
+          "seismictoss",
+          "foresight",
+          "revenge"
+        ]
+      },
+      {
+        "species_id": "machop",
+        "level": 26,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spa"
+        },
+        "moves": [
+          "karatechop",
+          "seismictoss",
+          "foresight",
+          "revenge"
+        ]
+      }
+    ],
+    "reward": 624,
+    "intro": "自行车道上也要认真对战！",
+    "defeat": "下坡太快了！",
+    "after": "南边道路尚在施工，请先返回上段。",
+    "redObject": 7,
+    "fireRedTrainer": "CueBallJamal"
+  }
+]

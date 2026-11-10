@@ -1,0 +1,65 @@
+{
+  "baseline": "91bc89616ba8a616addf7be10e1e376aa461666b",
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "sources": [
+    "Red data/maps/CeladonGym.json and CeladonCity.json tilesets cut swaps",
+    "FR trainer_parties.h trainers.h CeladonCity_Gym scripts/text",
+    "FR battle_util.c Ingrain16 battle_script_commands.c rooted switching Reflect5 pokemon.c damage"
+  ],
+  "dependencies": {
+    "existing": [
+      "atomic trainer growth/rewards",
+      "Cut block swap cascade knownCut",
+      "sleep poison paralysis seed absorb secondary boosts"
+    ],
+    "required": [
+      "gym180feet eight source NPC parties",
+      "six species Gloom Weepinbell Exeggcute Victreebel Tangela Vileplume",
+      "Ingrain heal16/root switch/roar immunity",
+      "GigaDrain half damage healing",
+      "Reflect5 physical damage halve except critical",
+      "Constrict10% speed down",
+      "rainbow badge atomic and HUD",
+      "source two city Cut trees and gym cut blocks"
+    ],
+    "deferred": [
+      "TM19 reward/teaching no fake usable item",
+      "Strength obedience additional badge boosts",
+      "full source AI/abilities/held items",
+      "trainer source item use beyond existing implemented subset"
+    ]
+  },
+  "story": [
+    {
+      "before": "city southern tree",
+      "prerequisite": "cascade badge and party Cut",
+      "action": "E confirm Cut",
+      "after": "source replaced block until map leave",
+      "reward": 0
+    },
+    {
+      "before": "city source gym door",
+      "action": "ordinary enter",
+      "after": "original gym south",
+      "reward": 0
+    },
+    {
+      "before": "unbeaten trainer",
+      "action": "E confirm full win",
+      "after": "source prize and individual beaten flag atomic",
+      "repeat": "no new prize"
+    },
+    {
+      "before": "unbeaten Erika",
+      "action": "full three source party win",
+      "after": "2900 money rainbow and gym flags atomic; TM19 deferred",
+      "repeat": "no new prize"
+    },
+    {
+      "before": "cancel defeat interrupt/save failure",
+      "action": "cancel/loss/failure",
+      "after": "no new reward; failed write restores exact prior state"
+    }
+  ]
+}

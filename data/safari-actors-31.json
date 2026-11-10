@@ -1,0 +1,53 @@
+[
+  {
+    "map": "wardens-house",
+    "cell": [
+      2,
+      3
+    ],
+    "redObject": 1,
+    "sprite": "res://assets/wardens-house/actor-1.png",
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "item": ""
+  },
+  {
+    "map": "wardens-house",
+    "cell": [
+      8,
+      3
+    ],
+    "redObject": 2,
+    "sprite": "res://assets/wardens-house/actor-2.png",
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "item": "RARE_CANDY"
+  },
+  {
+    "map": "wardens-house",
+    "cell": [
+      8,
+      4
+    ],
+    "redObject": 3,
+    "sprite": "res://assets/wardens-house/actor-3.png",
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "item": ""
+  }
+]

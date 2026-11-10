@@ -1,0 +1,225 @@
+[
+  {
+    "id": "vermilion_surge",
+    "map": "vermilion-gym",
+    "name": "馆主马志士",
+    "title": "馆主马志士 · 枯叶道馆",
+    "cell": [
+      5,
+      1
+    ],
+    "sprite": "res://assets/vermilion-gym/actor-1.png",
+    "facing": "down",
+    "portrait": "res://assets/vermilion-gym/surge-trainer.png",
+    "reward": 2400,
+    "party": [
+      {
+        "species_id": "voltorb",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spa"
+        },
+        "moves": [
+          "sonicboom",
+          "tackle",
+          "screech",
+          "shockwave"
+        ]
+      },
+      {
+        "species_id": "pikachu",
+        "level": 18,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "atk"
+        },
+        "moves": [
+          "quickattack",
+          "thunderwave",
+          "doubleteam",
+          "shockwave"
+        ]
+      },
+      {
+        "species_id": "raichu",
+        "level": 24,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "quickattack",
+          "thunderwave",
+          "doubleteam",
+          "shockwave"
+        ]
+      }
+    ],
+    "intro": "嘿，小子！电属性宝可梦曾在战争中救过我！让我看看你的实力！",
+    "defeat": "真让人震惊！你是货真价实的训练家！雷电徽章是你的了！",
+    "after": "电属性招式对地面属性无效。TM34教学与徽章额外效果本轮延期。",
+    "badge": "thunder",
+    "ai": "surge",
+    "items": [
+      "superpotion",
+      "fullheal"
+    ],
+    "redObject": 1,
+    "fireRedTrainer": "LeaderLtSurge",
+    "sourceHashName": "LT. SURGE"
+  },
+  {
+    "id": "vermilion_tucker",
+    "map": "vermilion-gym",
+    "name": "绅士塔克",
+    "title": "绅士塔克 · 枯叶道馆",
+    "cell": [
+      9,
+      6
+    ],
+    "sprite": "res://assets/vermilion-gym/actor-2.png",
+    "facing": "left",
+    "portrait": "res://assets/vermilion-gym/tucker-trainer.png",
+    "reward": 1656,
+    "party": [
+      {
+        "species_id": "pikachu",
+        "level": 23,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "thunderwave",
+          "quickattack",
+          "doubleteam",
+          "slam"
+        ]
+      }
+    ],
+    "intro": "在军队里，马志士曾是我严格的长官。",
+    "defeat": "停！你真厉害！",
+    "after": "继续磨炼你的宝可梦吧！",
+    "badge": "",
+    "ai": "bad_move_only",
+    "items": [],
+    "redObject": 2,
+    "fireRedTrainer": "GentlemanTucker",
+    "sourceHashName": "TUCKER"
+  },
+  {
+    "id": "vermilion_baily",
+    "map": "vermilion-gym",
+    "name": "工程师贝利",
+    "title": "工程师贝利 · 枯叶道馆",
+    "cell": [
+      3,
+      8
+    ],
+    "sprite": "res://assets/vermilion-gym/actor-3.png",
+    "facing": "left",
+    "portrait": "res://assets/vermilion-gym/baily-trainer.png",
+    "reward": 1008,
+    "party": [
+      {
+        "species_id": "voltorb",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "tackle",
+          "screech",
+          "sonicboom",
+          "spark"
+        ]
+      },
+      {
+        "species_id": "magnemite",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "def"
+        },
+        "moves": [
+          "thundershock",
+          "supersonic",
+          "sonicboom",
+          "thunderwave"
+        ]
+      }
+    ],
+    "intro": "这里是电属性道馆，小心被电到！",
+    "defeat": "哇，被你打败了！",
+    "after": "继续磨炼你的宝可梦吧！",
+    "badge": "",
+    "ai": "bad_move_only",
+    "items": [],
+    "redObject": 3,
+    "fireRedTrainer": "EngineerBaily",
+    "sourceHashName": "BAILY"
+  },
+  {
+    "id": "vermilion_dwayne",
+    "map": "vermilion-gym",
+    "name": "水手德韦恩",
+    "title": "水手德韦恩 · 枯叶道馆",
+    "cell": [
+      0,
+      10
+    ],
+    "sprite": "res://assets/vermilion-gym/actor-4.png",
+    "facing": "right",
+    "portrait": "res://assets/vermilion-gym/dwayne-trainer.png",
+    "reward": 672,
+    "party": [
+      {
+        "species_id": "pikachu",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "atk"
+        },
+        "moves": [
+          "thunderwave",
+          "quickattack",
+          "doubleteam",
+          "slam"
+        ]
+      },
+      {
+        "species_id": "pikachu",
+        "level": 21,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "spd"
+        },
+        "moves": [
+          "thunderwave",
+          "quickattack",
+          "doubleteam",
+          "slam"
+        ]
+      }
+    ],
+    "intro": "我是个水手！宝可梦对战也很在行！",
+    "defeat": "好吧，你赢了！",
+    "after": "继续磨炼你的宝可梦吧！",
+    "badge": "",
+    "ai": "bad_move_only",
+    "items": [],
+    "redObject": 4,
+    "fireRedTrainer": "SailorDwayne",
+    "sourceHashName": "DWAYNE"
+  }
+]

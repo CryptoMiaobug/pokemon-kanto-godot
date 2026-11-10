@@ -1,0 +1,525 @@
+[
+  {
+    "id": "route25_joey",
+    "map": "route25",
+    "name": "短裤小子乔伊",
+    "title": "短裤小子乔伊 · 25号道路",
+    "cell": [
+      14,
+      2
+    ],
+    "facing": "down",
+    "sprite": "res://assets/route25/joey.png",
+    "portrait": "res://assets/route25/joey-trainer.png",
+    "reward": 240,
+    "party": [
+      {
+        "species_id": "rattata",
+        "level": 15,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "spa"
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack",
+          "hyperfang"
+        ]
+      },
+      {
+        "species_id": "spearow",
+        "level": 15,
+        "ivs": 0,
+        "nature": {
+          "up": "spa",
+          "down": "def"
+        },
+        "moves": [
+          "peck",
+          "growl",
+          "leer",
+          "furyattack"
+        ]
+      }
+    ],
+    "intro": "本地训练家常来这里练习！",
+    "defeat": "你很不错！",
+    "after": "和不同种类的宝可梦一起练习吧！",
+    "redObject": 1,
+    "fireRedTrainer": "YoungsterJoey",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "route25_dan",
+    "map": "route25",
+    "name": "短裤小子丹",
+    "title": "短裤小子丹 · 25号道路",
+    "cell": [
+      18,
+      5
+    ],
+    "facing": "up",
+    "sprite": "res://assets/route25/dan.png",
+    "portrait": "res://assets/route25/dan-trainer.png",
+    "reward": 272,
+    "party": [
+      {
+        "species_id": "slowpoke",
+        "level": 17,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "tackle",
+          "growl",
+          "watergun",
+          "confusion"
+        ]
+      }
+    ],
+    "intro": "爸爸带我去过枯叶市圣安奴号上的盛大聚会！",
+    "defeat": "我没生气！",
+    "after": "和不同种类的宝可梦一起练习吧！",
+    "redObject": 2,
+    "fireRedTrainer": "YoungsterDan",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "route25_flint",
+    "map": "route25",
+    "name": "露营少年弗林特",
+    "title": "露营少年弗林特 · 25号道路",
+    "cell": [
+      24,
+      4
+    ],
+    "facing": "down",
+    "sprite": "res://assets/route25/flint.png",
+    "portrait": "res://assets/route25/flint-trainer.png",
+    "reward": 280,
+    "party": [
+      {
+        "species_id": "rattata",
+        "level": 14,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "atk"
+        },
+        "moves": [
+          "tackle",
+          "tailwhip",
+          "quickattack",
+          "hyperfang"
+        ]
+      },
+      {
+        "species_id": "ekans",
+        "level": 14,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "wrap",
+          "leer",
+          "poisonsting",
+          "bite"
+        ]
+      }
+    ],
+    "intro": "我是个很酷的人，我有女朋友！",
+    "defeat": "啊，可恶！",
+    "after": "和不同种类的宝可梦一起练习吧！",
+    "redObject": 3,
+    "fireRedTrainer": "CamperFlint",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "route25_kelsey",
+    "map": "route25",
+    "name": "野餐女孩凯尔希",
+    "title": "野餐女孩凯尔希 · 25号道路",
+    "cell": [
+      18,
+      8
+    ],
+    "facing": "right",
+    "sprite": "res://assets/route25/kelsey.png",
+    "portrait": "res://assets/route25/kelsey-trainer.png",
+    "reward": 300,
+    "party": [
+      {
+        "species_id": "nidoran_m",
+        "level": 15,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "leer",
+          "peck",
+          "focusenergy",
+          "doublekick"
+        ]
+      },
+      {
+        "species_id": "nidoran_f",
+        "level": 15,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spa"
+        },
+        "moves": [
+          "growl",
+          "scratch",
+          "tailwhip",
+          "doublekick"
+        ]
+      }
+    ],
+    "intro": "嗨！我男朋友很酷！",
+    "defeat": "我状态不太好！",
+    "after": "和不同种类的宝可梦一起练习吧！",
+    "redObject": 4,
+    "fireRedTrainer": "PicnickerKelsey",
+    "alphaBBox": [
+      2,
+      0,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "route25_chad",
+    "map": "route25",
+    "name": "短裤小子查德",
+    "title": "短裤小子查德 · 25号道路",
+    "cell": [
+      32,
+      3
+    ],
+    "facing": "left",
+    "sprite": "res://assets/route25/chad.png",
+    "portrait": "res://assets/route25/chad-trainer.png",
+    "reward": 224,
+    "party": [
+      {
+        "species_id": "ekans",
+        "level": 14,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "wrap",
+          "leer",
+          "poisonsting",
+          "bite"
+        ]
+      },
+      {
+        "species_id": "sandshrew",
+        "level": 14,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "def"
+        },
+        "moves": [
+          "scratch",
+          "defensecurl",
+          "sandattack"
+        ]
+      }
+    ],
+    "intro": "我就知道得和你对战！",
+    "defeat": "我也知道会输！",
+    "after": "和不同种类的宝可梦一起练习吧！",
+    "redObject": 5,
+    "fireRedTrainer": "YoungsterChad",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "route25_haley",
+    "map": "route25",
+    "name": "少女海莉",
+    "title": "少女海莉 · 25号道路",
+    "cell": [
+      37,
+      4
+    ],
+    "facing": "down",
+    "sprite": "res://assets/route25/haley.png",
+    "portrait": "res://assets/route25/haley-trainer.png",
+    "reward": 208,
+    "party": [
+      {
+        "species_id": "oddish",
+        "level": 13,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "absorb",
+          "sweetscent"
+        ]
+      },
+      {
+        "species_id": "pidgey",
+        "level": 13,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spd"
+        },
+        "moves": [
+          "tackle",
+          "sandattack",
+          "gust",
+          "quickattack"
+        ]
+      },
+      {
+        "species_id": "oddish",
+        "level": 13,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "atk"
+        },
+        "moves": [
+          "absorb",
+          "sweetscent"
+        ]
+      }
+    ],
+    "intro": "朋友有可爱的宝可梦，我真羡慕！",
+    "defeat": "现在没那么羡慕了！",
+    "after": "和不同种类的宝可梦一起练习吧！",
+    "redObject": 6,
+    "fireRedTrainer": "LassHaley",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ]
+  },
+  {
+    "id": "route25_franklin",
+    "map": "route25",
+    "name": "登山男富兰克林",
+    "title": "登山男富兰克林 · 25号道路",
+    "cell": [
+      8,
+      4
+    ],
+    "facing": "right",
+    "sprite": "res://assets/route25/franklin.png",
+    "portrait": "res://assets/route25/franklin-trainer.png",
+    "reward": 540,
+    "party": [
+      {
+        "species_id": "machop",
+        "level": 15,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "lowkick",
+          "leer",
+          "focusenergy",
+          "karatechop"
+        ]
+      },
+      {
+        "species_id": "geodude",
+        "level": 15,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "tackle",
+          "defensecurl",
+          "mudsport",
+          "rockthrow"
+        ]
+      }
+    ],
+    "intro": "我刚从月见山下来，但还能再战！",
+    "defeat": "你很努力！",
+    "after": "和不同种类的宝可梦一起练习吧！",
+    "redObject": 7,
+    "fireRedTrainer": "HikerFranklin",
+    "alphaBBox": [
+      2,
+      0,
+      13,
+      16
+    ]
+  },
+  {
+    "id": "route25_nob",
+    "map": "route25",
+    "name": "登山男诺布",
+    "title": "登山男诺布 · 25号道路",
+    "cell": [
+      23,
+      9
+    ],
+    "facing": "up",
+    "sprite": "res://assets/route25/nob.png",
+    "portrait": "res://assets/route25/nob-trainer.png",
+    "reward": 468,
+    "party": [
+      {
+        "species_id": "geodude",
+        "level": 13,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spa"
+        },
+        "moves": [
+          "tackle",
+          "defensecurl",
+          "mudsport",
+          "rockthrow"
+        ]
+      },
+      {
+        "species_id": "geodude",
+        "level": 13,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "atk"
+        },
+        "moves": [
+          "tackle",
+          "defensecurl",
+          "mudsport",
+          "rockthrow"
+        ]
+      },
+      {
+        "species_id": "machop",
+        "level": 13,
+        "ivs": 0,
+        "nature": {
+          "up": "atk",
+          "down": "def"
+        },
+        "moves": [
+          "lowkick",
+          "leer",
+          "focusenergy",
+          "karatechop"
+        ]
+      },
+      {
+        "species_id": "geodude",
+        "level": 13,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "spa"
+        },
+        "moves": [
+          "tackle",
+          "defensecurl",
+          "mudsport",
+          "rockthrow"
+        ]
+      }
+    ],
+    "intro": "我要去海角看宝可梦收藏家的收藏！",
+    "defeat": "你打败我了！",
+    "after": "和不同种类的宝可梦一起练习吧！",
+    "redObject": 8,
+    "fireRedTrainer": "HikerNob",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ]
+  },
+  {
+    "id": "route25_wayne",
+    "map": "route25",
+    "name": "登山男韦恩",
+    "title": "登山男韦恩 · 25号道路",
+    "cell": [
+      13,
+      7
+    ],
+    "facing": "right",
+    "sprite": "res://assets/route25/wayne.png",
+    "portrait": "res://assets/route25/wayne-trainer.png",
+    "reward": 612,
+    "party": [
+      {
+        "species_id": "onix",
+        "level": 17,
+        "ivs": 0,
+        "nature": {
+          "up": "spe",
+          "down": "atk"
+        },
+        "moves": [
+          "tackle",
+          "screech",
+          "bind",
+          "rockthrow"
+        ]
+      }
+    ],
+    "intro": "你要去找正辉？先来对战！",
+    "defeat": "你真有两下子！",
+    "after": "和不同种类的宝可梦一起练习吧！",
+    "redObject": 9,
+    "fireRedTrainer": "HikerWayne",
+    "alphaBBox": [
+      2,
+      0,
+      13,
+      16
+    ]
+  }
+]

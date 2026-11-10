@@ -1,0 +1,421 @@
+[
+  {
+    "id": "viridian_giovanni",
+    "map": "viridian-gym",
+    "name": "馆主坂木",
+    "title": "常青道馆 · 馆主坂木",
+    "cell": [
+      2,
+      1
+    ],
+    "sprite": "res://assets/viridian-gym/actor-1.png",
+    "portrait": "res://assets/viridian-gym/giovanni-portrait.png",
+    "reward": 5000,
+    "moneyCoefficient": 25,
+    "party": [
+      {
+        "species_id": "rhyhorn",
+        "level": 45,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spa"
+        },
+        "moves": [
+          "takedown",
+          "rockblast",
+          "scaryface",
+          "earthquake"
+        ]
+      },
+      {
+        "species_id": "dugtrio",
+        "level": 42,
+        "ivs": 0,
+        "nature": {
+          "up": "def",
+          "down": "spa"
+        },
+        "moves": [
+          "slash",
+          "sandtomb",
+          "mudslap",
+          "earthquake"
+        ]
+      },
+      {
+        "species_id": "nidoqueen",
+        "level": 44,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "bodyslam",
+          "doublekick",
+          "poisonsting",
+          "earthquake"
+        ]
+      },
+      {
+        "species_id": "nidoking",
+        "level": 45,
+        "ivs": 0,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "thrash",
+          "doublekick",
+          "poisonsting",
+          "earthquake"
+        ]
+      },
+      {
+        "species_id": "rhyhorn",
+        "level": 50,
+        "ivs": 0,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "takedown",
+          "rockblast",
+          "scaryface",
+          "earthquake"
+        ]
+      }
+    ],
+    "intro": "这里是我的藏身处！我正准备重组火箭队。再次面对最强的坂木吧！",
+    "defeat": "哈！真是激烈的战斗！你赢得了绿色徽章！",
+    "after": "败在你手里，我已无颜面对部下。火箭队就此解散！我要独自修行。总有一天再相见。TM26教学尚未接入。",
+    "redObject": 1,
+    "fireRedTrainer": "LeaderGiovanni",
+    "slice": 45,
+    "items": [
+      "hyperpotion",
+      "hyperpotion",
+      "fullheal"
+    ],
+    "badge": "earth"
+  },
+  {
+    "id": "route22_late",
+    "map": "route22",
+    "name": "劲敌",
+    "title": "22号道路 · 联盟前最终劲敌",
+    "cell": [
+      25,
+      5
+    ],
+    "sprite": "res://assets/route22/rival.png",
+    "portrait": "res://assets/route22/late-trainer.png",
+    "reward": 1908,
+    "moneyCoefficient": 9,
+    "teams": {
+      "squirtle": [
+        {
+          "species_id": "pidgeot",
+          "level": 47,
+          "ivs": 18,
+          "nature": {
+            "up": "",
+            "down": ""
+          },
+          "moves": [
+            "featherdance",
+            "wingattack",
+            "gust",
+            "quickattack"
+          ]
+        },
+        {
+          "species_id": "rhyhorn",
+          "level": 45,
+          "ivs": 18,
+          "nature": {
+            "up": "spa",
+            "down": "spd"
+          },
+          "moves": [
+            "takedown",
+            "horndrill",
+            "rockblast",
+            "furyattack"
+          ]
+        },
+        {
+          "species_id": "growlithe",
+          "level": 45,
+          "ivs": 18,
+          "nature": {
+            "up": "spe",
+            "down": "def"
+          },
+          "moves": [
+            "flamewheel",
+            "takedown",
+            "leer",
+            "agility"
+          ]
+        },
+        {
+          "species_id": "exeggcute",
+          "level": 45,
+          "ivs": 18,
+          "nature": {
+            "up": "def",
+            "down": "spa"
+          },
+          "moves": [
+            "solarbeam",
+            "sleeppowder",
+            "poisonpowder",
+            "stunspore"
+          ]
+        },
+        {
+          "species_id": "alakazam",
+          "level": 47,
+          "ivs": 18,
+          "nature": {
+            "up": "atk",
+            "down": "spa"
+          },
+          "moves": [
+            "psychic",
+            "calmmind",
+            "futuresight",
+            "disable"
+          ]
+        },
+        {
+          "species_id": "blastoise",
+          "level": 53,
+          "ivs": 30,
+          "nature": {
+            "up": "def",
+            "down": "atk"
+          },
+          "moves": [
+            "watergun",
+            "raindance",
+            "bite",
+            "rapidspin"
+          ]
+        }
+      ],
+      "bulbasaur": [
+        {
+          "species_id": "pidgeot",
+          "level": 47,
+          "ivs": 18,
+          "nature": {
+            "up": "",
+            "down": ""
+          },
+          "moves": [
+            "featherdance",
+            "wingattack",
+            "gust",
+            "quickattack"
+          ]
+        },
+        {
+          "species_id": "rhyhorn",
+          "level": 45,
+          "ivs": 18,
+          "nature": {
+            "up": "spa",
+            "down": "spd"
+          },
+          "moves": [
+            "takedown",
+            "horndrill",
+            "rockblast",
+            "furyattack"
+          ]
+        },
+        {
+          "species_id": "gyarados",
+          "level": 45,
+          "ivs": 18,
+          "nature": {
+            "up": "def",
+            "down": "spa"
+          },
+          "moves": [
+            "hydropump",
+            "twister",
+            "leer",
+            "raindance"
+          ]
+        },
+        {
+          "species_id": "growlithe",
+          "level": 45,
+          "ivs": 18,
+          "nature": {
+            "up": "",
+            "down": ""
+          },
+          "moves": [
+            "flamewheel",
+            "takedown",
+            "leer",
+            "agility"
+          ]
+        },
+        {
+          "species_id": "alakazam",
+          "level": 47,
+          "ivs": 18,
+          "nature": {
+            "up": "spd",
+            "down": "atk"
+          },
+          "moves": [
+            "psychic",
+            "calmmind",
+            "futuresight",
+            "disable"
+          ]
+        },
+        {
+          "species_id": "venusaur",
+          "level": 53,
+          "ivs": 30,
+          "nature": {
+            "up": "spd",
+            "down": "atk"
+          },
+          "moves": [
+            "razorleaf",
+            "sweetscent",
+            "growth",
+            "synthesis"
+          ]
+        }
+      ],
+      "charmander": [
+        {
+          "species_id": "pidgeot",
+          "level": 47,
+          "ivs": 18,
+          "nature": {
+            "up": "",
+            "down": ""
+          },
+          "moves": [
+            "featherdance",
+            "wingattack",
+            "gust",
+            "quickattack"
+          ]
+        },
+        {
+          "species_id": "rhyhorn",
+          "level": 45,
+          "ivs": 18,
+          "nature": {
+            "up": "spa",
+            "down": "spd"
+          },
+          "moves": [
+            "takedown",
+            "horndrill",
+            "rockblast",
+            "furyattack"
+          ]
+        },
+        {
+          "species_id": "exeggcute",
+          "level": 45,
+          "ivs": 18,
+          "nature": {
+            "up": "spa",
+            "down": "def"
+          },
+          "moves": [
+            "solarbeam",
+            "sleeppowder",
+            "poisonpowder",
+            "stunspore"
+          ]
+        },
+        {
+          "species_id": "gyarados",
+          "level": 45,
+          "ivs": 18,
+          "nature": {
+            "up": "def",
+            "down": "atk"
+          },
+          "moves": [
+            "hydropump",
+            "twister",
+            "leer",
+            "raindance"
+          ]
+        },
+        {
+          "species_id": "alakazam",
+          "level": 47,
+          "ivs": 18,
+          "nature": {
+            "up": "",
+            "down": ""
+          },
+          "moves": [
+            "psychic",
+            "calmmind",
+            "futuresight",
+            "disable"
+          ]
+        },
+        {
+          "species_id": "charizard",
+          "level": 53,
+          "ivs": 30,
+          "nature": {
+            "up": "",
+            "down": ""
+          },
+          "moves": [
+            "flamethrower",
+            "wingattack",
+            "slash",
+            "scaryface"
+          ]
+        }
+      ]
+    },
+    "rival_for": {
+      "bulbasaur": "charmander",
+      "charmander": "squirtle",
+      "squirtle": "bulbasaur"
+    },
+    "intro": "你也要去宝可梦联盟？我已经集齐八枚徽章！让我看看你有没有资格挑战联盟！",
+    "defeat": "什么？我只是大意了！",
+    "after": "接下来就是宝可梦联盟！我要先走一步了！",
+    "slice": 46,
+    "items": [],
+    "triggerCells": [
+      [
+        29,
+        4
+      ],
+      [
+        29,
+        5
+      ]
+    ],
+    "sourceScene": {
+      "ready": 3,
+      "complete": 4
+    }
+  }
+]

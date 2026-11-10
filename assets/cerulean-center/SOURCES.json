@@ -1,0 +1,29 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "map": "data/maps/CeruleanPokecenter.json",
+  "mapSHA256": "bddf14993d7bbca38fa82d331822851a2c9c12cd7e0e0fef103cad3c82235c1c",
+  "tiles": "assets/tilesets/pokecenter.png",
+  "connections": {},
+  "warps": [
+    {
+      "x": 3,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "destMap": "LAST_MAP",
+      "destMapId": -1,
+      "destMapName": null,
+      "destWarp": 3,
+      "destWarpIndex": 2
+    }
+  ],
+  "adaptation": "Existing original block decoder, outdoor recolor/interior neutral palette and foot solid; tree foreground42/43. Only center open; other source door cells blocked as scope boundary. City actors/story/trade omitted. Nurse original[3,1] reused existing16px down sprite; center PC reuses existing framework. Outer unavailable routes closed with status, no added wall art.",
+  "rights": "Original rights holders; no redistribution clearance."
+}

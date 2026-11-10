@@ -1,0 +1,730 @@
+[
+  {
+    "id": "league_lorelei",
+    "map": "league-lorelei",
+    "name": "四天王科拿",
+    "title": "宝可梦联盟 · 科拿",
+    "cell": [
+      5,
+      2
+    ],
+    "sprite": "res://assets/league-lorelei/actor-1.png",
+    "portrait": "res://assets/league-lorelei/lorelei-portrait.png",
+    "party": [
+      {
+        "species_id": "dewgong",
+        "level": 52,
+        "ivs": 30,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "icebeam",
+          "surf",
+          "hail",
+          "safeguard"
+        ],
+        "gender": "female"
+      },
+      {
+        "species_id": "cloyster",
+        "level": 51,
+        "ivs": 30,
+        "nature": {
+          "up": "spd",
+          "down": "spa"
+        },
+        "moves": [
+          "spikes",
+          "protect",
+          "hail",
+          "dive"
+        ],
+        "gender": "female"
+      },
+      {
+        "species_id": "slowbro",
+        "level": 52,
+        "ivs": 30,
+        "nature": {
+          "up": "atk",
+          "down": "spe"
+        },
+        "moves": [
+          "icebeam",
+          "surf",
+          "amnesia",
+          "yawn"
+        ],
+        "gender": "female"
+      },
+      {
+        "species_id": "jynx",
+        "level": 54,
+        "ivs": 30,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "icepunch",
+          "doubleslap",
+          "lovelykiss",
+          "attract"
+        ],
+        "gender": "female"
+      },
+      {
+        "species_id": "lapras",
+        "level": 54,
+        "ivs": 30,
+        "nature": {
+          "up": "spe",
+          "down": "spa"
+        },
+        "moves": [
+          "confuseray",
+          "icebeam",
+          "surf",
+          "bodyslam"
+        ],
+        "gender": "female",
+        "held_item": "sitrusberry"
+      }
+    ],
+    "reward": 5400,
+    "moneyCoefficient": 25,
+    "items": [
+      "fullrestore",
+      "fullrestore"
+    ],
+    "fireRedTrainer": "EliteFourLorelei",
+    "sourceName": "LORELEI",
+    "redObject": 1,
+    "intro": "我是四天王科拿！冰系宝可梦的力量会让你冻结。",
+    "defeat": "你比我想象的更强！",
+    "after": "前面的门已经打开，继续挑战吧。"
+  },
+  {
+    "id": "league_bruno",
+    "map": "league-bruno",
+    "name": "四天王希巴",
+    "title": "宝可梦联盟 · 希巴",
+    "cell": [
+      5,
+      2
+    ],
+    "sprite": "res://assets/league-bruno/actor-1.png",
+    "portrait": "res://assets/league-bruno/bruno-portrait.png",
+    "party": [
+      {
+        "species_id": "onix",
+        "level": 51,
+        "ivs": 30,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "earthquake",
+          "rocktomb",
+          "irontail",
+          "roar"
+        ],
+        "gender": "male"
+      },
+      {
+        "species_id": "hitmonchan",
+        "level": 53,
+        "ivs": 30,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "skyuppercut",
+          "machpunch",
+          "rocktomb",
+          "counter"
+        ],
+        "gender": "male"
+      },
+      {
+        "species_id": "hitmonlee",
+        "level": 53,
+        "ivs": 30,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "megakick",
+          "foresight",
+          "brickbreak",
+          "facade"
+        ],
+        "gender": "male"
+      },
+      {
+        "species_id": "onix",
+        "level": 54,
+        "ivs": 30,
+        "nature": {
+          "up": "spd",
+          "down": "spa"
+        },
+        "moves": [
+          "doubleedge",
+          "earthquake",
+          "irontail",
+          "sandtomb"
+        ],
+        "gender": "male"
+      },
+      {
+        "species_id": "machamp",
+        "level": 56,
+        "ivs": 30,
+        "nature": {
+          "up": "spa",
+          "down": "atk"
+        },
+        "moves": [
+          "crosschop",
+          "bulkup",
+          "scaryface",
+          "rocktomb"
+        ],
+        "gender": "male",
+        "held_item": "sitrusberry"
+      }
+    ],
+    "reward": 5600,
+    "moneyCoefficient": 25,
+    "items": [
+      "fullrestore",
+      "fullrestore"
+    ],
+    "fireRedTrainer": "EliteFourBruno",
+    "sourceName": "BRUNO",
+    "redObject": 1,
+    "intro": "我是四天王希巴！人与宝可梦经过严苛锻炼，力量就没有极限。",
+    "defeat": "为什么？我怎么会输？",
+    "after": "我的任务完成了。去迎接下一个挑战吧。"
+  },
+  {
+    "id": "league_agatha",
+    "map": "league-agatha",
+    "name": "四天王菊子",
+    "title": "宝可梦联盟 · 菊子",
+    "cell": [
+      5,
+      2
+    ],
+    "sprite": "res://assets/league-agatha/actor-1.png",
+    "portrait": "res://assets/league-agatha/agatha-portrait.png",
+    "party": [
+      {
+        "species_id": "gengar",
+        "level": 54,
+        "ivs": 30,
+        "nature": {
+          "up": "atk",
+          "down": "spe"
+        },
+        "moves": [
+          "shadowpunch",
+          "confuseray",
+          "toxic",
+          "doubleteam"
+        ],
+        "gender": "female"
+      },
+      {
+        "species_id": "golbat",
+        "level": 54,
+        "ivs": 30,
+        "nature": {
+          "up": "spe",
+          "down": "spd"
+        },
+        "moves": [
+          "confuseray",
+          "poisonfang",
+          "aircutter",
+          "bite"
+        ],
+        "gender": "female"
+      },
+      {
+        "species_id": "haunter",
+        "level": 53,
+        "ivs": 30,
+        "nature": {
+          "up": "spd",
+          "down": "spe"
+        },
+        "moves": [
+          "hypnosis",
+          "dreameater",
+          "curse",
+          "meanlook"
+        ],
+        "gender": "female"
+      },
+      {
+        "species_id": "arbok",
+        "level": 56,
+        "ivs": 30,
+        "nature": {
+          "up": "def",
+          "down": "spa"
+        },
+        "moves": [
+          "sludgebomb",
+          "screech",
+          "irontail",
+          "bite"
+        ],
+        "gender": "female"
+      },
+      {
+        "species_id": "gengar",
+        "level": 58,
+        "ivs": 30,
+        "nature": {
+          "up": "spa",
+          "down": "atk"
+        },
+        "moves": [
+          "shadowball",
+          "sludgebomb",
+          "hypnosis",
+          "nightmare"
+        ],
+        "gender": "female",
+        "held_item": "sitrusberry"
+      }
+    ],
+    "reward": 5800,
+    "moneyCoefficient": 25,
+    "items": [
+      "fullrestore",
+      "fullrestore"
+    ],
+    "fireRedTrainer": "EliteFourAgatha",
+    "sourceName": "AGATHA",
+    "redObject": 1,
+    "intro": "我是四天王菊子。大木曾经很强，但宝可梦是用来战斗的！",
+    "defeat": "哎呀！你真是个特别的孩子！",
+    "after": "你赢了。快去吧，孩子！"
+  },
+  {
+    "id": "league_lance",
+    "map": "league-lance",
+    "name": "渡",
+    "title": "宝可梦联盟 · 渡",
+    "cell": [
+      6,
+      1
+    ],
+    "sprite": "res://assets/league-lance/actor-1.png",
+    "party": [
+      {
+        "species_id": "gyarados",
+        "level": 56,
+        "ivs": 30,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "hyperbeam",
+          "dragonrage",
+          "twister",
+          "bite"
+        ]
+      },
+      {
+        "species_id": "dragonair",
+        "level": 54,
+        "ivs": 30,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "hyperbeam",
+          "safeguard",
+          "dragonrage",
+          "outrage"
+        ]
+      },
+      {
+        "species_id": "dragonair",
+        "level": 54,
+        "ivs": 30,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "hyperbeam",
+          "safeguard",
+          "thunderwave",
+          "outrage"
+        ]
+      },
+      {
+        "species_id": "aerodactyl",
+        "level": 58,
+        "ivs": 30,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "hyperbeam",
+          "ancientpower",
+          "wingattack",
+          "scaryface"
+        ]
+      },
+      {
+        "species_id": "dragonite",
+        "level": 60,
+        "ivs": 30,
+        "nature": {
+          "up": "",
+          "down": ""
+        },
+        "moves": [
+          "hyperbeam",
+          "safeguard",
+          "outrage",
+          "wingattack"
+        ],
+        "held_item": "sitrusberry"
+      }
+    ],
+    "reward": 6000,
+    "moneyCoefficient": 25,
+    "items": [
+      "fullrestore",
+      "fullrestore"
+    ],
+    "fireRedTrainer": "EliteFourLance",
+    "sourceName": "渡",
+    "redObject": 1,
+    "intro": "联盟最后的挑战开始了！",
+    "defeat": "你赢得了这场战斗！",
+    "after": "前方就是最后的记录。"
+  },
+  {
+    "id": "league_champion",
+    "map": "league-champion",
+    "name": "冠军劲敌",
+    "title": "宝可梦联盟 · 冠军劲敌",
+    "cell": [
+      4,
+      2
+    ],
+    "sprite": "res://assets/league-champion/actor-1.png",
+    "teams": {
+      "squirtle": [
+        {
+          "species_id": "pidgeot",
+          "level": 59,
+          "ivs": 31,
+          "nature": {
+            "up": "",
+            "down": ""
+          },
+          "moves": [
+            "aerialace",
+            "featherdance",
+            "sandattack",
+            "whirlwind"
+          ]
+        },
+        {
+          "species_id": "alakazam",
+          "level": 57,
+          "ivs": 31,
+          "nature": {
+            "up": "",
+            "down": ""
+          },
+          "moves": [
+            "psychic",
+            "futuresight",
+            "recover",
+            "reflect"
+          ]
+        },
+        {
+          "species_id": "rhydon",
+          "level": 59,
+          "ivs": 31,
+          "nature": {
+            "up": "",
+            "down": ""
+          },
+          "moves": [
+            "takedown",
+            "earthquake",
+            "rocktomb",
+            "scaryface"
+          ]
+        },
+        {
+          "species_id": "arcanine",
+          "level": 59,
+          "ivs": 31,
+          "nature": {
+            "up": "",
+            "down": ""
+          },
+          "moves": [
+            "extremespeed",
+            "flamethrower",
+            "roar",
+            "bite"
+          ]
+        },
+        {
+          "species_id": "exeggutor",
+          "level": 61,
+          "ivs": 31,
+          "nature": {
+            "up": "",
+            "down": ""
+          },
+          "moves": [
+            "gigadrain",
+            "eggbomb",
+            "sleeppowder",
+            "lightscreen"
+          ]
+        },
+        {
+          "species_id": "blastoise",
+          "level": 63,
+          "ivs": 31,
+          "nature": {
+            "up": "",
+            "down": ""
+          },
+          "moves": [
+            "hydropump",
+            "raindance",
+            "skullbash",
+            "bite"
+          ],
+          "held_item": "sitrusberry"
+        }
+      ],
+      "bulbasaur": [
+        {
+          "species_id": "pidgeot",
+          "level": 59,
+          "ivs": 31,
+          "nature": {
+            "up": "",
+            "down": ""
+          },
+          "moves": [
+            "aerialace",
+            "featherdance",
+            "sandattack",
+            "whirlwind"
+          ]
+        },
+        {
+          "species_id": "alakazam",
+          "level": 57,
+          "ivs": 31,
+          "nature": {
+            "up": "",
+            "down": ""
+          },
+          "moves": [
+            "psychic",
+            "futuresight",
+            "recover",
+            "reflect"
+          ]
+        },
+        {
+          "species_id": "rhydon",
+          "level": 59,
+          "ivs": 31,
+          "nature": {
+            "up": "",
+            "down": ""
+          },
+          "moves": [
+            "takedown",
+            "earthquake",
+            "rocktomb",
+            "scaryface"
+          ]
+        },
+        {
+          "species_id": "gyarados",
+          "level": 59,
+          "ivs": 31,
+          "nature": {
+            "up": "",
+            "down": ""
+          },
+          "moves": [
+            "hydropump",
+            "dragonrage",
+            "bite",
+            "thrash"
+          ]
+        },
+        {
+          "species_id": "arcanine",
+          "level": 61,
+          "ivs": 31,
+          "nature": {
+            "up": "",
+            "down": ""
+          },
+          "moves": [
+            "extremespeed",
+            "flamethrower",
+            "roar",
+            "bite"
+          ]
+        },
+        {
+          "species_id": "venusaur",
+          "level": 63,
+          "ivs": 31,
+          "nature": {
+            "up": "",
+            "down": ""
+          },
+          "moves": [
+            "solarbeam",
+            "synthesis",
+            "sunnyday",
+            "growth"
+          ],
+          "held_item": "sitrusberry"
+        }
+      ],
+      "charmander": [
+        {
+          "species_id": "pidgeot",
+          "level": 59,
+          "ivs": 31,
+          "nature": {
+            "up": "",
+            "down": ""
+          },
+          "moves": [
+            "aerialace",
+            "featherdance",
+            "sandattack",
+            "whirlwind"
+          ]
+        },
+        {
+          "species_id": "alakazam",
+          "level": 57,
+          "ivs": 31,
+          "nature": {
+            "up": "",
+            "down": ""
+          },
+          "moves": [
+            "psychic",
+            "futuresight",
+            "recover",
+            "reflect"
+          ]
+        },
+        {
+          "species_id": "rhydon",
+          "level": 59,
+          "ivs": 31,
+          "nature": {
+            "up": "",
+            "down": ""
+          },
+          "moves": [
+            "takedown",
+            "earthquake",
+            "rocktomb",
+            "scaryface"
+          ]
+        },
+        {
+          "species_id": "exeggutor",
+          "level": 59,
+          "ivs": 31,
+          "nature": {
+            "up": "",
+            "down": ""
+          },
+          "moves": [
+            "gigadrain",
+            "eggbomb",
+            "sleeppowder",
+            "lightscreen"
+          ]
+        },
+        {
+          "species_id": "gyarados",
+          "level": 61,
+          "ivs": 31,
+          "nature": {
+            "up": "",
+            "down": ""
+          },
+          "moves": [
+            "hydropump",
+            "dragonrage",
+            "bite",
+            "thrash"
+          ]
+        },
+        {
+          "species_id": "charizard",
+          "level": 63,
+          "ivs": 31,
+          "nature": {
+            "up": "",
+            "down": ""
+          },
+          "moves": [
+            "fireblast",
+            "aerialace",
+            "slash",
+            "firespin"
+          ],
+          "held_item": "sitrusberry"
+        }
+      ]
+    },
+    "reward": 12600,
+    "moneyCoefficient": 25,
+    "items": [
+      "fullrestore",
+      "fullrestore",
+      "fullrestore",
+      "fullrestore"
+    ],
+    "fireRedTrainer": "ChampionFirst",
+    "sourceName": "CHAMPION",
+    "redObject": 1,
+    "intro": "我已经是冠军了！最后一战，开始吧！",
+    "defeat": "不可能！我竟然输了！",
+    "after": "你成为了新的冠军。名人堂记录留待第61片。"
+  }
+]

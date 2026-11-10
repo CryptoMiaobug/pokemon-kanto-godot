@@ -1,0 +1,12 @@
+{
+  "redRepository": "BrandeisPatrick/pokemon-red-web",
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "map": "data/maps/Route22.json",
+  "tiles": "Existing approved recolored Overworld atlas; same foot-tile collision and foreground adapter",
+  "mapSHA256": "2c7a3d7e64655db14feef8a40249e85d6f46135b7cc80d729220da71a561588c",
+  "npc": "assets/sprites/blue.png standing front 16x16; center [408,88]; feet cell [25,5]; existing material tint; world2x",
+  "trainerPortrait": "pret/pokefirered graphics/trainers/front_pics/rival_early_front_pic.png + palettes/rival_early.pal",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "adaptation": "Red route with interaction at original rival position; original gate warp and north boundary blocked, no Route23. No new Route22 wild encounters. Original parcel/pokedex preconditions and approach cutscene skipped for playable slice. Only first rival battle; early rival stays after win to give non-reward interaction.",
+  "rights": "Original Pokemon assets rights retained; source availability is not redistribution permission."
+}

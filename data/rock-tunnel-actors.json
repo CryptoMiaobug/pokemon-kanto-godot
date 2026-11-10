@@ -1,0 +1,662 @@
+[
+  {
+    "map": "rock-tunnel-1f",
+    "cell": [
+      7,
+      5
+    ],
+    "facing": "down",
+    "sprite": "res://assets/rock-tunnel-1f/npc-1.png",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "red": {
+      "index": 1,
+      "const": "ROCKTUNNEL1F_HIKER1",
+      "x": 7,
+      "y": 5,
+      "sprite": "SPRITE_HIKER",
+      "spriteId": 14,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROCKTUNNEL1F_HIKER1",
+      "textIndex": 1,
+      "trainer": {
+        "trainerClass": "OPP_HIKER",
+        "trainerClassId": 9,
+        "trainerPartyIndex": 12,
+        "header": "RockTunnel1TrainerHeader0",
+        "eventFlag": "EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_0",
+        "eventFlagIndex": 1113,
+        "sightRange": 4,
+        "textBefore": "RockTunnel1FHiker1BattleText",
+        "textEnd": "RockTunnel1FHiker1EndBattleText",
+        "textAfter": "RockTunnel1FHiker1AfterBattleText"
+      }
+    },
+    "fireRedTrainer": "HIKER_LENNY",
+    "status": "implemented",
+    "trainer_id": "rock_lenny"
+  },
+  {
+    "map": "rock-tunnel-1f",
+    "cell": [
+      5,
+      16
+    ],
+    "facing": "down",
+    "sprite": "res://assets/rock-tunnel-1f/npc-2.png",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "red": {
+      "index": 2,
+      "const": "ROCKTUNNEL1F_HIKER2",
+      "x": 5,
+      "y": 16,
+      "sprite": "SPRITE_HIKER",
+      "spriteId": 14,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROCKTUNNEL1F_HIKER2",
+      "textIndex": 2,
+      "trainer": {
+        "trainerClass": "OPP_HIKER",
+        "trainerClassId": 9,
+        "trainerPartyIndex": 13,
+        "header": "RockTunnel1TrainerHeader1",
+        "eventFlag": "EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_1",
+        "eventFlagIndex": 1114,
+        "sightRange": 4,
+        "textBefore": "RockTunnel1FHiker2BattleText",
+        "textEnd": "RockTunnel1FHiker2EndBattleText",
+        "textAfter": "RockTunnel1FHiker2AfterBattleText"
+      }
+    },
+    "fireRedTrainer": "HIKER_OLIVER",
+    "status": "implemented",
+    "trainer_id": "rock_oliver"
+  },
+  {
+    "map": "rock-tunnel-1f",
+    "cell": [
+      17,
+      15
+    ],
+    "facing": "left",
+    "sprite": "res://assets/rock-tunnel-1f/npc-3.png",
+    "alphaBBox": [
+      3,
+      0,
+      14,
+      16
+    ],
+    "red": {
+      "index": 3,
+      "const": "ROCKTUNNEL1F_HIKER3",
+      "x": 17,
+      "y": 15,
+      "sprite": "SPRITE_HIKER",
+      "spriteId": 14,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROCKTUNNEL1F_HIKER3",
+      "textIndex": 3,
+      "trainer": {
+        "trainerClass": "OPP_HIKER",
+        "trainerClassId": 9,
+        "trainerPartyIndex": 14,
+        "header": "RockTunnel1TrainerHeader2",
+        "eventFlag": "EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_2",
+        "eventFlagIndex": 1115,
+        "sightRange": 3,
+        "textBefore": "RockTunnel1FHiker3BattleText",
+        "textEnd": "RockTunnel1FHiker3EndBattleText",
+        "textAfter": "RockTunnel1FHiker3AfterBattleText"
+      }
+    },
+    "fireRedTrainer": "HIKER_LUCAS",
+    "status": "implemented",
+    "trainer_id": "rock_lucas"
+  },
+  {
+    "map": "rock-tunnel-1f",
+    "cell": [
+      23,
+      8
+    ],
+    "facing": "left",
+    "sprite": "res://assets/rock-tunnel-1f/npc-4.png",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "red": {
+      "index": 4,
+      "const": "ROCKTUNNEL1F_SUPER_NERD",
+      "x": 23,
+      "y": 8,
+      "sprite": "SPRITE_SUPER_NERD",
+      "spriteId": 12,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROCKTUNNEL1F_SUPER_NERD",
+      "textIndex": 4,
+      "trainer": {
+        "trainerClass": "OPP_POKEMANIAC",
+        "trainerClassId": 7,
+        "trainerPartyIndex": 7,
+        "header": "RockTunnel1TrainerHeader3",
+        "eventFlag": "EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_3",
+        "eventFlagIndex": 1116,
+        "sightRange": 3,
+        "textBefore": "RockTunnel1FSuperNerdBattleText",
+        "textEnd": "RockTunnel1FSuperNerdEndBattleText",
+        "textAfter": "RockTunnel1FSuperNerdAfterBattleText"
+      }
+    },
+    "fireRedTrainer": "POKEMANIAC_ASHTON",
+    "status": "implemented",
+    "trainer_id": "rock_ashton"
+  },
+  {
+    "map": "rock-tunnel-1f",
+    "cell": [
+      37,
+      21
+    ],
+    "facing": "left",
+    "sprite": "res://assets/rock-tunnel-1f/npc-5.png",
+    "alphaBBox": [
+      1,
+      0,
+      14,
+      16
+    ],
+    "red": {
+      "index": 5,
+      "const": "ROCKTUNNEL1F_COOLTRAINER_F1",
+      "x": 37,
+      "y": 21,
+      "sprite": "SPRITE_COOLTRAINER_F",
+      "spriteId": 6,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROCKTUNNEL1F_COOLTRAINER_F1",
+      "textIndex": 5,
+      "trainer": {
+        "trainerClass": "OPP_JR_TRAINER_F",
+        "trainerClassId": 6,
+        "trainerPartyIndex": 17,
+        "header": "RockTunnel1TrainerHeader4",
+        "eventFlag": "EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_4",
+        "eventFlagIndex": 1117,
+        "sightRange": 4,
+        "textBefore": "RockTunnel1FCooltrainerF1BattleText",
+        "textEnd": "RockTunnel1FCooltrainerF1EndBattleText",
+        "textAfter": "RockTunnel1FCooltrainerF1AfterBattleText"
+      }
+    },
+    "fireRedTrainer": "PICNICKER_LEAH",
+    "status": "implemented",
+    "trainer_id": "rock_leah"
+  },
+  {
+    "map": "rock-tunnel-1f",
+    "cell": [
+      22,
+      24
+    ],
+    "facing": "down",
+    "sprite": "res://assets/rock-tunnel-1f/npc-6.png",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "red": {
+      "index": 6,
+      "const": "ROCKTUNNEL1F_COOLTRAINER_F2",
+      "x": 22,
+      "y": 24,
+      "sprite": "SPRITE_COOLTRAINER_F",
+      "spriteId": 6,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROCKTUNNEL1F_COOLTRAINER_F2",
+      "textIndex": 6,
+      "trainer": {
+        "trainerClass": "OPP_JR_TRAINER_F",
+        "trainerClassId": 6,
+        "trainerPartyIndex": 18,
+        "header": "RockTunnel1TrainerHeader5",
+        "eventFlag": "EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_5",
+        "eventFlagIndex": 1118,
+        "sightRange": 4,
+        "textBefore": "RockTunnel1FCooltrainerF2BattleText",
+        "textEnd": "RockTunnel1FCooltrainerF2EndBattleText",
+        "textAfter": "RockTunnel1FCooltrainerF2AfterBattleText"
+      }
+    },
+    "fireRedTrainer": "PICNICKER_DANA",
+    "status": "implemented",
+    "trainer_id": "rock_dana"
+  },
+  {
+    "map": "rock-tunnel-1f",
+    "cell": [
+      32,
+      24
+    ],
+    "facing": "right",
+    "sprite": "res://assets/rock-tunnel-1f/npc-7.png",
+    "alphaBBox": [
+      2,
+      0,
+      15,
+      16
+    ],
+    "red": {
+      "index": 7,
+      "const": "ROCKTUNNEL1F_COOLTRAINER_F3",
+      "x": 32,
+      "y": 24,
+      "sprite": "SPRITE_COOLTRAINER_F",
+      "spriteId": 6,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_ROCKTUNNEL1F_COOLTRAINER_F3",
+      "textIndex": 7,
+      "trainer": {
+        "trainerClass": "OPP_JR_TRAINER_F",
+        "trainerClassId": 6,
+        "trainerPartyIndex": 19,
+        "header": "RockTunnel1TrainerHeader6",
+        "eventFlag": "EVENT_BEAT_ROCK_TUNNEL_1_TRAINER_6",
+        "eventFlagIndex": 1119,
+        "sightRange": 4,
+        "textBefore": "RockTunnel1FCooltrainerF3BattleText",
+        "textEnd": "RockTunnel1FCooltrainerF3EndBattleText",
+        "textAfter": "RockTunnel1FCooltrainerF3AfterBattleText"
+      }
+    },
+    "fireRedTrainer": "PICNICKER_ARIANA",
+    "status": "implemented",
+    "trainer_id": "rock_ariana"
+  },
+  {
+    "map": "rock-tunnel-b1f",
+    "cell": [
+      11,
+      13
+    ],
+    "facing": "down",
+    "sprite": "res://assets/rock-tunnel-b1f/npc-1.png",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "red": {
+      "index": 1,
+      "const": "ROCKTUNNELB1F_COOLTRAINER_F1",
+      "x": 11,
+      "y": 13,
+      "sprite": "SPRITE_COOLTRAINER_F",
+      "spriteId": 6,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROCKTUNNELB1F_COOLTRAINER_F1",
+      "textIndex": 1,
+      "trainer": {
+        "trainerClass": "OPP_JR_TRAINER_F",
+        "trainerClassId": 6,
+        "trainerPartyIndex": 9,
+        "header": "RockTunnel2TrainerHeader0",
+        "eventFlag": "EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_0",
+        "eventFlagIndex": 2481,
+        "sightRange": 4,
+        "textBefore": "RockTunnelB1FCooltrainerF1BattleText",
+        "textEnd": "RockTunnelB1FCooltrainerF1EndBattleText",
+        "textAfter": "RockTunnelB1FCooltrainerF1AfterBattleText"
+      }
+    },
+    "fireRedTrainer": "PICNICKER_SOFIA",
+    "status": "implemented",
+    "trainer_id": "rock_sofia"
+  },
+  {
+    "map": "rock-tunnel-b1f",
+    "cell": [
+      6,
+      10
+    ],
+    "facing": "down",
+    "sprite": "res://assets/rock-tunnel-b1f/npc-2.png",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "red": {
+      "index": 2,
+      "const": "ROCKTUNNELB1F_HIKER1",
+      "x": 6,
+      "y": 10,
+      "sprite": "SPRITE_HIKER",
+      "spriteId": 14,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROCKTUNNELB1F_HIKER1",
+      "textIndex": 2,
+      "trainer": {
+        "trainerClass": "OPP_HIKER",
+        "trainerClassId": 9,
+        "trainerPartyIndex": 9,
+        "header": "RockTunnel2TrainerHeader1",
+        "eventFlag": "EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_1",
+        "eventFlagIndex": 2482,
+        "sightRange": 3,
+        "textBefore": "RockTunnelB1FHiker1BattleText",
+        "textEnd": "RockTunnelB1FHiker1EndBattleText",
+        "textAfter": "RockTunnelB1FHiker1AfterBattleText"
+      }
+    },
+    "fireRedTrainer": "HIKER_DUDLEY",
+    "status": "implemented",
+    "trainer_id": "rock_dudley"
+  },
+  {
+    "map": "rock-tunnel-b1f",
+    "cell": [
+      3,
+      5
+    ],
+    "facing": "down",
+    "sprite": "res://assets/rock-tunnel-b1f/npc-3.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "red": {
+      "index": 3,
+      "const": "ROCKTUNNELB1F_SUPER_NERD1",
+      "x": 3,
+      "y": 5,
+      "sprite": "SPRITE_SUPER_NERD",
+      "spriteId": 12,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROCKTUNNELB1F_SUPER_NERD1",
+      "textIndex": 3,
+      "trainer": {
+        "trainerClass": "OPP_POKEMANIAC",
+        "trainerClassId": 7,
+        "trainerPartyIndex": 3,
+        "header": "RockTunnel2TrainerHeader2",
+        "eventFlag": "EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_2",
+        "eventFlagIndex": 2483,
+        "sightRange": 3,
+        "textBefore": "RockTunnelB1FSuperNerd1BattleText",
+        "textEnd": "RockTunnelB1FSuperNerd1EndBattleText",
+        "textAfter": "RockTunnelB1FSuperNerd1AfterBattleText"
+      }
+    },
+    "fireRedTrainer": "POKEMANIAC_COOPER",
+    "status": "implemented",
+    "trainer_id": "rock_cooper"
+  },
+  {
+    "map": "rock-tunnel-b1f",
+    "cell": [
+      20,
+      21
+    ],
+    "facing": "right",
+    "sprite": "res://assets/rock-tunnel-b1f/npc-4.png",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "red": {
+      "index": 4,
+      "const": "ROCKTUNNELB1F_SUPER_NERD2",
+      "x": 20,
+      "y": 21,
+      "sprite": "SPRITE_SUPER_NERD",
+      "spriteId": 12,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_ROCKTUNNELB1F_SUPER_NERD2",
+      "textIndex": 4,
+      "trainer": {
+        "trainerClass": "OPP_POKEMANIAC",
+        "trainerClassId": 7,
+        "trainerPartyIndex": 4,
+        "header": "RockTunnel2TrainerHeader3",
+        "eventFlag": "EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_3",
+        "eventFlagIndex": 2484,
+        "sightRange": 4,
+        "textBefore": "RockTunnelB1FSuperNerd2BattleText",
+        "textEnd": "RockTunnelB1FSuperNerd2EndBattleText",
+        "textAfter": "RockTunnelB1FSuperNerd2AfterBattleText"
+      }
+    },
+    "fireRedTrainer": "POKEMANIAC_STEVE",
+    "status": "implemented",
+    "trainer_id": "rock_steve"
+  },
+  {
+    "map": "rock-tunnel-b1f",
+    "cell": [
+      30,
+      10
+    ],
+    "facing": "down",
+    "sprite": "res://assets/rock-tunnel-b1f/npc-5.png",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "red": {
+      "index": 5,
+      "const": "ROCKTUNNELB1F_HIKER2",
+      "x": 30,
+      "y": 10,
+      "sprite": "SPRITE_HIKER",
+      "spriteId": 14,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROCKTUNNELB1F_HIKER2",
+      "textIndex": 5,
+      "trainer": {
+        "trainerClass": "OPP_HIKER",
+        "trainerClassId": 9,
+        "trainerPartyIndex": 10,
+        "header": "RockTunnel2TrainerHeader4",
+        "eventFlag": "EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_4",
+        "eventFlagIndex": 2485,
+        "sightRange": 3,
+        "textBefore": "RockTunnelB1FHiker2BattleText",
+        "textEnd": "RockTunnelB1FHiker2EndBattleText",
+        "textAfter": "RockTunnelB1FHiker2AfterBattleText"
+      }
+    },
+    "fireRedTrainer": "HIKER_ALLEN",
+    "status": "implemented",
+    "trainer_id": "rock_allen"
+  },
+  {
+    "map": "rock-tunnel-b1f",
+    "cell": [
+      14,
+      28
+    ],
+    "facing": "right",
+    "sprite": "res://assets/rock-tunnel-b1f/npc-6.png",
+    "alphaBBox": [
+      2,
+      0,
+      15,
+      16
+    ],
+    "red": {
+      "index": 6,
+      "const": "ROCKTUNNELB1F_COOLTRAINER_F2",
+      "x": 14,
+      "y": 28,
+      "sprite": "SPRITE_COOLTRAINER_F",
+      "spriteId": 6,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_ROCKTUNNELB1F_COOLTRAINER_F2",
+      "textIndex": 6,
+      "trainer": {
+        "trainerClass": "OPP_JR_TRAINER_F",
+        "trainerClassId": 6,
+        "trainerPartyIndex": 10,
+        "header": "RockTunnel2TrainerHeader5",
+        "eventFlag": "EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_5",
+        "eventFlagIndex": 2486,
+        "sightRange": 4,
+        "textBefore": "RockTunnelB1FCooltrainerF2BattleText",
+        "textEnd": "RockTunnelB1FCooltrainerF2EndBattleText",
+        "textAfter": "RockTunnelB1FCooltrainerF2AfterBattleText"
+      }
+    },
+    "fireRedTrainer": "PICNICKER_MARTHA",
+    "status": "implemented",
+    "trainer_id": "rock_martha"
+  },
+  {
+    "map": "rock-tunnel-b1f",
+    "cell": [
+      33,
+      5
+    ],
+    "facing": "right",
+    "sprite": "res://assets/rock-tunnel-b1f/npc-7.png",
+    "alphaBBox": [
+      2,
+      0,
+      13,
+      16
+    ],
+    "red": {
+      "index": 7,
+      "const": "ROCKTUNNELB1F_HIKER3",
+      "x": 33,
+      "y": 5,
+      "sprite": "SPRITE_HIKER",
+      "spriteId": 14,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_ROCKTUNNELB1F_HIKER3",
+      "textIndex": 7,
+      "trainer": {
+        "trainerClass": "OPP_HIKER",
+        "trainerClassId": 9,
+        "trainerPartyIndex": 11,
+        "header": "RockTunnel2TrainerHeader6",
+        "eventFlag": "EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_6",
+        "eventFlagIndex": 2487,
+        "sightRange": 3,
+        "textBefore": "RockTunnelB1FHiker3BattleText",
+        "textEnd": "RockTunnelB1FHiker3EndBattleText",
+        "textAfter": "RockTunnelB1FHiker3AfterBattleText"
+      }
+    },
+    "fireRedTrainer": "HIKER_ERIC",
+    "status": "implemented",
+    "trainer_id": "rock_eric"
+  },
+  {
+    "map": "rock-tunnel-b1f",
+    "cell": [
+      26,
+      30
+    ],
+    "facing": "down",
+    "sprite": "res://assets/rock-tunnel-b1f/npc-8.png",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "red": {
+      "index": 8,
+      "const": "ROCKTUNNELB1F_SUPER_NERD3",
+      "x": 26,
+      "y": 30,
+      "sprite": "SPRITE_SUPER_NERD",
+      "spriteId": 12,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROCKTUNNELB1F_SUPER_NERD3",
+      "textIndex": 8,
+      "trainer": {
+        "trainerClass": "OPP_POKEMANIAC",
+        "trainerClassId": 7,
+        "trainerPartyIndex": 5,
+        "header": "RockTunnel2TrainerHeader7",
+        "eventFlag": "EVENT_BEAT_ROCK_TUNNEL_2_TRAINER_7",
+        "eventFlagIndex": 2488,
+        "sightRange": 3,
+        "textBefore": "RockTunnelB1FSuperNerd3BattleText",
+        "textEnd": "RockTunnelB1FSuperNerd3EndBattleText",
+        "textAfter": "RockTunnelB1FSuperNerd3AfterBattleText"
+      }
+    },
+    "fireRedTrainer": "POKEMANIAC_WINSTON",
+    "status": "implemented",
+    "trainer_id": "rock_winston"
+  }
+]

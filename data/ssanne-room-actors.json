@@ -1,0 +1,189 @@
+[
+  {
+    "map": "ssanne-1f-rooms",
+    "cell": [
+      2,
+      3
+    ],
+    "sprite": "res://assets/ssanne-1f-rooms/actor-1.png",
+    "redObject": 1,
+    "facing": "left",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "text": "我独自旅行，宝可梦是我的伙伴。托马斯对战待开放：需要吼叫与灼伤规则。"
+  },
+  {
+    "map": "ssanne-1f-rooms",
+    "cell": [
+      11,
+      4
+    ],
+    "sprite": "res://assets/ssanne-1f-rooms/actor-2.png",
+    "redObject": 2,
+    "facing": "up",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "text": ""
+  },
+  {
+    "map": "ssanne-1f-rooms",
+    "cell": [
+      11,
+      14
+    ],
+    "sprite": "res://assets/ssanne-1f-rooms/actor-3.png",
+    "redObject": 3,
+    "facing": "up",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "text": ""
+  },
+  {
+    "map": "ssanne-1f-rooms",
+    "cell": [
+      13,
+      11
+    ],
+    "sprite": "res://assets/ssanne-1f-rooms/actor-4.png",
+    "redObject": 4,
+    "facing": "left",
+    "alphaBBox": [
+      1,
+      0,
+      14,
+      16
+    ],
+    "text": ""
+  },
+  {
+    "map": "ssanne-1f-rooms",
+    "cell": [
+      22,
+      3
+    ],
+    "sprite": "res://assets/ssanne-1f-rooms/actor-5.png",
+    "redObject": 5,
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "text": "服务员，请给我一份樱桃派！"
+  },
+  {
+    "map": "ssanne-1f-rooms",
+    "cell": [
+      0,
+      14
+    ],
+    "sprite": "res://assets/ssanne-1f-rooms/actor-6.png",
+    "redObject": 6,
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      0,
+      16,
+      16
+    ],
+    "text": "乘船旅行真优雅，也很舒适！"
+  },
+  {
+    "map": "ssanne-1f-rooms",
+    "cell": [
+      2,
+      11
+    ],
+    "sprite": "res://assets/ssanne-1f-rooms/actor-7.png",
+    "redObject": 7,
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      2,
+      16,
+      16
+    ],
+    "text": "我总是和胖可丁一起旅行！"
+  },
+  {
+    "map": "ssanne-1f-rooms",
+    "cell": [
+      3,
+      11
+    ],
+    "sprite": "res://assets/ssanne-1f-rooms/actor-8.png",
+    "redObject": 8,
+    "facing": "down",
+    "alphaBBox": [
+      0,
+      2,
+      16,
+      16
+    ],
+    "text": "胖可丁：噗噗，噗噗！"
+  },
+  {
+    "map": "ssanne-1f-rooms",
+    "cell": [
+      10,
+      13
+    ],
+    "sprite": "res://assets/ssanne-1f-rooms/actor-9.png",
+    "redObject": 9,
+    "facing": "right",
+    "alphaBBox": [
+      2,
+      0,
+      14,
+      16
+    ],
+    "text": "我们正在环游世界。"
+  },
+  {
+    "map": "ssanne-1f-rooms",
+    "cell": [
+      12,
+      15
+    ],
+    "sprite": "res://assets/ssanne-1f-rooms/actor-10.png",
+    "redObject": 10,
+    "facing": "down",
+    "alphaBBox": [
+      2,
+      2,
+      14,
+      14
+    ],
+    "text": "原Red道具：泰山压顶招式学习器。本轮未实现拾取。"
+  },
+  {
+    "map": "ssanne-1f-rooms",
+    "cell": [
+      21,
+      13
+    ],
+    "sprite": "res://assets/ssanne-1f-rooms/actor-11.png",
+    "redObject": 11,
+    "facing": "down",
+    "alphaBBox": [
+      1,
+      0,
+      15,
+      16
+    ],
+    "text": "嘘！我是国际警察，正在追查火箭队！"
+  }
+]

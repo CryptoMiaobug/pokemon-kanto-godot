@@ -1,0 +1,301 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/Route9.json",
+  "sha256": "9c8796b34abb1a0f67213e39bdb375897b2a3514d3312f619a6aabe910085f22",
+  "connections": {
+    "west": {
+      "map": "CERULEAN_CITY",
+      "mapId": 3,
+      "mapName": "CeruleanCity",
+      "offset": -4,
+      "dx": -20,
+      "dy": -4,
+      "copyRect": {
+        "x": 17,
+        "y": 1,
+        "w": 3,
+        "h": 15
+      },
+      "onEnter": {
+        "newX": 39,
+        "yAdd": 8
+      },
+      "macro": {
+        "stripSrc": 37,
+        "stripDest": 0,
+        "stripLength": 15,
+        "connectedWidth": 20,
+        "yAlign": 8,
+        "xAlign": 39,
+        "viewPointer": 46
+      }
+    },
+    "east": {
+      "map": "ROUTE_10",
+      "mapId": 21,
+      "mapName": "Route10",
+      "offset": 0,
+      "dx": 30,
+      "dy": 0,
+      "copyRect": {
+        "x": 0,
+        "y": 0,
+        "w": 3,
+        "h": 12
+      },
+      "onEnter": {
+        "newX": 0,
+        "yAdd": 0
+      },
+      "macro": {
+        "stripSrc": 0,
+        "stripDest": 141,
+        "stripLength": 12,
+        "connectedWidth": 10,
+        "yAlign": 0,
+        "xAlign": 0,
+        "viewPointer": 17
+      }
+    }
+  },
+  "warps": [],
+  "actors": [
+    {
+      "index": 1,
+      "const": "ROUTE9_COOLTRAINER_F1",
+      "x": 13,
+      "y": 10,
+      "sprite": "SPRITE_COOLTRAINER_F",
+      "spriteId": 6,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROUTE9_COOLTRAINER_F1",
+      "textIndex": 1,
+      "trainer": {
+        "trainerClass": "OPP_JR_TRAINER_F",
+        "trainerClassId": 6,
+        "trainerPartyIndex": 5,
+        "header": "Route9TrainerHeader0",
+        "eventFlag": "EVENT_BEAT_ROUTE_9_TRAINER_0",
+        "eventFlagIndex": 1089,
+        "sightRange": 3,
+        "textBefore": "Route9CooltrainerF1BattleText",
+        "textEnd": "Route9CooltrainerF1EndBattleText",
+        "textAfter": "Route9CooltrainerF1AfterBattleText"
+      }
+    },
+    {
+      "index": 2,
+      "const": "ROUTE9_COOLTRAINER_M1",
+      "x": 24,
+      "y": 7,
+      "sprite": "SPRITE_COOLTRAINER_M",
+      "spriteId": 7,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROUTE9_COOLTRAINER_M1",
+      "textIndex": 2,
+      "trainer": {
+        "trainerClass": "OPP_JR_TRAINER_M",
+        "trainerClassId": 5,
+        "trainerPartyIndex": 7,
+        "header": "Route9TrainerHeader1",
+        "eventFlag": "EVENT_BEAT_ROUTE_9_TRAINER_1",
+        "eventFlagIndex": 1090,
+        "sightRange": 2,
+        "textBefore": "Route9CooltrainerM1BattleText",
+        "textEnd": "Route9CooltrainerM1EndBattleText",
+        "textAfter": "Route9CooltrainerM1AfterBattleText"
+      }
+    },
+    {
+      "index": 3,
+      "const": "ROUTE9_COOLTRAINER_M2",
+      "x": 31,
+      "y": 7,
+      "sprite": "SPRITE_COOLTRAINER_M",
+      "spriteId": 7,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_ROUTE9_COOLTRAINER_M2",
+      "textIndex": 3,
+      "trainer": {
+        "trainerClass": "OPP_JR_TRAINER_M",
+        "trainerClassId": 5,
+        "trainerPartyIndex": 8,
+        "header": "Route9TrainerHeader2",
+        "eventFlag": "EVENT_BEAT_ROUTE_9_TRAINER_2",
+        "eventFlagIndex": 1091,
+        "sightRange": 4,
+        "textBefore": "Route9CooltrainerM2BattleText",
+        "textEnd": "Route9CooltrainerM2EndBattleText",
+        "textAfter": "Route9CooltrainerM2AfterBattleText"
+      }
+    },
+    {
+      "index": 4,
+      "const": "ROUTE9_COOLTRAINER_F2",
+      "x": 48,
+      "y": 8,
+      "sprite": "SPRITE_COOLTRAINER_F",
+      "spriteId": 6,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_ROUTE9_COOLTRAINER_F2",
+      "textIndex": 4,
+      "trainer": {
+        "trainerClass": "OPP_JR_TRAINER_F",
+        "trainerClassId": 6,
+        "trainerPartyIndex": 6,
+        "header": "Route9TrainerHeader3",
+        "eventFlag": "EVENT_BEAT_ROUTE_9_TRAINER_3",
+        "eventFlagIndex": 1092,
+        "sightRange": 2,
+        "textBefore": "Route9CooltrainerF2BattleText",
+        "textEnd": "Route9CooltrainerF2EndBattleText",
+        "textAfter": "Route9CooltrainerF2AfterBattleText"
+      }
+    },
+    {
+      "index": 5,
+      "const": "ROUTE9_HIKER1",
+      "x": 16,
+      "y": 15,
+      "sprite": "SPRITE_HIKER",
+      "spriteId": 14,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROUTE9_HIKER1",
+      "textIndex": 5,
+      "trainer": {
+        "trainerClass": "OPP_HIKER",
+        "trainerClassId": 9,
+        "trainerPartyIndex": 11,
+        "header": "Route9TrainerHeader4",
+        "eventFlag": "EVENT_BEAT_ROUTE_9_TRAINER_4",
+        "eventFlagIndex": 1093,
+        "sightRange": 2,
+        "textBefore": "Route9Hiker1BattleText",
+        "textEnd": "Route9Hiker1EndBattleText",
+        "textAfter": "Route9Hiker1AfterBattleText"
+      }
+    },
+    {
+      "index": 6,
+      "const": "ROUTE9_HIKER2",
+      "x": 43,
+      "y": 3,
+      "sprite": "SPRITE_HIKER",
+      "spriteId": 14,
+      "movement": "STAY",
+      "rangeOrDirection": "LEFT",
+      "rangeOrDirectionValue": 210,
+      "behavior": "face_left",
+      "textId": "TEXT_ROUTE9_HIKER2",
+      "textIndex": 6,
+      "trainer": {
+        "trainerClass": "OPP_HIKER",
+        "trainerClassId": 9,
+        "trainerPartyIndex": 6,
+        "header": "Route9TrainerHeader5",
+        "eventFlag": "EVENT_BEAT_ROUTE_9_TRAINER_5",
+        "eventFlagIndex": 1094,
+        "sightRange": 3,
+        "textBefore": "Route9Hiker2BattleText",
+        "textEnd": "Route9Hiker2EndBattleText",
+        "textAfter": "Route9Hiker2AfterBattleText"
+      }
+    },
+    {
+      "index": 7,
+      "const": "ROUTE9_YOUNGSTER1",
+      "x": 22,
+      "y": 2,
+      "sprite": "SPRITE_YOUNGSTER",
+      "spriteId": 4,
+      "movement": "STAY",
+      "rangeOrDirection": "DOWN",
+      "rangeOrDirectionValue": 208,
+      "behavior": "face_down",
+      "textId": "TEXT_ROUTE9_YOUNGSTER1",
+      "textIndex": 7,
+      "trainer": {
+        "trainerClass": "OPP_BUG_CATCHER",
+        "trainerClassId": 2,
+        "trainerPartyIndex": 13,
+        "header": "Route9TrainerHeader6",
+        "eventFlag": "EVENT_BEAT_ROUTE_9_TRAINER_6",
+        "eventFlagIndex": 1095,
+        "sightRange": 4,
+        "textBefore": "Route9Youngster1BattleText",
+        "textEnd": "Route9Youngster1EndBattleText",
+        "textAfter": "Route9Youngster1AfterBattleText"
+      }
+    },
+    {
+      "index": 8,
+      "const": "ROUTE9_HIKER3",
+      "x": 45,
+      "y": 15,
+      "sprite": "SPRITE_HIKER",
+      "spriteId": 14,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_ROUTE9_HIKER3",
+      "textIndex": 8,
+      "trainer": {
+        "trainerClass": "OPP_HIKER",
+        "trainerClassId": 9,
+        "trainerPartyIndex": 5,
+        "header": "Route9TrainerHeader7",
+        "eventFlag": "EVENT_BEAT_ROUTE_9_TRAINER_7",
+        "eventFlagIndex": 1096,
+        "sightRange": 2,
+        "textBefore": "Route9Hiker3BattleText",
+        "textEnd": "Route9Hiker3EndBattleText",
+        "textAfter": "Route9Hiker3AfterBattleText"
+      }
+    },
+    {
+      "index": 9,
+      "const": "ROUTE9_YOUNGSTER2",
+      "x": 40,
+      "y": 8,
+      "sprite": "SPRITE_YOUNGSTER",
+      "spriteId": 4,
+      "movement": "STAY",
+      "rangeOrDirection": "RIGHT",
+      "rangeOrDirectionValue": 211,
+      "behavior": "face_right",
+      "textId": "TEXT_ROUTE9_YOUNGSTER2",
+      "textIndex": 9,
+      "trainer": {
+        "trainerClass": "OPP_BUG_CATCHER",
+        "trainerClassId": 2,
+        "trainerPartyIndex": 14,
+        "header": "Route9TrainerHeader8",
+        "eventFlag": "EVENT_BEAT_ROUTE_9_TRAINER_8",
+        "eventFlagIndex": 1097,
+        "sightRange": 2,
+        "textBefore": "Route9Youngster2BattleText",
+        "textEnd": "Route9Youngster2EndBattleText",
+        "textAfter": "Route9Youngster2AfterBattleText"
+      }
+    }
+  ],
+  "adaptation": "Original Red feet/grass/ledges and16px actors local1x world2x nearest; Route10 north original first30 rows only; lower mountains and water already impassable; center/tunnel original doors no warp, explicit deferred message. Route9 item/hidden/sign extras deferred. E trainer confirmation no sight. Mixed FR parties and walking encounters.",
+  "rights": "Original rights holders; no redistribution clearance."
+}

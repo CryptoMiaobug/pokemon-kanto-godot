@@ -1,0 +1,17 @@
+{
+  "repository": "pret/pokefirered",
+  "commit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "species": [
+    "caterpie",
+    "metapod",
+    "butterfree",
+    "weedle",
+    "kakuna",
+    "beedrill",
+    "pikachu"
+  ],
+  "graphics": "graphics/pokemon/{species}/{front,back,icon}.png; normal.pal; src/pokemon_icon.c palette indices",
+  "rules": "src/data/{wild_encounters.json,pokemon/species_info.h,pokemon/level_up_learnsets.h,pokemon/evolution.h}; Gen3 Dex move metadata",
+  "adaptation": "First standing frame, existing 64px battle sprites and 32px icons; level evolutions only, no Pikachu stone evolution",
+  "rights": "Original Pokemon artwork, internal development attribution only"
+}

@@ -1,0 +1,198 @@
+{
+  "rock-tunnel-1f": [
+    {
+      "index": 0,
+      "cell": [
+        15,
+        3
+      ],
+      "target": "route10-north",
+      "target_index": 1,
+      "arrival": [
+        8,
+        18
+      ],
+      "direction": "up"
+    },
+    {
+      "index": 1,
+      "cell": [
+        15,
+        0
+      ],
+      "target": "route10-north",
+      "target_index": 1,
+      "arrival": [
+        8,
+        18
+      ],
+      "direction": "up"
+    },
+    {
+      "index": 2,
+      "cell": [
+        15,
+        33
+      ],
+      "target": "route10-south",
+      "target_index": 2,
+      "arrival": [
+        8,
+        6
+      ],
+      "direction": "down"
+    },
+    {
+      "index": 3,
+      "cell": [
+        15,
+        35
+      ],
+      "target": "route10-south",
+      "target_index": 2,
+      "arrival": [
+        8,
+        6
+      ],
+      "direction": "down"
+    },
+    {
+      "index": 4,
+      "cell": [
+        37,
+        3
+      ],
+      "target": "rock-tunnel-b1f",
+      "target_index": 0,
+      "arrival": [
+        33,
+        25
+      ]
+    },
+    {
+      "index": 5,
+      "cell": [
+        5,
+        3
+      ],
+      "target": "rock-tunnel-b1f",
+      "target_index": 1,
+      "arrival": [
+        27,
+        3
+      ]
+    },
+    {
+      "index": 6,
+      "cell": [
+        17,
+        11
+      ],
+      "target": "rock-tunnel-b1f",
+      "target_index": 2,
+      "arrival": [
+        23,
+        11
+      ]
+    },
+    {
+      "index": 7,
+      "cell": [
+        37,
+        17
+      ],
+      "target": "rock-tunnel-b1f",
+      "target_index": 3,
+      "arrival": [
+        3,
+        3
+      ]
+    }
+  ],
+  "rock-tunnel-b1f": [
+    {
+      "index": 0,
+      "cell": [
+        33,
+        25
+      ],
+      "target": "rock-tunnel-1f",
+      "target_index": 4,
+      "arrival": [
+        37,
+        3
+      ]
+    },
+    {
+      "index": 1,
+      "cell": [
+        27,
+        3
+      ],
+      "target": "rock-tunnel-1f",
+      "target_index": 5,
+      "arrival": [
+        5,
+        3
+      ]
+    },
+    {
+      "index": 2,
+      "cell": [
+        23,
+        11
+      ],
+      "target": "rock-tunnel-1f",
+      "target_index": 6,
+      "arrival": [
+        17,
+        11
+      ]
+    },
+    {
+      "index": 3,
+      "cell": [
+        3,
+        3
+      ],
+      "target": "rock-tunnel-1f",
+      "target_index": 7,
+      "arrival": [
+        37,
+        17
+      ]
+    }
+  ],
+  "route10-north": [
+    {
+      "index": 1,
+      "cell": [
+        8,
+        17
+      ],
+      "target": "rock-tunnel-1f",
+      "target_index": 0,
+      "arrival": [
+        15,
+        4
+      ],
+      "direction": "up"
+    }
+  ],
+  "route10-south": [
+    {
+      "index": 2,
+      "cell": [
+        8,
+        5
+      ],
+      "target": "rock-tunnel-1f",
+      "target_index": 2,
+      "arrival": [
+        15,
+        32
+      ],
+      "direction": "up"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/Route16Gate2F.json",
+  "mapSHA256": "8fee73969e1d3f56b2024f51ca68bcffd351b6d9cb4b7940c4dbc11884255f81",
+  "tiles": "assets/tilesets/gate.png",
+  "warps": [
+    {
+      "x": 7,
+      "y": 7,
+      "destMap": "ROUTE_16_GATE_1F",
+      "destMapId": 186,
+      "destMapName": "Route16Gate1F",
+      "destWarp": 9,
+      "destWarpIndex": 8
+    }
+  ],
+  "connections": {},
+  "actors": [
+    {
+      "index": 1,
+      "const": "ROUTE16GATE2F_LITTLE_BOY",
+      "x": 4,
+      "y": 2,
+      "sprite": "SPRITE_LITTLE_BOY",
+      "spriteId": 53,
+      "movement": "STAY",
+      "rangeOrDirection": "NONE",
+      "rangeOrDirectionValue": 255,
+      "behavior": "turn_randomly",
+      "textId": "TEXT_ROUTE16GATE2F_LITTLE_BOY",
+      "textIndex": 1
+    },
+    {
+      "index": 2,
+      "const": "ROUTE16GATE2F_LITTLE_GIRL",
+      "x": 2,
+      "y": 5,
+      "sprite": "SPRITE_LITTLE_GIRL",
+      "spriteId": 8,
+      "movement": "WALK",
+      "rangeOrDirection": "LEFT_RIGHT",
+      "rangeOrDirectionValue": 2,
+      "behavior": "walk_left_right",
+      "textId": "TEXT_ROUTE16GATE2F_LITTLE_GIRL",
+      "textIndex": 2
+    }
+  ],
+  "adaptation": "Red geometry/16px actors local1x world2x nearest. FireRed Fly/HM/Bicycle rules with Red gate four trigger cells (FR five cells on different geometry). Gate2F static visitors/binocular text only; trades deferred. Route17 south exit deferred. NPC walking/cry/audio/cutscene omitted.",
+  "rights": "Original rights holders; redistribution clearance not established."
+}

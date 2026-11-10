@@ -1,0 +1,29 @@
+{
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "map": "data/maps/UndergroundPathWestEast.json",
+  "connections": {},
+  "warps": [
+    {
+      "x": 2,
+      "y": 5,
+      "destMap": "UNDERGROUND_PATH_ROUTE_7",
+      "destMapId": 77,
+      "destMapName": "UndergroundPathRoute7",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    },
+    {
+      "x": 47,
+      "y": 2,
+      "destMap": "UNDERGROUND_PATH_ROUTE_8",
+      "destMapId": 80,
+      "destMapName": "UndergroundPathRoute8",
+      "destWarp": 3,
+      "destWarpIndex": 2
+    }
+  ],
+  "actors": [],
+  "rights": "Original rights holders; no redistribution clearance.",
+  "adaptation": "Native Red feet/NPCs/pair/ledges; original stairs latch; parent LAST_MAP explicit. Saffron drinks prerequisite not bypassed, no trades/hidden items. Celadon next slice."
+}

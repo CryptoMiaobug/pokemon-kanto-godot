@@ -1,0 +1,725 @@
+{
+  "source_revision": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "items": {
+    "balls": {
+      "name": "精灵球",
+      "price": 200,
+      "source_item": "ITEM_POKE_BALL",
+      "pocket": "POCKET_POKE_BALLS"
+    },
+    "great_balls": {
+      "name": "超级球",
+      "price": 600,
+      "source_item": "ITEM_GREAT_BALL",
+      "pocket": "POCKET_POKE_BALLS"
+    },
+    "ultra_balls": {
+      "name": "高级球",
+      "price": 1200,
+      "source_item": "ITEM_ULTRA_BALL",
+      "pocket": "POCKET_POKE_BALLS"
+    },
+    "potions": {
+      "name": "伤药",
+      "price": 300,
+      "source_item": "ITEM_POTION",
+      "pocket": "POCKET_ITEMS"
+    },
+    "super_potions": {
+      "name": "好伤药",
+      "price": 700,
+      "source_item": "ITEM_SUPER_POTION",
+      "pocket": "POCKET_ITEMS"
+    },
+    "hyper_potions": {
+      "name": "厉害伤药",
+      "price": 1200,
+      "source_item": "ITEM_HYPER_POTION",
+      "pocket": "POCKET_ITEMS"
+    },
+    "max_potions": {
+      "name": "全满药",
+      "price": 2500,
+      "source_item": "ITEM_MAX_POTION",
+      "pocket": "POCKET_ITEMS"
+    },
+    "full_restores": {
+      "name": "全复药",
+      "price": 3000,
+      "source_item": "ITEM_FULL_RESTORE",
+      "pocket": "POCKET_ITEMS"
+    },
+    "revives": {
+      "name": "活力碎片",
+      "price": 1500,
+      "source_item": "ITEM_REVIVE",
+      "pocket": "POCKET_ITEMS"
+    },
+    "full_heals": {
+      "name": "万灵药",
+      "price": 600,
+      "source_item": "ITEM_FULL_HEAL",
+      "pocket": "POCKET_ITEMS"
+    },
+    "antidotes": {
+      "name": "解毒药",
+      "price": 100,
+      "source_item": "ITEM_ANTIDOTE",
+      "pocket": "POCKET_ITEMS"
+    },
+    "paralyze_heals": {
+      "name": "解麻药",
+      "price": 200,
+      "source_item": "ITEM_PARALYZE_HEAL",
+      "pocket": "POCKET_ITEMS"
+    },
+    "awakenings": {
+      "name": "解眠药",
+      "price": 250,
+      "source_item": "ITEM_AWAKENING",
+      "pocket": "POCKET_ITEMS"
+    },
+    "burn_heals": {
+      "name": "灼伤药",
+      "price": 250,
+      "source_item": "ITEM_BURN_HEAL",
+      "pocket": "POCKET_ITEMS"
+    },
+    "ice_heals": {
+      "name": "解冻药",
+      "price": 250,
+      "source_item": "ITEM_ICE_HEAL",
+      "pocket": "POCKET_ITEMS"
+    },
+    "repels": {
+      "name": "除虫喷雾",
+      "price": 350,
+      "source_item": "ITEM_REPEL",
+      "pocket": "POCKET_ITEMS"
+    },
+    "super_repels": {
+      "name": "白银喷雾",
+      "price": 500,
+      "source_item": "ITEM_SUPER_REPEL",
+      "pocket": "POCKET_ITEMS"
+    },
+    "max_repels": {
+      "name": "黄金喷雾",
+      "price": 700,
+      "source_item": "ITEM_MAX_REPEL",
+      "pocket": "POCKET_ITEMS"
+    },
+    "escape_ropes": {
+      "name": "离洞绳",
+      "price": 550,
+      "source_item": "ITEM_ESCAPE_ROPE",
+      "pocket": "POCKET_ITEMS"
+    },
+    "poke_dolls": {
+      "name": "皮皮玩偶",
+      "price": 1000,
+      "source_item": "ITEM_POKE_DOLL",
+      "pocket": "POCKET_ITEMS"
+    },
+    "retro_mail": {
+      "name": "复古邮件",
+      "price": 50,
+      "source_item": "ITEM_RETRO_MAIL",
+      "pocket": "POCKET_ITEMS"
+    },
+    "fire_stones": {
+      "name": "火之石",
+      "price": 2100,
+      "source_item": "ITEM_FIRE_STONE",
+      "pocket": "POCKET_ITEMS"
+    },
+    "thunder_stones": {
+      "name": "雷之石",
+      "price": 2100,
+      "source_item": "ITEM_THUNDER_STONE",
+      "pocket": "POCKET_ITEMS"
+    },
+    "water_stones": {
+      "name": "水之石",
+      "price": 2100,
+      "source_item": "ITEM_WATER_STONE",
+      "pocket": "POCKET_ITEMS"
+    },
+    "leaf_stones": {
+      "name": "叶之石",
+      "price": 2100,
+      "source_item": "ITEM_LEAF_STONE",
+      "pocket": "POCKET_ITEMS"
+    },
+    "hp_ups": {
+      "name": "HP增强剂",
+      "price": 9800,
+      "source_item": "ITEM_HP_UP",
+      "pocket": "POCKET_ITEMS"
+    },
+    "proteins": {
+      "name": "蛋白药剂",
+      "price": 9800,
+      "source_item": "ITEM_PROTEIN",
+      "pocket": "POCKET_ITEMS"
+    },
+    "irons": {
+      "name": "防御药剂",
+      "price": 9800,
+      "source_item": "ITEM_IRON",
+      "pocket": "POCKET_ITEMS"
+    },
+    "calciums": {
+      "name": "特攻药剂",
+      "price": 9800,
+      "source_item": "ITEM_CALCIUM",
+      "pocket": "POCKET_ITEMS"
+    },
+    "zincs": {
+      "name": "特防药剂",
+      "price": 9800,
+      "source_item": "ITEM_ZINC",
+      "pocket": "POCKET_ITEMS"
+    },
+    "carbos": {
+      "name": "速度药剂",
+      "price": 9800,
+      "source_item": "ITEM_CARBOS",
+      "pocket": "POCKET_ITEMS"
+    },
+    "x_attacks": {
+      "name": "力量强化",
+      "price": 500,
+      "source_item": "ITEM_X_ATTACK",
+      "pocket": "POCKET_ITEMS"
+    },
+    "x_defends": {
+      "name": "防御强化",
+      "price": 550,
+      "source_item": "ITEM_X_DEFEND",
+      "pocket": "POCKET_ITEMS"
+    },
+    "x_speeds": {
+      "name": "速度强化",
+      "price": 350,
+      "source_item": "ITEM_X_SPEED",
+      "pocket": "POCKET_ITEMS"
+    },
+    "x_specials": {
+      "name": "特攻强化",
+      "price": 350,
+      "source_item": "ITEM_X_SPECIAL",
+      "pocket": "POCKET_ITEMS"
+    },
+    "x_accuracies": {
+      "name": "命中强化",
+      "price": 950,
+      "source_item": "ITEM_X_ACCURACY",
+      "pocket": "POCKET_ITEMS"
+    },
+    "guard_specs": {
+      "name": "防御喷雾",
+      "price": 700,
+      "source_item": "ITEM_GUARD_SPEC",
+      "pocket": "POCKET_ITEMS"
+    },
+    "dire_hits": {
+      "name": "要害攻击",
+      "price": 650,
+      "source_item": "ITEM_DIRE_HIT",
+      "pocket": "POCKET_ITEMS"
+    },
+    "fresh_water": {
+      "name": "清凉水",
+      "price": 200,
+      "source_item": "ITEM_FRESH_WATER",
+      "pocket": "POCKET_ITEMS"
+    },
+    "soda_pop": {
+      "name": "苏打汽水",
+      "price": 300,
+      "source_item": "ITEM_SODA_POP",
+      "pocket": "POCKET_ITEMS"
+    },
+    "lemonade": {
+      "name": "柠檬汽水",
+      "price": 350,
+      "source_item": "ITEM_LEMONADE",
+      "pocket": "POCKET_ITEMS"
+    },
+    "fr_tm05": {
+      "name": "TM05 吼叫",
+      "price": 1000,
+      "source_item": "ITEM_TM05",
+      "pocket": "POCKET_TM_CASE"
+    },
+    "fr_tm15": {
+      "name": "TM15 破坏光线",
+      "price": 7500,
+      "source_item": "ITEM_TM15",
+      "pocket": "POCKET_TM_CASE"
+    },
+    "fr_tm28": {
+      "name": "TM28 挖洞",
+      "price": 2000,
+      "source_item": "ITEM_TM28",
+      "pocket": "POCKET_TM_CASE"
+    },
+    "fr_tm31": {
+      "name": "TM31 劈瓦",
+      "price": 3000,
+      "source_item": "ITEM_TM31",
+      "pocket": "POCKET_TM_CASE"
+    },
+    "fr_tm43": {
+      "name": "TM43 秘密之力",
+      "price": 3000,
+      "source_item": "ITEM_TM43",
+      "pocket": "POCKET_TM_CASE"
+    },
+    "fr_tm45": {
+      "name": "TM45 迷人",
+      "price": 3000,
+      "source_item": "ITEM_TM45",
+      "pocket": "POCKET_TM_CASE"
+    },
+    "fr_tm16": {
+      "name": "TM16 光墙",
+      "price": 3000,
+      "source_item": "ITEM_TM16",
+      "pocket": "POCKET_TM_CASE"
+    },
+    "fr_tm20": {
+      "name": "TM20 神秘守护",
+      "price": 3000,
+      "source_item": "ITEM_TM20",
+      "pocket": "POCKET_TM_CASE"
+    },
+    "fr_tm33": {
+      "name": "TM33 反射壁",
+      "price": 3000,
+      "source_item": "ITEM_TM33",
+      "pocket": "POCKET_TM_CASE"
+    },
+    "nuggets": {
+      "name": "金珠",
+      "price": 10000,
+      "source_item": "ITEM_NUGGET",
+      "pocket": "POCKET_ITEMS"
+    },
+    "rare_candies": {
+      "name": "神奇糖果",
+      "price": 4800,
+      "source_item": "ITEM_RARE_CANDY",
+      "pocket": "POCKET_ITEMS"
+    },
+    "moon_stones": {
+      "name": "月之石",
+      "price": 0,
+      "source_item": "ITEM_MOON_STONE",
+      "pocket": "POCKET_ITEMS"
+    },
+    "sun_stones": {
+      "name": "日之石",
+      "price": 2100,
+      "source_item": "ITEM_SUN_STONE",
+      "pocket": "POCKET_ITEMS"
+    },
+    "elixirs": {
+      "name": "全招式回复剂",
+      "price": 3000,
+      "source_item": "ITEM_ELIXIR",
+      "pocket": "POCKET_ITEMS"
+    },
+    "max_revives": {
+      "name": "活力块",
+      "price": 4000,
+      "source_item": "ITEM_MAX_REVIVE",
+      "pocket": "POCKET_ITEMS"
+    },
+    "tm_blizzard": {
+      "name": "TM14 暴风雪",
+      "price": 5000,
+      "pocket": "POCKET_TM_CASE",
+      "source_item": "TM_BLIZZARD",
+      "source_edition": "Red"
+    },
+    "tm_body_slam": {
+      "name": "TM08 泰山压顶",
+      "price": 4000,
+      "pocket": "POCKET_TM_CASE",
+      "source_item": "TM_BODY_SLAM",
+      "source_edition": "Red"
+    },
+    "tm_double_edge": {
+      "name": "TM10 舍身冲撞",
+      "price": 4000,
+      "pocket": "POCKET_TM_CASE",
+      "source_item": "TM_DOUBLE_EDGE",
+      "source_edition": "Red"
+    },
+    "tm_double_team": {
+      "name": "TM32 影子分身",
+      "price": 1000,
+      "pocket": "POCKET_TM_CASE",
+      "source_item": "TM_DOUBLE_TEAM",
+      "source_edition": "Red"
+    },
+    "tm_earthquake": {
+      "name": "TM26 地震",
+      "price": 4000,
+      "pocket": "POCKET_TM_CASE",
+      "source_item": "TM_EARTHQUAKE",
+      "source_edition": "Red"
+    },
+    "tm_egg_bomb": {
+      "name": "TM37 炸蛋",
+      "price": 2000,
+      "pocket": "POCKET_TM_CASE",
+      "source_item": "TM_EGG_BOMB",
+      "source_edition": "Red"
+    },
+    "tm_explosion": {
+      "name": "TM47 大爆炸",
+      "price": 3000,
+      "pocket": "POCKET_TM_CASE",
+      "source_item": "TM_EXPLOSION",
+      "source_edition": "Red"
+    },
+    "tm_horn_drill": {
+      "name": "TM07 角钻",
+      "price": 2000,
+      "pocket": "POCKET_TM_CASE",
+      "source_item": "TM_HORN_DRILL",
+      "source_edition": "Red"
+    },
+    "tm_mega_kick": {
+      "name": "TM05 百万吨重踢",
+      "price": 3000,
+      "pocket": "POCKET_TM_CASE",
+      "source_item": "TM_MEGA_KICK",
+      "source_edition": "Red"
+    },
+    "tm_pay_day": {
+      "name": "TM16 聚宝功",
+      "price": 5000,
+      "pocket": "POCKET_TM_CASE",
+      "source_item": "TM_PAY_DAY",
+      "source_edition": "Red"
+    },
+    "tm_rage": {
+      "name": "TM20 愤怒",
+      "price": 2000,
+      "pocket": "POCKET_TM_CASE",
+      "source_item": "TM_RAGE",
+      "source_edition": "Red"
+    },
+    "tm_razor_wind": {
+      "name": "TM02 旋风刀",
+      "price": 2000,
+      "pocket": "POCKET_TM_CASE",
+      "source_item": "TM_RAZOR_WIND",
+      "source_edition": "Red"
+    },
+    "tm_skull_bash": {
+      "name": "TM40 火箭头锤",
+      "price": 4000,
+      "pocket": "POCKET_TM_CASE",
+      "source_item": "TM_SKULL_BASH",
+      "source_edition": "Red"
+    },
+    "tm_sky_attack": {
+      "name": "TM43 神鸟猛击",
+      "price": 5000,
+      "pocket": "POCKET_TM_CASE",
+      "source_item": "TM_SKY_ATTACK",
+      "source_edition": "Red"
+    },
+    "tm_solarbeam": {
+      "name": "TM22 日光束",
+      "price": 5000,
+      "pocket": "POCKET_TM_CASE",
+      "source_item": "TM_SOLARBEAM",
+      "source_edition": "Red"
+    },
+    "tm_submission": {
+      "name": "TM17 地狱翻滚",
+      "price": 3000,
+      "pocket": "POCKET_TM_CASE",
+      "source_item": "TM_SUBMISSION",
+      "source_edition": "Red"
+    },
+    "tm_swords_dance": {
+      "name": "TM03 剑舞",
+      "price": 2000,
+      "pocket": "POCKET_TM_CASE",
+      "source_item": "TM_SWORDS_DANCE",
+      "source_edition": "Red"
+    },
+    "tm_take_down": {
+      "name": "TM09 猛撞",
+      "price": 3000,
+      "pocket": "POCKET_TM_CASE",
+      "source_item": "TM_TAKE_DOWN",
+      "source_edition": "Red"
+    },
+    "tm_dig": {
+      "name": "TM28 挖洞",
+      "price": 2000,
+      "pocket": "POCKET_TM_CASE",
+      "source_item": "TM_DIG",
+      "source_edition": "Red"
+    },
+    "kingsrock": {
+      "name": "王者之证",
+      "price": 100,
+      "pocket": "POCKET_ITEMS",
+      "source_item": "ITEM_KINGS_ROCK"
+    },
+    "metalcoat": {
+      "name": "金属膜",
+      "price": 100,
+      "pocket": "POCKET_ITEMS",
+      "source_item": "ITEM_METAL_COAT"
+    },
+    "dragonscale": {
+      "name": "龙之鳞片",
+      "price": 2100,
+      "pocket": "POCKET_ITEMS",
+      "source_item": "ITEM_DRAGON_SCALE"
+    },
+    "upgrade": {
+      "name": "升级数据",
+      "price": 2100,
+      "pocket": "POCKET_ITEMS",
+      "source_item": "ITEM_UP_GRADE"
+    },
+    "everstone": {
+      "name": "不变之石",
+      "price": 200,
+      "pocket": "POCKET_ITEMS",
+      "source_item": "ITEM_EVERSTONE"
+    },
+    "soothebell": {
+      "name": "安抚之铃",
+      "price": 100,
+      "pocket": "POCKET_ITEMS",
+      "source_item": "ITEM_SOOTHE_BELL"
+    },
+    "oranberry": {
+      "name": "橙橙果",
+      "price": 20,
+      "source_item": "ITEM_ORAN_BERRY",
+      "pocket": "POCKET_BERRY_POUCH"
+    },
+    "cheriberry": {
+      "name": "樱子果",
+      "price": 20,
+      "source_item": "ITEM_CHERI_BERRY",
+      "pocket": "POCKET_BERRY_POUCH"
+    },
+    "chestoberry": {
+      "name": "零余果",
+      "price": 20,
+      "source_item": "ITEM_CHESTO_BERRY",
+      "pocket": "POCKET_BERRY_POUCH"
+    },
+    "pechaberry": {
+      "name": "桃桃果",
+      "price": 20,
+      "source_item": "ITEM_PECHA_BERRY",
+      "pocket": "POCKET_BERRY_POUCH"
+    },
+    "rawstberry": {
+      "name": "莓莓果",
+      "price": 20,
+      "source_item": "ITEM_RAWST_BERRY",
+      "pocket": "POCKET_BERRY_POUCH"
+    },
+    "aspearberry": {
+      "name": "利木果",
+      "price": 20,
+      "source_item": "ITEM_ASPEAR_BERRY",
+      "pocket": "POCKET_BERRY_POUCH"
+    },
+    "persimberry": {
+      "name": "柿仔果",
+      "price": 20,
+      "source_item": "ITEM_PERSIM_BERRY",
+      "pocket": "POCKET_BERRY_POUCH"
+    },
+    "spelonberry": {
+      "name": "刺角果",
+      "price": 20,
+      "source_item": "ITEM_SPELON_BERRY",
+      "pocket": "POCKET_BERRY_POUCH"
+    },
+    "pamtreberry": {
+      "name": "椰木果",
+      "price": 20,
+      "source_item": "ITEM_PAMTRE_BERRY",
+      "pocket": "POCKET_BERRY_POUCH"
+    },
+    "watmelberry": {
+      "name": "瓜西果",
+      "price": 20,
+      "source_item": "ITEM_WATMEL_BERRY",
+      "pocket": "POCKET_BERRY_POUCH"
+    },
+    "durinberry": {
+      "name": "金枕果",
+      "price": 20,
+      "source_item": "ITEM_DURIN_BERRY",
+      "pocket": "POCKET_BERRY_POUCH"
+    },
+    "belueberry": {
+      "name": "靛莓果",
+      "price": 20,
+      "source_item": "ITEM_BELUE_BERRY",
+      "pocket": "POCKET_BERRY_POUCH"
+    },
+    "pp_ups": {
+      "name": "PP提升剂",
+      "price": 9800,
+      "source_item": "ITEM_PP_UP",
+      "pocket": "POCKET_ITEMS"
+    }
+  },
+  "shops": {
+    "viridian-mart": [
+      "balls",
+      "potions",
+      "antidotes",
+      "paralyze_heals"
+    ],
+    "pewter-mart": [
+      "balls",
+      "potions",
+      "antidotes",
+      "paralyze_heals",
+      "awakenings",
+      "burn_heals",
+      "escape_ropes",
+      "repels"
+    ],
+    "cerulean-mart": [
+      "balls",
+      "super_potions",
+      "potions",
+      "antidotes",
+      "paralyze_heals",
+      "awakenings",
+      "burn_heals",
+      "escape_ropes",
+      "repels"
+    ],
+    "vermilion-mart": [
+      "balls",
+      "super_potions",
+      "antidotes",
+      "paralyze_heals",
+      "awakenings",
+      "ice_heals",
+      "repels"
+    ],
+    "lavender-mart": [
+      "great_balls",
+      "super_potions",
+      "revives",
+      "antidotes",
+      "paralyze_heals",
+      "burn_heals",
+      "ice_heals",
+      "escape_ropes",
+      "super_repels"
+    ],
+    "fuchsia-mart": [
+      "ultra_balls",
+      "great_balls",
+      "super_potions",
+      "revives",
+      "full_heals",
+      "max_repels"
+    ],
+    "saffron-mart": [
+      "great_balls",
+      "hyper_potions",
+      "revives",
+      "full_heals",
+      "escape_ropes",
+      "max_repels"
+    ],
+    "cinnabar-mart": [
+      "ultra_balls",
+      "great_balls",
+      "hyper_potions",
+      "revives",
+      "full_heals",
+      "escape_ropes",
+      "max_repels"
+    ],
+    "indigo-lobby": [
+      "ultra_balls",
+      "great_balls",
+      "full_restores",
+      "max_potions",
+      "revives",
+      "full_heals",
+      "max_repels"
+    ],
+    "celadon-mart-2f": [
+      "great_balls",
+      "super_potions",
+      "revives",
+      "antidotes",
+      "paralyze_heals",
+      "awakenings",
+      "burn_heals",
+      "ice_heals",
+      "super_repels",
+      "fr_tm05",
+      "fr_tm15",
+      "fr_tm28",
+      "fr_tm31",
+      "fr_tm43",
+      "fr_tm45"
+    ],
+    "celadon-mart-4f": [
+      "poke_dolls",
+      "retro_mail",
+      "fire_stones",
+      "thunder_stones",
+      "water_stones",
+      "leaf_stones"
+    ],
+    "celadon-mart-5f": [
+      "x_attacks",
+      "x_defends",
+      "x_speeds",
+      "x_specials",
+      "x_accuracies",
+      "guard_specs",
+      "dire_hits",
+      "hp_ups",
+      "proteins",
+      "irons",
+      "calciums",
+      "zincs",
+      "carbos"
+    ]
+  },
+  "source_maps": {
+    "viridian-mart": "ViridianCity_Mart",
+    "pewter-mart": "PewterCity_Mart",
+    "cerulean-mart": "CeruleanCity_Mart",
+    "vermilion-mart": "VermilionCity_Mart",
+    "lavender-mart": "LavenderTown_Mart",
+    "fuchsia-mart": "FuchsiaCity_Mart",
+    "saffron-mart": "SaffronCity_Mart",
+    "cinnabar-mart": "CinnabarIsland_Mart",
+    "indigo-lobby": "IndigoPlateau_PokemonCenter_1F",
+    "celadon-mart-2f": "CeladonCity_DepartmentStore_2F",
+    "celadon-mart-4f": "CeladonCity_DepartmentStore_4F",
+    "celadon-mart-5f": "CeladonCity_DepartmentStore_5F"
+  }
+}

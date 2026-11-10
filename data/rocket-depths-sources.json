@@ -1,0 +1,69 @@
+{
+  "baseline": "87fe9df130659aaa61e48c462a4db4120713485e",
+  "redCommit": "ee2a8ccb007192a90ea88a173199f4ccd85dca60",
+  "fireRedCommit": "7e3f822652ecce0c99b626d74f455c3b93660377",
+  "instruction_reads": [
+    "AGENTS.md",
+    "pixel-rpg-scene-reskin/SKILL.md",
+    "targeted-check-recovery.md",
+    "route-story-integration.md",
+    "source-driven-game-development.md",
+    "source-game-rules.md"
+  ],
+  "sources": [
+    "Red data/maps/RocketHideoutB2F.json B3F B4F Elevator",
+    "Red src/overworld/special_data.js SPINNER_ARROWS arrowPath reversed RLE",
+    "Red src/game/scripts/regions/kanto4.js B4 door/key drop/Giovanni/scope/elevator floors",
+    "FireRed src/data/trainer_parties.h TeamRocketGrunt13..18 BossGiovanni",
+    "FireRed data/maps/RocketHideout_B2F..B4F/scripts.inc"
+  ],
+  "slices": [
+    {
+      "id": "rocket-b2",
+      "required": [
+        "30x28 geometry all43 arrows full reversed RLE routes source stops warp pairs NPCs",
+        "GRUNT13 five ordered custom moves reward544",
+        "input lock turning stop reset on map change save restoration"
+      ],
+      "existing": [
+        "all roster species/moves",
+        "shared trainer atomic rewards and indexed warps"
+      ],
+      "story": [
+        "B1 stairs -> B2 unlocked immediately",
+        "arrow entry -> forced reversed RLE walk -> source stopping tile -> controls return",
+        "confirm five-mon guard -> reward544 and flag once"
+      ],
+      "deferred": [
+        "B3 destination until slice2",
+        "elevator until slice4"
+      ]
+    },
+    {
+      "id": "rocket-b3",
+      "required": [
+        "Red original840feet4objects16arrows all full paths and stops two warp indices",
+        "FR Grunt14 full three Lv20 reward640 Grunt15 two Machop21 reward672",
+        "existing forced movement trainer transaction and v3 location adapters"
+      ],
+      "existing": [
+        "all species moves effects static16px sprites",
+        "reverse RLE executor and atomic trainer settlement"
+      ],
+      "story": [
+        "B2 stair to B3 unlocked",
+        "arrow entry forced path source stop control returned",
+        "E confirm cancel no state change; win reward growth flag atomic; repeat no reward; loss or save failure prior state"
+      ],
+      "deferred": [
+        "B4 Lift Key elevator Giovanni Silph Scope",
+        "items hidden items source animation NPC sight"
+      ]
+    }
+  ],
+  "scope": "B3F only authorized next slice 2026-11-04",
+  "deferred": [
+    "B4F Lift Key",
+    "elevator Giovanni Silph Scope"
+  ]
+}

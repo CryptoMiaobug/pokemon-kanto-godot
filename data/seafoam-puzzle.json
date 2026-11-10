@@ -1,0 +1,272 @@
+{
+  "falls": {
+    "seafoam-islands-1f": [
+      {
+        "cell": [
+          17,
+          6
+        ],
+        "event": 0,
+        "hide": "TOGGLE_SEAFOAM_ISLANDS_1F_BOULDER_1",
+        "show": "TOGGLE_SEAFOAM_ISLANDS_B1F_BOULDER_1",
+        "target": "seafoam-islands-b1f",
+        "arrival": [
+          18,
+          7
+        ],
+        "deferred": false
+      },
+      {
+        "cell": [
+          24,
+          6
+        ],
+        "event": 1,
+        "hide": "TOGGLE_SEAFOAM_ISLANDS_1F_BOULDER_2",
+        "show": "TOGGLE_SEAFOAM_ISLANDS_B1F_BOULDER_2",
+        "target": "seafoam-islands-b1f",
+        "arrival": [
+          23,
+          7
+        ],
+        "deferred": false
+      }
+    ],
+    "seafoam-islands-b1f": [
+      {
+        "cell": [
+          18,
+          6
+        ],
+        "event": 2,
+        "hide": "TOGGLE_SEAFOAM_ISLANDS_B1F_BOULDER_1",
+        "show": "TOGGLE_SEAFOAM_ISLANDS_B2F_BOULDER_1",
+        "target": "seafoam-islands-b2f",
+        "arrival": [
+          19,
+          7
+        ],
+        "deferred": false
+      },
+      {
+        "cell": [
+          23,
+          6
+        ],
+        "event": 3,
+        "hide": "TOGGLE_SEAFOAM_ISLANDS_B1F_BOULDER_2",
+        "show": "TOGGLE_SEAFOAM_ISLANDS_B2F_BOULDER_2",
+        "target": "seafoam-islands-b2f",
+        "arrival": [
+          22,
+          7
+        ],
+        "deferred": false
+      }
+    ],
+    "seafoam-islands-b2f": [
+      {
+        "cell": [
+          19,
+          6
+        ],
+        "event": 4,
+        "hide": "TOGGLE_SEAFOAM_ISLANDS_B2F_BOULDER_1",
+        "show": "TOGGLE_SEAFOAM_ISLANDS_B3F_BOULDER_3",
+        "target": "seafoam-islands-b3f",
+        "arrival": [
+          18,
+          7
+        ],
+        "deferred": false
+      },
+      {
+        "cell": [
+          22,
+          6
+        ],
+        "event": 5,
+        "hide": "TOGGLE_SEAFOAM_ISLANDS_B2F_BOULDER_2",
+        "show": "TOGGLE_SEAFOAM_ISLANDS_B3F_BOULDER_4",
+        "target": "seafoam-islands-b3f",
+        "arrival": [
+          19,
+          7
+        ],
+        "deferred": false
+      }
+    ],
+    "seafoam-islands-b3f": [
+      {
+        "cell": [
+          3,
+          16
+        ],
+        "event": 6,
+        "hide": "TOGGLE_SEAFOAM_ISLANDS_B3F_BOULDER_1",
+        "show": "TOGGLE_SEAFOAM_ISLANDS_B4F_BOULDER_1",
+        "target": "seafoam-islands-b4f",
+        "arrival": [
+          4,
+          14
+        ],
+        "deferred": false
+      },
+      {
+        "cell": [
+          6,
+          16
+        ],
+        "event": 7,
+        "hide": "TOGGLE_SEAFOAM_ISLANDS_B3F_BOULDER_2",
+        "show": "TOGGLE_SEAFOAM_ISLANDS_B4F_BOULDER_2",
+        "target": "seafoam-islands-b4f",
+        "arrival": [
+          5,
+          14
+        ],
+        "deferred": false
+      }
+    ]
+  },
+  "toggles": [
+    "TOGGLE_SEAFOAM_ISLANDS_1F_BOULDER_1",
+    "TOGGLE_SEAFOAM_ISLANDS_1F_BOULDER_2",
+    "TOGGLE_SEAFOAM_ISLANDS_B1F_BOULDER_1",
+    "TOGGLE_SEAFOAM_ISLANDS_B1F_BOULDER_2",
+    "TOGGLE_SEAFOAM_ISLANDS_B2F_BOULDER_1",
+    "TOGGLE_SEAFOAM_ISLANDS_B2F_BOULDER_2",
+    "TOGGLE_SEAFOAM_ISLANDS_B3F_BOULDER_3",
+    "TOGGLE_SEAFOAM_ISLANDS_B3F_BOULDER_4",
+    "TOGGLE_SEAFOAM_ISLANDS_B3F_BOULDER_1",
+    "TOGGLE_SEAFOAM_ISLANDS_B3F_BOULDER_2",
+    "TOGGLE_SEAFOAM_ISLANDS_B4F_BOULDER_1",
+    "TOGGLE_SEAFOAM_ISLANDS_B4F_BOULDER_2"
+  ],
+  "defaults": [
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    true,
+    false,
+    false
+  ],
+  "currentBoundary": [
+    15,
+    8
+  ],
+  "currents": {
+    "b3f_near_steps": [
+      [
+        "down",
+        3
+      ],
+      [
+        "right",
+        5
+      ],
+      [
+        "down",
+        6
+      ]
+    ],
+    "b3f_left": [
+      [
+        "down",
+        4
+      ],
+      [
+        "right",
+        2
+      ],
+      [
+        "down",
+        6
+      ]
+    ],
+    "b3f_right": [
+      [
+        "left",
+        1
+      ],
+      [
+        "down",
+        4
+      ],
+      [
+        "right",
+        2
+      ],
+      [
+        "down",
+        6
+      ]
+    ],
+    "b4f_left": [
+      [
+        "up",
+        1
+      ],
+      [
+        "right",
+        3
+      ],
+      [
+        "up",
+        3
+      ]
+    ],
+    "b4f_right": [
+      [
+        "up",
+        1
+      ],
+      [
+        "right",
+        2
+      ],
+      [
+        "up",
+        3
+      ]
+    ],
+    "b3f_entry": [
+      15,
+      8
+    ],
+    "b4f_entries": [
+      [
+        4,
+        14
+      ],
+      [
+        5,
+        14
+      ]
+    ],
+    "b4f_shore": [
+      [
+        20,
+        17
+      ],
+      [
+        21,
+        17
+      ],
+      [
+        20,
+        16
+      ],
+      [
+        21,
+        16
+      ]
+    ]
+  }
+}
