@@ -1,34 +1,44 @@
-# 关都宝可梦 · Godot 单机复刻原型
+# Pokémon Kanto · Godot Recreation Prototype
 
-独立 Godot / GDScript 游戏工程。地图布局以 Pokémon Red 为主要参考，部分素材与战斗规则来自 FireRed 的已实现子集。本项目为非官方原型，与原版权方无关联。
+English | [简体中文](README.zh-CN.md)
 
-## 运行
+A standalone, unofficial Pokémon fan project built with Godot and GDScript. Map layouts primarily follow Pokémon Red, with selected assets and implemented battle mechanics from FireRed. This project is not affiliated with the original rights holders.
 
-安装 Godot 4.7.2，在项目管理器导入根目录 project.godot，等待资源导入后运行主场景。也可在项目目录执行：
+**The in-game interface is currently in Simplified Chinese.** This English README documents the project; it does not add an English localization.
+
+## Getting started
+
+Install **Godot 4.7.2**, import the root `project.godot` file in the Project Manager, allow assets to import, and run the main scene. Alternatively, run this from the project directory:
 
 ```sh
 godot --path .
 ```
 
-命令名取决于本机 Godot 的安装方式。未附引擎程序、导出包或网页版本。
+The executable name depends on your Godot installation. Engine binaries, exported builds, and a browser version are not included.
 
-## 已有内容
+## Features
 
-关都地图与八徽章主线、四天王和冠军、名人堂登记；野生捕获、六只队伍、PC 存储、等级经验与部分进化、商店背包、治疗、HM/TM、剧情存档；单打、双打及已实现的招式/特性子集。
+- Kanto maps and an implemented eight-badge storyline, Elite Four, Champion, and Hall of Fame registration.
+- Wild encounters and catching, a six-Pokémon party, PC storage, experience, leveling, and selected evolution methods.
+- Shops, inventory, healing, HMs/TMs, and persistent story progress.
+- Single and double battles, with an implemented subset of moves and abilities.
 
-不是完整原作重制：没有全部物种、特性、招式组合与逐招原版动画。尚未证明从全新存档、不使用开发辅助连续自然通关；部分支线、特殊状态重启与组合边界仍待验证。开发辅助功能仍保留，不应视为正式平衡版本。
+This is an evolving prototype, not a complete recreation of the original games. Species, abilities, move combinations, and original move animations are not all implemented. A continuous playthrough from a fresh save without development aids has not been verified. Some side quests, state persistence cases, and mechanic combinations remain unverified. Development shortcuts are still present; this is not a final balanced release.
 
-## 操作
+## Controls
 
-- WASD/方向键移动；E/Enter 交互；P 队伍；B 背包；O 进化石；K 关键物品。
-- HM：M/N/J/L/I 分别打开居合斩/冲浪/怪力/飞翔/闪光教学；F 飞翔，V 骑车，U 隧道闪光，F6 碎岩，F7 攀瀑。实际使用受招式、徽章与地点限制，以界面提示为准。
-- 战斗：1 战斗、2 背包、3 宝可梦、4 逃跑；子菜单按序号选择，Esc 返回。训练家战不能捕获或逃跑。
-- F5 保存；F10 保存成功后退出。存档位于 Godot user:// 下的 progress.json，具体目录依操作系统而定。请自行备份有效存档。
+- **Overworld:** WASD / arrow keys to move; E / Enter to interact; P for party; B for bag; O for evolution stones; K for key items.
+- **HMs:** M / N / J / L / I open the teaching interfaces for Cut / Surf / Strength / Fly / Flash respectively. F uses Fly, V toggles cycling, U uses Flash, F6 uses Rock Smash, and F7 uses Waterfall. Moves, badges, and location requirements apply; follow the on-screen prompts.
+- **Battles:** 1 Fight, 2 Bag, 3 Pokémon, 4 Run. Use numbered choices in submenus and Esc to go back. Catching and fleeing are unavailable in trainer battles.
+- **Saving:** F5 saves; F10 saves and exits if saving succeeds. Save data is stored as `progress.json` under Godot's `user://` directory, whose location depends on your operating system. Back up important saves yourself.
 
-## 目录
+## Project layout
 
-scripts/ 游戏逻辑；scenes/ 场景；data/ 运行数据；assets/ 图像、字体及来源。此候选版本仅包含游戏工程和面向使用者的说明。
+- `scripts/` — game logic.
+- `scenes/` — Godot scenes.
+- `data/` — runtime data.
+- `assets/` — artwork, fonts, and source records.
 
-## 来源与许可
+## Credits and licensing
 
-见 [来源说明](THIRD_PARTY.md)。保留的来源记录用于溯源，不表示已获得原游戏素材的再分发许可。本仓库保留素材来源说明，尚未逐项确立原游戏素材的再分发许可；未为整个工程统一授予开源许可证。
+See [third-party sources](THIRD_PARTY.md) and the source records and license notices shipped with the assets. Source attribution does not establish permission to redistribute original game artwork. Redistribution rights for the original game assets have not been established individually. No blanket open-source license is granted for the entire project.
